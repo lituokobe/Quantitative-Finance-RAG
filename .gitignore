@@ -1,2 +1,4 @@
 .DS_Store
 .env
+models/Qwen3-Embedding-0.6B/
+milvus

@@ -14,11 +14,11 @@ The Black-Scholes model, also known as the Black-Scholes-Merton (BSM) model, is 
 
 This mathematical equation estimates the theoretical value of derivatives based on other investment instruments. It considers the impact of time and other risk factors in its calculation.
 
-It was developed in 1973 and is still regarded as one of the best ways to [price an options contract](https://www.investopedia.com/ask/answers/060315/how-price-derivative-determined.asp).
+It was developed in 1973 and is still regarded as one of the best ways to price an options contract.
 
 ## History of the Black-Scholes Model
 
-Developed by Fischer Black, [Robert Merton](https://www.investopedia.com/terms/r/robert-c-merton.asp), and [Myron Scholes](https://www.investopedia.com/terms/m/myron-scholes.asp), the Black-Scholes model was the first widely used mathematical method to calculate the theoretical value of an option contract.
+Developed by Fischer Black, Robert Merton, and Myron Scholes, the Black-Scholes model was the first widely used mathematical method to calculate the theoretical value of an option contract.
 
 It uses current [stock prices](https://www.investopedia.com/best-stock-screeners-5120586), expected dividends, the option's strike price, expected interest rates, time to expiration, and expected volatility.
 

@@ -61,7 +61,7 @@ class MilvusVectorSave:
         schema.add_field(
             field_name='dense',
             datatype=DataType.FLOAT_VECTOR,
-            dim=2560 #Qwen3-Embedding-4B embedding dimension
+            dim=1024 #Qwen3-Embedding-0.6B embedding dimension
         )
 
         # ----- BM25 sparse function -----

@@ -6,7 +6,7 @@ from langchain_core.documents import Document
 from config.paths import MD_PATH, QWEN3_EMBEDDING_PATH
 from documents.md_parser import FinanceMarkdownParser
 from documents.milvus_chunk_writer import MilvusChunkWriter
-from models.models import Qwen3CustomEmbedding
+from models.models import CustomEmbedding
 from utils.log_utils import log
 
 # --------------------------------------------------
@@ -49,7 +49,7 @@ def parser_process(md_dir: str, output_queue: Queue, batch_size: int = 32):
 def writer_process(
     input_queue: Queue,
     collection_name: str,
-    embedding_factory: Callable[[], Qwen3CustomEmbedding],
+    embedding_factory: Callable[[], CustomEmbedding],
     dim: int,
     host: str = "localhost",
     port: str = "19530",
@@ -90,16 +90,16 @@ def writer_process(
 if __name__ == "__main__":
     QUEUE_SIZE = 4
     COLLECTION_NAME = "finance_chunks"
-    DIM = 2560  # example: Qwen3 embedding dimension
+    DIM = 1024  # example: Qwen3 embedding 0.6B dimension
 
-    def create_embedding_model() -> Qwen3CustomEmbedding:
-        return Qwen3CustomEmbedding(str(QWEN3_EMBEDDING_PATH))
+    def create_embedding_model() -> CustomEmbedding:
+        return CustomEmbedding(QWEN3_EMBEDDING_PATH)
 
     docs_queue = Queue(maxsize=QUEUE_SIZE)
 
     p1 = multiprocessing.Process(
         target=parser_process,
-        args=(MD_PATH, docs_queue, 6),
+        args=(MD_PATH, docs_queue, 2),
     )
     p2 = multiprocessing.Process(
         target=writer_process,

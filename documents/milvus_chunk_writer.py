@@ -1,18 +1,8 @@
 from typing import Any, Callable
 import uuid
 import time
-
-from pymilvus import (
-    connections,
-    utility,
-    FieldSchema,
-    CollectionSchema,
-    DataType,
-    Collection,
-)
-
+from pymilvus import connections, utility, FieldSchema, CollectionSchema, DataType, Collection
 from utils.log_utils import log
-
 
 # --------------------------------------------------
 # Helpers
@@ -23,7 +13,6 @@ def _clip(value: Any, max_len: int) -> str:
     Prevents Milvus VARCHAR overflow errors.
     """
     return str(value or "")[:max_len]
-
 
 # --------------------------------------------------
 # Milvus Writer
