@@ -10,7 +10,7 @@
 
 ## What Are Options?
 
-Options are versatile [financial instruments](https://www.investopedia.com/terms/f/financialinstrument.asp) that derive their value from an underlying security, such as stocks, [indexes, and exchange-traded funds (ETFs)](https://www.investopedia.com/articles/optioninvestor/10/etf-options-v-index-options.asp). Unlike futures contracts, options give buyers the right—but not the obligation—to buy or sell the underlying asset at a set price within a specific time frame. This flexibility allows investors to leverage positions without committing to purchase or sell, providing a strategic tool for speculation and hedging against market fluctuations.
+Options are versatile [financial instruments](https://www.investopedia.com/terms/f/financialinstrument.asp) that derive their value from an underlying security, such as stocks, indexes, and exchange-traded funds (ETFs). Unlike futures contracts, options give buyers the right—but not the obligation—to buy or sell the underlying asset at a set price within a specific time frame. This flexibility allows investors to leverage positions without committing to purchase or sell, providing a strategic tool for speculation and hedging against market fluctuations.
 
 Options are commonly traded through online platforms or retail brokers, with each contract having a predetermined expiration date that dictates when the options must be exercised.
 
@@ -60,7 +60,7 @@ The difference between [American and European options](https://www.investopedia.
 
 ## Key Considerations for Trading Options
 
-Each [options contract](https://www.investopedia.com/terms/o/optionscontract.asp) usually represents 100 shares of the underlying asset. The buyer pays a premium fee for each contract. For example, if an option has a premium of 35 cents per contract, buying one option costs $35 ($0.35 x 100). The premium is partially based on the strike price.
+Each [options contract](https://www.investopedia.com/terms/o/optionscontract.asp) usually represents 100 shares of the underlying asset. The buyer pays a premium fee for each contract. For example, if an option has a premium of 35 cents per contract, buying one option costs \$35 (\$0.35 x 100). The premium is partially based on the strike price.
 
 Another factor in the premium price is the [expiration date](https://www.investopedia.com/terms/e/expirationdate.asp). Just like with that carton of milk in the refrigerator, the expiration date indicates the day the option contract must be used. The underlying asset influences the use-by date, and some options will expire daily, weekly, monthly, and even quarterly. For monthly contracts, it's usually the third Friday.
 
@@ -80,7 +80,7 @@ Each risk variable is a result of an imperfect assumption or relationship of the
 
 ### Delta
 
-[Delta](https://www.investopedia.com/terms/d/delta.asp) (Δ) represents the [rate of change](https://www.investopedia.com/terms/r/rateofchange.asp) between the option's price and a $1 change in the [underlying asset's](https://www.investopedia.com/terms/u/underlying-asset.asp) price. In other words, the price sensitivity of the option relative to the underlying. Delta of a call option has a range between zero and one, while the delta of a [put option](https://www.investopedia.com/terms/p/putoption.asp) has a range between zero and negative one. For example, let's assume an investor is long a call option with a delta of 0.50. Therefore, if the underlying stock increases by $1, the option's price would theoretically increase by 50 cents.
+[Delta](https://www.investopedia.com/terms/d/delta.asp) (Δ) represents the [rate of change](https://www.investopedia.com/terms/r/rateofchange.asp) between the option's price and a \$1 change in the [underlying asset's](https://www.investopedia.com/terms/u/underlying-asset.asp) price. In other words, the price sensitivity of the option relative to the underlying. Delta of a call option has a range between zero and one, while the delta of a [put option](https://www.investopedia.com/terms/p/putoption.asp) has a range between zero and negative one. For example, let's assume an investor is long a call option with a delta of 0.50. Therefore, if the underlying stock increases by \$1, the option's price would theoretically increase by 50 cents.
 
 Delta also indicates the [hedge ratio](https://www.investopedia.com/terms/h/hedgeratio.asp) needed for a [delta-neutral](https://www.investopedia.com/terms/d/deltaneutral.asp) position. So if you purchase a standard American call option with a 0.40 delta, you need to sell 40 shares of stock to be fully hedged. Net delta for a portfolio of options can also be used to obtain the portfolio's hedge ratio.
 
@@ -88,13 +88,13 @@ A [less common usage of an option's delta](https://www.investopedia.com/articles
 
 ### Theta
 
-[Theta](https://www.investopedia.com/terms/t/theta.asp) (Θ) represents the rate of change between the option price and time, or time sensitivity—sometimes known as an option's time decay. Theta indicates the amount an option's price would decrease as the time to expiration decreases, all else equal. For example, assume an investor is long an option with a theta of -0.50. The option's price would decrease by 50 cents every day that passes, all else being equal. If three trading days pass, the option's value would theoretically decrease by $1.50.
+[Theta](https://www.investopedia.com/terms/t/theta.asp) (Θ) represents the rate of change between the option price and time, or time sensitivity—sometimes known as an option's time decay. Theta indicates the amount an option's price would decrease as the time to expiration decreases, all else equal. For example, assume an investor is long an option with a theta of -0.50. The option's price would decrease by 50 cents every day that passes, all else being equal. If three trading days pass, the option's value would theoretically decrease by \$1.50.
 
 Theta is higher for ATM options and lower for ITM or OTM options. Options closer to expiration also have accelerating time decay. Long calls and long puts usually have negative Theta. Short calls and short puts, on the other hand, have positive Theta. By comparison, an instrument whose value isn't eroded by time has zero Theta.
 
 ### Gamma
 
-[Gamma](https://www.investopedia.com/terms/g/gamma.asp) (Γ) represents the rate of change between an option's delta and the underlying asset's price. This is called second-order (second-derivative) price sensitivity. Gamma indicates the amount the delta would change given a $1 move in the underlying security. Let's assume an investor is long one call option on hypothetical stock XYZ. The call option has a delta of 0.50 and a gamma of 0.10. Therefore, if stock XYZ increases or decreases by $1, the call option's delta would increase or decrease by 0.10.
+[Gamma](https://www.investopedia.com/terms/g/gamma.asp) (Γ) represents the rate of change between an option's delta and the underlying asset's price. This is called second-order (second-derivative) price sensitivity. Gamma indicates the amount the delta would change given a \$1 move in the underlying security. Let's assume an investor is long one call option on hypothetical stock XYZ. The call option has a delta of 0.50 and a gamma of 0.10. Therefore, if stock XYZ increases or decreases by \$1, the call option's delta would increase or decrease by 0.10.
 
 Gamma is used to determine the stability of an option's delta. Higher gamma values indicate that delta could change dramatically in response to even small movements in the underlying's price.
 
@@ -112,7 +112,7 @@ Those familiar with the Greek alphabet will point out that there's no actual Gre
 
 ### Rho
 
-[Rho](https://www.investopedia.com/terms/r/rho.asp) (p) represents the rate of change between an option's value and a 1% change in the [interest rate](https://www.investopedia.com/terms/i/interestrate.asp). This measures sensitivity to the interest rate. For example, assume a call option has a rho of 0.05 and a price of $1.25. If interest rates rise by 1%, the value of the call option would increase to $1.30, all else being equal. The opposite is true for put options. Rho is greatest for ATM options with long times until expiration.
+[Rho](https://www.investopedia.com/terms/r/rho.asp) (p) represents the rate of change between an option's value and a 1% change in the [interest rate](https://www.investopedia.com/terms/i/interestrate.asp). This measures sensitivity to the interest rate. For example, assume a call option has a rho of 0.05 and a price of \$1.25. If interest rates rise by 1%, the value of the call option would increase to \$1.30, all else being equal. The opposite is true for put options. Rho is greatest for ATM options with long times until expiration.
 
 ### Minor Greeks
 
@@ -166,29 +166,31 @@ The writer (seller) can either hold on to the shares and hope the stock price ri
 
 An investor may write put options at a strike price where they see the shares being a good value and would be willing to buy at that price. When the price falls, and the buyer exercises their option, they get the stock at the price they want with the added benefit of receiving the option premium.
 
+**Pros:**
 - A call option buyer has the right to buy assets at a lower price than the market when the stock's price rises
 - The put option buyer profits by selling stock at the strike price when the market price is below the strike price
 - Option sellers receive a premium fee from the buyer for writing an option
 
+**Cons:**
 - The put option seller may have to buy the asset at a higher strike price than they would normally pay if the market falls
 - The call option writer faces infinite risk if the stock's price rises and they're forced to buy shares at a high price
 - Option buyers must pay an upfront premium to the writers of the option
 
 ## Example of an Option
 
-Suppose that Microsoft ([MFST](https://www.investopedia.com/markets/quote?tvwidgetsymbol=msft)) shares trade at $508 per share and you believe they'll increase in value. You decide to buy a call option to benefit from an increase in the stock's price. You purchase one call option with a strike price of $515 for one month in the future for 37 cents per contract. Your total cash outlay is $37 for the position plus fees and commissions (0.37 x 100 = $37).
+Suppose that Microsoft ([MFST](https://www.investopedia.com/markets/quote?tvwidgetsymbol=msft)) shares trade at \$508 per share and you believe they'll increase in value. You decide to buy a call option to benefit from an increase in the stock's price. You purchase one call option with a strike price of \$515 for one month in the future for 37 cents per contract. Your total cash outlay is \$37 for the position plus fees and commissions (0.37 x 100 = \$37).
 
-If the stock rises to $516, your option will be worth $1, as you could exercise the option to acquire the stock for $515 per share and immediately resell it for $516 per share. The profit on the option position would be 170.3% since you paid 37 cents and earned $1—that's much higher than the 7.4% increase in the underlying stock price from $508 to $516 at the time of expiry.
+If the stock rises to \$516, your option will be worth \$1, as you could exercise the option to acquire the stock for \$515 per share and immediately resell it for \$516 per share. The profit on the option position would be 170.3% since you paid 37 cents and earned \$1—that's much higher than the 7.4% increase in the underlying stock price from \$508 to \$516 at the time of expiry.
 
-In other words, the profit in dollar terms would be a net of 63 cents, or $63, as one option contract represents 100 shares [($1 - 0.37) x 100].
+In other words, the profit in dollar terms would be a net of 63 cents, or \$63, as one option contract represents 100 shares [(\$1 - 0.37) x 100].
 
-If the stock fell to $500, your option would expire worthless, and you would be out $37 in premium. The upside is that you didn't buy 100 shares at $508, which would have resulted in an $8 per share, or $800, total loss. As you can see, options can help limit your downside risk.
+If the stock fell to \$500, your option would expire worthless, and you would be out \$37 in premium. The upside is that you didn't buy 100 shares at \$508, which would have resulted in an \$8 per share, or \$800, total loss. As you can see, options can help limit your downside risk.
 
 ## What Are the Main Advantages of Options?
 
 Options can be very useful as a source of leverage and risk hedging.
 
-For example, a bullish investor who wishes to invest $1,000 in a company could potentially earn a far greater return by purchasing $1,000 worth of call options on that firm, compared to buying $1,000 of that company’s shares. In this sense, the call options provide the investor with a way to leverage their position by increasing their buying power.
+For example, a bullish investor who wishes to invest \$1,000 in a company could potentially earn a far greater return by purchasing \$1,000 worth of call options on that firm, compared to buying \$1,000 of that company’s shares. In this sense, the call options provide the investor with a way to leverage their position by increasing their buying power.
 
 On the other hand, if that same investor already has exposure to that same company and wants to reduce that exposure, they could hedge their risk by selling put options against that company.
 

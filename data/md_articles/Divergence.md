@@ -48,9 +48,9 @@ Similarly, in an uptrend, a bearish divergence can prompt a trader to consider s
 
 ### Example: Positive Divergence in Bitcoin (BTC/USD)
 
-The chart below of [bitcoin](https://www.investopedia.com/terms/b/bitcoin.asp) (BTC/USD) shows a clear example of how positive (bullish) divergence appears. Between late March and early April 2025, bitcoin's price formed distinct lower lows, dropping from about $82,080 to around $81,256. Meanwhile, the RSI made higher lows within the same period.
+The chart below of [bitcoin](https://www.investopedia.com/terms/b/bitcoin.asp) (BTC/USD) shows a clear example of how positive (bullish) divergence appears. Between late March and early April 2025, bitcoin's price formed distinct lower lows, dropping from about \$82,080 to around \$81,256. Meanwhile, the RSI made higher lows within the same period.
 
-This divergence indicated weakening bearish momentum, signaling that selling pressure was decreasing even though the price continued downward. Traders observing this divergence could interpret it as an early sign of a bullish reversal. Indeed, subsequent price action confirmed this signal, with BTC having a noticeable rally, eventually climbing above $87,000.
+This divergence indicated weakening bearish momentum, signaling that selling pressure was decreasing even though the price continued downward. Traders observing this divergence could interpret it as an early sign of a bullish reversal. Indeed, subsequent price action confirmed this signal, with BTC having a noticeable rally, eventually climbing above \$87,000.
 
 ### Example: Negative Divergence in EUR/USD
 

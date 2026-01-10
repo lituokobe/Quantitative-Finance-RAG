@@ -40,15 +40,12 @@ This [excess kurtosis](https://www.investopedia.com/terms/e/excesskurtosis.asp) 
 
 The normal distribution follows the following formula. Note that only the values of the mean (μ ) and standard deviation (σ) are necessary
 
-$$
-Normal Distribution Formula.
-$$
+$$f(x) = \frac{1}{\sigma * \sqrt{2\pi}} * e^{-\frac{1}{2} * ( \frac{x - \mu}{\sigma})^2}$$
 
 where:
-
-- x = value of the variable or data being examined and f(x) the probability function
-- μ = the mean
-- σ = the standard deviation
+- $x = \text{value of the variable or data being examined and f(x) the probability function}$
+- $\mu = \text{the mean}$
+- $\sigma = \text{the standard deviation}$
 
 ## Financial Applications of Normal Distribution
 

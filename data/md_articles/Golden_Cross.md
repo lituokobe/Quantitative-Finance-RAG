@@ -53,6 +53,12 @@ A golden cross and a death cross are opposing indicators. The golden cross confi
 
 Once the crossover occurs, the long-term moving average is considered a major [support level](https://www.investopedia.com/terms/s/support.asp) (in the case of the golden cross) or [resistance level](https://www.investopedia.com/terms/r/resistance.asp) (in the instance of the death cross) for the market from that point forward. Either cross may appear and signal a trend change, but they more frequently occur when a trend change has already occurred.
 
+|                               | GOLDEN CROSS                                      | DEATH CROSS                                      |
+|-------------------------------|---------------------------------------------------|--------------------------------------------------|
+| **Type of Market**            | A possible long-term bull market is approaching   | A possible long-term bear market is approaching  |
+| **Short-Term Moving Average** | Crosses from below the long-term moving average   | Crosses from above the long-term moving average  |
+| **Long-Term Moving Average**  | Becomes support                                   | Becomes resistance                               |
+
 ## Limitations of a Golden Cross
 
 All indicators are [lagging](https://www.investopedia.com/terms/l/laggingindicator.asp), which means the data used to form the charts has already occurred. As such, they indicate past performance so they are reactive rather than proactive. This means that no indicator can truly predict the future. Many times, an observed golden cross produces a false signal.

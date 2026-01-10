@@ -1,0 +1,5 @@
+2026-01-09 23:48:31,543 - ingest_multiprocess - INFO: [Parser] Pushed batch of 2 chunks.
+2026-01-09 23:48:31,545 - ingest_multiprocess - INFO: [Parser] Pushed batch of 2 chunks.
+2026-01-09 23:48:31,546 - ingest_multiprocess - INFO: [Parser] Pushed batch of 2 chunks.
+2026-01-09 23:48:31,548 - ingest_multiprocess - INFO: [Parser] Pushed batch of 2 chunks.
+2026-01-09 23:48:31,549 - ingest_multiprocess - INFO: [Parser] Queue full, waiting...

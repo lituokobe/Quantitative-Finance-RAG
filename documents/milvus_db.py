@@ -128,8 +128,8 @@ class MilvusVectorSave:
         self.vector_store_saved = Milvus(
             embedding_function=qwen3_embedding_model,
             collection_name=COLLECTION_NAME,
-            builtin_function=BM25BuiltInFunction(),
-            vector_field = ["dense", "sparse"],
+            # builtin_function=BM25BuiltInFunction(),
+            vector_field = "embedding", #["dense", "sparse"],
             consistency_level="Strong",  # highest level of consistency: Strong > Session > Bounded > Eventually
             auto_id = True,
             connection_args = {"uri":MILVUS_URI}

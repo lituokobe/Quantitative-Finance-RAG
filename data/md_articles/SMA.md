@@ -18,7 +18,10 @@ A simple moving average (SMA) is an arithmetic [moving average](https://www.inve
 
 The formula for SMA is:
 
-SMA = A 1 + A 2 + . . . + A n n where: A n = the price of an asset at period n n = the number of total periods \begin{aligned} &\text{SMA}=\dfrac{A_1 + A_2 + ... + A_n}{n} \\ &\textbf{where:}\\ &A_n=\text{the price of an asset at period } n\\ &n=\text{the number of total periods}\\ \end{aligned} ​SMA=nA1​+A2​+...+An​​where:An​=the price of an asset at period nn=the number of total periods​
+$$SMA = \frac{A_1 + A_2 + . . . + A_n}{n}$$ 
+where: 
+- $A_n = \text{the price of an asset at period n}$
+- $n = \text{the number of total periods}$
 
 For example, this is how you would calculate the simple moving average of a security with the following closing prices over a 15-day period.
 
@@ -32,7 +35,7 @@ Week Three (5 days): 28, 30, 27, 29, 28
 
 392 / 15 = 26.13
 
-The 15-day SMA for this security is $26.13.
+The 15-day SMA for this security is \$26.13.
 
 A 10-day moving average considers only the last 10 [closing prices](https://www.investopedia.com/terms/c/closingprice.asp). Each market day, the newest closing price replaces the oldest, updating the average. A 50-day moving average would use 50 days worth of data to compute the average price on a rolling basis.
 
@@ -74,7 +77,7 @@ Traders use simple moving averages (SMAs) to chart the long-term trajectory of a
 
 ## How Do You Calculate a Simple Moving Average?
 
-To calculate a simple moving average, the sum of the prices within a time period is divided by the number of prices. For instance, consider shares of Tesla closed at $10, $11, $12, $11, $14 over a five day period. The simple moving average of Tesla’s shares for this 5-day period would equal $10 + $11 + $12 + $11 + $14 divided by 5, which equals $11.6.
+To calculate a simple moving average, the sum of the prices within a time period is divided by the number of prices. For instance, consider shares of Tesla closed at \$10, \$11, \$12, \$11, \$14 over a five day period. The simple moving average of Tesla’s shares for this 5-day period would equal \$10 + \$11 + \$12 + \$11 + \$14 divided by 5, which equals \$11.6.
 
 ## What Is the Difference Between a Simple Moving Average and an Exponential Moving Average?
 

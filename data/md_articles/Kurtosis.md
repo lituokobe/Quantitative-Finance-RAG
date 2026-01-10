@@ -29,11 +29,11 @@ There are several different methods for calculating kurtosis.
 
 The simplest way to calculate is to use the Excel or Google Sheets formula. Assume you have the following sample data: 4, 5, 6, 3, 4, 5, 6, 7, 5, and 8 residing in cells A1 through A10 on your spreadsheet. The spreadsheets use this formula for calculating kurtosis:
 
-n ( n + 1 ) ( n − 1 ) ( n − 2 ) ( n − 3 ) × ( ∑ x i − x ˉ s )4 − 3 ( n − 1 )2 ( n − 2 ) ( n − 3 ) \begin{aligned}& \frac { n ( n + 1 ) }{ (n - 1)(n - 2)(n - 3) } \times \Big ( \sum \frac { x_i - \bar{x} }{ s } \Big ) ^ 4 - \frac { 3 (n - 1) ^ 2 }{ (n - 2)(n - 3)} \\\end{aligned} ​(n−1)(n−2)(n−3)n(n+1)​×(∑sxi​−xˉ​)4−(n−2)(n−3)3(n−1)2​​
+$$ { n * ( n + 1 ) }{(n - 1)*(n - 2)*(n - 3)} * ( \sum \frac { x_i - \bar{x} }{ s } ) ^ 4 - \frac { 3 * (n - 1) ^ 2 }{(n - 2)*(n - 3)}$$
 
 We’ll use the following formula in Google Sheets which calculates it for us, assuming the data resides in cells A1 through A10:
 
-= KURT(A1:A10) \begin{aligned}&= \text{KURT(A1:A10)} \\\end{aligned} ​=KURT(A1:A10)​
+$$ = \text{KURT(A1:A10)}$$ 
 
 The result is a kurtosis of -0.1518, indicating that the curve has lighter tails and is platykurtic.
 
@@ -47,33 +47,54 @@ It’s important to note that a sample size should be much larger than this. We'
 
 You must first calculate the mean. Add up the numbers and divide by six to get 42. Next use the following formulas to calculate two sums: s2 (the square of the deviation from the mean) and s4 (the square of the deviation from the mean squared). Note that these numbers do not represent standard deviation. They represent the variance of each data point.
 
-s2 = ∑ ( y i − y ˉ )2 s4 = ∑ ( y i − y ˉ )4 where: y i = ith variable of the sample y ˉ = Mean of the sample \begin{aligned}&\text{s2} = \sum ( y_i - \bar{y} ) ^ 2 \\&\text{s4} = \sum ( y_i - \bar{y} ) ^ 4 \\&\textbf{where:} \\&y_i = \text{ith variable of the sample} \\&\bar{y} = \text{Mean of the sample} \\\end{aligned} ​s2=∑(yi​−yˉ​)2s4=∑(yi​−yˉ​)4where:yi​=ith variable of the sampleyˉ​=Mean of the sample​
+$$\text{s2} = \sum ( y_i - \bar{y} ) ^ 2 $$
+$$\text{s4} = \sum ( y_i - \bar{y} ) ^ 4 $$
+where:
+- $y_i = \text{ith variable of the sample}$
+- $\bar{y} = \text{Mean of the sample}$
 
 Use each variable, subtract the mean, and then square the result to get s2. Add all the results together:
 
-( 27 − 42 )2 = ( − 15 )2 = 225 ( 13 − 42 )2 = ( − 29 )2 = 841 ( 17 − 42 )2 = ( − 25 )2 = 625 ( 57 − 42 )2 = ( 15 )2 = 225 ( 113 − 42 )2 = ( 71 )2 = 5 , 041 ( 25 − 42 )2 = ( − 17 )2 = 289 225 + 841 + 625 + 225 + 5 , 041 + 289 = 7 , 246 \begin{aligned}&(27 - 42) ^ 2 = (-15) ^ 2 = 225 \\&(13 - 42) ^ 2 = (-29) ^ 2 = 841 \\&(17 - 42) ^ 2 = (-25) ^ 2 = 625 \\&(57 - 42) ^ 2 = (15) ^ 2 = 225 \\&(113 - 42) ^ 2 = (71) ^ 2 = 5,041 \\&(25 - 42) ^ 2 = (-17) ^ 2 = 289 \\&225 + 841 + 625 + 225 + 5,041 + 289 = 7,246 \\\end{aligned} ​(27−42)2=(−15)2=225(13−42)2=(−29)2=841(17−42)2=(−25)2=625(57−42)2=(15)2=225(113−42)2=(71)2=5,041(25−42)2=(−17)2=289225+841+625+225+5,041+289=7,246​
+$( 27 − 42 )^2 = ( − 15 )^2 = 225$  
+$( 13 − 42 )^2 = ( − 29 )^2 = 841$  
+$( 17 − 42 )^2 = ( − 25 )^2 = 625$  
+$( 57 − 42 )^2 = ( 15 )^2 = 225$  
+$( 113 − 42 )^2 = ( 71 )^2 = 5041$ 
+$( 25 − 42 )^2 = ( − 17 )^2 = 289$  
+$225 + 841 + 625 + 225 + 5 041 + 289 = 7246$
 
 Use each variable, subtract the mean, and raise the result to the fourth power to get s4. Add all the results together:
 
-( 27 − 42 )4 = ( − 15 )4 = 50 , 625 ( 13 − 42 )4 = ( − 29 )4 = 707 , 281 ( 17 − 42 )4 = ( − 25 )4 = 390 , 625 ( 57 − 42 )4 = ( 15 )4 = 50 , 625 ( 113 − 42 )4 = ( 71 )4 = 25 , 411 , 681 ( 25 − 42 )4 = ( − 17 )4 = 83 , 521 50 , 625 + 707 , 281 + 390 , 625 + 50 , 625 + 25 , 411 , 681 + 83 , 521 = 26 , 694 , 358 \begin{aligned}&(27 - 42) ^ 4 = (-15) ^ 4 = 50,625 \\&(13 - 42) ^ 4 = (-29) ^ 4 = 707,281 \\&(17 - 42) ^ 4 = (-25) ^ 4 = 390,625 \\&(57 - 42) ^ 4 = (15) ^ 4 = 50,625 \\&(113 - 42) ^ 4 = (71) ^ 4 = 25,411,681 \\&(25 - 42) ^ 4 = (-17) ^ 4 = 83,521 \\&50,625 + 707,281 + 390,625 + 50,625 + 25,411,681 \\&+ 83,521 = 26,694,358 \\\end{aligned} ​(27−42)4=(−15)4=50,625(13−42)4=(−29)4=707,281(17−42)4=(−25)4=390,625(57−42)4=(15)4=50,625(113−42)4=(71)4=25,411,681(25−42)4=(−17)4=83,52150,625+707,281+390,625+50,625+25,411,681+83,521=26,694,358​
+$(27 - 42) ^ 4 = (-15) ^ 4 = 50625$  
+$(13 - 42) ^ 4 = (-29) ^ 4 = 707281$  
+$(17 - 42) ^ 4 = (-25) ^ 4 = 390625$  
+$(57 - 42) ^ 4 = (15) ^ 4 = 50625$  
+$(113 - 42) ^ 4 = (71) ^ 4 = 25411681$  
+$(25 - 42) ^ 4 = (-17) ^ 4 = 83521$  
+$50625 + 707281 + 390625 + 50625 + 25411681 + 83521 = 26694358$
 
 Our sums are therefore:
 
-s2 = 7 , 246 s4 = 26 , 694 , 358 \begin{aligned}&\text{s2} = 7,246 \\&\text{s4} = 26,694,358 \\\end{aligned} ​s2=7,246s4=26,694,358​
+$\text{s2} = 7246$  
+$\text{s4} = 26694358$
 
 Now calculate m2 and m4, the second and fourth moments of the kurtosis formula:
 
-m2 = s2 n = 7 , 246 6 = 1 , 207.67 \begin{aligned}\text{m2} &= \frac { \text{s2} }{ n } \\&= \frac { 7,246 }{ 6} \\& = 1,207.67 \\\end{aligned} m2​=ns2​=67,246​=1,207.67​
+$\text{m2} = \frac { \text{s2} }{ n } = \frac { 7246 }{6} = 1207.67$  
 
-m4 = s4 n = 26 , 694 , 358 6 = 4 , 449 , 059.67 \begin{aligned}\text{m4} &= \frac { \text{s4} }{ n } \\&= \frac { 26,694,358 }{ 6} \\& = 4,449,059.67 \\\end{aligned} m4​=ns4​=626,694,358​=4,449,059.67​
+$\text{m4} \frac { \text{s4} }{ n } = \frac { 26694358 }{6} = 4449059.67$
 
 We can now calculate kurtosis using a formula found in many statistics textbooks that assumes a perfectly normal distribution with a kurtosis of zero:
 
-k = m4 m22 − 3 where: k = Kurtosis m4 = Fourth moment m2 = Second moment \begin{aligned}&k = \frac { \text{m4} }{ \text{m2} ^ 2 } - 3 \\&\textbf{where:} \\&k = \text{Kurtosis} \\&\text{m4} = \text{Fourth moment} \\&\text{m2} = \text{Second moment} \\\end{aligned} ​k=m22m4​−3where:k=Kurtosism4=Fourth momentm2=Second moment​
+$$k = \frac { \text{m4} }{ \text{m2} ^ 2 } - 3 $$
+where:
+- $k=\text{Kurtosis}$
+- $\text{m4}=\text{Fourth moment}$
+- $\text{m2}=\text{Second moment}$
 
 The kurtosis for the sample variables is therefore:
 
-4 , 449 , 059.67 1 , 458 , 466.83 − 3 = . 05 \begin{aligned}&\frac { 4,449,059.67 }{ 1,458,466.83 } - 3 = .05 \\\end{aligned} ​1,458,466.834,449,059.67​−3=.05​
+$\frac { 4449059.67 }{ 1458466.83 } - 3 = .05$
 
 ## Types of Kurtosis
 

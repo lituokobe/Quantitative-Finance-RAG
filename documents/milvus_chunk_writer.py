@@ -74,6 +74,14 @@ class MilvusChunkWriter:
     # --------------------------------------------------
     # Collection + schema
     # --------------------------------------------------
+    def _wait_for_collection(self, timeout: int = 30):
+        start = time.time()
+        while time.time() - start < timeout:
+            if utility.has_collection(self.collection_name, using=self.alias):
+                return
+            time.sleep(0.2)
+        raise TimeoutError(f"Collection {self.collection_name} not found after {timeout}s")
+
     def create_collection(self, recreate: bool = False):
         """
         Ensure collection exists.
@@ -108,6 +116,10 @@ class MilvusChunkWriter:
             fields=fields,
             description="Finance RAG chunks (dense vector)",
         )
+
+        Collection(name=self.collection_name, schema=schema, using=self.alias)
+
+        self._wait_for_collection()
 
         self._collection = Collection(
             name=self.collection_name,
@@ -167,7 +179,7 @@ class MilvusChunkWriter:
 
         # ---- embeddings (batch) ----
         embeddings = self.embedding_fn(texts)
-        if not embeddings:
+        if embeddings is None or len(embeddings) == 0:
             raise ValueError("Embedding function returned empty list")
 
         if len(embeddings) != len(texts):

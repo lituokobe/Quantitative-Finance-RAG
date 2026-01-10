@@ -30,7 +30,7 @@ For example, a volatile stock has a high standard deviation, meaning that its pr
 
 Standard deviation can also be used to predict performance trends. In investing, for example, an index fund is designed to replicate a [benchmark](https://www.investopedia.com/terms/b/benchmark.asp) index. This means that the fund should have a low standard deviation from the value of the benchmark.
 
-On the other hand, aggressive [growth funds](https://www.investopedia.com/terms/g/growthfund.asp) often have a high standard deviation from relative stock indices. This is because their portfolio managers make aggressive bets to generate higher-than-average returns.
+On the other hand, aggressive growth funds often have a high standard deviation from relative stock indices. This is because their portfolio managers make aggressive bets to generate higher-than-average returns.
 
 This higher standard deviation correlates with the level of risk investors can expect from that index.
 
@@ -45,6 +45,12 @@ Standard deviation calculates all uncertainty as risk, even when it’s in the i
 ## Standard Deviation Formula
 
 Standard deviation is calculated by taking the square root of a value derived from comparing data points to a collective mean of a population. The formula is:
+
+$$\text{Standard Deviation} = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}}$$
+where:
+- $x_i = \text{ =Value of the i-th point in the data set}$
+- $\bar{x} = \text{The mean value of the data set}$
+- $n = \text{The number of data points in the data set}$
 
 ### Calculating Standard Deviation
 
@@ -67,7 +73,7 @@ Standard deviation is calculated as follows:
 
 Variance and standard deviation are related statistics. Variance is derived by taking the mean of the data points, subtracting the mean from each data point individually, squaring each of these results, and then taking another mean of these squares. Standard deviation is the square root of the variance.
 
-Variance helps determine the data's spread size when compared to the [mean](https://www.investopedia.com/terms/m/mean.asp) value. As the variance gets bigger, more variation in data values occurs, and there may be a larger gap between one data value and another.
+Variance helps determine the data's spread size when compared to the mean value. As the variance gets bigger, more variation in data values occurs, and there may be a larger gap between one data value and another.
 
 If the data values are all close together, the variance will be smaller. However, this is more difficult to grasp than the standard deviation because variances represent a squared result that may not be meaningfully expressed on the same graph as the original dataset.
 
@@ -123,27 +129,29 @@ For example, standard deviation can assess critical path analysis and earned val
 
 Like any statistical measurement for analyzing data, standard deviation has both strengths and limitations that should be considered.
 
+**Strengths:**
 - Commonly used
 - Includes all data points
 - Can combine datasets
 - Additional computational uses
 
+**Limitations:**
 - Doesn't measure dispersion
 - Impact of outliers
 - Somewhat difficult to calculate manually
 
 ### Strengths
 
-- Commonly used: Standard deviation is a commonly used measure of dispersion. Many analysts are probably more familiar with standard deviation compared to other statistical calculations of data deviation. For this reason, the standard deviation is used by a variety of professions, from investors to actuaries.
-- Includes all data points: Standard deviation is all-inclusive of observations. Each data point is included in the analysis. Other measurements of deviation such as range only measure the most dispersed points without consideration for the points in between. Therefore, standard deviation is often considered a more robust, accurate measurement compared to other observations.
-- Can combine datasets: The standard deviation of two data sets can be combined using a specific combined standard deviation formula. There are no similar formulas for other dispersion observation measurements in statistics.
-- Additional computational uses: Unlike other means of observation, the standard deviation can be used in additional algebraic computations, meaning there's some versatility to standard deviation.
+- **Commonly used:** Standard deviation is a commonly used measure of dispersion. Many analysts are probably more familiar with standard deviation compared to other statistical calculations of data deviation. For this reason, the standard deviation is used by a variety of professions, from investors to actuaries.
+- **Includes all data points:** Standard deviation is all-inclusive of observations. Each data point is included in the analysis. Other measurements of deviation such as range only measure the most dispersed points without consideration for the points in between. Therefore, standard deviation is often considered a more robust, accurate measurement compared to other observations.
+- **Can combine datasets:** The standard deviation of two data sets can be combined using a specific combined standard deviation formula. There are no similar formulas for other dispersion observation measurements in statistics.
+- **Additional computational uses:** Unlike other means of observation, the standard deviation can be used in additional algebraic computations, meaning there's some versatility to standard deviation.
 
 ### Limitations
 
-- Doesn't measure dispersion: The standard deviation does not actually measure how far a data point is from the mean. Instead, it compares the square of the differences, a subtle but notable difference from actual dispersion from the mean.
-- Impact of outliers: Outliers have a heavier impact on standard deviation. This is especially true considering that the difference from the mean is squared, resulting in an even larger quantity compared to other data points. Therefore, be mindful that standard observation naturally gives more weight to extreme values.
-- Somewhat difficult to calculate manually: As opposed to other measurements of dispersion such as range (the highest value minus the lowest value), standard deviation requires several cumbersome steps and is more likely to incur computational errors compared to easier measurements. This hurdle can be circumnavigated through the use of a Bloomberg Terminal.
+- **Doesn't measure dispersion:** The standard deviation does not actually measure how far a data point is from the mean. Instead, it compares the square of the differences, a subtle but notable difference from actual dispersion from the mean.
+- **Impact of outliers:** Outliers have a heavier impact on standard deviation. This is especially true considering that the difference from the mean is squared, resulting in an even larger quantity compared to other data points. Therefore, be mindful that standard observation naturally gives more weight to extreme values.
+- **Somewhat difficult to calculate manually:** As opposed to other measurements of dispersion such as range (the highest value minus the lowest value), standard deviation requires several cumbersome steps and is more likely to incur computational errors compared to easier measurements. This hurdle can be circumnavigated through the use of a Bloomberg Terminal.
 
 ### Tip
 
@@ -151,15 +159,22 @@ Use Excel to calculate standard deviation. After entering your data, use the STD
 
 ## Examples of Standard Deviation
 
-If you have the data points 5, 7, 3, and 7 and want to find the standard deviation, start by adding them together:
+If you have the data points 5, 7, 3, and 7 and want to find the standard deviation, start by adding them together:  
+5 + 7 + 3 + 7 = 22
 
-Find the mean of the dataset by dividing the total by the number of data points, 4 (per the formula above, n).
+Find the mean of the dataset by dividing the total by the number of data points, 4 (per the formula above, n).  
+22 / 4 = 5.5
 
 This gives you the mean of 5.5 (x̄).
 
-To find the variance, subtract the mean value from each data point, then square each of those values:
+To find the variance, subtract the mean value from each data point, then square each of those values:  
+5 - 5.5 = -0.5 x -0.5 = 0.25  
+7 - 5.5 = 1.5 x 1.5 = 2.25  
+3 - 5.5 = -2.5 x -2.5 = 6.25  
+7 - 5.5 = 1.5 x 1.5 = 2.25
 
-Add the square values, then divide the result by n-1 to give the variance.
+Add the square values, then divide the result by n-1 to give the variance.  
+(0.25 + 2.25 + 6.25 + 2.25) / (4-1) = 3.67
 
 Take the square root of the 3.67 to find the standard deviation, which is approximately 1.915.
 

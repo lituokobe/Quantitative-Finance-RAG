@@ -20,7 +20,7 @@ Discounted cash flow analysis finds the [present value](https://www.investopedia
 
 If it is, the investment will be profitable and is worth considering. If it is not, the investment isn't a good idea.
 
-DCF analysis is used to estimate the money an investor might receive from an investment, adjusted for the [time value of money](https://www.investopedia.com/terms/t/timevalueofmoney.asp). The time value of money assumes that a dollar that you have today is worth more than a dollar that you receive tomorrow because it can be invested. As such, a DCF analysis can be useful in any situation where a person is paying money in the present with expectations of receiving more money in the future. For example, assuming a 5% annual interest rate, $1 in a savings account will be worth $1.05 in a year. Similarly, if a $1 payment is delayed for a year, its present value is 95 cents because you cannot transfer it to your savings account to earn interest.
+DCF analysis is used to estimate the money an investor might receive from an investment, adjusted for the [time value of money](https://www.investopedia.com/terms/t/timevalueofmoney.asp). The time value of money assumes that a dollar that you have today is worth more than a dollar that you receive tomorrow because it can be invested. As such, a DCF analysis can be useful in any situation where a person is paying money in the present with expectations of receiving more money in the future. For example, assuming a 5% annual interest rate, \$1 in a savings account will be worth \$1.05 in a year. Similarly, if a \$1 payment is delayed for a year, its present value is 95 cents because you cannot transfer it to your savings account to earn interest.
 
 To conduct a DCF analysis, an investor must make estimates about future cash flows and the end value of the investment, equipment, or other assets.
 
@@ -36,7 +36,12 @@ For DCF analysis to be useful, estimates used in the calculation must be as soli
 
 The formula for DCF is:
 
-D C F = C F 1 ( 1 + r )1 + C F 2 ( 1 + r )2 + C F n ( 1 + r )n where: C F 1 = The cash flow for year one C F 2 = The cash flow for year two C F n = The cash flow for additional years r = The discount rate \begin{aligned}&DCF = \frac{ CF_1 }{ ( 1 + r ) ^ 1 } + \frac{ CF_2 }{ ( 1 + r ) ^ 2 } + \frac{ CF_n }{ ( 1 + r ) ^ n } \\&\textbf{where:} \\&CF_1 = \text{The cash flow for year one} \\&CF_2 = \text{The cash flow for year two} \\&CF_n = \text{The cash flow for additional years} \\&r = \text{The discount rate} \\\end{aligned} ​DCF=(1+r)1CF1​​+(1+r)2CF2​​+(1+r)nCFn​​where:CF1​=The cash flow for year oneCF2​=The cash flow for year twoCFn​=The cash flow for additional yearsr=The discount rate​
+$$DCF = \frac{CF_1}{(1 + r)^1} + \frac{CF_2}{(1 + r)^2} + ... + \frac{CF_n}{(1 + r)^n}$$
+where:
+- $CF_1 = \text{The cash flow for year one}$
+- $CF_2 = \text{The cash flow for year two}$
+- $CF_n = \text{The cash flow for additional years}$
+- $r = \text{The discount rate}$
 
 ### Important
 
@@ -48,15 +53,35 @@ When a company analyzes whether it should invest in a certain project or purchas
 
 For example, say that your company wants to launch a project. The company's WACC is 5%. That means that you will use 5% as your discount rate.
 
-The initial investment is $11 million, and the project will last for five years, with the following estimated cash flows per year.
+The initial investment is \$11 million, and the project will last for five years, with the following estimated cash flows per year.
+
+**Cash Flow**
+
+| Year | Cash Flow    |
+|------|--------------|
+| 1    | \$1 million  |
+| 2    | \$1 million  |
+| 3    | \$4 million  |
+| 4    | \$4 million  |
+| 5    | \$6 million  |
 
 Using the DCF formula, the calculated discounted cash flows for the project are as follows.
 
-Adding up all of the DCF results in a value of $13,306,727. By subtracting the initial investment of $11 million from that value, we get a [net present value](https://www.investopedia.com/terms/n/npv.asp) (NPV) of $2,306,727.
+**Discounted Cash Flow**
 
-The positive number of $2,306,727 indicates that the project could generate a return higher than the initial cost—a positive return on the investment. Therefore, the project may be worth making.
+| Year | Cash Flow    | Discounted Cash Flow (nearest $)  |
+|------|--------------|-----------------------------------|
+| 1    | \$1 million  | \$952,381                         |
+| 2    | \$1 million  | \$907,029                         |
+| 3    | \$4 million  | \$3,455,350                       |
+| 4    | \$4 million  | \$3,290,810                       |
+| 5    | \$6 million  | \$4,701,157                       |
 
-If the project had cost $14 million, the NPV would have been -$693,272. That would indicate that the project cost would be more than the projected return. Thus, it might not be worth making.
+Adding up all of the DCF results in a value of \$13,306,727. By subtracting the initial investment of \$11 million from that value, we get a [net present value](https://www.investopedia.com/terms/n/npv.asp) (NPV) of \$2,306,727.
+
+The positive number of \$2,306,727 indicates that the project could generate a return higher than the initial cost—a positive return on the investment. Therefore, the project may be worth making.
+
+If the project had cost \$14 million, the NPV would have been -\$693,272. That would indicate that the project cost would be more than the projected return. Thus, it might not be worth making.
 
 ### Tip
 
@@ -66,10 +91,12 @@ Dividend discount models, such as the [Gordon Growth Model](https://www.investop
 
 Like any other form of financial analysis, there are advantages and disadvantages to using DCF analysis.
 
+**Advantages**
 - Investment evaluation
 - Applicable to variety of projects
 - Adjustable scenarios
 
+**Disadvantages**
 - Involves estimates
 - Unforeseen economic changes
 - Shouldn't be used in isolation
@@ -96,11 +123,11 @@ Calculating the DCF involves three basic steps. One, forecast the expected cash 
 
 ## What Is an Example of a DCF Calculation?
 
-You have a discount rate of 10% and an investment opportunity that would produce $100 per year for the following three years. Your goal is [to calculate the value today](https://www.investopedia.com/ask/answers/060915/what-are-differences-between-annuity-derivation-and-perpetuity-derivation-time-value-money.asp)—the present value—of this stream of future cash flows. Since money in the future is worth less than money today, you reduce the present value of each of these cash flows by your 10% discount rate. Specifically, the first year’s cash flow is worth $90.91 today, the second year’s cash flow is worth $82.64 today, and the third year’s cash flow is worth $75.13 today. Adding up these three cash flows, you conclude that the DCF of the investment is $248.68.
+You have a discount rate of 10% and an investment opportunity that would produce \$100 per year for the following three years. Your goal is [to calculate the value today](https://www.investopedia.com/ask/answers/060915/what-are-differences-between-annuity-derivation-and-perpetuity-derivation-time-value-money.asp)—the present value—of this stream of future cash flows. Since money in the future is worth less than money today, you reduce the present value of each of these cash flows by your 10% discount rate. Specifically, the first year’s cash flow is worth \$90.91 today, the second year’s cash flow is worth \$82.64 today, and the third year’s cash flow is worth \$75.13 today. Adding up these three cash flows, you conclude that the DCF of the investment is \$248.68.
 
 ## Is Discounted Cash Flow the Same As Net Present Value (NPV)?
 
-Discounted cash flow and net present value are not the same, though the two are closely related. NPV adds a fourth step to the DCF calculation process. After forecasting the expected cash flows, selecting a discount rate, discounting those cash flows, and totaling them, NPV then deducts the upfront cost of the investment from the DCF. For instance, if the cost of purchasing the investment in our above example were $200, then the NPV of that investment would be $248.68 minus $200, or $48.68.
+Discounted cash flow and net present value are not the same, though the two are closely related. NPV adds a fourth step to the DCF calculation process. After forecasting the expected cash flows, selecting a discount rate, discounting those cash flows, and totaling them, NPV then deducts the upfront cost of the investment from the DCF. For instance, if the cost of purchasing the investment in our above example were \$200, then the NPV of that investment would be \$248.68 minus \$200, or \$48.68.
 
 ## The Bottom Line
 

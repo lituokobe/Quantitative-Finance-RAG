@@ -14,25 +14,26 @@ The Exponential Moving Average (EMA) is a refined [moving average (MA)](https://
 
 ## Formula for Exponential Moving Average (EMA)
 
-﻿ E M A Today = ( Value Today ∗ ( Smoothing 1 + Days ) ) where: \begin{aligned} &\begin{aligned} EMA_{\text{Today}}=&\left(\text{Value}_{\text{Today}}\ast\left(\frac{\text{Smoothing}}{1+\text{Days}}\right)\right)\\ &+EMA_{\text{Yesterday}}\ast\left(1-\left(\frac{\text{Smoothing}}{1+\text{Days}}\right)\right)\end{aligned}\\ &\textbf{where:}\\ &EMA=\text{Exponential moving average} \end{aligned} ​EMAToday​=​(ValueToday​∗(1+DaysSmoothing​))​where:​﻿
+$$\text{EMA}_{\text{Today}} = (\text{Value}_{\text{Today}} * \frac{\text{Smoothing}}{1 + \text{Days}}) + \text{EMA}_{\text{Yesterday}} * (1 - \frac{\text{Smoothing}}{1 + \text{Days}})$$
+where:
+- $\text{EMA} = \text{Exponential Moving Average}$
 
 While there are many possible choices for the smoothing factor, the most common choice is:
-
 - Smoothing = 2
 
 That gives the most recent observation more weight. If the smoothing factor is increased, more recent observations have more influence on the EMA.
 
 ## How to Calculate the Exponential Moving Average
 
-[Calculating the EMA](https://www.investopedia.com/ask/answers/122314/what-exponential-moving-average-ema-formula-and-how-ema-calculated.asp) needs one more observation than the SMA. If you choose 20 days for your EMA, wait until the 20th day to get the SMA. Then, use that SMA as the first EMA on the 21st day.
+Calculating the EMA needs one more observation than the SMA. If you choose 20 days for your EMA, wait until the 20th day to get the SMA. Then, use that SMA as the first EMA on the 21st day.
 
 Calculating the SMA is straightforward. It involves adding up the stock's closing prices over a period and then dividing by the number of observations. For example, a 20-day SMA is just the sum of the closing prices for the past 20 trading days, divided by 20.
 
-Next, you must calculate the multiplier for smoothing (weighting) the EMA, which typically follows the formula: [2 ÷ (number of observations + 1)]. For a 20-day moving average, the multiplier would be [2/(20+1)]= 0.0952.
+Next, you must calculate the multiplier for smoothing (weighting) the EMA, which typically follows the formula: $2 / (\text{number of observations} + 1)$. For a 20-day moving average, the multiplier would be [2/(20+1)]= 0.0952.
 
 Use this formula to calculate the current EMA:
 
-- EMA = Closing price x multiplier + EMA (previous day) x (1-multiplier)
+- $$\text{EMA} = \text{Closing price} * \text{multiplier} + \text{EMA (previous day)} * (1 - \text{multiplier})$$
 
 EMAs give more weight to recent prices, while SMAs give equal weight to all values. Shorter-period EMAs give more weight to recent prices than longer-period EMAs. For example, an 18.18% multiplier is applied to the most recent price data for a 10-period EMA, while the weight is only 9.52% for a 20-period EMA.
 

@@ -10,7 +10,7 @@
 
 ## What Is the Relative Strength Index (RSI)?
 
-The relative strength index (RSI) is a [momentum indicator](https://www.investopedia.com/investing/momentum-and-relative-strength-index/) used in technical analysis. RSI measures the speed and magnitude of a security's recent price changes to detect overbought or oversold conditions in the price of that security. The RSI is displayed as an [oscillator](https://www.investopedia.com/terms/o/oscillator.asp) (a line graph) on a scale of 0 to 100.
+The relative strength index (RSI) is a momentum indicator used in technical analysis. RSI measures the speed and magnitude of a security's recent price changes to detect overbought or oversold conditions in the price of that security. The RSI is displayed as an [oscillator](https://www.investopedia.com/terms/o/oscillator.asp) (a line graph) on a scale of 0 to 100.
 
 Traditionally, an RSI reading of 70 or above indicates an overbought condition. A reading of 30 or below indicates an oversold condition. In addition to identifying overbought and oversold securities, the RSI can also indicate securities that may be primed for a trend reversal or a corrective pullback in price.
 
@@ -18,23 +18,23 @@ The indicator was developed by J. Welles Wilder Jr. and introduced in his 1978 b
 
 ## How the RSI Works
 
-[As a momentum indicator](https://www.investopedia.com/ask/answers/012915/what-are-best-technical-indicators-complement-relative-strength-index-rsi.asp), the RSI compares a security's strength on days when prices go up to its strength on days when prices drop. Comparing this result to price movement can help traders predict how a security might perform in the future. Traders can make better trading decisions when they use the RSI [with other technical indicators](https://www.investopedia.com/ask/answers/121014/how-do-i-create-trading-strategy-bollinger-bands-and-relative-strength-indicator-rsi.asp).
+As a momentum indicator, the RSI compares a security's strength on days when prices go up to its strength on days when prices drop. Comparing this result to price movement can help traders predict how a security might perform in the future. Traders can make better trading decisions when they use the RSI [with other technical indicators](https://www.investopedia.com/ask/answers/121014/how-do-i-create-trading-strategy-bollinger-bands-and-relative-strength-indicator-rsi.asp).
 
 ### Calculating RSI
 
 The RSI uses a two-part calculation that starts with the following formula:
 
-R S I step one = 100 − [ 100 1 + Average gain Average loss ] RSI_{\text{step one}} = 100- \left[ \frac{100}{ 1 + \frac{\text{Average gain}}{\text{Average loss} }} \right] RSIstep one​=100−[1+Average lossAverage gain​100​]
+$$RSI_{\text{step one}} = 100- [ \frac{100}{ 1 + \frac{\text{Average gain}}{\text{Average loss} }}]$$
 
 The average gain or loss used in this calculation is the average percentage gain or loss during a look-back period. The formula uses a positive value for the average loss. Periods with price losses are counted as zero in the calculations of average gain. Periods with price increases are counted as zero in the calculations of average loss. The standard number of periods used to calculate the initial RSI value is 14. For example, imagine the market closed higher seven out of the past 14 days with an initial average gain of 1%. The remaining seven days all closed lower with an initial average loss of −0.8%.
 
 The first calculation for the RSI would look like the following expanded calculation:
 
-55.55 = 100 − [ 100 1 + ( 1 % 14 ) ( 0.8 % 14 ) ] 55.55 = 100 - \left [ \frac {100 }{ 1 + \frac{ \left ( \frac{ 1\% }{ 14 } \right) }{ \left( \frac{ 0.8\% }{ 14 } \right)} } \right ] 55.55=100−​1+(140.8%​)(141%​)​100​​
+$$55.55 = 100 - [ \frac {100 }{ 1 + \frac{ ( \frac{ 1\% }{ 14 }) }{( \frac{ 0.8\% }{ 14 })} }]$$
 
 Once there are 14 periods of data available, the second calculation can be done. Its purpose is to smooth the results so that the RSI only nears 100 or zero in a strongly [trending market](https://www.investopedia.com/terms/t/trending-market.asp).
 
-R S I step two = 100 − [ 100 1 + ( Previous Average Gain × 13 ) + Current Gain ( ( Previous Average Loss × 13 ) + Current Loss ) ] RSI_{\text{step two}} = 100 - \left [ \frac{ 100 }{ 1 + \frac{ \left ( \text{Previous Average Gain} \times 13 \right ) \ + \ \text{Current Gain} }{ \left ( \left ( \text{Previous Average Loss} \times 13 \right ) \ + \ \text{Current Loss} \right ) } } \right ] RSIstep two​=100−[1+((Previous Average Loss×13) + Current Loss)(Previous Average Gain×13) + Current Gain​100​]
+$$RSI_{\text{step two}} = 100 - [ \frac{ 100 }{ 1 + \frac{\text{Previous Average Gain} * 13 + \text{Current Gain}}{\text{Previous Average Loss} * 13 + \text{Current Loss}}}]$$
 
 ### Plotting RSI
 

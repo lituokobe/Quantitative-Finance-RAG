@@ -2,11 +2,30 @@ from langchain_classic.agents import create_tool_calling_agent, AgentExecutor
 from langchain_core.chat_history import BaseChatMessageHistory, InMemoryChatMessageHistory
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables import RunnableWithMessageHistory
-from config.rag_config import SYSTEM_PROMPT
+# from config.rag_config import SYSTEM_PROMPT
 from models.models import agent_llm
 from tools.retriever_tools import retriever_tool
+from utils.pretty_print import pretty_print
 
 # TODO: Build naive RAG agent with simple retriever tool call
+SYSTEM_PROMPT = """ 
+You are a quantitative finance assistant. 
+You MUST call the retriever tool for ANY question related to: 
+- quantitative finance 
+- derivatives 
+- option pricing 
+- stochastic calculus 
+- machine learning for asset pricing 
+- financial mathematics 
+- risk management 
+- portfolio theory 
+- econometrics 
+If the user asks ANYTHING in these domains, DO NOT answer directly. 
+Instead, ALWAYS call the retriever tool with the user query. 
+If the question is unrelated to quantitative finance, 
+politely decline and explain that you only answer quantitative finance questions. 
+"""
+
 # prompt template
 prompt = ChatPromptTemplate.from_messages([
     ("system", SYSTEM_PROMPT),
@@ -24,7 +43,8 @@ naive_rag_planner = create_tool_calling_agent( # Only plans to call the tool if 
 naive_rag_executor = AgentExecutor( # plan to call the tool and actually call the tool if needed
     agent=naive_rag_planner,
     tools=[retriever_tool],
-    handle_parsing_errors=True # When tool calls fail, LLM is prompted to retry instead of crashes
+    handle_parsing_errors=True, # When tool calls fail, LLM is prompted to retry instead of crashes
+    return_intermediate_steps=True
 )
 
 """
@@ -53,17 +73,13 @@ if __name__ == "__main__":
     user_question = 'What is European call option?'
     print(f"User question: {user_question}")
 
-    res1 = naive_rag_planner.invoke({'input': user_question})
-    print(f"Planner response: {res1}")
-    print("-"*10)
+    res1 = naive_rag_executor.invoke({'input': user_question})
+    print(f"Executor response: {res1}")
+    pretty_print(res1)
 
-    res2 = naive_rag_executor.invoke({'input': user_question})
-    print(f"Executor response: {res2}")
-    print("-"*10)
-
-    rep3 = naive_rag_agent_w_history.invoke(
+    rep2 = naive_rag_agent_w_history.invoke(
         {'input': user_question},
         config = {"configurable":{"session_id":"test123"}}
     )
-    print(f"Agent with history response: {rep3}")
+    pretty_print(rep2)
 

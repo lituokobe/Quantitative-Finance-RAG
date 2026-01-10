@@ -14,11 +14,13 @@ The expected return is the profit or loss an investor expects from an investment
 
 ## Understanding the Theory Behind Expected Return
 
-Expected return calculations are crucial in business and financial theory, as seen in [modern portfolio theory (MPT)](https://www.investopedia.com/terms/m/modernportfoliotheory.asp) and the [Black-Scholes](https://www.investopedia.com/terms/b/blackscholes.asp) model.
+Expected return calculations are crucial in business and financial theory, as seen in modern portfolio theory (MPT) and the [Black-Scholes](https://www.investopedia.com/terms/b/blackscholes.asp) model.
 
 The expected return helps determine whether an investment has a positive or negative average net outcome.
 
 The expected return is calculated as the [expected value (EV)](https://www.investopedia.com/terms/e/expected-value.asp) of an investment's potential returns, shown by this formula:
+
+$$\text{Expected Return} = Σ (\text{Return}_i * \text{Probability}_i)$$
 
 Where "i" indicates each known return and its respective probability in the series
 
@@ -32,12 +34,14 @@ Systematic risk affects a market sector or the entire market, whereas unsystemat
 
 For individual investments or portfolios, a formal equation for expected return is:
 
+$$\overline{r}_a = r_f + \beta_a (r_m - r_f)$$
+
 Where:
 
-- ra = expected return;
-- rf = the risk-free rate of return;
-- β = the investment's beta; and
-- rm =the expected market return
+- $\overline{r}_a = \text{expected return}$
+- $r_f = \text{the risk-free rate of return}$
+- $\beta_a = \text{the investment's beta}$
+- $r_m = \text{the expected market return}$
 
 The expected return above the risk-free [rate of return (RoR)](https://www.investopedia.com/terms/r/rateofreturn.asp) depends on the investment's beta, or relative volatility compared to the broader market. The expected return and [standard deviation](https://www.investopedia.com/terms/s/standarddeviation.asp) are two statistical measures that can be used to analyze a portfolio.
 
@@ -54,17 +58,13 @@ Both of these investments have expected returns of 8%. However, when analyzing t
 
 Investment A has a standard deviation of 11.26% and investment B has a standard deviation of 2.28%. Standard deviation is a common statistical metric to measure an investment's historical volatility or risk.
 
-$$
-Standard Deviation = Square Root((Sum(Each data point - Mean)^2)/(Number of data points - 1))
-$$
+$$\text{Standard Deviation} = \sqrt{\frac{\sum_{i=1}^{n} (X_i - \overline{X})^2}{N - 1}}$$
 
 **Where:**
 
-*xi*=Value of the *ith*point in the data set
-
-*x*=The mean value of the data set
-
-*n*=The number of data points in the data set
+- $X_i = \text{Value of the *ith* point in the data set}$
+- $\overline{X} = \text{The mean value of the data set}$
+- $N = \text{The number of data points in the data set}$
 
 ## Practical Examples of Expected Return Calculations
 
@@ -78,7 +78,7 @@ For example, assume an investor has the following portfolio:
 
 With a total portfolio value of $1 million, the weights of Alphabet, Apple, and Amazon in the portfolio are 50%, 20%, and 30%, respectively. The expected return of the total portfolio is:
 
-(50% x 15%) + (20% x 6%) + (30% x 9%) = 11.4%
+(50% * 15%) + (20% * 6%) + (30% * 9%) = 11.4%
 
 ## How Is Expected Return Used in Finance?
 

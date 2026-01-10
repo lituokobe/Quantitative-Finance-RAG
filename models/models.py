@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from langchain_core.embeddings import Embeddings
-from langchain_openai import ChatOpenAI
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from sentence_transformers import SentenceTransformer
 from config.paths import ENV_PATH, QWEN3_EMBEDDING_PATH
 
@@ -34,9 +34,12 @@ class CustomEmbedding(Embeddings):
     def embed_query(self, text : str) ->list[float]:
         return self.embed_documents([text])[0]
     def embed_documents(self, texts : list[str]) -> list[list[float]]:
-        return self.embedding.encode(texts)
+        arr = self.embedding.encode(texts)
+        return arr.tolist()
 
 qwen3_embedding_model = CustomEmbedding(QWEN3_EMBEDDING_PATH)
+
+openai_embedding = OpenAIEmbeddings()
 
 if __name__ == "__main__":
     resp1 = evaluator_llm.invoke("How are you?")
@@ -45,6 +48,10 @@ if __name__ == "__main__":
     resp2 = agent_llm.invoke("How are you?")
     print(resp2.content)
 
-    embed = qwen3_embedding_model.embed_query("good")
-    print(embed)
-    print(len(embed))
+    embed1 = qwen3_embedding_model.embed_query("good")
+    print(embed1[:5])
+    print(len(embed1))
+
+    embed2 = openai_embedding.embed_query("good")
+    print(embed2[5])
+    print(len(embed2))

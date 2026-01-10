@@ -1,0 +1,16 @@
+2026-01-09 23:52:52,381 - SentenceTransformer - INFO: Use pytorch device_name: mps
+2026-01-09 23:52:52,381 - ingest_multiprocess - INFO: [Parser] Pushed batch of 2 chunks.
+2026-01-09 23:52:52,381 - SentenceTransformer - INFO: Load pretrained SentenceTransformer: /Users/lituokobe/Desktop/finance_knowledge_RAG/models/Qwen3-Embedding-0.6B
+2026-01-09 23:52:52,383 - ingest_multiprocess - INFO: [Parser] Pushed batch of 2 chunks.
+2026-01-09 23:52:52,384 - ingest_multiprocess - INFO: [Parser] Pushed batch of 2 chunks.
+2026-01-09 23:52:52,386 - ingest_multiprocess - INFO: [Parser] Pushed batch of 2 chunks.
+2026-01-09 23:52:52,387 - ingest_multiprocess - INFO: [Parser] Queue full, waiting...
+2026-01-09 23:53:01,571 - SentenceTransformer - INFO: 1 prompt is loaded, with the key: query
+2026-01-09 23:53:02,569 - ingest_multiprocess - INFO: [Parser] Pushed batch of 2 chunks.
+2026-01-09 23:53:02,574 - ingest_multiprocess - INFO: [Parser] Queue full, waiting...
+2026-01-09 23:53:08,960 - ingest_multiprocess - ERROR: [Writer] Error inserting batch: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2026-01-09 23:53:08,970 - ingest_multiprocess - INFO: [Parser] Pushed batch of 2 chunks.
+2026-01-09 23:53:08,978 - ingest_multiprocess - INFO: [Parser] Queue full, waiting...
+2026-01-09 23:53:16,753 - ingest_multiprocess - ERROR: [Writer] Error inserting batch: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2026-01-09 23:53:16,769 - ingest_multiprocess - INFO: [Parser] Pushed batch of 2 chunks.
+2026-01-09 23:53:16,844 - ingest_multiprocess - INFO: [Parser] Queue full, waiting...

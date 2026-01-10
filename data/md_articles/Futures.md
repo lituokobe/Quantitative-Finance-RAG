@@ -50,23 +50,23 @@ A futures contract allows a trader to [speculate](https://www.investopedia.com/t
 
 Investors can also take a short speculative position if they predict the price will fall. If the price declines, the trader will take an offsetting position to close the contract. The net difference would be settled at the expiration of the contract. An investor gains if the underlying asset’s price is below the contract price and loses if the current price is above the contract price.
 
-Futures trading can be quite risky. Suppose a trader chooses a futures contract on the S&P 500. The index is 5,000 points, and the futures contract is for delivery in three months. Each contract is $50 times the index level, so one is worth $250,000 (5,000 points × $50).
+Futures trading can be quite risky. Suppose a trader chooses a futures contract on the S&P 500. The index is 5,000 points, and the futures contract is for delivery in three months. Each contract is \$50 times the index level, so one is worth \$250,000 (5,000 points × \$50).
 
-Without leverage, traders would need $250k. Futures traders only need to post a [margin](https://www.investopedia.com/terms/m/margin.asp), a fraction of the contract’s total value. If the initial margin is 10% of the contract’s value, the trader deposits only $25,000 (10% of $250,000) to enter the futures contract. If the index falls by 10% to 4,500 points, the value of the futures contract decreases to $225,000 (4,500 points × $50). Traders face a loss of $25,000, which equals a 100% loss on the initial margin.
+Without leverage, traders would need \$250k. Futures traders only need to post a [margin](https://www.investopedia.com/terms/m/margin.asp), a fraction of the contract’s total value. If the initial margin is 10% of the contract’s value, the trader deposits only \$25,000 (10% of \$250,000) to enter the futures contract. If the index falls by 10% to 4,500 points, the value of the futures contract decreases to \$225,000 (4,500 points × \$50). Traders face a loss of \$25,000, which equals a 100% loss on the initial margin.
 
 ## Hedging
 
 Futures trading can [hedge](https://www.investopedia.com/terms/h/hedge.asp) the price moves of the underlying assets. The goal is to prevent losses from potentially unfavorable price changes rather than to speculate.
 
-Suppose a mutual fund manager oversees a portfolio valued at $100 million that tracks the S&P 500. Concerned about potential short-term market volatility, the fund manager hedges the portfolio against a possible market downturn using S&P 500 futures contracts.
+Suppose a mutual fund manager oversees a portfolio valued at \$100 million that tracks the S&P 500. Concerned about potential short-term market volatility, the fund manager hedges the portfolio against a possible market downturn using S&P 500 futures contracts.
 
-Assume the S&P 500 is at 5,000 points and each S&P 500 futures contract is based on the index times a multiplier—say, $250 per index point. Since the portfolio mirrors the S&P 500, assume a hedge ratio of “one-to-one.” The value hedged by one futures contract would be 5,000 points × $250 = $1,250,000.
+Assume the S&P 500 is at 5,000 points and each S&P 500 futures contract is based on the index times a multiplier—say, \$250 per index point. Since the portfolio mirrors the S&P 500, assume a hedge ratio of “one-to-one.” The value hedged by one futures contract would be 5,000 points × \$250 = \$1,250,000.
 
-To hedge a $100 million portfolio, the number of futures contracts needed is found by dividing the portfolio’s value by the value hedged per contract: $100,000,000 / $1,250,000 = about 80.
+To hedge a \$100 million portfolio, the number of futures contracts needed is found by dividing the portfolio’s value by the value hedged per contract: \$100,000,000 / \$1,250,000 = about 80.
 
 Thus, selling 80 futures contracts should effectively hedge the portfolio with two possible outcomes:
 
-- The S&P 500 Index dropped 10% to 4,500 points over three months, which means the portfolio would likely lose about 10% of its value, or $10 million. However, the futures contracts sold by the manager would gain in value, offsetting this loss. The gain per contract would be 5,000 - 4,500 points × $250 = $125,000. For 80 contracts, the total gain would be 80 × $125,000 = $10 million. This gain would effectively offset the portfolio’s loss, protecting it from the downturn.
+- The S&P 500 Index dropped 10% to 4,500 points over three months, which means the portfolio would likely lose about 10% of its value, or \$10 million. However, the futures contracts sold by the manager would gain in value, offsetting this loss. The gain per contract would be 5,000 - 4,500 points × \$250 = \$125,000. For 80 contracts, the total gain would be 80 × \$125,000 = \$10 million. This gain would effectively offset the portfolio’s loss, protecting it from the downturn.
 - The S&P 500 Index goes up over three months. This means the portfolio’s value would increase, but a loss in the futures position would offset this gain. This scenario is acceptable since the primary goal was to hedge against a downturn.
 
 ## Advantages and Disadvantages of Futures Trading
@@ -75,10 +75,12 @@ Futures trading comes with advantages and disadvantages. Futures trading usually
 
 Futures contracts can be an essential tool for hedging against price [volatility](https://www.investopedia.com/terms/v/volatility.asp). Companies can plan their budgets and protect potential profits against adverse price changes. Futures contracts also have drawbacks. Investors risk losing more than the initial margin amount because of the leverage used in futures.
 
+**Pros:**
 - Potential speculation gains
 - Useful hedging features
 - Favorable to trade
 
+**Cons:**
 - Higher risk because of leverage
 - Missing out on price moves when hedging
 - Margin as a double-edged sword

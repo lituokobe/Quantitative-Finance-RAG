@@ -46,17 +46,26 @@ By analyzing historical price data, you can determine the drift, [standard devia
 The four steps are as follows:
 
 **Step 1.** To project one possible price trajectory, use the historical price data of the asset to generate a series of periodic daily returns using the natural logarithm (note that this equation differs from the usual percentage change formula):
+$$\text{Periodic Daily Return} = \ln(\frac{\text{Day's Price}}{\text{Previous Day's Price}})$$
 
 **Step 2.** Next, use the AVERAGE, STDEV.P, and VAR.P functions on the entire resulting series to obtain the average daily return, standard deviation, and variance inputs, respectively. The drift is equal to:
+$$\text{Drift} = \text{Average Daily Return} - \frac{\text{Variance}}{2}$$
+where:
+- $\text{Average Daily Return} = \text{Produced from Excel’s AVERAGE function from periodic daily returns series}$
+- $\text{Variance} = \text{Produced from Excel’s VAR.P function from periodic daily returns series}$
 
 Alternatively, drift can be set to 0; this choice reflects a certain theoretical orientation, but the difference will not be huge, at least for shorter time frames.
 
 **Step 3.** Next, obtain a random input:
+$$\text{Random Value} = \sigma * \text{NORMSINV(RAND())}$$
+where:
+- $\sigma = \text{Standard deviation, produced from Excel’s STDEV.P function from periodic daily returns series}$
+- $\text{NORMSINV and RAND} = \text{Excel functions}$
 
 The equation for the following day's price is:
+$$\text{Next Day’s Price} = \text{Today’s Price} * e^{(\text{Drift} + \text{Random Value})}$$
 
-**Step 4.** To take *e* to a given power *x*in Excel, use the EXP function: EXP(x). Repeat this calculation the desired number of times. (Each repetition represents one day.) The result is a simulation of the asset's future price movement.
-
+**Step 4.** To take *e* to a given power *x* in Excel, use the EXP function: EXP(x). Repeat this calculation the desired number of times. (Each repetition represents one day.) The result is a simulation of the asset's future price movement.
 By generating an arbitrary number of simulations, you can assess the probability that a security's price will follow a given trajectory.
 
 ## Monte Carlo Simulation Results Explained

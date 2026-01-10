@@ -4,6 +4,7 @@ from multiprocessing import Queue
 from typing import Callable
 from langchain_core.documents import Document
 from config.paths import MD_PATH, QWEN3_EMBEDDING_PATH
+from config.rag_config import COLLECTION_NAME
 from documents.md_parser import FinanceMarkdownParser
 from documents.milvus_chunk_writer import MilvusChunkWriter
 from models.models import CustomEmbedding
@@ -87,14 +88,12 @@ def writer_process(
 # --------------------------------------------------
 # Main
 # --------------------------------------------------
+def create_embedding_model() -> CustomEmbedding:
+    return CustomEmbedding(QWEN3_EMBEDDING_PATH)
+
 if __name__ == "__main__":
     QUEUE_SIZE = 4
-    COLLECTION_NAME = "finance_chunks"
     DIM = 1024  # example: Qwen3 embedding 0.6B dimension
-
-    def create_embedding_model() -> CustomEmbedding:
-        return CustomEmbedding(QWEN3_EMBEDDING_PATH)
-
     docs_queue = Queue(maxsize=QUEUE_SIZE)
 
     p1 = multiprocessing.Process(

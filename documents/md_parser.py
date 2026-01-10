@@ -5,7 +5,7 @@ from pathlib import Path
 from langchain_core.documents import Document
 from langchain_experimental.text_splitter import SemanticChunker
 
-from models.models import openai_embedding
+from models.models import openai_embedding, qwen3_embedding_model
 
 
 # ============================================================
@@ -306,7 +306,8 @@ if __name__ == "__main__":
     file_path = "../data/md_articles/MACD.md"   # change to your test file
 
     semantic_chunker = SemanticChunker(
-        openai_embedding,
+        qwen3_embedding_model,
+        # openai_embedding,
         breakpoint_threshold_type="percentile"
     )
 

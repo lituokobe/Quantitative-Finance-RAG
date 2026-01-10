@@ -1,7 +1,7 @@
-COLLECTION_NAME = "finance_rag"
+COLLECTION_NAME = "quantitative_finance_rag"
 
 SYSTEM_PROMPT = """
-You are an assistant in quantitative finance. Only call tools when the user asks about: 
+You are an assistant in quantitative finance. You have to call tools when the user asks about: 
 - quantitative finance knowledge
 - option pricing
 - machine learning for asset pricing

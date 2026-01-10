@@ -3,6 +3,8 @@ import re
 from pathlib import Path
 from bs4 import BeautifulSoup, Tag, NavigableString
 
+from data.article_name_source import investopedia_articles
+
 HEADERS = {
     "User-Agent": "Tuo Li RAG Agent"
 }
@@ -191,7 +193,6 @@ def process_block_element(elem: Tag) -> str:
 
     return md_output
 
-
 def scrape_investopedia(url: str, save_dir: str, safe_title:str| None):
     print(f"Fetching {url}...")
     response = requests.get(url, headers=HEADERS)
@@ -239,83 +240,9 @@ def scrape_investopedia(url: str, save_dir: str, safe_title:str| None):
 
 # TODO: Scrape Investopedia articles, manual revision needed later
 if __name__ == "__main__":
-    # url = "https://www.investopedia.com/terms/n/npv.asp" #NPV
-    # url = "https://www.investopedia.com/terms/b/blackscholes.asp"  #BSM
-    # url = "https://www.investopedia.com/terms/c/capm.asp" #CAPM
-    # url = "https://www.investopedia.com/terms/r/randomwalktheory.asp"  # random walk
-    # url = "https://www.investopedia.com/terms/c/calloption.asp"  # call option
-    # url = "https://www.investopedia.com/terms/p/putoption.asp"  # call option
-    # url = "https://www.investopedia.com/terms/s/strikeprice.asp"  # strike price
-    # url = "https://www.investopedia.com/terms/b/binomialoptionpricing.asp"  # binomial option pricing
-    # url = "https://www.investopedia.com/terms/p/premium.asp"  # premium
-    # url = "https://www.investopedia.com/terms/r/riskpremium.asp"  # risk premium
-    # url = "https://www.investopedia.com/terms/g/governmentsecurity.asp" # government security
-    # url = "https://www.investopedia.com/terms/r/riskfreeasset.asp"  # risk-free asset
-    # url = "https://www.investopedia.com/terms/v/volatility.asp"  # volatility
-    # "Market_Sentiment": "https://www.investopedia.com/terms/m/marketsentiment.asp",
-    # "Black_Monday": "https://www.investopedia.com/terms/b/blackmonday.asp",
-    # "Correction": "https://www.investopedia.com/terms/c/correction.asp",
-    # "Entry-point": "https://www.investopedia.com/terms/e/entry-point.asp",
-    # "Capitulation": "https://www.investopedia.com/terms/c/capitulation.asp",
-    # "Federal_Fund_Rate": "https://www.investopedia.com/terms/f/federalfundsrate.asp",
-    # "Great_Depression": "https://www.investopedia.com/terms/g/great_depression.asp",
-    # "Infrastructure": "https://www.investopedia.com/terms/i/infrastructure.asp",
-    # "Public-good": "https://www.investopedia.com/terms/p/public-good.asp",
-    # "Private-good": "https://www.investopedia.com/terms/p/private-good.asp",
-    # "Public-private-partnerships": "https://www.investopedia.com/terms/p/public-private-partnerships.asp",
-    # "Tax_Revenue": "https://www.investopedia.com/tax-revenue-definition-5115103#:~:text=Tax%20revenue%20is%20defined%20as,of%20property%3B%20and%20other%20taxes.",
-    # "OECD": "https://www.investopedia.com/terms/o/oecd.asp",
-    # "Economy": "https://www.investopedia.com/terms/e/economy.asp",
-    # "OTM": "https://www.investopedia.com/terms/o/outofthemoney.asp",
-    # "ITM": "https://www.investopedia.com/terms/i/inthemoney.asp",
-    # "ATM": "https://www.investopedia.com/terms/a/atthemoney.asp",
-    # "Intrinsic_Value": "https://www.investopedia.com/terms/i/intrinsicvalue.asp",
-    # "DJIA": "https://www.investopedia.com/terms/d/djia.asp",
-    # "Bull_Market": "https://www.investopedia.com/terms/b/bullmarket.asp",
-    # "Buy-and-hold": "https://www.investopedia.com/terms/b/buyandhold.asp",
-    # "Bear_Market": "https://www.investopedia.com/terms/b/bearmarket.asp",
-    # "Private_Company": "https://www.investopedia.com/terms/p/privatecompany.asp",
-    # "Great_Recession": "https://www.investopedia.com/terms/g/great-recession.asp",
-    # "MACD": "https://www.investopedia.com/terms/m/macd.asp",
-    # "Value_at_Risk(VaR)": "https://www.investopedia.com/articles/04/092904.asp",
-    # "Greeks": "https://www.investopedia.com/terms/g/greeks.asp",
-    # "Regression": "https://www.investopedia.com/terms/r/regression.asp",
-    # "Error_Term": "https://www.investopedia.com/terms/e/errorterm.asp",
-    # "Normal_Distribution": "https://www.investopedia.com/terms/n/normaldistribution.asp",
-    # "Kurtosis": "https://www.investopedia.com/terms/k/kurtosis.asp",
-    # "Sharpe_Ratio": "https://www.investopedia.com/terms/s/sharperatio.asp",
-    # "Portfolio_Return": "https://www.investopedia.com/terms/p/portfolio-return.asp",
-    # "Expected_Return": "https://www.investopedia.com/terms/e/expectedreturn.asp",
-    # "Stochastic_Modeling": "https://www.investopedia.com/terms/s/stochastic-modeling.asp",
-    # "Divergence": "https://www.investopedia.com/terms/d/divergence.asp",
-    # "RSI": "https://www.investopedia.com/terms/r/rsi.asp",
-    # "Moving_Average": "https://www.investopedia.com/terms/m/movingaverage.asp",
-    # "SMA": "https://www.investopedia.com/terms/s/sma.asp",
-    # "EMA": "https://www.investopedia.com/terms/e/ema.asp",
-    # "Quantitative_Analysis": "https://www.investopedia.com/terms/q/quantitativeanalysis.asp",
-    # "DCF": "https://www.investopedia.com/terms/d/dcf.asp",
-    # "Monte_Carlo_Simulation": "https://www.investopedia.com/terms/m/montecarlosimulation.asp",
-    # "Option": "https://www.investopedia.com/terms/o/option.asp",
-    # "Underlying_Asset": "https://www.investopedia.com/terms/u/underlying-asset.asp",
-    # "Futures": "https://www.investopedia.com/terms/f/futures.asp",
-    # "Golden_Cross": "https://www.investopedia.com/terms/g/goldencross.asp",
-    # "Skewness": "https://www.investopedia.com/terms/s/skewness.asp",
-    # "Standard_Deviation": "https://www.investopedia.com/terms/s/standarddeviation.asp",
-    # "Log-normal_Distribution": "https://www.investopedia.com/articles/investing/102014/lognormal-and-normal-distribution.asp",
-    # "Delta": "https://www.investopedia.com/terms/d/delta.asp",
-    # "Theta": "https://www.investopedia.com/terms/t/theta.asp",
-    # "Gamma": "https://www.investopedia.com/terms/g/gamma.asp",
-    # "Vega": "https://www.investopedia.com/terms/v/vega.asp",
-    # "Rho": "https://www.investopedia.com/terms/r/rho.asp",
-    # "Risk": "https://www.investopedia.com/terms/r/risk.asp",
-
     try:
-        url_dict = {
-
-        }
-
-        for k, v in url_dict.items():
-            path = scrape_investopedia(v, "md_articles/new", k)
+        for k, v in investopedia_articles.items():
+            path = scrape_investopedia(v, "md_articles/tempt", k)
             print(f"Done: {path}")
     except Exception as e:
         print(f"Error: {e}")

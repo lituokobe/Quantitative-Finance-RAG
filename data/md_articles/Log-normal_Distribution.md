@@ -12,15 +12,15 @@ Lognormal and normal distributions can help you analyze investments accurately. 
 
 ## Understanding the Differences Between Normal and Lognormal Distributions
 
-Both normal and lognormal distributions are used in statistical mathematics to describe the [probability of an event occurring](https://www.investopedia.com/terms/p/probabilitydistribution.asp). Flipping a coin is an easily understood example of probability. If you flip a coin 1000 times, what is the distribution of results? That is, how many times will it land on heads or tails? There is a 50% probability that it will land on either heads or tails. This basic example describes the probability and distribution of results.
+Both normal and lognormal distributions are used in statistical mathematics to describe the probability of an event occurring. Flipping a coin is an easily understood example of probability. If you flip a coin 1000 times, what is the distribution of results? That is, how many times will it land on heads or tails? There is a 50% probability that it will land on either heads or tails. This basic example describes the probability and distribution of results.
 
-There are many types of distributions, one of which is the normal or [bell curve](https://www.investopedia.com/terms/b/bell-curve.asp) distribution.
+There are many types of distributions, one of which is the normal or bell curve distribution.
 
-In a normal distribution, 68% (34%+34%) of the results fall within one [standard deviation](https://www.investopedia.com/terms/s/standarddeviation.asp), and 95% (68%+13.5%+13.5%) fall within two standard deviations. At the center (the 0 point in the image above) the [median](https://www.investopedia.com/terms/m/median.asp) (the middle value in the set), the [mode](https://www.investopedia.com/terms/m/mode.asp) (the value that occurs most often), and the [mean](https://www.investopedia.com/terms/m/mean.asp) ([arithmetic average](https://www.investopedia.com/ask/answers/06/geometricmean.asp)) are all the same.
+In a normal distribution, 68% (34%+34%) of the results fall within one standard deviation, and 95% (68%+13.5%+13.5%) fall within two standard deviations. At the center (the 0 point in the image above) the median (the middle value in the set), the mode (the value that occurs most often), and the [mean](https://www.investopedia.com/terms/m/mean.asp) ([arithmetic average](https://www.investopedia.com/ask/answers/06/geometricmean.asp)) are all the same.
 
-The lognormal distribution differs from the normal distribution in several ways. A major difference is in its shape: the [normal distribution is symmetrical](https://www.investopedia.com/articles/active-trading/092914/normal-distribution-table-explained.asp), whereas the lognormal distribution is not. Because the values in a lognormal distribution are positive, they create a right-skewed curve.
+The lognormal distribution differs from the normal distribution in several ways. A major difference is in its shape: the normal distribution is symmetrical, whereas the lognormal distribution is not. Because the values in a lognormal distribution are positive, they create a right-skewed curve.
 
-This [skewness](https://www.investopedia.com/terms/s/skewness.asp) is important in determining which distribution is appropriate to use in investment decision-making. A further distinction is that the values used to derive a lognormal distribution are normally distributed.
+This skewness is important in determining which distribution is appropriate to use in investment decision-making. A further distinction is that the values used to derive a lognormal distribution are normally distributed.
 
 Let's clarify with an example. An investor wants to know an expected future stock price. Since stocks grow at a compounded rate, they need to use a growth factor.
 
@@ -35,6 +35,13 @@ The preceding example helped us arrive at what really matters to investors: when
 Another similar use of the lognormal distribution is with the pricing of [options](https://www.investopedia.com/terms/o/option.asp). The [Black-Scholes](https://www.investopedia.com/terms/b/blackscholes.asp) model—used to price options—uses the lognormal distribution as its basis to determine [option prices](https://www.investopedia.com/articles/optioninvestor/09/buying-options.asp).
 
 Conversely, normal distribution works better when calculating [total portfolio returns](https://www.investopedia.com/terms/t/totalreturn.asp). The normal distribution is used because the [weighted](https://www.investopedia.com/terms/w/weighted.asp) average return (the product of the weight of a security in a portfolio and its rate of return) is more accurate in describing the actual [portfolio return](https://www.investopedia.com/terms/p/portfolio-return.asp) (positive or negative), particularly if the weights vary by a large degree. The following is a typical example:
+
+| Portfolio Holdings                | Weights | Returns | Weighted Returns       |
+|-----------------------------------|---------|---------|------------------------|
+| Stock A                           | 40%     | 12%     | 40% * 12% = 4.8%       |
+| Stock B                           | 60%     | 6%      | 60% * 6% = 3.6%        |
+| **Total Weighted Average Return** |         |         | **4.8% + 3.6% = 8.4%** |
+
 
 Although the lognormal return for total portfolio performance may be quicker to calculate over a longer time period, it fails to capture the individual stock weights, which can distort the return tremendously. Also, portfolio returns can be positive or negative, and a lognormal distribution will fail to capture the negative aspects.
 

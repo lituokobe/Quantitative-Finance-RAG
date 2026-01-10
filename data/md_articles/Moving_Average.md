@@ -31,7 +31,10 @@ Similarly, upward momentum is confirmed with a bullish [crossover](https://www.i
 
 To calculate a [simple moving average (SMA)](https://www.investopedia.com/terms/s/sma.asp), take the arithmetic mean of a given set of values over a specified period. A set of numbers, or prices of stocks, is added together and then divided by the number of prices in the set. The formula for calculating the SMA of a security is as follows:
 
-S M A = A 1 + A 2 + … + A n n where: A = Average in period n n = Number of time periods \begin{aligned} &SMA = \frac{ A_1 + A_2 + \dotso + A_n }{ n } \\ &\textbf{where:} \\ &A = \text{Average in period } n \\ &n = \text{Number of time periods} \\ \end{aligned} ​SMA=nA1​+A2​+…+An​​where:A=Average in period nn=Number of time periods​
+$$SMA = \frac{A_1 + A_2 + . . . + A_n}{n}$$ 
+where: 
+- $A_n = \text{the price of an asset at period n}$
+- $n = \text{the number of total periods}$
 
 Charting [stock](https://www.investopedia.com/best-stock-screeners-5120586) prices over 50 days using an SMA may look like this:
 
@@ -41,11 +44,17 @@ The [exponential moving average (EMA)](https://www.investopedia.com/terms/e/ema.
 
 Then calculate the multiplier for weighting the EMA, known as the "smoothing factor," which typically follows the formula:
 
-*[2 / (Selected time period + 1)]*
+$$\text{Smoothing factor} = 2 / (\text{Selected time period} + 1)$$
 
 For a 20-day MA, the multiplier would be [2 / (20 + 1)] = 0.0952. The smoothing factor is combined with the previous EMA to arrive at the current value. The EMA thus gives a higher weighting to recent prices, while the SMA assigns an equal weighting to all values.
 
-E M A t = [ V t × ( s 1 + d ) ] + E M A y × [ 1 − ( s 1 + d ) ] where: E M A t = EMA today V t = Value today E M A y = EMA yesterday s = Smoothing d = Number of days \begin{aligned} &EMA_t = \left [ V_t \times \left ( \frac{ s }{ 1 + d } \right ) \right ] + EMA_y \times \left [ 1 - \left ( \frac { s }{ 1 + d} \right ) \right ] \\ &\textbf{where:}\\ &EMA_t = \text{EMA today} \\ &V_t = \text{Value today} \\ &EMA_y = \text{EMA yesterday} \\ &s = \text{Smoothing} \\ &d = \text{Number of days} \\ \end{aligned} ​EMAt​=[Vt​×(1+ds​)]+EMAy​×[1−(1+ds​)]where:EMAt​=EMA todayVt​=Value todayEMAy​=EMA yesterdays=Smoothingd=Number of days​
+$$EMA_t = [ V_t * ( \frac{s}{1 + d})] + EMA_y * [ 1 - (\frac{s}{1 + d} )]$$
+where:
+- $EMA_t = \text{EMA today}$
+- $V_t = \text{Value today}$
+- $EMA_y = \text{EMA yesterday}$
+- $s = \text{Smoothing factor}$
+- $d = \text{Number of days}$
 
 ### Fast Fact
 
