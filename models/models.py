@@ -11,14 +11,14 @@ OPENAI_URL = os.getenv("OPENAI_URL")
 ALI_API_KEY = os.getenv("ALI_API_KEY")
 ALI_URL = os.getenv("ALI_URL")
 
-evaluator_llm = ChatOpenAI(
-    model = 'qwen-max',
+agent_llm = ChatOpenAI(
+    model = 'qwen-turbo',
     temperature = 0,
     api_key = ALI_API_KEY,
     base_url = ALI_URL,
 )
 
-agent_llm = ChatOpenAI(
+evaluator_llm = ChatOpenAI(
     model = 'gpt-5-mini',
     temperature = 0,
     api_key = OPENAI_API_KEY,

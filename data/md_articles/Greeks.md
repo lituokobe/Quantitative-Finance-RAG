@@ -22,7 +22,7 @@ Greek values change over time, so traders often calculate them daily to adjust t
 
 ## Delta: Measuring Price Sensitivity
 
-[Delta](https://www.investopedia.com/terms/d/delta.asp) (Δ) represents the [rate of change](https://www.investopedia.com/terms/r/rateofchange.asp) between the option’s price and a $1 change in the underlying asset’s price. In other words, the price sensitivity of the option is relative to the underlying asset. The delta of a [call option](https://www.investopedia.com/terms/c/calloption.asp) has a range between 0 and 1, while the delta of a [put option](https://www.investopedia.com/terms/p/putoption.asp) has a range between 0 and -1. For example, assume an investor is long a call option with a delta of 0.50. Therefore, if the underlying stock increases by $1, the option’s price would theoretically increase by 50 cents.
+Delta ($\Delta$) represents the [rate of change](https://www.investopedia.com/terms/r/rateofchange.asp) between the option’s price and a \$1 change in the underlying asset’s price. In other words, the price sensitivity of the option is relative to the underlying asset. The delta of a [call option](https://www.investopedia.com/terms/c/calloption.asp) has a range between 0 and 1, while the delta of a [put option](https://www.investopedia.com/terms/p/putoption.asp) has a range between 0 and -1. For example, assume an investor is long a call option with a delta of 0.50. Therefore, if the underlying stock increases by \$1, the option’s price would theoretically increase by 50 cents.
 
 For options traders, delta also represents the [hedge ratio](https://www.investopedia.com/terms/h/hedgeratio.asp) for creating a [delta-neutral](https://www.investopedia.com/terms/d/deltaneutral.asp) position. For example, if you purchase a standard American call option with a 0.40 delta, you will need to sell 40 shares of stock to be fully hedged. Net delta for a portfolio of options can also be used to obtain the portfolio’s hedge ratio.
 
@@ -30,15 +30,15 @@ A less common [usage of an option’s delta](https://www.investopedia.com/articl
 
 ## Theta: Understanding Time Decay
 
-[Theta](https://www.investopedia.com/terms/t/theta.asp) (Θ) represents the rate of change between the option price and time, or time sensitivity—sometimes known as an option’s time decay. Theta indicates the amount an option’s price would decrease as the time to [expiration](https://www.investopedia.com/terms/e/expirationdate.asp) decreases, all else being equal. For example, assume an investor is long an option with a theta of -0.50. The option’s price would decrease by 50 cents every day that passes, all else being equal.
+Theta ($\Theta$) represents the rate of change between the option price and time, or time sensitivity—sometimes known as an option’s time decay. Theta indicates the amount an option’s price would decrease as the time to [expiration](https://www.investopedia.com/terms/e/expirationdate.asp) decreases, all else being equal. For example, assume an investor is long an option with a theta of -0.50. The option’s price would decrease by 50 cents every day that passes, all else being equal.
 
 Theta increases when options are [at the money](https://www.investopedia.com/terms/a/atthemoney.asp), and decreases when options are in and [out of the money](https://www.investopedia.com/terms/o/outofthemoney.asp). As expiration nears, options decay faster. Long calls and puts typically have negative theta, while short ones have positive theta. By comparison, an instrument whose value is not eroded by time, such as a stock, would have zero theta.
 
 ## Gamma: Assessing Delta's Stability
 
-[Gamma](https://www.investopedia.com/terms/g/gamma.asp) (Γ) represents the rate of change between an option’s delta and the underlying asset’s price. This is called second-order (second-derivative) price sensitivity. Gamma indicates the amount the delta would change given a $1 move in the underlying security.
+Gamma($\Gamma$) represents the rate of change between an option’s delta and the underlying asset’s price. This is called second-order (second-derivative) price sensitivity. Gamma indicates the amount the delta would change given a \$1 move in the underlying security.
 
-For example, assume an investor is long on a call option on hypothetical stock XYZ. The call option has a delta of 0.50 and a gamma of 0.10. Therefore, if stock XYZ increases or decreases by $1, the call option’s delta would increase or decrease by 0.10.
+For example, assume an investor is long on a call option on hypothetical stock XYZ. The call option has a delta of 0.50 and a gamma of 0.10. Therefore, if stock XYZ increases or decreases by \$1, the call option’s delta would increase or decrease by 0.10.
 
 Gamma is used to determine how stable an option’s delta is: Higher gamma values indicate that delta could change dramatically in response to even small movements in the underlying asset’s price. Gamma is higher for options that are at the money and lower for options that are in and out of the money, and it accelerates in magnitude as expiration approaches. Gamma values are generally smaller the further away from the date of expiration; options with longer expirations are less sensitive to delta changes. As expiration approaches, gamma values are typically larger, as price changes have more impact on gamma.
 
@@ -50,7 +50,7 @@ Read about Investopedia’s [10 Rules of Investing](https://www.amazon.com/Inves
 
 ## Vega: Gauging Volatility Sensitivity
 
-[Vega](https://www.investopedia.com/terms/v/vega.asp) (ν) represents the rate of change between an option’s value and the underlying asset’s implied volatility. This is the option’s sensitivity to [volatility](https://www.investopedia.com/terms/v/volatility.asp). Vega indicates the amount an option’s price changes given a 1% change in implied volatility. For example, an option with a vega of 0.10 indicates the option’s value is expected to change by 10 cents if the implied volatility changes by 1%.
+Vega ($v$) represents the rate of change between an option’s value and the underlying asset’s implied volatility. This is the option’s sensitivity to [volatility](https://www.investopedia.com/terms/v/volatility.asp). Vega indicates the amount an option’s price changes given a 1% change in implied volatility. For example, an option with a vega of 0.10 indicates the option’s value is expected to change by 10 cents if the implied volatility changes by 1%.
 
 Increased volatility suggests likely extreme values, raising an option's value; less volatility lowers it. Vega is at its maximum for at-the-money options that have longer times until expiration.
 
@@ -60,7 +60,7 @@ Greek-language buffs will point out that there is no actual Greek letter vega. T
 
 ## Rho: Interest Rate Risk Exposure
 
-[Rho](https://www.investopedia.com/terms/r/rho.asp) (ρ) represents the rate of change between an option’s value and a 1% change in the [interest rate](https://www.investopedia.com/terms/i/interestrate.asp). This measures sensitivity to the interest rate. For example, assume a call option has a rho of 0.05 and a price of $1.25. If interest rates rise by 1%, the value of the call option would increase to $1.30, all else being equal. The opposite is true for put options. Rho is greatest for at-the-money options with long times until expiration.
+Rho ($\rho$) represents the rate of change between an option’s value and a 1% change in the [interest rate](https://www.investopedia.com/terms/i/interestrate.asp). This measures sensitivity to the interest rate. For example, assume a call option has a rho of 0.05 and a price of \$1.25. If interest rates rise by 1%, the value of the call option would increase to \$1.30, all else being equal. The opposite is true for put options. Rho is greatest for at-the-money options with long times until expiration.
 
 ## Exploring Other Greek Metrics
 

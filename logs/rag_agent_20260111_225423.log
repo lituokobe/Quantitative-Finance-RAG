@@ -1,0 +1,2 @@
+2026-01-11 22:54:23,642 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-11 22:54:23,661 - milvus_db - INFO: Successfully connected to Milvus collection: quantitative_finance_rag

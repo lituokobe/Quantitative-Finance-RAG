@@ -30,7 +30,7 @@ Regression can help finance and investment professionals. A company might use it
 
 ## Regression and Econometrics
 
-[Econometrics](https://www.investopedia.com/terms/e/econometrics.asp) is a set of statistical techniques that are used to analyze data in finance and economics. It effectively studies the income effect using observable data. An economist might hypothesize that a consumer’s spending will increase as they increase their [income](https://www.investopedia.com/terms/i/income.asp).
+Econometrics is a set of statistical techniques that are used to analyze data in finance and economics. It effectively studies the income effect using observable data. An economist might hypothesize that a consumer’s spending will increase as they increase their [income](https://www.investopedia.com/terms/i/income.asp).
 
 A regression analysis can then be conducted to understand the strength of the relationship between income and consumption if the data show that such an association is present. It can indicate whether that relationship is statistically significant.
 
@@ -48,11 +48,17 @@ A regression model is constructed when this process has been completed. It’s u
 
 **Simple linear regression:**
 
-***Y = a + b X + u \begin{aligned}&Y = a + bX + u \\\end{aligned} ​Y=a+bX+u​***
+$$Y = a + b*X + u$$
 
 **Multiple linear regression:**
 
-Y = a + b 1 X 1 + b 2 X 2 + b 3 X 3 + . . . + b t X t + u where: Y = The dependent variable you are trying to predict or explain X = The explanatory (independent) variable(s) you are using to predict or associate with Y a = The y-intercept b = (beta coefficient) is the slope of the explanatory variable(s) u = The regression residual or error term \begin{aligned}&Y = a + b_1X_1 + b_2X_2 + b_3X_3 + ... + b_tX_t + u \\&\textbf{where:} \\&Y = \text{The dependent variable you are trying to predict} \\&\text{or explain} \\&X = \text{The explanatory (independent) variable(s) you are } \\&\text{using to predict or associate with Y} \\&a = \text{The y-intercept} \\&b = \text{(beta coefficient) is the slope of the explanatory} \\&\text{variable(s)} \\&u = \text{The regression residual or error term} \\\end{aligned} ​Y=a+b1​X1​+b2​X2​+b3​X3​+...+bt​Xt​+uwhere:Y=The dependent variable you are trying to predictor explainX=The explanatory (independent) variable(s) you are using to predict or associate with Ya=The y-interceptb=(beta coefficient) is the slope of the explanatoryvariable(s)u=The regression residual or error term​
+$$Y = a + b_1 * X_1 + b_2 * X_2 + b_3 * X_3 + ... + b_t * X_t + u$$
+where: 
+- $Y = \text{The dependent variable you are trying to predict or explain}$ 
+- $X = \text{The explanatory (independent) variable(s) you are using to predict or associate with Y}$ 
+- $a = \text{The y-intercept}$ 
+- $b = \text{(beta coefficient) is the slope of the explanatory variable(s)}$ 
+- $u = \text{The regression residual or error term}$
 
 ## Example of Regression Analysis in Finance
 

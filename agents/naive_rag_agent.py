@@ -2,30 +2,12 @@ from langchain_classic.agents import create_tool_calling_agent, AgentExecutor
 from langchain_core.chat_history import BaseChatMessageHistory, InMemoryChatMessageHistory
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables import RunnableWithMessageHistory
-# from config.rag_config import SYSTEM_PROMPT
+from config.rag_config import SYSTEM_PROMPT
 from models.models import agent_llm
 from tools.retriever_tools import retriever_tool
 from utils.pretty_print import pretty_print
 
 # TODO: Build naive RAG agent with simple retriever tool call
-SYSTEM_PROMPT = """ 
-You are a quantitative finance assistant. 
-You MUST call the retriever tool for ANY question related to: 
-- quantitative finance 
-- derivatives 
-- option pricing 
-- stochastic calculus 
-- machine learning for asset pricing 
-- financial mathematics 
-- risk management 
-- portfolio theory 
-- econometrics 
-If the user asks ANYTHING in these domains, DO NOT answer directly. 
-Instead, ALWAYS call the retriever tool with the user query. 
-If the question is unrelated to quantitative finance, 
-politely decline and explain that you only answer quantitative finance questions. 
-"""
-
 # prompt template
 prompt = ChatPromptTemplate.from_messages([
     ("system", SYSTEM_PROMPT),

@@ -33,13 +33,17 @@ The historical method simply re-organizes actual [historical returns](https://ww
 
 ### Value at Risk
 
-Value at Risk = vm (vi / v(i - 1))
+$$\text{Value at Risk} = v_m * (v_i / v_{i - 1})$$
+where:
+- $v_m = \text{Market value (often today’s portfolio value)}$
+- $v_i = \text{Value at time i (e.g., today’s price or portfolio value)}$
+- $v_{i - 1} = \text{ Value at time i-1 (yesterday’s price or value)}$
 
 M = the number of days from which historical data is taken
 
 vi = the number of variables on the day i.
 
-In calculating each daily return, we produce a rich data set of more than 1,400 points. Let's put them in a [histogram](https://www.investopedia.com/terms/h/histogram.asp) that compares the frequency of return "buckets."
+In calculating each daily return, we produce a rich data set of more than 1,400 points. Let's put them in a histogram that compares the frequency of return "buckets."
 
 At the highest bar, there were more than 250 days when the daily return was between 0% and 1%. At the far right, a tiny bar at 13% represents the one single day within five-plus years when the daily return for the QQQ was 12.4%.
 
@@ -49,11 +53,21 @@ This method assumes that stock returns are normally distributed and requires an 
 
 The variance-covariance is similar to the historical method except it uses a familiar curve instead of actual data. The advantage of the normal curve is that it shows where the worst 5% and 1% lie on the curve. They are a function of desired confidence and the standard deviation.
 
+| Confidence        | # of Standard Deviations (σ) |
+|-------------------|------------------------------|
+| 95% (high)        | -1.65 × σ                    |
+| 99% (really high) | -2.33 × σ                    |
+
 The curve above is based on the actual daily standard deviation of the QQQ, which is 2.64%. The average daily return happened to be fairly close to zero, so it's safe to assume an [average return](https://www.investopedia.com/terms/a/averagereturn.asp) of zero for illustrative purposes. Here are the results of using the actual standard deviation in the formulas above:
+
+| Confidence       | # of σ         | Calculation            | Equals   |
+|------------------|----------------|------------------------|----------|
+| 95% (high)       | -1.65 × σ      | -1.65 × (2.64%)        | -4.36%   |
+| 99% (really high)| -2.33 × σ      | -2.33 × (2.64%)        | -6.15%   |
 
 ### Monte Carlo Simulation in Valuing VaR
 
-A [Monte Carlo simulation](https://www.investopedia.com/terms/m/montecarlosimulation.asp) refers to any method that randomly generates trials, but by itself, does not tell us anything about the underlying methodology.
+A Monte Carlo simulation refers to any method that randomly generates trials, but by itself, does not tell us anything about the underlying methodology.
 
 For most users, a Monte Carlo simulation amounts to a "black box" generator of random, probabilistic outcomes. This technique uses computational models to simulate projected returns over hundreds or thousands of possible iterations.
 
@@ -63,15 +77,15 @@ The Monte Carlo simulation, therefore, leads to the following VaR-type conclusio
 
 ## Explain Like I'm 5
 
-Value at Risk (VaR)can help investors answer the question: "What's the potential maximum loss I could expect from this investment within x days/weeks/months?" In other words, VaR is a statistical method that can be used to estimate the worst-case loss of an investment over a specific period of time, considering a certain probability of that loss occurring (which is called "confidence level"). For example, if an investment's one-day VaR is $5,000 at a 95% confidence level, it means there's a 5% (100% - 95%) chance the investment could lose more than $5,000 in a single day.
+Value at Risk (VaR)can help investors answer the question: "What's the potential maximum loss I could expect from this investment within x days/weeks/months?" In other words, VaR is a statistical method that can be used to estimate the worst-case loss of an investment over a specific period of time, considering a certain probability of that loss occurring (which is called "confidence level"). For example, if an investment's one-day VaR is \$5,000 at a 95% confidence level, it means there's a 5% (100% - 95%) chance the investment could lose more than \$5,000 in a single day.
 
 ## What Is the Disadvantage of Using Value at Risk?
 
-While VaR is useful for predicting the risks facing an investment, [it can be misleading](https://www.investopedia.com/articles/professionals/081215/backtesting-valueatrisk-var-basics.asp). One critique is that [different methods](https://www.investopedia.com/ask/answers/041615/what-riskmetrics-value-risk-var.asp) give different results: you might get a gloomy forecast with the historical method, while Monte Carlo Simulations are relatively optimistic. It can also be difficult to calculate the VaR for large portfolios: you can't simply calculate the VaR for each asset, since many of those assets will be correlated. Finally, any VaR calculation is only as good as the data and assumptions that go into it.
+While VaR is useful for predicting the risks facing an investment, it can be misleading. One critique is that different methods give different results: you might get a gloomy forecast with the historical method, while Monte Carlo Simulations are relatively optimistic. It can also be difficult to calculate the VaR for large portfolios: you can't simply calculate the VaR for each asset, since many of those assets will be correlated. Finally, any VaR calculation is only as good as the data and assumptions that go into it.
 
 ## What Are the Advantages of Using Value at Risk?
 
-VaR is a single number that indicates the [extent of risk in a given portfolio](https://www.investopedia.com/ask/answers/061515/what-stress-testing-value-risk-var.asp) and is measured in either price or as a percentage, making understanding VaR easy. It can be applied to assets
+VaR is a single number that indicates the extent of risk in a given portfolio and is measured in either price or as a percentage, making understanding VaR easy. It can be applied to assets
 
 such as bonds, shares, and currencies, and is used by banks and financial institutions to assess the profitability and risk of different investments, and allocate risk based on VaR.
 

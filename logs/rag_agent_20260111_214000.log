@@ -1,0 +1,9 @@
+2026-01-11 21:40:00,452 - naive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-01-11 21:40:00,455 - other_nodes - INFO: starting_reply_node starts to work.
+2026-01-11 21:40:00,455 - other_nodes - INFO: starting_reply_node finishes working.
+2026-01-11 21:40:08,275 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 21:40:08,275 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 21:40:08,687 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 21:40:08,695 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 21:40:08,695 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 21:40:41,806 - naive_rag_langgraph_agent - INFO: User has quit the conversation.

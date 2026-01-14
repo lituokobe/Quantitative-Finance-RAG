@@ -1,4 +1,4 @@
-investopedia_articles : dict = {
+investopedia_articles = {
     # "NPV": "https://www.investopedia.com/terms/n/npv.asp",
     # "BSM": "https://www.investopedia.com/terms/b/blackscholes.asp",
     # "CAPM": "https://www.investopedia.com/terms/c/capm.asp",

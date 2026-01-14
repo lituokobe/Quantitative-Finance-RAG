@@ -1,0 +1,30 @@
+2026-01-11 21:43:08,579 - naive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-01-11 21:43:08,582 - other_nodes - INFO: starting_reply_node starts to work.
+2026-01-11 21:43:08,582 - other_nodes - INFO: starting_reply_node finishes working.
+2026-01-11 21:43:16,849 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 21:43:16,849 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 21:43:17,343 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 21:43:17,352 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 21:43:17,352 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 21:43:17,353 - other_nodes - INFO: fallback_node starts to work.
+2026-01-11 21:43:17,353 - other_nodes - INFO: fallback_node finishes working.
+2026-01-11 21:43:27,070 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 21:43:27,070 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 21:43:27,432 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 21:43:27,435 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 21:43:27,435 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 21:43:27,435 - other_nodes - INFO: fallback_node starts to work.
+2026-01-11 21:43:27,435 - other_nodes - INFO: fallback_node finishes working.
+2026-01-11 21:43:42,416 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 21:43:42,417 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 21:43:42,814 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 21:43:42,815 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 21:43:42,815 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 21:43:42,816 - other_nodes - INFO: fallback_node starts to work.
+2026-01-11 21:43:42,816 - other_nodes - INFO: fallback_node finishes working.
+2026-01-11 21:43:54,943 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 21:43:54,944 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 21:43:55,333 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 21:43:55,336 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 21:43:55,336 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 21:44:35,196 - naive_rag_langgraph_agent - INFO: User has quit the conversation.

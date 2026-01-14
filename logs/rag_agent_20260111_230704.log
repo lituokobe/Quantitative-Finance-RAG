@@ -1,0 +1,106 @@
+2026-01-11 23:07:04,824 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-11 23:07:04,841 - milvus_db - INFO: Successfully connected to Milvus collection: quantitative_finance_rag
+2026-01-11 23:07:04,845 - naive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-01-11 23:07:04,848 - other_nodes - INFO: starting_reply_node starts to work.
+2026-01-11 23:07:04,848 - other_nodes - INFO: starting_reply_node finishes working.
+2026-01-11 23:07:12,727 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:07:12,727 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:07:13,332 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:07:13,352 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 23:07:13,352 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:07:13,353 - other_nodes - INFO: fallback_node starts to work.
+2026-01-11 23:07:13,353 - other_nodes - INFO: fallback_node finishes working.
+2026-01-11 23:07:32,377 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:07:32,378 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:07:32,784 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:07:32,786 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 23:07:32,786 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:07:32,787 - other_nodes - INFO: fallback_node starts to work.
+2026-01-11 23:07:32,787 - other_nodes - INFO: fallback_node finishes working.
+2026-01-11 23:07:39,219 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:07:39,219 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:07:39,645 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:07:39,647 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 23:07:39,647 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:07:39,647 - AgentNode - INFO: agent_node starts to work.
+2026-01-11 23:07:40,913 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:07:40,917 - AgentNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:08:18,441 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:08:18,441 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:08:18,864 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:08:18,865 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 23:08:18,866 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:08:18,866 - other_nodes - INFO: fallback_node starts to work.
+2026-01-11 23:08:18,866 - other_nodes - INFO: fallback_node finishes working.
+2026-01-11 23:08:48,278 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:08:48,279 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:08:48,756 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:08:48,757 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 23:08:48,757 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:08:48,757 - AgentNode - INFO: agent_node starts to work.
+2026-01-11 23:08:50,404 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:08:50,407 - AgentNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:09:33,506 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:09:33,506 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:09:33,853 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:09:33,854 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 23:09:33,854 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:09:33,854 - AgentNode - INFO: agent_node starts to work.
+2026-01-11 23:09:36,570 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:09:36,572 - AgentNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:11:16,654 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:11:16,654 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:11:17,038 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:11:17,039 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 23:11:17,039 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:11:17,039 - AgentNode - INFO: agent_node starts to work.
+2026-01-11 23:11:18,063 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:11:18,066 - AgentNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:11:36,879 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:11:36,880 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:11:37,270 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:11:37,272 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 23:11:37,272 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:11:37,272 - AgentNode - INFO: agent_node starts to work.
+2026-01-11 23:11:38,704 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:11:38,707 - AgentNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:12:23,029 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:12:23,029 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:12:23,392 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:12:23,393 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 23:12:23,393 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:12:23,393 - AgentNode - INFO: agent_node starts to work.
+2026-01-11 23:12:24,257 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:12:24,260 - AgentNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:12:24,265 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:12:24,265 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:12:24,622 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:12:24,623 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 23:12:24,623 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:12:24,624 - other_nodes - INFO: fallback_node starts to work.
+2026-01-11 23:12:24,624 - other_nodes - INFO: fallback_node finishes working.
+2026-01-11 23:12:51,742 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:12:51,743 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:12:52,168 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:12:52,169 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 23:12:52,169 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:12:52,169 - AgentNode - INFO: agent_node starts to work.
+2026-01-11 23:12:53,311 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:12:53,314 - AgentNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:13:36,124 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:13:36,125 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:13:36,565 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:13:36,565 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 23:13:36,565 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:13:36,566 - AgentNode - INFO: agent_node starts to work.
+2026-01-11 23:13:37,216 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:13:37,217 - AgentNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:14:22,058 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:14:22,058 - StartingIntentionNode - INFO: starting_intention_node starts to work.
+2026-01-11 23:14:22,459 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:14:22,460 - StartingIntentionNode - INFO: starting_intention_node ends working.
+2026-01-11 23:14:22,461 - StartingIntentionNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:14:22,461 - AgentNode - INFO: agent_node starts to work.
+2026-01-11 23:14:29,516 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 23:14:29,518 - AgentNode - INFO: starting_intention_node finishes working.
+2026-01-11 23:15:53,842 - naive_rag_langgraph_agent - INFO: User has quit the conversation.

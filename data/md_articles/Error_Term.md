@@ -18,7 +18,11 @@ An error term represents the margin of error within a statistical model; it refe
 
 An error term essentially means that the model is not completely accurate and results in differing results during real-world applications. For example, assume there is a [multiple linear regression](https://www.investopedia.com/terms/m/mlr.asp) function that takes the following form:
 
-﻿ Y = α X + β ρ + ϵ where: α , β = Constant parameters X , ρ = Independent variables ϵ = Error term \begin{aligned} &Y = \alpha X + \beta \rho + \epsilon \\ &\textbf{where:} \\ &\alpha, \beta = \text{Constant parameters} \\ &X, \rho = \text{Independent variables} \\ &\epsilon = \text{Error term} \\ \end{aligned} ​Y=αX+βρ+ϵwhere:α,β=Constant parametersX,ρ=Independent variablesϵ=Error term​﻿
+$$Y = \alpha * X + \beta * \rho + \epsilon$$
+where:
+- $\alpha, \beta = \text{Constant parameters}$
+- $X, \rho = \text{Independent variables}$
+- $\epsilon = \text{Error term}$
 
 When the actual Y differs from the expected or predicted Y in the model during an empirical test, then the error term does not equal 0, which means there are other factors that influence Y.
 

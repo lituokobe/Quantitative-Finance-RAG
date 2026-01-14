@@ -2,7 +2,7 @@
 
 ## What Is Theta?
 
-An option tends to lose value at a faster rate as it gets closer to maturity or the contract's end. The Greek letter θ or "theta" measures this loss in value. Theta is also known as an option's time decay. It's the daily amount by which an option's value drops.
+An option tends to lose value at a faster rate as it gets closer to maturity or the contract's end. The Greek letter \$\Theta\$ or "theta" measures this loss in value. Theta is also known as an option's time decay. It's the daily amount by which an option's value drops.
 
 ### Key Takeaways
 
@@ -47,7 +47,7 @@ Put another way, option values are composed of extrinsic and [intrinsic values](
 
 The [Greeks](https://www.investopedia.com/terms/g/greeks.asp) altogether measure the sensitivity of options prices to their respective variables.
 
-For instance, the delta of an option indicates the sensitivity of an option's price in relation to a $1 change in the underlying asset. The gamma indicates the sensitivity of an option's delta in relation to a $1 change in the underlying security.
+For instance, the delta of an option indicates the sensitivity of an option's price in relation to a \$1 change in the underlying asset. The gamma indicates the sensitivity of an option's delta in relation to a \$1 change in the underlying security.
 
 Vega indicates how an option's price theoretically changes for each one percentage point move in implied volatility.
 
@@ -57,13 +57,13 @@ Theta has other meanings in different fields. In economics, it refers to the res
 
 ## Example of Theta
 
-Imagine you’re interested in buying a call option for a stock named TechCo. The stock is trading at $50, and you’re looking at a call option with a $52 strike price, expiring in 30 days. This option costs $2 per share, or $200 for a standard options contract that covers 100 shares.
+Imagine you’re interested in buying a call option for a stock named TechCo. The stock is trading at \$50, and you’re looking at a call option with a \$52 strike price, expiring in 30 days. This option costs \$2 per share, or \$200 for a standard options contract that covers 100 shares.
 
 Suppose the theta for this option is -0.05. If everything else (stock price, volatility, interest rates, etc.) stays the same, the option will lose five cents per day in value just because time is passing.
 
 Fast forward 10 days, and you find that TechCo’s stock price hasn’t changed. If all else stayed the same, the value of your option should have decreased only because of theta or time decay.
 
-Specifically, you’d expect a drop of 50 cents (10 days multiplied by the theta, -0.05) in the option’s price. That would mean your $2 option is now worth $1.50.
+Specifically, you’d expect a drop of 50 cents (10 days multiplied by the theta, -0.05) in the option’s price. That would mean your \$2 option is now worth \$1.50.
 
 Hence, understanding theta helps you grasp how the ticking of the clock affects your options investments.
 

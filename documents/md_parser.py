@@ -5,7 +5,7 @@ from pathlib import Path
 from langchain_core.documents import Document
 from langchain_experimental.text_splitter import SemanticChunker
 
-from models.models import openai_embedding, qwen3_embedding_model
+from models.models import qwen3_embedding_model
 
 
 # ============================================================
