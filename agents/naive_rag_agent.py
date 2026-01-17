@@ -2,9 +2,9 @@ from langchain_classic.agents import create_tool_calling_agent, AgentExecutor
 from langchain_core.chat_history import BaseChatMessageHistory, InMemoryChatMessageHistory
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables import RunnableWithMessageHistory
-from config.rag_config import SYSTEM_PROMPT
+from config.prompts import SYSTEM_PROMPT
 from models.models import agent_llm
-from tools.retriever_tools import retriever_tool
+from tools.retriever_tools import get_default_retriever_tool
 from utils.pretty_print import pretty_print
 
 # TODO: Build naive RAG agent with simple retriever tool call
@@ -15,7 +15,7 @@ prompt = ChatPromptTemplate.from_messages([
     ("human", "{input}"),
     MessagesPlaceholder(variable_name="agent_scratchpad", optional=True),
 ])
-
+retriever_tool = get_default_retriever_tool()
 naive_rag_planner = create_tool_calling_agent( # Only plans to call the tool if needed
     agent_llm,
     [retriever_tool],

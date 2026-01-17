@@ -1,0 +1,840 @@
+2026-01-16 23:20:17,117 - ingest_with_milvus_db - INFO: Parsing process starts and scan the directory: /Users/lituokobe/Desktop/finance_knowledge_RAG/data/md_articles.
+2026-01-16 23:20:17,133 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-16 23:20:30,956 - milvus - ERROR: Failed to insert batch starting at entity: 1/31. First entity data: {'text': 'Simple Moving Average (SMA) Explained: Definition and Calculation Formula', 'dense': '[-0.03328549861907959, -0.02972542494535446, -0.01273705717176199, -0.04766014218330383, 0.017712833359837532, 0.08157916367053986, -0.01358045730739832, -0.012732338160276413, -0.03917663171887398, -0.028950076550245285]... (truncated, total len: 1024)', 'category': 'section', 'title': 'Simple Moving Average (SMA) Explained: Definition and Calculation Formula', 'breadcrumb': 'Simple Moving Average (SMA) Explained: Definition and Calculation Formula', 'section_level': 1, 'source': '/Users/lituokobe/Desktop/finance_knowledge_RAG/data/md_articles/SMA.md', 'filename': 'SMA.md', 'contains_math': False, 'contains_table': False}
+2026-01-16 23:20:30,956 - ingest_with_milvus_db - WARNING: Error while writing.
+2026-01-16 23:20:30,956 - ingest_with_milvus_db - ERROR: <DataNotMatchException: (code=1, message=Insert missed an field `sparse` to collection without set nullable==true or set default_value)>
+Traceback (most recent call last):
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/ingest_with_milvus_db.py", line 78, in milvus_writer_process
+    mv.add_documents(datas)
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/milvus_db.py", line 102, in add_documents
+    self.vector_store_saved.add_documents(datas)
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 2272, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1403, in add_texts
+    return self.add_embeddings(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1512, in add_embeddings
+    self._handle_batch_operation_exception(
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1553, in _handle_batch_operation_exception
+    raise e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1504, in add_embeddings
+    res = self.client.insert(
+          ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/milvus_client/milvus_client.py", line 227, in insert
+    raise ex from ex
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/milvus_client/milvus_client.py", line 223, in insert
+    res = conn.insert_rows(
+          ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 271, in handler
+    raise e from e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 263, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 322, in handler
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 196, in handler
+    raise e from e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 166, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/grpc_handler.py", line 671, in insert_rows
+    request = self._prepare_row_insert_request(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/grpc_handler.py", line 727, in _prepare_row_insert_request
+    return Prepare.row_insert_param(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/prepare.py", line 1058, in row_insert_param
+    return cls._parse_row_request(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/prepare.py", line 822, in _parse_row_request
+    raise DataNotMatchException(
+pymilvus.exceptions.DataNotMatchException: <DataNotMatchException: (code=1, message=Insert missed an field `sparse` to collection without set nullable==true or set default_value)>
+2026-01-16 23:20:39,754 - milvus - ERROR: Failed to insert batch starting at entity: 1/26. First entity data: {'text': 'At the Money (ATM) in Options Trading: Definition and Key Insights', 'dense': '[-0.04110440984368324, -0.0116683728992939, -0.012432169169187546, -0.04835440218448639, -0.012433236464858055, -0.024396121501922607, 0.039630960673093796, 0.010396122001111507, 0.00732324318960309, 0.011225714348256588]... (truncated, total len: 1024)', 'category': 'section', 'title': 'At the Money (ATM) in Options Trading: Definition and Key Insights', 'breadcrumb': 'At the Money (ATM) in Options Trading: Definition and Key Insights', 'section_level': 1, 'source': '/Users/lituokobe/Desktop/finance_knowledge_RAG/data/md_articles/ATM.md', 'filename': 'ATM.md', 'contains_math': False, 'contains_table': False}
+2026-01-16 23:20:39,754 - ingest_with_milvus_db - WARNING: Error while writing.
+2026-01-16 23:20:39,754 - ingest_with_milvus_db - ERROR: <DataNotMatchException: (code=1, message=Insert missed an field `sparse` to collection without set nullable==true or set default_value)>
+Traceback (most recent call last):
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/ingest_with_milvus_db.py", line 78, in milvus_writer_process
+    mv.add_documents(datas)
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/milvus_db.py", line 102, in add_documents
+    self.vector_store_saved.add_documents(datas)
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 2272, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1403, in add_texts
+    return self.add_embeddings(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1512, in add_embeddings
+    self._handle_batch_operation_exception(
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1553, in _handle_batch_operation_exception
+    raise e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1504, in add_embeddings
+    res = self.client.insert(
+          ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/milvus_client/milvus_client.py", line 227, in insert
+    raise ex from ex
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/milvus_client/milvus_client.py", line 223, in insert
+    res = conn.insert_rows(
+          ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 271, in handler
+    raise e from e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 263, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 322, in handler
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 196, in handler
+    raise e from e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 166, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/grpc_handler.py", line 671, in insert_rows
+    request = self._prepare_row_insert_request(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/grpc_handler.py", line 727, in _prepare_row_insert_request
+    return Prepare.row_insert_param(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/prepare.py", line 1058, in row_insert_param
+    return cls._parse_row_request(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/prepare.py", line 822, in _parse_row_request
+    raise DataNotMatchException(
+pymilvus.exceptions.DataNotMatchException: <DataNotMatchException: (code=1, message=Insert missed an field `sparse` to collection without set nullable==true or set default_value)>
+2026-01-16 23:20:52,104 - milvus - ERROR: Failed to insert batch starting at entity: 1/42. First entity data: {'text': 'Correction', 'dense': '[0.028052499517798424, -0.04344228655099869, -0.01669590175151825, -0.02505854144692421, 0.049958486109972, 0.030808014795184135, -0.032109033316373825, -0.020582491531968117, -0.029248520731925964, 0.0123207475990057]... (truncated, total len: 1024)', 'category': 'section', 'title': 'Correction', 'breadcrumb': 'Correction', 'section_level': 1, 'source': '/Users/lituokobe/Desktop/finance_knowledge_RAG/data/md_articles/Correction.md', 'filename': 'Correction.md', 'contains_math': False, 'contains_table': False}
+2026-01-16 23:20:52,105 - ingest_with_milvus_db - WARNING: Error while writing.
+2026-01-16 23:20:52,105 - ingest_with_milvus_db - ERROR: <DataNotMatchException: (code=1, message=Insert missed an field `sparse` to collection without set nullable==true or set default_value)>
+Traceback (most recent call last):
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/ingest_with_milvus_db.py", line 78, in milvus_writer_process
+    mv.add_documents(datas)
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/milvus_db.py", line 102, in add_documents
+    self.vector_store_saved.add_documents(datas)
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 2272, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1403, in add_texts
+    return self.add_embeddings(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1512, in add_embeddings
+    self._handle_batch_operation_exception(
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1553, in _handle_batch_operation_exception
+    raise e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1504, in add_embeddings
+    res = self.client.insert(
+          ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/milvus_client/milvus_client.py", line 227, in insert
+    raise ex from ex
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/milvus_client/milvus_client.py", line 223, in insert
+    res = conn.insert_rows(
+          ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 271, in handler
+    raise e from e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 263, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 322, in handler
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 196, in handler
+    raise e from e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 166, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/grpc_handler.py", line 671, in insert_rows
+    request = self._prepare_row_insert_request(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/grpc_handler.py", line 727, in _prepare_row_insert_request
+    return Prepare.row_insert_param(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/prepare.py", line 1058, in row_insert_param
+    return cls._parse_row_request(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/prepare.py", line 822, in _parse_row_request
+    raise DataNotMatchException(
+pymilvus.exceptions.DataNotMatchException: <DataNotMatchException: (code=1, message=Insert missed an field `sparse` to collection without set nullable==true or set default_value)>
+2026-01-16 23:20:53,826 - ingest_with_milvus_db - WARNING: Error while writing.
+2026-01-16 23:20:53,826 - ingest_with_milvus_db - ERROR: MPS backend out of memory (MPS allocated: 7.62 GiB, other allocations: 10.44 GiB, max allowed: 18.13 GiB). Tried to allocate 130.50 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+Traceback (most recent call last):
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/ingest_with_milvus_db.py", line 78, in milvus_writer_process
+    mv.add_documents(datas)
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/milvus_db.py", line 102, in add_documents
+    self.vector_store_saved.add_documents(datas)
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 2272, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1366, in add_texts
+    embeddings.append(embedding_func.embed_documents(texts))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/models/models.py", line 37, in embed_documents
+    arr = self.embedding.encode(texts)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 1094, in encode
+    out_features = self.forward(features, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 1175, in forward
+    input = module(input, **module_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/models/Transformer.py", line 262, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 410, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 260, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 216, in forward
+    attn_output, attn_weights = attention_interface(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/integrations/sdpa_attention.py", line 106, in sdpa_attention_forward
+    attn_output = attn_output.transpose(1, 2).contiguous()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: MPS backend out of memory (MPS allocated: 7.62 GiB, other allocations: 10.44 GiB, max allowed: 18.13 GiB). Tried to allocate 130.50 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+2026-01-16 23:20:53,882 - ingest_with_milvus_db - WARNING: Error while writing.
+2026-01-16 23:20:53,882 - ingest_with_milvus_db - ERROR: MPS backend out of memory (MPS allocated: 7.62 GiB, other allocations: 10.44 GiB, max allowed: 18.13 GiB). Tried to allocate 96.08 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+Traceback (most recent call last):
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/ingest_with_milvus_db.py", line 78, in milvus_writer_process
+    mv.add_documents(datas)
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/milvus_db.py", line 102, in add_documents
+    self.vector_store_saved.add_documents(datas)
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 2272, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1366, in add_texts
+    embeddings.append(embedding_func.embed_documents(texts))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/models/models.py", line 37, in embed_documents
+    arr = self.embedding.encode(texts)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 1094, in encode
+    out_features = self.forward(features, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 1175, in forward
+    input = module(input, **module_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/models/Transformer.py", line 262, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 410, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 260, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 200, in forward
+    query_states = self.q_norm(self.q_proj(hidden_states).view(hidden_shape)).transpose(1, 2)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: MPS backend out of memory (MPS allocated: 7.62 GiB, other allocations: 10.44 GiB, max allowed: 18.13 GiB). Tried to allocate 96.08 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+2026-01-16 23:20:54,070 - ingest_with_milvus_db - WARNING: Error while writing.
+2026-01-16 23:20:54,070 - ingest_with_milvus_db - ERROR: MPS backend out of memory (MPS allocated: 7.62 GiB, other allocations: 10.44 GiB, max allowed: 18.13 GiB). Tried to allocate 150.45 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+Traceback (most recent call last):
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/ingest_with_milvus_db.py", line 78, in milvus_writer_process
+    mv.add_documents(datas)
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/milvus_db.py", line 102, in add_documents
+    self.vector_store_saved.add_documents(datas)
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 2272, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1366, in add_texts
+    embeddings.append(embedding_func.embed_documents(texts))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/models/models.py", line 37, in embed_documents
+    arr = self.embedding.encode(texts)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 1094, in encode
+    out_features = self.forward(features, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 1175, in forward
+    input = module(input, **module_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/models/Transformer.py", line 262, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 410, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 260, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 216, in forward
+    attn_output, attn_weights = attention_interface(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/integrations/sdpa_attention.py", line 96, in sdpa_attention_forward
+    attn_output = torch.nn.functional.scaled_dot_product_attention(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: MPS backend out of memory (MPS allocated: 7.62 GiB, other allocations: 10.44 GiB, max allowed: 18.13 GiB). Tried to allocate 150.45 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+2026-01-16 23:20:54,118 - ingest_with_milvus_db - WARNING: Error while writing.
+2026-01-16 23:20:54,118 - ingest_with_milvus_db - ERROR: MPS backend out of memory (MPS allocated: 7.62 GiB, other allocations: 10.44 GiB, max allowed: 18.13 GiB). Tried to allocate 79.68 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+Traceback (most recent call last):
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/ingest_with_milvus_db.py", line 78, in milvus_writer_process
+    mv.add_documents(datas)
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/milvus_db.py", line 102, in add_documents
+    self.vector_store_saved.add_documents(datas)
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 2272, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1366, in add_texts
+    embeddings.append(embedding_func.embed_documents(texts))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/models/models.py", line 37, in embed_documents
+    arr = self.embedding.encode(texts)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 1094, in encode
+    out_features = self.forward(features, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 1175, in forward
+    input = module(input, **module_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/models/Transformer.py", line 262, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 410, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 260, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 200, in forward
+    query_states = self.q_norm(self.q_proj(hidden_states).view(hidden_shape)).transpose(1, 2)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: MPS backend out of memory (MPS allocated: 7.62 GiB, other allocations: 10.44 GiB, max allowed: 18.13 GiB). Tried to allocate 79.68 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+2026-01-16 23:20:54,259 - ingest_with_milvus_db - WARNING: Error while writing.
+2026-01-16 23:20:54,259 - ingest_with_milvus_db - ERROR: MPS backend out of memory (MPS allocated: 7.62 GiB, other allocations: 10.44 GiB, max allowed: 18.13 GiB). Tried to allocate 128.28 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+Traceback (most recent call last):
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/ingest_with_milvus_db.py", line 78, in milvus_writer_process
+    mv.add_documents(datas)
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/milvus_db.py", line 102, in add_documents
+    self.vector_store_saved.add_documents(datas)
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 2272, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1366, in add_texts
+    embeddings.append(embedding_func.embed_documents(texts))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/models/models.py", line 37, in embed_documents
+    arr = self.embedding.encode(texts)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 1094, in encode
+    out_features = self.forward(features, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 1175, in forward
+    input = module(input, **module_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/models/Transformer.py", line 262, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 410, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 260, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 216, in forward
+    attn_output, attn_weights = attention_interface(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/integrations/sdpa_attention.py", line 96, in sdpa_attention_forward
+    attn_output = torch.nn.functional.scaled_dot_product_attention(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: MPS backend out of memory (MPS allocated: 7.62 GiB, other allocations: 10.44 GiB, max allowed: 18.13 GiB). Tried to allocate 128.28 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+2026-01-16 23:20:54,385 - ingest_with_milvus_db - WARNING: Error while writing.
+2026-01-16 23:20:54,386 - ingest_with_milvus_db - ERROR: MPS backend out of memory (MPS allocated: 7.62 GiB, other allocations: 10.44 GiB, max allowed: 18.13 GiB). Tried to allocate 157.91 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+Traceback (most recent call last):
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/ingest_with_milvus_db.py", line 78, in milvus_writer_process
+    mv.add_documents(datas)
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/milvus_db.py", line 102, in add_documents
+    self.vector_store_saved.add_documents(datas)
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 2272, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1366, in add_texts
+    embeddings.append(embedding_func.embed_documents(texts))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/models/models.py", line 37, in embed_documents
+    arr = self.embedding.encode(texts)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 1094, in encode
+    out_features = self.forward(features, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 1175, in forward
+    input = module(input, **module_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/models/Transformer.py", line 262, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 410, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 260, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 216, in forward
+    attn_output, attn_weights = attention_interface(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/integrations/sdpa_attention.py", line 96, in sdpa_attention_forward
+    attn_output = torch.nn.functional.scaled_dot_product_attention(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: MPS backend out of memory (MPS allocated: 7.62 GiB, other allocations: 10.44 GiB, max allowed: 18.13 GiB). Tried to allocate 157.91 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+2026-01-16 23:20:54,555 - ingest_with_milvus_db - WARNING: Error while writing.
+2026-01-16 23:20:54,555 - ingest_with_milvus_db - ERROR: MPS backend out of memory (MPS allocated: 7.62 GiB, other allocations: 10.44 GiB, max allowed: 18.13 GiB). Tried to allocate 167.32 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+Traceback (most recent call last):
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/ingest_with_milvus_db.py", line 78, in milvus_writer_process
+    mv.add_documents(datas)
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/milvus_db.py", line 102, in add_documents
+    self.vector_store_saved.add_documents(datas)
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 2272, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1366, in add_texts
+    embeddings.append(embedding_func.embed_documents(texts))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/models/models.py", line 37, in embed_documents
+    arr = self.embedding.encode(texts)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 1094, in encode
+    out_features = self.forward(features, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 1175, in forward
+    input = module(input, **module_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/models/Transformer.py", line 262, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 410, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 260, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 216, in forward
+    attn_output, attn_weights = attention_interface(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/integrations/sdpa_attention.py", line 96, in sdpa_attention_forward
+    attn_output = torch.nn.functional.scaled_dot_product_attention(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: MPS backend out of memory (MPS allocated: 7.62 GiB, other allocations: 10.44 GiB, max allowed: 18.13 GiB). Tried to allocate 167.32 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+2026-01-16 23:20:54,590 - ingest_with_milvus_db - WARNING: Error while writing.
+2026-01-16 23:20:54,590 - ingest_with_milvus_db - ERROR: MPS backend out of memory (MPS allocated: 7.62 GiB, other allocations: 10.44 GiB, max allowed: 18.13 GiB). Tried to allocate 89.00 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+Traceback (most recent call last):
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/ingest_with_milvus_db.py", line 78, in milvus_writer_process
+    mv.add_documents(datas)
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/milvus_db.py", line 102, in add_documents
+    self.vector_store_saved.add_documents(datas)
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 2272, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1366, in add_texts
+    embeddings.append(embedding_func.embed_documents(texts))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/models/models.py", line 37, in embed_documents
+    arr = self.embedding.encode(texts)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 1094, in encode
+    out_features = self.forward(features, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/SentenceTransformer.py", line 1175, in forward
+    input = module(input, **module_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/sentence_transformers/models/Transformer.py", line 262, in forward
+    outputs = self.auto_model(**trans_features, **kwargs, return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 410, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 260, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 200, in forward
+    query_states = self.q_norm(self.q_proj(hidden_states).view(hidden_shape)).transpose(1, 2)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: MPS backend out of memory (MPS allocated: 7.62 GiB, other allocations: 10.44 GiB, max allowed: 18.13 GiB). Tried to allocate 89.00 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+2026-01-16 23:21:02,868 - milvus - ERROR: Failed to insert batch starting at entity: 1/33. First entity data: {'text': 'Portfolio Return: What it is, How it Works', 'dense': '[-0.03068356029689312, 0.005564956460148096, -0.014252337627112865, -0.035544585436582565, 0.07428916543722153, 0.005765989422798157, 0.007324610371142626, -0.02865639328956604, -0.04255378618836403, -0.01085339393466711]... (truncated, total len: 1024)', 'category': 'section', 'title': 'Portfolio Return: What it is, How it Works', 'breadcrumb': 'Portfolio Return: What it is, How it Works', 'section_level': 1, 'source': '/Users/lituokobe/Desktop/finance_knowledge_RAG/data/md_articles/Portfolio_Return.md', 'filename': 'Portfolio_Return.md', 'contains_math': False, 'contains_table': False}
+2026-01-16 23:21:02,868 - ingest_with_milvus_db - WARNING: Error while writing.
+2026-01-16 23:21:02,868 - ingest_with_milvus_db - ERROR: <DataNotMatchException: (code=1, message=Insert missed an field `sparse` to collection without set nullable==true or set default_value)>
+Traceback (most recent call last):
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/ingest_with_milvus_db.py", line 78, in milvus_writer_process
+    mv.add_documents(datas)
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/milvus_db.py", line 102, in add_documents
+    self.vector_store_saved.add_documents(datas)
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 2272, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1403, in add_texts
+    return self.add_embeddings(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1512, in add_embeddings
+    self._handle_batch_operation_exception(
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1553, in _handle_batch_operation_exception
+    raise e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1504, in add_embeddings
+    res = self.client.insert(
+          ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/milvus_client/milvus_client.py", line 227, in insert
+    raise ex from ex
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/milvus_client/milvus_client.py", line 223, in insert
+    res = conn.insert_rows(
+          ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 271, in handler
+    raise e from e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 263, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 322, in handler
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 196, in handler
+    raise e from e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 166, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/grpc_handler.py", line 671, in insert_rows
+    request = self._prepare_row_insert_request(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/grpc_handler.py", line 727, in _prepare_row_insert_request
+    return Prepare.row_insert_param(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/prepare.py", line 1058, in row_insert_param
+    return cls._parse_row_request(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/prepare.py", line 822, in _parse_row_request
+    raise DataNotMatchException(
+pymilvus.exceptions.DataNotMatchException: <DataNotMatchException: (code=1, message=Insert missed an field `sparse` to collection without set nullable==true or set default_value)>

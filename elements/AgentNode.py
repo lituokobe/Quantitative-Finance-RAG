@@ -4,14 +4,14 @@ from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnableConfig
 from config.state import State
 from models.models import agent_llm
-from tools.retriever_tools import retriever_tool
+from tools.retriever_tools import get_default_retriever_tool
 from utils.log_utils import log
 from utils.utils import get_last_user_message
 
 class AgentNode:
     def __init__(self):
         self.llm_runnable = agent_llm
-        self.retriever_runnable = retriever_tool
+        self.retriever_runnable = get_default_retriever_tool()
     def __call__(self, state: State, config: RunnableConfig) -> dict:
         try:
             log.info("agent_node starts to work.")

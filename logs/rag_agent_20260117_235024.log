@@ -1,0 +1,3 @@
+2026-01-17 23:50:24,681 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-17 23:50:24,701 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-01-17 23:50:24,701 - retriever_tools - INFO: Created hybrid retriever tool 'retriever' with k=9, threshold=0.1

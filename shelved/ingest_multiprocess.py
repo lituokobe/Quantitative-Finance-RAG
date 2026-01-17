@@ -6,7 +6,7 @@ from langchain_core.documents import Document
 from config.paths import MD_PATH, QWEN3_EMBEDDING_PATH
 from config.rag_config import COLLECTION_NAME
 from documents.md_parser import FinanceMarkdownParser
-from documents.milvus_chunk_writer import MilvusChunkWriter
+from shelved.milvus_chunk_writer import MilvusChunkWriter
 from models.models import CustomEmbedding
 from utils.log_utils import log
 

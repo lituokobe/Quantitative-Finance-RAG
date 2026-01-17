@@ -1,0 +1,104 @@
+2026-01-16 23:49:36,108 - ingest_with_milvus_db - INFO: Parsing process starts and scan the directory: /Users/lituokobe/Desktop/finance_knowledge_RAG/data/md_articles.
+2026-01-16 23:49:36,124 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-16 23:49:48,467 - milvus - ERROR: Failed to insert batch starting at entity: 1/31. First entity data: {'text': 'Simple Moving Average (SMA) Explained: Definition and Calculation Formula', 'dense': '[-0.03328549861907959, -0.02972542494535446, -0.01273705717176199, -0.04766014218330383, 0.017712833359837532, 0.08157916367053986, -0.01358045730739832, -0.012732338160276413, -0.03917663171887398, -0.028950076550245285]... (truncated, total len: 1024)', 'category': 'section', 'title': 'Simple Moving Average (SMA) Explained: Definition and Calculation Formula', 'breadcrumb': 'Simple Moving Average (SMA) Explained: Definition and Calculation Formula', 'section_level': 1, 'source': '/Users/lituokobe/Desktop/finance_knowledge_RAG/data/md_articles/SMA.md', 'filename': 'SMA.md', 'contains_math': False, 'contains_table': False}
+2026-01-16 23:49:48,468 - ingest_with_milvus_db - WARNING: Error while writing.
+2026-01-16 23:49:48,468 - ingest_with_milvus_db - ERROR: <DataNotMatchException: (code=1, message=Insert missed an field `sparse` to collection without set nullable==true or set default_value)>
+Traceback (most recent call last):
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/ingest_with_milvus_db.py", line 78, in milvus_writer_process
+    mv.add_documents(datas)
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/milvus_db.py", line 102, in add_documents
+    self.vector_store_saved.add_documents(datas)
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 2272, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1403, in add_texts
+    return self.add_embeddings(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1512, in add_embeddings
+    self._handle_batch_operation_exception(
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1553, in _handle_batch_operation_exception
+    raise e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1504, in add_embeddings
+    res = self.client.insert(
+          ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/milvus_client/milvus_client.py", line 227, in insert
+    raise ex from ex
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/milvus_client/milvus_client.py", line 223, in insert
+    res = conn.insert_rows(
+          ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 271, in handler
+    raise e from e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 263, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 322, in handler
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 196, in handler
+    raise e from e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 166, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/grpc_handler.py", line 671, in insert_rows
+    request = self._prepare_row_insert_request(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/grpc_handler.py", line 727, in _prepare_row_insert_request
+    return Prepare.row_insert_param(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/prepare.py", line 1058, in row_insert_param
+    return cls._parse_row_request(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/prepare.py", line 822, in _parse_row_request
+    raise DataNotMatchException(
+pymilvus.exceptions.DataNotMatchException: <DataNotMatchException: (code=1, message=Insert missed an field `sparse` to collection without set nullable==true or set default_value)>
+2026-01-16 23:49:56,913 - milvus - ERROR: Failed to insert batch starting at entity: 1/26. First entity data: {'text': 'At the Money (ATM) in Options Trading: Definition and Key Insights', 'dense': '[-0.04110440984368324, -0.0116683728992939, -0.012432169169187546, -0.04835440218448639, -0.012433236464858055, -0.024396121501922607, 0.039630960673093796, 0.010396122001111507, 0.00732324318960309, 0.011225714348256588]... (truncated, total len: 1024)', 'category': 'section', 'title': 'At the Money (ATM) in Options Trading: Definition and Key Insights', 'breadcrumb': 'At the Money (ATM) in Options Trading: Definition and Key Insights', 'section_level': 1, 'source': '/Users/lituokobe/Desktop/finance_knowledge_RAG/data/md_articles/ATM.md', 'filename': 'ATM.md', 'contains_math': False, 'contains_table': False}
+2026-01-16 23:49:56,913 - ingest_with_milvus_db - WARNING: Error while writing.
+2026-01-16 23:49:56,913 - ingest_with_milvus_db - ERROR: <DataNotMatchException: (code=1, message=Insert missed an field `sparse` to collection without set nullable==true or set default_value)>
+Traceback (most recent call last):
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/ingest_with_milvus_db.py", line 78, in milvus_writer_process
+    mv.add_documents(datas)
+  File "/Users/lituokobe/Desktop/finance_knowledge_RAG/documents/milvus_db.py", line 102, in add_documents
+    self.vector_store_saved.add_documents(datas)
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 2272, in add_documents
+    return self.add_texts(texts, metadatas, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1403, in add_texts
+    return self.add_embeddings(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1512, in add_embeddings
+    self._handle_batch_operation_exception(
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1553, in _handle_batch_operation_exception
+    raise e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/langchain_milvus/vectorstores/milvus.py", line 1504, in add_embeddings
+    res = self.client.insert(
+          ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/milvus_client/milvus_client.py", line 227, in insert
+    raise ex from ex
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/milvus_client/milvus_client.py", line 223, in insert
+    res = conn.insert_rows(
+          ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 271, in handler
+    raise e from e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 263, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 322, in handler
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 196, in handler
+    raise e from e
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/decorators.py", line 166, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/grpc_handler.py", line 671, in insert_rows
+    request = self._prepare_row_insert_request(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/grpc_handler.py", line 727, in _prepare_row_insert_request
+    return Prepare.row_insert_param(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/prepare.py", line 1058, in row_insert_param
+    return cls._parse_row_request(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/finance_knowledge_RAG/lib/python3.11/site-packages/pymilvus/client/prepare.py", line 822, in _parse_row_request
+    raise DataNotMatchException(
+pymilvus.exceptions.DataNotMatchException: <DataNotMatchException: (code=1, message=Insert missed an field `sparse` to collection without set nullable==true or set default_value)>

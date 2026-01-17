@@ -68,4 +68,14 @@ investopedia_articles = {
     # "Vega": "https://www.investopedia.com/terms/v/vega.asp",
     # "Rho": "https://www.investopedia.com/terms/r/rho.asp",
     # "Risk": "https://www.investopedia.com/terms/r/risk.asp"
+    # "Bond_Valuation":"https://www.investopedia.com/terms/b/bond-valuation.asp",
+    # "Discount_Rate":"https://www.investopedia.com/terms/d/discountrate.asp",
+    # "Cashflow":"https://www.investopedia.com/terms/c/cashflow.asp",
+    # "Present_Value":"https://www.investopedia.com/terms/p/presentvalue.asp",
+    # "Par_Value":"https://www.investopedia.com/terms/p/parvalue.asp",
+    # "Coupon_Bond":"https://www.investopedia.com/terms/c/couponbond.asp",
+    # "Inflation":"https://www.investopedia.com/terms/i/inflation.asp",
+    # "CPI":"https://www.investopedia.com/terms/c/consumerpriceindex.asp",
+    # "Deflation":"https://www.investopedia.com/terms/d/deflation.asp"
+
 }

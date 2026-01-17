@@ -1,184 +1,117 @@
+# Using a Distributed, Multi-Process Approach to Write Massive Data into the Milvus Database
+import multiprocessing
 import os
-from langchain_core.documents import Document
+from multiprocessing import Queue
+
 from config.paths import MD_PATH
-from config.rag_config import COLLECTION_NAME
 from documents.md_parser import FinanceMarkdownParser
 from documents.milvus_db import MilvusVectorSave
 from utils.log_utils import log
 
 
-def ingest_markdown_files(
-        md_dir: str,
-        batch_size: int = 32,
-        recreate_collection: bool = False
-):
+def file_parser_process(dir_path: str, output_queue: Queue, batch_size: int = 20):
+    #using batching can decrease the usage of RAM
     """
-    Ingest markdown files into Milvus with hybrid search support.
-
-    Args:
-        md_dir: Directory containing markdown files
-        batch_size: Number of documents to batch before inserting
-        recreate_collection: If True, drop and recreate collection
+    Process 1: parse all markdown files under the directory and put them into queue in batches
+    :param dir_path:
+    :param output_queue:
+    :param batch_size:
+    :return:
     """
+    log.info(f"Parsing process starts and scan the directory: {dir_path}.")
 
-    # Initialize parser and vector store
-    fm_parser = FinanceMarkdownParser()
-    mv = MilvusVectorSave()
-
-    # Create collection if needed
-    log.info(f"Setting up collection: {COLLECTION_NAME}")
-    mv.create_collection(recreate=recreate_collection)
-
-    # Create connection
-    mv.create_connection()
-
-    # Process files
-    batch: list[Document] = []
-    total_doc_count = 0
-    total_file_count = 0
-
-    log.info(f"Starting ingestion from: {md_dir}")
-
-    for root, _, files in os.walk(md_dir):
-        md_files = sorted([f for f in files if f.endswith(".md")])
-
-        for filename in md_files:
-            filepath = os.path.join(root, filename)
-
-            try:
-                log.info(f"Processing: {filename}")
-
-                # Parse markdown into chunks
-                docs = fm_parser.parse_markdown_to_documents(filepath)
-
-                if not docs:
-                    log.warning(f"No chunks extracted from {filename}")
-                    continue
-
-                batch.extend(docs)
-                total_file_count += 1
-
-                # Insert batch when full
-                if len(batch) >= batch_size:
-                    log.info(f"Inserting batch of {len(batch)} chunks...")
-                    mv.add_documents(batch)
-                    total_doc_count += len(batch)
-                    batch.clear()
-                    log.info(f"Progress: {total_doc_count} chunks from {total_file_count} files")
-
-            except Exception as e:
-                log.error(f"Error processing {filename}: {e}")
-                continue
-
-    # Insert remaining documents
-    if batch:
-        log.info(f"Inserting final batch of {len(batch)} chunks...")
-        mv.add_documents(batch)
-        total_doc_count += len(batch)
-
-    log.info("=" * 80)
-    log.info(f"Ingestion complete!")
-    log.info(f"Total files processed: {total_files}")
-    log.info(f"Total chunks created: {total_docs}")
-    log.info(f"Collection: {COLLECTION_NAME}")
-    log.info("=" * 80)
-
-    return total_docs, total_files
-
-
-def verify_ingestion():
-    """Verify that documents were successfully ingested."""
-    from pymilvus import MilvusClient
-    from config.paths import MILVUS_URI
-
-    client = MilvusClient(uri=MILVUS_URI)
-
-    if COLLECTION_NAME not in client.list_collections():
-        log.error(f"Collection {COLLECTION_NAME} not found!")
-        return False
-
-    # Get collection stats
-    stats = client.get_collection_stats(COLLECTION_NAME)
-    row_count = stats.get("row_count", 0)
-
-    log.info(f"Collection verification: {row_count} documents in {COLLECTION_NAME}")
-
-    return row_count > 0
-
-
-def test_search():
-    """Test the hybrid search functionality."""
-    from documents.milvus_db import get_hybrid_retriever
-
-    log.info("Testing hybrid search...")
-
-    retriever = get_hybrid_retriever(k=5, score_threshold=0.1)
-
-    test_queries = [
-        "What is a call option?",
-        "Explain the Black-Scholes formula",
-        "What is quantitative finance?"
+    #get all .md file
+    md_files = [
+        os.path.join(dir_path, f)
+        for f in os.listdir(dir_path)
+        if f.endswith(".md")
     ]
 
-    for query in test_queries:
-        log.info(f"\nQuery: {query}")
-        results = retriever.invoke(query)
-        log.info(f"Found {len(results)} results")
+    if not md_files:
+        log.warning("Warning: no markdown files found.")
+        output_queue.put(None) #.put() is a function to insert content to Queue instance
+        return
 
-        if results:
-            top_result = results[0]
-            log.info(f"Top result title: {top_result.metadata.get('title', 'N/A')}")
-            log.info(f"Top result preview: {top_result.page_content[:150]}...")
+    parser = FinanceMarkdownParser()
+    doc_batch = []
+    for file_path in md_files:
+        try:
+            docs = parser.parse_markdown_to_documents(file_path)
+            if docs:
+                doc_batch.extend(docs)
+            #put it to queue in batches
+            if len(doc_batch) >= batch_size:
+                output_queue.put(doc_batch.copy()) #insert a copy to the queue
+                doc_batch.clear() #clear all the batches in current buffer
+        except Exception as e:
+            log.warning(f"Error while parsing {file_path}: {str(e)}")
+            log.exception(e)
+
+    #insert leftover docs
+    if doc_batch:
+        output_queue.put(doc_batch)
+        #no need to use .copy() and .clear() because we won't use doc_batch anymore
+
+    #finishing
+    output_queue.put(None)
+    log.info(f"Parsing process ends and processed {len(md_files)} documents.")
 
 
-if __name__ == "__main__":
-    import argparse
+def milvus_writer_process(input_queue: Queue):
+    """
+    Process 2: read the queue and write the result to Milvus
+    :param input_queue:
+    :return:
+    """
+    mv = MilvusVectorSave()
+    mv.create_connection()
 
-    parser = argparse.ArgumentParser(description="Ingest markdown files into Milvus")
-    parser.add_argument(
-        "--md-dir",
-        type=str,
-        default=MD_PATH,
-        help="Directory containing markdown files"
+    total_count = 0
+    while True:
+        try:
+            #A blocking function is a function that prevents further execution of the program until it completes its task.
+            #When a blocking function is called, the program must wait for it to finish before proceeding to the next instruction.
+            datas = input_queue.get() # blocking function
+            if datas is None: #receives signal of ending
+                break
+            if isinstance(datas, list):
+                mv.add_documents(datas)
+                total_count += len(datas)
+                log.info(f"Added {len(datas)} documents.")
+        except Exception as e:
+            log.warning(f"Error while writing.")
+            log.exception(e)
+
+    log.info(f"Milvus writer process ends and processed {total_count} documents.")
+
+
+if __name__ == '__main__':
+    # configure parameters
+    md_dir = str(MD_PATH)  # Markdown file directory
+    queue_maxsize = 20  # max capacity of the queue to prevent RAM overload
+
+    mv = MilvusVectorSave()
+    mv.create_collection()
+    mv.create_connection()
+
+    # create queue
+    docs_queue = Queue(maxsize=queue_maxsize)
+
+    # initiate child processes
+    parser_proc = multiprocessing.Process(
+        target=file_parser_process,
+        args=(md_dir, docs_queue)
     )
-    parser.add_argument(
-        "--batch-size",
-        type=int,
-        default=32,
-        help="Batch size for ingestion"
-    )
-    parser.add_argument(
-        "--recreate",
-        action="store_true",
-        help="Drop and recreate collection"
-    )
-    parser.add_argument(
-        "--verify",
-        action="store_true",
-        help="Verify ingestion after completion"
-    )
-    parser.add_argument(
-        "--test",
-        action="store_true",
-        help="Run test searches after ingestion"
+    writer_proc = multiprocessing.Process(
+        target=milvus_writer_process,
+        args=(docs_queue,)
     )
 
-    args = parser.parse_args()
+    parser_proc.start()
+    writer_proc.start()
 
-    # Run ingestion
-    total_docs, total_files = ingest_markdown_files(
-        md_dir=args.md_dir,
-        batch_size=args.batch_size,
-        recreate_collection=args.recreate
-    )
+    # wait for the processes to end
+    parser_proc.join()
+    writer_proc.join()
 
-    # Verify if requested
-    if args.verify:
-        if verify_ingestion():
-            log.info("✓ Verification passed")
-        else:
-            log.error("✗ Verification failed")
-
-    # Test if requested
-    if args.test:
-        test_search()
+    print("System notification: all tasks are done.")
