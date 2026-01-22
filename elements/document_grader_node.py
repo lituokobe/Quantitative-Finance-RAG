@@ -1,14 +1,15 @@
+from config.state import State
 from elements.grader_chain import retrieval_grader_chain
 from utils.log_utils import log
 
 
-def DocumentGraderNode(state):
+def document_grader_node(state: State):
     try:
         log.info("document_grader_node starts to work.")
 
         logs = state.get("logs", [])
         last_log = logs[-1] if logs else {}
-        if logs:
+        if last_log:
             question = last_log.get("question", "")
             documents = last_log.get("retrieved_documents", [])
         else:
@@ -30,14 +31,13 @@ def DocumentGraderNode(state):
                 continue
         current_log = {
             **last_log,
+            "node":"document_grader_node",
             "filtered_docs": filtered_docs
         }
 
         log.info("document_grader_node finishes working.")
         return {
-            "messages": state.get("messages", []),
-            "dialog_state": None,
-            "logs": state["logs"] + [current_log]
+            "logs": state.get("logs",[]) + [current_log]
         }
     except Exception as e:
         log.error(f"document_grader_node has error: {e}")
