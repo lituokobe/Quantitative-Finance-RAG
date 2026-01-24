@@ -12,7 +12,7 @@ In the financial markets, such as stocks, when prices have generally been increa
 
 ## Characteristics of a Bull Market
 
-Bull markets generally start when the economy is strong. They tend to coincide with a strong [gross domestic product (GDP)](https://www.investopedia.com/ask/answers/what-is-gdp-why-its-important-to-economists-investors/), a drop in unemployment, and a rise in corporate profits. Growing investor confidence can keep bull markets moving. The overall demand for stocks is positive, along with the overall tone of the market. However, supply and demand for [securities](https://www.investopedia.com/terms/s/security.asp) can vary with supply weak while demand is strong.
+Bull markets generally start when the economy is strong. They tend to coincide with a strong gross domestic product (GDP), a drop in unemployment, and a rise in corporate profits. Growing investor confidence can keep bull markets moving. The overall demand for stocks is positive, along with the overall tone of the market. However, supply and demand for securities can vary with supply weak while demand is strong.
 
 It is difficult to predict consistently when trends in the market might change. No metric identifies a bull market, but the most common gauge used is a 20% or more rise in stock prices from recent lows. Analysts and investors commonly observe the following during a bull market:
 
@@ -44,15 +44,15 @@ There have been several significant bull markets throughout history, each with i
 
 ## What Is the Difference Between a Bull Market and a Bear Market?
 
-The opposite of a bull market is a [bear market](https://www.investopedia.com/terms/b/bearmarket.asp), which is characterized by falling prices and investor pessimism. Bull and bear markets often coincide with the economic cycle, which consists of four phases: expansion, peak, contraction, and trough. The onset of a bull market is often a leading indicator of economic expansion. Bear markets usually begin before economic contraction.
+The opposite of a bull market is a bear market, which is characterized by falling prices and investor pessimism. Bull and bear markets often coincide with the economic cycle, which consists of four phases: expansion, peak, contraction, and trough. The onset of a bull market is often a leading indicator of economic expansion. Bear markets usually begin before economic contraction.
 
 ## What Is the Bottom and Peak in Trading?
 
-Investors take advantage of rising prices and sell stocks when they’ve reached their peak, or highest price. It is hard to determine when the [bottom](https://www.investopedia.com/terms/b/bottom.asp) and peak will take place. Most losses result when investors miss the bottom or top.
+Investors take advantage of rising prices and sell stocks when they’ve reached their peak, or highest price. It is hard to determine when the bottom and peak will take place. Most losses result when investors miss the bottom or top.
 
 ## What Are Some Economic Indicators of a Strong Economy?
 
-In the U.S., low unemployment, high GDP, increased production, and increased consumer spending are all [economic indicators](https://www.investopedia.com/articles/personal-finance/020215/top-ten-us-economic-indicators.asp) that point to a strong or strengthening economy.
+In the U.S., low unemployment, high GDP, increased production, and increased consumer spending are all economic indicators that point to a strong or strengthening economy.
 
 ## The Bottom Line
 

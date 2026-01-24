@@ -10,11 +10,12 @@ from utils.utils import get_last_user_message
 
 
 class Intention(BaseModel):
+    question: str
     decision: Literal["agent_node", "fallback_node"]
 
 class StartingIntentionNode:
     def __init__(self):
-        self.llm_runnable = agent_llm.with_structured_output(Intention)
+        self.llm_runnable_structured_output = agent_llm.with_structured_output(Intention)
 
     @staticmethod
     def _build_history_prompt(chat_history:list) -> list:
@@ -26,17 +27,16 @@ class StartingIntentionNode:
                 ai_message = msg.content
                 if ai_message:
                     doc_string_chat_history.append(f"  -[AI assistant]: {ai_message}")
-        doc_string_chat_history.append("")
         return doc_string_chat_history
 
-    def _infer(self, chat_history:list, user_input:str) -> str:
+    def _infer(self, chat_history:list, user_input:str):
         log.info("starting_intention_node starts to work.")
-        if not self.llm_runnable:
+        if not self.llm_runnable_structured_output:
             log.error("Agent LLM is not ready")
             return "fallback_node"
         try:
             history_prompt = self._build_history_prompt(chat_history)
-            doc_string = INTENTION_PROMPT1 + [user_input] + INTENTION_PROMPT2 +  history_prompt +INTENTION_PROMPT3
+            doc_string = INTENTION_PROMPT1 + history_prompt + INTENTION_PROMPT2 + [user_input] + INTENTION_PROMPT3
             full_prompt = "\n".join(doc_string)
             print(f"Full prompt to identify intention:\n{full_prompt}")
 
@@ -44,10 +44,11 @@ class StartingIntentionNode:
             log.error(f"Error formulating prompt for starting_intention_node: {e}")
 
         try:
-            resp = self.llm_runnable.invoke([HumanMessage(content=full_prompt)])
+            resp = self.llm_runnable_structured_output.invoke([HumanMessage(content=full_prompt)])
+            question: str = resp.question
             decision: str = resp.decision
             log.info("starting_intention_node ends working.")
-            return decision
+            return question, decision
         except Exception as e:
             log.error(f"Error generating decision for starting_intention_node: {e}")
 
@@ -58,17 +59,16 @@ class StartingIntentionNode:
             messages = state.get("messages", [])
             user_input = get_last_user_message(messages)
 
-            decision: str = self._infer(messages, user_input)
+            question, decision = self._infer(messages, user_input)
 
             current_log = {
                 "node": "starting_intention_node",
                 "user_input": user_input,
-                "agent_reply": ""
+                "question": question,
             }
 
             log.info("starting_intention_node finishes working.")
             return {
-                "messages": state["messages"],
                 "dialog_state": decision,
                 "logs": state["logs"] + [current_log]
             }
@@ -78,5 +78,15 @@ class StartingIntentionNode:
 
 if __name__ == "__main__":
     intention_identifier = StartingIntentionNode()
-    result = intention_identifier._infer([], "I want to know what is a banana")
-    print(result)
+    decision1, question1 = intention_identifier._infer([], "I want to know what is a banana")
+    print(decision1, question1)
+
+    decision2, question2 = intention_identifier._infer([
+        AIMessage(content="How can I help you?"),
+        HumanMessage(content="I want to know what is a banana."),
+        AIMessage(content="Sorry, I can only answer questions related to quantitative finance."),
+        HumanMessage(content="I want to know what is option?"),
+        AIMessage(content="An option is a choice or possibility in general, but in finance, it's a contract giving the buyer the right, but not the obligation, to buy (call) or sell (put) an underlying asset (like stocks, commodities) at a set price (strike price) by a specific date (expiration date)."),
+        HumanMessage(content="How to calculate it?"),
+    ], "How to calculate it?")
+    print(decision2, question2)

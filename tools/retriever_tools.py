@@ -2,14 +2,12 @@ from langchain_core.tools import create_retriever_tool
 from documents.milvus_db import MilvusVectorSave
 from utils.log_utils import log
 
-def create_hybrid_retriever_tool(
+def create_hybrid_retriever(
         k: int = 9,
         score_threshold: float = 0.1,
         ranker_type: str = "rrf",
         ranker_params: dict | None = None,
         filter_dict: dict | None = None,
-        name: str = "retriever",
-        description: str = "Search and return information on finance, including option calculation, quantitative finance and banking."
 ):
     """
     Create a hybrid search retriever tool (dense + sparse BM25).
@@ -42,65 +40,97 @@ def create_hybrid_retriever_tool(
         ranker_params=ranker_params,
         filter_dict=filter_dict
     )
+    log.info(f"Created hybrid retriever with k={k}, threshold={score_threshold}")
 
-    # Create tool
-    r_tool = create_retriever_tool(
-        name=name,
-        description=description,
-        retriever=retriever
-    )
+    return retriever
 
-    log.info(f"Created hybrid retriever tool '{name}' with k={k}, threshold={score_threshold}")
-
-    return r_tool
+"""
+The retriever will return a list of all the retrieved documents with full metadata.
+This is convenient for grading the relevance, and filter out irrelevant information at document level.
+If retriever is convenient to tools with .create_retriever_tool(), the tool will only return one stitched string with content only.
+This is convenient for directly generating content without further processing.
+"""
 
 # Default tool for backward compatibility
-def get_default_retriever_tool():
+def get_default_retriever_tool(
+        name: str = "retriever",
+        description: str = "Search and return information on finance, including option calculation, quantitative finance and banking."
+):
     """Get the default hybrid retriever tool with standard parameters."""
-    return create_hybrid_retriever_tool(
+    retriever = create_hybrid_retriever(
         k=9,
         score_threshold=0.1, # filters out low‑quality results. Only return documents with hybrid score ≥ 0.1
         ranker_type="rrf", # Reciprocal Rank Fusion. This fuses Dense search results and Sparse BM25 results
         ranker_params={"k": 100} # RRF hyperparameter. Larger k → smoother fusion; Smaller k → more weight on top‑ranked items; k=100 is a common default.
     )
+    return create_retriever_tool(
+        name=name,
+        description=description,
+        retriever=retriever
+    )
+
 
 # Pre-configured tool instances for common use cases
-def get_high_recall_tool():
+def get_high_recall_tool(
+        name: str = "high_recall_retriever",
+        description: str = "Comprehensive search for finance information with high recall."
+):
     """High recall: more results, lower threshold."""
-    return create_hybrid_retriever_tool(
+    retriever = create_hybrid_retriever(
         k=15,
-        score_threshold=0.05,
-        name="high_recall_retriever",
-        description="Comprehensive search for finance information with high recall."
+        score_threshold=0.05
+    )
+    return create_retriever_tool(
+        name=name,
+        description=description,
+        retriever=retriever
     )
 
-def get_high_precision_tool():
+def get_high_precision_tool(
+        name: str = "high_precision_retriever",
+        description: str = "Precise search for finance information with high confidence threshold."
+):
     """High precision: fewer results, higher threshold."""
-    return create_hybrid_retriever_tool(
+    retriever = create_hybrid_retriever(
         k=5,
         score_threshold=0.3,
-        name="high_precision_retriever",
-        description="Precise search for finance information with high confidence threshold."
+    )
+    return create_retriever_tool(
+        name=name,
+        description=description,
+        retriever=retriever
     )
 
-def get_math_focused_tool():
+def get_math_focused_tool(
+        name: str = "math_retriever",
+        description: str = "Search finance documents containing mathematical formulas and equations."
+):
     """Tool focused on mathematical content."""
-    return create_hybrid_retriever_tool(
+    retriever = create_hybrid_retriever(
         k=9,
         score_threshold=0.1,
         filter_dict={"contains_math": True},
-        name="math_retriever",
-        description="Search finance documents containing mathematical formulas and equations."
+    )
+    return create_retriever_tool(
+        name=name,
+        description=description,
+        retriever=retriever
     )
 
-def get_table_focused_tool():
+def get_table_focused_tool(
+        name: str = "table_retriever",
+        description: str = "Search finance documents containing tables and structured data."
+):
     """Tool focused on tabular data."""
-    return create_hybrid_retriever_tool(
+    retriever = create_hybrid_retriever(
         k=9,
         score_threshold=0.1,
         filter_dict={"contains_table": True},
-        name="table_retriever",
-        description="Search finance documents containing tables and structured data."
+    )
+    return create_retriever_tool(
+        name=name,
+        description=description,
+        retriever=retriever
     )
 
 # Test

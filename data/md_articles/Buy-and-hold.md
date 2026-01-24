@@ -2,7 +2,7 @@
 
 ## What Is Buy and Hold?
 
-Buy and hold is a passive strategy where an investor buys stocks or ETFs and keeps them over a long period, despite market ups and downs. An investor who uses a buy-and-hold strategy actively selects investments but has no concern for short-term price movements and [technical indicators](https://www.investopedia.com/terms/t/technicalindicator.asp). Legendary investors like Warren Buffett and Jack Bogle recommend buy-and-hold for those seeking long-term returns.
+Buy and hold is a passive strategy where an investor buys stocks or ETFs and keeps them over a long period, despite market ups and downs. An investor who uses a buy-and-hold strategy actively selects investments but has no concern for short-term price movements and technical indicators. Legendary investors like Warren Buffett and Jack Bogle recommend buy-and-hold for those seeking long-term returns.
 
 ### Key Takeaways
 
@@ -14,11 +14,11 @@ Buy and hold is a passive strategy where an investor buys stocks or ETFs and kee
 
 ## Understanding the Mechanics of Buy and Hold Investing
 
-Conventional investing wisdom shows that with a long time horizon, equities render a higher return than other [asset classes](https://www.investopedia.com/terms/a/assetclasses.asp) such as bonds. There's debate over whether buy-and-hold is better than active investing. Both sides have valid arguments, but a buy-and-hold strategy has tax benefits because the investor can defer capital gains taxes on long-term investments.
+Conventional investing wisdom shows that with a long time horizon, equities render a higher return than other asset classes such as bonds. There's debate over whether buy-and-hold is better than active investing. Both sides have valid arguments, but a buy-and-hold strategy has tax benefits because the investor can defer capital gains taxes on long-term investments.
 
-Buying shares of stock means owning a piece of the company. Ownership brings privileges, like voting rights and a share in the company's profits as it grows. [Shareholders](https://www.investopedia.com/terms/s/shareholder.asp) function as direct decision makers with their number of votes being equal to the number of shares they hold. Shareholders vote on critical issues, such as [mergers and acquisitions](https://www.investopedia.com/terms/m/mergersandacquisitions.asp), and elect directors to the board. Activist investors with substantial holdings wield considerable influence over management often seeking to gain representation on the board of directors.
+Buying shares of stock means owning a piece of the company. Ownership brings privileges, like voting rights and a share in the company's profits as it grows. Shareholders function as direct decision makers with their number of votes being equal to the number of shares they hold. Shareholders vote on critical issues, such as mergers and acquisitions, and elect directors to the board. Activist investors with substantial holdings wield considerable influence over management often seeking to gain representation on the board of directors.
 
-Recognizing that change takes time, committed shareholders adopt buy and hold strategies. Rather than treating ownership as a short-term vehicle for profit in the mode of a day trader, buy-and-hold investors keep shares through the bull and [bear markets](https://www.investopedia.com/terms/b/bearmarket.asp). Equity owners thus bear the ultimate risk of failure or the supreme reward of substantial appreciation.
+Recognizing that change takes time, committed shareholders adopt buy and hold strategies. Rather than treating ownership as a short-term vehicle for profit in the mode of a day trader, buy-and-hold investors keep shares through the bull and bear markets. Equity owners thus bear the ultimate risk of failure or the supreme reward of substantial appreciation.
 
 ### Fast Fact
 

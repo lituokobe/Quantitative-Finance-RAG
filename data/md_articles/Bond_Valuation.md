@@ -22,9 +22,9 @@ A bond is a debt instrument that provides a steady income stream to the investor
 
 ## Bond Valuation in Practice
 
-Since bonds are an essential part of the capital markets, investors and analysts seek to understand how the different features of a bond interact to determine its [intrinsic value](https://www.investopedia.com/terms/i/intrinsicvalue.asp). Like a stock, the value of a bond determines whether it is a suitable investment for a portfolio and, hence, is an integral step in bond investing.
+Since bonds are an essential part of the capital markets, investors and analysts seek to understand how the different features of a bond interact to determine its intrinsic value. Like a stock, the value of a bond determines whether it is a suitable investment for a portfolio and, hence, is an integral step in bond investing.
 
-Bond valuation, in effect, is calculating the present value of a bond’s expected future coupon payments. The theoretical fair value of a bond is calculated by discounting the future value of its coupon payments by an appropriate [discount rate](https://www.investopedia.com/terms/d/discountrate.asp).
+Bond valuation, in effect, is calculating the present value of a bond’s expected future coupon payments. The theoretical fair value of a bond is calculated by discounting the future value of its coupon payments by an appropriate discount rate.
 
 The discount rate used is the yield to maturity, which is the rate of return that an investor will get if they reinvest every coupon payment from the bond at a fixed interest rate until the bond matures. It takes into account the price of a bond, par value, coupon rate, and time to maturity.
 

@@ -1,30 +1,34 @@
 import os
 from dotenv import load_dotenv
+from langchain_community.tools import TavilySearchResults
 from langchain_core.embeddings import Embeddings
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from sentence_transformers import SentenceTransformer
 from config.paths import ENV_PATH, QWEN3_EMBEDDING_PATH
 
+# ======= Get the API keys ======
 load_dotenv(ENV_PATH)
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-OPENAI_URL = os.getenv("OPENAI_URL")
 ALI_API_KEY = os.getenv("ALI_API_KEY")
-ALI_URL = os.getenv("ALI_URL")
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
 
+# ======= LLM for the agent ======
 agent_llm = ChatOpenAI(
     model = 'qwen-turbo',
     temperature = 0,
     api_key = ALI_API_KEY,
-    base_url = ALI_URL,
+    base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
 
+# ======= LLM for the evaluator ======
 evaluator_llm = ChatOpenAI(
     model = 'gpt-5-mini',
     temperature = 0,
     api_key = OPENAI_API_KEY,
-    base_url = OPENAI_URL,
+    base_url = "https://api.openai.com/v1",
 )
 
+# ======= Embedding models ======
 class CustomEmbedding(Embeddings):
     """
     Customize an Embedding class, integrated with LangChain
@@ -40,6 +44,9 @@ class CustomEmbedding(Embeddings):
 qwen3_embedding_model = CustomEmbedding(QWEN3_EMBEDDING_PATH)
 
 openai_embedding = OpenAIEmbeddings()
+
+# ======= Wen search tool ======
+web_search_tool = TavilySearchResults(tavily_api_key = TAVILY_API_KEY)
 
 if __name__ == "__main__":
     resp1 = evaluator_llm.invoke("How are you?")

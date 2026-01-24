@@ -6,7 +6,7 @@ The binomial option pricing model is a flexible and intuitive method for valuing
 
 The model, developed in the 1970s by economists John Cox, Stephen Ross, and Mark Rubinstein, offers a simpler alternative to the famous Black-Scholes formula.
 
-The [binomial option pricing model](https://www.investopedia.com/articles/investing/021215/examples-understand-binomial-option-pricing-model.asp) accommodates American-style options and provides a visual framework for decision making at various stages.
+The binomial option pricing model accommodates American-style options and provides a visual framework for decision making at various stages.
 
 ### Key Takeaways
 
@@ -20,7 +20,7 @@ The [binomial option pricing model](https://www.investopedia.com/articles/invest
 
 The binomial option pricing model uses an iterative procedure, allowing for the specification of nodes, or points in time, between the valuation date and the option's expiration date. It assumes that the price of the underlying asset can only move up or down by a certain amount in each step. This simplification allows for a more flexible approach to valuing options, particularly for complex scenarios that its predecessors struggled to handle.
 
-The model uses a stepwise binary tree to estimate the changing prices of options, accommodating American-style options that can be exercised anytime before expiration. A simplified example of a [binomial tree](https://www.investopedia.com/terms/b/binomial_tree.asp) might look something like this:
+The model uses a stepwise binary tree to estimate the changing prices of options, accommodating American-style options that can be exercised anytime before expiration. A simplified example of a binomial tree might look something like this:
 
 | Time Step        | Node 1  | Node 2  | Node 3  | Node 4  |
 |------------------|---------|---------|---------|---------|
@@ -33,9 +33,9 @@ The model uses a stepwise binary tree to estimate the changing prices of options
 
 With binomial option price models, the assumptions are that there are two possible outcomes—hence, the binomial part of the model. With a pricing model, the two outcomes are a move up, or a move down. The major advantage of the binomial option pricing model is its mathematical simplicity, although it can become complex in multi-period scenarios.
 
-In contrast to the [Black-Scholes model](https://www.investopedia.com/terms/b/blackscholes.asp), which provides a numerical result based on inputs, the binomial model allows for the calculation of the asset and the option for multiple periods, along with the range of possible results for each period.
+In contrast to the Black-Scholes model, which provides a numerical result based on inputs, the binomial model allows for the calculation of the asset and the option for multiple periods, along with the range of possible results for each period.
 
-The advantage of this multi-period view is that the user can visualize the change in asset price from period to period and assess the option based on decisions made at different points in time. For [American-style options](https://www.investopedia.com/terms/a/americanoption.asp), which can be exercised anytime before the expiration date, the binomial model can clarify when exercising the option is best and when it should be held for longer periods.
+The advantage of this multi-period view is that the user can visualize the change in asset price from period to period and assess the option based on decisions made at different points in time. For American-style options, which can be exercised anytime before the expiration date, the binomial model can clarify when exercising the option is best and when it should be held for longer periods.
 
 By looking at the binomial tree of values, a trader can determine in advance when a decision on an exercise may occur. If the option has a positive value, it can be exercised. However, if the option has a negative value, it should be held for longer periods.
 
@@ -54,11 +54,11 @@ The binomial option pricing model is based on the idea that the equilibrium pric
 
 ### Fast Fact
 
-Unlike the Black-Scholes model, the binomial model can handle complex situations such as varying [volatility](https://www.investopedia.com/terms/v/volatility.asp) and [dividend](https://www.investopedia.com/terms/d/dividend.asp) payments.
+Unlike the Black-Scholes model, the binomial model can handle complex situations such as varying volatility and dividend payments.
 
 For example, there's a 50/50 chance that an asset price may rise or fall by 30% in one period. For the second period, however, the probability that the underlying asset price will increase may grow to 70/30.
 
-For example, if an investor is evaluating an [oil well](https://www.investopedia.com/terms/e/exploratory-well.asp), that investor is not sure what the value of that oil well is, but there is a 50/50 chance that the price will go up. If oil prices go up in the first period, making the oil well more valuable, and market [fundamentals](https://www.investopedia.com/terms/f/fundamentals.asp) now point to continued increases in oil prices, the probability of further appreciation in price may now be 70%. The binomial model allows for this flexibility; the Black-Scholes model doesn't.
+For example, if an investor is evaluating an oil well, that investor is not sure what the value of that oil well is, but there is a 50/50 chance that the price will go up. If oil prices go up in the first period, making the oil well more valuable, and market fundamentals now point to continued increases in oil prices, the probability of further appreciation in price may now be 70%. The binomial model allows for this flexibility; the Black-Scholes model doesn't.
 
 ## Applying the Binomial Option Pricing Model in Real Trading
 
@@ -66,15 +66,15 @@ The binomial option pricing model covers various financial instruments, from sta
 
 Financial institutions can use the model to assess the risk associated with holding options. Through multiple market simulations and observing how changes in market variables like interest rates and stock prices affect the option's value, risk managers can better understand potential losses and prepare mitigating strategies.
 
-In addition, traders use the model to devise hedging strategies by understanding how options might perform under various scenarios. The model helps in determining the number of shares needed to hedge against a position in options. This is known as [delta hedging](https://www.investopedia.com/terms/d/deltahedging.asp). Thus, traders are allowed to minimize risk based on predicted market movements. Another use is for valuing exotic options. While primarily designed for standard options, the binomial option pricing model can be adapted to price more complex products, such as exotic options, which have features that standard European or American options do not. The model can be modified to handle path-dependent options like Asian and barrier options, although more sophisticated techniques would be needed.
+In addition, traders use the model to devise hedging strategies by understanding how options might perform under various scenarios. The model helps in determining the number of shares needed to hedge against a position in options. This is known as delta hedging. Thus, traders are allowed to minimize risk based on predicted market movements. Another use is for valuing exotic options. While primarily designed for standard options, the binomial option pricing model can be adapted to price more complex products, such as exotic options, which have features that standard European or American options do not. The model can be modified to handle path-dependent options like Asian and barrier options, although more sophisticated techniques would be needed.
 
 ### Tip
 
-American-style options can be exercised anytime before their expiration date, providing greater flexibility for the holder. In contrast, [European-style options](https://www.investopedia.com/terms/e/europeanoption.asp) can only be exercised at expiration, making them less flexible but simpler to manage.
+American-style options can be exercised anytime before their expiration date, providing greater flexibility for the holder. In contrast, European-style options can only be exercised at expiration, making them less flexible but simpler to manage.
 
 Beyond financial markets, it applies to real options analysis for evaluating investment opportunities similar to options in capital budgeting. This approach is used to assess the value of making business decisions, such as expanding, contracting, or deferring investment projects, under uncertainty.
 
-Moreover, the model is a very good educational tool because of its simplicity and step-by-step valuation approach. It helps students and new finance professionals grasp the fundamentals of option pricing before moving on to more complex models like Black-Scholes or [Monte Carlo simulations](https://www.investopedia.com/terms/m/montecarlosimulation.asp).
+Moreover, the model is a very good educational tool because of its simplicity and step-by-step valuation approach. It helps students and new finance professionals grasp the fundamentals of option pricing before moving on to more complex models like Black-Scholes or Monte Carlo simulations.
 
 Finally, companies may use the binomial option pricing model to price convertible bonds, warrants, and employee stock options. Understanding these instruments' values helps with financing and compensation decisions.
 
@@ -92,13 +92,13 @@ Indeed, the binomial option price model's adaptability to incorporate different 
 - Volatility estimation sensitivity
 - Simplistic assumptions
 
-The rise of [high-frequency trading (HFT)](https://www.investopedia.com/terms/h/high-frequency-trading.asp) and [machine learning (ML)](https://www.investopedia.com/terms/m/machine-learning.asp) algorithms has helped inform debates about the model's continued relevance. HFT operates on time scales much shorter than traditional option pricing models typically consider, potentially exploiting inefficiencies that the model doesn't capture.
+The rise of high-frequency trading (HFT) and machine learning (ML) algorithms has helped inform debates about the model's continued relevance. HFT operates on time scales much shorter than traditional option pricing models typically consider, potentially exploiting inefficiencies that the model doesn't capture.
 
 Meanwhile, ML algorithms can process vast amounts of data to identify pricing patterns that may deviate from the binomial model's assumptions. These technologies often require more dynamic, data-driven approaches to option pricing. Nevertheless, the binomial model's fundamental insights remain valuable, even if they need to be supplemented with more sophisticated techniques in certain high-speed or complex market scenarios.
 
 ### Fast Fact
 
-A binomial tree is a useful tool when pricing American-style options and [embedded options](https://www.investopedia.com/terms/e/embeddedoption.asp). Its simplicity is its advantage and disadvantage at the same time. The tree is easy to model out mechanically, but the problem lies in the possible values the underlying asset can take in one period. In a binomial tree model, the underlying asset can only be worth exactly one of two possible values, which is not realistic, as assets can be worth any number of values within any given range.
+A binomial tree is a useful tool when pricing American-style options and embedded options. Its simplicity is its advantage and disadvantage at the same time. The tree is easy to model out mechanically, but the problem lies in the possible values the underlying asset can take in one period. In a binomial tree model, the underlying asset can only be worth exactly one of two possible values, which is not realistic, as assets can be worth any number of values within any given range.
 
 ## Exploring Alternative Option Pricing Models
 
@@ -110,20 +110,19 @@ Other option pricing models include the Black-Scholes model, Monte Carlo simulat
 
 Each model is chosen based on the specific characteristics of the option being valued and the assumptions that can be reasonably justified for the underlying asset and market dynamics. Here's a summary of these and other option pricing models that traders should know:
 
-### Know Your Options Pricing Models
-| Model                     | Description                                                                 | Key Features                                                                                     | Use Cases                                                                                         |
-|---------------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| **Binomial Model**        | Prices options using a step-by-step approach over time.                    | • Flexible<br>• Works for American options<br>• Can include dividends                           | Good for options you can exercise any time before expiration.                                     |
-| **Black‑Scholes Model**   | Uses a formula to price European options assuming steady volatility and interest rates. | • Simple formula<br>• Assumes consistent price changes<br>• No dividends                        | Great for straightforward European options.                                                        |
-| **Finite Difference Model** | Uses numerical methods to solve the option pricing equations.             | • Flexible<br>• Can handle complex boundary conditions                                           | Suitable for a wide range of options, including those with complicated features.                  |
-| **GARCH Model**           | Analyzes how volatility changes over time in financial data.               | • Captures volatility patterns<br>• Changes over time                                            | Helpful for predicting future prices and managing risk.                                            |
-| **Heston Model**          | Adds changing volatility to the Black‑Scholes Model.                       | • Models changing volatility<br>• Reflects real market conditions better                         | Useful for assets with varying volatility like stocks.                                             |
-| **Jump Diffusion Model**  | Accounts for sudden large changes in asset prices.                         | • Includes price jumps<br>• More realistic for sudden movements                                  | Used for assets that can have big, unexpected price changes.                                      |
-| **Local Volatility Model** | Assumes volatility depends on asset price and time.                       | • Models changing volatility<br>• More flexible than Black‑Scholes                               | Good for markets with varying volatility patterns.                                                 |
-| **Monte Carlo Simulation** | Uses random samples to predict option prices over time.                   | • Very flexible<br>• Handles complex situations<br>• Can include path‑dependent options          | Ideal for complicated options that are hard to price with formulas.                               |
-| **Stochastic Volatility Model** | Models both asset prices and their changing volatility.             | • Complex<br>• More realistic for variable volatility                                            | Best for assets where volatility is unpredictable, like commodities.                              |
+**Know Your Options Pricing Models**
 
-
+| Model                           | Description                                                                                | Key Features                                                                                    | Use Cases                                                                                        |
+|---------------------------------|--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| **Binomial Model**              | Prices options using a step-by-step approach over time.                                    | • Flexible<br>• Works for American options<br>• Can include dividends                           | Good for options you can exercise any time before expiration.                                    |
+| **Black‑Scholes Model**         | Uses a formula to price European options assuming steady volatility and interest rates.    | • Simple formula<br>• Assumes consistent price changes<br>• No dividends                        | Great for straightforward European options.                                                      |
+| **Finite Difference Model**     | Uses numerical methods to solve the option pricing equations.                              | • Flexible<br>• Can handle complex boundary conditions                                          | Suitable for a wide range of options, including those with complicated features.                 |
+| **GARCH Model**                 | Analyzes how volatility changes over time in financial data.                               | • Captures volatility patterns<br>• Changes over time                                           | Helpful for predicting future prices and managing risk.                                          |
+| **Heston Model**                | Adds changing volatility to the Black‑Scholes Model.                                       | • Models changing volatility<br>• Reflects real market conditions better                        | Useful for assets with varying volatility like stocks.                                           |
+| **Jump Diffusion Model**        | Accounts for sudden large changes in asset prices.                                         | • Includes price jumps<br>• More realistic for sudden movements                                 | Used for assets that can have big, unexpected price changes.                                     |
+| **Local Volatility Model**      | Assumes volatility depends on asset price and time.                                        | • Models changing volatility<br>• More flexible than Black‑Scholes                              | Good for markets with varying volatility patterns.                                               |
+| **Monte Carlo Simulation**      | Uses random samples to predict option prices over time.                                    | • Very flexible<br>• Handles complex situations<br>• Can include path‑dependent options         | Ideal for complicated options that are hard to price with formulas.                              |
+| **Stochastic Volatility Model** | Models both asset prices and their changing volatility.                                    | • Complex<br>• More realistic for variable volatility                                           | Best for assets where volatility is unpredictable, like commodities.                             |
 
 ## Practical Example: Binomial Option Pricing in Action
 
@@ -137,7 +136,7 @@ Next, assume there is a call option available on this stock that expires in one 
 
 ### Tip
 
-The binomial model serves as the foundation for more advanced [lattice models](https://www.investopedia.com/terms/l/lattice-model.asp), which are essential tools in modern financial engineering.
+The binomial model serves as the foundation for more advanced lattice models, which are essential tools in modern financial engineering.
 
 To simplify, assume that an investor purchases a half-share of stock and writes or sells one call option. The total investment today is the price of a half-share less the price of the option, and the possible payoffs at the end of the month are as follows:
 
@@ -151,7 +150,7 @@ The portfolio payoff is equal no matter how the stock price moves. Given this ou
 
 Assuming the risk-free rate is 3% per year, and T equals 0.0833 (one divided by 12), then the price of the call option today is \$5.11.
 
-The binomial option pricing model offers two advantages for option sellers over the Black-Scholes model. The first is its simplicity, which allows for fewer errors in the commercial application. The second is its iterative operation, which adjusts prices in a timely manner to reduce the opportunity for buyers to execute [arbitrage](https://www.investopedia.com/ask/answers/what-is-arbitrage/) strategies.
+The binomial option pricing model offers two advantages for option sellers over the Black-Scholes model. The first is its simplicity, which allows for fewer errors in the commercial application. The second is its iterative operation, which adjusts prices in a timely manner to reduce the opportunity for buyers to execute arbitrage strategies.
 
 ## What Are Some of the Limits of the Binomial Option Pricing Model?
 
@@ -176,4 +175,3 @@ The model is capable of depicting potential price paths intuitively, which aids 
 Despite the simplicity of the binomial option pricing model, its computational intensity and resource requirements can be a challenge for users.
 
 The model faces new challenges posed by high-frequency trading and machine learning algorithms, but it remains significant in modern finance—especially for traders and analysts. Its educational value and ease of understanding make it a useful steppingstone to more complex financial models.
-

@@ -9,7 +9,7 @@ from utils.log_utils import log
 
 
 def build_naive_rag_graph():
-    # TODO: Create the route function before starting of each round of conversation
+    #-------- Create the route function before starting of each round of conversation --------
     def start_route(state: State) -> str:
         dialog_state = state.get("dialog_state", [])
         if not dialog_state:  # At the beginning, send to the first node
@@ -19,7 +19,7 @@ def build_naive_rag_graph():
         else:
             return dialog_state[-1]
 
-    # TODO: Create the route function after starting node
+    #-------- Create the route function after starting node --------
     def starting_intention_route(state: State) -> str:
         dialog_state = state.get("dialog_state", [])
         if not dialog_state:
@@ -29,7 +29,7 @@ def build_naive_rag_graph():
             return "hang_up"
         return last_dialog_state
 
-    # TODO: Build the graph
+    #-------- Build the graph --------
     graph = StateGraph(State)
 
     starting_intention_node = StartingIntentionNode()

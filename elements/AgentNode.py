@@ -16,9 +16,13 @@ class AgentNode:
         try:
             log.info("agent_node starts to work.")
 
-            messages = state.get("messages", [])
-            user_input = get_last_user_message(messages)
-            documents = self.retriever_runnable.invoke(user_input)
+            logs = state.get("logs", [])
+            last_log = logs[-1] if logs else {}
+            if logs:
+                question = last_log.get("question", "")
+            else:
+                question = ""
+            documents = self.retriever_runnable.invoke(question)
             print(f"**retrieved documents:** \n{documents}")
 
             # TODO: Answer question
@@ -42,23 +46,23 @@ class AgentNode:
 
             answer = agent_node_chain.invoke(
                 {
-                    "question": user_input,
+                    "question": question,
                     "retrieved documents": documents,
                 }
             )
 
             current_log = {
+                **last_log,
                 "node": "agent_node",
-                "user_input": user_input,
                 "retrieved_documents" : documents,
                 "agent_reply": answer
             }
 
-            log.info("starting_intention_node finishes working.")
+            log.info("agent_node finishes working.")
             return {
-                "messages": state["messages"] + [AIMessage(content=answer)],
+                "messages": AIMessage(content=answer),
                 "dialog_state": "starting_intention_node",
-                "logs": state["logs"] + [current_log]
+                "logs": state.get("logs", []) + [current_log]
             }
         except Exception as e:
             log.error(f"agent_node has error: {e}")

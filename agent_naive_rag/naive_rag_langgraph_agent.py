@@ -1,5 +1,5 @@
 from langchain_core.messages import HumanMessage
-from agents.naive_rag_graph_builder import build_naive_rag_graph
+from agent_naive_rag.naive_rag_graph_builder import build_naive_rag_graph
 from utils.log_utils import log
 
 
@@ -9,7 +9,7 @@ def main(thread_id: str):
     graph = build_naive_rag_graph()
 
     # TODO: Start the chat
-    print("=== The conversation is over ===\n")
+    print("=== The conversation starts ===\n")
     # Step 1 :by sending an empty message
     state = graph.invoke({"messages": [HumanMessage(content="")]}, config=conv_config)
 

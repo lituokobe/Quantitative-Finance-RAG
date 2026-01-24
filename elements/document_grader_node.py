@@ -15,9 +15,14 @@ def document_grader_node(state: State):
         else:
             question = ""
             documents = []
+    except Exception as e:
+        log.error(f"document_grader_node failed to obtain questions and documents: {e}")
+        question = ""
+        documents = []
 
-        # Filter the retrieved documents
-        filtered_docs = []
+    # Filter the retrieved documents
+    filtered_docs = []
+    try:
         for d in documents:
             result = retrieval_grader_chain.invoke(
                 {"question": question, "document": d.page_content}
@@ -40,5 +45,5 @@ def document_grader_node(state: State):
             "logs": state.get("logs",[]) + [current_log]
         }
     except Exception as e:
-        log.error(f"document_grader_node has error: {e}")
+        log.error(f"document_grader_node has error grading documents: {e}")
         raise

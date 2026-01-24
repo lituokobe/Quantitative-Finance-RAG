@@ -31,31 +31,30 @@ class MilvusVectorSave:
         schema.add_field(field_name="section_level", datatype=DataType.INT64)
         schema.add_field(field_name="contains_math", datatype=DataType.BOOL)
         schema.add_field(field_name="contains_table", datatype=DataType.BOOL)
-        # schema.add_field(field_name="sparse", datatype=DataType.SPARSE_FLOAT_VECTOR, nullable=True)
-        schema.add_field(field_name="dense", datatype=DataType.FLOAT_VECTOR, dim=1024, nullable=True)
-
+        schema.add_field(field_name="sparse", datatype=DataType.SPARSE_FLOAT_VECTOR)
+        schema.add_field(field_name="dense", datatype=DataType.FLOAT_VECTOR, dim=1024)
         # Prepare vector field
-        # bm25_func = Function(
-        #     name="text_bm25_emb",
-        #     function_type=FunctionType.BM25,
-        #     input_field_names=["text"],
-        #     output_field_names=["sparse"]
-        # )
-        # schema.add_function(bm25_func)
+        bm25_func = Function(
+            name="text_bm25_emb",
+            function_type=FunctionType.BM25,
+            input_field_names=["text"],
+            output_field_names=["sparse"]
+        )
+        schema.add_function(bm25_func)
 
         # ----- Indexes -----
         index_params = client.prepare_index_params()
-        # index_params.add_index(  # index for sparse
-        #     field_name="sparse",
-        #     index_name="sparse_inverted_index",
-        #     index_type="SPARSE_INVERTED_INDEX",  # Inverted index type for sparse vectors
-        #     metric_type=MetricType.IP,
-        #     params={
-        #         "inverted_index_algo": "DAAT_MAXSCORE",
-        #         "bm25_k1": 1.2,
-        #         "bm25_b": 0.75
-        #     },
-        # )
+        index_params.add_index(  # index for sparse
+            field_name="sparse",
+            index_name="sparse_inverted_index",
+            index_type="SPARSE_INVERTED_INDEX",  # Inverted index type for sparse vectors
+            metric_type="BM25",
+            params={
+                "inverted_index_algo": "DAAT_MAXSCORE",
+                "bm25_k1": 1.2,
+                "bm25_b": 0.75
+            },
+        )
         index_params.add_index(  # index for dense
             field_name="dense",
             index_name="dense_inverted_index",
@@ -88,8 +87,8 @@ class MilvusVectorSave:
             #other keys will be added on the go if there are other keys in the data or metadata
             embedding_function=qwen3_embedding_model, #dense vector
             collection_name=COLLECTION_NAME,
-            # builtin_function=BM25BuiltInFunction(), #sparse vector
-            vector_field="dense",#['dense', 'sparse'],
+            builtin_function=BM25BuiltInFunction(), #sparse vector
+            vector_field=['dense', 'sparse'],
             consistency_level="Strong", #highest level of consistency: Strong > Session > Bounded > Eventually
             auto_id=True,
             connection_args={"uri": MILVUS_URI},

@@ -2,7 +2,7 @@
 
 ## What Is Discounted Cash Flow (DCF)?
 
-Discounted cash flow (DCF) is a financial model that calculates what an investment is worth today by projecting its future [cash flows](https://www.investopedia.com/terms/c/cashflow.asp) and adjusting them back to [present value](https://www.investopedia.com/ask/answers/010715/how-do-you-use-dcf-real-estate-valuation.asp) using a chosen discount rate.
+Discounted cash flow (DCF) is a financial model that calculates what an investment is worth today by projecting its future cash flows and adjusting them back to present value using a chosen discount rate.
 
 Analysts and investors use DCF to decide whether to invest in a company, security, or project, while business owners and managers rely on it to guide capital budgeting and major spending decisions.
 
@@ -16,11 +16,11 @@ Analysts and investors use DCF to decide whether to invest in a company, securit
 
 ## How Does Discounted Cash Flow (DCF) Work?
 
-Discounted cash flow analysis finds the [present value](https://www.investopedia.com/terms/p/presentvalue.asp) of expected future cash flows using a [discount rate](https://www.investopedia.com/terms/d/discountrate.asp). Investors can use the present value of money to determine whether the future cash flows of an investment or project are greater than the value of the initial investment. In other words, is the money this investment is likely to generate in the future higher than what will be invested right now?
+Discounted cash flow analysis finds the present value of expected future cash flows using a discount rate. Investors can use the present value of money to determine whether the future cash flows of an investment or project are greater than the value of the initial investment. In other words, is the money this investment is likely to generate in the future higher than what will be invested right now?
 
 If it is, the investment will be profitable and is worth considering. If it is not, the investment isn't a good idea.
 
-DCF analysis is used to estimate the money an investor might receive from an investment, adjusted for the [time value of money](https://www.investopedia.com/terms/t/timevalueofmoney.asp). The time value of money assumes that a dollar that you have today is worth more than a dollar that you receive tomorrow because it can be invested. As such, a DCF analysis can be useful in any situation where a person is paying money in the present with expectations of receiving more money in the future. For example, assuming a 5% annual interest rate, \$1 in a savings account will be worth \$1.05 in a year. Similarly, if a \$1 payment is delayed for a year, its present value is 95 cents because you cannot transfer it to your savings account to earn interest.
+DCF analysis is used to estimate the money an investor might receive from an investment, adjusted for the time value of money. The time value of money assumes that a dollar that you have today is worth more than a dollar that you receive tomorrow because it can be invested. As such, a DCF analysis can be useful in any situation where a person is paying money in the present with expectations of receiving more money in the future. For example, assuming a 5% annual interest rate, \$1 in a savings account will be worth \$1.05 in a year. Similarly, if a \$1 payment is delayed for a year, its present value is 95 cents because you cannot transfer it to your savings account to earn interest.
 
 To conduct a DCF analysis, an investor must make estimates about future cash flows and the end value of the investment, equipment, or other assets.
 
