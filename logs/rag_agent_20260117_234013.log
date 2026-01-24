@@ -1,9 +1,0 @@
-2026-01-17 23:40:13,559 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
-2026-01-17 23:40:13,579 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
-2026-01-17 23:40:13,579 - retriever_tools - INFO: Created hybrid retriever tool 'retriever' with k=9, threshold=0.1
-2026-01-17 23:40:13,844 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
-2026-01-17 23:40:13,862 - milvus_db - INFO: Created hybrid retriever: k=5, ranker=rrf, threshold=0.3, filter=None
-2026-01-17 23:40:13,862 - retriever_tools - INFO: Created hybrid retriever tool 'high_precision_retriever' with k=5, threshold=0.3
-2026-01-17 23:40:13,965 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
-2026-01-17 23:40:13,979 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter={'contains_math': True}
-2026-01-17 23:40:13,979 - retriever_tools - INFO: Created hybrid retriever tool 'math_retriever' with k=9, threshold=0.1

@@ -1,5 +1,0 @@
-2026-01-17 23:52:08,765 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
-2026-01-17 23:52:08,785 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
-2026-01-17 23:52:08,785 - retriever_tools - INFO: Created hybrid retriever tool 'retriever' with k=9, threshold=0.1
-2026-01-17 23:52:09,076 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
-2026-01-17 23:52:10,269 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"

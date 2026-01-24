@@ -1,2 +1,0 @@
-2026-01-15 23:35:54,786 - ingest_with_milvus_db - INFO: Setting up collection: quantitative_finance_rag
-2026-01-15 23:35:54,812 - milvus_db - INFO: Created collection: quantitative_finance_rag

@@ -1,4 +1,0 @@
-2026-01-11 20:54:11,320 - naive_rag_graph_build - INFO: The graph has been successfully built.
-2026-01-11 20:54:11,324 - other_nodes - INFO: starting_reply_node starts to work.
-2026-01-11 20:54:11,324 - other_nodes - INFO: starting_reply_node finishes working.
-2026-01-11 20:54:11,325 - other_nodes - ERROR: starting_reply_node has error: 'logs'
