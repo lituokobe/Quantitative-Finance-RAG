@@ -16,19 +16,19 @@ It marked the first rate cut in over four years and signaled a shift in strategy
 
 ## Understanding the Federal Funds Rate
 
-The federal funds rate refers to the interest rate that banks charge other institutions for lending excess cash to them from their [reserve balances](https://www.investopedia.com/terms/b/bank-reserve.asp) [overnight](https://www.investopedia.com/terms/o/overnightrate.asp).
+The federal funds rate refers to the interest rate that banks charge other institutions for lending excess cash to them from their reserve balances overnight.
 
-By law, banks must maintain a reserve equal to a certain percentage of their deposits in an account at a Federal Reserve bank. The amount of money a bank must keep in its Fed account is known as a [reserve requirement](https://www.investopedia.com/terms/r/requiredreserves.asp) and is based on a percentage of the bank's total deposits.
+By law, banks must maintain a reserve equal to a certain percentage of their deposits in an account at a Federal Reserve bank. The amount of money a bank must keep in its Fed account is known as a reserve requirement and is based on a percentage of the bank's total deposits.
 
-Financial institutions are required to maintain interest-bearing accounts at [Federal Reserve](https://www.investopedia.com/terms/f/federalreservesystem.asp) banks to ensure they have enough money to cover depositors' withdrawals and other obligations. Any money in their reserve that exceeds the required level is available for lending to other banks that might have a shortfall.
+Financial institutions are required to maintain interest-bearing accounts at Federal Reserve banks to ensure they have enough money to cover depositors' withdrawals and other obligations. Any money in their reserve that exceeds the required level is available for lending to other banks that might have a shortfall.
 
-The end-of-the-day balances in the bank's account averaged over two-week [reserve maintenance periods](https://www.investopedia.com/terms/r/reserve-maintenance-period.asp) are used to determine whether it meets its reserve requirements. If a bank expects to have end-of-the-day balances greater than what's required, it can lend the excess to an institution that anticipates a shortfall in its balances. The interest rate the lending bank can charge is the federal funds rate, or fed funds rate.
+The end-of-the-day balances in the bank's account averaged over two-week reserve maintenance periods are used to determine whether it meets its reserve requirements. If a bank expects to have end-of-the-day balances greater than what's required, it can lend the excess to an institution that anticipates a shortfall in its balances. The interest rate the lending bank can charge is the federal funds rate, or fed funds rate.
 
-The FOMC makes its [decisions about rate adjustments](https://www.investopedia.com/ask/answers/101615/what-happens-if-interest-rates-increase-too-quickly.asp) based on key economic indicators that may show signs of inflation, recession, or other issues that can affect sustainable economic growth. The indicators can include measures like the core inflation rate and the durable goods orders report.
+The FOMC makes its decisions about rate adjustments based on key economic indicators that may show signs of inflation, recession, or other issues that can affect sustainable economic growth. The indicators can include measures like the core inflation rate and the durable goods orders report.
 
 ## How the Federal Funds Rate Is Adjusted
 
-The FOMC meets eight times a year to set the target federal funds rate range as part of its monetary policy. The committee uses various tools to push the effective federal funds rate into that target range. This rate serves as a benchmark for many other interest rates in the economy and is used to help promote [economic growth](https://www.investopedia.com/terms/e/economicgrowth.asp).
+The FOMC meets eight times a year to set the target federal funds rate range as part of its monetary policy. The committee uses various tools to push the effective federal funds rate into that target range. This rate serves as a benchmark for many other interest rates in the economy and is used to help promote economic growth.
 
 The Fed adjusts the federal funds rate in response to economic conditions:
 
@@ -54,11 +54,11 @@ In March 2020, the target rate was between 0% and 0.25%. In 2022, to combat infl
 
 The federal funds rate is one of the most important interest rates in the U.S. economy. That's because it impacts monetary and financial conditions, which in turn have a bearing on critical aspects of the broader economy, including employment, growth, and inflation.
 
-The rate also influences short-term interest rates, albeit indirectly, for everything from home and auto loans to credit cards, as lenders often set their rates based on the [prime lending rate](https://www.investopedia.com/terms/p/primerate.asp). The prime rate is the rate banks charge their most creditworthy borrowers—a rate that is also influenced by the federal funds rate.
+The rate also influences short-term interest rates, albeit indirectly, for everything from home and auto loans to credit cards, as lenders often set their rates based on the prime lending rate. The prime rate is the rate banks charge their most creditworthy borrowers—a rate that is also influenced by the federal funds rate.
 
-Investors keep a [close watch on the federal funds rate](https://www.investopedia.com/only-5-weeks-until-the-feds-next-decision-heres-where-to-still-get-5-on-your-cash-11790498). The stock market typically reacts very strongly to changes in the target rate.
+Investors keep a close watch on the federal funds rate. The stock market typically reacts very strongly to changes in the target rate.
 
-For example, a small decline in the rate can prompt the market to leap higher as the borrowing costs for companies get lower. Many stock analysts pay particular attention to statements by members of the FOMC to try to get a sense of where the target [rate may be headed](https://www.investopedia.com/the-feds-first-big-2025-rate-decision-is-almost-here-are-you-ready-for-the-impact-11807252).
+For example, a small decline in the rate can prompt the market to leap higher as the borrowing costs for companies get lower. Many stock analysts pay particular attention to statements by members of the FOMC to try to get a sense of where the target rate may be headed.
 
 ## Sectors Affected by the Federal Funds Rate
 
@@ -79,7 +79,7 @@ The federal funds rate is the interest rate that banks charge each other to borr
 
 ## How Is the Federal Funds Rate Determined?
 
-It is customary for the [Federal Open Market Committee](https://www.investopedia.com/terms/f/fomc.asp) to meet eight times annually to determine the federal funds rate. These rates are influenced by economic indicators, such as the core inflation rate and the durable goods orders report, which provide signals about the economic health of the country.
+It is customary for the Federal Open Market Committee to meet eight times annually to determine the federal funds rate. These rates are influenced by economic indicators, such as the core inflation rate and the durable goods orders report, which provide signals about the economic health of the country.
 
 ## What Is the Difference Between the Federal Funds and Regular Interest Rates?
 

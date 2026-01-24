@@ -20,6 +20,13 @@ Spot markets involve the exchange of physical securities for cash. This is why t
 
 Securities that are traded on the spot market include the following:
 
+| Category         | Examples                                                                 |
+|------------------|--------------------------------------------------------------------------|
+| Equities         | Stocks, exchange-traded products, equity futures                         |
+| Fixed-Income     | Bonds, T-bills, fixed-income futures                                     |
+| Foreign Exchange | Currencies, currency futures                                             |
+| Commodities      | Metals, energy, livestock, agricultural products, commodity futures      |
+
 Futures trades in contracts that have an expiration date. They are also sometimes called spot trades since the expiring contract means that the buyer and seller will be exchanging cash for the underlying asset immediately.
 
 The current price of a financial instrument is called the spot price. It is the price at which an instrument can be sold or bought immediately. Buyers and sellers create the spot price by posting their buy and sell orders. In liquid markets, the spot price may change by the second or even within milliseconds, as orders get filled and new ones enter the marketplace.
@@ -39,9 +46,9 @@ Exchanges bring together dealers and traders who buy and sell commodities, secur
 
 ### Over the Counter (OTC)
 
-Trades that occur directly between a buyer and seller are called over-the-counter. A centralized exchange does not facilitate these trades. The [foreign exchange market](https://www.investopedia.com/terms/forex/f/foreign-exchange-markets.asp) (or [forex](https://www.investopedia.com/articles/forex/11/why-trade-forex.asp) market) is the world's largest OTC market with an average daily turnover of $1.2 trillion in North America as of April 2024.
+Trades that occur directly between a buyer and seller are called over-the-counter. A centralized exchange does not facilitate these trades. The foreign exchange market (or forex market) is the world's largest OTC market with an average daily turnover of \$1.2 trillion in North America as of April 2024.
 
-In an OTC transaction, the price can be either based on a spot or a future price/date. In an OTC transaction, the terms are not necessarily standardized, and therefore, may be subject to the discretion of the buyer and/or seller. As with exchanges, OTC stock transactions are typically spot trades, while futures or [forward](https://www.investopedia.com/terms/f/forwardcontract.asp) transactions are often not at the spot price unless they are nearing expiration.
+In an OTC transaction, the price can be either based on a spot or a future price/date. In an OTC transaction, the terms are not necessarily standardized, and therefore, may be subject to the discretion of the buyer and/or seller. As with exchanges, OTC stock transactions are typically spot trades, while futures or forward transactions are often not at the spot price unless they are nearing expiration.
 
 ### Fast Fact
 
@@ -51,28 +58,30 @@ The word spot comes from the phrase on the spot where in these markets you can p
 
 ### Advantages
 
-The spot price is the current quote for immediate purchase, payment, and delivery of a particular [commodity](https://www.investopedia.com/terms/c/commodity.asp). This means that it is incredibly important since prices in derivatives markets such as for futures and options will be inevitably based on these values.
+The spot price is the current quote for immediate purchase, payment, and delivery of a particular commodity. This means that it is incredibly important since prices in derivatives markets such as for futures and options will be inevitably based on these values.
 
-Spot markets also tend to be incredibly [liquid](https://www.investopedia.com/terms/l/liquidity.asp) and active for this reason. Commodity producers and consumers will engage in the spot market and then hedge in the derivatives market.
+Spot markets also tend to be incredibly liquid and active for this reason. Commodity producers and consumers will engage in the spot market and then hedge in the derivatives market.
 
 ### Disadvantages
 
-A disadvantage of the spot market is taking delivery of the physical commodity. If you buy spot pork bellies, you now own some live hogs. While a meat processing plant may desire this, a [speculator](https://www.investopedia.com/terms/s/speculator.asp) probably does not.
+A disadvantage of the spot market is taking delivery of the physical commodity. If you buy spot pork bellies, you now own some live hogs. While a meat processing plant may desire this, a speculator probably does not.
 
-Another downside is that spot markets cannot be used effectively to [hedge](https://www.investopedia.com/terms/h/hedge.asp) against the production or consumption of goods in the future, which is where derivatives markets are better suited.
+Another downside is that spot markets cannot be used effectively to hedge against the production or consumption of goods in the future, which is where derivatives markets are better suited.
 
+**Pros:**
 - Real-time prices of actual market prices
 - Active and liquid markets
 - Can take immediate delivery if desired
 
+**Cons:**
 - Must take physical delivery in many cases
 - Not suited for hedging
 
 ## Example of a Spot Market
 
-Let’s say an online furniture store in Germany offers a 30% discount to all international customers who pay within five business days after placing an order. Danielle, who operates an online furniture business in the United States, sees the offer and decides to purchase $10,000 worth of tables from the online store.
+Let’s say an online furniture store in Germany offers a 30% discount to all international customers who pay within five business days after placing an order. Danielle, who operates an online furniture business in the United States, sees the offer and decides to purchase \$10,000 worth of tables from the online store.
 
-Since she needs to buy euros for (almost) immediate delivery and is happy with the current EUR/USD [exchange rate](https://www.investopedia.com/terms/e/exchangerate.asp) of 1.1233, she executes a foreign exchange transaction at the spot price to buy the equivalent of $10,000 in [euros](https://www.investopedia.com/terms/e/euro.asp), which works out to be €8,902.34 ($10,000 ÷ 1.1233). The spot transaction has a settlement date of T+2, so Danielle receives her euros in two days and settles her account to receive the 30% discount.
+Since she needs to buy euros for (almost) immediate delivery and is happy with the current EUR/USD exchange rate of 1.1233, she executes a foreign exchange transaction at the spot price to buy the equivalent of \$10,000 in euros, which works out to be €8,902.34 (\$10,000 ÷ 1.1233). The spot transaction has a settlement date of T+2, so Danielle receives her euros in two days and settles her account to receive the 30% discount.
 
 ## How Will I Use This in Real Life?
 
@@ -86,7 +95,7 @@ Spot markets trade commodities or other assets for immediate (or very near-term)
 
 ## What Are Examples of Spot Markets?
 
-Many commodities have active spot markets, where physical [spot commodities](https://www.investopedia.com/terms/s/spotcommodity.asp) are bought and sold in real-time for cash. Foreign exchange also trades in the spot currency market where the underlying currencies are physically exchanged following the settlement date. Delivery usually occurs within two days after execution as it generally takes two days to transfer funds between bank accounts. Stock markets can also be thought of as spot markets, with shares of companies changing hands in real time.
+Many commodities have active spot markets, where physical spot commodities are bought and sold in real-time for cash. Foreign exchange also trades in the spot currency market where the underlying currencies are physically exchanged following the settlement date. Delivery usually occurs within two days after execution as it generally takes two days to transfer funds between bank accounts. Stock markets can also be thought of as spot markets, with shares of companies changing hands in real time.
 
 ## What Is a Spot and Forward Market?
 
@@ -94,7 +103,7 @@ A spot market is where spot commodities or other assets like currencies are trad
 
 ## What Is the Difference Between Spot Markets and Futures Markets?
 
-Forwards and futures are derivatives contracts that use the spot market as the underlying asset. These are contracts that give the owner control of the underlying at some point in the future, for a price agreed upon today. Only [when the contracts expire](https://www.investopedia.com/understanding-futures-contract-expiration-7972595) would physical delivery of the commodity or other asset take place, and often traders will [roll over](https://www.investopedia.com/ask/answers/073015/how-do-futures-contracts-roll-over.asp) or close out their contracts to avoid making or taking delivery altogether. Forwards and futures are generically the same, except that forwards are customizable and trade over the counter, whereas futures are standardized and traded on exchanges.
+Forwards and futures are derivatives contracts that use the spot market as the underlying asset. These are contracts that give the owner control of the underlying at some point in the future, for a price agreed upon today. Only when the contracts expire would physical delivery of the commodity or other asset take place, and often traders will roll over or close out their contracts to avoid making or taking delivery altogether. Forwards and futures are generically the same, except that forwards are customizable and trade over the counter, whereas futures are standardized and traded on exchanges.
 
 ## The Bottom Line
 

@@ -15,13 +15,13 @@ An income statement, also known as the profit and loss (P&L) statement, summariz
 
 The income statement is an integral part of company performance reports. While the balance sheet provides a snapshot of a company’s financials as of a particular date, the income statement reports income through a specific period, usually a quarter or a year.
 
-The income statement gives an account of how the [net revenue](https://www.investopedia.com/ask/answers/102714/what-are-difference-between-gross-revenue-reporting-and-net-revenue-reporting.asp#:~:text=Net%20revenue%20%28or%20net%20sales,or%20allowances%20from%20gross%20revenue.) realized by the company is transformed into net earnings (profit or loss). This requires reporting four key items: revenue, expenses, gains, and losses. An income statement starts with the details of sales and then works down to compute net income and eventually earnings per share (EPS). In each line, the income statement does not differentiate between cash and non-cash receipts (sales in cash vs. sales on credit) or cash vs. non-cash payments/disbursements (purchases in cash vs. purchases on credit).
+The income statement gives an account of how the net revenue realized by the company is transformed into net earnings (profit or loss). This requires reporting four key items: revenue, expenses, gains, and losses. An income statement starts with the details of sales and then works down to compute net income and eventually earnings per share (EPS). In each line, the income statement does not differentiate between cash and non-cash receipts (sales in cash vs. sales on credit) or cash vs. non-cash payments/disbursements (purchases in cash vs. purchases on credit).
 
 The period the income statement covers is indicated in its heading. For example, it could read: "for the year ended January 31, 2025", which would be the company's fiscal year, or "three months ended March 31, 2025", which means the first three months of the calendar year.
 
 ### Important
 
-A publicly traded company must submit income statements to the U.S. [Securities and Exchange Commission](https://www.investopedia.com/terms/s/sec.asp) (SEC).
+A publicly traded company must submit income statements to the U.S. Securities and Exchange Commission (SEC).
 
 ## Parts of an Income Statement
 
@@ -29,7 +29,7 @@ The format of an income statement may vary, depending upon the local regulatory 
 
 ### Operating Revenue
 
-Revenue realized through primary activities is often referred to as [operating revenue](https://www.investopedia.com/terms/o/operating-revenue.asp). For a company manufacturing a product, or for a wholesaler, distributor, or retailer involved in the business of selling that product, the revenue from primary activities refers to revenue achieved from the sale of the product.
+Revenue realized through primary activities is often referred to as operating revenue. For a company manufacturing a product, or for a wholesaler, distributor, or retailer involved in the business of selling that product, the revenue from primary activities refers to revenue achieved from the sale of the product.
 
 Similarly, for a company (or its franchisees) in the business of offering services, revenue from primary activities refers to the revenue or fees earned in exchange for offering those services.
 
@@ -44,7 +44,7 @@ Revenue realized through secondary, noncore business activities is often referre
 
 ### Gains
 
-Also called [other sundry income](https://www.investopedia.com/terms/s/sundryincome.asp), gains indicate the net money made from other activities like the sale of long-term assets. These include the net income realized from one-time nonbusiness activities, such as a company selling its old transportation van, unused land, or a subsidiary company.
+Also called other sundry income, gains indicate the net money made from other activities like the sale of long-term assets. These include the net income realized from one-time nonbusiness activities, such as a company selling its old transportation van, unused land, or a subsidiary company.
 
 Revenue should not be confused with receipts. Payment is usually accounted for in the period when sales are made or services are delivered. Receipts are the cash received and are accounted for when the money is received.
 
@@ -65,7 +65,7 @@ These are all expenses incurred for earning the average operating revenue linked
 
 ### Secondary-Activity Expenses
 
-These are all expenses linked to non-core business activities, like [interest](https://www.investopedia.com/terms/i/interest.asp) paid on loan money. They may be recurring or happen only once.
+These are all expenses linked to non-core business activities, like interest paid on loan money. They may be recurring or happen only once.
 
 ### Losses As Expenses
 
@@ -75,17 +75,58 @@ These are all expenses that go toward a loss-making sale of long-term assets, on
 
 Mathematically, net income is calculated based on the following:
 
+$$\text{Net Income} = (\text{Revenue} + \text{Gains}) - (\text{Expenses} + \text{Losses})$$
+
 To understand the above formula with some real numbers, let’s assume that a fictitious sports merchandise business, which additionally provides training, is reporting its income statement for a recent hypothetical quarter.
 
-The company generated $25,800 from the sale of sports goods and $5,000 from training services for a total of $30,800 in revenue. However, that money didn't stay in its pocket. Generating that revenue cost a total of $10,650. Major expenses included procurement costs, rent, and wages.
+**Excel Sports Income Statement**
 
-The company also realized a net gain of $2,000 from the sale of an old van and incurred a loss of $800 for settling a dispute raised by a consumer.
+- Revenue:
 
-If you subtract all the outgoings from the money the company received, you are left with $21,350. That's the company's net income for the given quarter.
+| Item                  | Amount   |
+|-----------------------|----------|
+| Merchandise Sale      | \$25,800 |
+| Revenue from Training | \$5,000  |
+| **Total Revenue**     | **\$30,800** |
+
+- Expenses:
+
+| Item               | Amount   |
+|--------------------|----------|
+| Procurement Costs  | \$8,000  |
+| Wages              | \$700    |
+| Rent               | \$1,000  |
+| Interest Paid      | \$500    |
+| Transportation     | \$300    |
+| Utilities          | \$150    |
+| **Total Expenses** | **\$10,650** |
+
+- Gains:
+
+| Item                    | Amount   |
+|-------------------------|----------|
+| Income from sale of van | \$2,000  |
+
+- Losses:
+
+| Item                                 | Amount   |
+|--------------------------------------|----------|
+| Settlement cost of consumer lawsuit  | \$800    |
+
+- Net Income:
+
+**(Revenue + Gains) – (Expenses + Losses) = \$21,350**
+
+
+The company generated \$25,800 from the sale of sports goods and \$5,000 from training services for a total of \$30,800 in revenue. However, that money didn't stay in its pocket. Generating that revenue cost a total of \$10,650. Major expenses included procurement costs, rent, and wages.
+
+The company also realized a net gain of \$2,000 from the sale of an old van and incurred a loss of \$800 for settling a dispute raised by a consumer.
+
+If you subtract all the outgoings from the money the company received, you are left with \$21,350. That's the company's net income for the given quarter.
 
 ### Single-Step vs. Multiple-Step Income Statement
 
-The above example is the simplest form of income statement that any standard business can generate. It is called the [single-step income statement](https://www.investopedia.com/ask/answers/102714/what-are-main-differences-between-single-step-and-multiple-step-income-statements.asp) as it is based on a simple calculation that sums up revenue and gains and subtracts expenses and losses.
+The above example is the simplest form of income statement that any standard business can generate. It is called the single-step income statement as it is based on a simple calculation that sums up revenue and gains and subtracts expenses and losses.
 
 However, real-world companies often operate on a global scale, have diversified business segments offering a mix of products and services, and frequently get involved in mergers, acquisitions, and strategic partnerships. Such a wide array of operations, diversified set of expenses, various business activities, and the need for reporting in a standard format per regulatory compliance lead to multiple and complex accounting entries in the income statement.
 
@@ -97,17 +138,43 @@ Listed companies follow the multiple-step income statement, which segregates the
 
 For a real-world example, let's look at Microsoft Corporation's June 2025 Income Statement as reported to the Securities and Exchange Commission (SEC).
 
+**ITEM 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA**  
+INCOME STATEMENTS (in millions, except per share amounts)
+
+| Category                            | Subcategory                     | 2025          | 2024          | 2023          |
+|-------------------------------------|---------------------------------|---------------|---------------|---------------|
+| Revenue                             | Product                         | \$63,946      | \$64,773      | \$64,699      |
+| Revenue                             | Service and other               | \$217,778     | \$180,349     | \$147,216     |
+| Revenue                             | **Total revenue**               | **\$281,724** | **\$245,122** | **\$211,915** |
+| Cost of revenue                     | Product                         | \$13,501      | \$15,272      | \$17,804      |
+| Cost of revenue                     | Service and other               | \$74,330      | \$58,842      | \$48,059      |
+| Cost of revenue                     | **Total cost of revenue**       | **\$87,831**  | **\$74,114**  | **\$65,863**  |
+|                                     | **Gross margin**                | **\$193,893** | **\$171,008** | **\$146,052** |
+| Operating expenses                  | Research and development        | \$32,488      | \$29,510      | \$25,262      |
+| Operating expenses                  | Sales and marketing             | \$25,654      | \$24,456      | \$22,759      |
+| Operating expenses                  | General and administrative      | \$7,223       | \$7,609       | \$7,575       |
+|                                     | **Operating income**            | **\$128,528** | **\$109,433** | **\$88,523**  |
+| Other income (expense), net         |                                 | \$(4,901)     | \$(1,646)     | \$788         |
+|                                     | **Income before income taxes**  | **\$123,627** | **\$107,787** | **\$89,311**  |
+| Provision for income taxes          |                                 | \$21,795      | \$19,651      | \$16,950      |
+|                                     | **Net income**                  | **\$101,832** | **\$88,136**  | **\$72,361**  |
+| Earnings per share                  | Basic                           | \$13.70       | \$11.86       | \$9.72        |
+| Earnings per share                  | Diluted                         | \$13.64       | \$11.80       | \$9.68        |
+| Weighted average shares outstanding | Basic                           | 7,433         | 7,431         | 7,446         |
+| Weighted average shares outstanding | Diluted                         | 7,465         | 7,469         | 7,472         |
+
+
 ### Revenue Section
 
-The Revenue section shows that Microsoft’s gross margin, also known as gross (annual) profit, for the fiscal year ending June 30, 2025, was $193.9 billion. This number is arrived at by deducting the cost of revenue ($87.8 billion) from the total revenue ($281.7 billion)—in other words, revenue minus the amount it costs to produce that $281.7 billion.
+The Revenue section shows that Microsoft’s gross margin, also known as gross (annual) profit, for the fiscal year ending June 30, 2025, was \$193.9 billion. This number is arrived at by deducting the cost of revenue (\$87.8 billion) from the total revenue (\$281.7 billion)—in other words, revenue minus the amount it costs to produce that \$281.7 billion.
 
 Comparing these numbers, you can see that just over 30% of Microsoft’s total sales went toward costs for revenue generation.
 
 ### Operating Expenses
 
-Operating expenses are further expenses that are subtracted from total revenue. Microsoft spent $32.5 billion on research and development (R&D), over $25.7 billion on sales and marketing costs, and $7.2 billion on general and administrative costs. Total operating expenses are computed by summing all these figures ($87.8 billion + $32.5 billion + $25.7 billion + $7.2 billion) to arrive at $153.2 billion.
+Operating expenses are further expenses that are subtracted from total revenue. Microsoft spent \$32.5 billion on research and development (R&D), over \$25.7 billion on sales and marketing costs, and \$7.2 billion on general and administrative costs. Total operating expenses are computed by summing all these figures (\$87.8 billion + \$32.5 billion + \$25.7 billion + \$7.2 billion) to arrive at \$153.2 billion.
 
-Reducing total operating expenses from total revenue leads to operating income of $128.5 billion ($281.7 billion - $153.2 billion). This figure represents the [earnings before interest and taxes](https://www.investopedia.com/terms/e/ebit.asp) (EBIT) for Microsoft's core business activities. It will be used later to derive the net income.
+Reducing total operating expenses from total revenue leads to operating income of \$128.5 billion (\$281.7 billion - \$153.2 billion). This figure represents the earnings before interest and taxes (EBIT) for Microsoft's core business activities. It will be used later to derive the net income.
 
 ### Fast Fact
 
@@ -115,9 +182,9 @@ If total revenue minus total operating expenses is a negative number, this is co
 
 ### Income From Continuing Operations
 
-Following operating expenses are other forms of income, known as income from continuing operations. This includes operating income, other net income, interest-linked expenses, and applicable taxes. Adding these together with operating income, we arrive at a net income of $88.1 billion for Microsoft.
+Following operating expenses are other forms of income, known as income from continuing operations. This includes operating income, other net income, interest-linked expenses, and applicable taxes. Adding these together with operating income, we arrive at a net income of \$88.1 billion for Microsoft.
 
-Net income is then used to calculate earnings per share (EPS) using the average shares outstanding, which are also listed on the income statement. EPS is calculated by dividing the net income figure by the number of weighted average shares outstanding. With 7.433 billion outstanding shares, Microsoft's basic EPS came to $13.70 per share ($101.8 billion ÷ 7.433 billion).
+Net income is then used to calculate earnings per share (EPS) using the average shares outstanding, which are also listed on the income statement. EPS is calculated by dividing the net income figure by the number of weighted average shares outstanding. With 7.433 billion outstanding shares, Microsoft's basic EPS came to \$13.70 per share (\$101.8 billion ÷ 7.433 billion).
 
 ## Uses of Income Statements
 
@@ -164,4 +231,3 @@ The income statement answers the bottom-line question: Did the company make or l
 An income statement is a financial statement that lays out a company's revenue, expenses, gains, and losses during a set accounting period. It provides valuable insights into various aspects of a business, including its overall profitability and earnings per share.
 
 Investors, competitors, and executives can use the income statement to better understand a company's operations, the efficiency of its management, areas that may be eroding profits, and whether the company is performing in line with industry peers.
-

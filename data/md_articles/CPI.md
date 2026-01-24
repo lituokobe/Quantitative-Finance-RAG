@@ -36,7 +36,7 @@ The owners' equivalent category models the rent equivalent for owner-occupied ho
 
 The BLS publishes two CPI indexes each month. The Consumer Price Index for All Urban Consumers (CPI-U) represents 93% of the U.S. population not living in remote rural areas.
 
-It doesn't cover spending by people living in farm households, institutions, or on military bases. CPI-U is the basis of the widely reported CPI numbers that matter to financial markets. The BLS also publishes the [Consumer Price Index for Urban Wage Earners and Clerical Workers (CPI-W)](https://www.investopedia.com/terms/c/cpi-w.asp). The CPI-W covers 29% of the U.S. population living in households with income derived predominantly from clerical employment or jobs with an hourly wage.
+It doesn't cover spending by people living in farm households, institutions, or on military bases. CPI-U is the basis of the widely reported CPI numbers that matter to financial markets. The BLS also publishes the Consumer Price Index for Urban Wage Earners and Clerical Workers (CPI-W). The CPI-W covers 29% of the U.S. population living in households with income derived predominantly from clerical employment or jobs with an hourly wage.
 
 CPI-W is used to adjust Social Security payments as well as other federal benefits and pensions for changes in the cost of living.
 
@@ -44,7 +44,7 @@ It also shifts federal income tax brackets to ensure taxpayers aren't subjected 
 
 ## CPI-U Formula
 
-The more common CPI-U calculation entails two primary formulas. The first is used to determine the current cost of the weighted average basket of products, while the second is used to analyze the [year-over-year (YOY)](https://www.investopedia.com/terms/y/year-over-year.asp) change.
+The more common CPI-U calculation entails two primary formulas. The first is used to determine the current cost of the weighted average basket of products, while the second is used to analyze the year-over-year (YOY) change.
 
 To calculate the annual CPI, the BLS divides the current value of a specific basket of goods compared to one year ago:
 
@@ -68,7 +68,7 @@ The monthly CPI release from the BLS leads with the change from the prior month 
 
 The BLS' detailed tables show price changes for a variety of goods and services organized by eight umbrella spending categories.
 
-Subcategories estimate price changes for everything from tomatoes and salad dressing to auto repairs and sporting events tickets. Price changes for each subcategory are provided with and without [seasonal adjustment](https://www.investopedia.com/terms/s/seasonal-adjustment.asp).
+Subcategories estimate price changes for everything from tomatoes and salad dressing to auto repairs and sporting events tickets. Price changes for each subcategory are provided with and without seasonal adjustment.
 
 BLS also publishes CPI data for U.S. regions, sub-regions, and major metropolitan areas. The metro data is subject to wider fluctuations and is useful mainly to identify price changes based on local conditions.
 
@@ -88,7 +88,7 @@ The table below represents the CPI basket weighted distribution for food, energy
 
 The CPI is widely used by financial market participants to gauge inflation and by the Federal Reserve to calibrate its monetary policy.
 
-Businesses and consumers also use the CPI to make informed economic decisions. Since CPI measures the change in consumers' [purchasing power](https://www.investopedia.com/terms/p/purchasingpower.asp), it is often a key factor in pay negotiations.
+Businesses and consumers also use the CPI to make informed economic decisions. Since CPI measures the change in consumers' purchasing power, it is often a key factor in pay negotiations.
 
 - **The Federal Reserve:** The Fed uses CPI data to determine economic policy. With a target inflation rate of 2%, the Fed may enact expansionary monetary policy to stimulate the economy should market growth slow, or enact contractionary monetary policy should the economy grow too quickly. In response to higher-than-desired inflation rates via the CPI, the Fed adjusts the Fed funds rate.
 - **COLAs:** The cost-of-living adjustments (COLAs) based on the CPI affect federal payments to the many millions of Americans receiving Social Security and Supplemental Security Income (SSI) benefits. They also apply to federal pension payments, school lunch subsidies, and income tax brackets.

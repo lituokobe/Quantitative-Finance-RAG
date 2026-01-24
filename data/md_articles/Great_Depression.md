@@ -28,13 +28,13 @@ Speculative frenzies affected both the real estate markets and the New York Stoc
 
 The lead-up to October 1929 saw equity prices rise to all-time high multiples of more than 19 times after-tax corporate earnings. Coupled with the benchmark Dow Jones Industrial Index (DJIA) increasing 500% in just five years, the stock market crash that followed was severe.
 
-The NYSE bubble burst violently on Oct. 24, 1929, a day that has come to be known as [Black Thursday](https://www.investopedia.com/terms/b/blackthursday.asp). A brief rally occurred on Friday the 25th and during a half-day session on Saturday the 26th, but the following week brought Black Monday (Oct. 28) and Black Tuesday (Oct. 29). The DJIA fell by more than 20% over those two days. The stock market would eventually fall almost 90% from its 1929 peak.
+The NYSE bubble burst violently on Oct. 24, 1929, a day that has come to be known as Black Thursday. A brief rally occurred on Friday the 25th and during a half-day session on Saturday the 26th, but the following week brought Black Monday (Oct. 28) and Black Tuesday (Oct. 29). The DJIA fell by more than 20% over those two days. The stock market would eventually fall almost 90% from its 1929 peak.
 
 Ripples from the crash spread across the Atlantic Ocean to Europe, triggering other financial crises such as the collapse of the Boden-Kredit Anstalt, Austria’s most important bank. The economic calamity hit both continents in full force in 1931.
 
 ## The U.S. Economy Tailspin
 
-The 1929 stock market crash wiped out [nominal](https://www.investopedia.com/terms/n/nominal.asp) wealth, both corporate and private, and this sent the U.S. economy into a tailspin. The U.S. unemployment rate was 3.2% in early 1929. It soared to over 24% by 1933.
+The 1929 stock market crash wiped out nominal wealth, both corporate and private, and this sent the U.S. economy into a tailspin. The U.S. unemployment rate was 3.2% in early 1929. It soared to over 24% by 1933.
 
 The unemployment rate remained above 18.9% in 1938 despite unprecedented interventions and government spending by both the Hoover and Roosevelt administrations.
 
@@ -42,7 +42,7 @@ The stock market crash likely triggered the decade-long economic downturn, but m
 
 ## Mistakes by the Young Federal Reserve
 
-The relatively new Federal Reserve mismanaged the supply of money and credit before and after the crash in 1929, according to monetarists such as [Milton Friedman](https://www.investopedia.com/terms/m/milton-friedman.asp) and acknowledged by former Federal Reserve Chair [Ben Bernanke](https://www.investopedia.com/terms/b/benbernanke.asp).
+The relatively new Federal Reserve mismanaged the supply of money and credit before and after the crash in 1929, according to monetarists such as Milton Friedman and acknowledged by former Federal Reserve Chair Ben Bernanke.
 
 The Fed was created in 1913, and it remained fairly inactive throughout the first eight years of its existence. Then it allowed significant monetary expansion after the economy recovered from the 1920 to 1921 depression.
 
@@ -58,7 +58,7 @@ World War II created international trading channels and reversed burdensome pric
 
 ## The Fed's Tight Fist
 
-As Bernanke noted in a November 2002 address, before the Fed existed, bank panics were typically resolved within weeks. Large private financial institutions would loan money to the strongest smaller institutions to maintain system integrity. That sort of scenario had occurred two decades earlier during the [Panic of 1907](https://www.investopedia.com/terms/b/bank-panic-of-1907.asp).
+As Bernanke noted in a November 2002 address, before the Fed existed, bank panics were typically resolved within weeks. Large private financial institutions would loan money to the strongest smaller institutions to maintain system integrity. That sort of scenario had occurred two decades earlier during the Panic of 1907.
 
 At that time, investment banker J.P. Morgan stepped in to rally Wall Street denizens to move significant amounts of capital to banks that were lacking funds when frenzied selling sent the NYSE spiraling downward and led to a bank run. Ironically, it was that panic that led the government to create the Federal Reserve to cut its reliance on individual financiers such as Morgan.
 
@@ -86,7 +86,7 @@ Many of Hoover's other post-crash interventions and actions by Congress, such as
 
 ## U.S. Protectionism
 
-The bleak reality forced Hoover to use legislation to prop up prices and wages by choking out cheaper foreign competition. He signed the [Smoot-Hawley Tariff Act of 1930](https://www.investopedia.com/terms/s/smoot-hawley-tariff-act.asp) into law following the tradition of protectionists and in the face of the protests from more than a thousand of the nation's economists.
+The bleak reality forced Hoover to use legislation to prop up prices and wages by choking out cheaper foreign competition. He signed the Smoot-Hawley Tariff Act of 1930 into law following the tradition of protectionists and in the face of the protests from more than a thousand of the nation's economists.
 
 The act was initially intended to protect agriculture, but it swelled into a multi-industry tariff, imposing huge duties on more than 880 foreign products. Nearly three dozen countries retaliated, and imports fell from \$1.3 billion in 1929 to just \$390 million in 1932. International trade declined by 66% by 1934. Not surprisingly, economic conditions worsened worldwide.
 
@@ -98,7 +98,7 @@ The U.S. economy deteriorated from a recession to a depression when it was unabl
 
 President Franklin Roosevelt promised massive change when he was elected in 1933. The New Deal program that he initiated was an innovative, unprecedented series of domestic programs and acts that were designed to bolster American businesses, reduce unemployment, and protect the public.
 
-The New Deal was loosely based on Keynesian economics and the idea that the government could and should stimulate the economy. It set lofty goals to create and maintain the national [infrastructure](https://www.investopedia.com/terms/i/infrastructure.asp), full employment, and healthy wages. The government set about achieving these through price, wage, and even production controls.
+The New Deal was loosely based on Keynesian economics and the idea that the government could and should stimulate the economy. It set lofty goals to create and maintain the national infrastructure, full employment, and healthy wages. The government set about achieving these through price, wage, and even production controls.
 
 Some economists claim that Roosevelt continued many of Hoover's interventions, just on a larger scale. He kept a rigid focus on price supports and minimum wages and removed the country from the gold standard, forbidding individuals to hoard gold coins and bullion. He banned monopolistic business practices and instituted dozens of new public works programs and other job-creation agencies.
 
@@ -135,7 +135,7 @@ Looking at employment and GDP figures, the Great Depression appeared to end sudd
 
 The standard of living declined due to wartime shortages caused by rationing. Taxes rose dramatically to fund the war effort. Private investment dropped from \$17.9 billion in 1940 to \$5.7 billion in 1943, and total private-sector production fell by nearly 50%.
 
-The notion that the war ended the Great Depression is a [broken window fallacy](https://www.investopedia.com/ask/answers/08/broken-window-fallacy.asp), but the conflict put the U.S. on the road to recovery. The war opened international trading channels and reversed price and wage controls. Government demand opened up for inexpensive products, and that demand created a massive fiscal stimulus.
+The notion that the war ended the Great Depression is a broken window fallacy, but the conflict put the U.S. on the road to recovery. The war opened international trading channels and reversed price and wage controls. Government demand opened up for inexpensive products, and that demand created a massive fiscal stimulus.
 
 Private investments rose from \$10.6 billion to \$30.6 billion in the first 12 months after the war ended. The stock market broke into a bull run after a few short years.
 

@@ -14,7 +14,7 @@ A simple moving average (SMA) is a tool used in financial analysis to determine 
 
 ## How Simple Moving Averages Work
 
-A simple moving average (SMA) is an arithmetic [moving average](https://www.investopedia.com/terms/m/movingaverage.asp) calculated by adding recent prices and then dividing that figure by the number of time periods in the calculation average. For example, add the closing prices over several periods and divide the sum by the number of periods. Short-term averages react quickly to price changes, whereas long-term averages respond more slowly. Other types include the [exponential moving average](https://www.investopedia.com/terms/e/ema.asp) (EMA) and the [weighted moving average](https://www.investopedia.com/articles/technical/060401.asp) (WMA).
+A simple moving average (SMA) is an arithmetic moving average calculated by adding recent prices and then dividing that figure by the number of time periods in the calculation average. For example, add the closing prices over several periods and divide the sum by the number of periods. Short-term averages react quickly to price changes, whereas long-term averages respond more slowly. Other types include the exponential moving average (EMA) and the weighted moving average (WMA).
 
 The formula for SMA is:
 
@@ -37,7 +37,7 @@ Week Three (5 days): 28, 30, 27, 29, 28
 
 The 15-day SMA for this security is \$26.13.
 
-A 10-day moving average considers only the last 10 [closing prices](https://www.investopedia.com/terms/c/closingprice.asp). Each market day, the newest closing price replaces the oldest, updating the average. A 50-day moving average would use 50 days worth of data to compute the average price on a rolling basis.
+A 10-day moving average considers only the last 10 closing prices. Each market day, the newest closing price replaces the oldest, updating the average. A 50-day moving average would use 50 days worth of data to compute the average price on a rolling basis.
 
 A simple moving average is customizable because it can be calculated for different numbers of time periods. This is done by adding the closing price of the security for a number of time periods and then dividing this total by the number of time periods, which gives the average price of the security over the time period.
 
@@ -57,23 +57,23 @@ Another use involves comparing two SMAs of different time frames. If a short-ter
 
 ### Trading Patterns Involving SMAs: Death Cross and Golden Cross
 
-Two popular trading patterns that use simple moving averages include the death cross and a golden cross. A [death cross](https://www.investopedia.com/terms/d/deathcross.asp) occurs when the 50-day SMA crosses below the 200-day SMA. This is considered a bearish signal, indicating that further losses are in store. The [golden cross](https://www.investopedia.com/terms/g/goldencross.asp) occurs when a short-term SMA breaks above a long-term SMA. Reinforced by high trading volumes, this can signal further gains are in store.
+Two popular trading patterns that use simple moving averages include the death cross and a golden cross. A death cross occurs when the 50-day SMA crosses below the 200-day SMA. This is considered a bearish signal, indicating that further losses are in store. The golden cross occurs when a short-term SMA breaks above a long-term SMA. Reinforced by high trading volumes, this can signal further gains are in store.
 
 ## Comparing SMAs and EMAs: Sensitivity and Application
 
-In [contrasting an exponential moving average (EMA) and a simple moving average](https://www.investopedia.com/ask/answers/013015/what-are-main-advantages-and-disadvantages-using-simple-moving-average-sma.asp) the major difference is the sensitivity each one shows to changes in the data used in its calculation. More specifically, the EMA gives a higher weighting to recent prices, while the SMA assigns an equal weighting to all values.
+In contrasting an exponential moving average (EMA) and a simple moving average the major difference is the sensitivity each one shows to changes in the data used in its calculation. More specifically, the EMA gives a higher weighting to recent prices, while the SMA assigns an equal weighting to all values.
 
-The two averages are similar because they are interpreted in the same manner and are both commonly used by technical traders to smooth out price fluctuations. Since EMAs place a higher weighting on recent data than on older data, they are more reactive to the latest [price changes](https://www.investopedia.com/terms/p/price-change.asp) than SMAs are, which makes the results from EMAs more timely and explains why the EMA is the preferred average among many traders.
+The two averages are similar because they are interpreted in the same manner and are both commonly used by technical traders to smooth out price fluctuations. Since EMAs place a higher weighting on recent data than on older data, they are more reactive to the latest price changes than SMAs are, which makes the results from EMAs more timely and explains why the EMA is the preferred average among many traders.
 
 ## Limitations and Challenges of Using SMAs
 
-It is unclear whether or not more emphasis should be placed on the most recent days in the time period or on more distant data. Many traders believe that new data will better reflect the current trend the security is moving with. At the same time, other traders feel that privileging certain dates over others will bias the trend. Therefore, the SMA may rely too heavily on outdated data since it treats the [10th or 200th day's impact](https://www.investopedia.com/terms/d/displacedmovingaverage.asp) the same as the first or second day's.
+It is unclear whether or not more emphasis should be placed on the most recent days in the time period or on more distant data. Many traders believe that new data will better reflect the current trend the security is moving with. At the same time, other traders feel that privileging certain dates over others will bias the trend. Therefore, the SMA may rely too heavily on outdated data since it treats the 10th or 200th day's impact the same as the first or second day's.
 
-Similarly, the SMA relies wholly on historical data. Many people (including some economists) believe that [markets are efficient](https://www.investopedia.com/articles/basics/04/022004.asp). This is known as the efficient market hypothesis. It holds that current market prices already reflect all available information. If markets are indeed efficient, using historical data should tell us nothing about the future direction of asset prices. There are some economic and financial thinkers who support this hypothesis, and plenty of others who oppose it.
+Similarly, the SMA relies wholly on historical data. Many people (including some economists) believe that markets are efficient. This is known as the efficient market hypothesis. It holds that current market prices already reflect all available information. If markets are indeed efficient, using historical data should tell us nothing about the future direction of asset prices. There are some economic and financial thinkers who support this hypothesis, and plenty of others who oppose it.
 
 ## How Are Simple Moving Averages Used in Technical Analysis?
 
-Traders use simple moving averages (SMAs) to chart the long-term trajectory of a stock or other security, while ignoring the [noise](https://www.investopedia.com/terms/n/noise.asp) of day-to-day [price movements](https://www.investopedia.com/terms/e/easeofmovement.asp). This allows traders to compare medium- and long-term trends over a larger time horizon. For example, if the 50-day SMA of a security falls below its 200-day SMA, this is usually interpreted as a bearish death cross pattern and a signal of further declines. The opposite pattern, the golden cross, indicates potential for a market rally.
+Traders use simple moving averages (SMAs) to chart the long-term trajectory of a stock or other security, while ignoring the noise of day-to-day price movements. This allows traders to compare medium- and long-term trends over a larger time horizon. For example, if the 50-day SMA of a security falls below its 200-day SMA, this is usually interpreted as a bearish death cross pattern and a signal of further declines. The opposite pattern, the golden cross, indicates potential for a market rally.
 
 ## How Do You Calculate a Simple Moving Average?
 

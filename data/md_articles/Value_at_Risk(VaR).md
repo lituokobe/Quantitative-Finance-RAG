@@ -2,7 +2,7 @@
 
 ## What Is Value at Risk (VaR)?
 
-Value at Risk (VaR) estimates the maximum expected loss of an investment over a set period at a chosen confidence level, making it a common tool for banks and financial firms. It can be calculated using historical data, the variance-covariance method, or Monte Carlo simulation. This article will apply these approaches to the [Nasdaq 100 Index](https://www.investopedia.com/terms/n/nasdaq100.asp) to illustrate how VaR works in practice.
+Value at Risk (VaR) estimates the maximum expected loss of an investment over a set period at a chosen confidence level, making it a common tool for banks and financial firms. It can be calculated using historical data, the variance-covariance method, or Monte Carlo simulation. This article will apply these approaches to the Nasdaq 100 Index to illustrate how VaR works in practice.
 
 ### Key Takeaways
 
@@ -14,7 +14,7 @@ Value at Risk (VaR) estimates the maximum expected loss of an investment over a 
 
 ## Key Components of Value at Risk (VaR)
 
-The traditional measure of risk is [volatility](https://www.investopedia.com/terms/v/volatility.asp), and an investor's main concern is the odds of losing money. The VaR statistic has three components: a period, a confidence level, and a loss amount, or loss percentage, and can address these concerns:
+The traditional measure of risk is volatility, and an investor's main concern is the odds of losing money. The VaR statistic has three components: a period, a confidence level, and a loss amount, or loss percentage, and can address these concerns:
 
 - What can I expect to lose in dollars with a 95% or 99% level of confidence next month?
 - What is the maximum percentage I can expect to lose with 95% or 99% confidence over the next year?
@@ -23,13 +23,13 @@ The questions include a high level of confidence, a period, and an estimate of i
 
 ## Techniques for Calculating Value at Risk (VaR)
 
-Let's evaluate the risk of a single [index](https://www.investopedia.com/terms/i/index.asp) that trades like a stock, the [Nasdaq 100 Index](https://www.investopedia.com/terms/n/nasdaq100.asp), which is traded through the Invesco [QQQ](https://www.investopedia.com/markets/quote?tvwidgetsymbol=qqq) Trust. The [QQQ](https://www.investopedia.com/terms/q/qqq.asp) is an index of the largest non-financial stocks that trade on the Nasdaq exchange.
+Let's evaluate the risk of a single index that trades like a stock, the Nasdaq 100 Index, which is traded through the Invesco QQQ Trust. The QQQ is an index of the largest non-financial stocks that trade on the Nasdaq exchange.
 
-There are three methods of calculating Value at Risk (VaR), [including the historical method](https://www.investopedia.com/ask/answers/041715/what-backtesting-value-risk-var.asp), the variance-covariance method, and the [Monte Carlo simulation](https://www.investopedia.com/terms/m/montecarlosimulation.asp).
+There are three methods of calculating Value at Risk (VaR), including the historical method, the variance-covariance method, and the Monte Carlo simulation.
 
 ### Historical Approach to Calculating VaR
 
-The historical method simply re-organizes actual [historical returns](https://www.investopedia.com/terms/h/historical-returns.asp), putting them in order from worst to best. It then assumes that history will repeat itself, from a risk perspective. Let's look at the Nasdaq 100 ETF, which trades under the symbol QQQ.
+The historical method simply re-organizes actual historical returns, putting them in order from worst to best. It then assumes that history will repeat itself, from a risk perspective. Let's look at the Nasdaq 100 ETF, which trades under the symbol QQQ.
 
 ### Value at Risk
 
@@ -49,7 +49,7 @@ At the highest bar, there were more than 250 days when the daily return was betw
 
 ### Variance-Covariance Method for Assessing VaR
 
-This method assumes that stock returns are normally distributed and requires an estimate of only two factors, an [expected](https://www.investopedia.com/terms/e/expectedreturn.asp) return, and a [standard deviation](https://www.investopedia.com/terms/s/standarddeviation.asp), allowing for a [normal distribution](https://www.investopedia.com/terms/n/normaldistribution.asp) curve. The normal curve is plotted against the same [actual return](https://www.investopedia.com/terms/a/actualreturn.asp) data in the graph above.
+This method assumes that stock returns are normally distributed and requires an estimate of only two factors, an expected return, and a standard deviation, allowing for a normal distribution curve. The normal curve is plotted against the same actual return data in the graph above.
 
 The variance-covariance is similar to the historical method except it uses a familiar curve instead of actual data. The advantage of the normal curve is that it shows where the worst 5% and 1% lie on the curve. They are a function of desired confidence and the standard deviation.
 
@@ -58,7 +58,7 @@ The variance-covariance is similar to the historical method except it uses a fam
 | 95% (high)        | -1.65 × σ                    |
 | 99% (really high) | -2.33 × σ                    |
 
-The curve above is based on the actual daily standard deviation of the QQQ, which is 2.64%. The average daily return happened to be fairly close to zero, so it's safe to assume an [average return](https://www.investopedia.com/terms/a/averagereturn.asp) of zero for illustrative purposes. Here are the results of using the actual standard deviation in the formulas above:
+The curve above is based on the actual daily standard deviation of the QQQ, which is 2.64%. The average daily return happened to be fairly close to zero, so it's safe to assume an average return of zero for illustrative purposes. Here are the results of using the actual standard deviation in the formulas above:
 
 | Confidence       | # of σ         | Calculation            | Equals   |
 |------------------|----------------|------------------------|----------|
@@ -95,5 +95,5 @@ A high value for the confidence interval percentage means greater confidence in 
 
 ## The Bottom Line
 
-Value at Risk (VAR) [calculates](https://www.investopedia.com/ask/answers/033115/how-can-you-calculate-value-risk-var-excel.asp) the maximum expected loss on an investment over a given period at a chosen confidence level, and it can be calculated using the historical method, the variance-covariance approach, or Monte Carlo simulation. Understanding VaR helps investors and risk managers understand potential downside and compare how different market conditions might affect a portfolio.
+Value at Risk (VAR) calculates the maximum expected loss on an investment over a given period at a chosen confidence level, and it can be calculated using the historical method, the variance-covariance approach, or Monte Carlo simulation. Understanding VaR helps investors and risk managers understand potential downside and compare how different market conditions might affect a portfolio.
 

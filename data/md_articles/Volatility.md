@@ -18,13 +18,13 @@ An asset’s volatility is a key factor when pricing options contracts.
 
 ## Understanding Volatility
 
-Volatility often refers to the amount of uncertainty or [risk](https://www.investopedia.com/terms/r/risk.asp) related to the size of changes in a security’s value.
+Volatility often refers to the amount of uncertainty or risk related to the size of changes in a security’s value.
 
 A higher volatility means that a security’s value can potentially be spread out over a larger range of values. This means that the price of the security can move dramatically over a short time period in either direction. A lower volatility means that a security’s value does not fluctuate dramatically, and tends to be steadier.
 
-One way to measure an asset’s variation is to quantify the daily returns (percent move on a daily basis) of the asset. Historical volatility is based on historical prices and represents the degree of [variability](https://www.investopedia.com/terms/v/variability.asp) in the returns of an asset. This number is without a unit and is expressed as a percentage.
+One way to measure an asset’s variation is to quantify the daily returns (percent move on a daily basis) of the asset. Historical volatility is based on historical prices and represents the degree of variability in the returns of an asset. This number is without a unit and is expressed as a percentage.
 
-While [variance](https://www.investopedia.com/terms/v/variance.asp) captures the [dispersion](https://www.investopedia.com/terms/d/dispersion.asp) of returns around the mean of an asset in general, volatility is a measure of that variance bounded by a specific time period. Thus, we can report daily, weekly, monthly, or annualized volatility. It is useful to think of volatility as the annualized [standard deviation](https://www.investopedia.com/ask/answers/021915/how-standard-deviation-used-determine-risk.asp).
+While variance captures the dispersion of returns around the mean of an asset in general, volatility is a measure of that variance bounded by a specific time period. Thus, we can report daily, weekly, monthly, or annualized volatility. It is useful to think of volatility as the annualized standard deviation.
 
 ## How to Calculate Volatility
 
@@ -37,9 +37,9 @@ where:
 
 ### Volatility and Stocks
 
-For simplicity, let’s assume we have monthly stock [closing prices](https://www.investopedia.com/terms/c/closingprice.asp) of \$1 through \$10. For example, month one is \$1, month two is \$2, and so on. To calculate variance, follow the five steps below.
+For simplicity, let’s assume we have monthly stock closing prices of \$1 through \$10. For example, month one is \$1, month two is \$2, and so on. To calculate variance, follow the five steps below.
 
-1. Find the [mean](https://www.investopedia.com/terms/m/mean.asp) of the data set. This means adding each value and then dividing it by the number of values. If we add \$1, plus \$2, plus \$3, all the way to up to \$10, we get \$55. This is divided by 10 because we have 10 numbers in our data set. This provides a mean, or average price, of \$5.50.
+1. Find the mean of the data set. This means adding each value and then dividing it by the number of values. If we add \$1, plus \$2, plus \$3, all the way to up to \$10, we get \$55. This is divided by 10 because we have 10 numbers in our data set. This provides a mean, or average price, of \$5.50.
 2. Calculate the difference between each data value and the mean. This is often called deviation. For example, we take \$10 - \$5.50 = \$4.50, then \$9 - \$5.50 = \$3.50. This continues all the way down to the first data value of \$1. Negative numbers are allowed. Since we need each value, these calculations are frequently done in a spreadsheet.
 3. Square the deviations. This will eliminate negative values.
 4. Add the squared deviations together. In our example, this equals 82.5.
@@ -47,19 +47,19 @@ For simplicity, let’s assume we have monthly stock [closing prices](https://ww
 
 Next, take the square root of the variance to get the standard deviation. This equals \$2.87. This is a measure of risk and shows how values are spread out around the average price. It gives traders an idea of how far the price may deviate from the average.
 
-If prices are randomly sampled from a normal [distribution](https://www.investopedia.com/terms/d/distribution.asp), then about 68% of all data values will fall within one standard deviation. Ninety-five percent of data values will fall within two standard deviations (2 × 2.87 in our example), and 99.7% of all values will fall within three standard deviations (3 × 2.87).
+If prices are randomly sampled from a normal distribution, then about 68% of all data values will fall within one standard deviation. Ninety-five percent of data values will fall within two standard deviations (2 × 2.87 in our example), and 99.7% of all values will fall within three standard deviations (3 × 2.87).
 
-In this case, the values of \$1 to \$10 are not randomly distributed on a [bell curve](https://www.investopedia.com/terms/b/bell-curve.asp); rather, they are uniformly distributed. Therefore, the expected 68%–95%–99.7% percentages do not hold. Despite this limitation, traders frequently use standard deviation, as price returns data sets often resemble more of a normal (bell curve) distribution than in the given example.
+In this case, the values of \$1 to \$10 are not randomly distributed on a bell curve; rather, they are uniformly distributed. Therefore, the expected 68%–95%–99.7% percentages do not hold. Despite this limitation, traders frequently use standard deviation, as price returns data sets often resemble more of a normal (bell curve) distribution than in the given example.
 
 ### Tip
 
-The volatility of stock prices is thought to be [mean-reverting](https://www.investopedia.com/terms/m/meanreversion.asp), meaning that periods of high volatility are often moderate and periods of low volatility pick up, fluctuating around some long-term mean.
+The volatility of stock prices is thought to be mean-reverting, meaning that periods of high volatility are often moderate and periods of low volatility pick up, fluctuating around some long-term mean.
 
 ## Types of Volatility
 
 ### Implied Volatility
 
-[Implied volatility (IV)](https://www.investopedia.com/terms/i/iv.asp), also known as projected volatility, is one of the most important metrics for options traders. As the name suggests, it allows them to make a determination of just how volatile the market will be going forward.
+Implied volatility (IV), also known as projected volatility, is one of the most important metrics for options traders. As the name suggests, it allows them to make a determination of just how volatile the market will be going forward.
 
 This concept also gives traders a way to calculate probability. One important point to note is that it isn't considered science and therefore does not forecast how the market will move in the future.
 
@@ -71,17 +71,17 @@ Implied volatility is a key feature of options trading.
 
 ### Historical Volatility
 
-Also referred to as statistical volatility, [historical volatility (HV)](https://www.investopedia.com/terms/h/historicalvolatility.asp) gauges the fluctuations of underlying securities by measuring price changes over predetermined time periods. It is the less prevalent metric compared with implied volatility because it isn’t forward-looking.
+Also referred to as statistical volatility, historical volatility (HV) gauges the fluctuations of underlying securities by measuring price changes over predetermined time periods. It is the less prevalent metric compared with implied volatility because it isn’t forward-looking.
 
 When there is a rise in historical volatility, a security’s price will also move more than normal. At this time, there is an expectation that something will or has changed. If the historical volatility is dropping, on the other hand, it means any uncertainty has been eliminated, so things return to the way they were.
 
-This calculation may be based on [intraday](https://www.investopedia.com/terms/i/intraday.asp) changes, but often measures movements based on the change from one closing price to the next. Depending on the intended duration of the options trade, historical volatility can be measured in increments ranging anywhere from 10 to 180 trading days.
+This calculation may be based on intraday changes, but often measures movements based on the change from one closing price to the next. Depending on the intended duration of the options trade, historical volatility can be measured in increments ranging anywhere from 10 to 180 trading days.
 
 ## Volatility and Options Pricing
 
-Volatility is a key variable in options pricing models, estimating the extent to which the return of the [underlying asset](https://www.investopedia.com/terms/u/underlying-asset.asp) will fluctuate between now and the option’s expiration. Volatility, as expressed as a percentage coefficient within option-pricing formulas, arises from daily trading activities. How volatility is measured will affect the value of the coefficient used.
+Volatility is a key variable in options pricing models, estimating the extent to which the return of the underlying asset will fluctuate between now and the option’s expiration. Volatility, as expressed as a percentage coefficient within option-pricing formulas, arises from daily trading activities. How volatility is measured will affect the value of the coefficient used.
 
-Volatility is also used to price options contracts using models like the [Black-Scholes](https://www.investopedia.com/terms/b/blackscholes.asp) or [binomial tree](https://www.investopedia.com/terms/b/binomialoptionpricing.asp) models. More volatile underlying assets will translate to higher options premiums because with volatility, there is a greater probability that the options will end up [in the money](https://www.investopedia.com/terms/i/inthemoney.asp) at expiration.
+Volatility is also used to price options contracts using models like the Black-Scholes or binomial tree models. More volatile underlying assets will translate to higher options premiums because with volatility, there is a greater probability that the options will end up in the money at expiration.
 
 Options traders try to predict an asset’s future volatility, so the price of an option in the market reflects its implied volatility.
 
@@ -93,25 +93,25 @@ The greater the volatility, the higher the market price of options contracts acr
 
 ### Beta
 
-One measure of the relative volatility of a particular stock to the market is its beta (β). A [beta](https://www.investopedia.com/terms/b/beta.asp) approximates the overall volatility of a security’s returns against the returns of a relevant [benchmark](https://www.investopedia.com/terms/b/benchmark.asp) (usually, the S&P 500 is used). For example, a stock with a beta value of 1.1 has moved 110% for every 100% move in the benchmark, based on [price level](https://www.investopedia.com/terms/p/price_level.asp).
+One measure of the relative volatility of a particular stock to the market is its beta (β). A beta approximates the overall volatility of a security’s returns against the returns of a relevant benchmark (usually, the S&P 500 is used). For example, a stock with a beta value of 1.1 has moved 110% for every 100% move in the benchmark, based on price level.
 
 Conversely, a stock with a beta of 0.9 has moved 90% for every 100% move in the underlying index.
 
 ### The VIX
 
-Market volatility can also be seen through the [Volatility Index (VIX)](https://www.investopedia.com/terms/v/vix.asp), a numeric measure of equity market volatility.
+Market volatility can also be seen through the Volatility Index (VIX), a numeric measure of equity market volatility.
 
-The Chicago Board Options Exchange created the VIX as a measure to gauge the 30-day expected volatility of the U.S. stock market derived from real-time quote prices of S&P 500 call and put [options](https://www.investopedia.com/options-basics-tutorial-4583012). It is effectively a gauge of future bets that investors and traders are making on the direction of the markets or individual securities. A high reading on the VIX implies a risky market.
+The Chicago Board Options Exchange created the VIX as a measure to gauge the 30-day expected volatility of the U.S. stock market derived from real-time quote prices of S&P 500 call and put options. It is effectively a gauge of future bets that investors and traders are making on the direction of the markets or individual securities. A high reading on the VIX implies a risky market.
 
 Traders can trade the VIX using a variety of options and exchange-traded products. Or they can use VIX values to price certain derivative products.
 
 ## Tips for Managing Volatility
 
-[Investors](https://www.investopedia.com/terms/i/investor.asp) can find periods of high volatility to be distressing, as prices can swing wildly or fall suddenly. Long-term investors are best advised to ignore periods of short-term volatility and stay the course. This is because over the long run, stock markets tend to rise. Meanwhile, emotions like fear and greed—which can become amplified in volatile markets—can undermine your long-term strategy.
+Investors can find periods of high volatility to be distressing, as prices can swing wildly or fall suddenly. Long-term investors are best advised to ignore periods of short-term volatility and stay the course. This is because over the long run, stock markets tend to rise. Meanwhile, emotions like fear and greed—which can become amplified in volatile markets—can undermine your long-term strategy.
 
-Some investors can use volatility as an opportunity to add to their portfolios by [buying the dips](https://www.investopedia.com/terms/b/buy-the-dips.asp), when prices are relatively cheap.
+Some investors can use volatility as an opportunity to add to their portfolios by buying the dips, when prices are relatively cheap.
 
-You can also use hedging strategies to navigate volatility, such as buying [protective puts](https://www.investopedia.com/terms/p/protective-put.asp) to limit downside losses without having to sell any shares. But note that put options will also become pricier when volatility is higher.
+You can also use hedging strategies to navigate volatility, such as buying protective puts to limit downside losses without having to sell any shares. But note that put options will also become pricier when volatility is higher.
 
 ## Example of Volatility
 
@@ -120,7 +120,7 @@ Suppose that an investor is building a retirement portfolio. Since she is retiri
 1. ABC Corp. has a beta coefficient of 0.78, which makes it slightly less volatile than the S&P 500 index.
 2. XYZ Inc. has a beta coefficient of 1.45, making it significantly more volatile than the S&P 500 index.
 
-A more conservative investor may choose ABC Corp. for their [portfolio](https://www.investopedia.com/terms/p/portfolio.asp), since it has less volatility and more predictable short-term value.
+A more conservative investor may choose ABC Corp. for their portfolio, since it has less volatility and more predictable short-term value.
 
 ## What Is Volatility, Mathematically?
 
@@ -132,7 +132,7 @@ Volatility is often used to describe risk, but this is not necessarily always th
 
 ## Is Volatility a Good Thing?
 
-Whether volatility is good or bad depends on what kind of trader you are and what your risk appetite is. For long-term investors, volatility can spell trouble, but for day traders and options traders, volatility often equals [trading opportunities](https://www.investopedia.com/articles/active-trading/062315/how-profit-oil-volatility-following-strategies.asp).
+Whether volatility is good or bad depends on what kind of trader you are and what your risk appetite is. For long-term investors, volatility can spell trouble, but for day traders and options traders, volatility often equals trading opportunities.
 
 ## What Does High Volatility Mean?
 

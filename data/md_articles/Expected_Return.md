@@ -2,7 +2,7 @@
 
 ## What Is Expected Return?
 
-The expected return is the profit or loss an investor expects from an investment based on past returns. Thus, the expected return is like a long-term average of past [returns](https://www.investopedia.com/terms/h/historical-returns.asp).
+The expected return is the profit or loss an investor expects from an investment based on past returns. Thus, the expected return is like a long-term average of past returns.
 
 ### Key Takeaways
 
@@ -14,17 +14,17 @@ The expected return is the profit or loss an investor expects from an investment
 
 ## Understanding the Theory Behind Expected Return
 
-Expected return calculations are crucial in business and financial theory, as seen in modern portfolio theory (MPT) and the [Black-Scholes](https://www.investopedia.com/terms/b/blackscholes.asp) model.
+Expected return calculations are crucial in business and financial theory, as seen in modern portfolio theory (MPT) and the Black-Scholes model.
 
 The expected return helps determine whether an investment has a positive or negative average net outcome.
 
-The expected return is calculated as the [expected value (EV)](https://www.investopedia.com/terms/e/expected-value.asp) of an investment's potential returns, shown by this formula:
+The expected return is calculated as the expected value (EV) of an investment's potential returns, shown by this formula:
 
 $$\text{Expected Return} = Σ (\text{Return}_i * \text{Probability}_i)$$
 
 Where "i" indicates each known return and its respective probability in the series
 
-For example, if an investment has a 50% chance of gaining 20% and a 50% chance of losing 10%, the expected return would be 5% = (50% x 20% + 50% x -10% = 5%). The 5% expected return may never be realized, as the investment is inherently subject to [systematic](https://www.investopedia.com/terms/s/systematicrisk.asp) and [unsystematic](https://www.investopedia.com/terms/u/unsystematicrisk.asp) risks.
+For example, if an investment has a 50% chance of gaining 20% and a 50% chance of losing 10%, the expected return would be 5% = (50% x 20% + 50% x -10% = 5%). The 5% expected return may never be realized, as the investment is inherently subject to systematic and unsystematic risks.
 
 ### Important
 
@@ -43,13 +43,13 @@ Where:
 - $\beta_a = \text{the investment's beta}$
 - $r_m = \text{the expected market return}$
 
-The expected return above the risk-free [rate of return (RoR)](https://www.investopedia.com/terms/r/rateofreturn.asp) depends on the investment's beta, or relative volatility compared to the broader market. The expected return and [standard deviation](https://www.investopedia.com/terms/s/standarddeviation.asp) are two statistical measures that can be used to analyze a portfolio.
+The expected return above the risk-free rate of return (RoR) depends on the investment's beta, or relative volatility compared to the broader market. The expected return and standard deviation are two statistical measures that can be used to analyze a portfolio.
 
 The portfolio's expected return is the average of its possible returns. The standard deviation of a portfolio measures the amount that the returns deviate from its mean, making it a proxy for the portfolio's risk.
 
 ## Limitations of Expected Return
 
-Before making any investment decisions, investors [review the risk characteristics](https://www.investopedia.com/terms/r/riskreturntradeoff.asp) of opportunities to determine if the investments align with their portfolio goals. Assume two hypothetical investments exist. Their annual performance results for the last five years are:
+Before making any investment decisions, investors review the risk characteristics of opportunities to determine if the investments align with their portfolio goals. Assume two hypothetical investments exist. Their annual performance results for the last five years are:
 
 - Investment A: 12%, 2%, 25%, -9%, and 10%
 - Investment B: 7%, 6%, 9%, 12%, and 6%
@@ -68,7 +68,7 @@ $$\text{Standard Deviation} = \sqrt{\frac{\sum_{i=1}^{n} (X_i - \overline{X})^2}
 
 ## Practical Examples of Expected Return Calculations
 
-The expected return can apply to a single [security](https://www.investopedia.com/terms/s/security.asp) or asset or be expanded to analyze a portfolio containing many investments. If the expected return for each investment is known, the portfolio's overall expected return is a weighted average of the expected returns of its components.
+The expected return can apply to a single security or asset or be expanded to analyze a portfolio containing many investments. If the expected return for each investment is known, the portfolio's overall expected return is a weighted average of the expected returns of its components.
 
 For example, assume an investor has the following portfolio:
 
@@ -86,7 +86,7 @@ Expected return calculations determine whether an investment has a positive or n
 
 ## What Are Historical Returns?
 
-Historical returns are the past performance of a security or index, such as the [S&P 500](https://www.investopedia.com/terms/s/sp500.asp). Analysts review historical return data to predict future returns or to estimate how a security might react to a particular economic situation, such as a drop in consumer spending.
+Historical returns are the past performance of a security or index, such as the S&P 500. Analysts review historical return data to predict future returns or to estimate how a security might react to a particular economic situation, such as a drop in consumer spending.
 
 ## How Does Expected Return Differ From Standard Deviation?
 
@@ -95,4 +95,3 @@ Expected return and standard deviation are two statistical measures used to anal
 ## The Bottom Line
 
 The expected return is the average return that an investment or portfolio should generate over a certain period. Riskier assets require a higher expected return to offset the added risk. Expected return is not a guarantee, but a prediction based on historical data and other relevant factors.
-

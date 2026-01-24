@@ -28,11 +28,11 @@ Relatively high or low ROE ratios will vary significantly from one industry grou
 
 It is considered best practice to calculate ROE based on average equity over a period because of the mismatch between the income statement and the balance sheet. ROE is calculated by comparing the proportion of net income against the amount of shareholder equity. The equation is:
 
-**ROE = Net Income Shareholders’ Equity \begin{aligned}\textbf{ROE}=\frac{\textbf{Net Income}}{\textbf{Shareholders' Equity}}\end{aligned} ROE=Shareholders’ EquityNet Income​​**
+$$\text{ROE}=\frac{\text{Net Income}}{\text{Shareholders' Equity}}$$
 
 Net income is calculated as the difference between net revenue and all expenses including interest and taxes. It is the most conservative measurement for a company to analyze as it deducts more expenses than other profitability measurements such as gross income or operating income.
 
-Average [shareholders' equity](https://www.investopedia.com/terms/s/shareholdersequity.asp) is calculated by adding equity at the beginning of the period. The beginning and end of the period should coincide with the period during which the net income is earned.
+Average shareholders' equity is calculated by adding equity at the beginning of the period. The beginning and end of the period should coincide with the period during which the net income is earned.
 
 Net income over the last full fiscal year is found on the income statement—a sum of financial activity over that period. Shareholders' equity comes from the balance sheet—a running balance of a company’s entire history of changes in assets and liabilities.
 
@@ -46,18 +46,18 @@ Return on equity can be used to estimate different growth rates of a stock that 
 
 Investors can use ROE to estimate a stock’s growth rate and the growth rate of its dividends. These two calculations are functions of each other and can be used to make an easier comparison between similar companies.
 
-To estimate a company’s future growth rate, multiply the ROE by the company’s [retention ratio](https://www.investopedia.com/terms/r/retentionratio.asp). The retention ratio is the percentage of net income that is retained or reinvested by the company to fund future growth.
+To estimate a company’s future growth rate, multiply the ROE by the company’s retention ratio. The retention ratio is the percentage of net income that is retained or reinvested by the company to fund future growth.
 
 ### Sustainable Growth Rate
 
-Assume that there are two companies with identical ROEs and net income but different retention ratios. This means they will each have a different [sustainable growth rate](https://www.investopedia.com/terms/s/sustainablegrowthrate.asp) (SGR). The SGR is the rate a company can grow without having to borrow money to finance that growth. The formula for calculating SGR is:
-
+Assume that there are two companies with identical ROEs and net income but different retention ratios. This means they will each have a different sustainable growth rate (SGR). The SGR is the rate a company can grow without having to borrow money to finance that growth. The formula for calculating SGR is:
+$$\text{ROE} * \frac{\text{Retained Earnings}}{\text{Net Income}}$$
 You can also use the payout ratio:
-
+$$\text{ROE} * ( 1 - \text{Payout Ratio} )$$
 For example, Company A has an ROE of 15% and has a retention ratio of 70%. For Company A, the sustainable growth rate is:
-
+$$15\% * 70\% = 10.5\%$$
 Company B also has an ROE of 15% but has a 90% retention ratio. Company B's sustainable growth rate is:
-
+$$15\% * 90\% = 13.5\%$$
 A stock that is growing at a slower rate than its sustainable rate could be undervalued, or the market may be accounting for key risks. In either case, a growth rate that is far above or below the sustainable rate warrants additional investigation.
 
 ## Using ROE to Identify Risks
@@ -72,7 +72,7 @@ A return on equity that widely changes from one period to the next may also be a
 
 ### Inconsistent Profits
 
-The first potential issue with a high ROE could be inconsistent profits. Imagine that a company, LossCo, has been unprofitable for several years. Each year’s losses are recorded on the balance sheet in the equity portion as a “[retained loss](https://www.investopedia.com/terms/r/retainedearnings.asp).” These losses are a negative value and reduce shareholders' equity.
+The first potential issue with a high ROE could be inconsistent profits. Imagine that a company, LossCo, has been unprofitable for several years. Each year’s losses are recorded on the balance sheet in the equity portion as a “retained loss.” These losses are a negative value and reduce shareholders' equity.
 
 Now, assume that LossCo has had a windfall in the most recent year and has returned to profitability. The denominator in the ROE calculation is now very small after many years of losses, which makes its ROE misleadingly high.
 
@@ -112,25 +112,29 @@ ROE is just one of many metrics for evaluating a firm's overall financials. Inve
 
 ## Return on Equity vs. Return on Invested Capital
 
-Although ROE examines how much profit a company can generate relative to its shareholders’ equity, [return on invested capital (ROIC)](https://www.investopedia.com/terms/r/returnoninvestmentcapital.asp) takes that calculation a step further.
+Although ROE examines how much profit a company can generate relative to its shareholders’ equity, return on invested capital (ROIC) takes that calculation a step further.
 
 The purpose of ROIC is to determine the amount of money (after dividends) a company makes based on all its sources of capital, which includes shareholders' equity and debt. ROE looks at how well a company uses shareholders' equity, while ROIC is meant to determine how well a company uses all its available capital to make money.
 
 ### Tip
 
-You can calculate a company's return on equity [using Microsoft Excel](https://www.investopedia.com/ask/answers/071315/what-formula-calculating-return-equity-roe-excel.asp).
+You can calculate a company's return on equity using Microsoft Excel.
 
 ## Return on Equity and DuPont Analysis
 
-Though ROE can easily be computed by dividing net income by shareholders' equity, a technique called [DuPont decomposition](https://www.investopedia.com/terms/d/dupontanalysis.asp) can break down the ROE calculation into additional steps. Created by the American chemicals corporation DuPont in the 1920s, this analysis reveals which factors are contributing the most (or the least) to a firm's ROE.
+Though ROE can easily be computed by dividing net income by shareholders' equity, a technique called DuPont decomposition can break down the ROE calculation into additional steps. Created by the American chemicals corporation DuPont in the 1920s, this analysis reveals which factors are contributing the most (or the least) to a firm's ROE.
 
 There are two versions of DuPont analysis. The first involves the formula:
 
-ROE = NPM × Asset Turnover × Equity Multiplier where: NPM = Net profit margin, the measure of operating efficiency Asset Turnover = Measure of asset use efficiency Equity Multiplier = Measure of financial leverage \begin{aligned} &\text{ROE} = \text{NPM} \times \text{Asset Turnover} \times \text{Equity Multiplier} \\ &\textbf{where:} \\ &\text{NPM} = \text{Net profit margin, the measure of operating} \\ &\text{efficiency} \\ &\text{Asset Turnover} = \text{Measure of asset use efficiency} \\ &\text{Equity Multiplier} = \text{Measure of financial leverage} \\ \end{aligned} ​ROE=NPM×Asset Turnover×Equity Multiplierwhere:NPM=Net profit margin, the measure of operatingefficiencyAsset Turnover=Measure of asset use efficiencyEquity Multiplier=Measure of financial leverage​
+$$\text{ROE} = \text{NPM} * \text{Asset Turnover} * \text{Equity Multiplier}$$
+where:
+- $\text{NPM} = \text{Net profit margin, the measure of operating efficiency}$
+- $\text{Asset Turnover} = \text{Measure of asset use efficiency}$
+- $text{Equity Multiplier} = \text{Measure of financial leverage}$
 
-​Alternatively, the five-step formula can be used:
+Alternatively, the five-step formula can be used:
 
-ROE = EBT S × S A × A E × ( 1 − TR ) where: EBT = Earnings before tax S = Sales A = Assets E = Equity TR = Tax rate \begin{aligned} &\text{ROE} = \frac{ \text{EBT} }{ \text{S} } \times \frac{ \text{S} }{ \text{A} } \times \frac{ \text{A} }{ \text{E} } \times ( 1 - \text{TR} ) \\ &\textbf{where:} \\ &\text{EBT} = \text{Earnings before tax} \\ &\text{S} = \text{Sales} \\ &\text{A} = \text{Assets} \\ &\text{E} = \text{Equity} \\ &\text{TR} = \text{Tax rate} \\ \end{aligned} ​ROE=SEBT​×AS​×EA​×(1−TR)where:EBT=Earnings before taxS=SalesA=AssetsE=EquityTR=Tax rate​
+$$\text{ROE} = \frac{ \text{Earnings before tax} }{ \text{Sales} } * \frac{ \text{Sales} }{ \text{Assets} } * \frac{ \text{Assets} }{ \text{Equity} } * ( 1 - \text{Tax rate} )$$
 
 Both the three- and five-step equations provide a deeper understanding of a company's ROE by examining what is changing in a company rather than looking at one simple ratio. As always with financial statement ratios, they should be examined against the company's history and its competitors' histories.
 
@@ -152,7 +156,7 @@ To calculate ROE, divide the company’s net income by its average shareholders�
 
 ## What Is the Difference Between Return on Assets (ROA) and Return on Equity (ROE)?
 
-[Return on assets (ROA)](https://www.investopedia.com/terms/r/returnonassets.asp) and ROE are similar in that they both try to gauge how efficiently the company generates its profits. However, ROE compares net income to net assets (assets minus liabilities) of the company, while ROA compares net income to the company’s assets *without* deducting its liabilities. In both cases, companies in industries in which operations require significant assets will likely show a lower average return.
+Return on assets (ROA) and ROE are similar in that they both try to gauge how efficiently the company generates its profits. However, ROE compares net income to net assets (assets minus liabilities) of the company, while ROA compares net income to the company’s assets *without* deducting its liabilities. In both cases, companies in industries in which operations require significant assets will likely show a lower average return.
 
 ## What Happens If Return on Equity Is Negative?
 
@@ -164,7 +168,7 @@ ROE will increase as net income increases, all else equal. Another way to boost 
 
 ## The Bottom Line
 
-Return on equity is a common financial metric that compares a company's income to its total shareholders' equity. This demonstrates a company's profitability and efficiency. Another useful calculation is the [return on average equity (ROAE)](https://www.investopedia.com/terms/r/roae.asp).
+Return on equity is a common financial metric that compares a company's income to its total shareholders' equity. This demonstrates a company's profitability and efficiency. Another useful calculation is the return on average equity (ROAE).
 
 However, though ROE and ROAE can tell you how well a company is using resources to generate profit, they do not provide a full picture of a company's financing structure, industry, or performance against competition. ROE is just one of many metrics that investors can use to evaluate a company's performance, potential growth, and financial stability.
 

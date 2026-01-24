@@ -2,7 +2,7 @@
 
 ## What Is a Golden Cross?
 
-A golden cross is a chart pattern in which a relatively short-term moving average crosses above a long-term [moving average](https://www.investopedia.com/terms/m/movingaverage.asp). It is a bullish breakout pattern that forms when a security's short-term moving average (such as the 50-day moving average) crosses above its long-term moving average (such as the 200-day moving average) or resistance level. The golden cross indicates the possibility of a long-term bull market emerging. High trading volumes generally reinforce the indicator.
+A golden cross is a chart pattern in which a relatively short-term moving average crosses above a long-term moving average. It is a bullish breakout pattern that forms when a security's short-term moving average (such as the 50-day moving average) crosses above its long-term moving average (such as the 200-day moving average) or resistance level. The golden cross indicates the possibility of a long-term bull market emerging. High trading volumes generally reinforce the indicator.
 
 ### Key Takeaways
 
@@ -13,7 +13,7 @@ A golden cross is a chart pattern in which a relatively short-term moving averag
 
 ## Understanding Golden Crosses
 
-The term golden cross refers to a tool used in [technical analysis](https://www.investopedia.com/terms/t/technicalanalysis.asp). It is a [momentum indicator](https://www.investopedia.com/investing/momentum-and-relative-strength-index/), which means that prices are continuously increasing—gaining momentum. It means that traders and investors have changed their outlooks to bullish rather than bearish.
+The term golden cross refers to a tool used in technical analysis. It is a momentum indicator, which means that prices are continuously increasing—gaining momentum. It means that traders and investors have changed their outlooks to bullish rather than bearish.
 
 The indicator generally has three stages:
 
@@ -27,9 +27,9 @@ Support is a low price level that the market does not allow. Resistance is a hig
 
 ## Moving Averages Used with Golden Crosses
 
-The most commonly used moving averages for observing the golden cross are the 50-day- and 200-day moving averages. Longer periods generally tend to form stronger, lasting breakouts. For example, the 50-day moving average crossover up through the 200-day moving average on an index like the [S&P 500](https://www.investopedia.com/terms/s/sp500.asp) is one of the most popular bullish market signals.
+The most commonly used moving averages for observing the golden cross are the 50-day- and 200-day moving averages. Longer periods generally tend to form stronger, lasting breakouts. For example, the 50-day moving average crossover up through the 200-day moving average on an index like the S&P 500 is one of the most popular bullish market signals.
 
-Day traders commonly use smaller periods like the five-day and 15-day moving averages to trade [intra-day](https://www.investopedia.com/terms/i/intraday.asp) golden cross breakouts. Some traders might use different periodic increments, like weeks or months, depending on their trading preferences and what they believe works for them.
+Day traders commonly use smaller periods like the five-day and 15-day moving averages to trade intra-day golden cross breakouts. Some traders might use different periodic increments, like weeks or months, depending on their trading preferences and what they believe works for them.
 
 But when choosing different periods, it's important to understand that the larger the chart time frame, the stronger and more lasting the golden cross breakout tends to be.
 
@@ -43,15 +43,15 @@ The image below uses a 50-day and a 200-day moving average. The 50-day moving av
 
 Prices gradually increased over time, creating an upward trend in the moving 50-day average. The trend continued, pushing the shorter-period moving average higher than the longer-period moving average. A golden cross formed, confirming a reversal from a downward trend to an upward one.
 
-Notice that the price range of the [candlesticks](https://www.investopedia.com/articles/technical/03/010603.asp) made a significant jump when the downward trend bottomed out and turned into an uptrend. Something likely occurred that changed investor and trader market sentiments at this time.
+Notice that the price range of the candlesticks made a significant jump when the downward trend bottomed out and turned into an uptrend. Something likely occurred that changed investor and trader market sentiments at this time.
 
 The candle bodies were large (the difference between open and close prices), and more days closed with prices much higher than opening during the first uptick after the 50-day moving average bottomed.
 
 ## Golden Cross vs. Death Cross
 
-A golden cross and a death cross are opposing indicators. The golden cross confirms a long-term [bull market](https://www.investopedia.com/terms/b/bullmarket.asp) going forward, while a death cross signals a long-term [bear market](https://www.investopedia.com/terms/b/bearmarket.asp). Either crossover is considered more significant when accompanied by high trading volume. The short-term moving average crosses from above the long-term moving average in a death cross and crosses from below in a golden cross.
+A golden cross and a death cross are opposing indicators. The golden cross confirms a long-term bull market going forward, while a death cross signals a long-term bear market. Either crossover is considered more significant when accompanied by high trading volume. The short-term moving average crosses from above the long-term moving average in a death cross and crosses from below in a golden cross.
 
-Once the crossover occurs, the long-term moving average is considered a major [support level](https://www.investopedia.com/terms/s/support.asp) (in the case of the golden cross) or [resistance level](https://www.investopedia.com/terms/r/resistance.asp) (in the instance of the death cross) for the market from that point forward. Either cross may appear and signal a trend change, but they more frequently occur when a trend change has already occurred.
+Once the crossover occurs, the long-term moving average is considered a major support level (in the case of the golden cross) or resistance level (in the instance of the death cross) for the market from that point forward. Either cross may appear and signal a trend change, but they more frequently occur when a trend change has already occurred.
 
 |                               | GOLDEN CROSS                                      | DEATH CROSS                                      |
 |-------------------------------|---------------------------------------------------|--------------------------------------------------|
@@ -61,7 +61,7 @@ Once the crossover occurs, the long-term moving average is considered a major [s
 
 ## Limitations of a Golden Cross
 
-All indicators are [lagging](https://www.investopedia.com/terms/l/laggingindicator.asp), which means the data used to form the charts has already occurred. As such, they indicate past performance so they are reactive rather than proactive. This means that no indicator can truly predict the future. Many times, an observed golden cross produces a false signal.
+All indicators are lagging, which means the data used to form the charts has already occurred. As such, they indicate past performance so they are reactive rather than proactive. This means that no indicator can truly predict the future. Many times, an observed golden cross produces a false signal.
 
 Despite its apparent predictive power in forecasting prior large bull markets, golden crosses also regularly fail to manifest. Therefore, other signals and indicators (especially leading indicators) should always be used to confirm a golden cross.
 
@@ -79,5 +79,5 @@ As a lagging indicator, a golden cross is identified only after the market has r
 
 ## The Bottom Line
 
-A golden cross is believed to confirm the reversal of a downward trend. The key to using this technical tool correctly*—*with additional filters and indicators*—*is to use profit targets, stop loss, and other risk management tools. Remember to maintain a favorable [risk-to-reward ratio](https://www.investopedia.com/terms/r/riskrewardratio.asp) and to time your trade rather than just following the cross mindlessly.
+A golden cross is believed to confirm the reversal of a downward trend. The key to using this technical tool correctly*—*with additional filters and indicators*—*is to use profit targets, stop loss, and other risk management tools. Remember to maintain a favorable risk-to-reward ratio and to time your trade rather than just following the cross mindlessly.
 

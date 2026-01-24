@@ -10,7 +10,7 @@
 
 ## What Is Currency?
 
-Currency is a [medium of exchange](https://www.investopedia.com/terms/m/mediumofexchange.asp) accepted and used globally in transactions for goods and services. It is a tangible form of the concept of money, and has evolved from bartering to modern-day paper and coin forms to include virtual currencies like cryptocurrencies. Countries have their own currencies and they constantly change in relation to each other. Some countries peg their currency value directly to the U.S. dollar.
+Currency is a medium of exchange accepted and used globally in transactions for goods and services. It is a tangible form of the concept of money, and has evolved from bartering to modern-day paper and coin forms to include virtual currencies like cryptocurrencies. Countries have their own currencies and they constantly change in relation to each other. Some countries peg their currency value directly to the U.S. dollar.
 
 ## The Role and Characteristics of Modern Currency
 
@@ -22,7 +22,7 @@ China might have developed paper currency by 1100 C.E., but it took time for peo
 
 ## Distinguishing Money From Currency
 
-The terms [money](https://www.investopedia.com/terms/m/money.asp) and currency are often thought to mean the same thing. However, while related, they have different meanings.
+The terms money and currency are often thought to mean the same thing. However, while related, they have different meanings.
 
 Money is a broader term that refers to an intangible system of value that makes the exchange of goods and services possible, now and in the future. Currency is simply one tangible form of money.
 
@@ -48,13 +48,13 @@ The Bureau of Engraving and Printing is responsible for printing America's paper
 
 The United States Mint defines currency as money in the form of paper and coins that is used as a medium of exchange. Currencies are created and distributed by individual countries around the world.
 
-U.S. currency in paper form is issued by the Bureau of Engraving and Printing as $1, $2, $5, $10, $20, $50, and $100 bills. The $500, $1,000, $5,000, and $10,000 bills are no longer issued, but those still in circulation are redeemable at full face value. Currency issued in 1861 or earlier is no longer valid and would not be redeemable at full face value.
+U.S. currency in paper form is issued by the Bureau of Engraving and Printing as \$1, \$2, \$5, \$10, \$20, \$50, and \$100 bills. The \$500, \$1,000, \$5,000, and \$10,000 bills are no longer issued, but those still in circulation are redeemable at full face value. Currency issued in 1861 or earlier is no longer valid and would not be redeemable at full face value.
 
-U.S. currency in the form of coins is issued by the Mint in denominations of 5¢, 10¢, 25¢, 50¢, and $1.
+U.S. currency in the form of coins is issued by the Mint in denominations of 5¢, 10¢, 25¢, 50¢, and \$1.
 
-There are over 200 national currencies currently in circulation. Including the U.S., 42 countries either use the U.S. dollar or [peg their currencies](https://www.investopedia.com/terms/c/currency-peg.asp) directly to the dollar. According to the [International Monetary Fund](https://www.investopedia.com/terms/i/imf.asp) (IMF), the dollar makes up 56.32% of the foreign exchange reserves.
+There are over 200 national currencies currently in circulation. Including the U.S., 42 countries either use the U.S. dollar or peg their currencies directly to the dollar. According to the International Monetary Fund (IMF), the dollar makes up 56.32% of the foreign exchange reserves.
 
-Most countries issue their currencies, like Switzerland's franc and Japan's yen. The [euro](https://www.investopedia.com/terms/e/euro.asp), used by many European Union countries, is an exception.
+Most countries issue their currencies, like Switzerland's franc and Japan's yen. The euro, used by many European Union countries, is an exception.
 
 Some countries accept the U.S. dollar as legal tender in addition to their own currencies, like the Bahamas, Zimbabwe, and Panama. For some time after the founding of the U.S. Mint in 1792, Americans continued to use Spanish coins because they were heavier and presumably felt more valuable.
 
@@ -62,9 +62,9 @@ There are also branded currencies, like airline and credit card points. These ar
 
 ## Understanding Currency Trading and Exchange Rates
 
-The [exchange rate](https://www.investopedia.com/terms/e/exchangerate.asp) is the current value of any currency relative to another currency. As a result, rates are quoted for currency pairs, such as the EUR/USD (euro to U.S. dollar). Exchange rates fluctuate constantly in response to economic and political events.
+The exchange rate is the current value of any currency relative to another currency. As a result, rates are quoted for currency pairs, such as the EUR/USD (euro to U.S. dollar). Exchange rates fluctuate constantly in response to economic and political events.
 
-These fluctuations create the market for currency trading. The [foreign exchange market](https://www.investopedia.com/terms/forex/f/foreign-exchange-markets.asp) where these trades are conducted is one of the world's largest markets, based on sheer volume. All trades are in large volumes, with a standard minimum lot of 100,000. Most currency traders are professionals investing for themselves or for institutional clients that include banks and large corporations.
+These fluctuations create the market for currency trading. The foreign exchange market where these trades are conducted is one of the world's largest markets, based on sheer volume. All trades are in large volumes, with a standard minimum lot of 100,000. Most currency traders are professionals investing for themselves or for institutional clients that include banks and large corporations.
 
 The foreign exchange market has no physical address. Trading is entirely electronic and goes on 24 hours a day to accommodate traders in every time zone.
 

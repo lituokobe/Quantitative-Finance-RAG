@@ -14,25 +14,25 @@ Deflation, a reduction in the prices of goods and services, increases the purcha
 
 ## Deflation's Impact on Capital, Labor, and Goods Pricing
 
-Deflation reduces the nominal costs of capital, labor, goods, and services, but their relative prices stay the same. Economists have been concerned about deflation for decades, often linking it to a decrease in money or redeemable financial instruments supply. In modern times, the money supply is most influenced by [central banks](https://www.investopedia.com/terms/c/centralbank.asp), such as the [Federal Reserve](https://www.investopedia.com/federal-reserve-4689790). When the supply of money and credit falls, without a corresponding decrease in economic output, then the prices of all goods tend to fall.
+Deflation reduces the nominal costs of capital, labor, goods, and services, but their relative prices stay the same. Economists have been concerned about deflation for decades, often linking it to a decrease in money or redeemable financial instruments supply. In modern times, the money supply is most influenced by central banks, such as the Federal Reserve. When the supply of money and credit falls, without a corresponding decrease in economic output, then the prices of all goods tend to fall.
 
-Periods of deflation most commonly occur after long periods of artificial monetary expansion. The United States last experienced significant deflation in the early 1930s. The major contributor to this deflationary period was the fall in the money supply following catastrophic [bank failures](https://www.investopedia.com/terms/b/bank-failure.asp). Japan experienced deflation in the 1990s, as did other nations in modern times.
+Periods of deflation most commonly occur after long periods of artificial monetary expansion. The United States last experienced significant deflation in the early 1930s. The major contributor to this deflationary period was the fall in the money supply following catastrophic bank failures. Japan experienced deflation in the 1990s, as did other nations in modern times.
 
-On its face, deflation benefits consumers because they can purchase more goods and services with the same [nominal](https://www.investopedia.com/terms/n/nominal.asp) income over time. Not everyone benefits from lower prices; economists worry about the impact on different economic sectors, particularly finance. Deflation particularly harms borrowers, who must pay their debts with money that is worth more than when they borrowed, as well as any financial market participants who invest or speculate on the prospect of rising prices.
+On its face, deflation benefits consumers because they can purchase more goods and services with the same nominal income over time. Not everyone benefits from lower prices; economists worry about the impact on different economic sectors, particularly finance. Deflation particularly harms borrowers, who must pay their debts with money that is worth more than when they borrowed, as well as any financial market participants who invest or speculate on the prospect of rising prices.
 
 ## Key Drivers Behind Deflation: Understanding the Causes
 
-[Milton Friedman](https://www.investopedia.com/terms/m/milton-friedman.asp) suggested that under optimal policy, central banks should aim for deflation equal to the government bonds' [real interest rate](https://www.investopedia.com/terms/n/negative-interest-rate-policy-nirp.asp), making the nominal rate zero and allowing prices to fall steadily. His theory birthed the Friedman rule, a monetary policy rule.
+Milton Friedman suggested that under optimal policy, central banks should aim for deflation equal to the government bonds' real interest rate, making the nominal rate zero and allowing prices to fall steadily. His theory birthed the Friedman rule, a monetary policy rule.
 
-Declining prices can be caused by other factors, including a decline in [aggregate demand](https://www.investopedia.com/terms/a/aggregatedemand.asp) (a decrease in the total demand for goods and services) and increased productivity. A drop in aggregate demand usually leads to lower prices, often caused by reduced government spending, stock market drops, increased consumer savings, and tighter monetary policies like higher interest rates.
+Declining prices can be caused by other factors, including a decline in aggregate demand (a decrease in the total demand for goods and services) and increased productivity. A drop in aggregate demand usually leads to lower prices, often caused by reduced government spending, stock market drops, increased consumer savings, and tighter monetary policies like higher interest rates.
 
-Prices may naturally fall when economic output outpaces the supply of money and credit. This occurs especially [when technology advances](https://www.investopedia.com/articles/markets/111715/can-deflation-be-good.asp) the productivity of an economy and is often concentrated in goods and industries that benefit from technological improvements. Technological advances make companies more efficient, reducing production costs that translate into lower consumer prices. This differs from general price deflation, which broadly lowers prices and boosts money’s purchasing power.
+Prices may naturally fall when economic output outpaces the supply of money and credit. This occurs especially when technology advances the productivity of an economy and is often concentrated in goods and industries that benefit from technological improvements. Technological advances make companies more efficient, reducing production costs that translate into lower consumer prices. This differs from general price deflation, which broadly lowers prices and boosts money’s purchasing power.
 
-Price deflation through increased productivity is different in specific industries. For example, consider how increased productivity affects the [technology sector](https://www.investopedia.com/terms/t/technology_sector.asp). In the last few decades, improvements in technology have resulted in significant reductions in the average cost per gigabyte of data. In 1980, the average cost of one gigabyte of data was \$437,500; by 2014, the average cost was three cents. This reduction caused the prices of manufactured products that use this technology to also fall significantly.
+Price deflation through increased productivity is different in specific industries. For example, consider how increased productivity affects the technology sector. In the last few decades, improvements in technology have resulted in significant reductions in the average cost per gigabyte of data. In 1980, the average cost of one gigabyte of data was \$437,500; by 2014, the average cost was three cents. This reduction caused the prices of manufactured products that use this technology to also fall significantly.
 
 ## Evolving Economic Perspectives on Deflation
 
-After the Great Depression, when deflation occurred alongside high unemployment and defaults, most economists viewed it as negative. Central banks then [adjusted policies](https://www.investopedia.com/articles/investing/051315/what-deflation-and-how-do-central-banks-fight-it.asp) to consistently increase money supply, sometimes causing inflation and encouraging excessive borrowing.
+After the Great Depression, when deflation occurred alongside high unemployment and defaults, most economists viewed it as negative. Central banks then adjusted policies to consistently increase money supply, sometimes causing inflation and encouraging excessive borrowing.
 
 Economist John Maynard Keynes warned deflation could cause economic pessimism during recessions, as falling asset prices reduced investment willingness.
 
@@ -48,7 +48,7 @@ Investors find companies with large cash reserves or little debt more appealing 
 
 ## Who Is Harmed by Deflation?
 
-Debtors are particularly hurt by deflation, because even as prices for goods and services fall, the value of debt does not. This can impact inviduals, as well as larger economies, including countries with high [national debt](https://www.investopedia.com/ask/answers/032415/what-impact-would-deflation-have-national-debt.asp).
+Debtors are particularly hurt by deflation, because even as prices for goods and services fall, the value of debt does not. This can impact inviduals, as well as larger economies, including countries with high national debt.
 
 ## How Do You Get Out of Deflation?
 

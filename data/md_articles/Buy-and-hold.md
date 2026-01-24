@@ -26,7 +26,7 @@ Buy and hold is often also called position trading.
 
 ## Comparing Active Management and Buy-and-Hold Strategies
 
-The debate over passive versus active management styles persists. A buy-and-hold investor reflects a passive management style. In the case of a mutual fund or [exchange-traded fund](https://www.investopedia.com/terms/e/etf.asp), indexed portfolios mirror that of a common benchmark.
+The debate over passive versus active management styles persists. A buy-and-hold investor reflects a passive management style. In the case of a mutual fund or exchange-traded fund, indexed portfolios mirror that of a common benchmark.
 
 As indices rebalance and weightings increase relative to market capitalization, turnover rates, which are often under 5% among passive funds (such as an S&P 500 Index portfolio), remain ultra-low as managers focus on issues across the broad market. Stocks are held for as long as they remain components of the indices.
 

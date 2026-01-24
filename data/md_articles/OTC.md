@@ -2,9 +2,9 @@
 
 ## Over-the-Counter Markets Basics
 
-Imagine you're a hedge fund looking to buy 100,000 shares of Apple ([AAPL](https://www.investopedia.com/markets/quote?tvwidgetsymbol=aapl)). To avoid showing your hand to other traders and investors, you might conduct the transactions in an over-the-counter (OTC) market, which offers anonymity.
+Imagine you're a hedge fund looking to buy 100,000 shares of Apple (AAPL). To avoid showing your hand to other traders and investors, you might conduct the transactions in an over-the-counter (OTC) market, which offers anonymity.
 
-That's just one use of OTC markets, which involve two parties trading either directly or through broker-dealers rather than on a centralized exchange. Securities traded on OTCs include stocks—many are also listed on U.S. exchanges—bonds, [derivatives](https://www.investopedia.com/terms/d/derivative.asp), and cryptocurrencies. Often, the derivatives are complex instruments such as credit-default swaps on mortgage-backed securities, whose trading on the OTC markets played a key role in the global financial crisis.
+That's just one use of OTC markets, which involve two parties trading either directly or through broker-dealers rather than on a centralized exchange. Securities traded on OTCs include stocks—many are also listed on U.S. exchanges—bonds, derivatives, and cryptocurrencies. Often, the derivatives are complex instruments such as credit-default swaps on mortgage-backed securities, whose trading on the OTC markets played a key role in the global financial crisis.
 
 Financial institutions use OTC markets to trade such derivatives partly because they can tailor contracts however they like—non-standard contracts make up a large portion of the trading on OTC markets. However, the anonymity and flexibility offered by OTC markets come with a tradeoff. OTCs aren't as closely regulated as traditional exchanges, raising increased potential risks for the parties involved.
 
@@ -23,7 +23,7 @@ There is no "there" with OTC markets. They are decentralized, with no physical l
 Securities that trade OTC include:
 
 - Stocks. They typically consist of small companies without the means to trade on a national exchange, though some listed stocks can also be traded OTC.
-- [American Depositary Receipts](https://www.investopedia.com/terms/a/adr.asp) (ADRs). Some of these bank-issued certificates trade on national exchanges. Others, particularly those issued without the involvement or approval of the foreign company in question, trade OTC.
+- American Depositary Receipts (ADRs). Some of these bank-issued certificates trade on national exchanges. Others, particularly those issued without the involvement or approval of the foreign company in question, trade OTC.
 - Bonds. The majority of bonds issued by companies and governments are traded OTC.
 - Currencies. Currencies, such as the U.S. dollar and euro, are bought and sold OTC through a network of banks.
 - Cryptocurrency. Bitcoin and Ethereum can be traded OTC, enabling the buyer and seller to negotiate directly and keep the terms of the deal private.
@@ -31,18 +31,18 @@ Securities that trade OTC include:
 
 ## How OTC Trading Works
 
-On traditional exchanges, such as the New York Stock Exchange (NYSE), trades are conducted through a publicly visible centralized order book. Pricing data is transparent and the exchanges, acting as intermediaries, facilitate transactions between buyers and sellers with order-matching systems and the help of [market makers](https://www.investopedia.com/terms/m/marketmaker.asp).
+On traditional exchanges, such as the New York Stock Exchange (NYSE), trades are conducted through a publicly visible centralized order book. Pricing data is transparent and the exchanges, acting as intermediaries, facilitate transactions between buyers and sellers with order-matching systems and the help of market makers.
 
 OTC trading is the buying and selling of financial instruments outside of such an exchange. There are two basic types of OTC market—one, a customer market in which investors buy and sell via broker-dealers, and another, the interdealer market, in which broker-dealers quote prices and trade with each other, often to minimize risk.
 
-In the U.S., the largest network is the [OTC Markets Group](https://www.investopedia.com/terms/o/otc-markets-group-inc.asp). Its services include connecting broker-dealers and providing data and quote services for more than 12,000 securities.
+In the U.S., the largest network is the OTC Markets Group. Its services include connecting broker-dealers and providing data and quote services for more than 12,000 securities.
 
 ### Market Tiers
 
 The OTC Markets Group breaks the OTC market into three tiers.
 
 1. OTCQX is the top tier. Also called the OTCQX Best Market, this tier houses a large number of blue-chip stocks from Europe, Canada, Brazil, and Russia. To trade here, securities must “meet high financial standards, follow best practice corporate governance, demonstrate compliance with U.S. securities laws, and be current in their disclosure.”
-2. OTCQB is the middle tier. Also known as the venture market, it mainly contains early-stage and developing U.S. and international companies. To be eligible, companies must be current in their reporting, undergo an annual verification and management certification process, meet a $0.01 bid test, and not be in bankruptcy.
+2. OTCQB is the middle tier. Also known as the venture market, it mainly contains early-stage and developing U.S. and international companies. To be eligible, companies must be current in their reporting, undergo an annual verification and management certification process, meet a \$0.01 bid test, and not be in bankruptcy.
 3. OTC Pink is the lowest level. It carries no requirements that companies report financials or register with the Securities and Exchange Commission (SEC). Not all securities here are low-quality, although you will find plenty of shell companies and entities in financial distress. (Note: OTC Pink will be relaunched as OTCID Basic Market on July 1, 2025.)
 
 ## Steps To Trade in the OTC Market
@@ -71,11 +71,13 @@ The OTC market gives investors access to alternative securities, including share
 
 OTC markets aren’t as Wild West as some people make out. There are different levels, good investments to be found, and some regulation exists to protect investors.
 
+**Pros:**
 - Provide access to smaller or foreign companies and alternative assets
 - High potential upside
 - Trades are conducted privately
 - More flexibility and customization options are available on derivatives
 
+**Cons:**
 - Looser regulation attracts fraudsters and questionable investments
 - Illiquid and volatile
 - Less transparency
@@ -91,9 +93,9 @@ Other risks of operating outside the full supervision of a formal exchange inclu
 
 Though not governed as strictly as national exchanges, OTC markets are subject to some broad SEC regulations related to fraud, market manipulation and disclosure requirements. One of the SEC’s rules calls for broker-dealers to make sure there’s current and publicly available information about an issuer before publishing quotations for its securities. Moreover, some OTC issuers, namely those trading in QTCQX, report directly to the SEC and are subject to its disclosure requirements.
 
-The [Financial Industry Regulatory Authority](https://www.investopedia.com/terms/f/finra.asp) (FINRA) is responsible for regulating OTC broker-dealers. Among other things, it is responsible for monitoring trading activities and handling disputes. Whenever an OTC equities transaction occurs, it must be reported to FINRA.
+The Financial Industry Regulatory Authority (FINRA) is responsible for regulating OTC broker-dealers. Among other things, it is responsible for monitoring trading activities and handling disputes. Whenever an OTC equities transaction occurs, it must be reported to FINRA.
 
-The [Commodity Futures Trading Commission](https://www.investopedia.com/terms/c/cftc.asp) (CFTC) regulates OTC derivatives contracts and currency transactions.
+The Commodity Futures Trading Commission (CFTC) regulates OTC derivatives contracts and currency transactions.
 
 ## The Bottom Line
 

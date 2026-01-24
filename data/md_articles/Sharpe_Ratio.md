@@ -8,11 +8,11 @@
 
 ## What Is the Sharpe Ratio?
 
-Economist William F. Sharpe developed the Sharpe ratio in 1966. It compares an investment's return with its risk. The ratio's numerator is the difference between realized, or expected, returns and a benchmark, such as the [risk-free rate of return](https://www.investopedia.com/terms/r/risk-freereturn.asp) or the performance of a particular investment category over time. Its denominator is the standard deviation of returns over the same period, a measure of volatility and risk.
+Economist William F. Sharpe developed the Sharpe ratio in 1966. It compares an investment's return with its risk. The ratio's numerator is the difference between realized, or expected, returns and a benchmark, such as the risk-free rate of return or the performance of a particular investment category over time. Its denominator is the standard deviation of returns over the same period, a measure of volatility and risk.
 
 ## Formula and Calculation of the Sharpe Ratio
 
-Economist William F. Sharpe proposed the Sharpe ratio in 1966 as an outgrowth of his work on the [capital asset pricing model (CAPM)](https://www.investopedia.com/terms/c/capm.asp), calling it the reward-to-variability ratio. Sharpe won the Nobel Prize in economics for his work on CAPM in 1990.
+Economist William F. Sharpe proposed the Sharpe ratio in 1966 as an outgrowth of his work on the capital asset pricing model (CAPM) calling it the reward-to-variability ratio. Sharpe won the Nobel Prize in economics for his work on CAPM in 1990.
 
 $$\text{Sharpe Ratio} = \frac{R_p − R_f}{\sigma_p}$$
 where: 

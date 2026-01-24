@@ -4,7 +4,7 @@
 
 Gamma ($\Gamma$) is an options risk metric that represents the sensitivity of an option's delta to movements in the underlying asset, indicating how much delta will change when the underlying price shifts by one point. Therefore, gamma is a measure of how the rate of change of an option's price will change with fluctuations in the underlying price. The higher the gamma, the more volatile the price of the option is.
 
-Gamma is an important measure of the convexity of a [derivative's](https://www.investopedia.com/terms/d/derivative.asp) value in relation to the underlying asset. It is one of the "options [Greeks](https://www.investopedia.com/terms/g/greeks.asp)," along with [delta](https://www.investopedia.com/terms/d/delta.asp), [rho](https://www.investopedia.com/terms/r/rho.asp), [theta](https://www.investopedia.com/terms/t/theta.asp), and [vega](https://www.investopedia.com/terms/v/vega.asp). These are used to assess the different types of risk in options portfolios.
+Gamma is an important measure of the convexity of a derivative's value in relation to the underlying asset. It is one of the "options Greeks," along with delta, rho, theta, and vega. These are used to assess the different types of risk in options portfolios.
 
 ### Key Takeaways
 
@@ -17,11 +17,11 @@ Gamma is an important measure of the convexity of a [derivative's](https://www.i
 
 ## Understanding Gamma
 
-Gamma is the first derivative of delta and is used when trying to gauge the price movement of an option, relative to the amount it is [in the money](https://www.investopedia.com/terms/i/inthemoney.asp) or [out of the money](https://www.investopedia.com/terms/o/outofthemoney.asp). It describes how the delta will change as the underlying asset changes. So if an option's delta is +40 and the gamma is 10, a \$1 increase in the underlying price would result in that option's delta becoming +50.
+Gamma is the first derivative of delta and is used when trying to gauge the price movement of an option, relative to the amount it is in the money or out of the money. It describes how the delta will change as the underlying asset changes. So if an option's delta is +40 and the gamma is 10, a \$1 increase in the underlying price would result in that option's delta becoming +50.
 
-When the option being measured is deep in or out of the money, gamma is small. When the option is near or [at the money](https://www.investopedia.com/terms/a/atthemoney.asp), gamma is at its largest. Gamma is also largest for options with near-term expirations relative to longer-dated options.
+When the option being measured is deep in or out of the money, gamma is small. When the option is near or at the money, gamma is at its largest. Gamma is also largest for options with near-term expirations relative to longer-dated options.
 
-Gamma is an important metric because it accounts for [convexity](https://www.investopedia.com/terms/c/convexity.asp) issues when engaging in options hedging strategies. Some portfolio managers or traders may be involved with portfolios of such large values that even more precision is needed when engaged in hedging. A third-order derivative named "[color](https://www.investopedia.com/terms/c/color.asp)" can be used. Color measures the rate of change of gamma and is important for maintaining a gamma-hedged portfolio.
+Gamma is an important metric because it accounts for convexity issues when engaging in options hedging strategies. Some portfolio managers or traders may be involved with portfolios of such large values that even more precision is needed when engaged in hedging. A third-order derivative named "color" can be used. Color measures the rate of change of gamma and is important for maintaining a gamma-hedged portfolio.
 
 ### Fast Fact
 
@@ -33,11 +33,11 @@ Since an option's delta measure is only valid for a short period of time, gamma 
 
 Gamma decreases, approaching zero, as an option gets deeper in the money, and delta approaches one. Gamma also approaches zero the deeper an option gets out of the money. Gamma is at its highest when the price is at the money.
 
-The calculation of gamma is complex and requires financial software or spreadsheets to find a precise value. However, the following demonstrates an approximate calculation of gamma. Consider a [call option](https://www.investopedia.com/terms/c/calloption.asp) on an underlying stock that currently has a delta of 0.40. If the stock value increases by \$1.00, the option will increase in value by 40 cents, and its delta will also change. After the \$1 increase, assume the option's delta is now 0.53. The 0.13 difference in deltas can be considered an approximate value of gamma.
+The calculation of gamma is complex and requires financial software or spreadsheets to find a precise value. However, the following demonstrates an approximate calculation of gamma. Consider a call option on an underlying stock that currently has a delta of 0.40. If the stock value increases by \$1.00, the option will increase in value by 40 cents, and its delta will also change. After the \$1 increase, assume the option's delta is now 0.53. The 0.13 difference in deltas can be considered an approximate value of gamma.
 
 ### Important
 
-All options that are a [long](https://www.investopedia.com/terms/l/long.asp) position have a positive gamma, while all [short](https://www.investopedia.com/terms/s/short.asp) options have a negative gamma.
+All options that are a long position have a positive gamma, while all short options have a negative gamma.
 
 ## Example of Gamma
 
@@ -45,7 +45,7 @@ Suppose a stock is trading at \$10 and its option has a delta of 0.5 and a gamma
 
 ## How Do Traders Hedge Gamma?
 
-[Gamma hedging](https://www.investopedia.com/terms/g/gamma-hedging.asp) is a strategy that tries to maintain a constant delta in an [options](https://www.investopedia.com/terms/o/option.asp) position. This is done by buying and selling options in such a way as to offset each other, resulting in a net gamma of just around zero. At such a point, the position is said to be [gamma-neutral](https://www.investopedia.com/terms/g/gammaneutral.asp). Often, a trader will want to maintain zero gamma around a [delta-neutral](https://www.investopedia.com/terms/d/deltaneutral.asp) (zero-delta) position as well. This is done via [delta-gamma hedging](https://www.investopedia.com/terms/d/deltagamma-hedging.asp), where [both net delta and net gamma](https://www.investopedia.com/articles/optioninvestor/07/gamm_delta_neutral.asp) are close to zero. In such a case, an options position's value is immunized against price changes in the underlying asset.
+Gamma hedging is a strategy that tries to maintain a constant delta in an options position. This is done by buying and selling options in such a way as to offset each other, resulting in a net gamma of just around zero. At such a point, the position is said to be gamma-neutral. Often, a trader will want to maintain zero gamma around a delta-neutral (zero-delta) position as well. This is done via delta-gamma hedging, where both net delta and net gamma are close to zero. In such a case, an options position's value is immunized against price changes in the underlying asset.
 
 ## What Is a Long Gamma Strategy?
 

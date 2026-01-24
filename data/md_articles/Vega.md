@@ -56,7 +56,7 @@ Vega usually drops as an option nears its expiration. This is because the impact
 
 ### Implied Volatility
 
-Vega measures the theoretical price change for each percentage point move in implied volatility, which is calculated using an [option pricing model](https://www.investopedia.com/terms/o/optionpricingtheory.asp) that determines what the market prices are estimating an underlying asset's future volatility to be. Since implied volatility is a projection, it can deviate from the actual volatility in the future.
+Vega measures the theoretical price change for each percentage point move in implied volatility, which is calculated using an option pricing model that determines what the market prices are estimating an underlying asset's future volatility to be. Since implied volatility is a projection, it can deviate from the actual volatility in the future.
 
 Just as price moves are not always uniform, neither is vega. Vega changes over time. Therefore, the traders who use it monitor it regularly. As mentioned, options approaching expiration tend to have lower vegas compared with similar options that are further away from expiration.
 
@@ -66,7 +66,7 @@ Vega is one of the Greeks used in options analysis. Vega is also used by some tr
 
 ## Practical Example: Applying Vega to AAPL Options
 
-To pull these considerations together, let's examine a hypothetical scenario involving Apple Inc. ([AAPL](https://www.investopedia.com/markets/quote?tvwidgetsymbol=AAPL)) stock with an options trader monitoring the impact of vega on their position.
+To pull these considerations together, let's examine a hypothetical scenario involving Apple Inc. (AAPL) stock with an options trader monitoring the impact of vega on their position.
 
 - Current AAPL Stock Price: \$225
 - Option type: A call option with a strike price of \$225 (at-the-money)
@@ -109,11 +109,11 @@ The term "vega" is somewhat of a mystery since it doesn’t have a direct connec
 
 ## How Can Vega Be Used to Gauge Market Sentiment?
 
-Vega is considered a barometer of market sentiment, especially for options on benchmark indexes like the S&P 500. When vega is high, traders expect turbulence ahead, like during earnings seasons or significant economic announcements. Conversely, a low vega suggests a calm market with few anticipated surprises. As such, [the VIX](https://www.investopedia.com/terms/v/vix.asp), often called the "fear gauge," measures the implied volatility of options on the S&P 500. When the VIX is high, vega is elevated across many S&P 500 options, signaling widespread anxiety in the market.
+Vega is considered a barometer of market sentiment, especially for options on benchmark indexes like the S&P 500. When vega is high, traders expect turbulence ahead, like during earnings seasons or significant economic announcements. Conversely, a low vega suggests a calm market with few anticipated surprises. As such, the VIX, often called the "fear gauge," measures the implied volatility of options on the S&P 500. When the VIX is high, vega is elevated across many S&P 500 options, signaling widespread anxiety in the market.
 
 ## What Is the Relationship Between Vega (Volatility) and Theta (Time Decay)?
 
-Vega tells you how much the option price is expected to change with a 1% change in implied volatility. Theta, meanwhile, measures the rate at which an option’s price decreases as time passes, all else being equal. This is often referred to as [time decay](https://www.investopedia.com/terms/t/timedecay.asp).
+Vega tells you how much the option price is expected to change with a 1% change in implied volatility. Theta, meanwhile, measures the rate at which an option’s price decreases as time passes, all else being equal. This is often referred to as time decay.
 
 Vega and Theta are like two sides of the same coin, both dealing with uncertainty. Time introduces the potential for price movement; the more time left, the greater the uncertainty about where the underlying asset’s price might go, hence higher vega. Conversely, as time decreases, uncertainty decreases, making time decay (theta) more significant as the option's value erodes. As an option approaches expiration, the reduction in time (theta) diminishes the impact of volatility (vega), because there’s less time for the underlying asset’s price to move significantly. Thus, even with high volatility, an option close to expiration might decline in value primarily because of time decay.
 
