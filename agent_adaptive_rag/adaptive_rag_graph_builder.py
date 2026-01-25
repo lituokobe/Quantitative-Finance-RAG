@@ -3,10 +3,10 @@ from langgraph.constants import END, START
 from langgraph.graph import StateGraph
 from config.state import State
 from elements.document_grader_node import document_grader_node
-from elements.RetrieverNode import retriever_node
 from elements.StartingIntentionNode import StartingIntentionNode
 from elements.other_nodes import starting_reply_node, rewrite_query_node, web_search_node, fallback_node, hang_up, \
     generate_node, reply_with_generation_node
+from elements.retriever_nodes import shortcut_retriever_node
 from elements.route_functions import start_route, starting_intention_route, grade_documents_route, generate_node_route
 from utils.log_utils import log
 
@@ -20,6 +20,10 @@ def build_adaptive_rag_graph():
     # add nodes
     graph.add_node("starting_reply_node", starting_reply_node)
     graph.add_node("starting_intention_node", starting_intention_node)
+    graph.add_node("shortcut_retriever_node", shortcut_retriever_node)
+    graph.add_node("calculation_retriever_node", calculation_retriever_node)
+    graph.add_node("comparison_retriever_node", comparison_retriever_node)
+    graph.add_node("standard_retriever_node", standard_retriever_node)
     graph.add_node("fallback_node", fallback_node)
     graph.add_node("retriever_node", retriever_node)
     graph.add_node("document_grader_node", document_grader_node)
@@ -36,8 +40,11 @@ def build_adaptive_rag_graph():
         "starting_intention_node",
         starting_intention_route,
         {
-            "agent_node":"retriever_node", # If he intention node decide to go to the agent, we start from retriever node
-            "fallback_node":"fallback_node"
+            "shortcut_agent":"shortcut_retriever_node",
+            "calculation_agent": "calculation_retriever_node",
+            "comparison_agent": "comparison_retriever_node",
+            "standard_agent": "standard_retriever_node",
+            "fallback":"fallback_node"
         }
     )
     graph.add_edge("retriever_node", "document_grader_node")

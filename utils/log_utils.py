@@ -21,3 +21,14 @@ logging.basicConfig(
     force=True
 )
 log = logging.getLogger(__name__)
+
+def log_node_start(node_name:str):
+    log.info(f"{node_name} starts to work")
+    return
+
+def log_node_end(node_name:str, time_cost: float|None = None):
+    if time_cost is not None:
+        log.info(f"{node_name} finishes working, time costed: {time_cost} seconds.")
+    else:
+        log.info(f"{node_name} finishes working.")
+    return

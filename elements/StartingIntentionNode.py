@@ -1,3 +1,4 @@
+import time
 from typing import Literal
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_core.runnables import RunnableConfig
@@ -5,81 +6,102 @@ from pydantic import BaseModel
 from config.prompts import INTENTION_PROMPT1, INTENTION_PROMPT2, INTENTION_PROMPT3
 from config.state import State
 from models.models import agent_llm
-from utils.log_utils import log
+from utils.log_utils import log, log_node_start, log_node_end
 from utils.utils import get_last_user_message
 
-
 class Intention(BaseModel):
+    """
+    Data class to regulate the output of the LLM for intention identifying.
+    """
     question: str
-    decision: Literal["agent_node", "fallback_node"]
+    decision: Literal[
+        "standard_agent",
+        "shortcut_agent",
+        "calculation_agent",
+        "comparison_agent",
+        "fallback"
+    ]
 
 class StartingIntentionNode:
     def __init__(self):
+        # Initiate the agent with structured output
         self.llm_runnable_structured_output = agent_llm.with_structured_output(Intention)
+        self.node_name = "starting_intention_node"
 
     @staticmethod
     def _build_history_prompt(chat_history:list) -> list:
+        """
+        Manually create the chat history.
+        This is for the convenience to manipulate the position of chat history in the prompt
+        :param chat_history: List of conversation records of LangChain message object.
+        :return: List of the same records but of plan strings.
+        """
         doc_string_chat_history = []
         for msg in chat_history:
             if isinstance(msg, HumanMessage):
                 doc_string_chat_history.append(f"  -[User]: {msg.content}")
             elif isinstance(msg, AIMessage):
-                ai_message = msg.content
-                if ai_message:
-                    doc_string_chat_history.append(f"  -[AI assistant]: {ai_message}")
+                doc_string_chat_history.append(f"  -[AI assistant]: {msg.content}")
         return doc_string_chat_history
 
     def _infer(self, chat_history:list, user_input:str):
-        log.info("starting_intention_node starts to work.")
+        # -------- check the availability of the agent LLM --------
         if not self.llm_runnable_structured_output:
-            log.error("Agent LLM is not ready")
+            log.error(f"Agent LLM at {self.node_name} is not ready.")
             return "fallback_node"
+
+        # -------- Formulate the full prompt with dynamic chat data --------
         try:
             history_prompt = self._build_history_prompt(chat_history)
             doc_string = INTENTION_PROMPT1 + history_prompt + INTENTION_PROMPT2 + [user_input] + INTENTION_PROMPT3
             full_prompt = "\n".join(doc_string)
-            print(f"Full prompt to identify intention:\n{full_prompt}")
+            print(f"Full prompt at {self.node_name} to identify intention:\n{full_prompt}")
 
         except Exception as e:
-            log.error(f"Error formulating prompt for starting_intention_node: {e}")
+            log.error(f"Error formulating prompt at {self.node_name} for starting_intention_node: {e}")
+            full_prompt = user_input
 
+        # -------- Use the agent LLM to identify intention with the full prompt --------
         try:
             resp = self.llm_runnable_structured_output.invoke([HumanMessage(content=full_prompt)])
             question: str = resp.question
             decision: str = resp.decision
-            log.info("starting_intention_node ends working.")
             return question, decision
         except Exception as e:
-            log.error(f"Error generating decision for starting_intention_node: {e}")
+            log.error(f"Error generating decision at {self.node_name}: {e}")
 
     def __call__(self, state: State, config: RunnableConfig) -> dict:
+        prev_time = time.time()
+        log_node_start(self.node_name)
+
+        # -------- Get data from state --------
+        messages = state.get("messages", [])
+        user_input = get_last_user_message(messages)
+
+        # -------- Rephrase the user input and identify intention --------
         try:
-            log.info("starting_intention_node starts to work.")
-
-            messages = state.get("messages", [])
-            user_input = get_last_user_message(messages)
-
             question, decision = self._infer(messages, user_input)
-
+            time_cost = round(time.time() - prev_time, 3)
             current_log = {
                 "node": "starting_intention_node",
+                "time_cost": time_cost,
                 "user_input": user_input,
                 "question": question,
             }
-
-            log.info("starting_intention_node finishes working.")
+            log_node_end(self.node_name, time_cost)
             return {
                 "dialog_state": decision,
-                "logs": state["logs"] + [current_log]
+                "logs": state["logs"] + [current_log] # For starting nodes, no need to include previous node's log
             }
         except Exception as e:
-            log.error(f"starting_intention_node has error: {e}")
+            log.error(f"{self.node_name} has error: {e}")
             raise
 
 if __name__ == "__main__":
     intention_identifier = StartingIntentionNode()
     decision1, question1 = intention_identifier._infer([], "I want to know what is a banana")
     print(decision1, question1)
+    print()
 
     decision2, question2 = intention_identifier._infer([
         AIMessage(content="How can I help you?"),
@@ -90,3 +112,21 @@ if __name__ == "__main__":
         HumanMessage(content="How to calculate it?"),
     ], "How to calculate it?")
     print(decision2, question2)
+    print()
+
+    decision3, question3 = intention_identifier._infer([
+        AIMessage(content="How can I help you?"),
+        HumanMessage(content="What is inflation?"),
+        AIMessage(content="Inflation is the rate at which the general level of prices for goods and services rises, decreasing the purchasing power of money over time."),
+        HumanMessage(content="What's its difference from deflation?"),
+    ], "What's its difference from deflation?")
+    print(decision3, question3)
+    print()
+
+    decision4, question4 = intention_identifier._infer([
+        AIMessage(content="How can I help you?"),
+        HumanMessage(content="Who are you?"),
+        AIMessage(content="I am an AI assistant to answer questions related to quantitative finance."),
+        HumanMessage(content="How can I get start?"),
+    ], "How can I get start?")
+    print(decision4, question4)

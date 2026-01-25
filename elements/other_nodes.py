@@ -4,22 +4,37 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate, ChatPromptTemplate
 from config.state import State
 from models.models import agent_llm, web_search_tool
-from utils.log_utils import log
+from utils.log_utils import log, log_node_start, log_node_end
 from utils.utils import get_last_user_message
 
 # Function for the hang_up node in every thread
 def hang_up(state: State) -> dict:
-    log.info("The conversation is over. Thank you for your time.")
-    return {}
+    node_name = "hang_up"
+    log_node_start(node_name)
+    ai_message = "The conversation is over. Thank you for chatting with me."
+    current_log = {
+        "node": node_name,
+        "agent_reply": ai_message
+    }
+    log_node_end(node_name)
+    return {
+        "messages": AIMessage(content=ai_message),
+        "logs": state.get("logs", []) + [current_log] # For hang_up node, no need to include previous node's log
+    }
 
 def starting_reply_node(state: State) -> dict:
-    log.info("starting_reply_node starts to work.")
+    node_name = "starting_reply_node"
+    log_node_start(node_name)
     ai_message = "Hi, I am your Quantitative Finance Assistant. You can ask me anything about quantitative finance."
-    log.info("starting_reply_node finishes working.")
+    current_log = {
+        "node": node_name,
+        "agent_reply": ai_message
+    }
+    log_node_end(node_name)
     return {
         "messages": AIMessage(content=ai_message),
         "dialog_state": "starting_intention_node",
-        "logs":state.get("logs", [])
+        "logs": state.get("logs", []) + [current_log] # For starting nodes, no need to include previous node's log
     }
 
 def fallback_node(state: State) -> dict:

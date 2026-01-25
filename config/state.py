@@ -27,3 +27,11 @@ class State(TypedDict):
         update_dialog_stack
     ]
     logs: list[dict | None]
+    """
+    Structure of one dict item in logs
+    - node: str # the node outputting this item
+    - time_cost: float # the processing time of the node
+    - user_input: str # original user input, ingested in starting_intention_node
+    - question: str # rephrased question, ingested in starting_intention_node
+    - 
+    """

@@ -1,8 +1,8 @@
 import os
 from dotenv import load_dotenv
-from langchain_community.tools import TavilySearchResults
 from langchain_core.embeddings import Embeddings
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain_tavily import TavilySearch
 from sentence_transformers import SentenceTransformer
 from config.paths import ENV_PATH, QWEN3_EMBEDDING_PATH
 
@@ -46,7 +46,7 @@ qwen3_embedding_model = CustomEmbedding(QWEN3_EMBEDDING_PATH)
 openai_embedding = OpenAIEmbeddings()
 
 # ======= Wen search tool ======
-web_search_tool = TavilySearchResults(tavily_api_key = TAVILY_API_KEY)
+web_search_tool = TavilySearch(tavily_api_key = TAVILY_API_KEY)
 
 if __name__ == "__main__":
     resp1 = evaluator_llm.invoke("How are you?")
