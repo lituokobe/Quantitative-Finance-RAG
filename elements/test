@@ -1,0 +1,17 @@
+Return on Equity and DuPont Analysis
+
+Though ROE can easily be computed by dividing net income by shareholders' equity, a technique called DuPont decomposition can break down the ROE calculation into additional steps. Created by the American chemicals corporation DuPont in the 1920s, this analysis reveals which factors are contributing the most (or the least) to a firm's ROE.
+
+There are two versions of DuPont analysis. The first involves the formula:
+
+$$\text{ROE} = \text{NPM} * \text{Asset Turnover} * \text{Equity Multiplier}$$
+where:
+- $\text{NPM} = \text{Net profit margin, the measure of operating efficiency}$
+- $\text{Asset Turnover} = \text{Measure of asset use efficiency}$
+- $text{Equity Multiplier} = \text{Measure of financial leverage}$
+
+Alternatively, the five-step formula can be used:
+
+$$\text{ROE} = \frac{ \text{Earnings before tax} }{ \text{Sales} } * \frac{ \text{Sales} }{ \text{Assets} } * \frac{ \text{Assets} }{ \text{Equity} } * ( 1 - \text{Tax rate} )$$
+
+Both the three- and five-step equations provide a deeper understanding of a company's ROE by examining what is changing in a company rather than looking at one simple ratio. As always with financial statement ratios, they should be examined against the company's history and its competitors' histories.

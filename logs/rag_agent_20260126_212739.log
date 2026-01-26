@@ -1,0 +1,2 @@
+2026-01-26 21:27:39,989 - log_utils - INFO: calculation_retriever_node starts to work
+2026-01-26 21:27:50,033 - retriever_nodes - ERROR: calculation_retriever_node has error when retrieving documents: <MilvusException: (code=2, message=Fail connecting to server on 127.0.0.1:19530, illegal connection params or server unavailable)>

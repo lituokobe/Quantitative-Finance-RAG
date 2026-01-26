@@ -1,0 +1,18 @@
+2026-01-25 23:55:29,063 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:55:29,523 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:55:29,545 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.482 seconds.
+2026-01-25 23:55:29,545 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:55:29,941 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:55:29,945 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.4 seconds.
+2026-01-25 23:55:29,945 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:55:30,351 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:55:30,359 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.413 seconds.
+2026-01-25 23:55:30,359 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:55:30,692 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:55:30,696 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.337 seconds.
+2026-01-25 23:55:30,696 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:55:31,068 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:55:31,076 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.38 seconds.
+2026-01-25 23:55:31,076 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:55:31,478 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:55:31,486 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.41 seconds.

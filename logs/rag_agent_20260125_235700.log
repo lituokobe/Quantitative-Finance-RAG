@@ -1,0 +1,18 @@
+2026-01-25 23:57:00,035 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:57:00,568 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:57:00,589 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.554 seconds.
+2026-01-25 23:57:00,589 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:57:00,975 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:57:00,977 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.388 seconds.
+2026-01-25 23:57:00,978 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:57:01,277 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:57:01,283 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.305 seconds.
+2026-01-25 23:57:01,283 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:57:01,692 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:57:01,696 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.412 seconds.
+2026-01-25 23:57:01,696 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:57:02,100 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:57:02,102 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.405 seconds.
+2026-01-25 23:57:02,102 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:57:02,511 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:57:02,520 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.418 seconds.

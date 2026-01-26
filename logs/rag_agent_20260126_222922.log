@@ -1,0 +1,15 @@
+2026-01-26 22:29:22,189 - log_utils - INFO: calculation_retriever_node starts to work
+2026-01-26 22:29:22,200 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-26 22:29:22,213 - milvus_db - INFO: Created hybrid retriever: k=10, ranker=rrf, threshold=0.05, filter=None
+2026-01-26 22:29:22,213 - retriever_tools - INFO: Created hybrid retriever with k=10, threshold=0.05
+2026-01-26 22:29:22,404 - log_utils - INFO: calculation_retriever_node finishes working, time costed: 0.214 seconds.
+2026-01-26 22:29:22,404 - log_utils - INFO: calculation_retriever_node starts to work
+2026-01-26 22:29:22,404 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-26 22:29:22,416 - milvus_db - INFO: Created hybrid retriever: k=10, ranker=rrf, threshold=0.05, filter=None
+2026-01-26 22:29:22,416 - retriever_tools - INFO: Created hybrid retriever with k=10, threshold=0.05
+2026-01-26 22:29:22,492 - log_utils - INFO: calculation_retriever_node finishes working, time costed: 0.088 seconds.
+2026-01-26 22:29:22,492 - log_utils - INFO: calculation_retriever_node starts to work
+2026-01-26 22:29:22,492 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-26 22:29:22,503 - milvus_db - INFO: Created hybrid retriever: k=10, ranker=rrf, threshold=0.05, filter=None
+2026-01-26 22:29:22,503 - retriever_tools - INFO: Created hybrid retriever with k=10, threshold=0.05
+2026-01-26 22:29:22,546 - log_utils - INFO: calculation_retriever_node finishes working, time costed: 0.054 seconds.

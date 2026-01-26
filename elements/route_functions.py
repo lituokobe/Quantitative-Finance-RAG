@@ -1,4 +1,5 @@
 # -------- Create the route function before starting of each round of conversation --------
+from langchain_core.messages import AIMessage
 from langgraph.constants import END
 
 from config.state import State
@@ -34,6 +35,38 @@ def starting_intention_route(state: State) -> str:
     ]:
         return "fallback"
     return last_dialog_state
+
+# -------- Create the route function after shortcut retriever node --------
+def shortcut_retriever_route(state: State):
+    dialog_state = state.get("dialog_state", [])
+    if not dialog_state:
+        return "starting_intention_node" # safety check, should not happen
+    last_dialog_state: str = dialog_state[-1] # should also be starting intention node
+
+    messages = state.get("messages", [])
+    if not messages:
+        return "starting_intention_node" # safety check, should not happen
+    last_message = messages[-1]
+
+    if not isinstance(last_message, AIMessage):
+        return "starting_intention_node"  # safety check, should not happen
+    last_message_content = last_message.content
+
+    if not last_message_content: # meaning the shortcut_retriever_node can't answer the question
+        return last_dialog_state
+    return END #shortcut_retriever_node has a reply, go to end first to output the reply and let user speak. But next round will start from starting_intention_node as well.
+
+# -------- Create the route function after calculation retriever node --------
+def calculation_retriever_route(state: State):
+    logs = state.get("logs", [])
+    if not logs:
+        return "calculation_fallback_node" # safety check, should not happen
+    last_log: dict = logs[-1] # should also be starting intention node
+
+    retrieved_documents = last_log.get("retrieved_documents", [])
+    if not retrieved_documents:
+        return "calculation_fallback_node" # safety check
+    return "math_verification_node"
 
 # -------- Create the route function after grading documents --------
 def grade_documents_route(state: State):

@@ -1,0 +1,18 @@
+2026-01-25 23:51:33,072 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:51:33,501 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:51:33,522 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.45 seconds.
+2026-01-25 23:51:33,522 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:51:33,910 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:51:33,913 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.391 seconds.
+2026-01-25 23:51:33,914 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:51:34,319 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:51:34,327 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.413 seconds.
+2026-01-25 23:51:34,328 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:51:34,736 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:51:34,740 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.412 seconds.
+2026-01-25 23:51:34,740 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:51:35,093 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:51:35,097 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.357 seconds.
+2026-01-25 23:51:35,097 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-01-25 23:51:35,548 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-25 23:51:35,556 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.459 seconds.

@@ -1,0 +1,15 @@
+2026-01-26 21:40:46,496 - log_utils - INFO: calculation_retriever_node starts to work
+2026-01-26 21:40:46,507 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-26 21:40:46,520 - milvus_db - INFO: Created hybrid retriever: k=15, ranker=rrf, threshold=0.05, filter={'contains_math': True}
+2026-01-26 21:40:46,520 - retriever_tools - INFO: Created hybrid retriever with k=15, threshold=0.05
+2026-01-26 21:40:46,712 - log_utils - INFO: calculation_retriever_node finishes working, time costed: 0.216 seconds.
+2026-01-26 21:40:46,712 - log_utils - INFO: calculation_retriever_node starts to work
+2026-01-26 21:40:46,712 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-26 21:40:46,722 - milvus_db - INFO: Created hybrid retriever: k=15, ranker=rrf, threshold=0.05, filter={'contains_math': True}
+2026-01-26 21:40:46,723 - retriever_tools - INFO: Created hybrid retriever with k=15, threshold=0.05
+2026-01-26 21:40:46,797 - log_utils - INFO: calculation_retriever_node finishes working, time costed: 0.085 seconds.
+2026-01-26 21:40:46,797 - log_utils - INFO: calculation_retriever_node starts to work
+2026-01-26 21:40:46,797 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-26 21:40:46,806 - milvus_db - INFO: Created hybrid retriever: k=15, ranker=rrf, threshold=0.05, filter={'contains_math': True}
+2026-01-26 21:40:46,806 - retriever_tools - INFO: Created hybrid retriever with k=15, threshold=0.05
+2026-01-26 21:40:46,884 - log_utils - INFO: calculation_retriever_node finishes working, time costed: 0.087 seconds.

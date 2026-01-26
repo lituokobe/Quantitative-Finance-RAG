@@ -1,6 +1,7 @@
 import time
 from typing import Literal
 
+from langchain_core.messages import AIMessage
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel
 
@@ -67,42 +68,12 @@ class ShortcutRetrieverNode:
             "greetings": "Thanks for checking out. I'm doing great! You can ask me anything about quantitative finance.",
             "user_how_to": "Just simply input what you want to know. I will try my best to answer you.",
             "answer_scope": "I am specialized in topics of quantitative finance like option pricing, stochastic calculus, portfolio theory and risk management. Besides, I can also help you with questions of FinTech, AI, corporate finance, economy, and finance history",
-            "assistant_how_to": "I am powered by AI and RAG. All my answers come from creditable sources of information. I won't reply you based only the AI model's own training data and inference.",
+            "assistant_how_to": "I am powered by RAG and all my answers come from creditable sources. I use AI to frame my language, but I won't reply you based on the AI's own training data and inference.",
             "whether_accurate": "Yes, my answers are accurate and trustworthy. If you have any further questions on any of my answers, just continue asking me and I am happy to discuss more with you in detail."
         }
-    #
-    # def retriever_node(state):
-    #     try:
-    #         log.info("retriever_node starts to work.")
-    #
-    #         logs = state.get("logs", [])
-    #         last_log = logs[-1] if logs else {}
-    #         if last_log:
-    #             question = last_log.get("question", "")
-    #         else:
-    #             question = ""
-    #
-    #         retriever = create_hybrid_retriever()
-    #         documents = retriever.invoke(question)
-    #
-    #         current_log = {
-    #             **last_log,
-    #             "node": "retriever_node",
-    #             "retrieved_documents": documents,
-    #         }
-    #
-    #         log.info("retriever_node finishes working.")
-    #         return {
-    #             "dialog_state": "document_grader_node",
-    #             "logs": state.get("logs", []) + [current_log]
-    #         }
-    #     except Exception as e:
-    #         log.error(f"retriever_node has error: {e}")
-    #         raise
 
     def __call__(self, state: State):
         prev_time = time.time()
-        node_name = "shortcut_retriever_node"
         log_node_start(self.node_name)
 
         # ------------------ Get user question ------------------
@@ -114,7 +85,7 @@ class ShortcutRetrieverNode:
             else:
                 question = ""
         except Exception as e:
-            log.error(f"{node_name} fails to get user question: {e}")
+            log.error(f"{self.node_name} fails to get user question: {e}")
             last_log = {}
             question = ""
 
@@ -127,67 +98,92 @@ class ShortcutRetrieverNode:
             if question_type not in ["greetings", "user_how_to", "answer_scope", "assistant_how_to", "whether_accurate", "others"]:
                 question_type = "others"
         except Exception as e:
-            log.error(f"{node_name} fails to classify user question: {e}")
+            log.error(f"{self.node_name} fails to classify user question: {e}")
             question_type = "others"
 
         # ------------------ choose reply ------------------
         if question_type == "others":
             ai_message = ""
         else:
-            ai_message = self.shortcut_reply_lookup["question_type"]
+            ai_message = self.shortcut_reply_lookup[question_type]
 
         time_cost = round(time.time() - prev_time, 3)
         current_log = {
             **last_log,
-            "node": "shortcut_retriever_node",
+            "node": self.node_name,
+            "agent_reply": ai_message,
             "time_cost": time_cost,
         }
         log_node_end(self.node_name, time_cost)
 
         return {
+            "messages": AIMessage(content=ai_message),
             "dialog_state": "starting_intention_node", # No matter there is a reply or not, we always need to redirect the chat to starting_intention_node
             "logs": state.get("logs", []) + [current_log]
         }
 
-
-def retriever_node(state):
-    try:
-        log.info("retriever_node starts to work.")
-
-        logs = state.get("logs", [])
-        last_log = logs[-1] if logs else {}
-        if last_log:
-            question = last_log.get("question", "")
-        else:
-            question = ""
-
-        retriever = create_hybrid_retriever()
-        documents = retriever.invoke(question)
-
-        current_log = {
-            **last_log,
-            "node": "retriever_node",
-            "retrieved_documents": documents,
-        }
-
-        log.info("retriever_node finishes working.")
-        return {
-            "dialog_state": "document_grader_node",
-            "logs": state.get("logs", []) + [current_log]
-        }
-    except Exception as e:
-        log.error(f"retriever_node has error: {e}")
-        raise
-
 # Test
 if __name__ == "__main__":
-    result = retriever_node(
+    # ----------------- Shortcut Retriever test -----------------
+    shortcut_retriever_node = ShortcutRetrieverNode()
+
+    Q1 = "Are you a robot?"
+    result1 = shortcut_retriever_node(
         {
-            "logs":[
-                {
-                    "question":"what is an option?"
-                }
-            ]
+            "messages":[],
+            "dialog_state":[],
+            "logs":[{"question":Q1}]
         }
     )
-    print(result)
+    print(f"Q: {Q1}, A: {result1['messages'].content}")
+
+    Q2 = "How's it going?"
+    result2 = shortcut_retriever_node(
+        {
+            "messages": [],
+            "dialog_state": [],
+            "logs": [{"question": Q2}]
+        }
+    )
+    print(f"Q: {Q2}, A: {result2['messages'].content}")
+
+    Q3 = "Is your answer correct?"
+    result3 = shortcut_retriever_node(
+        {
+            "messages": [],
+            "dialog_state": [],
+            "logs": [{"question": Q3}]
+        }
+    )
+    print(f"Q: {Q3}, A: {result3['messages'].content}")
+
+    Q4 = "Can I directly ask what I want to know?"
+    result4 = shortcut_retriever_node(
+        {
+            "messages": [],
+            "dialog_state": [],
+            "logs": [{"question": Q4}]
+        }
+    )
+    print(f"Q: {Q4}, A: {result4['messages'].content}")
+
+
+    Q5 = "What do you know?"
+    result5 = shortcut_retriever_node(
+        {
+            "messages": [],
+            "dialog_state": [],
+            "logs": [{"question": Q5}]
+        }
+    )
+    print(f"Q: {Q5}, A: {result5['messages'].content}")
+
+    Q6 = "How do you know the answer?"
+    result6 = shortcut_retriever_node(
+        {
+            "messages": [],
+            "dialog_state": [],
+            "logs": [{"question": Q6}]
+        }
+    )
+    print(f"Q: {Q6}, A: {result6['messages'].content}")
