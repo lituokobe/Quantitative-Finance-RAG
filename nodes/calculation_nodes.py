@@ -9,6 +9,8 @@ from config.state import State
 from models.models import agent_llm
 from tools.retriever_tools import create_hybrid_retriever
 from utils.log_utils import log, log_node_start, log_node_end
+from utils.utils import get_last_user_message
+
 
 def calculation_retriever_node(state: State):
     prev_time = time.time()
@@ -51,6 +53,34 @@ def calculation_retriever_node(state: State):
     log_node_end(node_name, time_cost)
 
     return {
+        "logs": state.get("logs", []) + [current_log]
+    }
+
+def calculation_fallback_node(state: State):
+    node_name = "calculation_fallback_node"
+    log_node_start(node_name)
+
+    # ------------------ Get last log ------------------
+    try:
+        logs = state.get("logs", [])
+        last_log = logs[-1] if logs else {}
+    except Exception as e:
+        log.error(f"{node_name} fails to get last log: {e}")
+        last_log = {}
+
+    # ------------------ Generate reply ------------------
+    ai_message = "Sorry, this calculation is beyond my knowledge scope."
+
+    current_log = {
+        **last_log,
+        "node": node_name,
+        "agent_reply": ai_message
+    }
+
+    log_node_end(node_name)
+    return {
+        "messages": AIMessage(content=ai_message),
+        "dialog_state": "starting_intention_node", # Start again from starting_intention_node
         "logs": state.get("logs", []) + [current_log]
     }
 
