@@ -2,7 +2,7 @@
 
 ## What Is Inflation?
 
-Inflation is a gradual loss of purchasing power that is reflected in a broad rise in prices for goods and services over time. The inflation rate is calculated as the average price increase of a [basket of selected goods](https://www.investopedia.com/terms/b/basket_of_goods.asp) and services over one year. High inflation means that prices are increasing quickly, while low inflation means that prices are growing more slowly. Inflation can be contrasted with deflation, which occurs when prices decline and [purchasing power](https://www.investopedia.com/terms/p/purchasingpower.asp) increases.
+Inflation is a gradual loss of purchasing power that is reflected in a broad rise in prices for goods and services over time. The inflation rate is calculated as the average price increase of a basket of selected goods and services over one year. High inflation means that prices are increasing quickly, while low inflation means that prices are growing more slowly. Inflation can be contrasted with deflation, which occurs when prices decline and purchasing power increases.
 
 ### Key Takeaways
 
@@ -24,7 +24,7 @@ An increase in the money supply is the root of inflation, though this can play o
 
 Other causes of inflation include supply bottlenecks and shortages of key goods, which can push prices to rise.
 
-When inflation occurs, money loses its purchasing power. This can occur across any sector or throughout an entire economy. The expectation of inflation itself can further sustain the [devaluation](https://www.investopedia.com/terms/d/devaluation.asp) of money. Workers may demand higher wages and businesses may charge higher prices, in anticipation of sustained inflation. This, in turn, reinforces the factors that push prices up.
+When inflation occurs, money loses its purchasing power. This can occur across any sector or throughout an entire economy. The expectation of inflation itself can further sustain the devaluation of money. Workers may demand higher wages and businesses may charge higher prices, in anticipation of sustained inflation. This, in turn, reinforces the factors that push prices up.
 
 ## Types of Inflation
 
@@ -40,21 +40,21 @@ When people have more money, it leads to positive consumer sentiment. This, in t
 
 Cost-push inflation is a result of the increase in prices working through the production process inputs. When additions to the supply of money and credit are channeled into a commodity or other asset markets, costs for all kinds of intermediate goods rise. This is especially evident when there’s a negative economic shock to the supply of key commodities.
 
-These developments lead to higher costs for the finished product or service and work their way into rising consumer prices. For instance, when the money supply is expanded, it creates a speculative boom in [oil prices](https://www.investopedia.com/articles/economics/08/determining-oil-prices.asp). This means that the cost of energy can rise and contribute to rising consumer prices, which is reflected in various measures of inflation.
+These developments lead to higher costs for the finished product or service and work their way into rising consumer prices. For instance, when the money supply is expanded, it creates a speculative boom in oil prices. This means that the cost of energy can rise and contribute to rising consumer prices, which is reflected in various measures of inflation.
 
 ### Built-In Inflation
 
 Built-in inflation is related to adaptive expectations or the idea that people expect current inflation rates to continue in the future. As the price of goods and services rises, people may expect a continuous rise in the future at a similar rate.
 
-As such, workers may demand higher wages to maintain their standard of living. Their increased wages result in a higher cost of goods and services, and [this wage-price spiral](https://www.investopedia.com/terms/w/wage-price-spiral.asp) continues as one factor induces the other and vice versa.
+As such, workers may demand higher wages to maintain their standard of living. Their increased wages result in a higher cost of goods and services, and this wage-price spiral continues as one factor induces the other and vice versa.
 
 ## How Inflation Impacts Prices
 
-While it is easy to measure the price changes of individual products over time, human needs extend beyond just one or two products. Individuals need a big and diversified set of products as well as a host of services to live a comfortable life. They include [commodities](https://www.investopedia.com/terms/c/commodity.asp) like food grains, metals, fuel, utilities like electricity and transportation, and services like [healthcare](https://www.investopedia.com/insurance/why-do-healthcare-costs-keep-rising/), entertainment, and labor.
+While it is easy to measure the price changes of individual products over time, human needs extend beyond just one or two products. Individuals need a big and diversified set of products as well as a host of services to live a comfortable life. They include commodities like food grains, metals, fuel, utilities like electricity and transportation, and services like healthcare, entertainment, and labor.
 
-Inflation aims to measure the overall impact of price changes for a diversified set of products and services. It allows for a single value representation of the increase in the price level of goods and services in an [economy](https://www.investopedia.com/economy-4689801) over a specified time.
+Inflation aims to measure the overall impact of price changes for a diversified set of products and services. It allows for a single value representation of the increase in the price level of goods and services in an economy over a specified time.
 
-Prices rise, which means that one unit of money buys fewer goods and services. This loss of purchasing power impacts the cost of living for the common public which ultimately leads to a deceleration in economic growth. The consensus view among economists is that sustained inflation occurs when a nation’s [money supply](https://www.investopedia.com/terms/m/moneysupply.asp) growth outpaces economic growth.
+Prices rise, which means that one unit of money buys fewer goods and services. This loss of purchasing power impacts the cost of living for the common public which ultimately leads to a deceleration in economic growth. The consensus view among economists is that sustained inflation occurs when a nation’s money supply growth outpaces economic growth.
 
 ### 2.9%
 
@@ -62,31 +62,31 @@ The increase in the Consumer Price Index for All Urban Consumers (CPI-U) over th
 
 To combat this, the monetary authority (in most cases, the central bank takes the necessary steps to manage the money supply and credit to keep inflation within permissible limits and keep the economy running smoothly.
 
-Theoretically, monetarism is a popular theory that explains the relationship between inflation and the money supply of an economy. For example, following the Spanish conquest of the Aztec and Inca empires, massive amounts of [gold and silver](https://www.investopedia.com/how-to-invest-in-gold-and-silver-7369625) flowed into the Spanish and other European economies. Since the money supply rapidly increased, the value of money fell, contributing to rapidly rising prices.
+Theoretically, monetarism is a popular theory that explains the relationship between inflation and the money supply of an economy. For example, following the Spanish conquest of the Aztec and Inca empires, massive amounts of gold and silver flowed into the Spanish and other European economies. Since the money supply rapidly increased, the value of money fell, contributing to rapidly rising prices.
 
-Inflation is measured in a variety of ways depending on the types of goods and services. It is the opposite of [deflation](https://www.investopedia.com/articles/personal-finance/030915/why-deflation-bad-economy.asp), which indicates a general decline in prices when the inflation rate falls below 0%. Keep in mind that deflation shouldn’t be confused with [disinflation](https://www.investopedia.com/terms/d/disinflation.asp), which is a related term referring to a slowing down in the (positive) rate of inflation.
+Inflation is measured in a variety of ways depending on the types of goods and services. It is the opposite of deflation, which indicates a general decline in prices when the inflation rate falls below 0%. Keep in mind that deflation shouldn’t be confused with disinflation, which is a related term referring to a slowing down in the (positive) rate of inflation.
 
 ## How to Protect Your Finances During Inflation
 
-There are a range of measures that individuals can take to [protect their finances](https://www.investopedia.com/articles/investing/081315/9-top-assets-protection-against-inflation.asp) against inflation. For instance, one may choose to invest in asset classes that outperform the market during inflationary times. This might include commodities like grain, beef, oil, electricity, and natural gas.
+There are a range of measures that individuals can take to protect their finances against inflation. For instance, one may choose to invest in asset classes that outperform the market during inflationary times. This might include commodities like grain, beef, oil, electricity, and natural gas.
 
 Commodity prices typically stay one step ahead of product prices, and price increases for commodities are often seen as an indicator of inflation to come. Commodities, which can also be volatile, are easily affected by natural disasters, geopolitics, or conflict.
 
 Real estate income may also help buffer against inflation, as landlords can increase their rent to keep pace with the rise in prices overall.
 
-The U.S. government also offers [Treasury Inflation-Protected Securities (TIPS)](https://www.investopedia.com/terms/t/tips.asp), a type of security indexed to inflation to protect against declines in purchasing power. Savings can [find inflation protection](https://www.investopedia.com/inflation-just-ticked-up-again-protect-your-savings-fast-11808041) in high-yield accounts and CDs.
+The U.S. government also offers Treasury Inflation-Protected Securities (TIPS), a type of security indexed to inflation to protect against declines in purchasing power. Savings can find inflation protection in high-yield accounts and CDs.
 
 ## Types of Price Indexes
 
-Depending upon the selected set of goods and services used, multiple types of baskets of goods are calculated and tracked as price indexes. The most commonly used price indexes are the [Consumer Price Index (CPI)](https://www.investopedia.com/terms/c/consumerpriceindex.asp#ixzz5V28O2AIS) and the [Wholesale Price Index (WPI)](https://www.investopedia.com/terms/w/wpi.asp#ixzz5V28lNo3H).
+Depending upon the selected set of goods and services used, multiple types of baskets of goods are calculated and tracked as price indexes. The most commonly used price indexes are the Consumer Price Index (CPI) and the Wholesale Price Index (WPI).
 
 ### Consumer Price Index (CPI)
 
-The CPI is a measure that examines the [weighted average](https://www.investopedia.com/terms/w/weightedaverage.asp) of prices of a basket of goods and services that are of primary consumer needs. They include transportation, food, and medical care.
+The CPI is a measure that examines the weighted average of prices of a basket of goods and services that are of primary consumer needs. They include transportation, food, and medical care.
 
-CPI is calculated by taking price changes for each item in the predetermined basket of goods and averaging them based on their relative weight in the whole basket. The prices in consideration are the retail prices of each item, as available for purchase by the individual citizens. [CPI can impact the value of one currency](https://www.investopedia.com/articles/forex/111015/how-cpi-affects-dollar-against-other-currencies.asp) against those of other nations.
+CPI is calculated by taking price changes for each item in the predetermined basket of goods and averaging them based on their relative weight in the whole basket. The prices in consideration are the retail prices of each item, as available for purchase by the individual citizens. CPI can impact the value of one currency against those of other nations.
 
-Changes in the CPI are used to assess price changes associated with the [cost of living](https://www.investopedia.com/terms/c/cost-of-living.asp), making it one of the most frequently used statistics for identifying periods of inflation or deflation. In the United States, the [Bureau of Labor Statistics (BLS)](https://www.investopedia.com/terms/b/bls.asp) reports the CPI each month and has calculated it as far back as 1913.
+Changes in the CPI are used to assess price changes associated with the cost of living, making it one of the most frequently used statistics for identifying periods of inflation or deflation. In the United States, the Bureau of Labor Statistics (BLS) reports the CPI each month and has calculated it as far back as 1913.
 
 ### Important
 
@@ -98,17 +98,17 @@ The WPI is another popular measure of inflation. It measures and tracks the chan
 
 While WPI items vary from one country to another, they mostly include items at the producer or wholesale level. For example, it includes cotton prices for raw cotton, cotton yarn, cotton gray goods, and cotton clothing.
 
-Although many countries and organizations use the WPI, many other countries, including the U.S., use a similar variant called the [Producer Price Index (PPI)](https://www.investopedia.com/terms/p/ppi.asp).
+Although many countries and organizations use the WPI, many other countries, including the U.S., use a similar variant called the Producer Price Index (PPI).
 
 ### Producer Price Index (PPI)
 
 The PPI is a family of indexes that measures the average change in selling prices received by domestic producers of intermediate goods and services over time. The PPI measures price changes from the perspective of the seller and differs from the CPI, which measures price changes from the perspective of the buyer.
 
-In all variants, the rise in the price of one component (say oil) may cancel out the price decline in another (say wheat) to a certain extent. Overall, each index represents the average weighted price change for the given constituents which may apply at the overall [economy](https://www.investopedia.com/economy-4689801), sector, or commodity level.
+In all variants, the rise in the price of one component (say oil) may cancel out the price decline in another (say wheat) to a certain extent. Overall, each index represents the average weighted price change for the given constituents which may apply at the overall economy, sector, or commodity level.
 
 ## The Formula for Measuring Inflation
 
-The above-mentioned variants of price indexes can be used to calculate the value of inflation between two particular months or years. While many ready-made [inflation calculators](https://data.bls.gov/cgi-bin/cpicalc.pl) are available on financial websites, it is still important to understand how these calculations work. Knowing the underlying methodology ensures accuracy and provides a clearer sense of what the results actually represent. Mathematically, there are two closely related formulas used to measure inflation, and while they look similar, they serve different but equally important purposes.
+The above-mentioned variants of price indexes can be used to calculate the value of inflation between two particular months or years. While many ready-made inflation calculators are available on financial websites, it is still important to understand how these calculations work. Knowing the underlying methodology ensures accuracy and provides a clearer sense of what the results actually represent. Mathematically, there are two closely related formulas used to measure inflation, and while they look similar, they serve different but equally important purposes.
 
 The first formula calculates the percentage change in prices over time. To see how much prices have risen (or fallen) between two points in time:
 
@@ -140,7 +140,7 @@ An optimum level of inflation is often promoted to encourage spending to a certa
 
 Buyers of such assets may not be happy with inflation, as they will be required to shell out more money. People who hold assets valued in their home currency, such as cash or bonds, may not like inflation, as it erodes the real value of their holdings.
 
-As such, investors looking to protect their portfolios from inflation should consider inflation-hedged asset classes, such as gold, commodities, and real estate investment trusts (REITs). [Inflation-indexed](https://www.investopedia.com/terms/i/inflation-indexedsecurity.asp) bonds are another popular option for investors to [profit from inflation](https://www.investopedia.com/articles/investing/080813/how-profit-inflation.asp).
+As such, investors looking to protect their portfolios from inflation should consider inflation-hedged asset classes, such as gold, commodities, and real estate investment trusts (REITs). Inflation-indexed bonds are another popular option for investors to profit from inflation.
 
 High and variable rates of inflation can impose major costs on an economy. Businesses, workers, and consumers must all account for the effects of generally rising prices in their buying, selling, and planning decisions.
 
@@ -150,9 +150,9 @@ Even a low, stable, and easily predictable rate of inflation, which some conside
 
 Whenever new money and credit enter the economy, it is always in the hands of specific individuals or business firms. The process of price level adjustments to the new money supply proceeds as they then spend the new money and it circulates from hand to hand and account to account through the economy.
 
-Inflation does drive up some prices first and drives up other prices later. This sequential change in purchasing power and prices (known as the Cantillon effect) means that the process of inflation not only increases the general price level over time but also [distorts relative prices](https://www.investopedia.com/terms/m/marketdistortion.asp), wages, and rates of return along the way.
+Inflation does drive up some prices first and drives up other prices later. This sequential change in purchasing power and prices (known as the Cantillon effect) means that the process of inflation not only increases the general price level over time but also distorts relative prices, wages, and rates of return along the way.
 
-Economists, in general, understand that distortions of relative prices away from their economic equilibrium are not good for the economy, and [Austrian economists](https://www.investopedia.com/terms/a/austrian_school.asp) even believe this process to be a major driver of cycles of recession in the economy.
+Economists, in general, understand that distortions of relative prices away from their economic equilibrium are not good for the economy, and Austrian economists even believe this process to be a major driver of cycles of recession in the economy.
 
 **Pros:**
 - Leads to higher resale value of assets
@@ -165,49 +165,49 @@ Economists, in general, understand that distortions of relative prices away from
 
 ## How Inflation Can Be Controlled
 
-A country’s financial regulator shoulders the important responsibility of keeping inflation in check. It is done by implementing measures through [monetary policy](https://www.investopedia.com/terms/m/monetarypolicy.asp), which refers to the actions of a central bank or other committees that determine the size and rate of growth of the money supply.
+A country’s financial regulator shoulders the important responsibility of keeping inflation in check. It is done by implementing measures through monetary policy, which refers to the actions of a central bank or other committees that determine the size and rate of growth of the money supply.
 
-In the U.S., the Fed’s monetary policy goals include moderate long-term interest rates, price stability, and maximum employment. Each of these goals is intended to promote a stable financial environment. The Federal Reserve clearly communicates long-term inflation goals in order to keep a steady [long-term rate of inflation](https://www.investopedia.com/inflation-rate-by-year-7253832), which is thought to be beneficial to the economy.
+In the U.S., the Fed’s monetary policy goals include moderate long-term interest rates, price stability, and maximum employment. Each of these goals is intended to promote a stable financial environment. The Federal Reserve clearly communicates long-term inflation goals in order to keep a steady long-term rate of inflation, which is thought to be beneficial to the economy.
 
-Price stability or a [relatively constant level of inflation](https://www.investopedia.com/articles/personal-finance/073015/understand-different-types-inflation.asp) allows businesses to plan for the future since they know what to expect. The Fed believes that this will promote maximum employment, which is determined by non-monetary factors that fluctuate over time and are therefore subject to change.
+Price stability or a relatively constant level of inflation allows businesses to plan for the future since they know what to expect. The Fed believes that this will promote maximum employment, which is determined by non-monetary factors that fluctuate over time and are therefore subject to change.
 
-For this reason, the Fed doesn’t set a specific goal for maximum employment, and it is largely determined by employers’ assessments. Maximum employment does not mean zero unemployment, as at any given time there is a certain level of [volatility](https://www.investopedia.com/terms/v/volatility.asp) as people vacate and start new jobs.
+For this reason, the Fed doesn’t set a specific goal for maximum employment, and it is largely determined by employers’ assessments. Maximum employment does not mean zero unemployment, as at any given time there is a certain level of volatility as people vacate and start new jobs.
 
 ### 
 
-[Hyperinflation](https://www.investopedia.com/are-we-in-for-a-hyperinflation-5093627) is often described as a period of inflation of 50% or more per month.
+Hyperinflation is often described as a period of inflation of 50% or more per month.
 
-Monetary authorities also take exceptional measures in extreme conditions of the economy. For instance, following the 2008 financial crisis, the U.S. Fed kept the interest rates near zero and pursued a bond-buying program called [quantitative easing (QE)](https://www.investopedia.com/terms/q/quantitative-easing.asp).
+Monetary authorities also take exceptional measures in extreme conditions of the economy. For instance, following the 2008 financial crisis, the U.S. Fed kept the interest rates near zero and pursued a bond-buying program called quantitative easing (QE).
 
-Some critics of the program alleged it would cause a spike in inflation in the U.S. dollar, but inflation peaked in 2007 and declined steadily over the next eight years. There are many complex reasons why QE didn’t lead to inflation or [hyperinflation](https://www.investopedia.com/terms/h/hyperinflation.asp), though the simplest explanation is that the recession itself was a very prominent deflationary environment, and quantitative easing supported its effects.
+Some critics of the program alleged it would cause a spike in inflation in the U.S. dollar, but inflation peaked in 2007 and declined steadily over the next eight years. There are many complex reasons why QE didn’t lead to inflation or hyperinflation, though the simplest explanation is that the recession itself was a very prominent deflationary environment, and quantitative easing supported its effects.
 
-Consequently, U.S. policymakers have attempted to keep inflation steady at around 2% per year. The [European Central Bank (ECB)](https://www.investopedia.com/terms/e/europeancentralbank.asp) has also pursued aggressive quantitative easing to counter deflation in the eurozone, and some places have experienced [negative interest rates](https://www.investopedia.com/terms/n/negative-interest-rate-policy-nirp.asp). That’s due to fears that deflation could take hold in the eurozone and lead to economic stagnation.
+Consequently, U.S. policymakers have attempted to keep inflation steady at around 2% per year. The European Central Bank (ECB) has also pursued aggressive quantitative easing to counter deflation in the eurozone, and some places have experienced negative interest rates. That’s due to fears that deflation could take hold in the eurozone and lead to economic stagnation.
 
 Moreover, countries that experience higher rates of growth can absorb higher rates of inflation. India’s target is around 4% (with an upper tolerance of 6% and a lower tolerance of 2%), while Brazil aims for 3% (with an upper tolerance of 4.5% and a lower tolerance of 1.5%).
 
 ## Meaning of Inflation, Deflation, and Disinflation
 
-While a high inflation rate means that prices are increasing, a low inflation rate does *not* mean that prices are falling. Counterintuitively, when the inflation rate falls, prices are still increasing, but at a slower rate than before. When the inflation rate falls (but remains positive), this is known as [disinflation](https://www.investopedia.com/ask/answers/032415/what-difference-between-deflation-and-disinflation.asp).
+While a high inflation rate means that prices are increasing, a low inflation rate does *not* mean that prices are falling. Counterintuitively, when the inflation rate falls, prices are still increasing, but at a slower rate than before. When the inflation rate falls (but remains positive), this is known as disinflation.
 
-Conversely, if the inflation rate becomes negative, that means that prices are falling. This is known as [deflation](https://www.investopedia.com/articles/personal-finance/030915/why-deflation-bad-economy.asp), which can have negative effects on an economy. Because buying power increases over time, consumers have less incentive to spend money in the short term, resulting in falling economic activity.
+Conversely, if the inflation rate becomes negative, that means that prices are falling. This is known as deflation, which can have negative effects on an economy. Because buying power increases over time, consumers have less incentive to spend money in the short term, resulting in falling economic activity.
 
 ## Hedging Against Inflation
 
-Stocks are considered to be [the best hedge against inflation](https://www.investopedia.com/articles/financial-advisors/021216/cash-vs-stocks-how-decide.asp), as the rise in stock prices is inclusive of the effects of inflation. Since additions to the money supply in virtually all modern economies occur as bank [credit injections](https://www.investopedia.com/terms/c/capital-injection.asp) through the financial system, much of the immediate effect on prices happens in financial assets that are priced in their home currency, such as stocks.
+Stocks are considered to be the best hedge against inflation, as the rise in stock prices is inclusive of the effects of inflation. Since additions to the money supply in virtually all modern economies occur as bank credit injections through the financial system, much of the immediate effect on prices happens in financial assets that are priced in their home currency, such as stocks.
 
-Special financial instruments exist that one can use to safeguard investments against inflation. They include [Treasury Inflation-Protected Securities (TIPS)](https://www.investopedia.com/terms/t/tips.asp), a low-risk treasury security that is indexed to inflation where the principal amount invested is increased by the percentage of inflation.
+Special financial instruments exist that one can use to safeguard investments against inflation. They include Treasury Inflation-Protected Securities (TIPS), a low-risk treasury security that is indexed to inflation where the principal amount invested is increased by the percentage of inflation.
 
-One can also opt for a TIPS mutual fund or TIPS-based [exchange-traded fund (ETF)](https://www.investopedia.com/terms/e/etf.asp). To get access to stocks, ETFs, and other funds that can help avoid the dangers of inflation, you’ll likely need a brokerage account. Choosing a stockbroker can be a tedious process due to the variety among them.
+One can also opt for a TIPS mutual fund or TIPS-based exchange-traded fund (ETF). To get access to stocks, ETFs, and other funds that can help avoid the dangers of inflation, you’ll likely need a brokerage account. Choosing a stockbroker can be a tedious process due to the variety among them.
 
 Gold is also considered to be a hedge against inflation, although this doesn’t always appear to be the case looking backward.
 
 ## Examples of Inflation
 
-Since all world currencies are [fiat money](https://www.investopedia.com/terms/f/fiatmoney.asp), the money supply could increase rapidly for political reasons, resulting in rapid price level increases. The most famous example is the hyperinflation that struck the German Weimar Republic in the early 1920s.
+Since all world currencies are fiat money, the money supply could increase rapidly for political reasons, resulting in rapid price level increases. The most famous example is the hyperinflation that struck the German Weimar Republic in the early 1920s.
 
 The nations that were victorious in World War I demanded reparations from Germany, which could not be paid in German paper currency, as this was of suspect value due to government borrowing. Germany attempted to print paper notes, buy foreign currency with them, and use that to pay their debts.
 
-This policy led to the rapid devaluation of the [German mark](https://www.investopedia.com/terms/d/deutschmark.asp) along with the hyperinflation that accompanied the development. German consumers responded to the cycle by trying to spend their money as fast as possible, understanding that it would be worth less and less the longer they waited. More money flooded the economy, and its value plummeted to the point where people would paper their walls with practically worthless bills. Similar situations occurred in Peru in 1990 and in Zimbabwe between 2007 and 2008.
+This policy led to the rapid devaluation of the German mark along with the hyperinflation that accompanied the development. German consumers responded to the cycle by trying to spend their money as fast as possible, understanding that it would be worth less and less the longer they waited. More money flooded the economy, and its value plummeted to the point where people would paper their walls with practically worthless bills. Similar situations occurred in Peru in 1990 and in Zimbabwe between 2007 and 2008.
 
 ## What Causes Inflation?
 
@@ -235,7 +235,7 @@ Inflation has remained elevated since 2022 when inflation rates around the world
 
 The COVID-19 pandemic led to lockdowns and other restrictions that greatly disrupted global supply chains, from factory closures to bottlenecks at maritime ports. Governments also issued stimulus checks and increased unemployment benefits to counter the financial impact on individuals and small businesses. When vaccines became widespread and the economy bounced back, demand (fueled in part by stimulus money and low interest rates) quickly outpaced supply, which struggled to get back to pre-COVID levels.
 
-Russia’s unprovoked invasion of Ukraine in early 2022 led to economic sanctions and trade restrictions on Russia, limiting the world’s supply of oil and gas since Russia is a large producer of fossil fuels. Food prices also rose as Ukraine’s large grain harvests could not be exported. As fuel and food prices rose, it led to similar increases down the value chains. The Fed raised interest rates to combat the high inflation, which significantly came down in 2023, [though it remains above pre-pandemic levels](https://www.investopedia.com/us-inflation-rate-by-president-8546447).
+Russia’s unprovoked invasion of Ukraine in early 2022 led to economic sanctions and trade restrictions on Russia, limiting the world’s supply of oil and gas since Russia is a large producer of fossil fuels. Food prices also rose as Ukraine’s large grain harvests could not be exported. As fuel and food prices rose, it led to similar increases down the value chains. The Fed raised interest rates to combat the high inflation, which significantly came down in 2023, though it remains above pre-pandemic levels.
 
 ## The Bottom Line
 

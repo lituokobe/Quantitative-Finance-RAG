@@ -1,0 +1,9 @@
+2026-01-28 23:33:59,948 - log_utils - INFO: comparison_retriever_node starts to work
+2026-01-28 23:34:00,676 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-28 23:34:00,685 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 0.737 seconds.
+2026-01-28 23:34:00,685 - log_utils - INFO: comparison_retriever_node starts to work
+2026-01-28 23:34:01,291 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-28 23:34:01,295 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 0.61 seconds.
+2026-01-28 23:34:01,295 - log_utils - INFO: comparison_retriever_node starts to work
+2026-01-28 23:34:02,212 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-28 23:34:02,215 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 0.92 seconds.

@@ -2,9 +2,9 @@ from langgraph.checkpoint.memory import MemorySaver
 from langgraph.constants import END, START
 from langgraph.graph import StateGraph
 from config.state import State
-from elements.AgentNode import AgentNode
-from elements.StartingIntentionNode import StartingIntentionNode
-from elements.other_nodes import fallback_node, hang_up, starting_reply_node
+from nodes.AgentNode import AgentNode
+from nodes.StartingIntentionNode import StartingIntentionNode
+from nodes.other_nodes import fallback_node, hang_up, starting_reply_node
 from utils.log_utils import log
 
 

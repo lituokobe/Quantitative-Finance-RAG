@@ -1,5 +1,5 @@
 from config.state import State
-from elements.grader_chain import retrieval_grader_chain
+from chains.grader_chain import retrieval_grader_chain
 from utils.log_utils import log
 
 

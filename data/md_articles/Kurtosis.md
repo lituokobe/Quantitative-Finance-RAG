@@ -106,7 +106,7 @@ The first category of kurtosis is mesokurtic distribution. This has a kurtosis s
 
 ### Leptokurtic (kurtosis > 3.0)
 
-The second category is [leptokurtic](https://www.investopedia.com/terms/l/leptokurtic.asp) distribution. Any distribution that's leptokurtic displays greater kurtosis than a mesokurtic distribution. This distribution appears as a curve with long tails or outliers. The “skinniness” of a leptokurtic distribution is a consequence of the outliers that stretch the horizontal axis of the histogram graph, making the bulk of the data appear in a narrow (“skinny”) vertical range.
+The second category is leptokurtic distribution. Any distribution that's leptokurtic displays greater kurtosis than a mesokurtic distribution. This distribution appears as a curve with long tails or outliers. The “skinniness” of a leptokurtic distribution is a consequence of the outliers that stretch the horizontal axis of the histogram graph, making the bulk of the data appear in a narrow (“skinny”) vertical range.
 
 A stock with a leptokurtic distribution generally depicts a high level of risk but the possibility of higher returns because the stock has typically demonstrated large price movements.
 
@@ -116,11 +116,11 @@ A leptokurtic distribution may be “skinny” in the center but it also feature
 
 ### Platykurtic (kurtosis < 3.0)
 
-The final type of distribution is [platykurtic](https://www.investopedia.com/terms/p/platykurtic.asp) distribution. These types of distributions have short tails and fewer outliers. Platykurtic distributions have demonstrated more stability than other curves because extreme price movements have rarely occurred in the past. This translates into a less-than-moderate level of risk.
+The final type of distribution is platykurtic distribution. These types of distributions have short tails and fewer outliers. Platykurtic distributions have demonstrated more stability than other curves because extreme price movements have rarely occurred in the past. This translates into a less-than-moderate level of risk.
 
 ## Kurtosis vs. Skewness
 
-Kurtosis and [skewness](https://www.investopedia.com/terms/s/skewness.asp) are both statistical measures used to describe the shape of a probability distribution but they focus on different aspects. Kurtosis measures the tailedness of a distribution. Skewness measures the asymmetry of a distribution.
+Kurtosis and skewness are both statistical measures used to describe the shape of a probability distribution but they focus on different aspects. Kurtosis measures the tailedness of a distribution. Skewness measures the asymmetry of a distribution.
 
 Skewness indicates the direction and degree to which the data deviates from a symmetrical bell curve. A distribution with zero skewness is perfectly symmetrical. The left and right sides of the distribution are mirror images. Positive skewness means that the right tail is longer or fatter than the left, suggesting that the data tends to have higher values. Negative skewness indicates that the left tail is longer or fatter, implying a tendency toward lower values.
 
@@ -128,27 +128,27 @@ Skewness focuses on the balance of data around the mean but kurtosis focuses on 
 
 ## Using Kurtosis
 
-Kurtosis is used in financial analysis to measure an investment’s risk of price volatility. It measures the amount of [volatility](https://www.investopedia.com/terms/v/volatility.asp) that an investment’s price has experienced regularly. High kurtosis of the return distribution implies that an investment will yield occasional extreme returns. This can swing both ways, however. High kurtosis indicates either large positive returns or extreme negative returns.
+Kurtosis is used in financial analysis to measure an investment’s risk of price volatility. It measures the amount of volatility that an investment’s price has experienced regularly. High kurtosis of the return distribution implies that an investment will yield occasional extreme returns. This can swing both ways, however. High kurtosis indicates either large positive returns or extreme negative returns.
 
 Imagine that a stock had an average price of $25.85 per share. The bell curve would have heavy tails and high kurtosis if the stock’s price swung widely and often enough. There's a lot of variation in the stock price. An investor should anticipate wide price swings often.
 
-A [portfolio](https://www.investopedia.com/terms/p/portfolio.asp) with a low kurtosis value indicates a more stable and predictable return profile which may indicate lower risk. Investors may intentionally seek investments with lower kurtosis values when they're building safer, less volatile portfolios.
+A portfolio with a low kurtosis value indicates a more stable and predictable return profile which may indicate lower risk. Investors may intentionally seek investments with lower kurtosis values when they're building safer, less volatile portfolios.
 
-Kurtosis can also be used to strategically implement an investment allocation approach. A [portfolio manager](https://www.investopedia.com/terms/p/portfoliomanager.asp) who specializes in value investing might prefer to invest in assets with a negative kurtosis value because this indicates a flatter distribution with more frequent small returns. Conversely, a portfolio manager who specializes in momentum investing may prefer to invest in assets with a positive kurtosis value with peaked distributions of less frequent but larger returns.
+Kurtosis can also be used to strategically implement an investment allocation approach. A portfolio manager who specializes in value investing might prefer to invest in assets with a negative kurtosis value because this indicates a flatter distribution with more frequent small returns. Conversely, a portfolio manager who specializes in momentum investing may prefer to invest in assets with a positive kurtosis value with peaked distributions of less frequent but larger returns.
 
 ## Other Commonly Used Measurements
 
-Kurtosis risk differs from more commonly used measurements. [Alpha](https://www.investopedia.com/terms/a/alpha.asp) measures excess return relative to a benchmark index. Kurtosis measures the nature of the peak or flatness of the distribution while alpha measures the skewness or asymmetry of the distribution.
+Kurtosis risk differs from more commonly used measurements. Alpha measures excess return relative to a benchmark index. Kurtosis measures the nature of the peak or flatness of the distribution while alpha measures the skewness or asymmetry of the distribution.
 
-[Beta](https://www.investopedia.com/terms/b/beta.asp) measures the volatility of a stock compared to the broader market. Each security or investment has a single beta that indicates whether that security is more or less volatile compared to a market benchmark. Beta measures the degree of asymmetry of the distribution while kurtosis measures the peak or flatness of the distribution.
+Beta measures the volatility of a stock compared to the broader market. Each security or investment has a single beta that indicates whether that security is more or less volatile compared to a market benchmark. Beta measures the degree of asymmetry of the distribution while kurtosis measures the peak or flatness of the distribution.
 
-[R-squared](https://www.investopedia.com/terms/r/r-squared.asp) measures the percentage of movement within a portfolio or fund that can be explained by a benchmark. R-squared is used in regression analysis to assess the goodness of fit of a regression model but kurtosis is used in descriptive statistics to describe the shape of a distribution.
+R-squared measures the percentage of movement within a portfolio or fund that can be explained by a benchmark. R-squared is used in regression analysis to assess the goodness of fit of a regression model but kurtosis is used in descriptive statistics to describe the shape of a distribution.
 
-The [Sharpe ratio](https://www.investopedia.com/terms/s/sharperatio.asp) compares return to risk. It's used by investors to better understand whether the level of returns they're receiving is commensurate with the level of risk incurred. Kurtosis analyzes the distribution of a dataset. The Sharpe ratio is more commonly used to evaluate investment performance.
+The Sharpe ratio compares return to risk. It's used by investors to better understand whether the level of returns they're receiving is commensurate with the level of risk incurred. Kurtosis analyzes the distribution of a dataset. The Sharpe ratio is more commonly used to evaluate investment performance.
 
 ## Why Is Kurtosis Important?
 
-Kurtosis explains how often observations in some datasets fall in the tails versus the center of a probability distribution. Excess kurtosis in finance and investing is interpreted as a type of risk known as [tail risk](https://www.investopedia.com/terms/t/tailrisk.asp), the chance of a loss occurring due to a rare event as predicted by a probability distribution. The tails are said to be “fat” if such events are more common than predicted by a distribution.
+Kurtosis explains how often observations in some datasets fall in the tails versus the center of a probability distribution. Excess kurtosis in finance and investing is interpreted as a type of risk known as tail risk, the chance of a loss occurring due to a rare event as predicted by a probability distribution. The tails are said to be “fat” if such events are more common than predicted by a distribution.
 
 ## How Is Kurtosis Used in Finance?
 

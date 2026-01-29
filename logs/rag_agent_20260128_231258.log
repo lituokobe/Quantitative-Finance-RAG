@@ -1,0 +1,12 @@
+2026-01-28 23:12:58,130 - log_utils - INFO: comparison_retriever_node starts to work
+2026-01-28 23:12:58,132 - standard_comparison_nodes - ERROR: Error decomposing question at comparison_retriever_node: Expected mapping type as input to ChatPromptTemplate. Received <class 'str'>.
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/INVALID_PROMPT_INPUT 
+2026-01-28 23:12:58,132 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 0.002 seconds.
+2026-01-28 23:12:58,132 - log_utils - INFO: comparison_retriever_node starts to work
+2026-01-28 23:12:58,133 - standard_comparison_nodes - ERROR: Error decomposing question at comparison_retriever_node: Expected mapping type as input to ChatPromptTemplate. Received <class 'str'>.
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/INVALID_PROMPT_INPUT 
+2026-01-28 23:12:58,133 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 0.0 seconds.
+2026-01-28 23:12:58,133 - log_utils - INFO: comparison_retriever_node starts to work
+2026-01-28 23:12:58,133 - standard_comparison_nodes - ERROR: Error decomposing question at comparison_retriever_node: Expected mapping type as input to ChatPromptTemplate. Received <class 'str'>.
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/INVALID_PROMPT_INPUT 
+2026-01-28 23:12:58,133 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 0.0 seconds.

@@ -12,11 +12,11 @@ The Dow Jones Industrial Average (DJIA) is a stock market index that tracks 30 m
 
 ## Decoding the Dow Jones Industrial Average (DJIA)
 
-The DJIA is the second-oldest U.S. market index after the Dow Jones Transportation Average. The DJIA was designed to serve as a proxy for the health of the broader U.S. economy. Often referred to simply as the Dow, it is one of the most-watched stock market indexes in the world. While the Dow includes a range of companies, all can be described as [blue chip](https://www.investopedia.com/terms/b/bluechip.asp) companies with consistently stable earnings.
+The DJIA is the second-oldest U.S. market index after the Dow Jones Transportation Average. The DJIA was designed to serve as a proxy for the health of the broader U.S. economy. Often referred to simply as the Dow, it is one of the most-watched stock market indexes in the world. While the Dow includes a range of companies, all can be described as blue chip companies with consistently stable earnings.
 
 In the early 20th century, the performance of industrial companies was typically tied to the overall growth rate in the economy. That cemented the relationship between the Dow's performance and the overall economy. Even today, for many investors, a strong-performing Dow equals a strong economy, while a weak-performing Dow generally means a slowing economy.
 
-The index changes with the economy. Companies that become less relevant are replaced with those that better reflect current trends. For instance, a company may be removed from the index when its [market capitalization](https://www.investopedia.com/terms/m/marketcapitalization.asp) drops because of financial distress.
+The index changes with the economy. Companies that become less relevant are replaced with those that better reflect current trends. For instance, a company may be removed from the index when its market capitalization drops because of financial distress.
 
 Stocks with higher share prices are given greater weight in the index. So, a higher percentage move in a higher-priced component will have a greater impact on the final calculated value. Initially, Charles Dow used a simple average for the 12 component stocks. However, as mergers and stock splits occurred, this method became ineffective.
 
@@ -48,7 +48,7 @@ The S&P 500 has outperformed the DJIA on an annualized basis over the last three
 
 The DJIA launched in 1896 with just 12 companies, primarily in the industrial sector. They included railroads, cotton, gas, sugar, tobacco, and oil. The index grew to 30 components by 1928. Since then, it's changed many times—the very first came three months after the 30-component index launched. The first large-scale change was in 1932 when eight stocks in the Dow were replaced.
 
-The Dow undergoes regular reevaluation, and non-compliant companies are replaced by those meeting the criteria. Over time, the index became a [bellwether](https://www.investopedia.com/terms/b/bellwether.asp) of the U.S. economy, reflecting economic changes. For example, U.S. Steel was removed from the index in 1991 and replaced by building material company Martin Marietta.
+The Dow undergoes regular reevaluation, and non-compliant companies are replaced by those meeting the criteria. Over time, the index became a bellwether of the U.S. economy, reflecting economic changes. For example, U.S. Steel was removed from the index in 1991 and replaced by building material company Martin Marietta.
 
 ### The 30 Stocks Listed in the Dow  
 The Dow Jones Industrials in Reverse Order By Market Capitalization
@@ -123,7 +123,7 @@ The following are some important historical milestones achieved by the Dow:
 
 ### Tip
 
-Individuals can invest in the Dow, which would mean gaining exposure to all of the companies listed in it, through exchange-traded funds ([ETFs](https://www.investopedia.com/terms/e/etf.asp)), such as the SPDR Dow Jones Industrial Average ETF ([DIA](https://www.investopedia.com/markets/quote?tvwidgetsymbol=dia)).
+Individuals can invest in the Dow, which would mean gaining exposure to all of the companies listed in it, through exchange-traded funds (ETFs), such as the SPDR Dow Jones Industrial Average ETF (DJIA).
 
 ## Identifying the Limits of the DJIA
 
@@ -131,22 +131,22 @@ Critics say the Dow doesn't fully represent the U.S. economy because it includes
 
 Critics also believe that factoring only the price of a stock in the calculation does not accurately reflect a company, as much as considering a company's market cap would. In this manner, a company with a higher stock price but a smaller market cap would have more weight than a company with a smaller stock price but a larger market cap, which would poorly reflect the true size of a company.
 
-The Dow is also a [price-weighted index](https://www.investopedia.com/terms/p/priceweightedindex.asp) instead of being weighted by market capitalization. This means that stocks in the index with higher share prices have greater influence, even if they are smaller companies overall in terms of market value. In a price-weighted index, a stock that increases from \$110 to \$120 will have the same net effect on the index as a stock that increases from \$10 to \$20, even though the percentage move for the latter is far greater than that of the higher-priced stock. This also means that stock splits can impact the index, while they would not for a [market cap-weighted index](https://www.investopedia.com/terms/c/capitalizationweightedindex.asp).
+The Dow is also a price-weighted index instead of being weighted by market capitalization. This means that stocks in the index with higher share prices have greater influence, even if they are smaller companies overall in terms of market value. In a price-weighted index, a stock that increases from \$110 to \$120 will have the same net effect on the index as a stock that increases from \$10 to \$20, even though the percentage move for the latter is far greater than that of the higher-priced stock. This also means that stock splits can impact the index, while they would not for a [market cap-weighted index](https://www.investopedia.com/terms/c/capitalizationweightedindex.asp).
 
 ### Comparing the DJIA, S&P 500, and Nasdaq Composite Indexes
 
-| Feature                | S&P 500                          | Dow Jones Industrial Average | Nasdaq Composite               |
-|------------------------|----------------------------------|------------------------------|-------------------------------|
-| Number of Components   | 500                              | 30                           | Over 3,000                    |
-| Weighting Method       | Market-cap weighted              | Price-weighted              | Market-cap weighted           |
-| Sector Focus           | Large-cap, cross-sector          | Blue-chip, industrial       | Technology-heavy              |
-| Year Established       | Expanded to 500 companies in 1957| 1896                         | 1971                          |
-| Key ETF                | SPDR S&P 500 ETF Trust (SPY)     | SPDR Dow Jones ETF Trust (DIA)| Invesco QQQ Trust (QQQ)     |
-| Rebalancing Frequency  | Quarterly                        | As needed                   | Quarterly                     |
+| Feature                | S&P 500                          | Dow Jones Industrial Average   | Nasdaq Composite               |
+|------------------------|----------------------------------|--------------------------------|--------------------------------|
+| Number of Components   | 500                              | 30                             | Over 3,000                     |
+| Weighting Method       | Market-cap weighted              | Price-weighted                 | Market-cap weighted            |
+| Sector Focus           | Large-cap, cross-sector          | Blue-chip, industrial          | Technology-heavy               |
+| Year Established       | Expanded to 500 companies in 1957| 1896                           | 1971                           |
+| Key ETF                | SPDR S&P 500 ETF Trust (SPY)     | SPDR Dow Jones ETF Trust (DIA) | Invesco QQQ Trust (QQQ)        |
+| Rebalancing Frequency  | Quarterly                        | As needed                      | Quarterly                      |
 
 ## What Does the Dow Jones Industrial Average Measure?
 
-The DJIA [tracks the price movements](https://www.investopedia.com/ask/answers/050115/what-does-dow-jones-industrial-average-measure.asp) of 30 large companies in the U.S.. Such companies include Microsoft and Home Depot. The selected companies are from all major U.S. sectors, except utilities and transportation.
+The DJIA tracks the price movements of 30 large companies in the U.S.. Such companies include Microsoft and Home Depot. The selected companies are from all major U.S. sectors, except utilities and transportation.
 
 ## When Did the DJIA Top 10,000 for the First Time?
 

@@ -33,6 +33,6 @@ class State(TypedDict):
     - time_cost: float # the processing time of the node
     - user_input: str # original user input, ingested in starting_intention_node
     - question: str # rephrased question, ingested in starting_intention_node
-    - agent_reply: str # agent's reply, ingested by shortcut_retriever_node
+    - agent_reply: str # agent's reply, ingested by shortcut_retriever_node, math_verification_node, calculation_fallback_node, calculation_answer_node
     - retrieved_documents: list[Documents] # ingested by calculation_retriever_node
     """

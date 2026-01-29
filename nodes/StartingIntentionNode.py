@@ -5,6 +5,7 @@ from langchain_core.runnables import RunnableConfig
 from pydantic import BaseModel
 from config.prompts import INTENTION_PROMPT1, INTENTION_PROMPT2, INTENTION_PROMPT3
 from config.state import State
+from utils.build_prompt import build_history_prompt
 from models.models import agent_llm
 from utils.log_utils import log, log_node_start, log_node_end
 from utils.utils import get_last_user_message
@@ -28,37 +29,21 @@ class StartingIntentionNode:
         self.llm_runnable_structured_output = agent_llm.with_structured_output(Intention)
         self.node_name = "starting_intention_node"
 
-    @staticmethod
-    def _build_history_prompt(chat_history:list) -> list:
-        """
-        Manually create the chat history.
-        This is for the convenience to manipulate the position of chat history in the prompt
-        :param chat_history: List of conversation records of LangChain message object.
-        :return: List of the same records but of plan strings.
-        """
-        doc_string_chat_history = []
-        for msg in chat_history:
-            if isinstance(msg, HumanMessage):
-                doc_string_chat_history.append(f"  -[User]: {msg.content}")
-            elif isinstance(msg, AIMessage):
-                doc_string_chat_history.append(f"  -[AI assistant]: {msg.content}")
-        return doc_string_chat_history
-
-    def _infer(self, chat_history:list, user_input:str):
+    def _infer(self, history:list, user_input:str):
         # -------- check the availability of the agent LLM --------
         if not self.llm_runnable_structured_output:
             log.error(f"Agent LLM at {self.node_name} is not ready.")
-            return "fallback_node"
+            return user_input, "fallback_node"
 
         # -------- Formulate the full prompt with dynamic chat data --------
         try:
-            history_prompt = self._build_history_prompt(chat_history)
+            history_prompt = build_history_prompt(history)
             doc_string = INTENTION_PROMPT1 + history_prompt + INTENTION_PROMPT2 + [user_input] + INTENTION_PROMPT3
             full_prompt = "\n".join(doc_string)
             print(f"Full prompt at {self.node_name} to identify intention:\n{full_prompt}")
 
         except Exception as e:
-            log.error(f"Error formulating prompt at {self.node_name} for starting_intention_node: {e}")
+            log.error(f"Error formulating prompt at {self.node_name}: {e}")
             full_prompt = user_input
 
         # -------- Use the agent LLM to identify intention with the full prompt --------
@@ -69,6 +54,7 @@ class StartingIntentionNode:
             return question, decision
         except Exception as e:
             log.error(f"Error generating decision at {self.node_name}: {e}")
+            return user_input, "fallback_node"
 
     def __call__(self, state: State, config: RunnableConfig) -> dict:
         prev_time = time.time()
@@ -82,7 +68,7 @@ class StartingIntentionNode:
         try:
             question, decision = self._infer(messages, user_input)
             time_cost = round(time.time() - prev_time, 3)
-            current_log = {
+            current_log = { # For starting nodes, no need to include previous node's log
                 "node": "starting_intention_node",
                 "time_cost": time_cost,
                 "user_input": user_input,
@@ -91,7 +77,7 @@ class StartingIntentionNode:
             log_node_end(self.node_name, time_cost)
             return {
                 "dialog_state": decision,
-                "logs": state["logs"] + [current_log] # For starting nodes, no need to include previous node's log
+                "logs": state["logs"] + [current_log]
             }
         except Exception as e:
             log.error(f"{self.node_name} has error: {e}")

@@ -2,15 +2,18 @@ from langgraph.checkpoint.memory import MemorySaver
 from langgraph.constants import END, START
 from langgraph.graph import StateGraph
 from config.state import State
-from elements.calculation_nodes import calculation_retriever_node
-from elements.document_grader_node import document_grader_node
-from elements.StartingIntentionNode import StartingIntentionNode
-from elements.other_nodes import starting_reply_node, rewrite_query_node, web_search_node, fallback_node, hang_up, \
+from nodes.calculation_nodes import calculation_retriever_node, calculation_fallback_node, \
+    calculation_answer_node, MathVerificationNode, retriever_node
+from nodes.document_grader_node import document_grader_node
+from nodes.StartingIntentionNode import StartingIntentionNode
+from nodes.other_nodes import starting_reply_node, rewrite_query_node, web_search_node, fallback_node, hang_up, \
     generate_node, reply_with_generation_node
-
-from elements.route_functions import start_route, starting_intention_route, grade_documents_route, generate_node_route, \
-    shortcut_retriever_route, calculation_retriever_route
-from elements.shortcut_nodes import ShortcutRetrieverNode
+from nodes.standard_comparison_nodes import ComparisonRetrieverNode
+from routes.calculation_routes import math_verification_route, calculation_retriever_route
+from routes.route_functions import grade_documents_route, generate_node_route, \
+    shortcut_retriever_route
+from nodes.shortcut_nodes import ShortcutRetrieverNode
+from routes.starting_routes import start_route, starting_intention_route
 from utils.log_utils import log
 
 def build_adaptive_rag_graph():
@@ -20,6 +23,8 @@ def build_adaptive_rag_graph():
 
     starting_intention_node = StartingIntentionNode()
     shortcut_retriever_node = ShortcutRetrieverNode()
+    math_verification_node = MathVerificationNode()
+    comparison_retriever_node = ComparisonRetrieverNode()
 
     # add starting nodes
     graph.add_node("starting_reply_node", starting_reply_node)
@@ -30,16 +35,19 @@ def build_adaptive_rag_graph():
     graph.add_node("calculation_retriever_node", calculation_retriever_node)
     graph.add_node("math_verification_node", math_verification_node)
     graph.add_node("calculation_fallback_node", calculation_fallback_node)
+    graph.add_node("calculation_answer_node", calculation_answer_node)
     # add comparison nodes
     graph.add_node("comparison_retriever_node", comparison_retriever_node)
+
+    # add standard nodes
     graph.add_node("standard_retriever_node", standard_retriever_node)
-    graph.add_node("fallback_node", fallback_node)
     graph.add_node("retriever_node", retriever_node)
     graph.add_node("document_grader_node", document_grader_node)
     graph.add_node("rewrite_query_node", rewrite_query_node)
     graph.add_node("generate_node", generate_node)
     graph.add_node("reply_with_generation_node", reply_with_generation_node)
     graph.add_node("web_search_node", web_search_node)
+    graph.add_node("fallback_node", fallback_node)
     graph.add_node("hang_up", hang_up)
 
     # add edges
@@ -56,8 +64,21 @@ def build_adaptive_rag_graph():
             "fallback":"fallback_node"
         }
     )
+    # add shortcut edges
     graph.add_conditional_edges("shortcut_retriever_node", shortcut_retriever_route)
+    # add calculation edges
     graph.add_conditional_edges("calculation_retriever_node", calculation_retriever_route)
+    graph.add_conditional_edges(
+        "math_verification__node",
+        math_verification_route,
+        {
+            "good":"calculation_answer_node",
+            "missing_info":END,
+            "others":"calculation_fallback_node"
+        }
+    )
+    graph.add_edge("calculation_answer_node", END)
+    graph.add_edge("calculation_fallback_node", END)
 
     graph.add_edge("retriever_node", "document_grader_node")
 

@@ -16,9 +16,9 @@ The term "discount rate" has dual significance in financial analysis. Firstly, i
 
 ## How the Federal Reserve Implements the Discount Rate
 
-U.S. commercial banks can borrow short-term funds by either using the market-driven [interbank rate](https://www.investopedia.com/terms/i/interbankrate.asp), which requires no collateral, or by borrowing from the [Federal Reserve Bank](https://www.investopedia.com/terms/f/federalreservebank.asp).
+U.S. commercial banks can borrow short-term funds by either using the market-driven interbank rate, which requires no collateral, or by borrowing from the Federal Reserve Bank.
 
-Federal Reserve loans, processed through its [12 regional branches](https://www.investopedia.com/articles/investing/061515/what-do-federal-reserve-banks-do.asp), help financial institutions cover cash shortfalls, address liquidity issues, or, in critical situations, prevent bank failures. This Fed-offered lending facility is known as the discount window.
+Federal Reserve loans, processed through its 12 regional branches, help financial institutions cover cash shortfalls, address liquidity issues, or, in critical situations, prevent bank failures. This Fed-offered lending facility is known as the discount window.
 
 These loans are very short-term, often 24 hours or less, and carry an interest rate set by the Federal Reserve Board of Governors.
 
@@ -35,11 +35,11 @@ The Fed determines the discount rates for the first two tiers independently. The
 
 ### Important
 
-All three types of the Federal Reserve's discount window loans are [collateralized](https://www.investopedia.com/terms/c/collateral.asp)​. The bank needs to maintain a certain level of security or collateral against the loan. Emergency credit may require collateral, but it's based on circumstances and the Fed's vote.
+All three types of the Federal Reserve's discount window loans are collateralized. The bank needs to maintain a certain level of security or collateral against the loan. Emergency credit may require collateral, but it's based on circumstances and the Fed's vote.
 
 ### Practical Applications of the Fed’s Discount Rate
 
-Banks use the Fed’s discount window mainly when market [lenders](https://www.investopedia.com/terms/l/lender.asp) are unavailable. The Fed-offered discount rates are available at relatively high-interest rates compared to the interbank borrowing rates to discourage using the discount window too often.
+Banks use the Fed’s discount window mainly when market lenders are unavailable. The Fed-offered discount rates are available at relatively high-interest rates compared to the interbank borrowing rates to discourage using the discount window too often.
 
 The discount window is mainly for emergencies, and borrowing from it can signal financial trouble to others.
 
@@ -59,19 +59,19 @@ Most commonly, the Fed's discount window loans are overnight only, but the loan 
 
 ## Applying the Discount Rate in Cash Flow Analysis
 
-The same term, discount rate, is used in discounted cash flow analysis. DCF is used to estimate the value of an investment based on its expected future cash flows. Based on the concept of the time value of money, DCF analysis helps assess the viability of a project or investment by calculating the present value of expected future cash flows [using a discount rate](https://www.investopedia.com/ask/answers/031315/how-do-i-calculate-discount-rate-over-time-using-excel.asp).
+The same term, discount rate, is used in discounted cash flow analysis. DCF is used to estimate the value of an investment based on its expected future cash flows. Based on the concept of the time value of money, DCF analysis helps assess the viability of a project or investment by calculating the present value of expected future cash flows using a discount rate.
 
-Such an analysis begins with an estimate of the investment that a proposed project will require. Then, the future [returns](https://www.investopedia.com/terms/r/return.asp) it is expected to generate are considered. Using the discount rate, it is possible to calculate the current value of any future cash flows. The project is considered viable if the net [present value (PV)](https://www.investopedia.com/terms/p/presentvalue.asp) is positive. If it is negative, the project isn't worth the investment.
+Such an analysis begins with an estimate of the investment that a proposed project will require. Then, the future returns it is expected to generate are considered. Using the discount rate, it is possible to calculate the current value of any future cash flows. The project is considered viable if the net present value (PV) is positive. If it is negative, the project isn't worth the investment.
 
-In DCF analysis, the discount rate is the interest rate used to find the present value. For instance, investing \$100 today at a 10% interest rate grows to \$110. In other words, \$110, which is the [future value (FV)](https://www.investopedia.com/terms/f/futurevalue.asp), when discounted by the rate of 10%, is worth \$100 (present value) as of today.
+In DCF analysis, the discount rate is the interest rate used to find the present value. For instance, investing \$100 today at a 10% interest rate grows to \$110. In other words, \$110, which is the future value (FV), when discounted by the rate of 10%, is worth \$100 (present value) as of today.
 
 If one knows (or can reasonably predict) all such future cash flows (like the future value of \$110), then, using a particular discount rate, the present value of such an investment can be obtained.
 
 ## What Is the Right Discount Rate to Use?
 
-What is the appropriate discount rate to use for an investment or a business project? While investing in standard assets, like treasury bonds, the [risk-free rate](https://www.investopedia.com/terms/r/risk-freerate.asp) of return—generally considered the interest rate on the three-month Treasury bill—is often used as the discount rate.
+What is the appropriate discount rate to use for an investment or a business project? While investing in standard assets, like treasury bonds, the risk-free rate of return—generally considered the interest rate on the three-month Treasury bill—is often used as the discount rate.
 
-On the other hand, if a business is assessing the viability of a potential project, the [weighted average cost of capital (WACC)](https://www.investopedia.com/terms/w/wacc.asp) may be used as a discount rate. This is the average cost the company pays for capital from borrowing or selling equity.
+On the other hand, if a business is assessing the viability of a potential project, the weighted average cost of capital (WACC) may be used as a discount rate. This is the average cost the company pays for capital from borrowing or selling equity.
 
 In either case, the net present value of all cash flows should be positive if the investment or project is to get the green light.
 
@@ -116,7 +116,7 @@ So, in this case, the discount rate is 3.631%.
 
 ## What Effect Does a Higher Discount Rate Have on the Time Value of Money?
 
-The discount rate reduces future cash flows, so the [higher the discount rate](https://www.investopedia.com/ask/answers/013015/how-does-high-discount-rate-affect-economy.asp), the lower the present value of the future cash flows. A lower discount rate leads to a higher present value. As this implies, when the discount rate is higher, money in the future will be worth less than it is today—meaning it will have less purchasing power.
+The discount rate reduces future cash flows, so the higher the discount rate, the lower the present value of the future cash flows. A lower discount rate leads to a higher present value. As this implies, when the discount rate is higher, money in the future will be worth less than it is today—meaning it will have less purchasing power.
 
 ## How Is Discounted Cash Flow Calculated?
 
@@ -128,11 +128,11 @@ There are three steps to calculating the DCF of an investment:
 
 ## How Do You Choose the Appropriate Discount Rate?
 
-The discount rate used depends on the type of analysis undertaken. When considering an investment, the investor should use the [opportunity cost](https://www.investopedia.com/terms/o/opportunitycost.asp)of putting their money to work elsewhere as an appropriate discount rate. That is the rate of return that the investor could earn in the marketplace on an investment of comparable size and risk.
+The discount rate used depends on the type of analysis undertaken. When considering an investment, the investor should use the opportunity cost of putting their money to work elsewhere as an appropriate discount rate. That is the rate of return that the investor could earn in the marketplace on an investment of comparable size and risk.
 
-A business can select the best discount rate, like an opportunity cost-based rate, [its weighted average cost of capital](https://www.investopedia.com/ask/answers/013015/what-does-high-weighted-average-cost-capital-wacc-signify.asp), or returns from a similar project. In some cases, using the risk-free rate may be most appropriate.
+A business can select the best discount rate, like an opportunity cost-based rate, its weighted average cost of capital, or returns from a similar project. In some cases, using the risk-free rate may be most appropriate.
 
 ## The Bottom Line
 
-The discount rate is the lending rate at the Federal Reserve's discount window, where banks can get a loan if they can't secure funding from another bank on the market. A discount rate is also [calculated to make business or investing decisions](https://www.investopedia.com/ask/answers/052715/what-difference-between-cost-capital-and-discount-rate.asp) using the discounted cash flow model.
+The discount rate is the lending rate at the Federal Reserve's discount window, where banks can get a loan if they can't secure funding from another bank on the market. A discount rate is also calculated to make business or investing decisions using the discounted cash flow model.
 

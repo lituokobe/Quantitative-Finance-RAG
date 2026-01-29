@@ -3,45 +3,17 @@ from langchain_core.messages import AIMessage
 from langgraph.constants import END
 
 from config.state import State
-from elements.answer_grader_chain import answer_grader_chain
-from elements.hallucination_grader_chain import hallucination_grader_chain
+from chains.answer_grader_chain import answer_grader_chain
+from chains.hallucination_grader_chain import hallucination_grader_chain
 from utils.log_utils import log
 
 
-def start_route(state: State) -> str:
-    dialog_state = state.get("dialog_state", [])
-    if not dialog_state:  # At the beginning, send to the first node
-        return "starting_reply_node"
-    elif dialog_state[-1] == "hang_up":
-        return END
-    else:
-        return dialog_state[-1]
-
-# -------- Create the route function after starting node --------
-def starting_intention_route(state: State) -> str:
-    dialog_state = state.get("dialog_state", [])
-    if not dialog_state:
-        return "fallback"
-    # Get the last dialog state from stating_intention_node
-    last_dialog_state: str = dialog_state[-1]
-
-    # If no last dialog state is empty string or not regular
-    if not last_dialog_state or last_dialog_state not in [
-        "shortcut_agent",
-        "calculation_agent",
-        "comparison_agent",
-        "standard_agent",
-        "fallback"
-    ]:
-        return "fallback"
-    return last_dialog_state
-
 # -------- Create the route function after shortcut retriever node --------
 def shortcut_retriever_route(state: State):
-    dialog_state = state.get("dialog_state", [])
-    if not dialog_state:
+    dialog_states = state.get("dialog_state", [])
+    if not dialog_states:
         return "starting_intention_node" # safety check, should not happen
-    last_dialog_state: str = dialog_state[-1] # should also be starting intention node
+    last_dialog_state: str = dialog_states[-1] # should also be starting intention node
 
     messages = state.get("messages", [])
     if not messages:
@@ -55,18 +27,6 @@ def shortcut_retriever_route(state: State):
     if not last_message_content: # meaning the shortcut_retriever_node can't answer the question
         return last_dialog_state
     return END #shortcut_retriever_node has a reply, go to end first to output the reply and let user speak. But next round will start from starting_intention_node as well.
-
-# -------- Create the route function after calculation retriever node --------
-def calculation_retriever_route(state: State):
-    logs = state.get("logs", [])
-    if not logs:
-        return "calculation_fallback_node" # safety check, should not happen
-    last_log: dict = logs[-1] # should also be starting intention node
-
-    retrieved_documents = last_log.get("retrieved_documents", [])
-    if not retrieved_documents:
-        return "calculation_fallback_node" # safety check
-    return "math_verification_node"
 
 # -------- Create the route function after grading documents --------
 def grade_documents_route(state: State):

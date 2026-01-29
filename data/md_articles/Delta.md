@@ -2,7 +2,7 @@
 
 ## What Is Delta?
 
-Delta is a risk metric that estimates the change in the price of a derivative, such as an options contract, given a \$1 change in its [underlying security](https://www.investopedia.com/terms/u/underlying-security.asp). It is represented by the symbol $\Delta$. The delta also tells options traders the hedging ratio to become delta neutral.
+Delta is a risk metric that estimates the change in the price of a derivative, such as an options contract, given a \$1 change in its underlying security. It is represented by the symbol $\Delta$. The delta also tells options traders the hedging ratio to become delta neutral.
 
 A third interpretation of an option's delta is the probability that it will finish in the money. Delta values can be positive or negative depending on the type of option.
 
@@ -33,7 +33,7 @@ Delta spreading is an options trading strategy where the trader initially establ
 
 Using a delta spread, a trader usually expects to make a small profit if the underlying security does not change widely in price. However, larger gains or losses are possible if the stock moves significantly in either direction.
 
-The most common tool for implementing a delta spread strategy is an option trade known as a [calendar spread.](https://www.investopedia.com/terms/c/calendarspread.asp) The calendar spread involves constructing a [delta-neutral](https://www.investopedia.com/terms/d/deltaneutral.asp) position using options with different expiration dates.
+The most common tool for implementing a delta spread strategy is an option trade known as a calendar spread. The calendar spread involves constructing a delta-neutral position using options with different expiration dates.
 
 For instance, a trader sells near-month call options and buys call options at the same time with a later expiration in proportion to their neutral ratio. Since the position is delta-neutral, the trader should not experience gains or losses from small price moves in the underlying security. The trader expects the price to remain unchanged, and as the near-month calls lose time value and expire, the trader can sell the call options with longer expiration dates and net a profit.
 
@@ -61,15 +61,15 @@ Put option delta behaviors also depend on whether the option is:
 - At-the-money, which typically has a delta of -0.5
 - Out-of-the-money, which approaches 0 as expiration approaches
 
-The deeper in the money the put option, the closer the delta will be to -1. If a put option has a delta of -0.33, and the price of the underlying asset increases by \$1, the price of the put option will decrease by 33 cents. Technically, the value of the option's delta is the first derivative of the value of the option with respect to the underlying security's price. Delta is often used in [hedging](https://www.investopedia.com/terms/h/hedge.asp) strategies and is also referred to as a [hedge ratio](https://www.investopedia.com/terms/h/hedgeratio.asp).
+The deeper in the money the put option, the closer the delta will be to -1. If a put option has a delta of -0.33, and the price of the underlying asset increases by \$1, the price of the put option will decrease by 33 cents. Technically, the value of the option's delta is the first derivative of the value of the option with respect to the underlying security's price. Delta is often used in hedging strategies and is also referred to as a hedge ratio.
 
 ### Fast Fact
 
-An option's [gamma](https://www.investopedia.com/terms/g/gamma.asp) is its change in delta given a \$1 change in the underlying security.
+An option's gamma is its change in delta given a \$1 change in the underlying security.
 
 ## Examples of Delta
 
-Let's assume there is a [publicly traded company](https://www.investopedia.com/terms/p/publiccompany.asp) called BigCorp. Shares of its stock are bought and sold on a stock exchange, and there are put options and call options traded for those shares.
+Let's assume there is a publicly traded company called BigCorp. Shares of its stock are bought and sold on a stock exchange, and there are put options and call options traded for those shares.
 
 The delta for the call option on BigCorp shares is 0.35. That means that a \$1 change in the price of BigCorp stock generates a 35-cent increase in the price of BigCorp call options. Thus, if BigCorp’s shares trade at \$20 and the call option trades at \$2, a change in the price of BigCorp’s shares to \$21 means the call option will increase to a price of \$2.35.
 
@@ -100,4 +100,3 @@ Being long a share of stock is always +1.0 delta, and being short stock a delta 
 Derivatives are financial contracts whose value depends on an underlying security or benchmark. These contracts can be used to trade any type of security, including stocks, commodities, and currencies.
 
 But they do come with certain risks. Traders who deal with derivatives should understand these risks and how to measure them. For instance, knowing how to interpret delta can mean the difference between realizing gains and losses. Remember, delta is a risk metric that indicates changes in a derivative's price based on the price of the underlying security.
-
