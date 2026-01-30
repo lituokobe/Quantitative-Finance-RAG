@@ -1,4 +1,6 @@
 from typing import TypedDict, Annotated
+
+from langchain_core.documents import Document
 from langgraph.graph import add_messages
 
 # Reducer function to edit ChatState
@@ -36,3 +38,10 @@ class State(TypedDict):
     - agent_reply: str # agent's reply, ingested by shortcut_retriever_node, math_verification_node, calculation_fallback_node, calculation_answer_node
     - retrieved_documents: list[Documents] # ingested by calculation_retriever_node
     """
+
+class ChildState(TypedDict):
+    question: str
+    retrieved_documents: list
+    filtered_docs: list
+    rewrite_count: int
+    web_results: Document
