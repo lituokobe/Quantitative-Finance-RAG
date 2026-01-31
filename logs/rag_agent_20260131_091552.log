@@ -1,0 +1,3 @@
+2026-01-31 09:15:52,227 - log_utils - INFO: child graph - web_search_node starts to work
+2026-01-31 09:15:55,001 - child_graph_nodes - ERROR: child graph - web_search_node has error searching web result on question "What is Black Scholes Model?": string indices must be integers, not 'str'
+2026-01-31 09:15:55,001 - log_utils - INFO: child graph - web_search_node finishes working, time costed: 2.775 seconds.

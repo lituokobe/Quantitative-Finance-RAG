@@ -54,7 +54,7 @@ class StartingIntentionNode:
             return question, decision
         except Exception as e:
             log.error(f"Error generating decision at {self.node_name}: {e}")
-            return user_input, "fallback_node"
+            raise # Need to raise error as the conversation cannot continue
 
     def __call__(self, state: State, config: RunnableConfig) -> dict:
         prev_time = time.time()
@@ -65,23 +65,19 @@ class StartingIntentionNode:
         user_input = get_last_user_message(messages)
 
         # -------- Rephrase the user input and identify intention --------
-        try:
-            question, decision = self._infer(messages, user_input)
-            time_cost = round(time.time() - prev_time, 3)
-            current_log = { # For starting nodes, no need to include previous node's log
-                "node": "starting_intention_node",
-                "time_cost": time_cost,
-                "user_input": user_input,
-                "question": question,
-            }
-            log_node_end(self.node_name, time_cost)
-            return {
-                "dialog_state": decision,
-                "logs": state["logs"] + [current_log]
-            }
-        except Exception as e:
-            log.error(f"{self.node_name} has error: {e}")
-            raise
+        question, decision = self._infer(messages, user_input)
+        time_cost = round(time.time() - prev_time, 3)
+        current_log = { # For starting nodes, no need to include previous node's log
+            "node": "starting_intention_node",
+            "time_cost": time_cost,
+            "user_input": user_input,
+            "question": question,
+        }
+        log_node_end(self.node_name, time_cost)
+        return {
+            "dialog_state": decision,
+            "logs": state["logs"] + [current_log]
+        }
 
 if __name__ == "__main__":
     intention_identifier = StartingIntentionNode()

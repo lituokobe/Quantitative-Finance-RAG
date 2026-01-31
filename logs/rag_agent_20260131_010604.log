@@ -1,0 +1,52 @@
+2026-01-31 01:06:04,290 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-01-31 01:06:04,294 - log_utils - INFO: child graph - retriever_node starts to work
+2026-01-31 01:06:04,311 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-31 01:06:04,328 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-01-31 01:06:04,328 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-01-31 01:06:04,566 - child_graph_nodes - ERROR: child graph - retriever_node has error on retrieving documents for question "What is put option?": <MilvusException: (code=1, message=Unexpected error, message=<required argument is not a float>)>
+2026-01-31 01:06:04,566 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.273 seconds.
+2026-01-31 01:06:04,567 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-01-31 01:06:04,567 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-01-31 01:06:04,567 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 0.0 seconds.
+2026-01-31 01:06:04,568 - route_functions - INFO: --- Assess graded docs ---
+2026-01-31 01:06:04,568 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions ---
+2026-01-31 01:06:04,568 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-01-31 01:06:06,263 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 01:06:06,279 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 1.711 seconds.
+2026-01-31 01:06:06,280 - log_utils - INFO: child graph - retriever_node starts to work
+2026-01-31 01:06:06,280 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-31 01:06:06,326 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-01-31 01:06:06,326 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-01-31 01:06:06,936 - child_graph_nodes - ERROR: child graph - retriever_node has error on retrieving documents for question "**Original Question:**  
+What is put option?
+
+**Optimized Version for Answer-Retrieval in a Vector Database:**  
+Definition of a put option in financial markets.
+
+**Explanation:**  
+The original question is a simple definition request. To optimize it for retrieval in a vector database, we rephrase it to be more specific and aligned with how such information is typically stored and queried. Using "definition" and specifying the context ("financial markets") helps the system identify relevant documents or embeddings that contain the precise meaning of a put option.": <MilvusException: (code=1, message=Unexpected error, message=<required argument is not a float>)>
+2026-01-31 01:06:06,936 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.657 seconds.
+2026-01-31 01:06:06,937 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-01-31 01:06:06,937 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-01-31 01:06:06,937 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 0.0 seconds.
+2026-01-31 01:06:06,937 - route_functions - INFO: --- Assess graded docs ---
+2026-01-31 01:06:06,937 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions ---
+2026-01-31 01:06:06,937 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-01-31 01:06:07,489 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 01:06:07,492 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 0.555 seconds.
+2026-01-31 01:06:07,494 - log_utils - INFO: child graph - retriever_node starts to work
+2026-01-31 01:06:07,495 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-31 01:06:07,538 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-01-31 01:06:07,538 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-01-31 01:06:07,856 - child_graph_nodes - ERROR: child graph - retriever_node has error on retrieving documents for question "**Optimized Version for Answer-Retrieval in a Vector Database:**  
+What is the definition of a put option in finance?": <MilvusException: (code=1, message=Unexpected error, message=<required argument is not a float>)>
+2026-01-31 01:06:07,856 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.362 seconds.
+2026-01-31 01:06:07,856 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-01-31 01:06:07,856 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-01-31 01:06:07,856 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 0.0 seconds.
+2026-01-31 01:06:07,856 - route_functions - INFO: --- Assess graded docs ---
+2026-01-31 01:06:07,856 - route_functions - INFO: --- Decision: all documents are not relevant, and looped twice, need to do web search ---
+2026-01-31 01:06:07,857 - log_utils - INFO: child graph - web_search_node starts to work
+2026-01-31 01:06:10,571 - child_graph_nodes - ERROR: child graph - web_search_node has error searching web result on question "**Optimized Version for Answer-Retrieval in a Vector Database:**  
+What is the definition of a put option in finance?": string indices must be integers, not 'str'
+2026-01-31 01:06:10,572 - log_utils - INFO: child graph - web_search_node finishes working, time costed: 2.715 seconds.

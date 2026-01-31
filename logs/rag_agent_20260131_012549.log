@@ -1,0 +1,37 @@
+2026-01-31 01:25:49,285 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-01-31 01:25:49,290 - log_utils - INFO: child graph - retriever_node starts to work
+2026-01-31 01:25:49,306 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-31 01:25:49,320 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-01-31 01:25:49,320 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-01-31 01:25:49,625 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.335 seconds.
+2026-01-31 01:25:49,626 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-01-31 01:25:50,074 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 01:25:50,092 - DocumentGraderNode - INFO: Retrieved document Black-Scholes Model: What It Is, How It Works, and the Options Formula is relevant
+2026-01-31 01:25:50,450 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 01:25:50,454 - DocumentGraderNode - INFO: Retrieved document What Is the Black-Scholes Model?
+
+The Black-Scholes model, also known as the Black-Scholes-Merton (BSM) model, is one of the most important concepts in modern financial theory. It helps [traders and investors](https://www.investopedia.com/best-online-brokers-4587872) determine the fair value of an options contract.
+
+This mathematical equation estimates the theoretical value of derivatives based on other investment instruments. It considers the impact of time and other risk factors in its calculation.
+
+It was developed in 1973 and is still regarded as one of the best ways to price an options contract. is relevant
+2026-01-31 01:25:51,319 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 01:25:51,326 - DocumentGraderNode - INFO: Retrieved document How the Binomial Option Pricing Model Works is NOT relevant, dump it.
+2026-01-31 01:25:51,843 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 01:25:51,844 - DocumentGraderNode - INFO: Retrieved document What Are the Limitations of the Black-Scholes Model?
+
+The Black-Scholes model is only used to price European options. It doesn't take into account that American options could be exercised before the expiration date. The model also assumes that dividends, volatility, and risk-free rates remain constant over the option's life. Not taking taxes, commissions, or trading costs into account can also lead to valuations that deviate from real-world results. is NOT relevant, dump it.
+2026-01-31 01:25:52,255 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 01:25:52,259 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- The Black-Scholes model is also known as the Black-Scholes-Merton or BSM model.
+- It's a differential equation that's widely used to price options contracts.
+- The Black-Scholes model requires five input variables: the strike price of an option, the current stock price, the time to expiration, the risk-free rate, and the volatility.
+- The Black-Scholes model is usually accurate, but it makes certain assumptions that can lead to predictions that deviate from real-world results.
+- The standard BSM model is only used to price European options because it doesn't take into account that American options could be exercised before the expiration date. is relevant
+2026-01-31 01:25:52,620 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 01:25:52,622 - DocumentGraderNode - INFO: Retrieved document Exploring the Types of Options: Calls and Puts is NOT relevant, dump it.
+2026-01-31 01:25:52,622 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-01-31 01:25:52,622 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 2.996 seconds.
+2026-01-31 01:25:52,622 - route_functions - INFO: --- Assess graded docs ---
+2026-01-31 01:25:52,622 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph---

@@ -3,12 +3,11 @@ from langgraph.constants import END, START
 from langgraph.graph import StateGraph
 from config.state import State
 from nodes.calculation_nodes import calculation_retriever_node, calculation_fallback_node, \
-    calculation_answer_node, MathVerificationNode, retriever_node
-from nodes.document_grader_node import document_grader_node
+    calculation_answer_node, MathVerificationNode
 from nodes.StartingIntentionNode import StartingIntentionNode
-from nodes.other_nodes import starting_reply_node, rewrite_query_node, web_search_node, fallback_node, hang_up, \
-    generate_node, reply_with_generation_node
-from nodes.standard_comparison_nodes import ComparisonRetrieverNode
+from nodes.child_graph_nodes import rewrite_query_node
+from nodes.other_nodes import starting_reply_node, fallback_node, hang_up, generate_node, reply_with_generation_node
+from nodes.standard_comparison_nodes import ComparisonRetrieverNode, StandardRetrieverNode
 from routes.calculation_routes import math_verification_route, calculation_retriever_route
 from routes.route_functions import grade_documents_route, generate_node_route, \
     shortcut_retriever_route
@@ -21,32 +20,35 @@ def build_adaptive_rag_graph():
     # -------- Build the graph --------
     graph = StateGraph(State)
 
+    # prepare nodes
     starting_intention_node = StartingIntentionNode()
     shortcut_retriever_node = ShortcutRetrieverNode()
     math_verification_node = MathVerificationNode()
     comparison_retriever_node = ComparisonRetrieverNode()
+    standard_retriever_node = StandardRetrieverNode()
 
     # add starting nodes
     graph.add_node("starting_reply_node", starting_reply_node)
     graph.add_node("starting_intention_node", starting_intention_node)
+
     # add shortcut nodes
     graph.add_node("shortcut_retriever_node", shortcut_retriever_node)
+
     # add calculation nodes
     graph.add_node("calculation_retriever_node", calculation_retriever_node)
     graph.add_node("math_verification_node", math_verification_node)
     graph.add_node("calculation_fallback_node", calculation_fallback_node)
     graph.add_node("calculation_answer_node", calculation_answer_node)
+
     # add comparison nodes
     graph.add_node("comparison_retriever_node", comparison_retriever_node)
 
     # add standard nodes
     graph.add_node("standard_retriever_node", standard_retriever_node)
-    graph.add_node("retriever_node", retriever_node)
-    graph.add_node("document_grader_node", document_grader_node)
+
     graph.add_node("rewrite_query_node", rewrite_query_node)
     graph.add_node("generate_node", generate_node)
     graph.add_node("reply_with_generation_node", reply_with_generation_node)
-    graph.add_node("web_search_node", web_search_node)
     graph.add_node("fallback_node", fallback_node)
     graph.add_node("hang_up", hang_up)
 

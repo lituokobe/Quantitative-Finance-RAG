@@ -1,0 +1,6 @@
+2026-01-31 01:21:12,853 - log_utils - INFO: child graph - retriever_node starts to work
+2026-01-31 01:21:12,875 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-31 01:21:12,895 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-01-31 01:21:12,895 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-01-31 01:21:13,187 - child_graph_nodes - ERROR: child graph - retriever_node has error on retrieving documents for question "What is Black Scholes Model?": <MilvusException: (code=1, message=Unexpected error, message=<required argument is not a float>)>
+2026-01-31 01:21:13,187 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.334 seconds.

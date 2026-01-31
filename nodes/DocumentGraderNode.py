@@ -19,22 +19,27 @@ class DocumentGraderNode:
         structured_llm_grader = agent_llm.with_structured_output(GradeDocuments)
 
         grader_system_prompt = """
-        You are a grader to identify the relevancy between retrieved documents and the question.  
-
-        If one document includes keywords, key points, or meanings from the question, they are considered relevant.  
-
-        The evaluation doesn't need to be strict. The objective is to filter out inappropriate retrieved documents.  
-
+        ## === YOUR ROLE ===
+        You are a grader to identify the relevancy between retrieved documents and the question.
+        
+        ## === YOUR CORE TASK ===
+        You will be given a question and the retrieved document to answer this question. 
+        If the document provide helpful information to answer the question, or at least, covers any concepts in the question, it is considered relevant.  
+        This evaluation doesn't need to be strict. The objective is to filter out inappropriate or totally irrelevant retrieved documents.  
         You MUST respond in JSON format matching this schema:
         {{
           "relevancy": "yes" | "no"
         }}
+        
+        ## === IMPORTANT RULES ===
+        - STRICTLY follow the output instruction. ONLY output one JSON according to the requirements. Don't output any other data types, or any other key-value pairs in the JSON.
+        - Don't conduct any conversation and don't answer any question. Never output any extra content.
         """
 
         grader_prompt = ChatPromptTemplate.from_messages(
             [
                 ("system", grader_system_prompt),
-                ("human", "Retrieved document: \n\n{document} \n\n Question: {question}")
+                ("human", "**Question:** \n{question} \n\n **Retrieved document:** \n{document}")
             ]
         )
 

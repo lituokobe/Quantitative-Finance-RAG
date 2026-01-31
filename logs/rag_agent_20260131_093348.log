@@ -1,0 +1,109 @@
+2026-01-31 09:33:48,894 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-01-31 09:33:48,898 - log_utils - INFO: child graph - retriever_node starts to work
+2026-01-31 09:33:48,916 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-31 09:33:48,938 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-01-31 09:33:48,938 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-01-31 09:33:49,298 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.401 seconds.
+2026-01-31 09:33:49,299 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-01-31 09:33:49,746 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:49,766 - DocumentGraderNode - INFO: Retrieved document What Is MACD? is NOT relevant, dump it.
+2026-01-31 09:33:50,303 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:50,307 - DocumentGraderNode - INFO: Retrieved document Frequently Asked Questions (FAQs) is NOT relevant, dump it.
+2026-01-31 09:33:50,815 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:50,823 - DocumentGraderNode - INFO: Retrieved document What Is Inflation? is NOT relevant, dump it.
+2026-01-31 09:33:51,121 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:51,126 - DocumentGraderNode - INFO: Retrieved document Is Volatility a Good Thing?
+
+Whether volatility is good or bad depends on what kind of trader you are and what your risk appetite is. For long-term investors, volatility can spell trouble, but for day traders and options traders, volatility often equals trading opportunities. is NOT relevant, dump it.
+2026-01-31 09:33:51,422 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:51,424 - DocumentGraderNode - INFO: Retrieved document Exponential Moving Average (EMA): Definition, Formula, and Usage is NOT relevant, dump it.
+2026-01-31 09:33:51,736 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:51,740 - DocumentGraderNode - INFO: Retrieved document Market Index: Definition, How Indexing Works, Types, and Examples is NOT relevant, dump it.
+2026-01-31 09:33:52,054 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:52,057 - DocumentGraderNode - INFO: Retrieved document What Is an Error Term?
+
+An error term shows the difference between what a model predicts and what actually happens. It exists because models can’t capture every factor that affects the outcome. Also called the residual or disturbance, it’s usually represented by symbols like *e*, *ε*, or *u* in equations. is NOT relevant, dump it.
+2026-01-31 09:33:52,058 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-01-31 09:33:52,058 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 2.758 seconds.
+2026-01-31 09:33:52,058 - route_functions - INFO: --- Assess graded docs ---
+2026-01-31 09:33:52,058 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions ---
+2026-01-31 09:33:52,059 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-01-31 09:33:52,378 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:52,379 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 0.32 seconds.
+2026-01-31 09:33:52,379 - log_utils - INFO: child graph - retriever_node starts to work
+2026-01-31 09:33:52,380 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-31 09:33:52,399 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-01-31 09:33:52,399 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-01-31 09:33:52,533 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.154 seconds.
+2026-01-31 09:33:52,534 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-01-31 09:33:52,966 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:52,970 - DocumentGraderNode - INFO: Retrieved document What Is an Error Term?
+
+An error term shows the difference between what a model predicts and what actually happens. It exists because models can’t capture every factor that affects the outcome. Also called the residual or disturbance, it’s usually represented by symbols like *e*, *ε*, or *u* in equations. is NOT relevant, dump it.
+2026-01-31 09:33:53,495 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:53,499 - DocumentGraderNode - INFO: Retrieved document What Is MACD? is NOT relevant, dump it.
+2026-01-31 09:33:53,800 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:53,801 - DocumentGraderNode - INFO: Retrieved document Explain Like I'm 5
+
+An income statement is like a company's financial report card.
+
+It shows what the business earned (revenue), what it spent (expenses), and what's left (profit or loss) during a specific accounting period.
+
+The income statement answers the bottom-line question: Did the company make or lose money? is NOT relevant, dump it.
+2026-01-31 09:33:54,166 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:54,169 - DocumentGraderNode - INFO: Retrieved document Frequently Asked Questions (FAQs) is NOT relevant, dump it.
+2026-01-31 09:33:55,013 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:55,016 - DocumentGraderNode - INFO: Retrieved document Is Net Income Before Taxes or After?
+
+Net income is what a business or individual makes after taxes, deductions, and other expenses are taken out. In business, net income is what a company has left after all expenses are subtracted, including taxes, wages, and the cost of goods. is NOT relevant, dump it.
+2026-01-31 09:33:55,526 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:55,530 - DocumentGraderNode - INFO: Retrieved document Exponential Moving Average (EMA): Definition, Formula, and Usage is NOT relevant, dump it.
+2026-01-31 09:33:55,831 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:55,833 - DocumentGraderNode - INFO: Retrieved document What Is the Consumer Price Index (CPI)? is NOT relevant, dump it.
+2026-01-31 09:33:56,242 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:56,245 - DocumentGraderNode - INFO: Retrieved document What Is Inflation? is NOT relevant, dump it.
+2026-01-31 09:33:56,245 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-01-31 09:33:56,245 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.712 seconds.
+2026-01-31 09:33:56,246 - route_functions - INFO: --- Assess graded docs ---
+2026-01-31 09:33:56,246 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions ---
+2026-01-31 09:33:56,247 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-01-31 09:33:56,564 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:56,566 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 0.319 seconds.
+2026-01-31 09:33:56,566 - log_utils - INFO: child graph - retriever_node starts to work
+2026-01-31 09:33:56,566 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-31 09:33:56,589 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-01-31 09:33:56,589 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-01-31 09:33:56,757 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.191 seconds.
+2026-01-31 09:33:56,758 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-01-31 09:33:57,209 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:57,352 - DocumentGraderNode - INFO: Retrieved document What Is the International Capital Asset Pricing Model (ICAPM)?
+
+The international capital asset pricing model (ICAPM) is a financial model that applies the traditional CAPM principle to international investments. It extends CAPM by considering the direct and indirect exposure to foreign currency in addition to time value and market risk included in the CAPM. is NOT relevant, dump it.
+2026-01-31 09:33:58,356 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:58,431 - DocumentGraderNode - INFO: Retrieved document What Is MACD? is NOT relevant, dump it.
+2026-01-31 09:33:58,748 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:58,749 - DocumentGraderNode - INFO: Retrieved document Black-Scholes Model: What It Is, How It Works, and the Options Formula is NOT relevant, dump it.
+2026-01-31 09:33:59,208 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:59,217 - DocumentGraderNode - INFO: Retrieved document Frequently Asked Questions (FAQs) is NOT relevant, dump it.
+2026-01-31 09:33:59,622 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:33:59,625 - DocumentGraderNode - INFO: Retrieved document Market Index: Definition, How Indexing Works, Types, and Examples is NOT relevant, dump it.
+2026-01-31 09:34:00,031 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:34:00,035 - DocumentGraderNode - INFO: Retrieved document What Does a Lot of Variation Mean in a Stochastic Model?
+
+Stochastic models are all about calculating and predicting an outcome based on volatility and variability. The more variation in a stochastic model is reflected in the number of input variables. is NOT relevant, dump it.
+2026-01-31 09:34:00,440 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:34:00,443 - DocumentGraderNode - INFO: Retrieved document What Is the Binomial Option Pricing Model?
+
+The binomial option pricing model is a flexible and intuitive method for valuing options. It breaks down the lifespan of an option into discrete periods and handles complex scenarios effectively.
+
+The model, developed in the 1970s by economists John Cox, Stephen Ross, and Mark Rubinstein, offers a simpler alternative to the famous Black-Scholes formula.
+
+The binomial option pricing model accommodates American-style options and provides a visual framework for decision making at various stages. is NOT relevant, dump it.
+2026-01-31 09:34:00,757 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 09:34:00,758 - DocumentGraderNode - INFO: Retrieved document Examples of ITM Options is NOT relevant, dump it.
+2026-01-31 09:34:00,758 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-01-31 09:34:00,758 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 4.0 seconds.
+2026-01-31 09:34:00,759 - route_functions - INFO: --- Assess graded docs ---
+2026-01-31 09:34:00,759 - route_functions - INFO: --- Decision: all documents are not relevant, and looped twice, need to do web search ---
+2026-01-31 09:34:00,760 - log_utils - INFO: child graph - web_search_node starts to work
+2026-01-31 09:34:02,393 - log_utils - INFO: child graph - web_search_node finishes working, time costed: 1.633 seconds.

@@ -1,10 +1,9 @@
 from typing import TypedDict, Annotated
-
 from langchain_core.documents import Document
 from langgraph.graph import add_messages
 
-# Reducer function to edit ChatState
-def update_dialog_stack(left: list[str], right: str | None)->list[str]:
+# Reducer function to edit dialog_state in ChatState
+def update_dialog_state(left: list[str], right: str | None)->list[str]:
     """
     Update the dialog state stack
     :param left: current state stack
@@ -25,10 +24,10 @@ def update_dialog_stack(left: list[str], right: str | None)->list[str]:
 class State(TypedDict):
     messages: Annotated[list[dict], add_messages]
     dialog_state: Annotated[
-        list[str | None],
-        update_dialog_stack
+        list[str],
+        update_dialog_state
     ]
-    logs: list[dict | None]
+    logs: list[dict]
     """
     Structure of one dict item in logs
     - node: str # the node outputting this item
@@ -36,7 +35,7 @@ class State(TypedDict):
     - user_input: str # original user input, ingested in starting_intention_node
     - question: str # rephrased question, ingested in starting_intention_node
     - agent_reply: str # agent's reply, ingested by shortcut_retriever_node, math_verification_node, calculation_fallback_node, calculation_answer_node
-    - retrieved_documents: list[Documents] # ingested by calculation_retriever_node
+    - retrieved_documents: list[Documents] # ingested by calculation_retriever_node, comparison_retriever_node, standard_retriever_node
     """
 
 class ChildState(TypedDict):

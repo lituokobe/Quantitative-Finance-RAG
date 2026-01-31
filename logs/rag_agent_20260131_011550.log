@@ -1,0 +1,43 @@
+2026-01-31 01:15:51,028 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-01-31 01:15:51,031 - log_utils - INFO: child graph - retriever_node starts to work
+2026-01-31 01:15:51,047 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-31 01:15:51,064 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-01-31 01:15:51,064 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-01-31 01:15:51,926 - child_graph_nodes - ERROR: child graph - retriever_node has error on retrieving documents for question "What is Black Scholes Model?": <MilvusException: (code=1, message=Unexpected error, message=<required argument is not a float>)>
+2026-01-31 01:15:51,926 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.894 seconds.
+2026-01-31 01:15:51,927 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-01-31 01:15:51,927 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-01-31 01:15:51,927 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 0.0 seconds.
+2026-01-31 01:15:51,927 - route_functions - INFO: --- Assess graded docs ---
+2026-01-31 01:15:51,927 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions ---
+2026-01-31 01:15:51,927 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-01-31 01:15:52,496 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 01:15:52,512 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 0.584 seconds.
+2026-01-31 01:15:52,513 - log_utils - INFO: child graph - retriever_node starts to work
+2026-01-31 01:15:52,513 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-31 01:15:52,536 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-01-31 01:15:52,537 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-01-31 01:15:53,068 - child_graph_nodes - ERROR: child graph - retriever_node has error on retrieving documents for question "What is the Black Scholes Model?": <MilvusException: (code=1, message=Unexpected error, message=<required argument is not a float>)>
+2026-01-31 01:15:53,068 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.556 seconds.
+2026-01-31 01:15:53,069 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-01-31 01:15:53,069 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-01-31 01:15:53,069 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 0.0 seconds.
+2026-01-31 01:15:53,069 - route_functions - INFO: --- Assess graded docs ---
+2026-01-31 01:15:53,069 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions ---
+2026-01-31 01:15:53,069 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-01-31 01:15:53,414 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-31 01:15:53,415 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 0.346 seconds.
+2026-01-31 01:15:53,415 - log_utils - INFO: child graph - retriever_node starts to work
+2026-01-31 01:15:53,415 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-01-31 01:15:53,435 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-01-31 01:15:53,435 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-01-31 01:15:53,776 - child_graph_nodes - ERROR: child graph - retriever_node has error on retrieving documents for question "What is the Black-Scholes model?": <MilvusException: (code=1, message=Unexpected error, message=<required argument is not a float>)>
+2026-01-31 01:15:53,776 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.361 seconds.
+2026-01-31 01:15:53,776 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-01-31 01:15:53,776 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-01-31 01:15:53,776 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 0.0 seconds.
+2026-01-31 01:15:53,776 - route_functions - INFO: --- Assess graded docs ---
+2026-01-31 01:15:53,776 - route_functions - INFO: --- Decision: all documents are not relevant, and looped twice, need to do web search ---
+2026-01-31 01:15:53,777 - log_utils - INFO: child graph - web_search_node starts to work
+2026-01-31 01:15:56,085 - child_graph_nodes - ERROR: child graph - web_search_node has error searching web result on question "What is the Black-Scholes model?": string indices must be integers, not 'str'
+2026-01-31 01:15:56,085 - log_utils - INFO: child graph - web_search_node finishes working, time costed: 2.308 seconds.

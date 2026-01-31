@@ -1,0 +1,9 @@
+2026-01-31 00:59:08,773 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-01-31 00:59:08,776 - log_utils - INFO: child graph - retriever_node starts to work
+2026-01-31 00:59:18,837 - child_graph_nodes - ERROR: child graph - retriever_node has error on retrieving documents for question "What is put option?": <MilvusException: (code=2, message=Fail connecting to server on 127.0.0.1:19530, illegal connection params or server unavailable)>
+2026-01-31 00:59:18,838 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 10.061 seconds.
+2026-01-31 00:59:18,838 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-01-31 00:59:18,839 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-01-31 00:59:18,839 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 0.0 seconds.
+2026-01-31 00:59:18,839 - route_functions - INFO: --- Assess graded docs ---
+2026-01-31 00:59:18,839 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions ---
