@@ -52,6 +52,7 @@ class StartingIntentionNode:
             question: str = resp.question
             decision: str = resp.decision
             print(f"User question after considering chat history: {question}")
+            print(f"Decision made: {decision}")
             return question, decision
         except Exception as e:
             log.error(f"Error generating decision at {self.node_name}: {e}")

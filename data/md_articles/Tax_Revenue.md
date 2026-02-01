@@ -16,15 +16,15 @@ In the U.S., Social Security payments are not categorized as taxes. They are "co
 
 ## Understanding Tax Revenue
 
-In the United States, tax revenue is comprised of funds collected by federal, state, and local governments through taxes on income and profits, sales, and [use taxes](https://www.investopedia.com/terms/u/use-tax.asp) levied on goods and services. State and local taxes may also be imposed on the ownership and transfer of property.
+In the United States, tax revenue is comprised of funds collected by federal, state, and local governments through taxes on income and profits, sales, and use taxes levied on goods and services. State and local taxes may also be imposed on the ownership and transfer of property.
 
-Additional federal tax revenue is received through payroll taxes including Social Security contributions mandated by the [Federal Insurance Contributions Act](https://www.investopedia.com/terms/f/fica.asp) (FICA) and unemployment tax required by the [Federal Unemployment Tax Act](https://www.investopedia.com/terms/f/federal-unemployment-tax-act-futa.asp) (FUTA). These, however, may be categorized as contributions, not taxes, as they are meant to be returned to the individual in the form of benefits. States also impose Medicare taxes and payroll taxes. such as state unemployment taxes that can partially offset FUTA levies.
+Additional federal tax revenue is received through payroll taxes including Social Security contributions mandated by the Federal Insurance Contributions Act (FICA) and unemployment tax required by the Federal Unemployment Tax Act (FUTA). These, however, may be categorized as contributions, not taxes, as they are meant to be returned to the individual in the form of benefits. States also impose Medicare taxes and payroll taxes. such as state unemployment taxes that can partially offset FUTA levies.
 
 At the federal level, the income tax is by far the largest source of government revenue.
 
 There are miscellaneous smaller sources of revenue, such as the proceeds of federal auctions of spectrum rights for broadcast and wifi use, and entrance fees collected at national parks.
 
-Many countries rely less on income taxes than the U.S. does. They collect more of their revenue from [consumption taxes](https://www.investopedia.com/terms/c/consumption-tax.asp), usually imposed as [value-added taxes](https://www.investopedia.com/terms/v/valueaddedtax.asp) (VATs) on goods and services and taxes that directly support social welfare programs such as universal healthcare.
+Many countries rely less on income taxes than the U.S. does. They collect more of their revenue from consumption taxes, usually imposed as value-added taxes (VATs) on goods and services and taxes that directly support social welfare programs such as universal healthcare.
 
 ### Fast Fact
 
@@ -34,7 +34,7 @@ Low or no state income tax doesn't mean tax-free. Florida has no state income ta
 
 ### U.S. Federal Taxes
 
-Generally, U.S. income taxes apply to money that is received from any source, including wages, salaries, rents, investment gains, [licensing](https://www.investopedia.com/terms/l/licensing-revenue.asp) royalties, gambling winnings, and any other income unless expressly excluded. The U.S. imposes both individual and corporate income taxes.
+Generally, U.S. income taxes apply to money that is received from any source, including wages, salaries, rents, investment gains, licensing royalties, gambling winnings, and any other income unless expressly excluded. The U.S. imposes both individual and corporate income taxes.
 
 U.S. tax law provides extensive, special rules for determining the tax rate on income from different sources and from different types of business activities. Income taxes are not owed on the value of gifts, inheritances, or qualified educational scholarships. However, donors' and decedents’ estates are liable for gift and estate taxes on substantial transfers.
 
@@ -74,7 +74,7 @@ The U.S. relies primarily on individual income taxes for revenue. Individual inc
 
 Social insurance taxes accounted for 37% of the total tax revenue while consumption taxes amounted to about 2%. The corporate income tax accounted for only a little under 9%.
 
-Among the 38 countries (including the United States) that comprise the [Organisation for Economic Co-operation and Development](https://www.investopedia.com/terms/o/oecd.asp) (OECD), the U.S. is the only nation that does not have a VAT tax.
+Among the 38 countries (including the United States) that comprise the Organisation for Economic Co-operation and Development (OECD), the U.S. is the only nation that does not have a VAT tax.
 
 In 2021, the simple percentage average of total revenue by source for all 38 OECD countries including the U.S. was: consumption taxes (VAT, excise taxes, and sales and use taxes), 32.1% of total tax revenue; social insurance taxes, 25.7%; individual income taxes, 23.9%; and property taxes, 5.6%. Corporate income taxes accounted for 9.8%.
 
@@ -103,4 +103,3 @@ The federal government collected about \$5 trillion in revenue during the 2022 f
 ## The Bottom Line
 
 The U.S. tax system is a rare if not unique example of a federal government funded mostly by individual income taxes. Most nations rely on a value-added tax, or VAT, that taxes products at each stage of their production, including their final sale. Many of those nations also have income taxes but they make a relatively small contribution to total revenue.
-

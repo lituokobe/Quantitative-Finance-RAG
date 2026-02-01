@@ -1,0 +1,638 @@
+2026-02-01 23:52:26,094 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-01 23:52:26,096 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-01 23:52:26,098 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-01 23:52:26,103 - log_utils - INFO: starting_reply_node starts to work
+2026-02-01 23:52:26,103 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-01 23:52:35,722 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 23:52:36,507 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:52:36,530 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.808 seconds.
+2026-02-01 23:52:36,531 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-01 23:52:36,533 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 23:52:36,567 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:52:36,590 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 23:52:36,590 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 23:52:36,991 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.458 seconds.
+2026-02-01 23:52:36,992 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 23:52:37,428 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:52:37,444 - DocumentGraderNode - INFO: Retrieved document Understanding Lognormal vs. Normal Distributions in Financial Analysis
+
+Lognormal and normal distributions can help you analyze investments accurately. [Lognormal](https://www.investopedia.com/terms/l/log-normal-distribution.asp) distributions are often used to model stock prices, which can’t fall below zero and tend to grow exponentially. [Normal distributions](https://www.investopedia.com/terms/n/normaldistribution.asp) are commonly applied to portfolio returns, which can fluctuate above and below an average. Choosing the correct distribution method can help you make more reliable predictions and informed financial decisions. is relevant
+2026-02-01 23:52:37,753 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:52:37,755 - DocumentGraderNode - INFO: Retrieved document Understanding Normal Distribution: Key Concepts and Financial Uses is NOT relevant, dump it.
+2026-02-01 23:52:38,181 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:52:38,184 - DocumentGraderNode - INFO: Retrieved document What Are the Limitations of the Normal Distribution in Finance?
+
+Although normal distribution is a statistical concept, its applications in finance can be limited because financial phenomena—such as expected stock-market returns—do not fall neatly within a normal distribution. Prices tend to follow more of a [log-normal distribution](https://www.investopedia.com/articles/investing/102014/lognormal-and-normal-distribution.asp), right-skewed and with fatter tails. Therefore, relying too heavily on a bell curve when making predictions can lead to unreliable results. Although most analysts are well aware of this limitation, it is relatively difficult to overcome this shortcoming because it is often unclear which statistical distribution to use as an alternative. is relevant
+2026-02-01 23:52:38,752 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:52:38,756 - DocumentGraderNode - INFO: Retrieved document This skewness is important in determining which distribution is appropriate to use in investment decision-making. A further distinction is that the values used to derive a lognormal distribution are normally distributed.
+
+Let's clarify with an example. An investor wants to know an expected future stock price. Since stocks grow at a compounded rate, they need to use a growth factor.
+
+To calculate possible expected prices, they will take the current stock price and multiply it by various [rates of return](https://www.investopedia.com/terms/r/rateofreturn.asp) (which are mathematically derived [exponential factors](https://www.investopedia.com/terms/e/exponential-growth.asp) based on [compounding](https://www.investopedia.com/terms/c/compounding.asp)), which are assumed to be normally distributed. When the investor continuously compounds the returns, they create a lognormal distribution.
+
+This distribution is always positive even if some of the rates of return are negative, which will happen 50% of the time in a normal distribution. The future stock price will always be positive because stock prices cannot fall below $0. is relevant
+2026-02-01 23:52:39,073 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:52:39,075 - DocumentGraderNode - INFO: Retrieved document What Assumptions Does the Black-Scholes Model Make?
+
+The original Black-Scholes model assumes that the option is a European-style option and can only be exercised at expiration.
+
+It also assumes that no dividends are paid out during the option's life, that market movements follow a random walk and can't be predicted, that there are no transaction costs involved in buying the option, that the risk-free rate and volatility of the underlying option are known and constant, and that the prices of the underlying asset follow a log-normal distribution. is relevant
+2026-02-01 23:52:39,475 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:52:39,479 - DocumentGraderNode - INFO: Retrieved document Understanding the Differences Between Normal and Lognormal Distributions
+
+Both normal and lognormal distributions are used in statistical mathematics to describe the probability of an event occurring. Flipping a coin is an easily understood example of probability. If you flip a coin 1000 times, what is the distribution of results? That is, how many times will it land on heads or tails? There is a 50% probability that it will land on either heads or tails. This basic example describes the probability and distribution of results.
+
+There are many types of distributions, one of which is the normal or bell curve distribution.
+
+In a normal distribution, 68% (34%+34%) of the results fall within one standard deviation, and 95% (68%+13.5%+13.5%) fall within two standard deviations. At the center (the 0 point in the image above) the median (the middle value in the set), the mode (the value that occurs most often), and the [mean](https://www.investopedia.com/terms/m/mean.asp) ([arithmetic average](https://www.investopedia.com/ask/answers/06/geometricmean.asp)) are all the same.
+
+The lognormal distribution differs from the normal distribution in several ways. A major difference is in its shape: the normal distribution is symmetrical, whereas the lognormal distribution is not. Because the values in a lognormal distribution are positive, they create a right-skewed curve. is relevant
+2026-02-01 23:52:39,883 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:52:39,884 - DocumentGraderNode - INFO: Retrieved document What Is Meant By the Normal Distribution?
+
+The normal distribution describes a symmetrical plot of data around its mean value, where the width of the curve is defined by the standard deviation. It is visually depicted as the "bell curve." is NOT relevant, dump it.
+2026-02-01 23:52:39,884 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 23:52:39,884 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 2.893 seconds.
+2026-02-01 23:52:39,885 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 23:52:39,885 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 23:52:39,885 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is log normal distribution?", time costed: 3.353 seconds.
+2026-02-01 23:52:39,885 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 3.354 seconds.
+2026-02-01 23:52:39,885 - log_utils - INFO: generate_node starts to work
+2026-02-01 23:52:41,626 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:52:41,629 - log_utils - INFO: generate_node finishes working, time costed: 1.744 seconds.
+2026-02-01 23:52:41,629 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-01 23:52:42,137 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:52:42,150 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-01 23:52:42,150 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-01 23:52:42,605 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:52:42,619 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-01 23:52:42,620 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-01 23:52:42,620 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-01 23:53:04,390 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 23:53:05,178 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:05,196 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.806 seconds.
+2026-02-01 23:53:05,197 - log_utils - INFO: comparison_retriever_node starts to work
+2026-02-01 23:53:06,053 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:06,071 - standard_comparison_nodes - INFO: comparison_retriever_node decomposes question "Is the log normal distribution different from the normal distribution?", time costed: 0.873 seconds.
+2026-02-01 23:53:06,073 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 23:53:06,074 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:53:06,108 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 23:53:06,108 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 23:53:07,028 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.955 seconds.
+2026-02-01 23:53:07,028 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 23:53:07,361 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:07,365 - DocumentGraderNode - INFO: Retrieved document Understanding Lognormal vs. Normal Distributions in Financial Analysis
+
+Lognormal and normal distributions can help you analyze investments accurately. [Lognormal](https://www.investopedia.com/terms/l/log-normal-distribution.asp) distributions are often used to model stock prices, which can’t fall below zero and tend to grow exponentially. [Normal distributions](https://www.investopedia.com/terms/n/normaldistribution.asp) are commonly applied to portfolio returns, which can fluctuate above and below an average. Choosing the correct distribution method can help you make more reliable predictions and informed financial decisions. is relevant
+2026-02-01 23:53:07,829 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:07,832 - DocumentGraderNode - INFO: Retrieved document Understanding the Differences Between Normal and Lognormal Distributions
+
+Both normal and lognormal distributions are used in statistical mathematics to describe the probability of an event occurring. Flipping a coin is an easily understood example of probability. If you flip a coin 1000 times, what is the distribution of results? That is, how many times will it land on heads or tails? There is a 50% probability that it will land on either heads or tails. This basic example describes the probability and distribution of results.
+
+There are many types of distributions, one of which is the normal or bell curve distribution.
+
+In a normal distribution, 68% (34%+34%) of the results fall within one standard deviation, and 95% (68%+13.5%+13.5%) fall within two standard deviations. At the center (the 0 point in the image above) the median (the middle value in the set), the mode (the value that occurs most often), and the [mean](https://www.investopedia.com/terms/m/mean.asp) ([arithmetic average](https://www.investopedia.com/ask/answers/06/geometricmean.asp)) are all the same.
+
+The lognormal distribution differs from the normal distribution in several ways. A major difference is in its shape: the normal distribution is symmetrical, whereas the lognormal distribution is not. Because the values in a lognormal distribution are positive, they create a right-skewed curve. is relevant
+2026-02-01 23:53:08,283 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:08,286 - DocumentGraderNode - INFO: Retrieved document What Are the Limitations of the Normal Distribution in Finance?
+
+Although normal distribution is a statistical concept, its applications in finance can be limited because financial phenomena—such as expected stock-market returns—do not fall neatly within a normal distribution. Prices tend to follow more of a [log-normal distribution](https://www.investopedia.com/articles/investing/102014/lognormal-and-normal-distribution.asp), right-skewed and with fatter tails. Therefore, relying too heavily on a bell curve when making predictions can lead to unreliable results. Although most analysts are well aware of this limitation, it is relatively difficult to overcome this shortcoming because it is often unclear which statistical distribution to use as an alternative. is relevant
+2026-02-01 23:53:08,629 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:08,633 - DocumentGraderNode - INFO: Retrieved document Understanding Normal Distribution: Key Concepts and Financial Uses is NOT relevant, dump it.
+2026-02-01 23:53:09,131 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:09,139 - DocumentGraderNode - INFO: Retrieved document Key Properties of Normal Distribution Explained
+
+In technical stock market analysis, the normal distribution is commonly assumed. It has [two parameters](https://www.investopedia.com/articles/active-trading/092914/normal-distribution-table-explained.asp): mean and standard deviation. Here, [mean](https://www.investopedia.com/terms/m/mean.asp) (average), [median](https://www.investopedia.com/terms/m/median.asp) (midpoint), and [mode](https://www.investopedia.com/terms/m/mode.asp) (most frequent observation) are equal, creating a symmetrical bell curve centered around the mean.
+
+The normal distribution model is central to the [Central Limit Theorem](https://www.investopedia.com/terms/c/central_limit_theorem.asp) (CLT), which states that the averages of independent, identically distributed variables usually follow a normal distribution, regardless of the original distribution.
+
+The normal distribution is one type of [symmetrical distribution](https://www.investopedia.com/terms/s/symmetrical-distribution.asp). Symmetrical distributions occur when a dividing line produces two mirror images. Not all symmetrical distributions are normal since some data could appear as two humps or a series of hills in addition to the bell curve that indicates a normal distribution. is NOT relevant, dump it.
+2026-02-01 23:53:09,888 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:09,892 - DocumentGraderNode - INFO: Retrieved document This skewness is important in determining which distribution is appropriate to use in investment decision-making. A further distinction is that the values used to derive a lognormal distribution are normally distributed.
+
+Let's clarify with an example. An investor wants to know an expected future stock price. Since stocks grow at a compounded rate, they need to use a growth factor.
+
+To calculate possible expected prices, they will take the current stock price and multiply it by various [rates of return](https://www.investopedia.com/terms/r/rateofreturn.asp) (which are mathematically derived [exponential factors](https://www.investopedia.com/terms/e/exponential-growth.asp) based on [compounding](https://www.investopedia.com/terms/c/compounding.asp)), which are assumed to be normally distributed. When the investor continuously compounds the returns, they create a lognormal distribution.
+
+This distribution is always positive even if some of the rates of return are negative, which will happen 50% of the time in a normal distribution. The future stock price will always be positive because stock prices cannot fall below $0. is relevant
+2026-02-01 23:53:10,248 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:10,250 - DocumentGraderNode - INFO: Retrieved document Why Is the Normal Distribution Called "Normal?"
+
+Known technically as the Gaussian distribution, it was termed "normal" after 19th-century studies showed many natural events "normally deviated" around the mean. Sir Francis Galton popularized this as the "normal curve" in 1889. is NOT relevant, dump it.
+2026-02-01 23:53:10,250 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 23:53:10,250 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.222 seconds.
+2026-02-01 23:53:10,250 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 23:53:10,250 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 23:53:10,251 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "Is the log normal distribution different from the normal distribution?", time costed: 4.18 seconds.
+2026-02-01 23:53:10,252 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 23:53:10,252 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:53:10,276 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 23:53:10,276 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 23:53:10,432 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.18 seconds.
+2026-02-01 23:53:10,432 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 23:53:10,911 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:10,919 - DocumentGraderNode - INFO: Retrieved document Understanding Lognormal vs. Normal Distributions in Financial Analysis
+
+Lognormal and normal distributions can help you analyze investments accurately. [Lognormal](https://www.investopedia.com/terms/l/log-normal-distribution.asp) distributions are often used to model stock prices, which can’t fall below zero and tend to grow exponentially. [Normal distributions](https://www.investopedia.com/terms/n/normaldistribution.asp) are commonly applied to portfolio returns, which can fluctuate above and below an average. Choosing the correct distribution method can help you make more reliable predictions and informed financial decisions. is relevant
+2026-02-01 23:53:11,526 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:11,530 - DocumentGraderNode - INFO: Retrieved document Understanding Normal Distribution: Key Concepts and Financial Uses is NOT relevant, dump it.
+2026-02-01 23:53:12,038 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:12,041 - DocumentGraderNode - INFO: Retrieved document What Are the Limitations of the Normal Distribution in Finance?
+
+Although normal distribution is a statistical concept, its applications in finance can be limited because financial phenomena—such as expected stock-market returns—do not fall neatly within a normal distribution. Prices tend to follow more of a [log-normal distribution](https://www.investopedia.com/articles/investing/102014/lognormal-and-normal-distribution.asp), right-skewed and with fatter tails. Therefore, relying too heavily on a bell curve when making predictions can lead to unreliable results. Although most analysts are well aware of this limitation, it is relatively difficult to overcome this shortcoming because it is often unclear which statistical distribution to use as an alternative. is relevant
+2026-02-01 23:53:12,375 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:12,381 - DocumentGraderNode - INFO: Retrieved document This skewness is important in determining which distribution is appropriate to use in investment decision-making. A further distinction is that the values used to derive a lognormal distribution are normally distributed.
+
+Let's clarify with an example. An investor wants to know an expected future stock price. Since stocks grow at a compounded rate, they need to use a growth factor.
+
+To calculate possible expected prices, they will take the current stock price and multiply it by various [rates of return](https://www.investopedia.com/terms/r/rateofreturn.asp) (which are mathematically derived [exponential factors](https://www.investopedia.com/terms/e/exponential-growth.asp) based on [compounding](https://www.investopedia.com/terms/c/compounding.asp)), which are assumed to be normally distributed. When the investor continuously compounds the returns, they create a lognormal distribution.
+
+This distribution is always positive even if some of the rates of return are negative, which will happen 50% of the time in a normal distribution. The future stock price will always be positive because stock prices cannot fall below $0. is relevant
+2026-02-01 23:53:12,679 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:12,680 - DocumentGraderNode - INFO: Retrieved document What Assumptions Does the Black-Scholes Model Make?
+
+The original Black-Scholes model assumes that the option is a European-style option and can only be exercised at expiration.
+
+It also assumes that no dividends are paid out during the option's life, that market movements follow a random walk and can't be predicted, that there are no transaction costs involved in buying the option, that the risk-free rate and volatility of the underlying option are known and constant, and that the prices of the underlying asset follow a log-normal distribution. is relevant
+2026-02-01 23:53:13,089 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:13,092 - DocumentGraderNode - INFO: Retrieved document Understanding the Differences Between Normal and Lognormal Distributions
+
+Both normal and lognormal distributions are used in statistical mathematics to describe the probability of an event occurring. Flipping a coin is an easily understood example of probability. If you flip a coin 1000 times, what is the distribution of results? That is, how many times will it land on heads or tails? There is a 50% probability that it will land on either heads or tails. This basic example describes the probability and distribution of results.
+
+There are many types of distributions, one of which is the normal or bell curve distribution.
+
+In a normal distribution, 68% (34%+34%) of the results fall within one standard deviation, and 95% (68%+13.5%+13.5%) fall within two standard deviations. At the center (the 0 point in the image above) the median (the middle value in the set), the mode (the value that occurs most often), and the [mean](https://www.investopedia.com/terms/m/mean.asp) ([arithmetic average](https://www.investopedia.com/ask/answers/06/geometricmean.asp)) are all the same.
+
+The lognormal distribution differs from the normal distribution in several ways. A major difference is in its shape: the normal distribution is symmetrical, whereas the lognormal distribution is not. Because the values in a lognormal distribution are positive, they create a right-skewed curve. is relevant
+2026-02-01 23:53:13,432 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:13,433 - DocumentGraderNode - INFO: Retrieved document What Is Meant By the Normal Distribution?
+
+The normal distribution describes a symmetrical plot of data around its mean value, where the width of the curve is defined by the standard deviation. It is visually depicted as the "bell curve." is NOT relevant, dump it.
+2026-02-01 23:53:13,433 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 23:53:13,433 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.001 seconds.
+2026-02-01 23:53:13,433 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 23:53:13,433 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 23:53:13,433 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is the log normal distribution?", time costed: 3.183 seconds.
+2026-02-01 23:53:13,434 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 23:53:13,434 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:53:13,452 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 23:53:13,452 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 23:53:13,553 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.118 seconds.
+2026-02-01 23:53:13,553 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 23:53:13,884 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:13,888 - DocumentGraderNode - INFO: Retrieved document What Is Meant By the Normal Distribution?
+
+The normal distribution describes a symmetrical plot of data around its mean value, where the width of the curve is defined by the standard deviation. It is visually depicted as the "bell curve." is relevant
+2026-02-01 23:53:14,598 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:14,602 - DocumentGraderNode - INFO: Retrieved document What Is a Normal Distribution?
+
+Normal distribution, often referred to as the Gaussian distribution, is fundamental to statistics and finance due to its symmetry around the mean, forming the characteristic "[bell curve](https://www.investopedia.com/terms/b/bell-curve.asp)." This distribution is critical in various financial analyses and decisions where most data points tend to cluster around an average value. The normal distribution is not only the foundation of many statistical theories, such as the Central Limit Theorem, but it is also key in assessing financial market behaviors, helping investors and analysts determine if financial instruments are priced fairly or deviate from expected norms. This article explores the properties, uses, and limitations of normal distributions to aid in informed financial decision-making. is relevant
+2026-02-01 23:53:15,113 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:15,116 - DocumentGraderNode - INFO: Retrieved document Understanding Normal Distribution: Key Concepts and Financial Uses is relevant
+2026-02-01 23:53:15,520 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:15,528 - DocumentGraderNode - INFO: Retrieved document What Are the Limitations of the Normal Distribution in Finance?
+
+Although normal distribution is a statistical concept, its applications in finance can be limited because financial phenomena—such as expected stock-market returns—do not fall neatly within a normal distribution. Prices tend to follow more of a [log-normal distribution](https://www.investopedia.com/articles/investing/102014/lognormal-and-normal-distribution.asp), right-skewed and with fatter tails. Therefore, relying too heavily on a bell curve when making predictions can lead to unreliable results. Although most analysts are well aware of this limitation, it is relatively difficult to overcome this shortcoming because it is often unclear which statistical distribution to use as an alternative. is NOT relevant, dump it.
+2026-02-01 23:53:15,852 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:15,855 - DocumentGraderNode - INFO: Retrieved document The Bottom Line
+
+Normal distribution, also known as the Gaussian distribution, is a probability distribution that appears as a "bell curve" when graphed. The normal distribution describes a symmetrical plot of data around its mean value, where the width of the curve is defined by the standard deviation. is relevant
+2026-02-01 23:53:16,339 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:16,343 - DocumentGraderNode - INFO: Retrieved document Understanding the Differences Between Normal and Lognormal Distributions
+
+Both normal and lognormal distributions are used in statistical mathematics to describe the probability of an event occurring. Flipping a coin is an easily understood example of probability. If you flip a coin 1000 times, what is the distribution of results? That is, how many times will it land on heads or tails? There is a 50% probability that it will land on either heads or tails. This basic example describes the probability and distribution of results.
+
+There are many types of distributions, one of which is the normal or bell curve distribution.
+
+In a normal distribution, 68% (34%+34%) of the results fall within one standard deviation, and 95% (68%+13.5%+13.5%) fall within two standard deviations. At the center (the 0 point in the image above) the median (the middle value in the set), the mode (the value that occurs most often), and the [mean](https://www.investopedia.com/terms/m/mean.asp) ([arithmetic average](https://www.investopedia.com/ask/answers/06/geometricmean.asp)) are all the same.
+
+The lognormal distribution differs from the normal distribution in several ways. A major difference is in its shape: the normal distribution is symmetrical, whereas the lognormal distribution is not. Because the values in a lognormal distribution are positive, they create a right-skewed curve. is relevant
+2026-02-01 23:53:16,343 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 23:53:16,344 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 2.791 seconds.
+2026-02-01 23:53:16,344 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 23:53:16,344 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 23:53:16,345 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is the normal distribution?", time costed: 2.912 seconds.
+2026-02-01 23:53:16,345 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 11.148 seconds.
+2026-02-01 23:53:16,346 - log_utils - INFO: generate_node starts to work
+2026-02-01 23:53:18,285 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:18,289 - log_utils - INFO: generate_node finishes working, time costed: 1.943 seconds.
+2026-02-01 23:53:18,289 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-01 23:53:18,825 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:18,832 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-01 23:53:18,833 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-01 23:53:19,206 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:19,215 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-01 23:53:19,216 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-01 23:53:19,218 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-01 23:53:36,295 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 23:53:37,024 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:37,034 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.739 seconds.
+2026-02-01 23:53:37,035 - log_utils - INFO: comparison_retriever_node starts to work
+2026-02-01 23:53:37,946 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:37,954 - standard_comparison_nodes - INFO: comparison_retriever_node decomposes question "Can you give me the details of the differences between log normal distribution and normal distribution?", time costed: 0.917 seconds.
+2026-02-01 23:53:37,956 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 23:53:37,957 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:53:37,984 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 23:53:37,984 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 23:53:38,202 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.245 seconds.
+2026-02-01 23:53:38,202 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 23:53:38,511 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:38,518 - DocumentGraderNode - INFO: Retrieved document Understanding Lognormal vs. Normal Distributions in Financial Analysis
+
+Lognormal and normal distributions can help you analyze investments accurately. [Lognormal](https://www.investopedia.com/terms/l/log-normal-distribution.asp) distributions are often used to model stock prices, which can’t fall below zero and tend to grow exponentially. [Normal distributions](https://www.investopedia.com/terms/n/normaldistribution.asp) are commonly applied to portfolio returns, which can fluctuate above and below an average. Choosing the correct distribution method can help you make more reliable predictions and informed financial decisions. is relevant
+2026-02-01 23:53:38,892 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:38,896 - DocumentGraderNode - INFO: Retrieved document Understanding the Differences Between Normal and Lognormal Distributions
+
+Both normal and lognormal distributions are used in statistical mathematics to describe the probability of an event occurring. Flipping a coin is an easily understood example of probability. If you flip a coin 1000 times, what is the distribution of results? That is, how many times will it land on heads or tails? There is a 50% probability that it will land on either heads or tails. This basic example describes the probability and distribution of results.
+
+There are many types of distributions, one of which is the normal or bell curve distribution.
+
+In a normal distribution, 68% (34%+34%) of the results fall within one standard deviation, and 95% (68%+13.5%+13.5%) fall within two standard deviations. At the center (the 0 point in the image above) the median (the middle value in the set), the mode (the value that occurs most often), and the [mean](https://www.investopedia.com/terms/m/mean.asp) ([arithmetic average](https://www.investopedia.com/ask/answers/06/geometricmean.asp)) are all the same.
+
+The lognormal distribution differs from the normal distribution in several ways. A major difference is in its shape: the normal distribution is symmetrical, whereas the lognormal distribution is not. Because the values in a lognormal distribution are positive, they create a right-skewed curve. is relevant
+2026-02-01 23:53:39,386 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:39,390 - DocumentGraderNode - INFO: Retrieved document What Are the Limitations of the Normal Distribution in Finance?
+
+Although normal distribution is a statistical concept, its applications in finance can be limited because financial phenomena—such as expected stock-market returns—do not fall neatly within a normal distribution. Prices tend to follow more of a [log-normal distribution](https://www.investopedia.com/articles/investing/102014/lognormal-and-normal-distribution.asp), right-skewed and with fatter tails. Therefore, relying too heavily on a bell curve when making predictions can lead to unreliable results. Although most analysts are well aware of this limitation, it is relatively difficult to overcome this shortcoming because it is often unclear which statistical distribution to use as an alternative. is relevant
+2026-02-01 23:53:39,767 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:39,770 - DocumentGraderNode - INFO: Retrieved document Understanding Normal Distribution: Key Concepts and Financial Uses is NOT relevant, dump it.
+2026-02-01 23:53:40,095 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:40,097 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- Normal distributions are symmetrical and can model outcomes like portfolio returns that can be positive or negative.
+- Lognormal distributions are right-skewed and ideal for modeling stock prices, which can't fall below zero.
+- Stock prices follow a lognormal distribution because they grow at a compounded rate and remain positive.
+- The Black-Scholes model uses lognormal distribution to price options.
+- Choosing between normal and lognormal distribution impacts how investment results and probabilities are analyzed. is relevant
+2026-02-01 23:53:40,606 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:40,608 - DocumentGraderNode - INFO: Retrieved document This skewness is important in determining which distribution is appropriate to use in investment decision-making. A further distinction is that the values used to derive a lognormal distribution are normally distributed.
+
+Let's clarify with an example. An investor wants to know an expected future stock price. Since stocks grow at a compounded rate, they need to use a growth factor.
+
+To calculate possible expected prices, they will take the current stock price and multiply it by various [rates of return](https://www.investopedia.com/terms/r/rateofreturn.asp) (which are mathematically derived [exponential factors](https://www.investopedia.com/terms/e/exponential-growth.asp) based on [compounding](https://www.investopedia.com/terms/c/compounding.asp)), which are assumed to be normally distributed. When the investor continuously compounds the returns, they create a lognormal distribution.
+
+This distribution is always positive even if some of the rates of return are negative, which will happen 50% of the time in a normal distribution. The future stock price will always be positive because stock prices cannot fall below $0. is relevant
+2026-02-01 23:53:40,608 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 23:53:40,608 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 2.406 seconds.
+2026-02-01 23:53:40,608 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 23:53:40,608 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 23:53:40,609 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "Can you give me the details of the differences between log normal distribution and normal distribution?", time costed: 2.655 seconds.
+2026-02-01 23:53:40,610 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 23:53:40,610 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:53:40,630 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 23:53:40,630 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 23:53:40,743 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.133 seconds.
+2026-02-01 23:53:40,743 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 23:53:41,077 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:41,079 - DocumentGraderNode - INFO: Retrieved document Understanding Lognormal vs. Normal Distributions in Financial Analysis
+
+Lognormal and normal distributions can help you analyze investments accurately. [Lognormal](https://www.investopedia.com/terms/l/log-normal-distribution.asp) distributions are often used to model stock prices, which can’t fall below zero and tend to grow exponentially. [Normal distributions](https://www.investopedia.com/terms/n/normaldistribution.asp) are commonly applied to portfolio returns, which can fluctuate above and below an average. Choosing the correct distribution method can help you make more reliable predictions and informed financial decisions. is relevant
+2026-02-01 23:53:41,393 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:41,395 - DocumentGraderNode - INFO: Retrieved document Understanding Normal Distribution: Key Concepts and Financial Uses is NOT relevant, dump it.
+2026-02-01 23:53:41,703 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:41,705 - DocumentGraderNode - INFO: Retrieved document What Are the Limitations of the Normal Distribution in Finance?
+
+Although normal distribution is a statistical concept, its applications in finance can be limited because financial phenomena—such as expected stock-market returns—do not fall neatly within a normal distribution. Prices tend to follow more of a [log-normal distribution](https://www.investopedia.com/articles/investing/102014/lognormal-and-normal-distribution.asp), right-skewed and with fatter tails. Therefore, relying too heavily on a bell curve when making predictions can lead to unreliable results. Although most analysts are well aware of this limitation, it is relatively difficult to overcome this shortcoming because it is often unclear which statistical distribution to use as an alternative. is relevant
+2026-02-01 23:53:42,099 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:42,103 - DocumentGraderNode - INFO: Retrieved document This skewness is important in determining which distribution is appropriate to use in investment decision-making. A further distinction is that the values used to derive a lognormal distribution are normally distributed.
+
+Let's clarify with an example. An investor wants to know an expected future stock price. Since stocks grow at a compounded rate, they need to use a growth factor.
+
+To calculate possible expected prices, they will take the current stock price and multiply it by various [rates of return](https://www.investopedia.com/terms/r/rateofreturn.asp) (which are mathematically derived [exponential factors](https://www.investopedia.com/terms/e/exponential-growth.asp) based on [compounding](https://www.investopedia.com/terms/c/compounding.asp)), which are assumed to be normally distributed. When the investor continuously compounds the returns, they create a lognormal distribution.
+
+This distribution is always positive even if some of the rates of return are negative, which will happen 50% of the time in a normal distribution. The future stock price will always be positive because stock prices cannot fall below $0. is relevant
+2026-02-01 23:53:42,413 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:42,414 - DocumentGraderNode - INFO: Retrieved document What Assumptions Does the Black-Scholes Model Make?
+
+The original Black-Scholes model assumes that the option is a European-style option and can only be exercised at expiration.
+
+It also assumes that no dividends are paid out during the option's life, that market movements follow a random walk and can't be predicted, that there are no transaction costs involved in buying the option, that the risk-free rate and volatility of the underlying option are known and constant, and that the prices of the underlying asset follow a log-normal distribution. is relevant
+2026-02-01 23:53:42,718 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:42,719 - DocumentGraderNode - INFO: Retrieved document Understanding the Differences Between Normal and Lognormal Distributions
+
+Both normal and lognormal distributions are used in statistical mathematics to describe the probability of an event occurring. Flipping a coin is an easily understood example of probability. If you flip a coin 1000 times, what is the distribution of results? That is, how many times will it land on heads or tails? There is a 50% probability that it will land on either heads or tails. This basic example describes the probability and distribution of results.
+
+There are many types of distributions, one of which is the normal or bell curve distribution.
+
+In a normal distribution, 68% (34%+34%) of the results fall within one standard deviation, and 95% (68%+13.5%+13.5%) fall within two standard deviations. At the center (the 0 point in the image above) the median (the middle value in the set), the mode (the value that occurs most often), and the [mean](https://www.investopedia.com/terms/m/mean.asp) ([arithmetic average](https://www.investopedia.com/ask/answers/06/geometricmean.asp)) are all the same.
+
+The lognormal distribution differs from the normal distribution in several ways. A major difference is in its shape: the normal distribution is symmetrical, whereas the lognormal distribution is not. Because the values in a lognormal distribution are positive, they create a right-skewed curve. is relevant
+2026-02-01 23:53:43,015 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:43,017 - DocumentGraderNode - INFO: Retrieved document What Is Meant By the Normal Distribution?
+
+The normal distribution describes a symmetrical plot of data around its mean value, where the width of the curve is defined by the standard deviation. It is visually depicted as the "bell curve." is NOT relevant, dump it.
+2026-02-01 23:53:43,017 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 23:53:43,017 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 2.274 seconds.
+2026-02-01 23:53:43,017 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 23:53:43,017 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 23:53:43,018 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is log normal distribution?", time costed: 2.409 seconds.
+2026-02-01 23:53:43,019 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 23:53:43,019 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:53:43,042 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 23:53:43,042 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 23:53:43,187 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.168 seconds.
+2026-02-01 23:53:43,187 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 23:53:43,607 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:43,610 - DocumentGraderNode - INFO: Retrieved document What Is Meant By the Normal Distribution?
+
+The normal distribution describes a symmetrical plot of data around its mean value, where the width of the curve is defined by the standard deviation. It is visually depicted as the "bell curve." is relevant
+2026-02-01 23:53:43,940 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:43,945 - DocumentGraderNode - INFO: Retrieved document What Is a Normal Distribution?
+
+Normal distribution, often referred to as the Gaussian distribution, is fundamental to statistics and finance due to its symmetry around the mean, forming the characteristic "[bell curve](https://www.investopedia.com/terms/b/bell-curve.asp)." This distribution is critical in various financial analyses and decisions where most data points tend to cluster around an average value. The normal distribution is not only the foundation of many statistical theories, such as the Central Limit Theorem, but it is also key in assessing financial market behaviors, helping investors and analysts determine if financial instruments are priced fairly or deviate from expected norms. This article explores the properties, uses, and limitations of normal distributions to aid in informed financial decision-making. is relevant
+2026-02-01 23:53:44,466 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:44,469 - DocumentGraderNode - INFO: Retrieved document Understanding Normal Distribution: Key Concepts and Financial Uses is relevant
+2026-02-01 23:53:44,830 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:44,833 - DocumentGraderNode - INFO: Retrieved document What Are the Limitations of the Normal Distribution in Finance?
+
+Although normal distribution is a statistical concept, its applications in finance can be limited because financial phenomena—such as expected stock-market returns—do not fall neatly within a normal distribution. Prices tend to follow more of a [log-normal distribution](https://www.investopedia.com/articles/investing/102014/lognormal-and-normal-distribution.asp), right-skewed and with fatter tails. Therefore, relying too heavily on a bell curve when making predictions can lead to unreliable results. Although most analysts are well aware of this limitation, it is relatively difficult to overcome this shortcoming because it is often unclear which statistical distribution to use as an alternative. is NOT relevant, dump it.
+2026-02-01 23:53:45,252 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:45,256 - DocumentGraderNode - INFO: Retrieved document The Bottom Line
+
+Normal distribution, also known as the Gaussian distribution, is a probability distribution that appears as a "bell curve" when graphed. The normal distribution describes a symmetrical plot of data around its mean value, where the width of the curve is defined by the standard deviation. is relevant
+2026-02-01 23:53:45,591 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:45,594 - DocumentGraderNode - INFO: Retrieved document Understanding the Differences Between Normal and Lognormal Distributions
+
+Both normal and lognormal distributions are used in statistical mathematics to describe the probability of an event occurring. Flipping a coin is an easily understood example of probability. If you flip a coin 1000 times, what is the distribution of results? That is, how many times will it land on heads or tails? There is a 50% probability that it will land on either heads or tails. This basic example describes the probability and distribution of results.
+
+There are many types of distributions, one of which is the normal or bell curve distribution.
+
+In a normal distribution, 68% (34%+34%) of the results fall within one standard deviation, and 95% (68%+13.5%+13.5%) fall within two standard deviations. At the center (the 0 point in the image above) the median (the middle value in the set), the mode (the value that occurs most often), and the [mean](https://www.investopedia.com/terms/m/mean.asp) ([arithmetic average](https://www.investopedia.com/ask/answers/06/geometricmean.asp)) are all the same.
+
+The lognormal distribution differs from the normal distribution in several ways. A major difference is in its shape: the normal distribution is symmetrical, whereas the lognormal distribution is not. Because the values in a lognormal distribution are positive, they create a right-skewed curve. is relevant
+2026-02-01 23:53:45,594 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 23:53:45,594 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 2.407 seconds.
+2026-02-01 23:53:45,594 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 23:53:45,594 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 23:53:45,595 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is normal distribution?", time costed: 2.577 seconds.
+2026-02-01 23:53:45,595 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 8.56 seconds.
+2026-02-01 23:53:45,595 - log_utils - INFO: generate_node starts to work
+2026-02-01 23:53:50,313 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:50,314 - log_utils - INFO: generate_node finishes working, time costed: 4.719 seconds.
+2026-02-01 23:53:50,315 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-01 23:53:50,848 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:50,856 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-01 23:53:50,856 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-01 23:53:51,312 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:53:51,321 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-01 23:53:51,322 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-01 23:53:51,324 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-01 23:54:48,136 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 23:54:48,981 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:54:48,990 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.853 seconds.
+2026-02-01 23:54:48,991 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-01 23:54:48,994 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 23:54:48,996 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:54:49,026 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 23:54:49,026 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 23:54:49,902 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.908 seconds.
+2026-02-01 23:54:49,903 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 23:54:50,199 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:54:50,204 - DocumentGraderNode - INFO: Retrieved document Understanding the Great Recession
+
+The term Great Recession is a play on the term Great Depression of the 1930s, when gross domestic product (GDP) declined more than 10%, and unemployment hit 25%.
+
+While no explicit criteria exist to differentiate a depression from a severe recession, there is a near consensus among economists that the downturn of 2007 to 2009 was not a depression. During the Great Recession, U.S. GDP declined by 0.3% from 2008 to 2009, and unemployment briefly reached 10% in October 2009. is relevant
+2026-02-01 23:54:50,636 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:54:50,639 - DocumentGraderNode - INFO: Retrieved document The Great Depression: Overview, Causes, and Effects is NOT relevant, dump it.
+2026-02-01 23:54:51,163 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:54:51,166 - DocumentGraderNode - INFO: Retrieved document Great Recession: What It Was and What Caused It is relevant
+2026-02-01 23:54:51,660 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:54:51,668 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- The Great Recession refers to the economic downturn from 2007 to 2009 after the bursting of the U.S. housing bubble and the global financial crisis.
+- The Great Recession was the most severe economic recession in the United States since the Great Depression of the 1930s.
+- In response to the Great Recession, unprecedented fiscal, monetary, and regulatory policy was unleashed by federal authorities, which some—but not all—credit with the subsequent recovery. is relevant
+2026-02-01 23:54:52,093 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:54:52,098 - DocumentGraderNode - INFO: Retrieved document What Was the Cause of the Great Depression?
+
+The timing of many issues, lack of action by some, and inappropriate reactions by others all contributed to the Great Depression. is NOT relevant, dump it.
+2026-02-01 23:54:52,523 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:54:52,524 - DocumentGraderNode - INFO: Retrieved document Black Monday: Stock Market Crash Causes and Impact is NOT relevant, dump it.
+2026-02-01 23:54:53,004 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:54:53,008 - DocumentGraderNode - INFO: Retrieved document The Bottom Line
+
+The Great Depression was the result of an unlucky combination of factors including a flip-flopping Fed, protectionist tariffs, and inconsistently applied government interventionist efforts. The depression could have been shortened or even avoided by a change in any one of these factors.
+
+The debate continues as to whether the interventions were appropriate. Yet many of the reforms from the New Deal exist to this day. They include Social Security, unemployment insurance, and agricultural subsidies.
+
+The assumption that the federal government should act in times of national economic crisis has become strongly supported. This legacy is one of the reasons why the Great Depression is considered one of the seminal events in modern American history. is NOT relevant, dump it.
+2026-02-01 23:54:53,009 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 23:54:53,009 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.106 seconds.
+2026-02-01 23:54:53,009 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 23:54:53,009 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 23:54:53,011 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is the difference between the 2008 financial crisis and the Great Depression?", time costed: 4.018 seconds.
+2026-02-01 23:54:53,011 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 4.02 seconds.
+2026-02-01 23:54:53,011 - log_utils - INFO: generate_node starts to work
+2026-02-01 23:54:55,258 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:54:55,261 - log_utils - INFO: generate_node finishes working, time costed: 2.25 seconds.
+2026-02-01 23:54:55,262 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-01 23:54:55,667 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:54:55,675 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-01 23:54:55,675 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-01 23:54:56,066 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:54:56,075 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-01 23:54:56,076 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-01 23:54:56,079 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-01 23:55:16,727 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 23:55:17,685 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:17,690 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.963 seconds.
+2026-02-01 23:55:17,691 - log_utils - INFO: comparison_retriever_node starts to work
+2026-02-01 23:55:18,616 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:18,625 - standard_comparison_nodes - INFO: comparison_retriever_node decomposes question "What are the differences between the 2008 financial crisis and the Great Depression?", time costed: 0.933 seconds.
+2026-02-01 23:55:18,628 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 23:55:18,630 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:55:18,660 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 23:55:18,660 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 23:55:19,530 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.902 seconds.
+2026-02-01 23:55:19,531 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 23:55:19,937 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:19,945 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- The Great Recession refers to the economic downturn from 2007 to 2009 after the bursting of the U.S. housing bubble and the global financial crisis.
+- The Great Recession was the most severe economic recession in the United States since the Great Depression of the 1930s.
+- In response to the Great Recession, unprecedented fiscal, monetary, and regulatory policy was unleashed by federal authorities, which some—but not all—credit with the subsequent recovery. is relevant
+2026-02-01 23:55:20,448 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:20,452 - DocumentGraderNode - INFO: Retrieved document Understanding the Great Recession
+
+The term Great Recession is a play on the term Great Depression of the 1930s, when gross domestic product (GDP) declined more than 10%, and unemployment hit 25%.
+
+While no explicit criteria exist to differentiate a depression from a severe recession, there is a near consensus among economists that the downturn of 2007 to 2009 was not a depression. During the Great Recession, U.S. GDP declined by 0.3% from 2008 to 2009, and unemployment briefly reached 10% in October 2009. is relevant
+2026-02-01 23:55:20,960 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:20,963 - DocumentGraderNode - INFO: Retrieved document The Great Depression: Overview, Causes, and Effects is NOT relevant, dump it.
+2026-02-01 23:55:21,452 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:21,456 - DocumentGraderNode - INFO: Retrieved document Great Recession: What It Was and What Caused It is NOT relevant, dump it.
+2026-02-01 23:55:21,985 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:21,988 - DocumentGraderNode - INFO: Retrieved document What Was the Cause of the Great Depression?
+
+The timing of many issues, lack of action by some, and inappropriate reactions by others all contributed to the Great Depression. is NOT relevant, dump it.
+2026-02-01 23:55:22,397 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:22,401 - DocumentGraderNode - INFO: Retrieved document What Has the Great Depression Taught Us?
+
+The Great Depression taught economists, lawmakers, and the Fed how to better deal with the various economic circumstances and taught people how to survive in hard times. is NOT relevant, dump it.
+2026-02-01 23:55:22,402 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 23:55:22,402 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 2.871 seconds.
+2026-02-01 23:55:22,402 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 23:55:22,402 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 23:55:22,404 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What are the differences between the 2008 financial crisis and the Great Depression?", time costed: 3.778 seconds.
+2026-02-01 23:55:22,405 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 23:55:22,406 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:55:22,435 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 23:55:22,435 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 23:55:22,577 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.171 seconds.
+2026-02-01 23:55:22,577 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 23:55:23,030 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:23,036 - DocumentGraderNode - INFO: Retrieved document Fast Fact
+
+Most commonly, the Fed's discount window loans are overnight only, but the loan period can be extended in periods of extreme economic distress, such as the 2008-2009 credit crisis. is relevant
+2026-02-01 23:55:23,362 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:23,365 - DocumentGraderNode - INFO: Retrieved document Great Recession: What It Was and What Caused It is relevant
+2026-02-01 23:55:23,790 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:23,793 - DocumentGraderNode - INFO: Retrieved document The Great Depression: Overview, Causes, and Effects is relevant
+2026-02-01 23:55:24,237 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:24,241 - DocumentGraderNode - INFO: Retrieved document Historical Example: Fed Discount Rate in Action
+
+The use of the Fed's discount window soared in late 2007 and 2008 as financial conditions deteriorated sharply and the central bank took steps to inject liquidity into the financial system.
+
+In August 2007, the Board of Governors cut the primary discount rate from 6.25% to 5.75%, reducing the premium over the Fed funds rate from 1% to 0.5%. In October 2008, the month after Lehman Brothers' collapse, discount window borrowing peaked at \$403.5 billion against the monthly average of \$0.7 billion from 1959 to 2006.
+
+Due to the financial crisis, the board extended loan terms from overnight to 30 days, and later to 90 days in March 2008. Once the economy recovered, those temporary measures were revoked, and the discount rate was reverted to overnight lending only.
+
+The Fed maintains its own discount rate under the discount window program in the U.S. Most central banks across the globe use similar measures, although they vary by area. For instance, the European Central Bank (ECB) offers standing facilities that serve the same purpose. Financial organizations can obtain overnight liquidity from the central bank against the presentation of sufficient eligible assets as collateral. is relevant
+2026-02-01 23:55:24,645 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:24,646 - DocumentGraderNode - INFO: Retrieved document Black Monday: Stock Market Crash Causes and Impact is NOT relevant, dump it.
+2026-02-01 23:55:25,159 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:25,163 - DocumentGraderNode - INFO: Retrieved document Exploring the Nasdaq Composite Index
+
+The term Nasdaq is also used to refer to the Nasdaq Composite. This is an index of more than 2,500 stocks listed on the Nasdaq exchange. This index includes some of the major technology giants, such as:
+
+- Apple (AAPL)
+- Microsoft (MSFT)
+- Alphabet (GOOG, GOOGL)
+- Meta Platforms (META)
+- Amazon (AMZN)
+- Tesla (TSLA)
+
+The Nasdaq Composite closed at a record high of 16,057.44 on Nov. 19, 2021. The index proceeded to drop more than 23% from that point through April 2022. The Nasdaq Composite's 13.3% drop in April 2022 was its steepest monthly decline since losing 17.4% in October 2008 during the global financial crisis. It closed at 13,787.92 on June 30, 2023. is relevant
+2026-02-01 23:55:25,672 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:25,675 - DocumentGraderNode - INFO: Retrieved document Swaps can also be constructed to exchange currency risk or the risk of default on a loan or cash flows from other business activities. Swaps related to the cash flows and potential defaults of mortgage bonds are an extremely popular derivative. In fact, they’ve been a bit too popular in the past. It was this type of counterparty risk of swaps that spiraled into the credit crisis of 2008. is relevant
+2026-02-01 23:55:26,080 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:26,084 - DocumentGraderNode - INFO: Retrieved document What Is Inflation? is NOT relevant, dump it.
+2026-02-01 23:55:26,084 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 23:55:26,084 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.507 seconds.
+2026-02-01 23:55:26,084 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 23:55:26,084 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 23:55:26,086 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is the 2008 financial crisis?", time costed: 3.682 seconds.
+2026-02-01 23:55:26,088 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 23:55:26,088 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:55:26,119 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 23:55:26,120 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 23:55:26,264 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.176 seconds.
+2026-02-01 23:55:26,264 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 23:55:26,695 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:26,699 - DocumentGraderNode - INFO: Retrieved document The Great Depression: Overview, Causes, and Effects is relevant
+2026-02-01 23:55:27,125 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:27,129 - DocumentGraderNode - INFO: Retrieved document What Was the Cause of the Great Depression?
+
+The timing of many issues, lack of action by some, and inappropriate reactions by others all contributed to the Great Depression. is relevant
+2026-02-01 23:55:27,616 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:27,620 - DocumentGraderNode - INFO: Retrieved document What Has the Great Depression Taught Us?
+
+The Great Depression taught economists, lawmakers, and the Fed how to better deal with the various economic circumstances and taught people how to survive in hard times. is relevant
+2026-02-01 23:55:28,089 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:28,092 - DocumentGraderNode - INFO: Retrieved document Great Recession: What It Was and What Caused It is NOT relevant, dump it.
+2026-02-01 23:55:28,485 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:28,489 - DocumentGraderNode - INFO: Retrieved document What Was the Great Depression?
+
+The Great Depression was a devastating and prolonged economic recession that followed the crash of the United States stock market in 1929. It lasted through 1941, the same year that the U.S. entered World War II.
+
+The period was marked by several economic contractions, including the stock market crash of 1929, banking panics in 1930 and 1931. and the Smoot-Hawley Tariff that crashed world trade. Other events and policies helped to prolong the Depression during the 1930s.
+
+Economists and historians often cite the Great Depression as the most significant, if not the most catastrophic, economic event of the 20th century. is relevant
+2026-02-01 23:55:28,907 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:28,908 - DocumentGraderNode - INFO: Retrieved document What Is Inflation? is NOT relevant, dump it.
+2026-02-01 23:55:29,357 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:29,361 - DocumentGraderNode - INFO: Retrieved document Understanding the Great Recession
+
+The term Great Recession is a play on the term Great Depression of the 1930s, when gross domestic product (GDP) declined more than 10%, and unemployment hit 25%.
+
+While no explicit criteria exist to differentiate a depression from a severe recession, there is a near consensus among economists that the downturn of 2007 to 2009 was not a depression. During the Great Recession, U.S. GDP declined by 0.3% from 2008 to 2009, and unemployment briefly reached 10% in October 2009. is relevant
+2026-02-01 23:55:29,868 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:29,875 - DocumentGraderNode - INFO: Retrieved document Understanding Deflation: Causes, Effects, and Economic Insights is relevant
+2026-02-01 23:55:29,875 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 23:55:29,875 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.611 seconds.
+2026-02-01 23:55:29,876 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 23:55:29,876 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 23:55:29,877 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is the Great Depression?", time costed: 3.791 seconds.
+2026-02-01 23:55:29,877 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 12.186 seconds.
+2026-02-01 23:55:29,878 - log_utils - INFO: generate_node starts to work
+2026-02-01 23:55:34,272 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:34,275 - log_utils - INFO: generate_node finishes working, time costed: 4.398 seconds.
+2026-02-01 23:55:34,276 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-01 23:55:34,650 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:34,651 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-01 23:55:34,651 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-01 23:55:35,194 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:55:35,202 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-01 23:55:35,203 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-01 23:55:35,205 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-01 23:56:11,329 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 23:56:12,469 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:56:12,480 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.151 seconds.
+2026-02-01 23:56:12,482 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-01 23:56:12,487 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 23:56:12,491 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:56:12,522 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 23:56:12,522 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 23:56:13,387 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.9 seconds.
+2026-02-01 23:56:13,387 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 23:56:14,311 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:56:14,322 - DocumentGraderNode - INFO: Retrieved document Understanding the Great Recession
+
+The term Great Recession is a play on the term Great Depression of the 1930s, when gross domestic product (GDP) declined more than 10%, and unemployment hit 25%.
+
+While no explicit criteria exist to differentiate a depression from a severe recession, there is a near consensus among economists that the downturn of 2007 to 2009 was not a depression. During the Great Recession, U.S. GDP declined by 0.3% from 2008 to 2009, and unemployment briefly reached 10% in October 2009. is relevant
+2026-02-01 23:56:14,823 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:56:14,828 - DocumentGraderNode - INFO: Retrieved document The Great Depression: Overview, Causes, and Effects is relevant
+2026-02-01 23:56:15,335 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:56:15,338 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- The Great Recession refers to the economic downturn from 2007 to 2009 after the bursting of the U.S. housing bubble and the global financial crisis.
+- The Great Recession was the most severe economic recession in the United States since the Great Depression of the 1930s.
+- In response to the Great Recession, unprecedented fiscal, monetary, and regulatory policy was unleashed by federal authorities, which some—but not all—credit with the subsequent recovery. is relevant
+2026-02-01 23:56:15,744 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:56:15,750 - DocumentGraderNode - INFO: Retrieved document What Was the Cause of the Great Depression?
+
+The timing of many issues, lack of action by some, and inappropriate reactions by others all contributed to the Great Depression. is NOT relevant, dump it.
+2026-02-01 23:56:16,150 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:56:16,154 - DocumentGraderNode - INFO: Retrieved document Great Recession: What It Was and What Caused It is relevant
+2026-02-01 23:56:16,507 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:56:16,511 - DocumentGraderNode - INFO: Retrieved document Ripples from the crash spread across the Atlantic Ocean to Europe, triggering other financial crises such as the collapse of the Boden-Kredit Anstalt, Austria’s most important bank. The economic calamity hit both continents in full force in 1931. is NOT relevant, dump it.
+2026-02-01 23:56:16,849 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:56:16,852 - DocumentGraderNode - INFO: Retrieved document What Has the Great Depression Taught Us?
+
+The Great Depression taught economists, lawmakers, and the Fed how to better deal with the various economic circumstances and taught people how to survive in hard times. is NOT relevant, dump it.
+2026-02-01 23:56:16,853 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 23:56:16,853 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.465 seconds.
+2026-02-01 23:56:16,853 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 23:56:16,853 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 23:56:16,854 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What are the similarities between the 2008 financial crisis and the Great Depression?", time costed: 4.369 seconds.
+2026-02-01 23:56:16,854 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 4.372 seconds.
+2026-02-01 23:56:16,854 - log_utils - INFO: generate_node starts to work
+2026-02-01 23:56:19,323 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:56:19,327 - log_utils - INFO: generate_node finishes working, time costed: 2.473 seconds.
+2026-02-01 23:56:19,328 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-01 23:56:19,652 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:56:19,657 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-01 23:56:19,658 - log_utils - INFO: generate_node starts to work
+2026-02-01 23:56:21,787 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:56:21,790 - log_utils - INFO: generate_node finishes working, time costed: 2.132 seconds.
+2026-02-01 23:56:21,790 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-01 23:56:22,148 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:56:22,152 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-01 23:56:22,152 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-01 23:56:22,504 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:56:22,512 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-01 23:56:22,513 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-01 23:56:22,517 - log_utils - INFO: rely_with_generation_node finishes working.

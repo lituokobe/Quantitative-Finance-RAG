@@ -149,7 +149,6 @@ class MathVerificationNode:
                   f"decision: {decision}/n"
                   f"mising_info_message: {missing_info_message}/n"
                   f"calculation_material: {calculation_material}")
-
             time_cost = round(time.time() - prev_time, 3)
 
             if decision == "good": # pass the calculation material to let calculate_answer_node output

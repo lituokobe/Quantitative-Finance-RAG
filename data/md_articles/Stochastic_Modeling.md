@@ -25,7 +25,7 @@ Stochastic modeling, on the other hand, is inherently random, and the uncertain 
 
 ## Who Uses Stochastic Modeling?
 
-Stochastic modeling is used in a variety of industries around the world. The [insurance](https://www.investopedia.com/terms/i/insurance.asp) industry, for example, relies heavily on stochastic modeling to predict how company balance sheets will look at a given point in the future. Other [sectors](https://www.investopedia.com/terms/s/sector.asp), [industries](https://www.investopedia.com/terms/i/industry.asp), and disciplines that depend on stochastic modeling include stock investing, statistics, linguistics, biology, and quantum physics.
+Stochastic modeling is used in a variety of industries around the world. The insurance industry, for example, relies heavily on stochastic modeling to predict how company balance sheets will look at a given point in the future. Other sectors, industries, and disciplines that depend on stochastic modeling include stock investing, statistics, linguistics, biology, and quantum physics.
 
 ### Important
 
@@ -33,7 +33,7 @@ A stochastic model incorporates random variables to produce many different outco
 
 ## An Example of Stochastic Modeling in Financial Services
 
-Stochastic investment models attempt to forecast the variations of prices, returns on assets (ROA), and asset classes—such as bonds and stocks—over time. The [Monte Carlo simulation](https://www.investopedia.com/terms/m/montecarlosimulation.asp) is one example of a stochastic model; it can simulate how a portfolio may perform based on the probability distributions of individual stock returns.
+Stochastic investment models attempt to forecast the variations of prices, returns on assets (ROA), and asset classes—such as bonds and stocks—over time. The Monte Carlo simulation is one example of a stochastic model; it can simulate how a portfolio may perform based on the probability distributions of individual stock returns.
 
 Stochastic investment models can be either single-asset or multi-asset models, and may be used for financial planning, to optimize asset liability management (ALM) or asset allocation; they are also used for actuarial work.
 
@@ -41,7 +41,7 @@ Stochastic investment models can be either single-asset or multi-asset models, a
 
 The significance of stochastic modeling in finance is extensive and far-reaching. When choosing investment vehicles, it is critical to be able to view a variety of outcomes under multiple factors and conditions. In some industries, a company’s success or demise may even hinge on it.
 
-In the ever-changing world of [investing](https://www.investopedia.com/investing-4427685), new variables can come into play anytime and could affect a stock picker’s decisions enormously. Hence, finance professionals often run stochastic models hundreds or even thousands of times, which proffers numerous potential solutions to help target decision making.
+In the ever-changing world of investing, new variables can come into play anytime and could affect a stock picker’s decisions enormously. Hence, finance professionals often run stochastic models hundreds or even thousands of times, which proffers numerous potential solutions to help target decision making.
 
 ## What Is the Difference Between Stochastic and Deterministic Models?
 
@@ -62,4 +62,3 @@ They are generally considered synonyms of each other. Stochastic can be thought 
 ## The Bottom Line
 
 Stochastic modeling is used to help make investment decisions. This form of financial model forecasts the probability of various outcomes under different conditions, using random variables.
-

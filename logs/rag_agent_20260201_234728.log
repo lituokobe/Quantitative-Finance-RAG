@@ -1,0 +1,223 @@
+2026-02-01 23:47:28,641 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-01 23:47:28,643 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-01 23:47:28,645 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-01 23:47:28,651 - log_utils - INFO: starting_reply_node starts to work
+2026-02-01 23:47:28,651 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-01 23:47:47,793 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 23:47:48,663 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:47:48,685 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.892 seconds.
+2026-02-01 23:47:48,686 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-01 23:47:48,688 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 23:47:48,721 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:47:48,739 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 23:47:48,739 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 23:47:49,168 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.48 seconds.
+2026-02-01 23:47:49,169 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 23:47:49,521 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:47:49,526 - DocumentGraderNode - INFO: Retrieved document Understanding Lognormal vs. Normal Distributions in Financial Analysis
+
+Lognormal and normal distributions can help you analyze investments accurately. [Lognormal](https://www.investopedia.com/terms/l/log-normal-distribution.asp) distributions are often used to model stock prices, which can’t fall below zero and tend to grow exponentially. [Normal distributions](https://www.investopedia.com/terms/n/normaldistribution.asp) are commonly applied to portfolio returns, which can fluctuate above and below an average. Choosing the correct distribution method can help you make more reliable predictions and informed financial decisions. is relevant
+2026-02-01 23:47:49,886 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:47:49,887 - DocumentGraderNode - INFO: Retrieved document Understanding Normal Distribution: Key Concepts and Financial Uses is NOT relevant, dump it.
+2026-02-01 23:47:50,332 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:47:50,336 - DocumentGraderNode - INFO: Retrieved document What Are the Limitations of the Normal Distribution in Finance?
+
+Although normal distribution is a statistical concept, its applications in finance can be limited because financial phenomena—such as expected stock-market returns—do not fall neatly within a normal distribution. Prices tend to follow more of a [log-normal distribution](https://www.investopedia.com/articles/investing/102014/lognormal-and-normal-distribution.asp), right-skewed and with fatter tails. Therefore, relying too heavily on a bell curve when making predictions can lead to unreliable results. Although most analysts are well aware of this limitation, it is relatively difficult to overcome this shortcoming because it is often unclear which statistical distribution to use as an alternative. is relevant
+2026-02-01 23:47:50,638 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:47:50,640 - DocumentGraderNode - INFO: Retrieved document This skewness is important in determining which distribution is appropriate to use in investment decision-making. A further distinction is that the values used to derive a lognormal distribution are normally distributed.
+
+Let's clarify with an example. An investor wants to know an expected future stock price. Since stocks grow at a compounded rate, they need to use a growth factor.
+
+To calculate possible expected prices, they will take the current stock price and multiply it by various [rates of return](https://www.investopedia.com/terms/r/rateofreturn.asp) (which are mathematically derived [exponential factors](https://www.investopedia.com/terms/e/exponential-growth.asp) based on [compounding](https://www.investopedia.com/terms/c/compounding.asp)), which are assumed to be normally distributed. When the investor continuously compounds the returns, they create a lognormal distribution.
+
+This distribution is always positive even if some of the rates of return are negative, which will happen 50% of the time in a normal distribution. The future stock price will always be positive because stock prices cannot fall below $0. is relevant
+2026-02-01 23:47:51,219 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:47:51,223 - DocumentGraderNode - INFO: Retrieved document What Assumptions Does the Black-Scholes Model Make?
+
+The original Black-Scholes model assumes that the option is a European-style option and can only be exercised at expiration.
+
+It also assumes that no dividends are paid out during the option's life, that market movements follow a random walk and can't be predicted, that there are no transaction costs involved in buying the option, that the risk-free rate and volatility of the underlying option are known and constant, and that the prices of the underlying asset follow a log-normal distribution. is relevant
+2026-02-01 23:47:51,629 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:47:51,633 - DocumentGraderNode - INFO: Retrieved document Understanding the Differences Between Normal and Lognormal Distributions
+
+Both normal and lognormal distributions are used in statistical mathematics to describe the probability of an event occurring. Flipping a coin is an easily understood example of probability. If you flip a coin 1000 times, what is the distribution of results? That is, how many times will it land on heads or tails? There is a 50% probability that it will land on either heads or tails. This basic example describes the probability and distribution of results.
+
+There are many types of distributions, one of which is the normal or bell curve distribution.
+
+In a normal distribution, 68% (34%+34%) of the results fall within one standard deviation, and 95% (68%+13.5%+13.5%) fall within two standard deviations. At the center (the 0 point in the image above) the median (the middle value in the set), the mode (the value that occurs most often), and the [mean](https://www.investopedia.com/terms/m/mean.asp) ([arithmetic average](https://www.investopedia.com/ask/answers/06/geometricmean.asp)) are all the same.
+
+The lognormal distribution differs from the normal distribution in several ways. A major difference is in its shape: the normal distribution is symmetrical, whereas the lognormal distribution is not. Because the values in a lognormal distribution are positive, they create a right-skewed curve. is relevant
+2026-02-01 23:47:52,224 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:47:52,226 - DocumentGraderNode - INFO: Retrieved document What Is Meant By the Normal Distribution?
+
+The normal distribution describes a symmetrical plot of data around its mean value, where the width of the curve is defined by the standard deviation. It is visually depicted as the "bell curve." is NOT relevant, dump it.
+2026-02-01 23:47:52,226 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 23:47:52,226 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.057 seconds.
+2026-02-01 23:47:52,226 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 23:47:52,226 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 23:47:52,227 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is log normal distribution?", time costed: 3.541 seconds.
+2026-02-01 23:47:52,228 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 3.541 seconds.
+2026-02-01 23:47:52,228 - log_utils - INFO: generate_node starts to work
+2026-02-01 23:47:53,778 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:47:53,780 - log_utils - INFO: generate_node finishes working, time costed: 1.552 seconds.
+2026-02-01 23:47:53,781 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-01 23:47:54,291 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:47:54,309 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-01 23:47:54,309 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-01 23:47:54,801 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:47:54,808 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-01 23:47:54,808 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-01 23:47:54,808 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-01 23:48:25,547 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 23:48:26,445 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:26,451 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.904 seconds.
+2026-02-01 23:48:26,452 - log_utils - INFO: comparison_retriever_node starts to work
+2026-02-01 23:48:27,367 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:27,386 - standard_comparison_nodes - INFO: comparison_retriever_node decomposes question "What is the difference between log normal distribution and normal distribution?", time costed: 0.933 seconds.
+2026-02-01 23:48:27,388 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 23:48:27,389 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:48:27,422 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 23:48:27,422 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 23:48:28,323 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.935 seconds.
+2026-02-01 23:48:28,323 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 23:48:28,843 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:28,846 - DocumentGraderNode - INFO: Retrieved document Understanding the Differences Between Normal and Lognormal Distributions
+
+Both normal and lognormal distributions are used in statistical mathematics to describe the probability of an event occurring. Flipping a coin is an easily understood example of probability. If you flip a coin 1000 times, what is the distribution of results? That is, how many times will it land on heads or tails? There is a 50% probability that it will land on either heads or tails. This basic example describes the probability and distribution of results.
+
+There are many types of distributions, one of which is the normal or bell curve distribution.
+
+In a normal distribution, 68% (34%+34%) of the results fall within one standard deviation, and 95% (68%+13.5%+13.5%) fall within two standard deviations. At the center (the 0 point in the image above) the median (the middle value in the set), the mode (the value that occurs most often), and the [mean](https://www.investopedia.com/terms/m/mean.asp) ([arithmetic average](https://www.investopedia.com/ask/answers/06/geometricmean.asp)) are all the same.
+
+The lognormal distribution differs from the normal distribution in several ways. A major difference is in its shape: the normal distribution is symmetrical, whereas the lognormal distribution is not. Because the values in a lognormal distribution are positive, they create a right-skewed curve. is relevant
+2026-02-01 23:48:29,414 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:29,418 - DocumentGraderNode - INFO: Retrieved document Understanding Lognormal vs. Normal Distributions in Financial Analysis
+
+Lognormal and normal distributions can help you analyze investments accurately. [Lognormal](https://www.investopedia.com/terms/l/log-normal-distribution.asp) distributions are often used to model stock prices, which can’t fall below zero and tend to grow exponentially. [Normal distributions](https://www.investopedia.com/terms/n/normaldistribution.asp) are commonly applied to portfolio returns, which can fluctuate above and below an average. Choosing the correct distribution method can help you make more reliable predictions and informed financial decisions. is relevant
+2026-02-01 23:48:29,797 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:29,798 - DocumentGraderNode - INFO: Retrieved document What Are the Limitations of the Normal Distribution in Finance?
+
+Although normal distribution is a statistical concept, its applications in finance can be limited because financial phenomena—such as expected stock-market returns—do not fall neatly within a normal distribution. Prices tend to follow more of a [log-normal distribution](https://www.investopedia.com/articles/investing/102014/lognormal-and-normal-distribution.asp), right-skewed and with fatter tails. Therefore, relying too heavily on a bell curve when making predictions can lead to unreliable results. Although most analysts are well aware of this limitation, it is relatively difficult to overcome this shortcoming because it is often unclear which statistical distribution to use as an alternative. is relevant
+2026-02-01 23:48:30,308 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:30,314 - DocumentGraderNode - INFO: Retrieved document Understanding Normal Distribution: Key Concepts and Financial Uses is NOT relevant, dump it.
+2026-02-01 23:48:30,825 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:30,829 - DocumentGraderNode - INFO: Retrieved document This skewness is important in determining which distribution is appropriate to use in investment decision-making. A further distinction is that the values used to derive a lognormal distribution are normally distributed.
+
+Let's clarify with an example. An investor wants to know an expected future stock price. Since stocks grow at a compounded rate, they need to use a growth factor.
+
+To calculate possible expected prices, they will take the current stock price and multiply it by various [rates of return](https://www.investopedia.com/terms/r/rateofreturn.asp) (which are mathematically derived [exponential factors](https://www.investopedia.com/terms/e/exponential-growth.asp) based on [compounding](https://www.investopedia.com/terms/c/compounding.asp)), which are assumed to be normally distributed. When the investor continuously compounds the returns, they create a lognormal distribution.
+
+This distribution is always positive even if some of the rates of return are negative, which will happen 50% of the time in a normal distribution. The future stock price will always be positive because stock prices cannot fall below $0. is relevant
+2026-02-01 23:48:31,217 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:31,218 - DocumentGraderNode - INFO: Retrieved document Key Properties of Normal Distribution Explained
+
+In technical stock market analysis, the normal distribution is commonly assumed. It has [two parameters](https://www.investopedia.com/articles/active-trading/092914/normal-distribution-table-explained.asp): mean and standard deviation. Here, [mean](https://www.investopedia.com/terms/m/mean.asp) (average), [median](https://www.investopedia.com/terms/m/median.asp) (midpoint), and [mode](https://www.investopedia.com/terms/m/mode.asp) (most frequent observation) are equal, creating a symmetrical bell curve centered around the mean.
+
+The normal distribution model is central to the [Central Limit Theorem](https://www.investopedia.com/terms/c/central_limit_theorem.asp) (CLT), which states that the averages of independent, identically distributed variables usually follow a normal distribution, regardless of the original distribution.
+
+The normal distribution is one type of [symmetrical distribution](https://www.investopedia.com/terms/s/symmetrical-distribution.asp). Symmetrical distributions occur when a dividing line produces two mirror images. Not all symmetrical distributions are normal since some data could appear as two humps or a series of hills in addition to the bell curve that indicates a normal distribution. is NOT relevant, dump it.
+2026-02-01 23:48:31,218 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 23:48:31,218 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 2.895 seconds.
+2026-02-01 23:48:31,218 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 23:48:31,218 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 23:48:31,219 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is the difference between log normal distribution and normal distribution?", time costed: 3.833 seconds.
+2026-02-01 23:48:31,219 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 23:48:31,220 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:48:31,240 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 23:48:31,240 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 23:48:31,355 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.136 seconds.
+2026-02-01 23:48:31,356 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 23:48:31,771 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:31,774 - DocumentGraderNode - INFO: Retrieved document Understanding Lognormal vs. Normal Distributions in Financial Analysis
+
+Lognormal and normal distributions can help you analyze investments accurately. [Lognormal](https://www.investopedia.com/terms/l/log-normal-distribution.asp) distributions are often used to model stock prices, which can’t fall below zero and tend to grow exponentially. [Normal distributions](https://www.investopedia.com/terms/n/normaldistribution.asp) are commonly applied to portfolio returns, which can fluctuate above and below an average. Choosing the correct distribution method can help you make more reliable predictions and informed financial decisions. is relevant
+2026-02-01 23:48:32,281 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:32,285 - DocumentGraderNode - INFO: Retrieved document Understanding Normal Distribution: Key Concepts and Financial Uses is NOT relevant, dump it.
+2026-02-01 23:48:32,630 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:32,634 - DocumentGraderNode - INFO: Retrieved document What Are the Limitations of the Normal Distribution in Finance?
+
+Although normal distribution is a statistical concept, its applications in finance can be limited because financial phenomena—such as expected stock-market returns—do not fall neatly within a normal distribution. Prices tend to follow more of a [log-normal distribution](https://www.investopedia.com/articles/investing/102014/lognormal-and-normal-distribution.asp), right-skewed and with fatter tails. Therefore, relying too heavily on a bell curve when making predictions can lead to unreliable results. Although most analysts are well aware of this limitation, it is relatively difficult to overcome this shortcoming because it is often unclear which statistical distribution to use as an alternative. is relevant
+2026-02-01 23:48:33,100 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:33,104 - DocumentGraderNode - INFO: Retrieved document This skewness is important in determining which distribution is appropriate to use in investment decision-making. A further distinction is that the values used to derive a lognormal distribution are normally distributed.
+
+Let's clarify with an example. An investor wants to know an expected future stock price. Since stocks grow at a compounded rate, they need to use a growth factor.
+
+To calculate possible expected prices, they will take the current stock price and multiply it by various [rates of return](https://www.investopedia.com/terms/r/rateofreturn.asp) (which are mathematically derived [exponential factors](https://www.investopedia.com/terms/e/exponential-growth.asp) based on [compounding](https://www.investopedia.com/terms/c/compounding.asp)), which are assumed to be normally distributed. When the investor continuously compounds the returns, they create a lognormal distribution.
+
+This distribution is always positive even if some of the rates of return are negative, which will happen 50% of the time in a normal distribution. The future stock price will always be positive because stock prices cannot fall below $0. is relevant
+2026-02-01 23:48:33,557 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:33,558 - DocumentGraderNode - INFO: Retrieved document What Assumptions Does the Black-Scholes Model Make?
+
+The original Black-Scholes model assumes that the option is a European-style option and can only be exercised at expiration.
+
+It also assumes that no dividends are paid out during the option's life, that market movements follow a random walk and can't be predicted, that there are no transaction costs involved in buying the option, that the risk-free rate and volatility of the underlying option are known and constant, and that the prices of the underlying asset follow a log-normal distribution. is relevant
+2026-02-01 23:48:33,888 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:33,889 - DocumentGraderNode - INFO: Retrieved document Understanding the Differences Between Normal and Lognormal Distributions
+
+Both normal and lognormal distributions are used in statistical mathematics to describe the probability of an event occurring. Flipping a coin is an easily understood example of probability. If you flip a coin 1000 times, what is the distribution of results? That is, how many times will it land on heads or tails? There is a 50% probability that it will land on either heads or tails. This basic example describes the probability and distribution of results.
+
+There are many types of distributions, one of which is the normal or bell curve distribution.
+
+In a normal distribution, 68% (34%+34%) of the results fall within one standard deviation, and 95% (68%+13.5%+13.5%) fall within two standard deviations. At the center (the 0 point in the image above) the median (the middle value in the set), the mode (the value that occurs most often), and the [mean](https://www.investopedia.com/terms/m/mean.asp) ([arithmetic average](https://www.investopedia.com/ask/answers/06/geometricmean.asp)) are all the same.
+
+The lognormal distribution differs from the normal distribution in several ways. A major difference is in its shape: the normal distribution is symmetrical, whereas the lognormal distribution is not. Because the values in a lognormal distribution are positive, they create a right-skewed curve. is relevant
+2026-02-01 23:48:34,324 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:34,326 - DocumentGraderNode - INFO: Retrieved document What Is Meant By the Normal Distribution?
+
+The normal distribution describes a symmetrical plot of data around its mean value, where the width of the curve is defined by the standard deviation. It is visually depicted as the "bell curve." is NOT relevant, dump it.
+2026-02-01 23:48:34,326 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 23:48:34,326 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 2.97 seconds.
+2026-02-01 23:48:34,326 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 23:48:34,326 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 23:48:34,327 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is log normal distribution?", time costed: 3.108 seconds.
+2026-02-01 23:48:34,329 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 23:48:34,329 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:48:34,352 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 23:48:34,353 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 23:48:34,521 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.193 seconds.
+2026-02-01 23:48:34,522 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 23:48:35,046 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:35,054 - DocumentGraderNode - INFO: Retrieved document What Is Meant By the Normal Distribution?
+
+The normal distribution describes a symmetrical plot of data around its mean value, where the width of the curve is defined by the standard deviation. It is visually depicted as the "bell curve." is relevant
+2026-02-01 23:48:35,658 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:35,661 - DocumentGraderNode - INFO: Retrieved document What Is a Normal Distribution?
+
+Normal distribution, often referred to as the Gaussian distribution, is fundamental to statistics and finance due to its symmetry around the mean, forming the characteristic "[bell curve](https://www.investopedia.com/terms/b/bell-curve.asp)." This distribution is critical in various financial analyses and decisions where most data points tend to cluster around an average value. The normal distribution is not only the foundation of many statistical theories, such as the Central Limit Theorem, but it is also key in assessing financial market behaviors, helping investors and analysts determine if financial instruments are priced fairly or deviate from expected norms. This article explores the properties, uses, and limitations of normal distributions to aid in informed financial decision-making. is relevant
+2026-02-01 23:48:36,069 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:36,073 - DocumentGraderNode - INFO: Retrieved document Understanding Normal Distribution: Key Concepts and Financial Uses is relevant
+2026-02-01 23:48:36,390 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:36,393 - DocumentGraderNode - INFO: Retrieved document What Are the Limitations of the Normal Distribution in Finance?
+
+Although normal distribution is a statistical concept, its applications in finance can be limited because financial phenomena—such as expected stock-market returns—do not fall neatly within a normal distribution. Prices tend to follow more of a [log-normal distribution](https://www.investopedia.com/articles/investing/102014/lognormal-and-normal-distribution.asp), right-skewed and with fatter tails. Therefore, relying too heavily on a bell curve when making predictions can lead to unreliable results. Although most analysts are well aware of this limitation, it is relatively difficult to overcome this shortcoming because it is often unclear which statistical distribution to use as an alternative. is NOT relevant, dump it.
+2026-02-01 23:48:36,702 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:36,704 - DocumentGraderNode - INFO: Retrieved document The Bottom Line
+
+Normal distribution, also known as the Gaussian distribution, is a probability distribution that appears as a "bell curve" when graphed. The normal distribution describes a symmetrical plot of data around its mean value, where the width of the curve is defined by the standard deviation. is relevant
+2026-02-01 23:48:37,299 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:37,303 - DocumentGraderNode - INFO: Retrieved document Understanding the Differences Between Normal and Lognormal Distributions
+
+Both normal and lognormal distributions are used in statistical mathematics to describe the probability of an event occurring. Flipping a coin is an easily understood example of probability. If you flip a coin 1000 times, what is the distribution of results? That is, how many times will it land on heads or tails? There is a 50% probability that it will land on either heads or tails. This basic example describes the probability and distribution of results.
+
+There are many types of distributions, one of which is the normal or bell curve distribution.
+
+In a normal distribution, 68% (34%+34%) of the results fall within one standard deviation, and 95% (68%+13.5%+13.5%) fall within two standard deviations. At the center (the 0 point in the image above) the median (the middle value in the set), the mode (the value that occurs most often), and the [mean](https://www.investopedia.com/terms/m/mean.asp) ([arithmetic average](https://www.investopedia.com/ask/answers/06/geometricmean.asp)) are all the same.
+
+The lognormal distribution differs from the normal distribution in several ways. A major difference is in its shape: the normal distribution is symmetrical, whereas the lognormal distribution is not. Because the values in a lognormal distribution are positive, they create a right-skewed curve. is relevant
+2026-02-01 23:48:37,303 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 23:48:37,303 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 2.781 seconds.
+2026-02-01 23:48:37,303 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 23:48:37,303 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 23:48:37,305 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is normal distribution?", time costed: 2.978 seconds.
+2026-02-01 23:48:37,305 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 10.853 seconds.
+2026-02-01 23:48:37,306 - log_utils - INFO: generate_node starts to work
+2026-02-01 23:48:41,769 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:41,772 - log_utils - INFO: generate_node finishes working, time costed: 4.466 seconds.
+2026-02-01 23:48:41,773 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-01 23:48:42,228 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:42,234 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-01 23:48:42,235 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-01 23:48:42,569 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:48:42,808 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-01 23:48:42,810 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-01 23:48:42,812 - log_utils - INFO: rely_with_generation_node finishes working.

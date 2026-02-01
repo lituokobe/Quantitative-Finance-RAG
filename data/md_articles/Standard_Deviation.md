@@ -2,7 +2,7 @@
 
 ## What Is Standard Deviation?
 
-Standard deviation is a statistical measurement that looks at how far discrete points in a dataset are dispersed from the [mean](https://www.investopedia.com/terms/m/mean.asp) of that set. It is calculated as the square root of the [variance](https://www.investopedia.com/terms/v/variance.asp).
+Standard deviation is a statistical measurement that looks at how far discrete points in a dataset are dispersed from the mean of that set. It is calculated as the square root of the variance.
 
 If data points are far from the mean, there is a higher deviation within the data set.
 
@@ -20,21 +20,21 @@ Standard deviation is a statistical measurement that is often used in finance, p
 
 ### For Price Volatility
 
-When applied to the annual rate of return of an investment, it can provide information on that investment's [historical volatility](https://www.investopedia.com/terms/h/historicalvolatility.asp). This means that it shows how much the price of that investment has fluctuated over time.
+When applied to the annual rate of return of an investment, it can provide information on that investment's historical volatility. This means that it shows how much the price of that investment has fluctuated over time.
 
 The greater the standard deviation of securities, the greater the variance between each price and the mean, which shows a larger price range.
 
-For example, a volatile stock has a high standard deviation, meaning that its price goes up and down frequently. The standard deviation of a stable [blue-chip](https://www.investopedia.com/terms/b/bluechip.asp) stock, on the other hand, is usually rather low, meaning that its price is usually stable.
+For example, a volatile stock has a high standard deviation, meaning that its price goes up and down frequently. The standard deviation of a stable blue-chip stock, on the other hand, is usually rather low, meaning that its price is usually stable.
 
 ### For Price Trends
 
-Standard deviation can also be used to predict performance trends. In investing, for example, an index fund is designed to replicate a [benchmark](https://www.investopedia.com/terms/b/benchmark.asp) index. This means that the fund should have a low standard deviation from the value of the benchmark.
+Standard deviation can also be used to predict performance trends. In investing, for example, an index fund is designed to replicate a benchmark index. This means that the fund should have a low standard deviation from the value of the benchmark.
 
 On the other hand, aggressive growth funds often have a high standard deviation from relative stock indices. This is because their portfolio managers make aggressive bets to generate higher-than-average returns.
 
 This higher standard deviation correlates with the level of risk investors can expect from that index.
 
-Standard deviation is one of the key fundamental risk measures that analysts, portfolio managers, and advisors use. Investment firms report the standard deviation of their [mutual funds](https://www.investopedia.com/terms/m/mutualfund.asp) and other products.
+Standard deviation is one of the key fundamental risk measures that analysts, portfolio managers, and advisors use. Investment firms report the standard deviation of their mutual funds and other products.
 
 A large dispersion shows how much the return on the fund is deviating from the expected normal returns. Because it is easy to understand, this statistic is regularly reported to the end clients and investors.
 
@@ -95,7 +95,7 @@ Standard deviation isn't only used in investing. Business analysts or companies 
 
 ### Risk Management
 
-Standard deviation is widely used in business for [risk management](https://www.investopedia.com/terms/r/riskmanagement.asp). It helps businesses quantify and manage various types of risks.
+Standard deviation is widely used in business for risk management. It helps businesses quantify and manage various types of risks.
 
 By calculating the standard deviation of certain outcomes, businesses can assess the volatility or uncertainty associated with how they operates.
 
@@ -109,7 +109,7 @@ For example, standard deviation is employed to measure the volatility of investm
 
 ### Forecasting
 
-Standard deviation is used in [sales forecasting](https://www.investopedia.com/terms/f/forecasting.asp) to assess the variability of sales data and predict future sales trends.
+Standard deviation is used in sales forecasting to assess the variability of sales data and predict future sales trends.
 
 It helps businesses identify seasonality, trends, and patterns in sales data that allow them to plan for cash needs in the near future.
 
@@ -121,7 +121,7 @@ It's also used in quality control processes such as Six Sigma methodologies to m
 
 ### Project Management
 
-Standard deviation is used in [project management](https://www.investopedia.com/terms/p/project-management.asp) to assess project performance and manage risks.
+Standard deviation is used in project management to assess project performance and manage risks.
 
 For example, standard deviation can assess critical path analysis and earned value. It can be used to gauge variances, track progress, and quantify risk related to a critical path or earned value not being achieved.
 
@@ -180,7 +180,7 @@ Take the square root of the 3.67 to find the standard deviation, which is approx
 
 ### Apple Share Price Volatility
 
-Or consider shares of Apple (AAPL) over five particular years. Historical returns for Apple’s stock were 88.97% for 2019, 82.31% for 2020, 34.65% for 2021, -26.41% for 2022 and 28.32% in April 2023. The [average return](https://www.investopedia.com/ask/answers/021215/what-difference-between-standard-deviation-and-average-deviation.asp) over the five years was thus 41.57%.
+Or consider shares of Apple (AAPL) over five particular years. Historical returns for Apple’s stock were 88.97% for 2019, 82.31% for 2020, 34.65% for 2021, -26.41% for 2022 and 28.32% in April 2023. The average return over the five years was thus 41.57%.
 
 The value of each year's return minus the mean were then 47.40%, 40.74%, -6.92%, -67.98%, and -15.57%, respectively.
 
@@ -202,7 +202,7 @@ If you look at a graphic representation of the distribution of some observed dat
 
 ## Is Lower Standard Deviation Better In Investing?
 
-A lower standard deviation isn't necessarily better. It indicates less risk, which investors may or may not prefer. When assessing the amount of deviation in their portfolios, investors should consider their tolerance for [volatility](https://www.investopedia.com/terms/v/volatility.asp) and their overall investment objectives. More aggressive investors may be comfortable with an investment strategy that opts for vehicles with higher-than-average volatility, while more conservative investors may not.
+A lower standard deviation isn't necessarily better. It indicates less risk, which investors may or may not prefer. When assessing the amount of deviation in their portfolios, investors should consider their tolerance for volatility and their overall investment objectives. More aggressive investors may be comfortable with an investment strategy that opts for vehicles with higher-than-average volatility, while more conservative investors may not.
 
 ## The Bottom Line
 
@@ -211,4 +211,3 @@ Standard deviation is a way to assess risk, especially in business and investing
 Investors can use standard deviation to determine how stable or predictable an investment is likely to be. Businesses use standard deviation or assess risk, manage operations, and plan cash flows.
 
 Like any other statistical measurement, standard deviation has strengths and limitations, which should be taken into account when it is used.
-

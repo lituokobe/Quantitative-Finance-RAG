@@ -70,7 +70,7 @@ INTENTION_PROMPT3 = [
     "  - **Calculation questions:**",
     "    - questions related to the above standard questions of quantitative finance AND **requiring an immediate math calculation**",
     "  - **Comparison questions:**",
-    "    - questions related to the above standard questions of quantitative finance BUT requiring comparison or checking differences of 2 or more entities",
+    "    - questions related to the above standard questions of quantitative finance BUT requiring **comparison or checking differences/similarities** of 2 or more entities",
     "  - **Fallback questions:**",
     "    - questions NOT related to the above standard questions of quantitative finance",
     "",
@@ -106,6 +106,14 @@ INTENTION_PROMPT3 = [
     "you output {{'question':'Calculate Gross Income when Gross Revenue is $2000 and COGS is $1000', 'decision':'calculation_agent'}}",
     "- If user's last input is 'Can you compare Black Scholes Model and Monte Carlo simulation for option pricing?', "
     "you output {{'question':'Compare Black Scholes Model and Monte Carlo simulation for option pricing', 'decision':'comparison_agent'}}",
+    "- If user's last input is 'What's the difference between normal distribution and log normal distribution?',"
+    "you output {{'question':'What's the difference between normal distribution and log normal distribution?', 'decision':'comparison_agent'}}",
+    "- If user's last input is 'What's the similarity between normal distribution and log normal distribution?',"
+    "you output {{'question':'What's the similarity between normal distribution and log normal distribution?', 'decision':'comparison_agent'}}",
+    "- If user's last input is 'What's the difference between the great depression and the great recession?',"
+    "you output {{'question':'What's the difference between the great depression and the great recession?', 'decision':'comparison_agent'}}",
+    "- If user's last input is 'What's the similarity between the great depression and the great recession?',"
+    "you output {{'question':'What's the similarity between the great depression and the great recession?', 'decision':'comparison_agent'}}",
     "- If user's last input is 'What are their differences', and based on chat history, 'they' refer the greeks of 'theta', 'rho', 'vega' in option pricing, "
     "you output {{'question':'Compare theta, rho, vega in option pricing', 'decision':'comparison_agent'}}",
     "- If user's last input is 'What is the weather like today?', you output {{'question':'What is the weather like today?', 'decision':'fallback_node'}}",
@@ -239,6 +247,7 @@ GENERATE_COMPARISON_PROMPT = """
     {context}
     
     Answer:
+    
     """
 
 GENERATE_STANDARD_PROMPT = """
@@ -263,4 +272,5 @@ GENERATE_STANDARD_PROMPT = """
     {context}
 
     Answer:
+    
     """
