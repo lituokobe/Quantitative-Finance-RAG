@@ -26,7 +26,7 @@ def main(thread_id: str):
         # Get user input
         user_input = input("User: ").strip()
         if user_input == "quit":
-            log.info("User has quit the conversation.")
+            log.info("=== The conversation ends ===")
             break
 
         # Record current state BEFORE processing

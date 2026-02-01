@@ -36,6 +36,8 @@ class State(TypedDict):
     - question: str # rephrased question, ingested in starting_intention_node
     - agent_reply: str # agent's reply, ingested by shortcut_retriever_node, math_verification_node, calculation_fallback_node, calculation_answer_node
     - retrieved_documents: list[Documents] # ingested by calculation_retriever_node, comparison_retriever_node, standard_retriever_node
+    - context: str #ingested by generation_node
+    - generation: str #ingested by generation_node
     """
 
 class ChildState(TypedDict):

@@ -51,7 +51,8 @@ INTENTION_PROMPT3 = [
     "    - How does the AI assistant answer questions",
     "    - Whether the assistant's answers are accurate",
     "  - **Standard questions of quantitative finance:**",
-    "    - facts in quantitative finance",
+    "    - **NO IMMEDIATE CALCULATION REQUIRED**: the definition of a formula or theory in finance and how they work",
+    "    - quantitative finance",
     "    - corporate finance",
     "    - trading of all kinds of assets",
     "    - stock markets and other markets of financial products",
@@ -67,7 +68,7 @@ INTENTION_PROMPT3 = [
     "    - financial technologies (FinTech)",
     "    - history of modern finance, including major events like finance crisis",
     "  - **Calculation questions:**",
-    "    - questions related to the above standard questions of quantitative finance AND requiring a formula to perform math calculation",
+    "    - questions related to the above standard questions of quantitative finance AND **requiring an immediate math calculation**",
     "  - **Comparison questions:**",
     "    - questions related to the above standard questions of quantitative finance BUT requiring comparison or checking differences of 2 or more entities",
     "  - **Fallback questions:**",
@@ -100,7 +101,7 @@ INTENTION_PROMPT3 = [
     "- If user's last input is 'What is European call option?', you output {{'question':'What is European call option?', 'decision':'standard_agent'}}",
     "- If user's last input is 'When was the dot com bubble?', you output {{'question':'When was the dot com bubble?', 'decision':'standard_agent'}}",
     "- If user's last input is 'Is it a good thing?', and based on chat history, 'it' refers 'high Sharpe value', you output {{'question':'Is high Sharpe value a good thing?', 'decision':'standard_agent'}}",
-    "- If user's last input is 'How to calculate it?', and based on chat history, 'it' refers 'net present value', you output {{'question':'How to calculate net present value?', 'decision':'calculation_agent'}}",
+    "- If user's last input is 'How to calculate it?', and based on chat history, 'it' refers 'net present value', you output {{'question':'How to calculate net present value?', 'decision':'standard_agent'}}",
     "- If user's last input is 'The COGS is $1000', and based on chat history, this is in the middle of Gross Income calculation and the Gross Revenue was given as $2000, "
     "you output {{'question':'Calculate Gross Income when Gross Revenue is $2000 and COGS is $1000', 'decision':'calculation_agent'}}",
     "- If user's last input is 'Can you compare Black Scholes Model and Monte Carlo simulation for option pricing?', "
@@ -117,21 +118,24 @@ VERIFICATION_SYSTEM_PROMPT = """
     ## === YOUR ROLE ===,
     You are an excellent math verifier of an AI assistant.
     Your task is entirely based on:
-      - the chat history between the user and the AI assistant
-      - the user's question (concluded from the chat history)
-      - the retrieved documents to answer user's question
+      - the **chat history** between the user and the AI assistant
+      - the **user's question** (concluded from the chat history)
+      - the **retrieved documents** to answer user's question
     
     ## === YOUR CORE TASK ===,
     Decide **whether the retrieved documents and chat history have enough information to answer user's question** regarding match calculation in finance.
     Make the decision in following 2 steps:
-      1. Check if the retrieved documents contains the math formula that is needed to answer user's question
-      2. If the formula is included in the documents and a calculation is needed, Check if all the parameters for the calculation can be found in the chat history.
-    Finally, output a JSON with only two keys - **`decision`** and **`missing_info_message`**. 
+      1. Check if the retrieved documents and the chat history contains the math formula that is needed to answer user's question. **The formular can be in either one or both ones**.
+      2. If the formula is included in the retrieved documents and/or chat history, **review the chat history again carefully** and check if all the parameters for the calculation are provided by user. 
+         **User can provide the parameters for the calculation in different messages**, please try to fully understand the chat history, find all the appropriate parameters, and make the decision.
+    
+    ## === OUTPUT ===
+    Output a JSON with only two keys - **`decision`** and **`missing_info_message`**. 
       - Instruction for value of **`decision`**:
-        - **`good`**: the retrieved documents contains the math formula that is needed to answer user's question, and **NO calculation is needed** or **all the parameters for the calculation can be found** in the chat history
-        - **`missing_info`**: the retrieved documents contains the math formula that is needed to answer user's question, BUT there are **missing parameters** for the calculation that cannot be found in the chat history
-        - **`others`**: the retrieved documents **DON'T contain the math formula that is needed to answer user's question**, or the user's question DOESN'T need any math formula to answer, or any other scenarios.
-      - Instruction for value of **`missing_info`**:
+        - **"good"**: the retrieved documents and/or chat history contain the math formula and **all the parameters for the calculation can be found** in the chat history. **NO calculation is needed**.
+        - **"missing_info"**: the retrieved documents and/or chat history contain the math formula, BUT there are **missing parameters** for the calculation that cannot be found in the chat history.
+        - **"others"**: the retrieved documents and/or chat history **DON'T contain the correct math formula**, or the user's question DOESN'T need any math formula to answer, or any other scenarios.
+      - Instruction for value of **`missing_info_message`**:
         - If the value of `decision` key is `missing_info`, the value of `missing_info_message` key is a **polite request string to let user provide the missing parameters**, e.g. "To calculate gross income, can you tell me what is the COGS?"
         - If the value of `decision` key is any other value, the value of `missing_info_message` key is an empty string: "".
     
@@ -210,4 +214,53 @@ DECOMPOSE_SYSTEM_PROMPT = """
           'What is 2008 Financial Crisis?'
         ]
       }}
+    """
+
+GENERATE_COMPARISON_PROMPT = """
+    You are a finance assistant helping users answer comparison or multi-entity questions.
+    
+    You are given:
+    - A user question
+    - Context grouped by entity questions and relevant information (each entity question may have different types of information)
+    
+    Instructions:
+    - Use **ONLY the context** to answer the question.
+    - **High confidence level** in generation when the type of information is **"retrieval"**.
+    - **Be more critical and conservative** in generation when the type of information is **"web_search"**.
+    - **State clearly** for **missing information** or when the type of information is **"no_result" or "retrieval_error"**.
+    - Compare or explain entities explicitly when applicable.
+    - **Do NOT hallucinate facts** not supported by the context.
+    - Keep the answer structured and concise.
+    
+    Question:
+    {question}
+    
+    Context:
+    {context}
+    
+    Answer:
+    """
+
+GENERATE_STANDARD_PROMPT = """
+    You are a finance assistant helping users answer questions.
+
+    You are given:
+    - A user question
+    - Context with type of information
+
+    Instructions:
+    - Use **ONLY the context** to answer the question.
+    - **High confidence level** in generation when the type of information is **"retrieval"**.
+    - **Be more critical and conservative** in generation when the type of information is **"web_search"**.
+    - **State clearly** for **missing information** or when the type of information is **"no_result" or "retrieval_error"**.
+    - **Do NOT hallucinate facts** not supported by the context.
+    - Keep the answer structured and concise.
+
+    Question:
+    {question}
+
+    Context:
+    {context}
+
+    Answer:
     """

@@ -2,7 +2,7 @@
 
 ## What Is a Private Good?
 
-A private good is a tangible item whose use by one individual prevents others from using it due to its [rivalrous](https://www.investopedia.com/terms/r/rival_good.asp) and excludable nature. Unlike [public goods](https://www.investopedia.com/terms/p/public-good.asp), which can be accessed by all without limiting another's use, private goods must be purchased, ensuring exclusive consumption by the buyer. Everyday items like restaurant meals and electronics are common examples.
+A private good is a tangible item whose use by one individual prevents others from using it due to its rivalrous and excludable nature. Unlike public goods, which can be accessed by all without limiting another's use, private goods must be purchased, ensuring exclusive consumption by the buyer. Everyday items like restaurant meals and electronics are common examples.
 
 ### Key Takeaways
 
@@ -26,7 +26,7 @@ A private good is the opposite of a public good. Public goods are open for all, 
 
 Water fountains in public places would qualify as public goods, since they can be used by anyone and there is no reasonable possibility of it becoming fully used up. Public television received over the air and standard AM or FM local radio also qualify, as any number of people can watch of listen to the broadcast without affecting other people's ability to do so.
 
-Private goods are less likely to experience the [free rider problem](https://www.investopedia.com/terms/f/free_rider_problem.asp) because a private good has to be purchased; it is not readily available for free. A company's goal in producing a private good is to make a profit. Without the incentive created by revenue, a company is unlikely to want to produce the good. Meanwhile, public goods may be subject to the [tragedy of the commons](https://www.investopedia.com/terms/t/tragedy-of-the-commons.asp) problem.
+Private goods are less likely to experience the free rider problem because a private good has to be purchased; it is not readily available for free. A company's goal in producing a private good is to make a profit. Without the incentive created by revenue, a company is unlikely to want to produce the good. Meanwhile, public goods may be subject to the tragedy of the commons problem.
 
 ## The Bottom Line
 
@@ -35,4 +35,3 @@ Private goods are essential components of economic consumption, characterized by
 This distinction is crucial for understanding economic incentives and market dynamics, as companies produce private goods with the intention of earning a profit. Consumers seeking private goods must be willing to compete, purchase, and use them in a manner that others cannot.
 
 By differentiating between private and public goods, individuals can better appreciate the intricacies of resource allocation and personal consumption choices in everyday economic activities.
-

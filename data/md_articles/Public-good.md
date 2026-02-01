@@ -26,11 +26,11 @@ National defense, law enforcement, and clean air and water are all examples of p
 
 ## Comparing Private and Public Goods
 
-The opposite of a public good is a [private good](https://www.investopedia.com/terms/p/private-good.asp), which is both excludable and rivalrous.
+The opposite of a public good is a private good, which is both excludable and rivalrous.
 
 Private goods can only be used by one person at a time—a piece of jewelry, for example. In some cases, they are destroyed in the act of using them, such as when a slice of pizza is eaten.
 
-Private goods generally cost money. Most of the goods and services that we [consume](https://www.investopedia.com/terms/c/consumer-spending.asp) or use in our everyday lives are private goods. Although they are not subject to the free rider problem, they are also not available to everyone, since not everyone can afford to purchase them.
+Private goods generally cost money. Most of the goods and services that we consume or use in our everyday lives are private goods. Although they are not subject to the free rider problem, they are also not available to everyone, since not everyone can afford to purchase them.
 
 Sometimes, public goods aren't fully non-rivalrous or non-excludable. For example, a town swimming pool is a public good open to all residents, but it might charge a small fee.
 
@@ -40,9 +40,9 @@ Some goods are "quasi-public" because, even though they are available to all, th
 
 Every nation makes its own decisions on which goods and services should be considered public goods, and this is reflected in their national budgets. For example, many argue that national defense is an important public good because the security of the nation benefits all of its citizens.
 
-Many countries heavily [invest](https://www.investopedia.com/articles/investing/072115/how-military-spending-affects-economy.asp) in their militaries, funding army maintenance, weapons, and [R&D](https://www.investopedia.com/terms/r/randd.asp) through taxes. In the United States, for example, the Department of Defense (DoD) has a budget of \$1.52 trillion, equal to 12.8% of the total federal budget for the 2023 fiscal year.
+Many countries heavily invest in their militaries, funding army maintenance, weapons, and R&D through taxes. In the United States, for example, the Department of Defense (DoD) has a budget of \$1.52 trillion, equal to 12.8% of the total federal budget for the 2023 fiscal year.
 
-Many countries consider essential services like [healthcare](https://www.investopedia.com/articles/personal-finance/080615/6-reasons-healthcare-so-expensive-us.asp) and education as types of public goods. Taxpayer-funded healthcare is provided by nations including Canada, the United Kingdom, France, Germany, Italy, and Israel.
+Many countries consider essential services like healthcare and education as types of public goods. Taxpayer-funded healthcare is provided by nations including Canada, the United Kingdom, France, Germany, Italy, and Israel.
 
 Government investments in public education have grown tremendously since the 1950s. According to Our World in Data, the percentage of the world’s population that has received at least some basic education has grown from about 49% in 1950 to more than 86% in 2020 (the most recently available data).
 
@@ -65,4 +65,3 @@ Quasi-public goods have elements of both public and private goods. A public brid
 A public good is a commodity or service that every member of a society can use without exhausting the supply of it that is available to others. National defense, effective policing, clean air, and public education are all examples of public goods.
 
 Private goods, unlike public goods, are inherently scarce and become more scarce as people consume them.
-

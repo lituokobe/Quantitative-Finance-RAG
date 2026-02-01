@@ -7,8 +7,6 @@ def start_route(state: State) -> str:
     dialog_state = state.get("dialog_state", [])
     if not dialog_state:  # At the beginning, send to the first node
         return "starting_reply_node"
-    elif dialog_state[-1] == "hang_up":
-        return END
     else:
         return dialog_state[-1]
 

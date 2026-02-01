@@ -2,7 +2,7 @@
 
 ## What Is Par Value?
 
-Par value is the stated or [face value](https://www.investopedia.com/terms/f/facevalue.asp) of a financial instrument, primarily bonds and stocks. The par value is typically required at the time it is issued. For bonds and other fixed-income assets, it shows the maturity value and the dollar value of the coupon (or interest) payments that are due to the bondholder. Also called nominal or original value, par value is the opposite of market value, which fluctuates every day.
+Par value is the stated or face value of a financial instrument, primarily bonds and stocks. The par value is typically required at the time it is issued. For bonds and other fixed-income assets, it shows the maturity value and the dollar value of the coupon (or interest) payments that are due to the bondholder. Also called nominal or original value, par value is the opposite of market value, which fluctuates every day.
 
 ### Key Takeaways
 
@@ -46,7 +46,7 @@ While the par value of a corporate bond is usually stated as either \$100 or \$1
 
 ## Par Value of Stocks
 
-Some states, including Florida, require that companies set a par value below which shares cannot be sold. To comply with state regulations, most companies set a par value for their stocks to a minimal amount. The par value for shares of Apple ([AAPL](https://www.investopedia.com/markets/quote?tvwidgetsymbol=aapl)) is \$0.00001, and the par value for Amazon ([AMZN](https://www.investopedia.com/markets/quote?tvwidgetsymbol=amzn)) stock is \$0.01.
+Some states, including Florida, require that companies set a par value below which shares cannot be sold. To comply with state regulations, most companies set a par value for their stocks to a minimal amount. The par value for shares of Apple (AAPL) is \$0.00001, and the par value for Amazon (AMZN) stock is \$0.01.
 
 Shares cannot be sold below this value upon initial public offering (IPO) to reassure investors that no one is receiving preferential price treatment.
 
@@ -82,7 +82,7 @@ Par value plays a role in accounting. The par value of shares issued by a compan
 
 For example, if shares with a par value of \$1 are sold for \$5 each, \$1 per share is recorded in the Common Stock account, and the remaining \$4 per share is recorded in APIC. This separation helps clearly distinguish between the nominal value of shares and the additional capital contributed by shareholders.
 
-Issuing par value stock impacts the balance sheet's equity section presentation. Though the ultimate dollar amount isn't impacted, this distinction provides transparency about the source of equity capital. While par value does not directly influence dividend payments, it impacts the calculation of legal capital, ensuring that a minimum amount of retained earnings is preserved to meet creditor protection requirements. So, it is important from an accounting perspective that these two amounts are recorded differently and according to [generally accepted accounting principles (GAAP)](https://www.investopedia.com/terms/g/gaap.asp).
+Issuing par value stock impacts the balance sheet's equity section presentation. Though the ultimate dollar amount isn't impacted, this distinction provides transparency about the source of equity capital. While par value does not directly influence dividend payments, it impacts the calculation of legal capital, ensuring that a minimum amount of retained earnings is preserved to meet creditor protection requirements. So, it is important from an accounting perspective that these two amounts are recorded differently and according to generally accepted accounting principles (GAAP).
 
 For stocks issued with no par value, the total proceeds are credited to the common stock account, simplifying the equity classification and eliminating the concept of legal capital associated with par value. There is some accounting simplicity with this method, though they may have hurdles that prevent them from being able to do so.
 
@@ -109,4 +109,3 @@ In some jurisdictions, a security issuance may be required to have a par value. 
 ## The Bottom Line
 
 Par value is the face value of a bond or the value of a stock certificate stated in the corporate charter. A stock's par value is often unrelated to the actual value of its shares trading on the stock market. Par value is required for a bond or a fixed-income instrument and defines its maturity value and the value of its required coupon payments.
-

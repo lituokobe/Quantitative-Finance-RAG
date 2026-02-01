@@ -1,8 +1,8 @@
 # Out of the Money: Option Basics and Examples
 
-Investors use [options](https://www.investopedia.com/terms/o/option.asp) to profit from price movements and protect against potential losses in their portfolios. However, before adding this useful tool to your investing arsenal, it’s important to get to grips with how these contracts work and the jargon.
+Investors use options to profit from price movements and protect against potential losses in their portfolios. However, before adding this useful tool to your investing arsenal, it’s important to get to grips with how these contracts work and the jargon.
 
-One of the key option-related terms you’ll come across is "moneyness." Options are described as “in the money,” “out of the money,” or “at the money” depending on their [intrinsic value](https://www.investopedia.com/terms/i/intrinsicvalue.asp) at any given moment. As implied in the name, “out of the money,” the subject of this article, is an option that can’t currently be exercised for a profit.
+One of the key option-related terms you’ll come across is "moneyness." Options are described as “in the money,” “out of the money,” or “at the money” depending on their intrinsic value at any given moment. As implied in the name, “out of the money,” the subject of this article, is an option that can’t currently be exercised for a profit.
 
 ### Key Takeaways
 
@@ -12,15 +12,15 @@ One of the key option-related terms you’ll come across is "moneyness." Options
 
 ## Understanding Options: Basic Concepts
 
-Options give you the right, but not the obligation, to buy or sell a security, such as a stock, bond, or currency, at a certain price, called the [strike price](https://www.investopedia.com/terms/s/strikeprice.asp), by a specified date, known as the [expiration date](https://www.investopedia.com/terms/e/expirationdate.asp).
+Options give you the right, but not the obligation, to buy or sell a security, such as a stock, bond, or currency, at a certain price, called the strike price, by a specified date, known as the expiration date.
 
-In every transaction, there are two sides betting against each other. There’s the seller, who creates an option they hope won’t be exercised, in exchange for a fee called the [premium](https://www.investopedia.com/terms/o/option-premium.asp). And there's the buyer, who pays for the option in the belief that the strike price will be exceeded, making them money.
+In every transaction, there are two sides betting against each other. There’s the seller, who creates an option they hope won’t be exercised, in exchange for a fee called the premium. And there's the buyer, who pays for the option in the belief that the strike price will be exceeded, making them money.
 
 ### Important
 
 American-style options can be exercised any time before the expiration date or on it, while European-style options can only be exercised on the exact expiration date.
 
-When buying an option, you bet its price will rise above the strike price, which requires buying a [call option](https://www.investopedia.com/terms/c/calloption.asp), or that the price will fall below the strike price, which requires buying a [put option](https://www.investopedia.com/terms/p/putoption.asp).
+When buying an option, you bet its price will rise above the strike price, which requires buying a call option, or that the price will fall below the strike price, which requires buying a put option.
 
 ### Example
 
@@ -44,7 +44,7 @@ Options can be:
 
 An option to buy a stock at \$120 that currently trades at \$100 or sell a stock at \$100 that currently trades at \$120 would be deemed OTM. OTM is essentially the worst situation an investor in possession of an unexpired option can find themselves in. When an option is OTM, it currently has no intrinsic value, meaning if you exercise it now you’d lose money.
 
-Nevertheless, OTM options may still be worth something eventually. That’s because they still possess extrinsic or [time value](https://www.investopedia.com/terms/t/timevalue.asp). As long as there's still a chance the stock in the example rises above \$120 or below \$100, it has some value. How much depends mainly on how much time is left before the option expires and the volatility profile of the security. The more the security is prone to price swings and the longer the time left, the better.
+Nevertheless, OTM options may still be worth something eventually. That’s because they still possess extrinsic or time value. As long as there's still a chance the stock in the example rises above \$120 or below \$100, it has some value. How much depends mainly on how much time is left before the option expires and the volatility profile of the security. The more the security is prone to price swings and the longer the time left, the better.
 
 ## Characteristics of OTM Options
 

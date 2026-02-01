@@ -1,0 +1,119 @@
+2026-02-01 23:16:29,546 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-01 23:16:29,548 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-01 23:16:29,550 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-01 23:16:29,556 - log_utils - INFO: starting_reply_node starts to work
+2026-02-01 23:16:29,556 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-01 23:16:44,578 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 23:16:45,321 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:16:45,342 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.764 seconds.
+2026-02-01 23:16:45,344 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-01 23:16:45,345 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 23:16:45,385 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:16:45,411 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 23:16:45,411 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 23:16:45,813 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.468 seconds.
+2026-02-01 23:16:45,814 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 23:16:46,276 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:16:46,291 - DocumentGraderNode - INFO: Retrieved document What Does the Black-Scholes Model Do?
+
+The Black-Scholes model, also known as the Black-Scholes-Merton (BSM), was the first widely used model for option pricing. The equation calculates the price of a European-style call option based on known variables like the current price, maturity date, and strike price, based on certain assumptions about the behavior of asset prices.
+
+It does so by subtracting the [net present value (NPV)](https://www.investopedia.com/terms/n/npv.asp) of the strike price multiplied by the cumulative standard normal distribution from the product of the stock price and the cumulative standard normal probability distribution function. is relevant
+2026-02-01 23:16:46,836 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:16:46,841 - DocumentGraderNode - INFO: Retrieved document Black-Scholes Model: What It Is, How It Works, and the Options Formula is relevant
+2026-02-01 23:16:47,278 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:16:47,282 - DocumentGraderNode - INFO: Retrieved document How the Binomial Option Pricing Model Works is NOT relevant, dump it.
+2026-02-01 23:16:47,619 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:16:47,621 - DocumentGraderNode - INFO: Retrieved document The Bottom Line
+
+The Black-Scholes model is a mathematical model that's used by [traders](https://www.investopedia.com/best-online-brokers-4587872) to calculate the fair price or theoretical value of an asset.
+
+It provides a way to calculate the theoretical value of an option by taking into account the underlying asset's current price, the option's type, the option's strike price, the time remaining until expiration, the risk-free interest rate, and the volatility of the underlying asset.
+
+The Black-Scholes model has had a profound impact on finance and has led to the development of a wide range of derivative products such as futures, swaps, and options. is relevant
+2026-02-01 23:16:48,042 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:16:48,044 - DocumentGraderNode - INFO: Retrieved document History of the Black-Scholes Model
+
+Developed by Fischer Black, Robert Merton, and Myron Scholes, the Black-Scholes model was the first widely used mathematical method to calculate the theoretical value of an option contract.
+
+It uses current [stock prices](https://www.investopedia.com/best-stock-screeners-5120586), expected dividends, the option's strike price, expected interest rates, time to expiration, and expected volatility.
+
+The initial equation was introduced in Black and Scholes' 1973 paper, "The Pricing of Options and Corporate Liabilities," published in the *Journal of Political Economy*.
+
+Robert C. Merton helped edit the paper. He published his own article, "Theory of Rational Option Pricing," in *The Bell Journal of Economics and Management Science*later that year. He expanded the mathematical understanding and applications of the model, coining the term "Black–Scholes theory of options pricing."
+
+Scholes and Merton received the Nobel Memorial Prize in Economic Sciences in 1997 for their work in finding "a new method to determine the value of derivatives."
+
+Black died two years earlier, so he couldn't receive the Nobel Prize, as it isn't given posthumously. However, the Nobel Committee acknowledged his role in developing the Black-Scholes model. is NOT relevant, dump it.
+2026-02-01 23:16:48,379 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:16:48,380 - DocumentGraderNode - INFO: Retrieved document How the Black-Scholes Model Works
+
+Black-Scholes posits that instruments such as stock shares or futures contracts will have a lognormal distribution of prices following a [random walk](https://www.investopedia.com/terms/r/randomwalktheory.asp) with constant drift and volatility. The equation uses this assumption and factors in other important variables to derive the price of a European-style [call option](https://www.investopedia.com/terms/c/calloption.asp).
+
+The Black-Scholes equation requires six variables:
+
+1. [Volatility](https://www.investopedia.com/terms/v/volatility.asp)
+2. The price of the underlying asset
+3. The [strike price](https://www.investopedia.com/terms/s/strikeprice.asp) of the option
+4. The time until the expiration of the option
+5. The risk-free interest rate
+6. The type of option (call or put)
+
+It's theoretically possible for options sellers to set rational prices with these variables for the options that they're selling.
+
+The model predicts that the price of heavily traded assets follows a geometric Brownian motion with constant drift and volatility.
+
+It incorporates the constant price variation of the [stock](https://www.investopedia.com/best-stock-screeners-5120586), the time value of money, the option's strike price, and the time to the option's expiry when it's applied to a stock option. is relevant
+2026-02-01 23:16:49,109 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:16:49,113 - DocumentGraderNode - INFO: Retrieved document The Black-Scholes Model Formula
+
+The mathematics involved in the formula are complicated and can be intimidating, but you don't have to know or even understand the math to use Black-Scholes modeling in your strategies.
+
+Options traders have access to various online options calculators, and many of the top trading platforms boast robust options analysis tools that include indicators and spreadsheets that perform the calculations and output the options pricing values.
+
+The Black-Scholes call option formula is calculated by multiplying the stock price by the cumulative standard normal probability distribution function.
+
+The [net present value (NPV)](https://www.investopedia.com/terms/n/npv.asp) of the strike price multiplied by the cumulative standard normal distribution is then subtracted from the resulting value of the previous calculation.
+
+$$C = S * N(d_1) − K * e^{-r * t} * N(d_2)$$
+where:  
+$$d_1= \frac{1}{\sigma * \sqrt{t}}\left[\ln{\left(\frac{S}{K}\right)} + {\left(r + \frac{\sigma^2}{2}\right)} * t\right]$$
+and  
+$$ d_2= d_1 - \sigma*\sqrt{t} $$
+and where:  
+- $C = \text{Call option price}$
+- $S = \text{Current stock (or other underlying) price}$
+- $K = \text{Strike price}$
+- $r = \text{Risk-free interest rate}$
+- $t = \text{Time to maturity}$
+- $N(\cdot) = \text{Cumulative distribution function (CDF) of the standard normal distribution}$ is relevant
+2026-02-01 23:16:49,113 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 23:16:49,113 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.3 seconds.
+2026-02-01 23:16:49,114 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 23:16:49,114 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 23:16:49,115 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "How does the Black-Scholes model calculate the price of a call option?", time costed: 3.772 seconds.
+2026-02-01 23:16:49,116 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 3.772 seconds.
+2026-02-01 23:16:49,117 - log_utils - INFO: generate_node starts to work
+2026-02-01 23:16:53,045 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:16:53,048 - log_utils - INFO: generate_node finishes working, time costed: 3.932 seconds.
+2026-02-01 23:16:53,049 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-01 23:16:53,564 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:16:53,578 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-01 23:16:53,578 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-01 23:16:53,935 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:16:53,942 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-01 23:16:53,943 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-01 23:16:53,943 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-01 23:17:34,530 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 23:17:35,512 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:17:35,522 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.993 seconds.
+2026-02-01 23:17:35,523 - log_utils - INFO: calculation_retriever_node starts to work
+2026-02-01 23:17:35,525 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:17:35,555 - milvus_db - INFO: Created hybrid retriever: k=10, ranker=rrf, threshold=0.05, filter={'contains_math': True}
+2026-02-01 23:17:35,555 - retriever_tools - INFO: Created hybrid retriever with k=10, threshold=0.05
+2026-02-01 23:17:36,692 - log_utils - INFO: calculation_retriever_node finishes working, time costed: 1.169 seconds.
+2026-02-01 23:17:36,693 - log_utils - INFO: math_verification_node starts to work
+2026-02-01 23:17:37,220 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:17:37,236 - log_utils - INFO: math_verification_node finishes working, time costed: 0.543 seconds.
+2026-02-01 23:17:37,237 - log_utils - INFO: calculation_fallback_node starts to work
+2026-02-01 23:17:37,238 - log_utils - INFO: calculation_fallback_node finishes working.

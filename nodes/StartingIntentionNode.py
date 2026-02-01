@@ -40,7 +40,7 @@ class StartingIntentionNode:
             history_prompt = build_history_prompt(history)
             doc_string = INTENTION_PROMPT1 + history_prompt + INTENTION_PROMPT2 + [user_input] + INTENTION_PROMPT3
             full_prompt = "\n".join(doc_string)
-            print(f"Full prompt at {self.node_name} to identify intention:\n{full_prompt}")
+            # print(f"Full prompt at {self.node_name} to identify intention:\n{full_prompt}")
 
         except Exception as e:
             log.error(f"Error formulating prompt at {self.node_name}: {e}")
@@ -51,6 +51,7 @@ class StartingIntentionNode:
             resp = self.llm_runnable_structured_output.invoke([HumanMessage(content=full_prompt)])
             question: str = resp.question
             decision: str = resp.decision
+            print(f"User question after considering chat history: {question}")
             return question, decision
         except Exception as e:
             log.error(f"Error generating decision at {self.node_name}: {e}")

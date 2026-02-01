@@ -2,6 +2,7 @@
 from langchain_core.messages import AIMessage
 from langgraph.constants import END
 
+from config.paths import rewrite_threshold
 from config.state import State, ChildState
 from chains.answer_grader_chain import answer_grader_chain
 from chains.hallucination_grader_chain import hallucination_grader_chain
@@ -41,13 +42,13 @@ def grade_documents_route(state: ChildState):
     rewrite_count = state.get("rewrite_count", 0)
 
     if not filtered_docs:
-        if rewrite_count >= 2:
-            log.info("--- Decision: all documents are not relevant, and looped twice, need to do web search ---")
+        if rewrite_count >= rewrite_threshold:
+            log.info("--- Decision: all documents are not relevant, and looped twice, need to do web search. ---")
             return "web_search_node"
-        log.info("--- Decision: all documents are not relevant, need to convert questions ---")
+        log.info("--- Decision: all documents are not relevant, need to convert questions. ---")
         return "rewrite_query_node"
     else:
-        log.info("--- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph---")
+        log.info("--- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---")
         return "END"
 
 # -------- Create the route function after generating content --------
@@ -59,36 +60,49 @@ def generate_node_route(state: State):
     """
     log.info("---Check if generated result has hallucination---")
 
+    # Get information from state
+    dialog_state = state.get("dialog_state", [])
+    if dialog_state:
+        last_state =  dialog_state[-1]
+    else:
+        last_state = "standard_agent"
+
     logs = state.get("logs", [])
     last_log = logs[-1] if logs else {}
     if logs:
         question = last_log.get("question", "")
-        documents = last_log.get("filtered_docs", []) or last_log.get("web_results", [])
+        context = last_log.get("context", "")
         generation = last_log.get("generation", "")
+        comparison_rewrite_count = last_log.get("comparison_rewrite_count", 0)
     else:
         question = ""
-        documents = []
+        context = ""
         generation = ""
+        comparison_rewrite_count = 0
 
     # check if generated result is based on documents
-    score = hallucination_grader_chain.invoke({"documents": documents, "generation": generation})
+    score = hallucination_grader_chain.invoke({"context": context, "generation": generation})
     grade = score.binary_score
 
     if grade == 'yes':
-        log.info("---Decision: generated result is based on documents---")
+        log.info("---Generated result is based on documents, no hallucination.---")
 
         # check if generated result solves the problem from the question
-        log.info("---Check if generated result solves the problem from the question---")
+        log.info("---Check if generated result solves the problem from the question.---")
         score = answer_grader_chain.invoke({"question": question, "generation": generation})
         grade = score.binary_score
 
         if grade == 'yes':
-            log.info("---Decision: generated result solves the problem from the question---")
+            log.info("---Decision: generated result solves the problem from the question.---")
             return "useful"
 
         else:
-            log.info("---Decision: generated result does not solve the problem from the question---")
-            return "not useful"
+            if last_state == "comparison_agent" and comparison_rewrite_count < rewrite_threshold: # Rewrite the whole question if it is a comparison question
+                log.info("---Decision: generated result does not solve the problem from the comparison question, rewrite the comparison question.---")
+                return "not useful"
+            else:
+                log.info("---Decision: generated result does not solve the problem from the question, but we will still output it.---")
+                return "useful"
     else:
-        log.info("---Decision: generated result is not based on documents, will try again---")
+        log.info("---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---")
         return "not supported"

@@ -1,0 +1,399 @@
+2026-02-01 15:10:45,106 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-01 15:10:45,108 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-01 15:10:45,110 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-01 15:10:45,116 - log_utils - INFO: starting_reply_node starts to work
+2026-02-01 15:10:45,116 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-01 15:10:56,645 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 15:10:57,333 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:10:58,606 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.96 seconds.
+2026-02-01 15:10:58,616 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-01 15:10:58,620 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 15:10:58,748 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 15:10:58,855 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 15:10:58,856 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 15:11:00,123 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 1.502 seconds.
+2026-02-01 15:11:00,124 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 15:11:00,586 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:11:00,599 - DocumentGraderNode - INFO: Retrieved document What Is a Put Option?
+
+A put option (or “put”), which gives the holder the right to sell, can be contrasted with a call option, which provides the holder with the right to buy the underlying security at a specified price, up until the option contract's expiration date. This predetermined price is called the [strike price](https://www.investopedia.com/terms/s/strikeprice.asp). is relevant
+2026-02-01 15:11:01,064 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:11:01,068 - DocumentGraderNode - INFO: Retrieved document Call Option: What It Is, How To Use It, and Examples is NOT relevant, dump it.
+2026-02-01 15:11:01,535 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:11:01,539 - DocumentGraderNode - INFO: Retrieved document Put Option: What It Is, How It Works, and How To Trade is relevant
+2026-02-01 15:11:01,938 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:11:01,940 - DocumentGraderNode - INFO: Retrieved document Factors That Affect a Put’s Price
+
+The value of a put option generally decreases as it approaches expiration because of the impact of time decay. Time decay accelerates as an option’s expiration date gets closer, since there’s less time to profit from the trade.
+
+When an option loses its time value, the [intrinsic value](https://www.investopedia.com/terms/i/intrinsicvalue.asp) is what's left. An option’s intrinsic value is equivalent to the difference between the strike price and the underlying stock price. An option is [in the money (ITM)](https://www.investopedia.com/terms/i/inthemoney.asp) if it has intrinsic value. is relevant
+2026-02-01 15:11:02,449 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:11:02,453 - DocumentGraderNode - INFO: Retrieved document Exploring the Types of Options: Calls and Puts is relevant
+2026-02-01 15:11:02,940 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:11:02,944 - DocumentGraderNode - INFO: Retrieved document Writing Put Options
+
+In the previous section, we discussed put options from the perspective of the buyer, or an investor who has a long put position. We now turn our attention to the other side of the option trade: the put option seller or the put option writer, who has a short put position.
+
+Contrary to a long put option, a short or written put option obligates an investor to take delivery, or purchase shares, of the underlying stock at the strike price specified in the option contract.
+
+Assume an investor is bullish on SPY, which is currently trading at \$565, and doesn't believe it will fall below \$550 over the next month. The investor could collect a premium of \$3.45 per share (× 100 shares, or \$345) by writing one put option on SPY with a strike price of \$550.
+
+If SPY stays above the \$550 strike price over the next month, the investor would keep the premium collected (\$345) since the options would expire OTM and be worthless. This is the maximum profit on the trade: \$345, or the premium collected. is relevant
+2026-02-01 15:11:03,473 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:11:03,479 - DocumentGraderNode - INFO: Retrieved document Puts
+
+Opposite to call options, a put gives the holder the right, but not the obligation, to sell the underlying stock at the strike price on or before expiration. A long put, therefore, is a short position in the underlying security, as the put gains value as the underlying's price falls (puts have a negative delta).
+
+[Protective puts](https://www.investopedia.com/terms/p/protective-put.asp) can be purchased as a sort of insurance, providing a price floor for investors to hedge their positions. is relevant
+2026-02-01 15:11:03,479 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 15:11:03,479 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.355 seconds.
+2026-02-01 15:11:03,480 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 15:11:03,480 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 15:11:03,481 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is a put option?", time costed: 4.865 seconds.
+2026-02-01 15:11:03,481 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 4.865 seconds.
+2026-02-01 15:11:03,482 - log_utils - INFO: generate_node starts to work
+2026-02-01 15:11:05,216 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:11:05,219 - log_utils - INFO: generate_node finishes working, time costed: 1.737 seconds.
+2026-02-01 15:11:05,220 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-01 15:11:05,726 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:11:05,740 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-01 15:11:05,741 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-01 15:11:06,237 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:11:06,250 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-01 15:11:06,251 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-01 15:11:06,252 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-01 15:12:05,641 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 15:12:06,451 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:06,477 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.835 seconds.
+2026-02-01 15:12:06,477 - log_utils - INFO: comparison_retriever_node starts to work
+2026-02-01 15:12:07,779 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:07,792 - standard_comparison_nodes - INFO: comparison_retriever_node decomposes question "Can you compare Black Scholes model, binary method and Monte Carlo simulation for pricing an option?", time costed: 1.314 seconds.
+2026-02-01 15:12:07,794 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 15:12:07,794 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 15:12:07,836 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 15:12:07,836 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 15:12:08,970 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 1.176 seconds.
+2026-02-01 15:12:08,970 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 15:12:09,402 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:09,406 - DocumentGraderNode - INFO: Retrieved document Fast Fact
+
+The Black-Scholes model is often contrasted against the [binomial model](https://www.investopedia.com/terms/b/binomialoptionpricing.asp) or a [Monte Carlo simulation](https://www.investopedia.com/terms/m/montecarlosimulation.asp). is relevant
+2026-02-01 15:12:09,745 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:09,748 - DocumentGraderNode - INFO: Retrieved document How the Binomial Option Pricing Model Works is NOT relevant, dump it.
+2026-02-01 15:12:10,261 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:10,264 - DocumentGraderNode - INFO: Retrieved document Exploring Alternative Option Pricing Models
+
+Other option pricing models include the Black-Scholes model, Monte Carlo simulations, and the finite difference method. is relevant
+2026-02-01 15:12:10,630 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:10,635 - DocumentGraderNode - INFO: Retrieved document - **Black-Scholes Model:** This model is arguably the most popular option pricing model. The Black-Scholes model provides a theoretical estimate of the price of European-style options and introduces a continuous time framework. Unlike the binomial option price model, the Black-Scholes model assumes a geometric Brownian motion and is based on the key assumptions that the volatility of the underlying asset is constant and markets are frictionless. It's most suitable for pricing European options where early exercise isn't possible.
+- **Monte Carlo simulations:** This technique uses random sampling and statistical modeling to estimate mathematical functions and simulate the behavior of various assets over time. Monte Carlo simulations are particularly useful for pricing options where the payoff is path dependent, such as Asian options or American options.
+- **Finite difference method:** This model is used to solve differential equations by approximating them with difference equations that finite differences approximate. For options prices, the finite difference method is used to solve partial differential equations typically derived from option pricing formulas, such as those in the Black-Scholes framework. This technique is particularly effective for American options and other derivatives where risk assessment requires an analysis of the effects over time if the boundary conditions can be efficiently modeled. is NOT relevant, dump it.
+2026-02-01 15:12:10,954 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:10,956 - DocumentGraderNode - INFO: Retrieved document Black-Scholes Model: What It Is, How It Works, and the Options Formula is NOT relevant, dump it.
+2026-02-01 15:12:11,308 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:11,311 - DocumentGraderNode - INFO: Retrieved document Important
+
+Firms will alternatively use a binomial or [trinomial](https://www.investopedia.com/terms/t/trinomialoptionpricingmodel.asp) model or the [Bjerksund-Stensland](https://www.investopedia.com/terms/b/bjerksundstensland-model.asp) model for the pricing of the more commonly traded [American-style](https://www.investopedia.com/terms/a/americanoption.asp) options. is NOT relevant, dump it.
+2026-02-01 15:12:11,733 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:11,737 - DocumentGraderNode - INFO: Retrieved document How Monte Carlo Simulations Work
+
+The Monte Carlo method acknowledges an issue for any simulation technique: The probability of varying outcomes cannot be firmly pinpointed because of random variable interference. Therefore, a Monte Carlo simulation focuses on constantly repeating random samples.
+
+A Monte Carlo simulation takes the variable that has uncertainty and assigns it a random value. The model is then run, and a result is provided. This process is repeated again and again while assigning many different values to the variable in question. Once the simulation is complete, the results are averaged to arrive at an estimate. is NOT relevant, dump it.
+2026-02-01 15:12:11,737 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 15:12:11,737 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 2.767 seconds.
+2026-02-01 15:12:11,738 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 15:12:11,738 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 15:12:11,739 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "Can you compare Black Scholes model, binary method and Monte Carlo simulation for pricing an option?", time costed: 3.947 seconds.
+2026-02-01 15:12:11,741 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 15:12:11,742 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 15:12:11,771 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 15:12:11,771 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 15:12:12,261 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.52 seconds.
+2026-02-01 15:12:12,262 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 15:12:12,754 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:12,761 - DocumentGraderNode - INFO: Retrieved document What Is the Binomial Option Pricing Model?
+
+The binomial option pricing model is a flexible and intuitive method for valuing options. It breaks down the lifespan of an option into discrete periods and handles complex scenarios effectively.
+
+The model, developed in the 1970s by economists John Cox, Stephen Ross, and Mark Rubinstein, offers a simpler alternative to the famous Black-Scholes formula.
+
+The binomial option pricing model accommodates American-style options and provides a visual framework for decision making at various stages. is NOT relevant, dump it.
+2026-02-01 15:12:13,215 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:13,218 - DocumentGraderNode - INFO: Retrieved document Black-Scholes Model: What It Is, How It Works, and the Options Formula is relevant
+2026-02-01 15:12:13,573 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:13,576 - DocumentGraderNode - INFO: Retrieved document How the Binomial Option Pricing Model Works is NOT relevant, dump it.
+2026-02-01 15:12:13,918 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:13,922 - DocumentGraderNode - INFO: Retrieved document - **Provides a framework:** The Black-Scholes model provides a theoretical framework for pricing options. This allows investors and traders to determine the fair price of an option using a structured, defined methodology that has been tried and tested.
+- **Allows for risk management:** Investors can use the Black-Scholes model to manage their risk exposure to various assets by knowing the theoretical value of an option. The Black-Scholes model is therefore useful to investors not only in evaluating potential returns but also in understanding portfolio weakness and deficient investment areas.
+- **Allows for portfolio optimization:** The Black-Scholes model can be used to optimize portfolios by providing a measure of the expected returns and risks associated with different options. This allows investors to make smarter choices that are better aligned with their risk tolerance and pursuit of profit.
+- **Enhances market efficiency:** The Black-Scholes model has led to greater market efficiency and transparency as traders and investors are better able to price and trade options. This simplifies the pricing process because there's a greater implicit understanding of how prices are derived.
+- **Streamlines pricing:** The Black-Scholes model is widely accepted and used by practitioners in the financial industry, allowing for greater consistency and comparability across markets and jurisdictions. is relevant
+2026-02-01 15:12:14,374 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:14,378 - DocumentGraderNode - INFO: Retrieved document Understanding Option Strike Prices: Definition, Function, and Impact is NOT relevant, dump it.
+2026-02-01 15:12:14,788 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:14,792 - DocumentGraderNode - INFO: Retrieved document - **Black-Scholes Model:** This model is arguably the most popular option pricing model. The Black-Scholes model provides a theoretical estimate of the price of European-style options and introduces a continuous time framework. Unlike the binomial option price model, the Black-Scholes model assumes a geometric Brownian motion and is based on the key assumptions that the volatility of the underlying asset is constant and markets are frictionless. It's most suitable for pricing European options where early exercise isn't possible.
+- **Monte Carlo simulations:** This technique uses random sampling and statistical modeling to estimate mathematical functions and simulate the behavior of various assets over time. Monte Carlo simulations are particularly useful for pricing options where the payoff is path dependent, such as Asian options or American options.
+- **Finite difference method:** This model is used to solve differential equations by approximating them with difference equations that finite differences approximate. For options prices, the finite difference method is used to solve partial differential equations typically derived from option pricing formulas, such as those in the Black-Scholes framework. This technique is particularly effective for American options and other derivatives where risk assessment requires an analysis of the effects over time if the boundary conditions can be efficiently modeled. is relevant
+2026-02-01 15:12:15,357 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:15,361 - DocumentGraderNode - INFO: Retrieved document History of the Black-Scholes Model
+
+Developed by Fischer Black, Robert Merton, and Myron Scholes, the Black-Scholes model was the first widely used mathematical method to calculate the theoretical value of an option contract.
+
+It uses current [stock prices](https://www.investopedia.com/best-stock-screeners-5120586), expected dividends, the option's strike price, expected interest rates, time to expiration, and expected volatility.
+
+The initial equation was introduced in Black and Scholes' 1973 paper, "The Pricing of Options and Corporate Liabilities," published in the *Journal of Political Economy*.
+
+Robert C. Merton helped edit the paper. He published his own article, "Theory of Rational Option Pricing," in *The Bell Journal of Economics and Management Science*later that year. He expanded the mathematical understanding and applications of the model, coining the term "Black–Scholes theory of options pricing."
+
+Scholes and Merton received the Nobel Memorial Prize in Economic Sciences in 1997 for their work in finding "a new method to determine the value of derivatives."
+
+Black died two years earlier, so he couldn't receive the Nobel Prize, as it isn't given posthumously. However, the Nobel Committee acknowledged his role in developing the Black-Scholes model. is relevant
+2026-02-01 15:12:15,972 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:15,975 - DocumentGraderNode - INFO: Retrieved document The Bottom Line
+
+The Black-Scholes model is a mathematical model that's used by [traders](https://www.investopedia.com/best-online-brokers-4587872) to calculate the fair price or theoretical value of an asset.
+
+It provides a way to calculate the theoretical value of an option by taking into account the underlying asset's current price, the option's type, the option's strike price, the time remaining until expiration, the risk-free interest rate, and the volatility of the underlying asset.
+
+The Black-Scholes model has had a profound impact on finance and has led to the development of a wide range of derivative products such as futures, swaps, and options. is relevant
+2026-02-01 15:12:15,976 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 15:12:15,976 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.713 seconds.
+2026-02-01 15:12:15,976 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 15:12:15,976 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 15:12:15,978 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is Black Scholes model for pricing an option?", time costed: 4.238 seconds.
+2026-02-01 15:12:15,980 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 15:12:15,980 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 15:12:16,010 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 15:12:16,011 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 15:12:16,172 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.192 seconds.
+2026-02-01 15:12:16,173 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 15:12:16,711 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:16,719 - DocumentGraderNode - INFO: Retrieved document How the Binomial Option Pricing Model Works is relevant
+2026-02-01 15:12:17,200 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:17,204 - DocumentGraderNode - INFO: Retrieved document What Is the Binomial Option Pricing Model?
+
+The binomial option pricing model is a flexible and intuitive method for valuing options. It breaks down the lifespan of an option into discrete periods and handles complex scenarios effectively.
+
+The model, developed in the 1970s by economists John Cox, Stephen Ross, and Mark Rubinstein, offers a simpler alternative to the famous Black-Scholes formula.
+
+The binomial option pricing model accommodates American-style options and provides a visual framework for decision making at various stages. is relevant
+2026-02-01 15:12:17,607 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:17,610 - DocumentGraderNode - INFO: Retrieved document Exploring Alternative Option Pricing Models
+
+Other option pricing models include the Black-Scholes model, Monte Carlo simulations, and the finite difference method. is NOT relevant, dump it.
+2026-02-01 15:12:20,570 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:20,578 - DocumentGraderNode - INFO: Retrieved document Black-Scholes Model: What It Is, How It Works, and the Options Formula is relevant
+2026-02-01 15:12:20,927 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:20,929 - DocumentGraderNode - INFO: Retrieved document Understanding Option Strike Prices: Definition, Function, and Impact is NOT relevant, dump it.
+2026-02-01 15:12:21,584 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:21,588 - DocumentGraderNode - INFO: Retrieved document - **Black-Scholes Model:** This model is arguably the most popular option pricing model. The Black-Scholes model provides a theoretical estimate of the price of European-style options and introduces a continuous time framework. Unlike the binomial option price model, the Black-Scholes model assumes a geometric Brownian motion and is based on the key assumptions that the volatility of the underlying asset is constant and markets are frictionless. It's most suitable for pricing European options where early exercise isn't possible.
+- **Monte Carlo simulations:** This technique uses random sampling and statistical modeling to estimate mathematical functions and simulate the behavior of various assets over time. Monte Carlo simulations are particularly useful for pricing options where the payoff is path dependent, such as Asian options or American options.
+- **Finite difference method:** This model is used to solve differential equations by approximating them with difference equations that finite differences approximate. For options prices, the finite difference method is used to solve partial differential equations typically derived from option pricing formulas, such as those in the Black-Scholes framework. This technique is particularly effective for American options and other derivatives where risk assessment requires an analysis of the effects over time if the boundary conditions can be efficiently modeled. is NOT relevant, dump it.
+2026-02-01 15:12:22,006 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:22,009 - DocumentGraderNode - INFO: Retrieved document How It Works
+
+The binomial option pricing model uses an iterative procedure, allowing for the specification of nodes, or points in time, between the valuation date and the option's expiration date. It assumes that the price of the underlying asset can only move up or down by a certain amount in each step. This simplification allows for a more flexible approach to valuing options, particularly for complex scenarios that its predecessors struggled to handle.
+
+The model uses a stepwise binary tree to estimate the changing prices of options, accommodating American-style options that can be exercised anytime before expiration. A simplified example of a binomial tree might look something like this:
+
+| Time Step        | Node 1  | Node 2  | Node 3  | Node 4  |
+|------------------|---------|---------|---------|---------|
+| **0 (Today)**    | \$50.00 |         |         |         |
+| **1**            | \$52.00 | \$48.00 |         |         |
+| **2**            | \$54.08 | \$49.66 | \$46.08 |         |
+| **3**            | \$56.24 | \$51.89 | \$47.92 | \$44.24 | is relevant
+2026-02-01 15:12:22,372 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:22,372 - DocumentGraderNode - INFO: Retrieved document Call Option: What It Is, How To Use It, and Examples is NOT relevant, dump it.
+2026-02-01 15:12:22,372 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 15:12:22,373 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.2 seconds.
+2026-02-01 15:12:22,373 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 15:12:22,373 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 15:12:22,373 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is binary method for pricing an option?", time costed: 6.395 seconds.
+2026-02-01 15:12:22,374 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 15:12:22,374 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 15:12:22,394 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 15:12:22,394 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 15:12:22,803 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.43 seconds.
+2026-02-01 15:12:22,804 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 15:12:23,160 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:23,163 - DocumentGraderNode - INFO: Retrieved document How the Binomial Option Pricing Model Works is NOT relevant, dump it.
+2026-02-01 15:12:23,754 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:23,758 - DocumentGraderNode - INFO: Retrieved document What Factors Are Evaluated in a Monte Carlo Simulation?
+
+A Monte Carlo simulation in investing is based on historical price data for the asset or assets being evaluated.
+
+The building blocks of the simulation, derived from the historical data, are drift, standard deviation, variance, and average price movement. is NOT relevant, dump it.
+2026-02-01 15:12:24,210 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:24,214 - DocumentGraderNode - INFO: Retrieved document Black-Scholes Model: What It Is, How It Works, and the Options Formula is relevant
+2026-02-01 15:12:24,573 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:24,580 - DocumentGraderNode - INFO: Retrieved document How Monte Carlo Simulations Work
+
+The Monte Carlo method acknowledges an issue for any simulation technique: The probability of varying outcomes cannot be firmly pinpointed because of random variable interference. Therefore, a Monte Carlo simulation focuses on constantly repeating random samples.
+
+A Monte Carlo simulation takes the variable that has uncertainty and assigns it a random value. The model is then run, and a result is provided. This process is repeated again and again while assigning many different values to the variable in question. Once the simulation is complete, the results are averaged to arrive at an estimate. is relevant
+2026-02-01 15:12:24,894 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:24,895 - DocumentGraderNode - INFO: Retrieved document Monte Carlo Simulation: What It Is, How It Works, History, 4 Key Steps is relevant
+2026-02-01 15:12:25,344 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:25,348 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of a Monte Carlo Simulation
+
+The Monte Carlo simulation was created to overcome a perceived disadvantage of other methods of estimating a probable outcome.
+
+The difference is that the Monte Carlo method tests a number of random variables and then averages them, rather than starting out with an average.
+
+Like any financial simulation, the Monte Carlo method relies on historical price data as the basis for a projection of future price data. It then disrupts the pattern by introducing random variables, represented by numbers. Finally, it averages those numbers to arrive at an estimate of the risk that the pattern will be disrupted in real life.
+
+Of course, no simulation can pinpoint an inevitable outcome. The Monte Carlo method aims at a sounder estimate of the probability that an outcome will differ from a projection. is relevant
+2026-02-01 15:12:25,777 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:25,779 - DocumentGraderNode - INFO: Retrieved document Understanding Option Strike Prices: Definition, Function, and Impact is NOT relevant, dump it.
+2026-02-01 15:12:26,307 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:26,310 - DocumentGraderNode - INFO: Retrieved document What Professions Use the Monte Carlo Simulation?
+
+It may be best known for its financial applications, but the Monte Carlo simulation is used in virtually every profession that must measure risks and prepare to meet them.
+
+For example, a telecommunications company may build its network to sustain all of its users all of the time. To do that, it must consider all of the possible variations in demand for the service. It must determine whether the system will stand the strain of peak hours and peak seasons.
+
+A Monte Carlo simulation may help the company decide whether its service is likely to stand the strain of a Super Bowl Sunday as well as an average Sunday in August. is NOT relevant, dump it.
+2026-02-01 15:12:26,311 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 15:12:26,311 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.507 seconds.
+2026-02-01 15:12:26,311 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 15:12:26,311 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 15:12:26,313 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is Monte Carlo simulation for pricing an option?", time costed: 3.939 seconds.
+2026-02-01 15:12:26,313 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 19.836 seconds.
+2026-02-01 15:12:26,314 - log_utils - INFO: generate_node starts to work
+2026-02-01 15:12:32,254 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:32,257 - log_utils - INFO: generate_node finishes working, time costed: 5.944 seconds.
+2026-02-01 15:12:32,258 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-01 15:12:32,662 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:32,670 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-01 15:12:32,670 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-01 15:12:33,122 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:12:33,130 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-01 15:12:33,131 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-01 15:12:33,133 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-01 15:14:22,663 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 15:14:23,561 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:14:23,567 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.904 seconds.
+2026-02-01 15:14:23,568 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-01 15:14:23,570 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 15:14:23,574 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 15:14:23,596 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 15:14:23,596 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 15:14:24,724 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 1.154 seconds.
+2026-02-01 15:14:24,725 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 15:14:25,315 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:14:25,323 - DocumentGraderNode - INFO: Retrieved document Ripples from the crash spread across the Atlantic Ocean to Europe, triggering other financial crises such as the collapse of the Boden-Kredit Anstalt, Austria’s most important bank. The economic calamity hit both continents in full force in 1931. is NOT relevant, dump it.
+2026-02-01 15:14:25,711 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:14:25,713 - DocumentGraderNode - INFO: Retrieved document The Bottom Line
+
+Quantitative analysis is a mathematical approach that collects and evaluates measurable and verifiable data in order to evaluate performance, make better decisions, and predict trends. Unlike qualitative analysis, quantitative analysis uses numerical data to provide an explanation of "what" happened, but not "why" those events occurred. is NOT relevant, dump it.
+2026-02-01 15:14:26,123 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:14:26,127 - DocumentGraderNode - INFO: Retrieved document Capitulation: What It Is in Finance and Investing, With Examples is NOT relevant, dump it.
+2026-02-01 15:14:26,737 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:14:26,745 - DocumentGraderNode - INFO: Retrieved document Things came to a head later that year with Lehman Brothers' bankruptcy, the country’s fourth-largest investment bank, in September 2008. The contagion quickly spread globally, most notably in Europe. As a result of the Great Recession, the U.S. alone lost more than 8.7 million jobs, according to the U.S. Bureau of Labor Statistics. This doubled the unemployment rate. American households lost roughly \$18 trillion in net worthas the stock market plunged. The Great Recession officially ended in June 2009. is relevant
+2026-02-01 15:14:27,147 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:14:27,151 - DocumentGraderNode - INFO: Retrieved document Great Recession: What It Was and What Caused It is relevant
+2026-02-01 15:14:27,594 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:14:27,598 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a[career in quantitative analysis](https://www.investopedia.com/articles/active-trading/111214/quants-what-they-do-and-how-theyve-evolved.asp) usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-01 15:14:28,068 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:14:28,072 - DocumentGraderNode - INFO: Retrieved document Black Monday: Stock Market Crash Causes and Impact is relevant
+2026-02-01 15:14:28,581 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:14:28,585 - DocumentGraderNode - INFO: Retrieved document What Is a Good EBITDA?
+
+A strong EBITDA is considered to be at least two times the company's interest expense. For example, if a company's annual interest expense is \$1 million, then a strong EBITDA would be at least \$2 million.
+
+In some industries, a higher EBITDA margin above 15%, may be considered favorable. A good EBITDA varies by industry, company size, industry norms, growth stage, and capital structure. is NOT relevant, dump it.
+2026-02-01 15:14:28,585 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 15:14:28,585 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.86 seconds.
+2026-02-01 15:14:28,586 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 15:14:28,586 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 15:14:28,587 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What happened in the finance industry in 2008?", time costed: 5.018 seconds.
+2026-02-01 15:14:28,587 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 5.02 seconds.
+2026-02-01 15:14:28,588 - log_utils - INFO: generate_node starts to work
+2026-02-01 15:14:30,065 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:14:30,068 - log_utils - INFO: generate_node finishes working, time costed: 1.48 seconds.
+2026-02-01 15:14:30,068 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-01 15:14:30,618 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:14:30,622 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-01 15:14:30,622 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-01 15:14:31,088 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:14:31,096 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-01 15:14:31,097 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-01 15:14:31,099 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-01 15:15:17,167 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 15:15:17,980 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:15:17,990 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.823 seconds.
+2026-02-01 15:15:17,992 - log_utils - INFO: fallback_node starts to work
+2026-02-01 15:15:17,994 - log_utils - INFO: fallback_node finishes working.
+2026-02-01 15:15:30,542 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 15:15:31,148 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:15:31,155 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.613 seconds.
+2026-02-01 15:15:31,156 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-02-01 15:15:31,763 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:15:31,779 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.623 seconds.
+2026-02-01 15:18:05,996 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 15:18:06,897 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:18:06,916 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.92 seconds.
+2026-02-01 15:18:06,916 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-01 15:18:06,919 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 15:18:06,921 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 15:18:06,943 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 15:18:06,943 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 15:18:08,240 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 1.321 seconds.
+2026-02-01 15:18:08,240 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 15:18:08,742 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:18:08,751 - DocumentGraderNode - INFO: Retrieved document What Is the Difference Between Net Income and Gross Income?
+
+Gross income is the total amount earned. Net income is gross income minus expenses, interest, and taxes. Net income reflects the actual profit of a business or individual. is relevant
+2026-02-01 15:18:09,233 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:18:09,238 - DocumentGraderNode - INFO: Retrieved document Income: What It Means and How It's Taxed With Examples is relevant
+2026-02-01 15:18:09,873 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:18:09,877 - DocumentGraderNode - INFO: Retrieved document Understanding Gross Income and Net Income Differences
+
+Gross income is an individual's total earnings before taxes. Net income is what's left after subtracting deductions and taxes. Taxable income is calculated by subtracting deductions from gross income and then subtracting taxes to find net income.
+
+For example, if someone earns \$60,000 and qualifies for \$10,000 in deductions, their taxable income is \$50,000. With a 13.88% tax rate, they pay \$6,939.50 in taxes and have a net income of \$43,060.50. is relevant
+2026-02-01 15:18:10,378 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:18:10,384 - DocumentGraderNode - INFO: Retrieved document Operating Revenue: Definition, How It's Generated, and Examples is NOT relevant, dump it.
+2026-02-01 15:18:10,765 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:18:10,768 - DocumentGraderNode - INFO: Retrieved document Types of Income is NOT relevant, dump it.
+2026-02-01 15:18:11,097 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:18:11,100 - DocumentGraderNode - INFO: Retrieved document Gross Income vs. Net Income
+
+Your employer may pay you a salary of \$2,000 weekly but it's highly unlikely that they'll hand you a paycheck in that amount. They'll make several deductions from this amount for taxes and other obligations such as contributions you might make to a retirement plan or insurance premiums.
+
+The initial amount before deductions is your gross income. What remains after deductions are made is referred to as your net income. is relevant
+2026-02-01 15:18:11,505 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:18:11,508 - DocumentGraderNode - INFO: Retrieved document Net Income: Definition, Calculation, and Business Impact is NOT relevant, dump it.
+2026-02-01 15:18:11,993 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:18:11,997 - DocumentGraderNode - INFO: Retrieved document What Is Income?
+
+The term income refers to any type of compensation or benefit received in exchange for work performed or for capital invested. Income can come in the form of the money you receive from your employer or the payments you receive on your investments. Income can be divided into several categories, including gross versus net income and earned versus unearned income. is relevant
+2026-02-01 15:18:11,997 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 15:18:11,997 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.757 seconds.
+2026-02-01 15:18:11,997 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 15:18:11,998 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 15:18:11,999 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is gross income?", time costed: 5.081 seconds.
+2026-02-01 15:18:11,999 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 5.083 seconds.
+2026-02-01 15:18:12,000 - log_utils - INFO: generate_node starts to work
+2026-02-01 15:18:12,949 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:18:12,952 - log_utils - INFO: generate_node finishes working, time costed: 0.952 seconds.
+2026-02-01 15:18:12,953 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-01 15:18:13,385 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:18:13,391 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-01 15:18:13,391 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-01 15:18:13,748 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:18:13,755 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-01 15:18:13,756 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-01 15:18:13,759 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-01 15:18:22,212 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 15:18:22,973 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 15:18:22,977 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.765 seconds.
+2026-02-01 15:18:22,977 - log_utils - INFO: calculation_retriever_node starts to work
+2026-02-01 15:18:22,979 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 15:18:23,002 - milvus_db - INFO: Created hybrid retriever: k=10, ranker=rrf, threshold=0.05, filter={'contains_math': True}
+2026-02-01 15:18:23,002 - retriever_tools - INFO: Created hybrid retriever with k=10, threshold=0.05
+2026-02-01 15:18:23,547 - calculation_nodes - ERROR: calculation_retriever_node has error when retrieving documents: <MilvusException: (code=1, message=Unexpected error, message=<required argument is not a float>)>
+2026-02-01 15:18:23,547 - adaptive_rag_langgraph_agent - ERROR: Error when processing user input 'How to calculate it?': <MilvusException: (code=1, message=Unexpected error, message=<required argument is not a float>)>

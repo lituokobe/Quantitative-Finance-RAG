@@ -4,7 +4,7 @@ Quantitative analysis (QA) uses methods to understand financial markets and make
 
 Unlike fundamental analysis, which looks at management or industry conditions, quantitative analysis focuses on numerical computations for insights.
 
-Quantitative analysis is powerful in modern markets, where abundant data and advanced tools enable precise financial examination. However, many also believe that the raw numbers produced by quantitative analysis should be combined with the more in-depth understanding and nuance afforded by [qualitative analysis](https://www.investopedia.com/terms/q/qualitativeanalysis.asp).
+Quantitative analysis is powerful in modern markets, where abundant data and advanced tools enable precise financial examination. However, many also believe that the raw numbers produced by quantitative analysis should be combined with the more in-depth understanding and nuance afforded by qualitative analysis.
 
 ### Key Takeaways
 
@@ -112,15 +112,15 @@ Quantitative analysis is used by governments, investors, and businesses (in area
 
 ## What Kind of Education Do You Need to Be a Quant?
 
-Individuals pursuing a[career in quantitative analysis](https://www.investopedia.com/articles/active-trading/111214/quants-what-they-do-and-how-theyve-evolved.asp) usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial.
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial.
 
 ## What Is the Difference Between Quantitative Analysis and Fundamental Analysis?
 
-While both rely on the use of math and numbers, [fundamental analysis](https://www.investopedia.com/terms/f/fundamentalanalysis.asp) takes a broader approach by examining the intrinsic value of a security. It dives into a company's financial statements, industry position, the competence of the management team, and the economic environment in which it operates. By evaluating factors like earnings, dividends, and the financial health of a company, fundamental analysts aim to ascertain the true value of a security and whether it is undervalued or overvalued in the market. This form of analysis is more holistic and requires a deep understanding of the company and the industry in which it operates.
+While both rely on the use of math and numbers, fundamental analysis takes a broader approach by examining the intrinsic value of a security. It dives into a company's financial statements, industry position, the competence of the management team, and the economic environment in which it operates. By evaluating factors like earnings, dividends, and the financial health of a company, fundamental analysts aim to ascertain the true value of a security and whether it is undervalued or overvalued in the market. This form of analysis is more holistic and requires a deep understanding of the company and the industry in which it operates.
 
 ## How Does Artificial Intelligence (AI) Influence Quantitative Analysis?
 
-Quantitative analysis often intersects with [machine learning](https://www.investopedia.com/terms/m/machine-learning.asp) (ML) and other forms of [artificial intelligence](https://www.investopedia.com/terms/a/artificial-intelligence-ai.asp) (AI). ML and AI can be employed to develop predictive models and algorithms based on the quantitative data. These technologies can automate the analysis process, handle large datasets, and uncover complex patterns or trends that might be difficult to detect through traditional quantitative methods.
+Quantitative analysis often intersects with machine learning (ML) and other forms of artificial intelligence (AI). ML and AI can be employed to develop predictive models and algorithms based on the quantitative data. These technologies can automate the analysis process, handle large datasets, and uncover complex patterns or trends that might be difficult to detect through traditional quantitative methods.
 
 ## The Bottom Line
 

@@ -1,0 +1,76 @@
+2026-02-01 22:16:44,990 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-01 22:16:44,993 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-01 22:16:44,995 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-01 22:16:45,001 - log_utils - INFO: starting_reply_node starts to work
+2026-02-01 22:16:45,001 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-01 22:16:58,473 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 22:16:59,278 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 22:16:59,302 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.829 seconds.
+2026-02-01 22:16:59,303 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-01 22:16:59,304 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-01 22:16:59,367 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 22:16:59,399 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-01 22:16:59,399 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-01 22:17:00,492 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 1.188 seconds.
+2026-02-01 22:17:00,493 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-01 22:17:00,840 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 22:17:00,855 - DocumentGraderNode - INFO: Retrieved document Black-Scholes Model: What It Is, How It Works, and the Options Formula is relevant
+2026-02-01 22:17:01,241 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 22:17:01,244 - DocumentGraderNode - INFO: Retrieved document What Is the Black-Scholes Model?
+
+The Black-Scholes model, also known as the Black-Scholes-Merton (BSM) model, is one of the most important concepts in modern financial theory. It helps [traders and investors](https://www.investopedia.com/best-online-brokers-4587872) determine the fair value of an options contract.
+
+This mathematical equation estimates the theoretical value of derivatives based on other investment instruments. It considers the impact of time and other risk factors in its calculation.
+
+It was developed in 1973 and is still regarded as one of the best ways to price an options contract. is relevant
+2026-02-01 22:17:01,699 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 22:17:01,702 - DocumentGraderNode - INFO: Retrieved document How the Binomial Option Pricing Model Works is NOT relevant, dump it.
+2026-02-01 22:17:02,217 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 22:17:02,222 - DocumentGraderNode - INFO: Retrieved document What Are the Limitations of the Black-Scholes Model?
+
+The Black-Scholes model is only used to price European options. It doesn't take into account that American options could be exercised before the expiration date. The model also assumes that dividends, volatility, and risk-free rates remain constant over the option's life. Not taking taxes, commissions, or trading costs into account can also lead to valuations that deviate from real-world results. is relevant
+2026-02-01 22:17:02,741 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 22:17:02,747 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- The Black-Scholes model is also known as the Black-Scholes-Merton or BSM model.
+- It's a differential equation that's widely used to price options contracts.
+- The Black-Scholes model requires five input variables: the strike price of an option, the current stock price, the time to expiration, the risk-free rate, and the volatility.
+- The Black-Scholes model is usually accurate, but it makes certain assumptions that can lead to predictions that deviate from real-world results.
+- The standard BSM model is only used to price European options because it doesn't take into account that American options could be exercised before the expiration date. is relevant
+2026-02-01 22:17:03,138 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 22:17:03,139 - DocumentGraderNode - INFO: Retrieved document The Bottom Line
+
+The Black-Scholes model is a mathematical model that's used by [traders](https://www.investopedia.com/best-online-brokers-4587872) to calculate the fair price or theoretical value of an asset.
+
+It provides a way to calculate the theoretical value of an option by taking into account the underlying asset's current price, the option's type, the option's strike price, the time remaining until expiration, the risk-free interest rate, and the volatility of the underlying asset.
+
+The Black-Scholes model has had a profound impact on finance and has led to the development of a wide range of derivative products such as futures, swaps, and options. is relevant
+2026-02-01 22:17:03,139 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-01 22:17:03,139 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 2.646 seconds.
+2026-02-01 22:17:03,139 - route_functions - INFO: --- Assess graded docs ---
+2026-02-01 22:17:03,139 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-01 22:17:03,140 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is the Black Scholes model?", time costed: 3.837 seconds.
+2026-02-01 22:17:03,140 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 3.837 seconds.
+2026-02-01 22:17:03,140 - log_utils - INFO: generate_node starts to work
+2026-02-01 22:17:05,642 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 22:17:05,646 - log_utils - INFO: generate_node finishes working, time costed: 2.506 seconds.
+2026-02-01 22:17:05,647 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-01 22:17:06,174 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 22:17:06,187 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-01 22:17:06,188 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-01 22:17:06,585 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 22:17:06,599 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-01 22:17:06,600 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-01 22:17:06,600 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-01 22:17:39,031 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 22:17:40,106 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 22:17:40,114 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.083 seconds.
+2026-02-01 22:17:40,115 - log_utils - INFO: calculation_retriever_node starts to work
+2026-02-01 22:17:40,117 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 22:17:40,148 - milvus_db - INFO: Created hybrid retriever: k=10, ranker=rrf, threshold=0.05, filter={'contains_math': True}
+2026-02-01 22:17:40,148 - retriever_tools - INFO: Created hybrid retriever with k=10, threshold=0.05
+2026-02-01 22:17:41,036 - log_utils - INFO: calculation_retriever_node finishes working, time costed: 0.921 seconds.
+2026-02-01 22:17:41,037 - log_utils - INFO: math_verification_node starts to work
+2026-02-01 22:17:41,605 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 22:17:41,621 - log_utils - INFO: math_verification_node finishes working, time costed: 0.584 seconds.
+2026-02-01 22:17:41,622 - adaptive_rag_langgraph_agent - ERROR: Error when processing user input 'Can I use it to calculate call option price?': 'calculate_answer_node'

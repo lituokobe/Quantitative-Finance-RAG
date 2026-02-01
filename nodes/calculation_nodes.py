@@ -37,7 +37,8 @@ def calculation_retriever_node(state: State):
             score_threshold=0.05, # High recall
             filter_dict={"contains_math": True}, # Math only. But this only applies to vector search, BM25 won't follow. There will be none-math docs in the results as well.
         )
-        documents = math_retriever.invoke({"question":question})
+        # documents = math_retriever.invoke({"question":question})
+        documents = math_retriever.invoke(question)
     except Exception as e:
         log.error(f"{node_name} has error when retrieving documents: {e}")
         raise
@@ -107,7 +108,9 @@ class MathVerificationNode:
             missing_info_message: str = resp.missing_info_message
             # prepare the data for calculation_answer_node, so no need to repeat the process
             if decision == "good":
-                return decision, missing_info_message, calculation_material
+                return decision, "", calculation_material
+            elif decision == "missing_info":
+                return decision, missing_info_message, {}
             else:
                 return decision, "", {}
         except Exception as e:
@@ -138,20 +141,53 @@ class MathVerificationNode:
         # -------- Verify the math calculation --------
         try:
             decision, missing_info_message, calculation_material = self._verify(question, retrieved_documents, messages)
+            print(f"input to verification:/n"
+                  f"question: {question}/n"
+                  f"retrieved_docs (first one): {retrieved_documents[0]}"
+                  f"chat history: {messages}")
+            print(f"output of verification:/n"
+                  f"decision: {decision}/n"
+                  f"mising_info_message: {missing_info_message}/n"
+                  f"calculation_material: {calculation_material}")
+
             time_cost = round(time.time() - prev_time, 3)
-            current_log = {
-                **last_log,
-                "node": self.node_name,
-                "agent_reply": missing_info_message,
-                "time_cost": time_cost,
-                "calculation_material":calculation_material
-            }
-            log_node_end(self.node_name, time_cost)
-            return {
-                "messages": AIMessage(content=missing_info_message),
-                "dialog_state": decision,
-                "logs": state["logs"] + [current_log]
-            }
+
+            if decision == "good": # pass the calculation material to let calculate_answer_node output
+                current_log = {
+                    **last_log,
+                    "node": self.node_name,
+                    "time_cost": time_cost,
+                    "calculation_material":calculation_material
+                }
+                log_node_end(self.node_name, time_cost)
+                return {
+                    "dialog_state": "calculation_answer_node",
+                    "logs": state["logs"] + [current_log]
+                }
+            elif decision == "missing_info": # output the missing_info_message and let math_verification_node do another check
+                current_log = {
+                    **last_log,
+                    "node": self.node_name,
+                    "agent_reply": missing_info_message,
+                    "time_cost": time_cost
+                }
+                log_node_end(self.node_name, time_cost)
+                return {
+                    "messages": AIMessage(content=missing_info_message),
+                    "dialog_state": "math_verification_node",
+                    "logs": state["logs"] + [current_log]
+                }
+            else: # got to calculation_fallback_node and let it output
+                current_log = {
+                    **last_log,
+                    "node": self.node_name,
+                    "time_cost": time_cost,
+                }
+                log_node_end(self.node_name, time_cost)
+                return {
+                    "dialog_state": "calculation_fallback_node",
+                    "logs": state["logs"] + [current_log]
+                }
         except Exception as e:
             log.error(f"{self.node_name} has error: {e}")
             raise

@@ -8,13 +8,13 @@
 
 ## What Is a Put Option?
 
-A put option (or “put”), which gives the holder the right to sell, can be contrasted with a call option, which provides the holder with the right to buy the underlying security at a specified price, up until the option contract's expiration date. This predetermined price is called the [strike price](https://www.investopedia.com/terms/s/strikeprice.asp).
+A put option (or “put”), which gives the holder the right to sell, can be contrasted with a call option, which provides the holder with the right to buy the underlying security at a specified price, up until the option contract's expiration date. This predetermined price is called the strike price.
 
 ## How a Put Option Works
 
 A put option becomes more valuable as the underlying stock or security's price decreases. Conversely, a put option loses its value as the price of the underlying stock increases. As a result, they're typically used for hedging purposes or to speculate on downside price action.
 
-Investors often use put options in a risk management strategy known as a [protective put](https://www.investopedia.com/terms/p/protective-put.asp), a form of investment insurance or hedge to ensure that losses in the underlying asset don't exceed a certain amount.
+Investors often use put options in a risk management strategy known as a protective put, a form of investment insurance or hedge to ensure that losses in the underlying asset don't exceed a certain amount.
 
 In this strategy, the investor buys a put option to hedge downside risk for a stock held in their portfolio. If the option is exercised, the investor sells the stock at the put’s strike price. If the investor doesn't hold the underlying stock and exercises a put option, this would create a short position in the stock.
 
@@ -22,7 +22,7 @@ In this strategy, the investor buys a put option to hedge downside risk for a st
 
 The value of a put option generally decreases as it approaches expiration because of the impact of time decay. Time decay accelerates as an option’s expiration date gets closer, since there’s less time to profit from the trade.
 
-When an option loses its time value, the [intrinsic value](https://www.investopedia.com/terms/i/intrinsicvalue.asp) is what's left. An option’s intrinsic value is equivalent to the difference between the strike price and the underlying stock price. An option is [in the money (ITM)](https://www.investopedia.com/terms/i/inthemoney.asp) if it has intrinsic value.
+When an option loses its time value, the intrinsic value is what's left. An option’s intrinsic value is equivalent to the difference between the strike price and the underlying stock price. An option is in the money (ITM) if it has intrinsic value.
 
 ### Important
 
@@ -30,9 +30,9 @@ When an option loses its time value, the [intrinsic value](https://www.investope
 
 - $\text{Call option intrinsic value} = \text{Market price of underlying security} - \text{Strike price}$
 
-[Out-of-the-money (OTM)](https://www.investopedia.com/terms/o/outofthemoney.asp) and [at-the-money (ATM)](https://www.investopedia.com/terms/a/atthemoney.asp) put options have no intrinsic value because there's no benefit in exercising the option. Investors have the option of short-selling the stock at the current higher market price, rather than exercising an OTM put option at an undesirable strike price. However, outside of a [bear market](https://www.investopedia.com/terms/b/bearmarket.asp), short selling is typically riskier than buying put options.
+Out-of-the-money (OTM) and at-the-money (ATM) put options have no intrinsic value because there's no benefit in exercising the option. Investors have the option of short-selling the stock at the current higher market price, rather than exercising an OTM put option at an undesirable strike price. However, outside of a bear market, short selling is typically riskier than buying put options.
 
-Time value, or extrinsic value, is reflected in the [premium](https://www.investopedia.com/terms/o/option-premium.asp) of the option. If the strike price of a put option is \$20, and the underlying stock is currently trading at \$19, there's \$1 of intrinsic value in the option. But the put option may trade for \$1.35. The extra \$0.35 is time value, as the underlying stock price could change before the option expires. Different put options on the same underlying asset may be combined to form put spreads.
+Time value, or extrinsic value, is reflected in the premium of the option. If the strike price of a put option is \$20, and the underlying stock is currently trading at \$19, there's \$1 of intrinsic value in the option. But the put option may trade for \$1.35. The extra \$0.35 is time value, as the underlying stock price could change before the option expires. Different put options on the same underlying asset may be combined to form put spreads.
 
 There are several factors to consider when it comes to selling put options. It’s important to understand an option contract’s value and profitability when considering a trade, or else you risk the stock falling past the point of profitability.
 
@@ -58,7 +58,7 @@ If units of SPY fall to \$535 before expiration, the \$545 put will be ITM and w
 
 Since the put option is now ITM, the investor has to decide whether to (a) exercise the option, which would confer the right to sell 100 shares of SPY at the strike price of \$545; or (b) sell the put option and pocket the profit. We consider two cases: (i) the investor already holds 100 units of SPY; and (ii) the investor doesn't hold any SPY units. (The calculations below ignore commission costs, to keep things simple.)
 
-Let’s say the investor [exercises](https://www.investopedia.com/terms/e/exercise.asp) the put option. If the investor already holds 100 units of SPY (assume they were purchased at \$510) in their portfolio and the put was bought to hedge downside risk (i.e., it was a protective put), then the investor’s broker would sell the 100 SPY shares at the strike price of \$545.
+Let’s say the investor exercises the put option. If the investor already holds 100 units of SPY (assume they were purchased at \$510) in their portfolio and the put was bought to hedge downside risk (i.e., it was a protective put), then the investor’s broker would sell the 100 SPY shares at the strike price of \$545.
 
 The net profit on this trade can be calculated as:
 
@@ -112,7 +112,7 @@ Put options only have value if the market price of the asset falls below the str
 
 ## Is Buying a Put Similar to Short Selling?
 
-Buying puts and short selling are both bearish strategies, but there are some important differences between the two. A put buyer’s maximum loss is limited to the premium paid for the put, while buying puts doesn't require a margin account and can be done with limited amounts of capital. Short selling, on the other hand, has theoretically unlimited risk and is significantly more expensive because of costs like stock borrowing charges and margin [interest](https://www.investopedia.com/best-cd-rates-4770214) (short selling generally needs a margin account). Short selling is therefore considered to be much riskier than buying puts.
+Buying puts and short selling are both bearish strategies, but there are some important differences between the two. A put buyer’s maximum loss is limited to the premium paid for the put, while buying puts doesn't require a margin account and can be done with limited amounts of capital. Short selling, on the other hand, has theoretically unlimited risk and is significantly more expensive because of costs like stock borrowing charges and margin interest (short selling generally needs a margin account). Short selling is therefore considered to be much riskier than buying puts.
 
 ## Should I Buy In-the-Money (ITM) or Out-of-the-Money (OTM) Puts?
 
@@ -129,4 +129,3 @@ Put writing is an advanced option strategy meant for experienced traders and inv
 ## The Bottom Line
 
 Put options allow the holder to sell a security at a guaranteed price, even if the market price for that security has fallen lower. That makes them useful for hedging strategies as well as for speculative traders. Along with call options, puts are among the most basic derivative contracts.
-

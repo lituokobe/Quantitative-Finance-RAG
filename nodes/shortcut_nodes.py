@@ -66,7 +66,7 @@ class ShortcutRetrieverNode:
 
         self.shortcut_reply_lookup = {
             "greetings": "Thanks for checking out. I'm doing great! You can ask me anything about quantitative finance.",
-            "user_how_to": "Just simply input what you want to know. I will try my best to answer you.",
+            "user_how_to": "Just simply input what you want to know about quantitative finance. I will try my best to answer you.",
             "answer_scope": "I am specialized in topics of quantitative finance like option pricing, stochastic calculus, portfolio theory and risk management. Besides, I can also help you with questions of FinTech, AI, corporate finance, economy, and finance history",
             "assistant_how_to": "I am powered by RAG and all my answers come from creditable sources. I use AI to frame my language, but I won't reply you based on the AI's own training data and inference.",
             "whether_accurate": "Yes, my answers are accurate and trustworthy. If you have any further questions on any of my answers, just continue asking me and I am happy to discuss more with you in detail."

@@ -1,0 +1,50 @@
+2026-02-01 22:59:43,307 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-01 22:59:43,310 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-01 22:59:43,311 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-01 22:59:43,317 - log_utils - INFO: starting_reply_node starts to work
+2026-02-01 22:59:43,317 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-01 22:59:58,082 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 22:59:58,984 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 22:59:59,011 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.93 seconds.
+2026-02-01 22:59:59,012 - log_utils - INFO: calculation_retriever_node starts to work
+2026-02-01 22:59:59,069 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 22:59:59,095 - milvus_db - INFO: Created hybrid retriever: k=10, ranker=rrf, threshold=0.05, filter={'contains_math': True}
+2026-02-01 22:59:59,095 - retriever_tools - INFO: Created hybrid retriever with k=10, threshold=0.05
+2026-02-01 23:00:00,540 - log_utils - INFO: calculation_retriever_node finishes working, time costed: 1.528 seconds.
+2026-02-01 23:00:00,541 - log_utils - INFO: math_verification_node starts to work
+2026-02-01 23:00:01,187 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:00:01,202 - log_utils - INFO: math_verification_node finishes working, time costed: 0.661 seconds.
+2026-02-01 23:00:01,203 - log_utils - INFO: calculation_fallback_node starts to work
+2026-02-01 23:00:01,204 - log_utils - INFO: calculation_fallback_node finishes working.
+2026-02-01 23:01:05,450 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 23:01:06,253 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:01:06,259 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.809 seconds.
+2026-02-01 23:01:06,260 - log_utils - INFO: calculation_retriever_node starts to work
+2026-02-01 23:01:06,262 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:01:06,287 - milvus_db - INFO: Created hybrid retriever: k=10, ranker=rrf, threshold=0.05, filter={'contains_math': True}
+2026-02-01 23:01:06,287 - retriever_tools - INFO: Created hybrid retriever with k=10, threshold=0.05
+2026-02-01 23:01:07,172 - log_utils - INFO: calculation_retriever_node finishes working, time costed: 0.912 seconds.
+2026-02-01 23:01:07,173 - log_utils - INFO: math_verification_node starts to work
+2026-02-01 23:01:07,615 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:01:07,620 - log_utils - INFO: math_verification_node finishes working, time costed: 0.447 seconds.
+2026-02-01 23:01:07,621 - log_utils - INFO: calculation_answer_node starts to work
+2026-02-01 23:01:11,075 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:01:11,078 - log_utils - INFO: calculation_answer_node finishes working, time costed: 3.457 seconds.
+2026-02-01 23:02:04,151 - log_utils - INFO: starting_intention_node starts to work
+2026-02-01 23:02:05,056 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:02:05,061 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.91 seconds.
+2026-02-01 23:02:05,063 - log_utils - INFO: calculation_retriever_node starts to work
+2026-02-01 23:02:05,065 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-01 23:02:05,114 - milvus_db - INFO: Created hybrid retriever: k=10, ranker=rrf, threshold=0.05, filter={'contains_math': True}
+2026-02-01 23:02:05,114 - retriever_tools - INFO: Created hybrid retriever with k=10, threshold=0.05
+2026-02-01 23:02:06,100 - log_utils - INFO: calculation_retriever_node finishes working, time costed: 1.038 seconds.
+2026-02-01 23:02:06,101 - log_utils - INFO: math_verification_node starts to work
+2026-02-01 23:02:07,023 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:02:07,025 - log_utils - INFO: math_verification_node finishes working, time costed: 0.924 seconds.
+2026-02-01 23:03:02,057 - log_utils - INFO: math_verification_node starts to work
+2026-02-01 23:03:02,833 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:03:02,837 - log_utils - INFO: math_verification_node finishes working, time costed: 0.78 seconds.
+2026-02-01 23:03:02,839 - log_utils - INFO: calculation_answer_node starts to work
+2026-02-01 23:03:13,255 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-01 23:03:13,258 - log_utils - INFO: calculation_answer_node finishes working, time costed: 10.419 seconds.
+2026-02-01 23:05:43,964 - adaptive_rag_langgraph_agent - INFO: === The conversation ends ===

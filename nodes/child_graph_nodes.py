@@ -1,11 +1,10 @@
 import time
+from chains.rewrite_chain import rewrite_chain
 from config.state import ChildState
 from tools.retriever_tools import create_hybrid_retriever
 from utils.log_utils import log_node_start, log, log_node_end
 from langchain_core.documents import Document
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.prompts import ChatPromptTemplate
-from models.models import agent_llm, web_search_tool
+from models.models import web_search_tool
 
 def retriever_node(state: ChildState):
     prev_time = time.time()
@@ -35,39 +34,14 @@ def rewrite_query_node(state: ChildState) -> dict:
     question = state.get("question", "")
     rewrite_count = state.get("rewrite_count", 0)
 
-    # --------- Prepare the rewriter chain ---------
-    system_prompt = """
-    ## === YOUR ROLE ===
-    You are a query rewriter. You rewrite the question with optimization for answer-retrieval in a vector database.
-    
-    ## === YOUR CORE TASK ===
-    You will be given a question, please:
-    - analyse and comprehend the true meaning and intention behind the question.
-    - rewrite the question to keep its original intention and meaning but with better wordings for retrieval in vector database.
-    
-    ## === IMPORTANT RULES ===
-    - **Only output the optimized question alone**, don't add any extra words including introductory text, explanation, summary, etc.
-    - **Don't conduct any conversation**, only output the optimized question.
-    
-    ## === OUTPUT EXAMPLES ===
-    - If you are given the question: "What is a put option?", output "What is the definition of put option?"
-    - If you are given the question: "What did the financial crisis do to the world?", output "What are the impacts of the financial crisis to the world?"
-    """
-
-    rewrite_prompt = ChatPromptTemplate.from_messages([
-        ("system", system_prompt),
-        ("human", "This is the question to rewrite: \n{question}\n\n Please generate an optimized version")
-    ])
-    question_rewriter = rewrite_prompt | agent_llm | StrOutputParser()
-
     # --------- Rewrite the question ---------
     try:
-        optimized_question = question_rewriter.invoke({"question":question})
+        optimized_question = rewrite_chain.invoke({"question":question})
     except Exception as e:
         log.error(f"{node_name} has error on rewriting question \"{question}\": {e}")
         optimized_question = question
 
-    print(f"After rewrting, the question becomes {optimized_question}.")
+    print(f"After rewriting, the question becomes {optimized_question}.")
 
     time_cost = round(time.time() - prev_time, 3)
     log_node_end(node_name, time_cost)

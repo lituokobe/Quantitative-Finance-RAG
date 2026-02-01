@@ -8,9 +8,9 @@
 
 ## What Are Public-Private Partnerships?
 
-Public-private partnerships (PPPs) involve collaboration between a government agency and a private-sector company. They can be used to [finance, build, and operate projects](https://www.investopedia.com/terms/p/privatefinanceinitiative.asp), such as public transportation networks, parks, and convention centers.
+Public-private partnerships (PPPs) involve collaboration between a government agency and a private-sector company. They can be used to finance, build, and operate projects, such as public transportation networks, parks, and convention centers.
 
-Potential benefits of a [public-private partnership](https://www.investopedia.com/ask/answers/021715/what-impact-publicprivate-partnerships-have-economic-growth.asp) include allowing a project to be completed sooner or making it a possibility in the first place, because of either financial constraints or completion timelines. It often involves concessions of tax or other operating revenue, protection from liability, or partial ownership rights over nominally public services and property to private-sector, for-profit entities.
+Potential benefits of a public-private partnership include allowing a project to be completed sooner or making it a possibility in the first place, because of either financial constraints or completion timelines. It often involves concessions of tax or other operating revenue, protection from liability, or partial ownership rights over nominally public services and property to private-sector, for-profit entities.
 
 PPPs are usually found in environmental, municipal, and transportation infrastructure, as well as public service accommodations. Public-private partnerships typically involve negotiated risk sharing. The public sector takes on regulatory risk, while the private sector absorbs construction and operational risks.
 
@@ -18,9 +18,9 @@ Real-world examples of PPPs include airports, bridges, highways, prisons, school
 
 ## Understanding the Mechanics of Public-Private Partnerships
 
-A city government, for example, might be heavily indebted and unable to undertake a capital-intensive building project; however, a private enterprise might be interested in funding its construction in exchange for receiving the [operating profits](https://www.investopedia.com/terms/o/operating_profit.asp) once the project is complete.
+A city government, for example, might be heavily indebted and unable to undertake a capital-intensive building project; however, a private enterprise might be interested in funding its construction in exchange for receiving the operating profits once the project is complete.
 
-Public-private partnerships typically have contract periods of 20 to 30 years or longer. Financing comes partly from the private sector but requires payments from the [public sector](https://www.investopedia.com/articles/personal-finance/022315/how-government-budgetary-decisions-impact-public-sector.asp) and/or users over the project's lifetime.
+Public-private partnerships typically have contract periods of 20 to 30 years or longer. Financing comes partly from the private sector but requires payments from the public sector and/or users over the project's lifetime.
 
 The private partner participates in designing, completing, implementing, and funding the project, while the public partner focuses on defining and monitoring compliance with the objectives.
 
@@ -38,7 +38,7 @@ In cases such as shadow tolls for highways, payments are based on actual usage o
 
 ### Advantages
 
-Partnerships between private companies and governments provide advantages to both parties. Private-sector technology and innovation, for example, can help improve the [operational efficiency](https://www.investopedia.com/terms/o/operationalefficiency.asp) of providing public services.
+Partnerships between private companies and governments provide advantages to both parties. Private-sector technology and innovation, for example, can help improve the operational efficiency of providing public services.
 
 The public sector, for its part, provides incentives for the private sector to deliver projects on time and within budget. In addition, creating economic diversification makes the country more competitive in facilitating its infrastructure base and boosting associated construction, equipment, support services, and other businesses.
 
@@ -54,9 +54,9 @@ Public-private partnerships also create risks from the general public's and taxp
 
 Private partners might increase tolls and fees, especially where people have no other choice due to laws or monopolies.
 
-Separating ownership and decision rights in public-private partnerships can lead to complex [principal-agent problems](https://www.investopedia.com/terms/p/principal-agent-problem.asp).
+Separating ownership and decision rights in public-private partnerships can lead to complex principal-agent problems.
 
-This may facilitate corrupt dealings, payoffs to political cronies, and general [rent-seeking](https://www.investopedia.com/terms/r/rentseeking.asp) activity. This would happen by attenuating the link between the private parties who make important decisions over a project, from which they stand to benefit, and accountability to the taxpayers who foot at least part of the bill and who may be left holding the bag in terms of ultimate liability for the project's outcome.
+This may facilitate corrupt dealings, payoffs to political cronies, and general rent-seeking activity. This would happen by attenuating the link between the private parties who make important decisions over a project, from which they stand to benefit, and accountability to the taxpayers who foot at least part of the bill and who may be left holding the bag in terms of ultimate liability for the project's outcome.
 
 ## Examples of Public-Private Partnerships
 
@@ -90,4 +90,3 @@ Key advantages of PPPs are financing big projects that may otherwise be unfeasib
 Potential disadvantages of public-private partnerships include cost overrun risks for businesses, inadequate quality standards, low project demand for governments, and blurred lines between public and private interests that could lead to possible ethical concerns (such as possible exploitation through self-dealing). Despite the risks, PPPs continue to be popular due to their capability to efficiently finance environmental, municipal, and transportation infrastructure, as well as public service projects.
 
 It's important to negotiate balanced risk sharing in PPPs between public and private entities to manage possible financial, demand, and operational risks.
-
