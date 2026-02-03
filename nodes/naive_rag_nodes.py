@@ -1,12 +1,18 @@
 import time
 from typing import Literal
-from langchain_core.messages import HumanMessage, AIMessage
+
+from langchain_core.messages import AIMessage, HumanMessage
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnableConfig
 from pydantic import BaseModel
-from config.prompts import INTENTION_PROMPT1, INTENTION_PROMPT2, INTENTION_PROMPT3
+
+from config.prompts import NAIVE_RAG_INTENTION_PROMPT1, NAIVE_RAG_INTENTION_PROMPT2, NAIVE_RAG_INTENTION_PROMPT3, \
+    AGENT_NODE_PROMPT
 from config.state import State
-from utils.build_prompt import build_history_prompt
 from models.models import agent_llm
+from tools.retriever_tools import get_default_retriever_tool
+from utils.build_prompt import build_history_prompt
 from utils.log_utils import log, log_node_start, log_node_end
 from utils.utils import get_last_user_message
 
@@ -15,19 +21,13 @@ class Intention(BaseModel):
     Data class to regulate the output of the LLM for intention identifying.
     """
     question: str
-    decision: Literal[
-        "standard_agent",
-        "shortcut_agent",
-        "calculation_agent",
-        "comparison_agent",
-        "fallback"
-    ]
+    decision: Literal["agent_node", "fallback_node"]
 
 class StartingIntentionNode:
     def __init__(self):
         # Initiate the agent with structured output
         self.llm_runnable_structured_output = agent_llm.with_structured_output(Intention)
-        self.node_name = "starting_intention_node"
+        self.node_name = "naive rag - starting_intention_node"
 
     def _infer(self, history:list, user_input:str):
         # -------- check the availability of the agent LLM --------
@@ -38,9 +38,8 @@ class StartingIntentionNode:
         # -------- Formulate the full prompt with dynamic chat data --------
         try:
             history_prompt = build_history_prompt(history)
-            doc_string = INTENTION_PROMPT1 + history_prompt + INTENTION_PROMPT2 + [user_input] + INTENTION_PROMPT3
+            doc_string = NAIVE_RAG_INTENTION_PROMPT1 + history_prompt + NAIVE_RAG_INTENTION_PROMPT2 + [user_input] + NAIVE_RAG_INTENTION_PROMPT3
             full_prompt = "\n".join(doc_string)
-            # print(f"Full prompt at {self.node_name} to identify intention:\n{full_prompt}")
 
         except Exception as e:
             log.error(f"Error formulating prompt at {self.node_name}: {e}")
@@ -81,36 +80,57 @@ class StartingIntentionNode:
             "logs": state["logs"] + [current_log]
         }
 
-if __name__ == "__main__":
-    intention_identifier = StartingIntentionNode()
-    decision1, question1 = intention_identifier._infer([], "I want to know what is a banana")
-    print(decision1, question1)
-    print()
+class AgentNode:
+    def __init__(self):
+        self.node_name="naive rag - agent_node"
+        self.retriever_runnable = get_default_retriever_tool()
 
-    decision2, question2 = intention_identifier._infer([
-        AIMessage(content="How can I help you?"),
-        HumanMessage(content="I want to know what is a banana."),
-        AIMessage(content="Sorry, I can only answer questions related to quantitative finance."),
-        HumanMessage(content="I want to know what is option?"),
-        AIMessage(content="An option is a choice or possibility in general, but in finance, it's a contract giving the buyer the right, but not the obligation, to buy (call) or sell (put) an underlying asset (like stocks, commodities) at a set price (strike price) by a specific date (expiration date)."),
-        HumanMessage(content="How to calculate it?"),
-    ], "How to calculate it?")
-    print(decision2, question2)
-    print()
+        # Build the answer chain
+        agent_node_prompt = PromptTemplate(
+            template=AGENT_NODE_PROMPT,
+            input_variables=["question", "retrieved documents"]
+        )
+        self.agent_node_chain = agent_node_prompt | agent_llm | StrOutputParser()
 
-    decision3, question3 = intention_identifier._infer([
-        AIMessage(content="How can I help you?"),
-        HumanMessage(content="What is inflation?"),
-        AIMessage(content="Inflation is the rate at which the general level of prices for goods and services rises, decreasing the purchasing power of money over time."),
-        HumanMessage(content="What's its difference from deflation?"),
-    ], "What's its difference from deflation?")
-    print(decision3, question3)
-    print()
+    def __call__(self, state: State, config: RunnableConfig) -> dict:
+        try:
+            prev_time = time.time()
+            log_node_start(self.node_name)
 
-    decision4, question4 = intention_identifier._infer([
-        AIMessage(content="How can I help you?"),
-        HumanMessage(content="Who are you?"),
-        AIMessage(content="I am an AI assistant to answer questions related to quantitative finance."),
-        HumanMessage(content="How can I get start?"),
-    ], "How can I get start?")
-    print(decision4, question4)
+            logs = state.get("logs", [])
+            last_log = logs[-1] if logs else {}
+            if logs:
+                question = last_log.get("question", "")
+            else:
+                question = ""
+            documents = self.retriever_runnable.invoke(question)
+            print(f"**retrieved documents:** \n{documents}")
+
+            # TODO: Answer question
+
+
+            answer = self.agent_node_chain.invoke(
+                {
+                    "question": question,
+                    "retrieved documents": documents,
+                }
+            )
+
+            time_cost = round(time.time() - prev_time, 3)
+            current_log = {
+                **last_log,
+                "node": self.node_name,
+                "time_cost": time_cost,
+                "retrieved_documents" : documents,
+                "agent_reply": answer
+            }
+
+            log_node_end(self.node_name, time_cost)
+            return {
+                "messages": AIMessage(content=answer),
+                "dialog_state": "starting_intention_node",
+                "logs": state.get("logs", []) + [current_log]
+            }
+        except Exception as e:
+            log.error(f"{self.node_name} has error: {e}")
+            raise

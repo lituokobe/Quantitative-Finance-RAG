@@ -53,20 +53,20 @@ def main(thread_id: str):
     return state
 
 if __name__ == "__main__":
-    state = main("test_call")
+    end_state = main("test_call")
 
     # Print final messages
     print("=== Quantitative Finance RAG Assistant has left the conversation ===\n")
     print("Chat history: ")
-    for msg in state["messages"]:
-        if msg.__class__.__name__ == "AIMessage":
-            print(f"Assistant: {msg.content}")
-        if msg.__class__.__name__ == "HumanMessage":
-            print(f"User: {msg.content}")
-    print("-"*50)
+    for message in end_state["messages"]:
+        if message.__class__.__name__ == "AIMessage":
+            print(f"Assistant: {message.content}")
+        if message.__class__.__name__ == "HumanMessage":
+            print(f"User: {message.content}")
+    print("-" * 50)
     print("State history: ")
-    print(state["dialog_state"])
+    print(end_state["dialog_state"])
     print("-" * 50)
     print("LOGS：")
-    for log in state["logs"]:
+    for log in end_state["logs"]:
         print(log)

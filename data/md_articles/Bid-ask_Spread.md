@@ -2,7 +2,7 @@
 
 ## What Is a Bid-Ask Spread?
 
-In trading, a bid-ask spread is the difference between the ask price and the bid price for an [asset](https://www.investopedia.com/terms/a/asset.asp) in the marketplace. It shows the highest price that a buyer is willing to pay for a security and the lowest price that a [seller](https://www.investopedia.com/terms/s/seller.asp) is willing to accept.
+In trading, a bid-ask spread is the difference between the ask price and the bid price for an asset in the marketplace. It shows the highest price that a buyer is willing to pay for a security and the lowest price that a seller is willing to accept.
 
 An individual looking to sell will accept the bid price while one looking to buy will pay the ask price.
 
@@ -30,9 +30,9 @@ The difference between these two, the spread, is the principal transaction cost 
 
 The number of bids and asks can have a significant impact on the bid-ask spread. The spread may widen significantly if fewer participants place limit orders to buy a security (thus generating fewer bid prices) or if fewer sellers place limit orders to sell.
 
-As such, it's critical to keep the bid-ask spread in mind when placing a buy-limit order to ensure it [executes](https://www.investopedia.com/ask/answers/050515/when-buy-limit-order-executed.asp) successfully. Bid-ask spread trades can be transacted for most securities, as well as foreign exchange and commodities.
+As such, it's critical to keep the bid-ask spread in mind when placing a buy-limit order to ensure it executes successfully. Bid-ask spread trades can be transacted for most securities, as well as foreign exchange and commodities.
 
-Traders view the bid-ask spread as an indicator of market liquidity. High friction between the [supply and demand](https://www.investopedia.com/terms/l/law-of-supply-demand.asp) for a security will create a wider spread, reflecting a less liquid market for it. Most traders prefer to use [limit orders](https://www.investopedia.com/terms/l/limitorder.asp) instead of market orders; this allows them to choose their own entry points rather than accepting the current market price. There is a cost involved with the bid-ask spread, as two trades are being conducted simultaneously.
+Traders view the bid-ask spread as an indicator of market liquidity. High friction between the supply and demand for a security will create a wider spread, reflecting a less liquid market for it. Most traders prefer to use limit orders instead of market orders; this allows them to choose their own entry points rather than accepting the current market price. There is a cost involved with the bid-ask spread, as two trades are being conducted simultaneously.
 
 ## Bid-Ask Spread Calculation
 
@@ -46,15 +46,15 @@ While the basic calculation of the bid-ask spread involves pretty simple math, m
 
 You could also lean on the effective spread. The effective spread accounts for the impact of market orders. This calculation is the difference between the execution price of a market order and the midpoint of the bid-ask spread. This can be a more accurate reflection of the true cost of trading, especially in highly liquid markets.
 
-You can also convert a bid-ask spread to a percentage spread if you prefer a comparative metric. For instance, if the bid-ask spread is $1 and a stock is trading at $50, a percentage spread of 2% ($1/$50) may have more meaning for you than the nominal amount of $1.
+You can also convert a bid-ask spread to a percentage spread if you prefer a comparative metric. For instance, if the bid-ask spread is \$1 and a stock is trading at \$50, a percentage spread of 2% (\$1/\$50) may have more meaning for you than the nominal amount of \$1.
 
 ## Bid-Ask Spread and Liquidity
 
-The bid-ask spread is the de facto measure of market [liquidity](https://www.investopedia.com/terms/l/liquidity.asp). Certain markets are more liquid than others, and that should be reflected in their narrow spreads.
+The bid-ask spread is the de facto measure of market liquidity. Certain markets are more liquid than others, and that should be reflected in their narrow spreads.
 
 ### A Reflection of Supply and Demand
 
-Essentially, transaction initiators (price takers) demand liquidity while counterparties (market makers) supply liquidity. For example, currency is considered the most [liquid asset](https://www.investopedia.com/terms/l/liquidasset.asp) in the world, and the bid-ask spread in the currency market is one of the narrowest (one-hundredth of a percent); in other words, the spread can be measured in fractions of pennies. On the other hand, [less liquid assets](https://www.investopedia.com/ask/answers/042315/what-types-stocks-have-large-difference-between-bid-and-ask-prices.asp), such as small-cap stocks, may have spreads that are equivalent to 1% to 2% of the asset's lowest ask price.
+Essentially, transaction initiators (price takers) demand liquidity while counterparties (market makers) supply liquidity. For example, currency is considered the most liquid asset in the world, and the bid-ask spread in the currency market is one of the narrowest (one-hundredth of a percent); in other words, the spread can be measured in fractions of pennies. On the other hand, less liquid assets, such as small-cap stocks, may have spreads that are equivalent to 1% to 2% of the asset's lowest ask price.
 
 ### Perceived Risk
 
@@ -70,9 +70,9 @@ Market orders can be risky when the bid-ask spread is shifting or wide. If you f
 
 ## Bid-Ask Spread Example
 
-If the [bid price](https://www.investopedia.com/terms/b/bidprice.asp) for a stock is $19 and the ask price for the same stock is $20, then the bid-ask spread is $1. The bid-ask spread can also be stated in percentage terms; it is customarily calculated as a percentage of the lowest sell price or ask price:
+If the bid price for a stock is \$19 and the ask price for the same stock is \$20, then the bid-ask spread is \$1. The bid-ask spread can also be stated in percentage terms; it is customarily calculated as a percentage of the lowest sell price or ask price:
 
-**$1 ÷ $20 = 5%**
+**\$1 ÷ \$20 = 5%**
 
 This spread would close if a potential buyer offered to purchase the stock at a higher price or if a potential seller offered to sell the stock at a lower price.
 
@@ -99,9 +99,9 @@ Market makers play a part in how bid-ask spreads are formulated. They are able t
 
 ## Bid-Ask Spread and Arbitrage
 
-Traders who engage in [arbitrage](https://www.investopedia.com/terms/a/arbitrage.asp) look for opportunities to profit from inefficiencies in the bid-ask spread, often by simultaneously buying and selling the same or related assets across different markets or platforms.
+Traders who engage in arbitrage look for opportunities to profit from inefficiencies in the bid-ask spread, often by simultaneously buying and selling the same or related assets across different markets or platforms.
 
-For example, if a stock is trading with a bid of $100 on one exchange and an ask of $99 on another (perhaps due to time lags or fragmented markets), an arbitrageur could buy at $99 and sell at $100, locking in a $1 profit per share, minus transaction costs. These trades typically need to be executed quickly, as arbitrage opportunities tend to disappear rapidly once discovered and acted upon. Therefore, especially in this context, arbitrage is usually done leveraging technological tools.
+For example, if a stock is trading with a bid of \$100 on one exchange and an ask of \$99 on another (perhaps due to time lags or fragmented markets), an arbitrageur could buy at \$99 and sell at \$100, locking in a \$1 profit per share, minus transaction costs. These trades typically need to be executed quickly, as arbitrage opportunities tend to disappear rapidly once discovered and acted upon. Therefore, especially in this context, arbitrage is usually done leveraging technological tools.
 
 Arbitrage involving the bid-ask spread isn't limited to price differences across venues. Traders also use algorithmic strategies like market making, where they post both bid and ask quotes and profit from capturing the spread itself. They can make this happen by managing order flow and adjusting quotes in response to market activity
 
@@ -117,13 +117,10 @@ Conversely, a bid-ask spread may be wide because a security is unpopular on a gi
 
 ## What Is an Example of a Bid-Ask Spread in Stocks?
 
-Consider the following example where a trader is looking to purchase 100 shares of Apple for $50. The trader sees that 100 shares are offered at $50.05. The spread would be $50.05 - $50.00, or $0.05. While this spread may seem small or insignificant, on large trades, it can be meaningful financially. That's why narrow spreads are typically more ideal. The total value of the bid-ask spread, in this instance, would be equal to 100 shares x $0.05, or $5.
+Consider the following example where a trader is looking to purchase 100 shares of Apple for \$50. The trader sees that 100 shares are offered at \$50.05. The spread would be \$50.05 - \$50.00, or \$0.05. While this spread may seem small or insignificant, on large trades, it can be meaningful financially. That's why narrow spreads are typically more ideal. The total value of the bid-ask spread, in this instance, would be equal to 100 shares x \$0.05, or \$5.
 
 ## The Bottom Line
 
 The bid-ask spread serves as an effective measure of liquidity, as more liquid securities will have narrow spreads while illiquid ones will have wider ones.
 
 Investors should keep an eye on the spread of any security they wish to buy or sell to get a sense of how frequently it trades and to decide on the type of order to use when making a transaction.
-
-***Correction—Dec. 4, 2022:***This article’s question-and-answer segment was edited from a previous version that incorrectly defined bid-ask spread.
-

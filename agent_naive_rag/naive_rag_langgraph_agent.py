@@ -2,7 +2,6 @@ from langchain_core.messages import HumanMessage
 from agent_naive_rag.naive_rag_graph_builder import build_naive_rag_graph
 from utils.log_utils import log
 
-
 def main(thread_id: str):
     conv_config = {"configurable":{"thread_id":thread_id}}
 
@@ -26,7 +25,7 @@ def main(thread_id: str):
         # Get user input
         user_input = input("User: ").strip()
         if user_input == "quit":
-            log.info("User has quit the conversation.")
+            log.info("=== The conversation ends ===")
             break
 
         # Record current state BEFORE processing
@@ -53,20 +52,20 @@ def main(thread_id: str):
     return state
 
 if __name__ == "__main__":
-    state = main("test_call")
+    end_state = main("test_call")
 
     # Print final messages
     print("=== Quantitative Finance RAG Assistant has left the conversation ===\n")
     print("Chat history: ")
-    for msg in state["messages"]:
-        if msg.__class__.__name__ == "AIMessage":
-            print(f"Assistant: {msg.content}")
-        if msg.__class__.__name__ == "HumanMessage":
-            print(f"User: {msg.content}")
+    for message in end_state["messages"]:
+        if message.__class__.__name__ == "AIMessage":
+            print(f"Assistant: {message.content}")
+        if message.__class__.__name__ == "HumanMessage":
+            print(f"User: {message.content}")
     print("-"*50)
     print("State history: ")
-    print(state["dialog_state"])
+    print(end_state["dialog_state"])
     print("-" * 50)
     print("LOGS：")
-    for log in state["logs"]:
+    for log in end_state["logs"]:
         print(log)

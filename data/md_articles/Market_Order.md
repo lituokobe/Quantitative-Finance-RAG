@@ -2,9 +2,9 @@
 
 ## What Is a Market Order?
 
-A market order is an instruction by an investor to a [broker](https://www.investopedia.com/terms/b/broker.asp) to buy or sell stock shares, bonds, or other assets at the best available price in the current financial market.
+A market order is an instruction by an investor to a broker to buy or sell stock shares, bonds, or other assets at the best available price in the current financial market.
 
-It is the default choice for buying and selling for most investors most of the time. If the asset is a [large-cap](https://www.investopedia.com/terms/l/large-cap.asp) stock or a popular exchange-traded fund (ETF), there will be plenty of willing buyers and sellers out there. That means that a market order will be completed nearly instantaneously at a price very close to the latest posted price that the investor can see.
+It is the default choice for buying and selling for most investors most of the time. If the asset is a large-cap stock or a popular exchange-traded fund (ETF), there will be plenty of willing buyers and sellers out there. That means that a market order will be completed nearly instantaneously at a price very close to the latest posted price that the investor can see.
 
 A limit order, which instructs the broker to buy or sell only at a certain price, is the main alternative to the market order for most individual investors.
 
@@ -32,9 +32,9 @@ If you think a stock will hit a level you find acceptable soon, try a limit orde
 
 A market order is the most common and straightforward transaction in the markets. It is meant to be executed as quickly as possible at the current asking price, and it is the choice of most stock buyers and sellers most of the time. That's why it's the default option.
 
-The market order is usually the lowest-priced option as well. [Some brokers charge more](https://www.investopedia.com/ask/answers/022415/why-do-limit-orders-cost-more-market-orders.asp#:~:text=Limit%20orders%20may%20cost%20more%20and%20command%20higher%20brokerage%20fees,the%20order%20is%20not%20executed.) for transactions that involve limit orders.
+The market order is usually the lowest-priced option as well. Some brokers charge more for transactions that involve limit orders.
 
-The market order is a safe option for any [large-cap stock](https://www.investopedia.com/terms/l/large-cap.asp), because they are highly liquid. That is, there's a huge number of their shares changing hands at any given moment during the trading day. The transaction goes through immediately. Unless the market is wildly unsettled at that moment, the price displayed when you click on "buy" or "sell" will be nearly identical to the price you get.
+The market order is a safe option for any large-cap stock, because they are highly liquid. That is, there's a huge number of their shares changing hands at any given moment during the trading day. The transaction goes through immediately. Unless the market is wildly unsettled at that moment, the price displayed when you click on "buy" or "sell" will be nearly identical to the price you get.
 
 ### Downside of a Market Order
 
@@ -44,7 +44,7 @@ The market order is less reliable when trading less liquid investments, such as 
 
 Market orders are the most basic buy and sell trades. Limit orders give greater control to the investor.
 
-A limit order allows an investor to set a maximum acceptable purchase price amount or a minimum acceptable sales price while placing an order. The order will be processed only [if the asset hits that price](https://www.investopedia.com/terms/m/marketiftouched.asp).
+A limit order allows an investor to set a maximum acceptable purchase price amount or a minimum acceptable sales price while placing an order. The order will be processed only if the asset hits that price.
 
 Limit orders are preferable in a number of circumstances:
 
@@ -60,17 +60,17 @@ Transactions in big-cap stocks like Apple and Microsoft tend to be fulfilled nea
 
 ## Example of a Market Order
 
-Say the bid-ask prices for shares of Excellent Industries are $18.50 and $20, respectively, with 100 shares available at the ask. If a trader places a market order to buy 500 shares, the first 100 will execute at $20.
+Say the bid-ask prices for shares of Excellent Industries are \$18.50 and \$20, respectively, with 100 shares available at the ask. If a trader places a market order to buy 500 shares, the first 100 will execute at \$20.
 
-The following 400, however, will be filled at the best asking price for sellers of the next 400 shares. If the stock is very thinly traded, the next 400 shares might be executed at $22 or more.
+The following 400, however, will be filled at the best asking price for sellers of the next 400 shares. If the stock is very thinly traded, the next 400 shares might be executed at \$22 or more.
 
-This is why it’s a good idea to use limit orders for some transactions. Market orders are filled at a price dictated by the market. Limit orders give more control to the trader. as opposed to limit or stop orders, which provide traders with more control. A trade for a large number of shares can also be entered as a [sweep-to-fill order](https://www.investopedia.com/terms/s/sweeptofillorder.asp) that is broken into segments and executed at the best price.
+This is why it’s a good idea to use limit orders for some transactions. Market orders are filled at a price dictated by the market. Limit orders give more control to the trader. as opposed to limit or stop orders, which provide traders with more control. A trade for a large number of shares can also be entered as a sweep-to-fill order that is broken into segments and executed at the best price.
 
 ## Special Considerations
 
 Any time a trader seeks to execute a market order, the trader is willing to buy at the asking price or sell at the bid price. Thus, the person conducting a market order is immediately giving up the bid-ask spread.
 
-For this reason, it’s a good idea to look closely at the [bid-ask spread](https://www.investopedia.com/terms/b/bid-askspread.asp) before placing a market order—especially for thinly traded securities. Failure to do so can be costly. This is doubly important for people who trade frequently or use anyone utilizing an [automated trading system](https://www.investopedia.com/articles/trading/11/automated-trading-systems.asp).
+For this reason, it’s a good idea to look closely at the bid-ask spread before placing a market order—especially for thinly traded securities. Failure to do so can be costly. This is doubly important for people who trade frequently or use anyone utilizing an automated trading system.
 
 ## Market Order FAQs
 
@@ -94,7 +94,6 @@ In an online buy or sell order, the "good for day" option will cancel the order 
 
 ### What Is a Batch Order vs. a Market Order?
 
-A batch order is a behind-the-scenes transaction conducted by brokerages. At the start of the trading day, they combine various orders for the same stocks and push them through as if they were a single transaction. [Batch trading](https://www.investopedia.com/terms/b/batchtrading.asp#:~:text=Batch%20trading%20refers%20to%20an,placed%20during%20non%2Dmarket%20hours.) is permitted only at the opening of the market and only with orders placed between trading sessions.
+A batch order is a behind-the-scenes transaction conducted by brokerages. At the start of the trading day, they combine various orders for the same stocks and push them through as if they were a single transaction. Batch trading is permitted only at the opening of the market and only with orders placed between trading sessions.
 
 Each batch order will consist of a number of market orders, sent through sometime between that day's session and the previous close.
-

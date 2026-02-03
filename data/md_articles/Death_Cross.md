@@ -2,7 +2,7 @@
 
 ## What Is a Death Cross?
 
-The "death cross" market chart pattern refers to the drop of a short-term [moving average](https://www.investopedia.com/terms/m/movingaverage.asp)—meaning the average of recent closing prices for a stock, stock index, commodity, or cryptocurrency over a set period of time—below a longer-term moving average. The most closely watched stock-market moving averages are the [50-day](https://www.investopedia.com/ask/answers/012815/why-50-simple-moving-average-sma-so-common-traders-and-analysts.asp) and the 200-day.
+The "death cross" market chart pattern refers to the drop of a short-term moving average — meaning the average of recent closing prices for a stock, stock index, commodity, or cryptocurrency over a set period of time—below a longer-term moving average. The most closely watched stock-market moving averages are the 50-day and the 200-day.
 
 Despite its ominous name, the death cross is not a market milestone worth dreading. Market history suggests it tends to precede a near-term rebound with above-average returns.
 
@@ -16,13 +16,13 @@ Despite its ominous name, the death cross is not a market milestone worth dreadi
 
 The death cross only tells you that price action has deteriorated over a period a little longer than two months if the crossing is done by the 50-day moving average. (Moving averages exclude weekends and holidays when the market is closed.)
 
-Those convinced of the pattern's predictive power note the death cross preceded all the severe bear markets of the past century, including 1929, 1938, 1974, and 2008. That's an example of [sample selection bias](https://www.investopedia.com/terms/s/sample_selection_basis.asp), expressed by using only the select data points helpful to the argued point. Cherry-picking those bear-market years ignores the many more numerous occasions when the death cross signaled nothing worse than a market correction.
+Those convinced of the pattern's predictive power note the death cross preceded all the severe bear markets of the past century, including 1929, 1938, 1974, and 2008. That's an example of sample selection bias, expressed by using only the select data points helpful to the argued point. Cherry-picking those bear-market years ignores the many more numerous occasions when the death cross signaled nothing worse than a market correction.
 
-According to Fundstrat research cited in Barron's, the [S&P 500 index](https://www.investopedia.com/articles/investing/090414/sp-500-index-you-need-know.asp) was higher a year after the death cross about two-thirds of the time, averaging a gain of 6.3% over that span. That's well off the annualized gain of over 10% for the S&P 500 since 1926, but hardly a disaster in most instances.
+According to Fundstrat research cited in Barron's, the S&P 500 index was higher a year after the death cross about two-thirds of the time, averaging a gain of 6.3% over that span. That's well off the annualized gain of over 10% for the S&P 500 since 1926, but hardly a disaster in most instances.
 
-The track record of the death cross as a precursor of market gains is even more appealing over shorter time frames. From 1971 to 2022, the 22 instances in which the 50-day moving average of the [Nasdaq Composite index](https://www.investopedia.com/terms/n/nasdaqcompositeindex.asp) fell below its 200-day moving average were followed by average returns of about 2.6% over the next month, 7.2% in three months, and 12.4% six months after the death cross, roughly double the typical Nasdaq return over those time frames, according to Nautilus Research.
+The track record of the death cross as a precursor of market gains is even more appealing over shorter time frames. From 1971 to 2022, the 22 instances in which the 50-day moving average of the Nasdaq Composite index fell below its 200-day moving average were followed by average returns of about 2.6% over the next month, 7.2% in three months, and 12.4% six months after the death cross, roughly double the typical Nasdaq return over those time frames, according to Nautilus Research.
 
-Intuitively, the death cross has tended to provide a more useful bearish market timing signal when occurring after market losses of 20% or more, because downward momentum in weak markets can indicate deteriorating fundamentals. But its historical track record makes clear the death cross is a [coincident indicator](https://www.investopedia.com/terms/c/coincidentindicator.asp) of market weakness rather than a leading one.
+Intuitively, the death cross has tended to provide a more useful bearish market timing signal when occurring after market losses of 20% or more, because downward momentum in weak markets can indicate deteriorating fundamentals. But its historical track record makes clear the death cross is a coincident indicator of market weakness rather than a leading one.
 
 ## Example of a Death Cross
 
@@ -36,7 +36,7 @@ These examples don't represent the full range of possible outcomes after a death
 
 ## Death Cross vs. Golden Cross
 
-The opposite of the death cross is the so-called [golden cross](https://www.investopedia.com/terms/g/goldencross.asp) when the short-term moving average of a stock or index moves above its longer-term moving average. Many investors view this pattern as a bullish indicator, even though the death cross has been followed by gains in several occurrences since 1992.
+The opposite of the death cross is the so-called golden cross when the short-term moving average of a stock or index moves above its longer-term moving average. Many investors view this pattern as a bullish indicator, even though the death cross has been followed by gains in several occurrences since 1992.
 
 The golden cross can indicate a prolonged downtrend has run out of momentum.
 
@@ -59,4 +59,3 @@ Technical traders use both a 50-day and 200-day moving average to determine if a
 ## The Bottom Line
 
 The death cross is used in technical analysis by traders to understand a stock's price movement, whereby it notifies a trader that the short-term moving average has fallen below a longer-term moving average, which signals a bearish trend.
-

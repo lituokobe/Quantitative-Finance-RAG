@@ -19,21 +19,21 @@ The alternative to a limit order is a market order, which calls for a trade to b
 
 ## How Limit Orders Work
 
-A limit order allows traders to set a pre-determined price to buy or sell a [security](https://www.investopedia.com/terms/s/security.asp). For example, imagine a trader who wants to buy stock in XYZ company, currently trading for $17.00. If the trader sets a limit buy order at $14.50, they will only buy the stock if the share price falls to $14.50 or lower.
+A limit order allows traders to set a pre-determined price to buy or sell a security. For example, imagine a trader who wants to buy stock in XYZ company, currently trading for \$17.00. If the trader sets a limit buy order at \$14.50, they will only buy the stock if the share price falls to \$14.50 or lower.
 
-Conversely, the trader might have shares of XYZ’s stock and want to sell them if the price increases. The trader might set a limit sell order at $20, which will only sell the shares if the price rises to $20 or higher.
+Conversely, the trader might have shares of XYZ’s stock and want to sell them if the price increases. The trader might set a limit sell order at \$20, which will only sell the shares if the price rises to \$20 or higher.
 
-By [using a buy limit order](https://www.investopedia.com/ask/answers/042315/what-difference-between-buy-limit-and-stop-order.asp), the investor is guaranteed to pay the buy limit order price or better, but it is not guaranteed that the order will be filled. A limit order gives a trader more control over the [execution](https://www.investopedia.com/terms/e/execution.asp) price of a security, especially if they are fearful of using a [market order](https://www.investopedia.com/terms/m/marketorder.asp) during periods of heightened [volatility](https://www.investopedia.com/terms/v/volatility.asp).
+By using a buy limit order, the investor is guaranteed to pay the buy limit order price or better, but it is not guaranteed that the order will be filled. A limit order gives a trader more control over the execution price of a security, especially if they are fearful of using a market order during periods of heightened volatility.
 
 Limit orders are useful when prices are rising or falling quickly, and the trader is worried about getting a bad fill from a market order. Additionally, a limit order can be useful if a trader is not watching a stock and has a specific price in mind at which they would be happy to buy or sell that security. Limit orders can also be left open with an expiration date.
 
 ## Limit Order Example
 
-Imagine a portfolio manager who wants to buy Tesla Inc.'s ([TSLA](https://www.investopedia.com/markets/quote?tvwidgetsymbol=tsla)) stock but believes its current valuation at roughly $750 per share is too high. The manager would prefer to buy the stock at a lower price.
+Imagine a portfolio manager who wants to buy Tesla Inc.'s (TSLA) stock but believes its current valuation at roughly \$750 per share is too high. The manager would prefer to buy the stock at a lower price.
 
-The PM instructs his traders to buy 10,000 shares of Tesla should the price fall below $650, [good 'til canceled](https://www.investopedia.com/terms/g/gtc.asp). The trader then places an order to buy 10,000 shares with a $650 limit. If the stock falls below that price, the limit order will automatically execute and buy up to 10,000 shares for $650 per share or lower. The order will remain open until the stock reaches the PM’s limit or the PM cancels the order.
+The PM instructs his traders to buy 10,000 shares of Tesla should the price fall below \$650, good until canceled. The trader then places an order to buy 10,000 shares with a \$650 limit. If the stock falls below that price, the limit order will automatically execute and buy up to 10,000 shares for \$650 per share or lower. The order will remain open until the stock reaches the PM’s limit or the PM cancels the order.
 
-Additionally, the PM would like to sell Amazon.com Inc.'s ([AMZN](https://www.investopedia.com/markets/quote?tvwidgetsymbol=amzn)) stock but feels its current price of roughly $2,300 is too low. The PM instructs his trader to sell 5,000 shares should the price rise above $2,750, good until canceled. The trader will then place a limit sell order for 5,000 shares with a $2,750 limit.
+Additionally, the PM would like to sell Amazon.com Inc.'s (AMZN) stock but feels its current price of roughly \$2,300 is too low. The PM instructs his trader to sell 5,000 shares should the price rise above \$2,750, good until canceled. The trader will then place a limit sell order for 5,000 shares with a \$2,750 limit.
 
 ### Fast Fact
 
@@ -41,7 +41,7 @@ Brokerage firms may not allow limit orders if they are illogical (i.e. if a limi
 
 ## Limit Orders vs. Market Orders
 
-When an investor places an order to buy or sell a stock, there are two main execution options in terms of price: place the order "at the market" or "at the limit." Market orders are transactions meant to be executed as quickly as possible at the present or market price. Conversely, a limit order sets the maximum or minimum price to buy or sell an asset. Brokers will [frequently set higher fees](https://www.investopedia.com/ask/answers/022415/why-do-limit-orders-cost-more-market-orders.asp) for completing the more complicated limit order.
+When an investor places an order to buy or sell a stock, there are two main execution options in terms of price: place the order "at the market" or "at the limit." Market orders are transactions meant to be executed as quickly as possible at the present or market price. Conversely, a limit order sets the maximum or minimum price to buy or sell an asset. Brokers will frequently set higher fees for completing the more complicated limit order.
 
 Buying stocks can be thought of as an analogy to buying a car. With a car, you can pay the dealer’s sticker price and get the car, or you can negotiate a price and refuse to finalize the deal unless the dealer meets your price. The stock market can be thought of as working in a similar way.
 
@@ -51,7 +51,7 @@ A market order deals with the execution of the order; The price is secondary to 
 
 Traders use limit orders to set their prices for buying or selling an asset. Instead of having to constantly watch the market for price changes, they can set a limit order that automatically executes when the price reaches the desired level.
 
-A limit order will only execute at the limit price or better. If you set a limit buy order of $5, it will only buy the asset if the price falls to $5 or lower. If you set a limit sell order of $10, it will sell the asset if the price reaches $10 or higher.
+A limit order will only execute at the limit price or better. If you set a limit buy order of \$5, it will only buy the asset if the price falls to \$5 or lower. If you set a limit sell order of \$10, it will sell the asset if the price reaches \$10 or higher.
 
 ## What Is a Limit Order?
 
@@ -63,7 +63,7 @@ A limit order is placed with your broker. That limit order states the security, 
 
 ## What Is the Difference Between a Limit Order and a Stop-Limit Order?
 
-A limit order is an order requesting the purchase or sale of securities should a specific price be met. A stop-limit order builds one additional layer that requires a specific price be met that is different than the sale price. For example, a limit order to sell your security for $15 will likely execute when the market price reaches $15. Alternatively, a stop-limit order can be placed to sell your security for $15 only if the share price has dropped from $20 to $16.
+A limit order is an order requesting the purchase or sale of securities should a specific price be met. A stop-limit order builds one additional layer that requires a specific price be met that is different than the sale price. For example, a limit order to sell your security for \$15 will likely execute when the market price reaches \$15. Alternatively, a stop-limit order can be placed to sell your security for \$15 only if the share price has dropped from \$20 to \$16.
 
 ## How Long Does a Limit Order Last?
 
@@ -78,4 +78,3 @@ A limit order can only fill if a security has liquidity. If the security does no
 ## The Bottom Line
 
 A limit order is one of several order types that traders can choose from when buying or selling assets. While market orders are executed immediately, a limit order is only executed if the price reaches a certain level or better. This allows investors to automate their trades, instead of constantly watching the market for price changes.
-

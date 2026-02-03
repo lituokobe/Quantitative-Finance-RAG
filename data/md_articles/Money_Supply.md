@@ -8,11 +8,11 @@
 
 ## What Is the Money Supply?
 
-The money supply is the sum total of all of the currency and other liquid assets in a country's economy on the date measured. The money supply includes all [cash in circulation](https://www.investopedia.com/terms/c/currency-in-circulation.asp) and all bank deposits that the account holder can easily convert to cash. To keep the economy stable, banking regulators increase or reduce the available money supply through policy changes and regulatory decisions.
+The money supply is the sum total of all of the currency and other liquid assets in a country's economy on the date measured. The money supply includes all cash in circulation and all bank deposits that the account holder can easily convert to cash. To keep the economy stable, banking regulators increase or reduce the available money supply through policy changes and regulatory decisions.
 
 ## Understanding the Money Supply
 
-In the United States, the [Federal Reserve](https://www.investopedia.com/terms/f/federalreservebank.asp), known as the Fed, is the policy-making body that regulates the money supply. Its economists track the money supply over time to determine whether too much money is flowing, which can lead to inflation, or too little money is flowing, which can cause deflation.
+In the United States, the Federal Reserve, known as the Fed, is the policy-making body that regulates the money supply. Its economists track the money supply over time to determine whether too much money is flowing, which can lead to inflation, or too little money is flowing, which can cause deflation.
 
 The Fed has a couple of tools it can use to keep the economy growing at a reasonable pace.
 
@@ -21,17 +21,17 @@ The Fed has a couple of tools it can use to keep the economy growing at a reason
 
 The money supply is tracked over time as a key factor in analyzing the health of the economy, pinpointing its weak spots, and developing policies to correct weaknesses. The Fed generally refers to the money supply as the money stock in its public releases.
 
-### $18.46 trillion
+### \$18.46 trillion
 
 As of January 2025, the seasonally adjusted M1 money supply according to the Federal Reserve.
 
 ## Effect of the Money Supply on the Economy
 
-An increase in the supply of money typically lowers interest rates, which generates more investment and puts more money in the hands of consumers, thereby stimulating spending. Businesses respond by ordering more [raw materials](https://www.investopedia.com/terms/r/rawmaterials.asp) and increasing production. The increased [business activity](https://www.investopedia.com/terms/b/business-activities.asp) raises the demand for labor.
+An increase in the supply of money typically lowers interest rates, which generates more investment and puts more money in the hands of consumers, thereby stimulating spending. Businesses respond by ordering more raw materials and increasing production. The increased business activity raises the demand for labor.
 
 The opposite can occur if the money supply falls or when its growth rate declines. Banks lend less, businesses put off new projects, and consumer demand for home mortgages and car loans declines.
 
-Change in the money supply has long been considered a key factor in driving economic performance and business cycles. Macroeconomic schools of thought that focus heavily on the role of money supply include Irving Fisher's [Quantity Theory of Money](https://www.investopedia.com/terms/q/quantity_theory_of_money.asp), [Monetarism](https://www.investopedia.com/terms/m/monetarism.asp), and [Austrian Business Cycle Theory](https://www.investopedia.com/articles/economics/09/austrian-school-of-economics.asp).
+Change in the money supply has long been considered a key factor in driving economic performance and business cycles. Macroeconomic schools of thought that focus heavily on the role of money supply include Irving Fisher's Quantity Theory of Money, Monetarism, and Austrian Business Cycle Theory.
 
 Historically, measuring the money supply has shown that there are relationships between money supply and inflation and between money supply and price levels.
 
@@ -43,7 +43,7 @@ The Federal Reserve website has a running account of the U.S. money supply month
 
 ## The Money Supply Numbers: M1, M2, and Beyond
 
-The Federal Reserve tracks two distinct numbers on the nation's money supply and labels them M1 and M2. Each category includes or excludes specific [kinds of money](https://www.investopedia.com/terms/m/money.asp). There was yet another number, M3, but its reporting was discontinued by the Fed in 2006.
+The Federal Reserve tracks two distinct numbers on the nation's money supply and labels them M1 and M2. Each category includes or excludes specific kinds of money. There was yet another number, M3, but its reporting was discontinued by the Fed in 2006.
 
 There are also M0 and MB, but these are generally included in the main categories rather than being reported separately.
 
@@ -51,13 +51,13 @@ All of the categories account for the amount of cash in the economy, but each ca
 
 ### M1
 
-[M1](https://www.investopedia.com/terms/m/m1.asp), also called narrow money, is often synonymous with money supply in reports from the financial media. This is a count of all of the notes and coins that are in circulation, whether they're in someone's wallet or a bank teller's drawer, plus other money equivalents that can be converted easily to cash.
+M1, also called narrow money, is often synonymous with money supply in reports from the financial media. This is a count of all of the notes and coins that are in circulation, whether they're in someone's wallet or a bank teller's drawer, plus other money equivalents that can be converted easily to cash.
 
 For example, a regular bank savings account is a money equivalent. The account holder can convert those savings to cash at any time and instantly.
 
 ### M2
 
-M2 includes M1 plus short-term [time deposits](https://www.investopedia.com/terms/t/timedeposit.asp) in banks and money market funds. Generally, terms of less than a year are considered short-term.
+M2 includes M1 plus short-term time deposits in banks and money market funds. Generally, terms of less than a year are considered short-term.
 
 ### M3, M0, and MB
 
@@ -74,7 +74,7 @@ The Federal Reserve releases the latest numbers on M1 and M2 money supplies week
 The large numbers of M1 or M2 contain components that economists analyze to determine how money flows through the system and where problems might arise. Economists speak of these components as the determinants of the money supply. They include the:
 
 - Currency deposit ratio: This is the amount of cash that the public at large is keeping on hand rather than depositing in banks.
-- [Reserve ratio](https://www.investopedia.com/terms/r/reserveratio.asp): This is the amount of cash that the Federal Reserve requires a bank to keep in its vaults to satisfy all potential withdrawals by its customers, even in the event of a run on the banks.
+- Reserve ratio: This is the amount of cash that the Federal Reserve requires a bank to keep in its vaults to satisfy all potential withdrawals by its customers, even in the event of a run on the banks.
 - Excess reserve: This is the amount of money that the banks have available to lend out to businesses and individuals.
 
 ## What Happens When the Federal Reserve Limits the Money Supply?
@@ -101,11 +101,10 @@ The U.S. money supply is reported in two main categories, M1 and M2. M0 is inclu
 
 ## Why Does the Money Supply Expand or Contract?
 
-Consider a [Main Street](https://www.investopedia.com/terms/m/mainstreet.asp) bank as a microcosm of the economy as a whole. Local people are prospering lately, so they have more money to save. They deposit it in the bank. The bank keeps part of the deposits in a vault but lends most of it out to other individuals and businesses. The loans are repaid with interest, and the bank has more money to loan. Times are good, and the money supply is increasing.
+Consider a Main Street bank as a microcosm of the economy as a whole. Local people are prospering lately, so they have more money to save. They deposit it in the bank. The bank keeps part of the deposits in a vault but lends most of it out to other individuals and businesses. The loans are repaid with interest, and the bank has more money to loan. Times are good, and the money supply is increasing.
 
 But what happens when times are not so good? Bank deposits fall because people are just getting by or, worse, losing their jobs. The bank has less money to lend. In any case, businesses and individuals shy away from big spending due to the poor economy. The money supply decreases.
 
 ## The Bottom Line
 
 The money supply is a count of every bit of cash floating around the entire U.S. economy. Analyzing the number can be difficult. Economists want to know precisely where that money is and how it is being used. The Federal Reserve considers the money supply when evaluating what kind of monetary policy to enact.
-

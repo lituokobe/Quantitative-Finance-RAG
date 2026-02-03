@@ -9,15 +9,15 @@
 
 ## What Are Index Funds?
 
-Index funds mirror the performance of benchmarks like the S&P 500 and other [market indexes](https://www.investopedia.com/terms/i/index.asp) by mimicking their makeup. Index funds invest in the same assets using the same weights as the target index, typically stocks or bonds. Index funds provide broad market exposure and [diversification](https://www.investopedia.com/terms/d/diversification.asp) across various sectors and asset classes.
+Index funds mirror the performance of benchmarks like the S&P 500 and other market indexes by mimicking their makeup. Index funds invest in the same assets using the same weights as the target index, typically stocks or bonds. Index funds provide broad market exposure and diversification across various sectors and asset classes.
 
-These passive investments attract many investors. In 2021, passive index funds tracking market [benchmarks](https://www.investopedia.com/terms/b/benchmark.asp) accounted for just 21% of the U.S. equity fund market. By 2023, passive index funds had grown to about half of all U.S. fund assets.
+These passive investments attract many investors. In 2021, passive index funds tracking market benchmarks accounted for just 21% of the U.S. equity fund market. By 2023, passive index funds had grown to about half of all U.S. fund assets.
 
 ## How Index Funds Work
 
-Investors interested in the stocks of an economic sector or the whole market can find indexes that aim to gain returns that closely match the benchmark index they want to track. The broader index funds can minimize [tracking errors](https://www.investopedia.com/terms/t/trackingerror.asp), the difference between the fund's performance and the target index.
+Investors interested in the stocks of an economic sector or the whole market can find indexes that aim to gain returns that closely match the benchmark index they want to track. The broader index funds can minimize tracking errors, the difference between the fund's performance and the target index.
 
-The portfolios of index funds only change substantially when their benchmark indexes change. If the fund follows a weighted index, its managers may periodically [rebalance](https://www.investopedia.com/investing/rebalance-your-portfolio-stay-on-track/) the weights (the percentage by market cap) and components of their fund's securities to keep matched up with the target index.
+The portfolios of index funds only change substantially when their benchmark indexes change. If the fund follows a weighted index, its managers may periodically rebalance the weights (the percentage by market cap) and components of their fund's securities to keep matched up with the target index.
 
 For broad indexes like the S&P 500, it would be impractical or expensive for an investor to construct the right proportions in a portfolio. Index funds do the work by holding a representative sample of the securities. S&P 500 index funds, the most popular and oldest such funds in the U.S., mimic the moves of the stocks in the S&P 500, which covers about 80% of all U.S. equities by market cap.
 
@@ -25,7 +25,7 @@ For broad indexes like the S&P 500, it would be impractical or expensive for an 
 
 The seismic shift in the rise of passive funds has come as they often convincingly outperform their actively managed peers. According to the widely followed S&P Indices Versus Active (SPIVA) scorecards, about 9 out of 10 actively managed funds didn't match the returns of the S&P 500 benchmark in the past 15 years.
 
-Besides the S&P 500, other major indexes followed by such funds include the [Nasdaq Composite Index](https://www.investopedia.com/terms/n/nasdaqcompositeindex.asp), made up of 3,000 stocks listed on the Nasdaq exchange; the [Bloomberg U.S. Aggregate Bond Index](https://www.investopedia.com/terms/l/lehmanaggregatebondindex.asp), which follows the total U.S. dollar-denominated bond market; and the [Dow Jones Industrial Average](https://www.investopedia.com/terms/d/djia.asp), consisting of 30 large-cap companies chosen by the editors of the *Wall Street Journal.*
+Besides the S&P 500, other major indexes followed by such funds include the Nasdaq Composite Index, made up of 3,000 stocks listed on the Nasdaq exchange; the Bloomberg U.S. Aggregate Bond Index, which follows the total U.S. dollar-denominated bond market; and the Dow Jones Industrial Average, consisting of 30 large-cap companies chosen by the editors of the *Wall Street Journal.*
 
 Investors should review a fund's fees and performance before investing. As of August 2024, Fidelity's Nasdaq Composite Index Fund (FNCMX) had a 10-year average annual return of 15.54% versus 15.57% for the Nasdaq composite, a 0.03% difference.
 
@@ -35,9 +35,9 @@ Investing in index funds means putting your money not behind the skills of activ
 
 ## Are Index Funds Good Investments?
 
-[Autumn Knutson](https://styledwealth.com/about/#AboutAutumn), founder and lead financial planner at Styled Wealth and an [Investopedia top-100 financial advisor](https://www.investopedia.com/inv-100-top-financial-advisors-7556227), said there are good reasons why these funds appeal to investors. "Index funds are a low-cost way to track a specific group of investments, which can be more broadly diversified than individual stocks and simpler to buy than each of the individual holdings within the index," she said. "They are very popular for people looking to invest in a group of investments in a simple and cost-effective way."
+Autumn Knutson, founder and lead financial planner at Styled Wealth and an Investopedia top-100 financial advisor, said there are good reasons why these funds appeal to investors. "Index funds are a low-cost way to track a specific group of investments, which can be more broadly diversified than individual stocks and simpler to buy than each of the individual holdings within the index," she said. "They are very popular for people looking to invest in a group of investments in a simple and cost-effective way."
 
-Index funds often have low expense ratios. In [bull markets](https://www.investopedia.com/terms/b/bullmarket.asp), these funds can provide attractive returns as the market rises, lifting all boats. They do come with disadvantages, however. One is the lack of downside protection; in prolonged downtrends, these funds can perform poorly in line with the broader market.
+Index funds often have low expense ratios. In bull markets, these funds can provide attractive returns as the market rises, lifting all boats. They do come with disadvantages, however. One is the lack of downside protection; in prolonged downtrends, these funds can perform poorly in line with the broader market.
 
 For investors considering index funds, there are two main ways to do so:
 
@@ -56,7 +56,7 @@ While index funds are, for many, a straightforward investing approach, they're n
 
 Investing in index funds is straightforward for both new and experienced investors. Here’s how to get started investing in index funds:
 
-**Choose your investment platform**: Begin by selecting an online brokerage or investment platform. Some of the [best online brokerage platforms](https://www.investopedia.com/best-online-brokers-2-11690885) provide strong customer support, robust research, and analytical tools.
+**Choose your investment platform**: Begin by selecting an online brokerage or investment platform. Some of the best online brokerage platforms provide strong customer support, robust research, and analytical tools.
 
 1. Open and fund an account: Once you’ve chosen a platform, you’ll need to open an account. This typically involves providing personal information, setting up login credentials, and completing a questionnaire about investment goals and risk tolerance. After that, you’ll need to deposit funds. This can usually be done through a bank transfer.
 2. Select an index fund: Research different funds to understand their performance history, management fees, and the indexes they track. Consider diversifying your portfolio by investing in several index funds.
@@ -81,7 +81,7 @@ Let's summarize the advantages:
 4. Historical performance: Over the long term, many index funds have outperformed actively managed funds, especially after accounting for fees and expenses.
 5. Tax efficiency: Lower turnover rates in index funds usually result in fewer capital gains distributions, making them more tax-efficient than actively managed funds.
 
-These funds have many virtues that make them well-suited for ordinary long-term investors. That said, the best choice for you—active or passive—depends on your financial goals, the investment environment, [risk tolerance](https://www.investopedia.com/articles/pf/07/risk_tolerance.asp), and other specifics about your situation. Over the long term, many have seen the benefits of their comparative returns.
+These funds have many virtues that make them well-suited for ordinary long-term investors. That said, the best choice for you—active or passive—depends on your financial goals, the investment environment, risk tolerance, and other specifics about your situation. Over the long term, many have seen the benefits of their comparative returns.
 
 ## Potential Drawbacks of Index Funds
 
@@ -89,27 +89,59 @@ Among the critiques of index funds is their inherent lack of flexibility. Becaus
 
 Similarly, they are also criticized for automatically including all the securities in an index. This means they may invest in companies that are overvalued or fundamentally weak, leaving aside the greater weighting of assets that could provide better returns. Of course, this automated strategy has often outperformed active management, perhaps in part by holding onto assets that active fund managers have misjudged.
 
-Another disadvantage has to do with what's called [market-cap weighting](https://www.investopedia.com/terms/c/capitalizationweightedindex.asp), which many index funds use. Companies with higher market capitalizations have a more significant influence on the fund's performance in such funds. This concentration can lead to being too tied to the fate of a few large companies, magnifying your risks if these companies underperform.
+Another disadvantage has to do with what's called market-cap weighting, which many index funds use. Companies with higher market capitalizations have a more significant influence on the fund's performance in such funds. This concentration can lead to being too tied to the fate of a few large companies, magnifying your risks if these companies underperform.
 
 ## Best Index Funds
+
+**Best Index Funds**
+
+| Fund Name                                               | Minimum Investment | Expense Ratio | 10-Year Avg. Annual Return |
+|---------------------------------------------------------|--------------------|----------------|-----------------------------|
+| Vanguard 500 Index Fund Admiral Shares (VFIAX)          | \$3,000            | 0.04%          | 12.94%                      |
+| Fidelity Nasdaq Composite Index Fund (FNCMX)            | \$0                | 0.29%          | 16.37%                      |
+| Fidelity 500 Index Fund (FXAIX)                         | \$0                | 0.015%         | 13.08%                      |
+| Vanguard Total Stock Market Index Fund Admiral (VTSAX)  | \$3,000            | 0.04%          | 12.51%                      |
+| Schwab S&P 500 Index Fund (SWPPX)                       | \$0                | 0.02%          | 13.08%                      |
+| Schwab Total Stock Market Index Fund (SWTSX)            | \$0                | 0.03%          | 12.44%                      |
+| Schwab Fundamental US Large Company Index Fund (SFNSX)  | \$0                | 0.25%          | 8.79%                       |
+| USAA Victory Nasdaq-100 Index Fund (URNQX)              | \$2,500            | 0.30%          | 17.78%                      |
+| Fidelity Total Bond Fund (FTBFX)                        | \$0               | 0.45%          | 2.11%                       |
+
+*Source: TradingView (as of July 2024)*
 
 ## Index Mutual Funds vs. Index ETFs
 
 If you're interested in index funds, you'll likely have to choose between investing in mutual funds or ETFs that track specific indexes. Both types of funds replicate the performance of a specific market index. However, they differ in several key aspects that can influence which to choose:
 
-**Index mutual funds** pool money to buy a portfolio of stocks or bonds. Investors buy shares directly from the mutual fund company at the [net asset value](https://www.investopedia.com/terms/n/nav.asp) (NAV) price, calculated at the end of each trading day. Among the main advantages of index mutual funds are the simplicity of automatically reinvesting dividends and [dollar-cost averaging](https://www.investopedia.com/terms/d/dollarcostaveraging.asp), the practice of making regular set contributions.
+**Index mutual funds** pool money to buy a portfolio of stocks or bonds. Investors buy shares directly from the mutual fund company at the net asset value (NAV) price, calculated at the end of each trading day. Among the main advantages of index mutual funds are the simplicity of automatically reinvesting dividends and dollar-cost averaging, the practice of making regular set contributions.
 
 - Index ETFs, meanwhile, are traded on exchanges like individual stocks. This lets investors employ far more trading strategies, like timing ETF share trades, using limit or stop-loss orders, and short selling.
 
 Here's a table comparing the two:
 
+**Index Mutual Funds vs. Index ETFs**
+
+|                          | Index Mutual Funds                                                                 | Index ETFs                                                                 |
+|--------------------------|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| **Purpose**              | Passively track a specific market index; shares bought/sold from the fund company  | Passively track a specific market index; shares traded on an exchange      |
+| **Management Style**     | Passive                                                                             | Passive                                                                     |
+| **Pricing**              | NAV calculated once per day at market close                                         | Real‑time market price throughout the trading day; can slightly deviate from NAV |
+| **Trading**              | Bought/sold at the end of the day at NAV                                           | Bought/sold throughout the day like stocks                                  |
+| **Fees**                 | Typically lower than active mutual funds but often slightly higher than comparable ETFs | Generally low fees                                                        |
+| **Tax Implications**     | Must pass on realized capital gains to shareholders, potentially creating annual tax liability | Creation/redemption structure avoids passing on capital gains             |
+| **Liquidity**            | Less liquid than ETFs                                                               | Highly liquid                                                               |
+| **Pros**                 | Easy for dollar‑cost averaging; automated dividend reinvestment                     | Intraday trading flexibility; stop/limit orders; can buy single shares      |
+| **Cons**                 | Limited trading times; minimum investment; potentially higher fees                  | Wider bid‑ask spreads during volatility; possible trading commissions       |
+| **Examples**             | Vanguard S&P 500 Index Fund (VFIAX)                                                 | SPDR S&P 500 ETF (SPY)                                                      |
+
+
 ## Example of an Index Fund
 
-Index funds have been around since the 1970s, but have exploded in popularity over the past decade or so. The fund that started it all, founded by Vanguard chair [John Bogle](https://www.investopedia.com/terms/j/john_bogle.asp) in 1976, remains among the best as judged by its long-term performance and low cost. The Vanguard 500 Index Fund has tracked the S&P 500 faithfully in composition and performance. As of July 2024, Vanguard’s Admiral Shares (VFIAX) had a 10-year average annual return of 13.11% vs. the S&P 500’s 13.14%—a very small tracking error. The expense ratio is low at 0.04%, and its minimum investment is $3,000.
+Index funds have been around since the 1970s, but have exploded in popularity over the past decade or so. The fund that started it all, founded by Vanguard chair John Bogle in 1976, remains among the best as judged by its long-term performance and low cost. The Vanguard 500 Index Fund has tracked the S&P 500 faithfully in composition and performance. As of July 2024, Vanguard’s Admiral Shares (VFIAX) had a 10-year average annual return of 13.11% vs. the S&P 500’s 13.14%—a very small tracking error. The expense ratio is low at 0.04%, and its minimum investment is \$3,000.
 
 ### Tip
 
-Find out *Investopedia*'s [10 Rules of Investing](https://www.investopedia.com/10-rules-of-investing-magazine-8416137) by ordering a copy of our special issue print edition.
+Find out *Investopedia*'s 10 Rules of Investing by ordering a copy of our special issue print edition.
 
 ## Are Index Funds Better Than Stocks?
 
@@ -129,11 +161,10 @@ Index funds are generally safer than individual stocks because of their inherent
 
 ## What Are the Best Index Funds for Retirement?
 
-The best index funds for retirement offer growth potential and solid risk management that aligns with your time to retirement and risk tolerance. For long-term growth, consider broad-market equity index funds like the Vanguard Total Stock Market Index Fund (VTSAX) or the Fidelity 500 Index Fund (FXAIX). For diversification and income, bond index funds like the Fidelity Total Bond Fund (FTBFX) can be a good choice. [Target-date retirement funds](https://www.investopedia.com/articles/retirement/07/life_cycle.asp), which automatically adjust their allocation as your retirement approaches, can also be a convenient option for retirement planning, though these are actively managed and invest in a range of indexes and other assets.
+The best index funds for retirement offer growth potential and solid risk management that aligns with your time to retirement and risk tolerance. For long-term growth, consider broad-market equity index funds like the Vanguard Total Stock Market Index Fund (VTSAX) or the Fidelity 500 Index Fund (FXAIX). For diversification and income, bond index funds like the Fidelity Total Bond Fund (FTBFX) can be a good choice. Target-date retirement funds, which automatically adjust their allocation as your retirement approaches, can also be a convenient option for retirement planning, though these are actively managed and invest in a range of indexes and other assets.
 
 ## The Bottom Line
 
 Index funds are a popular choice for investors seeking low-cost, diversified, and passive investments that happen to outperform many higher-fee, actively traded funds. They are designed to replicate the performance of financial market indexes, like the S&P 500, and are ideal for long-term investing, such as retirement accounts.
 
 While they offer advantages like lower risk through diversification and long-term solid returns, index funds are also subject to market swings and lack the flexibility of active management. Despite these limits, index funds are often favored for their consistent performance and are now a staple in many investment portfolios. Consider your investment objectives and risk tolerance when choosing an index fund. Talking first with a financial advisor for personalized advice is always prudent.
-

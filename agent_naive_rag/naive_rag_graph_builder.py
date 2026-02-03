@@ -2,8 +2,7 @@ from langgraph.checkpoint.memory import MemorySaver
 from langgraph.constants import END, START
 from langgraph.graph import StateGraph
 from config.state import State
-from nodes.AgentNode import AgentNode
-from nodes.StartingIntentionNode import StartingIntentionNode
+from nodes.naive_rag_nodes import StartingIntentionNode, AgentNode
 from nodes.other_nodes import fallback_node, starting_reply_node
 from utils.log_utils import log
 
