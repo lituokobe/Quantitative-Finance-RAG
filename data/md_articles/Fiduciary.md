@@ -16,13 +16,13 @@ A fiduciary may be responsible for the general well-being of another (e.g., a ch
 
 A fiduciary’s responsibilities and duties are ethical and legal. When a party knowingly accepts a fiduciary duty on behalf of another, they are required to act in the best interest of the principal (i.e., the client or party whose assets they are managing). This is what is known as a “prudent person standard of care,” which stems from an 1830 court ruling, *Harvard College vs. Armory*, and is found in many state laws via the American Law Institute's Uniform Prudent Investor Act from 1994.
 
-The [prudent-person rule](https://www.investopedia.com/terms/p/prudentmanrule.asp) requires a fiduciary to act first and foremost with the needs of beneficiaries in mind. Strict care must be taken to ensure that no conflict of interest arises between the fiduciary and the principal.
+The prudent-person rule requires a fiduciary to act first and foremost with the needs of beneficiaries in mind. Strict care must be taken to ensure that no conflict of interest arises between the fiduciary and the principal.
 
 In many cases, no profit is to be made from the relationship unless explicit consent is granted when the relationship begins. For example, in the United Kingdom, fiduciaries cannot profit from their position, according to an English High Court ruling, *Keech vs. Sandford* (1726). If the principal provides consent, then the fiduciary can keep whatever benefit they have received; these benefits can be either monetary or defined more broadly as an “opportunity.”
 
 ### Tip
 
-Want more advice for saving money toward your financial goals? Order a copy of Investopedia's [What To Do With $10,000](https://www.amazon.com/dp/1547862912/ref=sr_1_7?keywords=investopedia&qid=1684168403&sr=8-7).
+Want more advice for saving money toward your financial goals? Order a copy of Investopedia's What To Do With \$10,000.
 
 Fiduciary duties appear in a wide variety of common business relationships, including the following:
 
@@ -37,11 +37,11 @@ Fiduciary duties appear in a wide variety of common business relationships, incl
 
 ### Fast Fact
 
-[Fiduciary negligence](https://www.investopedia.com/terms/f/fiduciary_negligence.asp) is a form of professional malpractice when a person fails to honor their fiduciary obligations and responsibilities.
+Fiduciary negligence is a form of professional malpractice when a person fails to honor their fiduciary obligations and responsibilities.
 
 ## Fiduciary Relationship Between Trustee and Beneficiary
 
-Estate arrangements and trusts involve both a trustee and a beneficiary. An individual named as a trust or estate [trustee](https://www.investopedia.com/terms/t/trustee.asp) is the fiduciary, and the beneficiary is the principal. Under a trustee/beneficiary duty, the fiduciary has legal ownership of the property or assets and holds the power necessary to handle assets held in the name of the trust. In estate law, the trustee may also be known as the estate’s executor.
+Estate arrangements and trusts involve both a trustee and a beneficiary. An individual named as a trust or estate trustee is the fiduciary, and the beneficiary is the principal. Under a trustee/beneficiary duty, the fiduciary has legal ownership of the property or assets and holds the power necessary to handle assets held in the name of the trust. In estate law, the trustee may also be known as the estate’s executor.
 
 Trustees must make decisions that are in the best interest of the beneficiary, as the latter holds equitable title to the property. The trustee/beneficiary relationship is an important aspect of estate planning, and special care should be taken to determine who is to be the trustee.
 
@@ -49,11 +49,11 @@ Politicians often set up blind trusts to avoid real or perceived conflict-of-int
 
 ## Fiduciary Relationship Between Board Members and Shareholders
 
-A similar fiduciary duty can be held by [corporate directors](https://www.investopedia.com/terms/b/boardofdirectors.asp), as they can be considered trustees for stockholders if on the board of a corporation, or trustees of depositors if they serve as the director of a bank. Specific duties include the following:
+A similar fiduciary duty can be held by corporate directors, as they can be considered trustees for stockholders if on the board of a corporation, or trustees of depositors if they serve as the director of a bank. Specific duties include the following:
 
 ### Duty of care
 
-[Duty of care](https://www.investopedia.com/terms/d/duty-care.asp) applies to how the board makes decisions that affect the future of the business. The board has the duty to thoroughly investigate all possible decisions and how they might affect the business. If the board is voting to elect a new chief executive officer, for example, the decision should not be based solely on the board’s knowledge or opinion of one possible candidate; it is the board’s responsibility to investigate all viable applicants to ensure that the best person for the job is chosen.
+Duty of care applies to how the board makes decisions that affect the future of the business. The board has the duty to thoroughly investigate all possible decisions and how they might affect the business. If the board is voting to elect a new chief executive officer, for example, the decision should not be based solely on the board’s knowledge or opinion of one possible candidate; it is the board’s responsibility to investigate all viable applicants to ensure that the best person for the job is chosen.
 
 ### Duty to act in good faith
 
@@ -61,7 +61,7 @@ Even after the board reasonably investigates all the options before it, it has t
 
 ## Duty of loyalty
 
-[Duty of loyalty](https://www.investopedia.com/terms/d/duty-loyalty.asp) means the board is required to put no other cause, interest, or affiliation above its allegiance to the company and the company’s investors. Board members must refrain from personal or professional dealings that might put their own self-interest or that of another person or business above the interests of the company.
+Duty of loyalty means the board is required to put no other cause, interest, or affiliation above its allegiance to the company and the company’s investors. Board members must refrain from personal or professional dealings that might put their own self-interest or that of another person or business above the interests of the company.
 
 If a member of a board of directors is found to be in breach of their fiduciary duty, they can be held liable in a court of law by the company or its shareholders.
 
@@ -93,17 +93,17 @@ Attorneys are held liable for breaches of their fiduciary duties to the client a
 
 A more generic example of fiduciary duty lies in the principal/agent relationship. Any person, corporation, partnership, or government agency can act as a principal or agent as long as the person or business has the legal capacity to do so. Under a principal/agent duty, an agent is legally appointed to act on behalf of the principal without conflict of interest.
 
-A common example of a principal/agent relationship with a fiduciary duty is a group of shareholders acting as principals and electing management to act as agents. Similarly, investors act as principals when selecting [investment fund managers as agents to manage assets](https://www.investopedia.com/terms/q/qpam.asp).
+A common example of a principal/agent relationship with a fiduciary duty is a group of shareholders acting as principals and electing management to act as agents. Similarly, investors act as principals when selecting investment fund managers as agents to manage assets.
 
 ### Investment fiduciary
 
 An investment fiduciary need not be a financial professional (money manager, banker, and so on) but is any**person with the legal responsibility for managing somebody else’s money.
 
-That means you have a fiduciary responsibility if you volunteered to sit on the [investment committee](https://www.investopedia.com/articles/company-insights/082716/investment-committees-duties-and-responsibilities.asp) of the board of your local charity or other organization. You have been placed in a position of trust, and there may be consequences for betraying that trust. Also, hiring a financial or investment expert does not relieve the committee members of all their duties. They still have an obligation to prudently choose and monitor the activities of the expert.
+That means you have a fiduciary responsibility if you volunteered to sit on the investment committee of the board of your local charity or other organization. You have been placed in a position of trust, and there may be consequences for betraying that trust. Also, hiring a financial or investment expert does not relieve the committee members of all their duties. They still have an obligation to prudently choose and monitor the activities of the expert.
 
 ## Regulation Best Interest and the Suitability Rule
 
-Broker-dealers were once allowed to adhere to a less stringent [suitability standard](https://www.investopedia.com/terms/s/suitable.asp) but are now subject to a heightened standard of conduct when recommending investments to retail customers. In 2019, the SEC adopted Regulation Best Interest (BI), which requires broker-dealers to act in the best interest of the retail customer at the time a recommendation is made. This goes beyond the previous suitability standard, which required that recommendations be suitable given the customer's financial situation.
+Broker-dealers were once allowed to adhere to a less stringent suitability standard but are now subject to a heightened standard of conduct when recommending investments to retail customers. In 2019, the SEC adopted Regulation Best Interest (BI), which requires broker-dealers to act in the best interest of the retail customer at the time a recommendation is made. This goes beyond the previous suitability standard, which required that recommendations be suitable given the customer's financial situation.
 
 Under Regulation BI, broker-dealers must disclose material conflicts of interest; exercise reasonable diligence, care, and skill when making a recommendation; and establish policies and procedures to mitigate conflicts of interest. They are prohibited from putting their financial interests ahead of the customer's interests. This establishes a "best interest" standard like the fiduciary duty investment advisors owe their clients.
 
@@ -113,11 +113,11 @@ Regulation BI raises the standard of conduct for broker-dealers when recommendat
 
 ### Important
 
-Investment advisors, who are usually paid through fees, are bound to a fiduciary standard that was established in the [Investment Advisers Act of 1940](https://www.investopedia.com/terms/i/investadvact.asp). The act defines what a fiduciary means and stipulates a duty of loyalty and care, which means that the advisor must put the client’s interests above their own.
+Investment advisors, who are usually paid through fees, are bound to a fiduciary standard that was established in the Investment Advisers Act of 1940. The act defines what a fiduciary means and stipulates a duty of loyalty and care, which means that the advisor must put the client’s interests above their own.
 
 ### Regulation Best Interest vs. the fiduciary standard
 
-Regulation BI and the fiduciary standard are two [codes of conduct](https://www.investopedia.com/articles/professionaleducation/11/suitability-fiduciary-standards.asp) that apply to financial professionals providing investment advice to clients. Regulation BI mostly applies to broker-dealers compensated by commission, while the fiduciary standard applies to investment advisors paid a fee for their services. The main difference between the two standards is the level of duty and loyalty the financial professional owes to the client. Regulation BI requires broker-dealers to act in the client's best interest at the time of the recommendation without placing their own interest ahead of the client's interest. However, this does not mean that broker-dealers must eliminate all conflicts of interest or always recommend the lowest-cost or best-performing product. Broker-dealers can still receive commissions, incentives, or other benefits from their recommendations as long as they disclose them to the client and mitigate any material conflicts of interest. Regulation BI also does not impose a continuous duty of care or loyalty to the client, meaning that broker-dealers are not required to monitor the client's account or update their recommendations. The fiduciary standard, meanwhile, requires investment advisors to act with the highest level of duty and loyalty to the client, putting the client's interest above their own at all times. This means that investment advisors have to avoid or eliminate any conflicts of interest that could compromise their objectivity or impartiality, and they cannot receive any compensation or benefit that is contrary to the client's best interest. Investment advisors must also review and update their recommendations based on the client's changing needs and circumstances. Here are the main points:
+Regulation BI and the fiduciary standard are two codes of conduct that apply to financial professionals providing investment advice to clients. Regulation BI mostly applies to broker-dealers compensated by commission, while the fiduciary standard applies to investment advisors paid a fee for their services. The main difference between the two standards is the level of duty and loyalty the financial professional owes to the client. Regulation BI requires broker-dealers to act in the client's best interest at the time of the recommendation without placing their own interest ahead of the client's interest. However, this does not mean that broker-dealers must eliminate all conflicts of interest or always recommend the lowest-cost or best-performing product. Broker-dealers can still receive commissions, incentives, or other benefits from their recommendations as long as they disclose them to the client and mitigate any material conflicts of interest. Regulation BI also does not impose a continuous duty of care or loyalty to the client, meaning that broker-dealers are not required to monitor the client's account or update their recommendations. The fiduciary standard, meanwhile, requires investment advisors to act with the highest level of duty and loyalty to the client, putting the client's interest above their own at all times. This means that investment advisors have to avoid or eliminate any conflicts of interest that could compromise their objectivity or impartiality, and they cannot receive any compensation or benefit that is contrary to the client's best interest. Investment advisors must also review and update their recommendations based on the client's changing needs and circumstances. Here are the main points:
 
 - Fiduciary duties are ongoing, while Regulation BI applies only at the time of the investment recommendation.
 - Regulation BI still allows commissions and certain conflicts of interest.
@@ -128,7 +128,7 @@ Clients should be aware of the differences between the two standards and the pot
 
 ## The Short-Lived Fiduciary Rule
 
-While “suitability” was the standard for transactional accounts or brokerage accounts, the U.S. [Department of Labor Fiduciary Rule](https://www.investopedia.com/updates/dol-fiduciary-rule/) proposed to toughen things up for brokers. Anyone with retirement money under management, who made recommendations or solicitations for an individual retirement account or other tax-advantaged retirement accounts, would be considered a fiduciary required to adhere to that standard, rather than to the suitability standard that was otherwise in effect.
+While “suitability” was the standard for transactional accounts or brokerage accounts, the U.S. Department of Labor Fiduciary Rule proposed to toughen things up for brokers. Anyone with retirement money under management, who made recommendations or solicitations for an individual retirement account or other tax-advantaged retirement accounts, would be considered a fiduciary required to adhere to that standard, rather than to the suitability standard that was otherwise in effect.
 
 The fiduciary rule had a long and yet unclear implementation. Originally proposed in 2010, it was scheduled to go into effect between April 10, 2017, and Jan. 1, 2018. After then-President Donald Trump took office, its effective date was postponed to June 9, 2017, including a transition period for certain exemptions extending through Jan. 1, 2018.
 
@@ -148,7 +148,7 @@ In contrast, when an individual or entity legally appointed to manage another pa
 
 A business can insure the fiduciaries of a qualified retirement plan, such as the company’s directors, officers, employees, and other natural person trustees.
 
-Fiduciary [liability insurance](https://www.investopedia.com/terms/l/liability_insurance.asp) is meant to fill in the gaps in traditional coverage offered through employee benefits liability or director’s and officer’s policies. It provides financial protection when [liability litigation](https://www.investopedia.com/terms/s/statutory-liability.asp) arises due to purported mismanagement of funds or investments, administrative errors or delays in transfers or distributions, a change or reduction in benefits, or erroneous advice surrounding investment allocations.
+Fiduciary liability insurance is meant to fill in the gaps in traditional coverage offered through employee benefits liability or director’s and officer’s policies. It provides financial protection when liability litigation arises due to purported mismanagement of funds or investments, administrative errors or delays in transfers or distributions, a change or reduction in benefits, or erroneous advice surrounding investment allocations.
 
 ## Investment Fiduciary Guidelines
 
@@ -162,13 +162,13 @@ The process begins with fiduciaries educating themselves on the laws and rules t
 
 The investment process starts by creating the investment program’s goals and objectives. Fiduciaries should identify the investment horizon, an acceptable level of risk, and expected return. By identifying these factors, fiduciaries create a framework for evaluating investment options.
 
-Fiduciaries then need to select the appropriate asset classes that will enable them to create a diversified portfolio through some justifiable method. Most fiduciaries go about this by employing [modern portfolio theory](https://www.investopedia.com/terms/m/modernportfoliotheory.asp), because it's one of the most accepted methods for creating investment portfolios that target a desired risk/return profile.
+Fiduciaries then need to select the appropriate asset classes that will enable them to create a diversified portfolio through some justifiable method. Most fiduciaries go about this by employing modern portfolio theory, because it's one of the most accepted methods for creating investment portfolios that target a desired risk/return profile.
 
 Finally, the fiduciary should formalize these steps by creating an investment policy statement that provides the necessary details for implementing a specific investment strategy. Now the fiduciary is ready to proceed with the implementation of the investment program, as identified in the first two steps.
 
 ### Step 3: Execute
 
-Specific investments or investment managers can now be selected to fulfill the investment policy statement. A [due diligence](https://www.investopedia.com/terms/d/duediligence.asp) process must be designed to evaluate potential investments. The due diligence process should identify criteria and filter potential investment options.
+Specific investments or investment managers can now be selected to fulfill the investment policy statement. A due diligence process must be designed to evaluate potential investments. The due diligence process should identify criteria and filter potential investment options.
 
 The implementation phase is usually performed with the assistance of an investment advisor because many fiduciaries lack the skill or resources to perform this step. When an advisor assists in the implementation phase, fiduciaries and advisors must communicate to ensure that an agreed-upon due diligence process is used while selecting investments or managers.
 
@@ -207,4 +207,3 @@ Working with a fiduciary means that you can be assured that a financial professi
 A fiduciary is a person or other entity in a position of control and influence over another person’s property or finances. The concept of fiduciaries can be found in a wide array of legal contexts in the United States and throughout the world. Fiduciary relationships are most often found when individuals are entrusted with carrying out a particular act for another, such as a trustee handling assets on behalf of a trust beneficiary.
 
 The term “fiduciary” is widely used in the context of financial advising and brokerage relationships when the client’s best interests must be put first. Because of the significance of these fiduciary relationships, new legal challenges often arise concerning properly carrying out one’s fiduciary responsibilities.
-

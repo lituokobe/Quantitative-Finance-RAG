@@ -55,10 +55,12 @@ Running a surplus is not always an unmixed blessing. Although it may seem wise f
 
 A budget surplus can also affect a company's economic standing or a country's inflation levels and gross domestic product (GDP). In the case of governments, spending is one of the four components of GDP, meaning that a government that struggles to reduce its spending will ultimately reduce its GDP. Since lower spending reduces the amount of money circulating in an economy, deflation can occur.
 
+**Pros:**
 - Facilitates the saving of money
 - Increases credit ratings and reduces borrowing costs
 - Lowers interest rates and encourages economic activity
 
+**Cons:**
 - Can lead to price hikes or excessive taxation
 - Less economic stimulus from spending
 - Reduces the amount of money circulating in an economy, potentially causing deflation

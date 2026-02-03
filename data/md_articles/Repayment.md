@@ -2,11 +2,11 @@
 
 ## What Is Repayment?
 
-Repayment is the act of paying back a lender the money you’ve borrowed. Typically, it consists of periodic payments toward the [principal](https://www.investopedia.com/terms/p/principal.asp)—the original amount borrowed—and interest, a fee for being lent the money. Some loans allow you to repay the full amount at any time, though there might be early repayment fees.
+Repayment is the act of paying back a lender the money you’ve borrowed. Typically, it consists of periodic payments toward the principal — the original amount borrowed—and interest, a fee for being lent the money. Some loans allow you to repay the full amount at any time, though there might be early repayment fees.
 
 Loan repayment is a financial obligation that affects people of all income levels. Many people manage various debts, such as auto loans, mortgages, student loans, and credit card charges. Businesses also often manage a portfolio of debts that include mortgages, lines of credit, bonds, and other structured corporate debt.
 
-Missing payments can lead to serious issues, like [bankruptcy](https://www.investopedia.com/terms/i/involuntary-bankruptcy.asp), late fees, and a lower credit score.
+Missing payments can lead to serious issues, like bankruptcy, late fees, and a lower credit score.
 
 ### Key Takeaways
 
@@ -18,39 +18,39 @@ Missing payments can lead to serious issues, like [bankruptcy](https://www.inves
 
 ## Understanding the Repayment Process: How Loans Are Paid Back
 
-When borrowers take out loans, their lenders presume they'll repay the debt. Interest is charged based on an agreed-upon rate and payment schedule from when a loan is disbursed to when it's settled. When making loans, financial institutions forgo other investment opportunities that could offer returns. The interest charges pay them for this [opportunity cost](https://www.investopedia.com/terms/o/opportunitycost.asp) and the risks associated with lending. Usually, interest rates are presented as an annual percentage rate (APR).
+When borrowers take out loans, their lenders presume they'll repay the debt. Interest is charged based on an agreed-upon rate and payment schedule from when a loan is disbursed to when it's settled. When making loans, financial institutions forgo other investment opportunities that could offer returns. The interest charges pay them for this opportunity cost and the risks associated with lending. Usually, interest rates are presented as an annual percentage rate (APR).
 
 Repayment schedules vary based on the loan type and lender. Whether applying for or paying off a loan, it's crucial to study the sections of the loan agreement outlining your options should you be unable to make scheduled payments.
 
-Borrowers unable to pay their loans might consider bankruptcy protection. However, it would be best to consider this a last resort since it'll likely limit your ability to take out loans in the future. Alternatives to this drastic step include refinancing the loan, seeking help from [debt relief companies](https://www.investopedia.com/what-is-a-debt-relief-program-7373606) or [credit counseling agencies](https://www.investopedia.com/the-best-credit-counseling-services-8765076), and directly negotiating with creditors.
+Borrowers unable to pay their loans might consider bankruptcy protection. However, it would be best to consider this a last resort since it'll likely limit your ability to take out loans in the future. Alternatives to this drastic step include refinancing the loan, seeking help from debt relief companies or credit counseling agencies, and directly negotiating with creditors.
 
 If you miss payments unexpectedly, contact your lender before fees accumulate. Some lenders may even offer special terms for those facing hardship.
 
 ## Exploring Different Loan Repayment Options
 
-From covering education expenses to buying a new home or car, achieving your financial goals often requires borrowing money. Each kind of loan has a specific purpose and its own repayment terms. Auto loans, for example, usually have fixed interest rates and are designed to be paid back within a few years. Mortgages are long-term loans lasting decades and may have variable interest rates. [Student loans](https://www.investopedia.com/student-loan-repayment-programs-the-perk-that-just-might-change-your-financial-future-11760357) may have deferment options, allowing borrowers to delay payments as they continue their education or are unemployed for an extended period.
+From covering education expenses to buying a new home or car, achieving your financial goals often requires borrowing money. Each kind of loan has a specific purpose and its own repayment terms. Auto loans, for example, usually have fixed interest rates and are designed to be paid back within a few years. Mortgages are long-term loans lasting decades and may have variable interest rates. Student loans may have deferment options, allowing borrowers to delay payments as they continue their education or are unemployed for an extended period.
 
 When taking out a loan, you obtain money from a lender—typically a company, financial institution, or government entity. Your agreement with the lender will specify the expectations for repaying your debt. While the terms may vary, here's a look at the primary forms of repayment for the most common types of loans.
 
 ### Navigating Repayment Strategies for Federal Student Loans
 
-Federal student loans may allow reduced or [deferred payments](https://www.investopedia.com/how-to-manage-student-loans-after-deferment-ends-and-payments-start-11747115) and [loan forgiveness](https://www.investopedia.com/terms/s/student-loan-forgiveness.asp). Your options for student loan refinancing change as your life does. This can be particularly helpful if you're facing a health or financial crisis.
+Federal student loans may allow reduced or deferred payments and loan forgiveness. Your options for student loan refinancing change as your life does. This can be particularly helpful if you're facing a health or financial crisis.
 
-The [standard 10-year repayment plan](https://www.investopedia.com/standard-repayment-plan-8684327) is typically the best option: it entails regular payments—at the [same monthly amount and on a specified date each month](https://www.investopedia.com/terms/e/equated_monthly_installment.asp)—until the loan plus interest is paid off. The standard payment plan allows you to repay the debt in the least amount of time. Additionally, this method accrues the least amount of interest.
+The standard 10-year repayment plan is typically the best option: it entails regular payments—at the same monthly amount and on a specified date each month — until the loan plus interest is paid off. The standard payment plan allows you to repay the debt in the least amount of time. Additionally, this method accrues the least amount of interest.
 
 Other options include the extended and graduated repayment plans. The extended repayment plan is just like its standard counterpart, except the borrower has up to 25 years to pay back the debt. Because of the longer time frame, the monthly bills are lower. However, this also means there's more time for interest to accrue.
 
-The graduated payment plan, as with a graduated payment mortgage, features payments that start low and gradually increase over time. This is meant to accommodate borrowers who are expected to earn higher incomes later in life. Graduated payment plans can offer a real benefit for those with limited earnings straight out of college, as the initial payments can start as low as $0 per month. However, as with the extended repayment plan, the borrower ends up with higher long-term costs.
+The graduated payment plan, as with a graduated payment mortgage, features payments that start low and gradually increase over time. This is meant to accommodate borrowers who are expected to earn higher incomes later in life. Graduated payment plans can offer a real benefit for those with limited earnings straight out of college, as the initial payments can start as low as \$0 per month. However, as with the extended repayment plan, the borrower ends up with higher long-term costs.
 
 Student loan borrowers may be eligible for loan forgiveness. Among those who might qualify are teachers, service members, Peace Corps and AmeriCorps volunteers, first responders, government and tribal employees, workers at certain nonprofit agencies, and those enrolled in an income-driven repayment (IDR) plan.
 
 ### Repayment Solutions for Home Mortgages
 
-Homeowners struggling with their mortgages can take steps to avoid foreclosure. For example, borrowers with an [adjustable-rate mortgage (ARM)](https://www.investopedia.com/terms/a/arm.asp) may be able to refinance their loans into a fixed-rate mortgage with a lower interest rate.
+Homeowners struggling with their mortgages can take steps to avoid foreclosure. For example, borrowers with an adjustable-rate mortgage (ARM) may be able to refinance their loans into a fixed-rate mortgage with a lower interest rate.
 
 In forbearance, mortgage payments are temporarily reduced or paused. Regular payments then resume along with a lump-sum payment or additional partial payments for a specified period until the loan is repaid in full.
 
-[Loan modifications](https://www.investopedia.com/terms/l/loan_modification.asp) offer another potential means of relief. These are adjustments to the mortgage to make payments more manageable, including lowering the interest rate, extending the loan term, or rolling missed payments into the existing loan balance. Sometimes, a part of the mortgage may be forgiven, reducing the overall debt.
+Loan modifications offer another potential means of relief. These are adjustments to the mortgage to make payments more manageable, including lowering the interest rate, extending the loan term, or rolling missed payments into the existing loan balance. Sometimes, a part of the mortgage may be forgiven, reducing the overall debt.
 
 Under certain circumstances, the most feasible solution may be to sell the home and use the proceeds to pay off all or part of the mortgage. This option may be the best-case scenario for those behind on their payments to avoid bankruptcy. It can help those who've fallen behind on their payments avoid the long-term consequences of bankruptcy. Once in default, depending on the jurisdiction and other factors, the house could be seized as an asset anyway.
 
@@ -60,9 +60,9 @@ If a borrower has defaulted on their mortgage, they can work toward reinstatemen
 
 ### Options for Managing Debt: Forbearance, Consolidation, and More
 
-Some debts may be placed in [forbearance](https://www.investopedia.com/terms/f/forbearance.asp), letting borrowers temporarily pause or reduce payments. While this option can give you time to recover financially, interest will continue to accrue during the forbearance period. Deferment options also exist for borrowers who are unemployed or whose income is too low to make payments. It's best to communicate with lenders once events have affected your ability to afford your loan payments—before your problems worsen.
+Some debts may be placed in forbearance, letting borrowers temporarily pause or reduce payments. While this option can give you time to recover financially, interest will continue to accrue during the forbearance period. Deferment options also exist for borrowers who are unemployed or whose income is too low to make payments. It's best to communicate with lenders once events have affected your ability to afford your loan payments—before your problems worsen.
 
-If you hold several federal student loans, credit cards, or other types of loans, [consolidation](https://www.investopedia.com/terms/d/debtconsolidation.asp) might be an option worth exploring. Consolidation combines individual debts into a single loan, typically with a fixed interest rate and one monthly payment. This could extend your repayment period and reduce the amount you'll pay each month. The downside is that you will likely end up paying more in interest over the life of the loan.
+If you hold several federal student loans, credit cards, or other types of loans, consolidation might be an option worth exploring. Consolidation combines individual debts into a single loan, typically with a fixed interest rate and one monthly payment. This could extend your repayment period and reduce the amount you'll pay each month. The downside is that you will likely end up paying more in interest over the life of the loan.
 
 An alternative to consolidation is debt relief, which is when a company negotiates with your creditors on your behalf. Debt relief or debt settlement is generally offered by for-profit companies that charge a fee if they successfully get your creditors to reduce your total outstanding debt.
 
@@ -83,4 +83,3 @@ Yes, there often are tax implications for debt repayment. For example, student l
 ## The Bottom Line
 
 Repayment refers to paying back money that you've borrowed. Loan repayments cover a part of the principal, or the amount borrowed, and interest, which is what the lender charges for supplying the funds. Loan agreements specify the repayment terms, including the interest rates to be paid. When taking out a loan, borrowers should pay close attention to the repayment policies and only agree to take on debt if they're confident they can make on-time repayments. Failing to do so can result in a cascading series of adverse financial consequences.
-
