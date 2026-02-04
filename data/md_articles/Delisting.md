@@ -24,19 +24,19 @@ Companies usually delist because they want to go private, are taken over by priv
 
 ### What Triggers Involuntary Delisting?
 
-The reasons for delisting include violating regulations and failing to meet minimum financial standards. Financial standards include the ability to maintain a minimum share price, [financial ratios](https://www.investopedia.com/financial-ratios-4689817), and sales levels. When a company does not meet listing requirements, the listing exchange issues a warning of noncompliance. If noncompliance continues, the exchange delists the company’s stock. More reasons for being delisted are discussed below.
+The reasons for delisting include violating regulations and failing to meet minimum financial standards. Financial standards include the ability to maintain a minimum share price, financial ratios, and sales levels. When a company does not meet listing requirements, the listing exchange issues a warning of noncompliance. If noncompliance continues, the exchange delists the company’s stock. More reasons for being delisted are discussed below.
 
-To avoid being delisted, some companies will undergo a [reverse split](https://www.investopedia.com/terms/r/reversesplit.asp) of their stock shares. This has the effect of combining several shares into one and multiplying the share price. For example, if a company executes a 1-for-10 reverse split, it could raise its share price from 50 cents per share to five dollars per share, in which case it would no longer be at risk of delisting.
+To avoid being delisted, some companies will undergo a reverse split of their stock shares. This has the effect of combining several shares into one and multiplying the share price. For example, if a company executes a 1-for-10 reverse split, it could raise its share price from 50 cents per share to five dollars per share, in which case it would no longer be at risk of delisting.
 
 ### Fast Fact
 
 One way for companies to get around minimum share price rules is by engaging in a reverse split.
 
-The consequences of delisting can be significant since stock shares not traded on one of the major stock exchanges are more difficult for [investors](https://www.investopedia.com/terms/i/investor.asp) to research and harder to purchase. This means that the company is unable to issue new shares to the market to establish new financial initiatives.
+The consequences of delisting can be significant since stock shares not traded on one of the major stock exchanges are more difficult for investors to research and harder to purchase. This means that the company is unable to issue new shares to the market to establish new financial initiatives.
 
 Often, involuntary delistings are indicative of a company’s poor financial health or poor corporate governance. Warnings issued by an exchange should be taken seriously. For example, on April 23, 2023, Bed Bath & Beyond Inc. filed for voluntary Chapter 11 protection. As a result, NASDAQ informed the company that Bed Bath & Beyond's common stock would be suspended at the opening of business on May 3, 2023. As communicated, the stock has been delisted.
 
-In the United States, delisted securities may be traded OTC except when they are delisted to become a private company or because of [liquidation](https://www.investopedia.com/terms/l/liquidation.asp).
+In the United States, delisted securities may be traded OTC except when they are delisted to become a private company or because of liquidation.
 
 ## Common Factors Leading to Stock Delisting
 
@@ -54,9 +54,9 @@ While there is no infallible method to predict stock delistings, there are certa
 
 When a company fails to comply with listing requirements, it will receive adequate warning. Delisting doesn’t happen overnight. Notifications are made and time is granted to the subject to get its affairs in order. If the noncompliance continues after these warnings are made, the company will then be removed from the exchange.
 
-Voluntary delisting works differently. If a company decides it no longer wants to operate in the public eye, it must consult with its [stakeholders](https://www.investopedia.com/terms/s/stakeholder.asp) first. A resolution has to be passed in a board meeting and put to [shareholders](https://www.investopedia.com/terms/s/shareholder.asp).
+Voluntary delisting works differently. If a company decides it no longer wants to operate in the public eye, it must consult with its stakeholders first. A resolution has to be passed in a board meeting and put to shareholders.
 
-Once enough shareholders are on board, the company needs to get the green light from the stock exchange that it wishes to delist from and put out a statement outlining its intent. An [investment bank](https://www.investopedia.com/terms/i/investmentbank.asp) will be in charge of managing the delisting. One of its first jobs is making sure there is enough money to buy back the shares.
+Once enough shareholders are on board, the company needs to get the green light from the stock exchange that it wishes to delist from and put out a statement outlining its intent. An investment bank will be in charge of managing the delisting. One of its first jobs is making sure there is enough money to buy back the shares.
 
 ### Fast Fact
 
@@ -76,7 +76,7 @@ Another factor to consider is that there’s less regulation outside of the majo
 
 If you still hold shares after they’ve been delisted, your next step depends a lot on what you’re invested in, how convinced you are about its prospects, and whether you have the stomach to deal with the murkier, less transparent alternative exchanges.
 
-You can still sell the shares, but the conditions are generally less favorable. [Volume](https://www.investopedia.com/terms/v/volume.asp) thins out when you leave a major exchange. With OTC transactions, there are fewer buyers and sellers, meaning wider bid-ask spreads and getting less than the going rate. In some cases, you may only be able to trade the shares by appointment.
+You can still sell the shares, but the conditions are generally less favorable. Volume thins out when you leave a major exchange. With OTC transactions, there are fewer buyers and sellers, meaning wider bid-ask spreads and getting less than the going rate. In some cases, you may only be able to trade the shares by appointment.
 
 ### Tip
 
@@ -88,7 +88,7 @@ If you still hold shares after they are delisted, you can sell them—just not o
 
 ## Can a Delisted Company Get Re-Listed?
 
-Yes, it is possible for [a delisted company](https://www.investopedia.com/terms/u/unquoted_public_company.asp) to get re-listed. A lot depends on the circumstances of being delisted. Those forced to leave often find it difficult to get their affairs back in order and bounce back, especially without the funding opportunities that the stock market provides. There are a few success stories, though.
+Yes, it is possible for a delisted company to get re-listed. A lot depends on the circumstances of being delisted. Those forced to leave often find it difficult to get their affairs back in order and bounce back, especially without the funding opportunities that the stock market provides. There are a few success stories, though.
 
 ## Can a Delisting Be Good for a Company?
 
@@ -99,4 +99,3 @@ Delisting isn’t always as bad as people make it out to be. Many household name
 A company is delisted when it is removed from a stock exchange. No longer selling shares to the public can be voluntary or involuntary. Companies may prefer to go private to avoid having to answer to the public and jump through regulatory hoops. Alternatively, they may be kicked out of the exchange for failing to meet its listing requirements or because they ran out of money and went bankrupt.
 
 Investors holding shares after a delisting will only be able to sell them OTC. That generally means less liquidity, finding it harder to locate buyers at the price you want, and potentially being left in the dark about what the company is up to.
-

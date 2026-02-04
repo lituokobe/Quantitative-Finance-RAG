@@ -1,0 +1,74 @@
+2026-02-04 22:49:49,558 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-04 22:49:49,560 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-04 22:49:49,562 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-04 22:49:49,856 - _client - INFO: HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-02-04 22:49:49,865 - _client - INFO: HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-04 22:49:50,923 - _client - INFO: HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-04 22:49:51,947 - log_utils - INFO: starting_reply_node starts to work
+2026-02-04 22:49:51,947 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-04 22:50:04,844 - log_utils - INFO: starting_intention_node starts to work
+2026-02-04 22:50:05,558 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:50:05,579 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.735 seconds.
+2026-02-04 22:50:05,581 - log_utils - INFO: fallback_node starts to work
+2026-02-04 22:50:05,581 - log_utils - INFO: fallback_node finishes working.
+2026-02-04 22:50:16,055 - log_utils - INFO: starting_intention_node starts to work
+2026-02-04 22:50:16,620 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:50:16,634 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.578 seconds.
+2026-02-04 22:50:16,635 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-04 22:50:16,637 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-04 22:50:16,664 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-04 22:50:16,685 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-04 22:50:16,685 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-04 22:50:17,042 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.405 seconds.
+2026-02-04 22:50:17,042 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-04 22:50:17,646 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:50:17,663 - DocumentGraderNode - INFO: Retrieved document Understanding American and European Option Styles
+
+[American options](https://www.investopedia.com/terms/a/americanoption.asp) can be exercised at any time between the date of purchase and the expiration date. [European options](https://www.investopedia.com/terms/e/europeanoption.asp) are different from American options in that they can only be exercised at the end of their lives on their expiration date.
+
+The difference between [American and European options](https://www.investopedia.com/articles/optioninvestor/08/american-european-options.asp) is about early exercise, not geography. In the United States, most single stock options are American while index options are European. An American option also typically carries a higher premium than an otherwise identical European option. This is because the early exercise feature is desirable and commands a premium. is relevant
+2026-02-04 22:50:18,158 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:50:18,171 - DocumentGraderNode - INFO: Retrieved document Call Option: What It Is, How To Use It, and Examples is NOT relevant, dump it.
+2026-02-04 22:50:18,510 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:50:18,520 - DocumentGraderNode - INFO: Retrieved document What Is the Binomial Option Pricing Model?
+
+The binomial option pricing model is a flexible and intuitive method for valuing options. It breaks down the lifespan of an option into discrete periods and handles complex scenarios effectively.
+
+The model, developed in the 1970s by economists John Cox, Stephen Ross, and Mark Rubinstein, offers a simpler alternative to the famous Black-Scholes formula.
+
+The binomial option pricing model accommodates American-style options and provides a visual framework for decision making at various stages. is relevant
+2026-02-04 22:50:18,993 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:50:19,008 - DocumentGraderNode - INFO: Retrieved document Exploring the Types of Options: Calls and Puts is NOT relevant, dump it.
+2026-02-04 22:50:19,421 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:50:19,435 - DocumentGraderNode - INFO: Retrieved document Tip
+
+The “style” of the option determines your right to buy or sell. An American-style option lets you exercise your rights before and up to the expiration date. You can only execute a European-style option on the day of expiration. Most stocks and exchange-traded funds (ETFs) have American-style options, while equity indexes, including the S&P 500, have European-style options.
+
+Imagine an investor owns 100 shares of a stock worth \$50 per share. They believe the stock’s value will rise in the future. However, this investor is concerned about potential risks and decides to hedge their position with an option. The investor could buy a put option that gives them the right to sell 100 shares of the underlying stock for \$50 per share—known as the strike price — until a specific day in the future—known as the expiration date. The option costs \$2 per share. Each option contract represents 100 shares, so the investor paid \$200 to enter this trade.
+
+Assume the stock falls in value to \$40 per share by expiration, and the put option buyer decides to exercise their option and sell the stock for the original strike price of \$50 per share. As such, the investor only lost \$200, the price he paid for the options. An unhedged position would’ve shown a loss of \$1,000. A strategy like this is called a protective put because it hedges the stock’s downside risk. is relevant
+2026-02-04 22:50:20,001 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:50:20,015 - DocumentGraderNode - INFO: Retrieved document Call Option Examples is NOT relevant, dump it.
+2026-02-04 22:50:20,452 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:50:20,467 - DocumentGraderNode - INFO: Retrieved document Understanding Option Strike Prices: Definition, Function, and Impact is NOT relevant, dump it.
+2026-02-04 22:50:20,800 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:50:20,813 - DocumentGraderNode - INFO: Retrieved document What Are the Limitations of the Black-Scholes Model?
+
+The Black-Scholes model is only used to price European options. It doesn't take into account that American options could be exercised before the expiration date. The model also assumes that dividends, volatility, and risk-free rates remain constant over the option's life. Not taking taxes, commissions, or trading costs into account can also lead to valuations that deviate from real-world results. is relevant
+2026-02-04 22:50:20,813 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-04 22:50:20,813 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.77 seconds.
+2026-02-04 22:50:20,813 - route_functions - INFO: --- Assess graded docs ---
+2026-02-04 22:50:20,813 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-04 22:50:20,814 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is an American option?", time costed: 4.179 seconds.
+2026-02-04 22:50:20,814 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 4.18 seconds.
+2026-02-04 22:50:20,815 - log_utils - INFO: generate_node starts to work
+2026-02-04 22:50:22,049 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:50:22,050 - log_utils - INFO: generate_node finishes working, time costed: 1.235 seconds.
+2026-02-04 22:50:22,050 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-04 22:50:22,769 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:50:22,783 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-04 22:50:22,783 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-04 22:50:23,217 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:50:23,230 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-04 22:50:23,231 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-04 22:50:23,232 - log_utils - INFO: rely_with_generation_node finishes working.

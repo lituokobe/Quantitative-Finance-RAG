@@ -1,0 +1,14 @@
+2026-02-04 23:05:26,086 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-04 23:05:26,088 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-04 23:05:26,090 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-04 23:05:26,358 - _client - INFO: HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-02-04 23:05:26,367 - _client - INFO: HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-04 23:05:27,191 - _client - INFO: HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-04 23:05:27,919 - log_utils - INFO: starting_reply_node starts to work
+2026-02-04 23:05:27,919 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-04 23:05:38,831 - log_utils - INFO: starting_intention_node starts to work
+2026-02-04 23:05:39,448 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 23:05:39,469 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.638 seconds.
+2026-02-04 23:05:39,471 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-02-04 23:05:39,864 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 23:05:39,877 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.406 seconds.

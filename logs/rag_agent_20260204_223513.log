@@ -1,0 +1,45 @@
+2026-02-04 22:35:13,723 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-04 22:35:13,726 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-04 22:35:13,728 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-04 22:35:14,012 - _client - INFO: HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-02-04 22:35:14,021 - _client - INFO: HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-04 22:35:15,602 - _client - INFO: HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-04 22:35:22,334 - log_utils - INFO: starting_reply_node starts to work
+2026-02-04 22:35:22,334 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-04 22:35:29,817 - log_utils - INFO: starting_intention_node starts to work
+2026-02-04 22:35:30,614 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:35:30,637 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.82 seconds.
+2026-02-04 22:35:30,639 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-04 22:35:30,640 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-04 22:35:40,688 - child_graph_nodes - ERROR: child graph - retriever_node has error on retrieving documents for question "What is option?": <MilvusException: (code=2, message=Fail connecting to server on 127.0.0.1:19530, illegal connection params or server unavailable)>
+2026-02-04 22:35:40,688 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 10.048 seconds.
+2026-02-04 22:35:40,691 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-04 22:35:40,691 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-04 22:35:40,691 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 0.001 seconds.
+2026-02-04 22:35:40,692 - route_functions - INFO: --- Assess graded docs ---
+2026-02-04 22:35:40,692 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions. ---
+2026-02-04 22:35:40,692 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-02-04 22:35:41,098 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:35:41,099 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 0.406 seconds.
+2026-02-04 22:35:41,099 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-04 22:35:51,150 - child_graph_nodes - ERROR: child graph - retriever_node has error on retrieving documents for question "What is the definition of option?": <MilvusException: (code=2, message=Fail connecting to server on 127.0.0.1:19530, illegal connection params or server unavailable)>
+2026-02-04 22:35:51,151 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 10.051 seconds.
+2026-02-04 22:35:51,152 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-04 22:35:51,152 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-04 22:35:51,152 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 0.0 seconds.
+2026-02-04 22:35:51,153 - route_functions - INFO: --- Assess graded docs ---
+2026-02-04 22:35:51,153 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions. ---
+2026-02-04 22:35:51,154 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-02-04 22:35:51,649 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:35:51,657 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 0.503 seconds.
+2026-02-04 22:35:51,659 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-04 22:36:01,701 - child_graph_nodes - ERROR: child graph - retriever_node has error on retrieving documents for question "What is the definition of an option?": <MilvusException: (code=2, message=Fail connecting to server on 127.0.0.1:19530, illegal connection params or server unavailable)>
+2026-02-04 22:36:01,701 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 10.042 seconds.
+2026-02-04 22:36:01,702 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-04 22:36:01,702 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-04 22:36:01,703 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 0.0 seconds.
+2026-02-04 22:36:01,703 - route_functions - INFO: --- Assess graded docs ---
+2026-02-04 22:36:01,703 - route_functions - INFO: --- Decision: all documents are not relevant, and looped twice, need to do web search. ---
+2026-02-04 22:36:01,704 - log_utils - INFO: child graph - web_search_node starts to work
+2026-02-04 22:36:03,746 - log_utils - INFO: child graph - web_search_node finishes working, time costed: 2.042 seconds.
+2026-02-04 22:36:03,747 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is option?", time costed: 33.109 seconds.

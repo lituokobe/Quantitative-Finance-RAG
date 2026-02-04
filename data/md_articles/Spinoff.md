@@ -2,7 +2,7 @@
 
 ## What Is a Spin-Off?
 
-A parent company creates a spin-off division as an independent entity. A spin-off is initiated when the company [expects the spin-off may be worth more](https://www.investopedia.com/ask/answers/050415/what-are-some-more-common-reasons-divestiture-occurs.asp) independently than as part of the parent company. A spin-off is also known as a [spinout](https://www.investopedia.com/terms/s/spin-out.asp) or starburst. A spinoff is created when a parent company distributes shares in a subsidiary or business division to the parent company shareholders. It is a type of [divestiture.](https://www.investopedia.com/terms/d/divestiture.asp)
+A parent company creates a spin-off division as an independent entity. A spin-off is initiated when the company expects the spin-off may be worth more independently than as part of the parent company. A spin-off is also known as a spinout or starburst. A spinoff is created when a parent company distributes shares in a subsidiary or business division to the parent company shareholders. It is a type of divestiture.
 
 ### Key Takeaways
 
@@ -12,11 +12,11 @@ A parent company creates a spin-off division as an independent entity. A spin-of
 
 ## How a Spin-Off Is Created
 
-A [parent company](https://www.investopedia.com/terms/p/parentcompany.asp) will spin off part of its business if it expects it will be lucrative. The spin-off will have a separate management structure and a new name, but retain the same assets, intellectual property, and human resources. The parent company may continue to provide financial and technological support.
+A parent company will spin off part of its business if it expects it will be lucrative. The spin-off will have a separate management structure and a new name, but retain the same assets, intellectual property, and human resources. The parent company may continue to provide financial and technological support.
 
-A corporation creates a spin-off by distributing 100% of its ownership interest in the targeted business unit as shares of stock to existing shareholders. It can also offer its existing shareholders a discount to [exchange their shares in the parent company](https://www.investopedia.com/ask/answers/032415/how-do-spinoffs-impact-investors-both-parent-and-subsidiary-companies.asp) for shares of the spin-off.
+A corporation creates a spin-off by distributing 100% of its ownership interest in the targeted business unit as shares of stock to existing shareholders. It can also offer its existing shareholders a discount to exchange their shares in the parent company for shares of the spin-off.
 
-For example, an investor could exchange $100 of the parent’s [stock](https://www.investopedia.com/terms/s/stock.asp) for $110 of the spin-off’s stock. Spin-offs may increase [shareholder](https://www.investopedia.com/terms/s/shareholder.asp) returns because newly independent companies can better focus on their specific products or services.
+For example, an investor could exchange \$100 of the parent’s stock for \$110 of the spin-off’s stock. Spin-offs may increase shareholder returns because newly independent companies can better focus on their specific products or services.
 
 ### Important
 
@@ -38,7 +38,7 @@ A company can relinquish 100% of its shares in the spin-off subsidiary, but many
 
 In 2022, according to data compiled by EY and Goldman Sachs, over thirty corporate separations, or spin-offs, occurred globally across multiple industries, representing 17% of all announced separations since 2012.
 
-Historical examples of spin-offs include Smith & Wesson Inc. from American Outdoor Brands Corp. in 2019, and the separation of [PayPal Inc.](https://www.investopedia.com/terms/p/paypal.asp) from its parent company, [eBay Inc.](https://www.investopedia.com/articles/markets/042815/how-ebay-makes-its-money-ebay.asp) in 2015. In early 2023, General Electric spun off its healthcare division, GE HealthCare Technologies, and Jefferies Financial Group spun off its holdings of Vitesse.
+Historical examples of spin-offs include Smith & Wesson Inc. from American Outdoor Brands Corp. in 2019, and the separation of PayPal Inc. from its parent company, eBay Inc. in 2015. In early 2023, General Electric spun off its healthcare division, GE HealthCare Technologies, and Jefferies Financial Group spun off its holdings of Vitesse.
 
 ## What Does a Spin-Off Mean for Shareholders?
 
@@ -55,4 +55,3 @@ A split-off is similar to a spin-off, where the parent company offers shares to 
 ## The Bottom Line
 
 A spin-off, also known as a spinout or starburst creates a new company from an existing company. It's a type of divestiture and is only done if a parent company expects the new company will be worth more independently.
-

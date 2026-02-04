@@ -1,0 +1,442 @@
+2026-02-04 22:43:20,362 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-04 22:43:20,364 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-04 22:43:20,366 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-04 22:43:20,640 - _client - INFO: HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-02-04 22:43:20,649 - _client - INFO: HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-04 22:43:21,633 - _client - INFO: HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-04 22:43:22,524 - log_utils - INFO: starting_reply_node starts to work
+2026-02-04 22:43:22,524 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-04 22:43:46,018 - log_utils - INFO: starting_intention_node starts to work
+2026-02-04 22:43:46,788 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:43:46,804 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.786 seconds.
+2026-02-04 22:43:46,804 - log_utils - INFO: shortcut_retriever_node starts to work
+2026-02-04 22:43:47,256 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:43:47,271 - log_utils - INFO: shortcut_retriever_node finishes working, time costed: 0.467 seconds.
+2026-02-04 22:43:58,483 - log_utils - INFO: starting_intention_node starts to work
+2026-02-04 22:43:59,277 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:43:59,289 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.806 seconds.
+2026-02-04 22:43:59,291 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-04 22:43:59,292 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-04 22:43:59,318 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-04 22:43:59,339 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-04 22:43:59,339 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-04 22:43:59,668 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.375 seconds.
+2026-02-04 22:43:59,668 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-04 22:44:00,197 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:00,211 - DocumentGraderNode - INFO: Retrieved document Fast Fact
+
+Most commonly, the Fed's discount window loans are overnight only, but the loan period can be extended in periods of extreme economic distress, such as the 2008-2009 credit crisis. is relevant
+2026-02-04 22:44:00,642 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:00,654 - DocumentGraderNode - INFO: Retrieved document Great Recession: What It Was and What Caused It is relevant
+2026-02-04 22:44:01,119 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:01,132 - DocumentGraderNode - INFO: Retrieved document The Great Depression: Overview, Causes, and Effects is relevant
+2026-02-04 22:44:01,529 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:01,541 - DocumentGraderNode - INFO: Retrieved document Historical Example: Fed Discount Rate in Action
+
+The use of the Fed's discount window soared in late 2007 and 2008 as financial conditions deteriorated sharply and the central bank took steps to inject liquidity into the financial system.
+
+In August 2007, the Board of Governors cut the primary discount rate from 6.25% to 5.75%, reducing the premium over the Fed funds rate from 1% to 0.5%. In October 2008, the month after Lehman Brothers' collapse, discount window borrowing peaked at \$403.5 billion against the monthly average of \$0.7 billion from 1959 to 2006.
+
+Due to the financial crisis, the board extended loan terms from overnight to 30 days, and later to 90 days in March 2008. Once the economy recovered, those temporary measures were revoked, and the discount rate was reverted to overnight lending only.
+
+The Fed maintains its own discount rate under the discount window program in the U.S. Most central banks across the globe use similar measures, although they vary by area. For instance, the European Central Bank (ECB) offers standing facilities that serve the same purpose. Financial organizations can obtain overnight liquidity from the central bank against the presentation of sufficient eligible assets as collateral. is relevant
+2026-02-04 22:44:02,064 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:02,077 - DocumentGraderNode - INFO: Retrieved document Black Monday: Stock Market Crash Causes and Impact is relevant
+2026-02-04 22:44:02,505 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:02,519 - DocumentGraderNode - INFO: Retrieved document Exploring the Nasdaq Composite Index
+
+The term Nasdaq is also used to refer to the Nasdaq Composite. This is an index of more than 2,500 stocks listed on the Nasdaq exchange. This index includes some of the major technology giants, such as:
+
+- Apple (AAPL)
+- Microsoft (MSFT)
+- Alphabet (GOOG, GOOGL)
+- Meta Platforms (META)
+- Amazon (AMZN)
+- Tesla (TSLA)
+
+The Nasdaq Composite closed at a record high of 16,057.44 on Nov. 19, 2021. The index proceeded to drop more than 23% from that point through April 2022. The Nasdaq Composite's 13.3% drop in April 2022 was its steepest monthly decline since losing 17.4% in October 2008 during the global financial crisis. It closed at 13,787.92 on June 30, 2023. is relevant
+2026-02-04 22:44:02,826 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:02,831 - DocumentGraderNode - INFO: Retrieved document Swaps can also be constructed to exchange currency risk or the risk of default on a loan or cash flows from other business activities. Swaps related to the cash flows and potential defaults of mortgage bonds are an extremely popular derivative. In fact, they’ve been a bit too popular in the past. It was this type of counterparty risk of swaps that spiraled into the credit crisis of 2008. is relevant
+2026-02-04 22:44:03,275 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:03,288 - DocumentGraderNode - INFO: Retrieved document What Is Inflation? is NOT relevant, dump it.
+2026-02-04 22:44:03,288 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-04 22:44:03,288 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.62 seconds.
+2026-02-04 22:44:03,289 - route_functions - INFO: --- Assess graded docs ---
+2026-02-04 22:44:03,289 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-04 22:44:03,291 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is the 2008 financial crisis?", time costed: 4.0 seconds.
+2026-02-04 22:44:03,291 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 4.0 seconds.
+2026-02-04 22:44:03,291 - log_utils - INFO: generate_node starts to work
+2026-02-04 22:44:05,768 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:05,771 - log_utils - INFO: generate_node finishes working, time costed: 2.479 seconds.
+2026-02-04 22:44:05,772 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-04 22:44:06,341 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:06,355 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-04 22:44:06,355 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-04 22:44:06,774 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:06,785 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-04 22:44:06,785 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-04 22:44:06,786 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-04 22:44:21,865 - log_utils - INFO: starting_intention_node starts to work
+2026-02-04 22:44:22,677 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:22,681 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.816 seconds.
+2026-02-04 22:44:22,681 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-04 22:44:22,682 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-04 22:44:22,683 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-04 22:44:22,699 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-04 22:44:22,699 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-04 22:44:22,885 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.203 seconds.
+2026-02-04 22:44:22,886 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-04 22:44:23,288 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:23,299 - DocumentGraderNode - INFO: Retrieved document Historical Example: Fed Discount Rate in Action
+
+The use of the Fed's discount window soared in late 2007 and 2008 as financial conditions deteriorated sharply and the central bank took steps to inject liquidity into the financial system.
+
+In August 2007, the Board of Governors cut the primary discount rate from 6.25% to 5.75%, reducing the premium over the Fed funds rate from 1% to 0.5%. In October 2008, the month after Lehman Brothers' collapse, discount window borrowing peaked at \$403.5 billion against the monthly average of \$0.7 billion from 1959 to 2006.
+
+Due to the financial crisis, the board extended loan terms from overnight to 30 days, and later to 90 days in March 2008. Once the economy recovered, those temporary measures were revoked, and the discount rate was reverted to overnight lending only.
+
+The Fed maintains its own discount rate under the discount window program in the U.S. Most central banks across the globe use similar measures, although they vary by area. For instance, the European Central Bank (ECB) offers standing facilities that serve the same purpose. Financial organizations can obtain overnight liquidity from the central bank against the presentation of sufficient eligible assets as collateral. is relevant
+2026-02-04 22:44:23,714 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:23,723 - DocumentGraderNode - INFO: Retrieved document Great Recession: What It Was and What Caused It is relevant
+2026-02-04 22:44:24,262 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:24,276 - DocumentGraderNode - INFO: Retrieved document The Great Depression: Overview, Causes, and Effects is relevant
+2026-02-04 22:44:24,671 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:24,684 - DocumentGraderNode - INFO: Retrieved document Swaps can also be constructed to exchange currency risk or the risk of default on a loan or cash flows from other business activities. Swaps related to the cash flows and potential defaults of mortgage bonds are an extremely popular derivative. In fact, they’ve been a bit too popular in the past. It was this type of counterparty risk of swaps that spiraled into the credit crisis of 2008. is relevant
+2026-02-04 22:44:25,183 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:25,196 - DocumentGraderNode - INFO: Retrieved document Ripples from the crash spread across the Atlantic Ocean to Europe, triggering other financial crises such as the collapse of the Boden-Kredit Anstalt, Austria’s most important bank. The economic calamity hit both continents in full force in 1931. is NOT relevant, dump it.
+2026-02-04 22:44:25,695 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:25,709 - DocumentGraderNode - INFO: Retrieved document Fast Fact
+
+Most commonly, the Fed's discount window loans are overnight only, but the loan period can be extended in periods of extreme economic distress, such as the 2008-2009 credit crisis. is relevant
+2026-02-04 22:44:26,104 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:26,117 - DocumentGraderNode - INFO: Retrieved document Black Monday: Stock Market Crash Causes and Impact is relevant
+2026-02-04 22:44:26,619 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:26,631 - DocumentGraderNode - INFO: Retrieved document Exploring the Nasdaq Composite Index
+
+The term Nasdaq is also used to refer to the Nasdaq Composite. This is an index of more than 2,500 stocks listed on the Nasdaq exchange. This index includes some of the major technology giants, such as:
+
+- Apple (AAPL)
+- Microsoft (MSFT)
+- Alphabet (GOOG, GOOGL)
+- Meta Platforms (META)
+- Amazon (AMZN)
+- Tesla (TSLA)
+
+The Nasdaq Composite closed at a record high of 16,057.44 on Nov. 19, 2021. The index proceeded to drop more than 23% from that point through April 2022. The Nasdaq Composite's 13.3% drop in April 2022 was its steepest monthly decline since losing 17.4% in October 2008 during the global financial crisis. It closed at 13,787.92 on June 30, 2023. is relevant
+2026-02-04 22:44:26,632 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-04 22:44:26,632 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.746 seconds.
+2026-02-04 22:44:26,632 - route_functions - INFO: --- Assess graded docs ---
+2026-02-04 22:44:26,632 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-04 22:44:26,634 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What was the impact of the 2008 financial crisis?", time costed: 3.952 seconds.
+2026-02-04 22:44:26,634 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 3.953 seconds.
+2026-02-04 22:44:26,635 - log_utils - INFO: generate_node starts to work
+2026-02-04 22:44:28,539 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:28,541 - log_utils - INFO: generate_node finishes working, time costed: 1.907 seconds.
+2026-02-04 22:44:28,542 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-04 22:44:28,864 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:28,873 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-04 22:44:28,873 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-04 22:44:29,485 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:29,499 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-04 22:44:29,500 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-04 22:44:29,501 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-04 22:44:47,977 - log_utils - INFO: starting_intention_node starts to work
+2026-02-04 22:44:48,599 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:48,611 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.634 seconds.
+2026-02-04 22:44:48,612 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-04 22:44:48,615 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-04 22:44:48,616 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-04 22:44:48,640 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-04 22:44:48,640 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-04 22:44:48,825 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.209 seconds.
+2026-02-04 22:44:48,825 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-04 22:44:49,256 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:49,268 - DocumentGraderNode - INFO: Retrieved document The Great Depression: Overview, Causes, and Effects is relevant
+2026-02-04 22:44:49,587 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:49,598 - DocumentGraderNode - INFO: Retrieved document The Bottom Line
+
+As an investment tool, buying and selling futures contracts offers the advantages of price speculation and risk mitigation against potential market downturns. However, it comes with some drawbacks. Taking a contrary position when hedging could lead to additional losses if market predictions are off. Also, the daily settlement of futures prices introduces volatility, with the investment’s value changing significantly from one trading session to the next. is NOT relevant, dump it.
+2026-02-04 22:44:50,031 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:50,044 - DocumentGraderNode - INFO: Retrieved document What's the Main Difference Between a Bear Market and a Bull Market?
+
+The main difference between a bear market and a bull market is that a bear market refers to a major downturn in financial markets, while a bull market refers to a major upswing. Markets are doing well during a bull market and poorly during a bear market. is relevant
+2026-02-04 22:44:50,578 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:50,591 - DocumentGraderNode - INFO: Retrieved document Great Recession: What It Was and What Caused It is relevant
+2026-02-04 22:44:51,106 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:51,119 - DocumentGraderNode - INFO: Retrieved document Important
+
+It's hard to pinpoint exactly what caused the Great Depression, but economists and historians generally agree that several factors led to this period of downturn. They include the stock market crash of 1929, the gold standard, a drop in lending, tariffs, banking panics, and contractionary monetary policies of the Fed. is relevant
+2026-02-04 22:44:51,500 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:51,511 - DocumentGraderNode - INFO: Retrieved document Major Milestones in DJIA History
+
+The following are some important historical milestones achieved by the Dow: is NOT relevant, dump it.
+2026-02-04 22:44:51,961 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:51,974 - DocumentGraderNode - INFO: Retrieved document Black Monday: Stock Market Crash Causes and Impact is relevant
+2026-02-04 22:44:52,445 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:52,448 - DocumentGraderNode - INFO: Retrieved document What Is the Nasdaq 100?
+
+The Nasdaq 100 is a large-cap growth index. It is comprised of 100 of the largest U.S. and international non-financial companies—all of which are listed on the Nasdaq stock exchange based on their market caps. Some of the major companies listed include Apple, Dollar Tree, Keurig, Sirius XM Holdings, and Zoom Video Communications. Investors who are interested in taking advantage of the index's returns can do so by investing in mutual funds, exchange-traded funds (ETFs), options, futures, and annuities that track and try to mimic its performance. is NOT relevant, dump it.
+2026-02-04 22:44:52,448 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-04 22:44:52,448 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.623 seconds.
+2026-02-04 22:44:52,448 - route_functions - INFO: --- Assess graded docs ---
+2026-02-04 22:44:52,448 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-04 22:44:52,449 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What are some other major market downturns?", time costed: 3.836 seconds.
+2026-02-04 22:44:52,449 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 3.837 seconds.
+2026-02-04 22:44:52,449 - log_utils - INFO: generate_node starts to work
+2026-02-04 22:44:53,944 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:53,946 - log_utils - INFO: generate_node finishes working, time costed: 1.497 seconds.
+2026-02-04 22:44:53,947 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-04 22:44:54,470 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:54,483 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-04 22:44:54,484 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-04 22:44:54,937 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:44:54,952 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-04 22:44:54,953 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-04 22:44:54,953 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-04 22:45:18,056 - log_utils - INFO: starting_intention_node starts to work
+2026-02-04 22:45:18,853 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:18,869 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.812 seconds.
+2026-02-04 22:45:18,869 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-04 22:45:18,871 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-04 22:45:18,871 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-04 22:45:18,891 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-04 22:45:18,891 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-04 22:45:19,011 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.139 seconds.
+2026-02-04 22:45:19,011 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-04 22:45:19,465 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:19,477 - DocumentGraderNode - INFO: Retrieved document Black-Scholes Model: What It Is, How It Works, and the Options Formula is relevant
+2026-02-04 22:45:19,913 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:19,927 - DocumentGraderNode - INFO: Retrieved document How To Calculate Call Option Payoffs
+
+[Call option payoff](https://www.investopedia.com/articles/active-trading/022315/when-and-how-take-profits-options.asp) refers to the profit or loss an option buyer or seller makes from a trade. Remember that there are three key variables to consider when evaluating call options: strike price, expiration date, and premium. These variables calculate payoffs generated from call options. There are two cases of call option payoffs. is NOT relevant, dump it.
+2026-02-04 22:45:20,479 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:20,495 - DocumentGraderNode - INFO: Retrieved document How the Binomial Option Pricing Model Works is relevant
+2026-02-04 22:45:20,853 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:20,863 - DocumentGraderNode - INFO: Retrieved document Practical Example: Binomial Option Pricing in Action
+
+A simplified example of a binomial tree has only one step. Assume there is a stock that is priced at \$100 per share. In one month, the price of this stock will go up by \$10 or go down by \$10, creating this situation:
+
+- Stock price = \$100
+- Stock price in one month (up state) = \$110
+- Stock price in one month (down state) = \$90
+
+Next, assume there is a call option available on this stock that expires in one month and has a strike price of \$100. In the up state, this call option is worth \$10, and in the down state, it is worth \$0. The binomial model can calculate what the price of the call option should be today. is NOT relevant, dump it.
+2026-02-04 22:45:21,298 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:21,306 - DocumentGraderNode - INFO: Retrieved document Call Option: What It Is, How To Use It, and Examples is NOT relevant, dump it.
+2026-02-04 22:45:21,810 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:21,823 - DocumentGraderNode - INFO: Retrieved document Options Terms
+
+The contract is an option (a choice) to buy the asset at a specific price by a certain date. The date is called the expiration date (known as expiry), and the asset is called the underlying asset (also called "the underlying").
+
+The price is called the strike price. The strike price and the exercise date are set by the contract seller and chosen by the buyer. There are usually many contracts, expiration dates, and strike prices that traders can choose from.
+
+You pay a fee to purchase a call option—this is called the [premium](https://www.investopedia.com/terms/p/premium.asp). It's the price paid for the option to exercise. If, at expiration, the underlying asset is below the strike price, the call buyer loses the premium paid. This is the maximum loss the buyer can incur. is NOT relevant, dump it.
+2026-02-04 22:45:22,172 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:22,177 - DocumentGraderNode - INFO: Retrieved document Long vs. Short Call Options
+
+There are two basic ways to trade call options: a long call option and a short call option. is NOT relevant, dump it.
+2026-02-04 22:45:22,516 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:22,520 - DocumentGraderNode - INFO: Retrieved document Call Option Examples is NOT relevant, dump it.
+2026-02-04 22:45:22,520 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-04 22:45:22,521 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.509 seconds.
+2026-02-04 22:45:22,521 - route_functions - INFO: --- Assess graded docs ---
+2026-02-04 22:45:22,521 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-04 22:45:22,521 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "How many methods are there to calculate call option price?", time costed: 3.651 seconds.
+2026-02-04 22:45:22,521 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 3.652 seconds.
+2026-02-04 22:45:22,521 - log_utils - INFO: generate_node starts to work
+2026-02-04 22:45:23,103 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:23,105 - log_utils - INFO: generate_node finishes working, time costed: 0.584 seconds.
+2026-02-04 22:45:23,106 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-04 22:45:23,537 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:23,551 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-04 22:45:23,551 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-04 22:45:23,851 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:23,859 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-04 22:45:23,859 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-04 22:45:23,860 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-04 22:45:36,003 - log_utils - INFO: starting_intention_node starts to work
+2026-02-04 22:45:36,985 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:36,996 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.994 seconds.
+2026-02-04 22:45:36,997 - log_utils - INFO: comparison_retriever_node starts to work
+2026-02-04 22:45:38,176 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:38,192 - standard_comparison_nodes - INFO: comparison_retriever_node decomposes question "Compare the Black-Scholes Model and the Binomial Option Pricing Model for calculating call option price", time costed: 1.193 seconds.
+2026-02-04 22:45:38,194 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-04 22:45:38,194 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-04 22:45:38,219 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-04 22:45:38,219 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-04 22:45:38,414 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.22 seconds.
+2026-02-04 22:45:38,415 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-04 22:45:38,878 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:38,891 - DocumentGraderNode - INFO: Retrieved document How the Binomial Option Pricing Model Works is NOT relevant, dump it.
+2026-02-04 22:45:39,321 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:39,334 - DocumentGraderNode - INFO: Retrieved document What Is the Binomial Option Pricing Model?
+
+The binomial option pricing model is a flexible and intuitive method for valuing options. It breaks down the lifespan of an option into discrete periods and handles complex scenarios effectively.
+
+The model, developed in the 1970s by economists John Cox, Stephen Ross, and Mark Rubinstein, offers a simpler alternative to the famous Black-Scholes formula.
+
+The binomial option pricing model accommodates American-style options and provides a visual framework for decision making at various stages. is NOT relevant, dump it.
+2026-02-04 22:45:39,833 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:39,845 - DocumentGraderNode - INFO: Retrieved document - **Black-Scholes Model:** This model is arguably the most popular option pricing model. The Black-Scholes model provides a theoretical estimate of the price of European-style options and introduces a continuous time framework. Unlike the binomial option price model, the Black-Scholes model assumes a geometric Brownian motion and is based on the key assumptions that the volatility of the underlying asset is constant and markets are frictionless. It's most suitable for pricing European options where early exercise isn't possible.
+- **Monte Carlo simulations:** This technique uses random sampling and statistical modeling to estimate mathematical functions and simulate the behavior of various assets over time. Monte Carlo simulations are particularly useful for pricing options where the payoff is path dependent, such as Asian options or American options.
+- **Finite difference method:** This model is used to solve differential equations by approximating them with difference equations that finite differences approximate. For options prices, the finite difference method is used to solve partial differential equations typically derived from option pricing formulas, such as those in the Black-Scholes framework. This technique is particularly effective for American options and other derivatives where risk assessment requires an analysis of the effects over time if the boundary conditions can be efficiently modeled. is relevant
+2026-02-04 22:45:40,243 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:40,256 - DocumentGraderNode - INFO: Retrieved document Black-Scholes Model: What It Is, How It Works, and the Options Formula is NOT relevant, dump it.
+2026-02-04 22:45:40,607 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:40,615 - DocumentGraderNode - INFO: Retrieved document Understanding the Fundamentals of the Binomial Option Pricing Model
+
+With binomial option price models, the assumptions are that there are two possible outcomes—hence, the binomial part of the model. With a pricing model, the two outcomes are a move up, or a move down. The major advantage of the binomial option pricing model is its mathematical simplicity, although it can become complex in multi-period scenarios.
+
+In contrast to the Black-Scholes model, which provides a numerical result based on inputs, the binomial model allows for the calculation of the asset and the option for multiple periods, along with the range of possible results for each period.
+
+The advantage of this multi-period view is that the user can visualize the change in asset price from period to period and assess the option based on decisions made at different points in time. For American-style options, which can be exercised anytime before the expiration date, the binomial model can clarify when exercising the option is best and when it should be held for longer periods.
+
+By looking at the binomial tree of values, a trader can determine in advance when a decision on an exercise may occur. If the option has a positive value, it can be exercised. However, if the option has a negative value, it should be held for longer periods. is relevant
+2026-02-04 22:45:41,044 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:41,053 - DocumentGraderNode - INFO: Retrieved document Exploring the Types of Options: Calls and Puts is NOT relevant, dump it.
+2026-02-04 22:45:41,574 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:41,587 - DocumentGraderNode - INFO: Retrieved document Understanding Option Strike Prices: Definition, Function, and Impact is NOT relevant, dump it.
+2026-02-04 22:45:42,086 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:42,103 - DocumentGraderNode - INFO: Retrieved document The binomial option pricing model offers two advantages for option sellers over the Black-Scholes model. The first is its simplicity, which allows for fewer errors in the commercial application. The second is its iterative operation, which adjusts prices in a timely manner to reduce the opportunity for buyers to execute arbitrage strategies. is relevant
+2026-02-04 22:45:42,103 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-04 22:45:42,103 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.689 seconds.
+2026-02-04 22:45:42,104 - route_functions - INFO: --- Assess graded docs ---
+2026-02-04 22:45:42,104 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-04 22:45:42,105 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "Compare the Black-Scholes Model and the Binomial Option Pricing Model for calculating call option price", time costed: 3.912 seconds.
+2026-02-04 22:45:42,106 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-04 22:45:42,106 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-04 22:45:42,129 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-04 22:45:42,129 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-04 22:45:42,237 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.131 seconds.
+2026-02-04 22:45:42,237 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-04 22:45:42,701 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:42,710 - DocumentGraderNode - INFO: Retrieved document What Does the Black-Scholes Model Do?
+
+The Black-Scholes model, also known as the Black-Scholes-Merton (BSM), was the first widely used model for option pricing. The equation calculates the price of a European-style call option based on known variables like the current price, maturity date, and strike price, based on certain assumptions about the behavior of asset prices.
+
+It does so by subtracting the [net present value (NPV)](https://www.investopedia.com/terms/n/npv.asp) of the strike price multiplied by the cumulative standard normal distribution from the product of the stock price and the cumulative standard normal probability distribution function. is relevant
+2026-02-04 22:45:43,314 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:43,323 - DocumentGraderNode - INFO: Retrieved document Black-Scholes Model: What It Is, How It Works, and the Options Formula is relevant
+2026-02-04 22:45:43,842 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:43,855 - DocumentGraderNode - INFO: Retrieved document How the Binomial Option Pricing Model Works is NOT relevant, dump it.
+2026-02-04 22:45:44,235 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:44,247 - DocumentGraderNode - INFO: Retrieved document What Are the Inputs for the Black-Scholes Model?
+
+The inputs for the Black-Scholes equation are volatility, the price of the underlying asset, the strike price of the option, the time until the expiration of the option, the risk-free interest rate, and the type of option. It's theoretically possible for options sellers to set rational prices with these variables for the options they're selling. is relevant
+2026-02-04 22:45:44,953 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:44,967 - DocumentGraderNode - INFO: Retrieved document The Black-Scholes Model Formula
+
+The mathematics involved in the formula are complicated and can be intimidating, but you don't have to know or even understand the math to use Black-Scholes modeling in your strategies.
+
+Options traders have access to various online options calculators, and many of the top trading platforms boast robust options analysis tools that include indicators and spreadsheets that perform the calculations and output the options pricing values.
+
+The Black-Scholes call option formula is calculated by multiplying the stock price by the cumulative standard normal probability distribution function.
+
+The [net present value (NPV)](https://www.investopedia.com/terms/n/npv.asp) of the strike price multiplied by the cumulative standard normal distribution is then subtracted from the resulting value of the previous calculation.
+
+$$C = S * N(d_1) − K * e^{-r * t} * N(d_2)$$
+where:  
+$$d_1= \frac{1}{\sigma * \sqrt{t}}\left[\ln{\left(\frac{S}{K}\right)} + {\left(r + \frac{\sigma^2}{2}\right)} * t\right]$$
+and  
+$$ d_2= d_1 - \sigma*\sqrt{t} $$
+and where:  
+- $C = \text{Call option price}$
+- $S = \text{Current stock (or other underlying) price}$
+- $K = \text{Strike price}$
+- $r = \text{Risk-free interest rate}$
+- $t = \text{Time to maturity}$
+- $N(\cdot) = \text{Cumulative distribution function (CDF) of the standard normal distribution}$ is relevant
+2026-02-04 22:45:45,313 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:45,317 - DocumentGraderNode - INFO: Retrieved document Derivative Instruments
+
+Derivatives create an alternative product for investors seeking to benefit from changes in the market value of primary instruments. They are known as non-primary instruments. Call and put options, and futures are some of the derivatives that can be used to profit from primary instruments. Derivatives get their name because they are derived from the primary (underlying) asset.
+
+Derivatives are generally more complex than primary instruments because of the pricing methodologies. Derivative products have values that are generated from the primary instrument. Options on stocks are some of the most common derivative products used by alternative investors.
+
+Black Scholes is the main methodology for calculating the price of derivative options on stocks. It determines the price of a derivative product by considering five input variables:
+
+1. The strike price of the option
+2. The current stock price
+3. Time to expiration of the option
+4. Risk-free rate
+5. Volatility
+
+Black Scholes is used to calculating prices for call and put options. Call options offer an investment product for investors seeking to benefit from a rising stock price. Buying a call option gives an investor the right to buy a stock at a specified strike price. Buying a put option gives an investor the right to sell a stock when they estimate a price is falling. is relevant
+2026-02-04 22:45:45,772 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:45,778 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- The Black-Scholes model is also known as the Black-Scholes-Merton or BSM model.
+- It's a differential equation that's widely used to price options contracts.
+- The Black-Scholes model requires five input variables: the strike price of an option, the current stock price, the time to expiration, the risk-free rate, and the volatility.
+- The Black-Scholes model is usually accurate, but it makes certain assumptions that can lead to predictions that deviate from real-world results.
+- The standard BSM model is only used to price European options because it doesn't take into account that American options could be exercised before the expiration date. is relevant
+2026-02-04 22:45:45,778 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-04 22:45:45,779 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.541 seconds.
+2026-02-04 22:45:45,779 - route_functions - INFO: --- Assess graded docs ---
+2026-02-04 22:45:45,779 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-04 22:45:45,779 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is the Black-Scholes Model for calculating call option price?", time costed: 3.675 seconds.
+2026-02-04 22:45:45,780 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-04 22:45:45,781 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-04 22:45:45,801 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-04 22:45:45,801 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-04 22:45:45,889 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.108 seconds.
+2026-02-04 22:45:45,889 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-04 22:45:46,207 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:46,214 - DocumentGraderNode - INFO: Retrieved document How the Binomial Option Pricing Model Works is relevant
+2026-02-04 22:45:46,568 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:46,584 - DocumentGraderNode - INFO: Retrieved document What Is the Binomial Option Pricing Model?
+
+The binomial option pricing model is a flexible and intuitive method for valuing options. It breaks down the lifespan of an option into discrete periods and handles complex scenarios effectively.
+
+The model, developed in the 1970s by economists John Cox, Stephen Ross, and Mark Rubinstein, offers a simpler alternative to the famous Black-Scholes formula.
+
+The binomial option pricing model accommodates American-style options and provides a visual framework for decision making at various stages. is relevant
+2026-02-04 22:45:46,931 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:46,935 - DocumentGraderNode - INFO: Retrieved document Practical Example: Binomial Option Pricing in Action
+
+A simplified example of a binomial tree has only one step. Assume there is a stock that is priced at \$100 per share. In one month, the price of this stock will go up by \$10 or go down by \$10, creating this situation:
+
+- Stock price = \$100
+- Stock price in one month (up state) = \$110
+- Stock price in one month (down state) = \$90
+
+Next, assume there is a call option available on this stock that expires in one month and has a strike price of \$100. In the up state, this call option is worth \$10, and in the down state, it is worth \$0. The binomial model can calculate what the price of the call option should be today. is relevant
+2026-02-04 22:45:47,410 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:47,416 - DocumentGraderNode - INFO: Retrieved document Black-Scholes Model: What It Is, How It Works, and the Options Formula is NOT relevant, dump it.
+2026-02-04 22:45:47,820 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:47,833 - DocumentGraderNode - INFO: Retrieved document Understanding the Fundamentals of the Binomial Option Pricing Model
+
+With binomial option price models, the assumptions are that there are two possible outcomes—hence, the binomial part of the model. With a pricing model, the two outcomes are a move up, or a move down. The major advantage of the binomial option pricing model is its mathematical simplicity, although it can become complex in multi-period scenarios.
+
+In contrast to the Black-Scholes model, which provides a numerical result based on inputs, the binomial model allows for the calculation of the asset and the option for multiple periods, along with the range of possible results for each period.
+
+The advantage of this multi-period view is that the user can visualize the change in asset price from period to period and assess the option based on decisions made at different points in time. For American-style options, which can be exercised anytime before the expiration date, the binomial model can clarify when exercising the option is best and when it should be held for longer periods.
+
+By looking at the binomial tree of values, a trader can determine in advance when a decision on an exercise may occur. If the option has a positive value, it can be exercised. However, if the option has a negative value, it should be held for longer periods. is relevant
+2026-02-04 22:45:48,269 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:48,292 - DocumentGraderNode - INFO: Retrieved document Call Option: What It Is, How To Use It, and Examples is NOT relevant, dump it.
+2026-02-04 22:45:48,776 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:48,789 - DocumentGraderNode - INFO: Retrieved document Tip
+
+The binomial option pricing model is based on the idea that the equilibrium price of an option is equal to the value of a replicating portfolio constructed so it has the same cash ﬂow as the option. is relevant
+2026-02-04 22:45:49,137 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:49,149 - DocumentGraderNode - INFO: Retrieved document Important
+
+Firms will alternatively use a binomial or [trinomial](https://www.investopedia.com/terms/t/trinomialoptionpricingmodel.asp) model or the [Bjerksund-Stensland](https://www.investopedia.com/terms/b/bjerksundstensland-model.asp) model for the pricing of the more commonly traded [American-style](https://www.investopedia.com/terms/a/americanoption.asp) options. is NOT relevant, dump it.
+2026-02-04 22:45:49,149 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-04 22:45:49,149 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 3.26 seconds.
+2026-02-04 22:45:49,149 - route_functions - INFO: --- Assess graded docs ---
+2026-02-04 22:45:49,149 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-04 22:45:49,149 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is the Binomial Option Pricing Model for calculating call option price?", time costed: 3.37 seconds.
+2026-02-04 22:45:49,150 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 12.152 seconds.
+2026-02-04 22:45:49,150 - log_utils - INFO: generate_node starts to work
+2026-02-04 22:45:55,397 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:55,399 - log_utils - INFO: generate_node finishes working, time costed: 6.249 seconds.
+2026-02-04 22:45:55,399 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-04 22:45:56,012 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:56,030 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-04 22:45:56,030 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-04 22:45:56,422 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-04 22:45:56,437 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-04 22:45:56,438 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-04 22:45:56,439 - log_utils - INFO: rely_with_generation_node finishes working.

@@ -2,7 +2,6 @@ from langchain_core.messages import HumanMessage
 from agent_adaptive_rag.adaptive_rag_graph_builder import build_adaptive_rag_graph
 from utils.log_utils import log
 
-
 def main(thread_id: str):
     conv_config = {"configurable":{"thread_id":thread_id}}
 
