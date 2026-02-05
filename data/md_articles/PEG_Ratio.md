@@ -10,17 +10,19 @@
 
 ## What Is the Price/Earnings-to-Growth (PEG) Ratio?
 
-The price/earnings to growth ratio (PEG ratio) is a stock's [price-to-earnings](https://www.investopedia.com/terms/p/price-earningsratio.asp) (P/E) ratio divided by the growth rate of its earnings for a specified time period.
+The price/earnings to growth ratio (PEG ratio) is a stock's price-to-earnings (P/E) ratio divided by the growth rate of its earnings for a specified time period.
 
 The PEG ratio is used to determine a stock's value while also factoring in the company's expected earnings growth. It provides a more complete picture than the standard P/E ratio.
 
 ## How to Calculate the PEG Ratio
 
-PEG Ratio = Price/EPS EPS Growth where: EPS = The earnings per share \begin{aligned} &\text{PEG Ratio}=\frac{\text{Price/EPS}}{\text{EPS Growth}}\\ &\textbf{where:}\\ &\text{EPS = The earnings per share}\\ \end{aligned} ​PEG Ratio=EPS GrowthPrice/EPS​where:EPS = The earnings per share​
+$$\text{PEG Ratio}=\frac{\text{Price/EPS}}{\text{EPS Growth}}$$
+where:
+- $\text{EPS = The earnings per share}$
 
 To calculate the PEG ratio, you need to look up or calculate the P/E ratio of the company in question. The P/E ratio is calculated as the price per share of the company divided by the earnings per share (EPS), or price per share / EPS.
 
-Once the P/E is calculated, find the expected growth rate for the stock in question, using analyst estimates available on financial websites that follow the [stock](https://www.investopedia.com/terms/s/stock.asp). Plug the figures into the equation, and solve for the PEG ratio number.
+Once the P/E is calculated, find the expected growth rate for the stock in question, using analyst estimates available on financial websites that follow the stock. Plug the figures into the equation, and solve for the PEG ratio number.
 
 ### Accuracy
 
@@ -34,9 +36,9 @@ To distinguish between calculation methods using future growth and historical gr
 
 ## What Does the PEG Ratio Tell You?
 
-While a low [P/E ratio may make a stock look like a good buy](https://www.investopedia.com/articles/analyst/043002.asp), factoring in the company's growth rate to [get the stock's PEG ratio](https://www.investopedia.com/investing/use-pe-ratio-and-peg-to-tell-stocks-future/) may tell a different story. The lower the PEG ratio, the more the stock may be undervalued given its future earnings expectations. Adding a company's expected growth into the ratio helps to adjust the result for companies that may have a high growth rate and a high P/E ratio.
+While a low P/E ratio may make a stock look like a good buy, factoring in the company's growth rate to get the stock's PEG ratio may tell a different story. The lower the PEG ratio, the more the stock may be undervalued given its future earnings expectations. Adding a company's expected growth into the ratio helps to adjust the result for companies that may have a high growth rate and a high P/E ratio.
 
-The degree to which a PEG ratio result indicates an over- or underpriced stock varies by industry and by company type. As a broad rule of thumb, some [investors](https://www.investopedia.com/terms/i/investor.asp) feel that a PEG ratio below one is desirable.
+The degree to which a PEG ratio result indicates an over- or underpriced stock varies by industry and by company type. As a broad rule of thumb, some investors feel that a PEG ratio below one is desirable.
 
 According to well-known investor Peter Lynch, a company's P/E and expected growth should be equal, which denotes a fairly valued company and supports a PEG ratio of 1.0. When a company's PEG exceeds 1.0, it's considered overvalued, while a stock with a PEG of less than 1.0 is considered undervalued.
 
@@ -48,39 +50,39 @@ Assume the following data for two hypothetical companies, Company A and Company 
 
 ### Company A:
 
-- Price per share = $46
-- EPS this year = $2.09
-- EPS last year = $1.74
+- Price per share = \$46
+- EPS this year = \$2.09
+- EPS last year = \$1.74
 
 ### Company B
 
-- Price per share = $80
-- EPS this year = $2.67
-- EPS last year = $1.78
+- Price per share = \$80
+- EPS this year = \$2.67
+- EPS last year = \$1.78
 
 Given this information, the following data can be calculated for each company:
 
 **Company A**
 
-- P/E ratio = $46 / $2.09 = 22
-- Earnings growth rate = ($2.09 / $1.74) - 1 = 20%
+- P/E ratio = \$46 / \$2.09 = 22
+- Earnings growth rate = (\$2.09 / \$1.74) - 1 = 20%
 - PEG ratio = 22 / 20 = 1.1
 
 **Company B**
 
-- P/E ratio = $80 / $2.67 = 30
-- Earnings growth rate = ($2.67 / $1.78) - 1 = 50%
+- P/E ratio = \$80 / \$2.67 = 30
+- Earnings growth rate = (\$2.67 / \$1.78) - 1 = 50%
 - PEG ratio = 30 / 50 = 0.6
 
 Many investors may look at Company A and find it more attractive since it has a lower P/E ratio among the two companies. But compared to Company B, it doesn't have a high enough growth rate to justify its current P/E. Company B is trading at a discount to its growth rate, and investors purchasing it are paying less per unit of earnings growth. Based on its lower PEG, Company B may be the better buy.
 
 ### Important
 
-The PEG ratio works best for companies with steady growth but can be unreliable for [cyclical stocks](https://www.investopedia.com/terms/c/cyclicalstock.asp) and high-growth tech firms. Earnings swings or overly optimistic forecasts can skew the ratio, so PEG should be used alongside other valuation tools and not on its own.
+The PEG ratio works best for companies with steady growth but can be unreliable for cyclical stocks and high-growth tech firms. Earnings swings or overly optimistic forecasts can skew the ratio, so PEG should be used alongside other valuation tools and not on its own.
 
 ## What Is Considered to Be a Good PEG Ratio?
 
-In general, [a good PEG ratio](https://www.investopedia.com/ask/answers/012715/what-considered-good-peg-price-earnings-growth-ratio.asp) has a value lower than 1.0. PEG ratios greater than 1.0 are generally considered unfavorable, suggesting a stock is overvalued. Meanwhile, PEG ratios lower than 1.0 are considered better, indicating that a stock is relatively undervalued.
+In general, a good PEG ratio has a value lower than 1.0. PEG ratios greater than 1.0 are generally considered unfavorable, suggesting a stock is overvalued. Meanwhile, PEG ratios lower than 1.0 are considered better, indicating that a stock is relatively undervalued.
 
 ## What Is Better: A Higher or Lower PEG Ratio?
 
@@ -93,4 +95,3 @@ A negative PEG can result from either negative earnings (losses), or a negative 
 ## The Bottom Line
 
 While the P/E ratio is more commonly used by investors, the PEG ratio improves upon the P/E ratio by incorporating earnings growth estimates. This provides a fuller picture of a company's relative value in the market. However, because it relies on earnings estimates, having good estimates is key. A bad forecast or assumption, or naively projecting historical growth rates into the future, can produce unreliable PEG ratios.
-

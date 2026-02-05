@@ -18,11 +18,11 @@ Companies might pay a stock dividend to reward investors without using cash, sav
 
 Stock dividends offer a tax advantage; they are not taxable until the investor sells the shares.
 
-A stock dividend may require that the newly received shares not be sold for a certain period. This [holding period](https://www.investopedia.com/terms/h/holdingperiod.asp) typically begins the day after the dividend is received.
+A stock dividend may require that the newly received shares not be sold for a certain period. This holding period typically begins the day after the dividend is received.
 
 ## How Stock Dividends Cause Dilution
 
-Issuing more stock leads to dilution, reducing [earnings per share](https://www.investopedia.com/terms/e/eps.asp) and each shareholder's ownership percentage.
+Issuing more stock leads to dilution, reducing earnings per share and each shareholder's ownership percentage.
 
 Dilution is a downside if the company's net income doesn't increase accordingly.
 
@@ -30,15 +30,17 @@ Dilution is a downside if the company's net income doesn't increase accordingly.
 
 An example of share dilution is as follows:
 
-- Before dilution: If a company has one million shares outstanding and earns $1 million, the EPS would be $1 per share.
-- After dilution: If a 10% stock dividend is issued, 100,000 new shares are created, making it 1.1 million shares. If the earnings are held constant at $1 million, the new EPS would be approximately $0.91 per share. Thus, the earnings are diluted.
+- **Before dilution:** If a company has one million shares outstanding and earns \$1 million, the EPS would be \$1 per share.
+- **After dilution:** If a 10% stock dividend is issued, 100,000 new shares are created, making it 1.1 million shares. If the earnings are held constant at \$1 million, the new EPS would be approximately \$0.91 per share. Thus, the earnings are diluted.
 
 ### Pros and Cons for Companies and Investors
 
+**Pros:**
 - The company rewards investors while keeping its cash
 - The decrease in share price may attract new investors
 - Investors do not owe tax on these dividends until the stock is sold
 
+**Cons:**
 - Bonus shares dilute the share price
 - Stock dividends may signal a company's financial instability
 - Share dividends are less attractive than cash dividends to some shareholders
@@ -57,27 +59,44 @@ A stock dividend lets a company reward shareholders without using its cash reser
 
 When a stock dividend is issued, the total value of equity remains the same from the investor's and the company's perspectives.
 
-Companies must record stock dividends with accounting journal entries, transferring value from retained earnings to [paid-in capital](https://www.investopedia.com/terms/p/paidincapital.asp).
+Companies must record stock dividends with accounting journal entries, transferring value from retained earnings to paid-in capital.
 
 ### Accounting for Small Stock Dividends
 
 A stock dividend is considered small if the shares issued are less than 25% of the total value of shares outstanding before the dividend. A journal entry for a small stock dividend transfers the market value of the issued shares from retained earnings to paid-in capital.
 
-Suppose Company X declares a 10% stock dividend on its 500,000 shares of common stock. Its common stock has a par value of $1 per share and a market price of $5 per share.
+Suppose Company X declares a 10% stock dividend on its 500,000 shares of common stock. Its common stock has a par value of \$1 per share and a market price of \$5 per share.
 
-When the small stock dividend is declared, the market price of $5 per share is used to assign the value to the dividend as $250,000 — calculated by multiplying 500,000 x 10% x $5.
+When the small stock dividend is declared, the market price of \$5 per share is used to assign the value to the dividend as \$250,000 — calculated by multiplying 500,000 x 10% x \$5.
 
-The common stock dividend distributable is $50,000 — calculated by multiplying 500,000 x 10% x $1 — since the common stock has a par value of $1 per share.
+The common stock dividend distributable is \$50,000 — calculated by multiplying 500,000 x 10% x \$1 — since the common stock has a par value of \$1 per share.
+
+| Account                                   | Debit    | Credit   |
+|-------------------------------------------|----------|----------|
+| Stock dividends                           | 250,000  |          |
+| Common stock dividend distributable       |          | 50,000   |
+| Paid-in capital in excess of par–common   |          | 200,000  |
 
 When the company distributes the stock dividend, it can make the journal entry:
+
+| Account                             | Debit   | Credit  |
+|-------------------------------------|---------|---------|
+| Common stock dividend distributable | 50,000  |         |
+| Common Stock                        |         | 50,000  |
 
 ### Accounting for Large Stock Dividends
 
 Large stock dividends occur when the new shares issued are more than 25% of the value of the total shares outstanding before the dividend. In this case, the journal entry transfers the [par value](https://www.investopedia.com/terms/p/parvalue.asp) of the issued shares from retained earnings to paid-in capital.
 
-If Company X declares a 30% stock dividend, it's valued at $1 per share and considered large.
+If Company X declares a 30% stock dividend, it's valued at \$1 per share and considered large.
 
-This would make the following journal entry $150,000—calculated by multiplying 500,000 x 30% x $1—using the par value instead of the market price.
+This would make the following journal entry \$150,000—calculated by multiplying 500,000 * 30% * \$1 — using the par value instead of the market price.
+
+| Account                             | Debit   | Credit  |
+|-------------------------------------|---------|---------|
+| Stock Dividends                     | 150,000 |         |
+| Common stock dividend distributable |         | 150,000 |
+
 
 ## What Is an Example of a Stock Dividend?
 
@@ -102,4 +121,3 @@ A dividend-paying stock generally pays 2% to 5% annually, whether in cash or sha
 ## The Bottom Line
 
 Stock dividends reward shareholders with additional shares while preserving a company's cash reserves. Stock dividends can dilute earnings per share temporarily but they do not inherently change a company's overall value. In addition, a lower share price in the short term can attract new investors. Stock dividends' tax advantage for investors is that they aren't taxable until the shares are sold. For companies, the trade-off is that some investors might prefer cash dividends for immediate income, but others may appreciate the potential for growth in the value of their investment.
-

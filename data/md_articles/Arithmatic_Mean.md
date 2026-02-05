@@ -14,7 +14,7 @@ People also use several other types of means, such as the geometric mean and har
 
 ## The Arithmetic Mean in Finance
 
-While the arithmetic mean is not a reliable measure in some financial analyses, it remains a staple in finance. For example, mean [earnings estimates](https://www.investopedia.com/terms/e/earningsestimate.asp) are typically an arithmetic mean. Say you want to know the average earnings expectation of the 16 analysts covering a particular stock. Simply add up all the estimates and divide by 16 to get the arithmetic mean.
+While the arithmetic mean is not a reliable measure in some financial analyses, it remains a staple in finance. For example, mean earnings estimates are typically an arithmetic mean. Say you want to know the average earnings expectation of the 16 analysts covering a particular stock. Simply add up all the estimates and divide by 16 to get the arithmetic mean.
 
 The same is true if you want to calculate a stock’s average closing price during a particular month. Say there are 23 trading days in the month. Add all the prices and divide by 23 to get the arithmetic mean.
 
@@ -22,7 +22,7 @@ The arithmetic mean is simple, and most people can calculate it. It’s also a h
 
 ## Limitations of the Arithmetic Mean
 
-The arithmetic mean isn't always ideal, especially when a single outlier can skew the mean by a large amount. Let's say you want to estimate the allowance of a group of 10 children. Nine of them get an allowance between $10 and $12 per week. The tenth child receives an allowance of $60. That one outlier is going to result in an arithmetic mean of $16, which is not very representative of the group.
+The arithmetic mean isn't always ideal, especially when a single outlier can skew the mean by a large amount. Let's say you want to estimate the allowance of a group of 10 children. Nine of them get an allowance between \$10 and \$12 per week. The tenth child receives an allowance of \$60. That one outlier is going to result in an arithmetic mean of \$16, which is not very representative of the group.
 
 In this particular case, the median allowance might be a better measure.
 
@@ -30,7 +30,7 @@ The arithmetic mean is also not ideal when calculating the performance of invest
 
 ### Important
 
-The arithmetic mean can be misleading when there are outliers or when looking at historical returns. The geometric mean is most appropriate for series that exhibit [serial correlation](https://www.investopedia.com/terms/s/serial-correlation.asp). This is especially true for investment portfolios.
+The arithmetic mean can be misleading when there are outliers or when looking at historical returns. The geometric mean is most appropriate for series that exhibit serial correlation. This is especially true for investment portfolios.
 
 ## Arithmetic vs. Geometric Mean
 
@@ -40,11 +40,10 @@ Most returns in finance are correlated, including yields on bonds, stock returns
 
 The geometric mean uses the product of all numbers in the series and raises it to the inverse of the length of the series. It's more laborious by hand, but easy to calculate in Microsoft Excel using the GEOMEAN function.
 
-The geometric mean differs from the arithmetic average, or arithmetic mean, in how it's calculated because it accounts for the compounding that occurs from period to period. Because of this, investors usually consider the [geometric mean](https://www.investopedia.com/terms/g/geometricmean.asp) a more accurate measure of returns than the arithmetic mean.
+The geometric mean differs from the arithmetic average, or arithmetic mean, in how it's calculated because it accounts for the compounding that occurs from period to period. Because of this, investors usually consider the geometric mean a more accurate measure of returns than the arithmetic mean.
 
 ## Example of the Arithmetic vs. Geometric Mean
 
 Let's say that a stock's returns over the last five years are 20%, 6%, -10%, -1%, and 6%. The arithmetic mean would add those up and divide by five, giving a 4.2% per year average return.
 
-The geometric mean would instead be calculated as (1.2 × 1.06 × 0.9 × 0.99 × 1.06)^{1/5} - 1 = 3.74% per year, representing the average return. Note that the geometric mean, a more accurate calculation in this case, will always be smaller than the arithmetic mean.
-
+The geometric mean would instead be calculated as $(1.2 * 1.06 * 0.9 * 0.99 * 1.06)^{1/5} - 1 = 3.74\%$ per year, representing the average return. Note that the geometric mean, a more accurate calculation in this case, will always be smaller than the arithmetic mean.
