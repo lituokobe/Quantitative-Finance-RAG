@@ -42,13 +42,13 @@ $$DCF = CF1/(1+r)^{1} + CF2/(1+r)^{2} + . . . + TV/(1+r)^{n}$$
 
 ### Example
 
-As an example, let's use the earnings available to investors from our Acme Bolt Company as cash flow. Say this figure is \$200 (after adding depreciation and subtracting capital expenditures) for the latest year. If a hypothetical P/E multiple for the S&P 500 is 15, Acme's per-share market value is \$3,000 (15 x \$200). We'll use that figure for the comparison to intrinsic value.
+As an example, let's use the earnings available to investors from our Acme Bolt Company as cash flow. Say this figure is \$200 (after adding depreciation and subtracting capital expenditures) for the latest year. If a hypothetical P/E multiple for the S&P 500 is 15, Acme's per-share market value is \$3,000 (15 * \$200). We'll use that figure for the comparison to intrinsic value.
 
 Using an estimated growth rate of 7%, the estimated cash flow for each of the next 10 years is:
 
-- Year 1: \$214.00 (200 x 1.07)
-- Year 2: \$228.98 (200 x 1.072)
-- Year 3: \$245.00 (200 x 1.073 and so forth)
+- Year 1: \$214.00 (200 * 1.07)
+- Year 2: \$228.98 (200 * 1.072)
+- Year 3: \$245.00 (200 * 1.073 and so forth)
 - Year 4: \$262.16
 - Year 5: \$280.51
 - Year 6: \$300.15
@@ -72,7 +72,7 @@ Next, we discount these cash flows using a theoretical 30-year T-Bond rate of 3.
 
 The total discounted cash flow is \$2439.51.
 
-Then, a quick and common way to estimate the terminal value is to multiply the earnings in the final year of the projection period by a multiple of 15. That's \$393.43 X 15 = \$5,901.45. That amount discounted is \$4,265.36 (5,901.45/1.033^{10}).
+Then, a quick and common way to estimate the terminal value is to multiply the earnings in the final year of the projection period by a multiple of 15. That's \$393.43 * 15 = \$5,901.45. That amount discounted is \$4,265.36 (5,901.45/1.033^{10}).
 
 Finally, combine the first 10 years of discounted cash flows with the terminal cash flow for the intrinsic value:
 

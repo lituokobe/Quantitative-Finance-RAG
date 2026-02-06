@@ -45,7 +45,7 @@ where:
 
 ### Important
 
-This discount rate in DCF analysis is the interest rate used when calculating the net present value (NPV) of the investment. It represents the time value of money from the present to the future. You can find the discount rate over time [using Microsoft Excel](https://www.investopedia.com/ask/answers/031315/how-do-i-calculate-discount-rate-over-time-using-excel.asp).
+This discount rate in DCF analysis is the interest rate used when calculating the net present value (NPV) of the investment. It represents the time value of money from the present to the future. You can find the discount rate over time using Microsoft Excel.
 
 ## Example of DCF
 

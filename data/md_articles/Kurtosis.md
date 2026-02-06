@@ -2,7 +2,7 @@
 
 ## What Is Kurtosis?
 
-Kurtosis is a statistical measure used to describe a characteristic of a dataset. It generally takes the form of a bell when normally distributed data is plotted on a graph. This is called the bell curve. The plotted data that are farthest from the [mean](https://www.investopedia.com/terms/m/mean.asp) of the data usually form the tails on each side of the curve. Kurtosis indicates how much data resides in the tails.
+Kurtosis is a statistical measure used to describe a characteristic of a dataset. It generally takes the form of a bell when normally distributed data is plotted on a graph. This is called the bell curve. The plotted data that are farthest from the mean of the data usually form the tails on each side of the curve. Kurtosis indicates how much data resides in the tails.
 
 ### Key Takeaways
 
@@ -167,4 +167,3 @@ Excess kurtosis compares the kurtosis coefficient with that of a normal distribu
 Kurtosis describes how much of a probability distribution falls in the tails instead of its center. The kurtosis is equal to three or zero in some models in a normal distribution. Positive or negative excess kurtosis will then change the shape of the distribution accordingly.
 
 Kurtosis is important for investors in understanding tail risk or how frequently “infrequent” events occur given one’s assumption about the distribution of price returns.
-

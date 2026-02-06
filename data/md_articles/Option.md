@@ -50,73 +50,73 @@ A long call can be used to speculate on the price of the underlying rising, as i
 
 Opposite to call options, a put gives the holder the right, but not the obligation, to sell the underlying stock at the strike price on or before expiration. A long put, therefore, is a short position in the underlying security, as the put gains value as the underlying's price falls (puts have a negative delta).
 
-[Protective puts](https://www.investopedia.com/terms/p/protective-put.asp) can be purchased as a sort of insurance, providing a price floor for investors to hedge their positions.
+Protective puts can be purchased as a sort of insurance, providing a price floor for investors to hedge their positions.
 
 ## Understanding American and European Option Styles
 
-[American options](https://www.investopedia.com/terms/a/americanoption.asp) can be exercised at any time between the date of purchase and the expiration date. [European options](https://www.investopedia.com/terms/e/europeanoption.asp) are different from American options in that they can only be exercised at the end of their lives on their expiration date.
+American options can be exercised at any time between the date of purchase and the expiration date. European options are different from American options in that they can only be exercised at the end of their lives on their expiration date.
 
-The difference between [American and European options](https://www.investopedia.com/articles/optioninvestor/08/american-european-options.asp) is about early exercise, not geography. In the United States, most single stock options are American while index options are European. An American option also typically carries a higher premium than an otherwise identical European option. This is because the early exercise feature is desirable and commands a premium.
+The difference between American and European options is about early exercise, not geography. In the United States, most single stock options are American while index options are European. An American option also typically carries a higher premium than an otherwise identical European option. This is because the early exercise feature is desirable and commands a premium.
 
 ## Key Considerations for Trading Options
 
-Each [options contract](https://www.investopedia.com/terms/o/optionscontract.asp) usually represents 100 shares of the underlying asset. The buyer pays a premium fee for each contract. For example, if an option has a premium of 35 cents per contract, buying one option costs \$35 (\$0.35 x 100). The premium is partially based on the strike price.
+Each options contract usually represents 100 shares of the underlying asset. The buyer pays a premium fee for each contract. For example, if an option has a premium of 35 cents per contract, buying one option costs \$35 (\$0.35 x 100). The premium is partially based on the strike price.
 
-Another factor in the premium price is the [expiration date](https://www.investopedia.com/terms/e/expirationdate.asp). Just like with that carton of milk in the refrigerator, the expiration date indicates the day the option contract must be used. The underlying asset influences the use-by date, and some options will expire daily, weekly, monthly, and even quarterly. For monthly contracts, it's usually the third Friday.
+Another factor in the premium price is the expiration date. Just like with that carton of milk in the refrigerator, the expiration date indicates the day the option contract must be used. The underlying asset influences the use-by date, and some options will expire daily, weekly, monthly, and even quarterly. For monthly contracts, it's usually the third Friday.
 
 ### Strategies With Options Spreads
 
-Options spreads combine buying and selling different options to achieve a specific risk-return profile. Spreads are constructed using [vanilla options](https://www.investopedia.com/terms/v/vanillaoption.asp) and can take advantage of various scenarios, such as high- or low-volatility environments, up- or down-moves, or anything in between.
+Options spreads combine buying and selling different options to achieve a specific risk-return profile. Spreads are constructed using vanilla options and can take advantage of various scenarios, such as high- or low-volatility environments, up- or down-moves, or anything in between.
 
 ### Important
 
-[Spread strategies](https://www.investopedia.com/trading/options-strategies/) can be characterized by their payoff or visualizations of their profit-loss profile, such as [bull call spreads](https://www.investopedia.com/terms/b/bullcallspread.asp) or [iron condors](https://www.investopedia.com/terms/i/ironcondor.asp).
+Spread strategies can be characterized by their payoff or visualizations of their profit-loss profile, such as bull call spreads or iron condors.
 
 ## Decoding the Greeks: Key Metrics for Options Risk Management
 
-The options market uses the term the "[Greeks](https://www.investopedia.com/terms/g/greeks.asp)" to describe the different dimensions of [risk involved in taking an options position](https://www.investopedia.com/ask/answers/032415/why-are-call-and-put-options-considered-risky.asp), either in a particular option or a portfolio. These variables are called Greeks because they're typically associated with Greek symbols.
+The options market uses the term the "Greeks" to describe the different dimensions of risk involved in taking an options position, either in a particular option or a portfolio. These variables are called Greeks because they're typically associated with Greek symbols.
 
-Each risk variable is a result of an imperfect assumption or relationship of the option with another underlying variable. Traders use different Greek values to assess options [risk](https://www.investopedia.com/terms/r/risk.asp) and manage option portfolios.
+Each risk variable is a result of an imperfect assumption or relationship of the option with another underlying variable. Traders use different Greek values to assess options risk and manage option portfolios.
 
 ### Delta
 
-[Delta](https://www.investopedia.com/terms/d/delta.asp) (Δ) represents the [rate of change](https://www.investopedia.com/terms/r/rateofchange.asp) between the option's price and a \$1 change in the [underlying asset's](https://www.investopedia.com/terms/u/underlying-asset.asp) price. In other words, the price sensitivity of the option relative to the underlying. Delta of a call option has a range between zero and one, while the delta of a [put option](https://www.investopedia.com/terms/p/putoption.asp) has a range between zero and negative one. For example, let's assume an investor is long a call option with a delta of 0.50. Therefore, if the underlying stock increases by \$1, the option's price would theoretically increase by 50 cents.
+Delta (Δ) represents the rate of change between the option's price and a \$1 change in the underlying asset's price. In other words, the price sensitivity of the option relative to the underlying. Delta of a call option has a range between zero and one, while the delta of a put option has a range between zero and negative one. For example, let's assume an investor is long a call option with a delta of 0.50. Therefore, if the underlying stock increases by \$1, the option's price would theoretically increase by 50 cents.
 
-Delta also indicates the [hedge ratio](https://www.investopedia.com/terms/h/hedgeratio.asp) needed for a [delta-neutral](https://www.investopedia.com/terms/d/deltaneutral.asp) position. So if you purchase a standard American call option with a 0.40 delta, you need to sell 40 shares of stock to be fully hedged. Net delta for a portfolio of options can also be used to obtain the portfolio's hedge ratio.
+Delta also indicates the hedge ratio needed for a delta-neutral position. So if you purchase a standard American call option with a 0.40 delta, you need to sell 40 shares of stock to be fully hedged. Net delta for a portfolio of options can also be used to obtain the portfolio's hedge ratio.
 
-A [less common usage of an option's delta](https://www.investopedia.com/articles/optioninvestor/03/021403.asp) is the current probability that it'll expire ITM. For instance, a 0.40 delta call option today has an implied 40% probability of finishing ITM.
+A less common usage of an option's delta is the current probability that it'll expire ITM. For instance, a 0.40 delta call option today has an implied 40% probability of finishing ITM.
 
 ### Theta
 
-[Theta](https://www.investopedia.com/terms/t/theta.asp) (Θ) represents the rate of change between the option price and time, or time sensitivity—sometimes known as an option's time decay. Theta indicates the amount an option's price would decrease as the time to expiration decreases, all else equal. For example, assume an investor is long an option with a theta of -0.50. The option's price would decrease by 50 cents every day that passes, all else being equal. If three trading days pass, the option's value would theoretically decrease by \$1.50.
+Theta (Θ) represents the rate of change between the option price and time, or time sensitivity—sometimes known as an option's time decay. Theta indicates the amount an option's price would decrease as the time to expiration decreases, all else equal. For example, assume an investor is long an option with a theta of -0.50. The option's price would decrease by 50 cents every day that passes, all else being equal. If three trading days pass, the option's value would theoretically decrease by \$1.50.
 
 Theta is higher for ATM options and lower for ITM or OTM options. Options closer to expiration also have accelerating time decay. Long calls and long puts usually have negative Theta. Short calls and short puts, on the other hand, have positive Theta. By comparison, an instrument whose value isn't eroded by time has zero Theta.
 
 ### Gamma
 
-[Gamma](https://www.investopedia.com/terms/g/gamma.asp) (Γ) represents the rate of change between an option's delta and the underlying asset's price. This is called second-order (second-derivative) price sensitivity. Gamma indicates the amount the delta would change given a \$1 move in the underlying security. Let's assume an investor is long one call option on hypothetical stock XYZ. The call option has a delta of 0.50 and a gamma of 0.10. Therefore, if stock XYZ increases or decreases by \$1, the call option's delta would increase or decrease by 0.10.
+Gamma (Γ) represents the rate of change between an option's delta and the underlying asset's price. This is called second-order (second-derivative) price sensitivity. Gamma indicates the amount the delta would change given a \$1 move in the underlying security. Let's assume an investor is long one call option on hypothetical stock XYZ. The call option has a delta of 0.50 and a gamma of 0.10. Therefore, if stock XYZ increases or decreases by \$1, the call option's delta would increase or decrease by 0.10.
 
 Gamma is used to determine the stability of an option's delta. Higher gamma values indicate that delta could change dramatically in response to even small movements in the underlying's price.
 
 Gamma is higher for ATM options and lower for ITM or OTM options, increasing as expiration nears. Gamma values are generally smaller the further away from the date of expiration. This means that options with longer expirations are less sensitive to delta changes. Gamma values are typically larger closer to expiration, as price changes have more impact on gamma.
 
-Options traders may opt to not only hedge delta but also gamma in order to be [delta-gamma neutral](https://www.investopedia.com/terms/d/deltagamma-hedging.asp), meaning that as the underlying price moves, the delta will remain close to zero.
+Options traders may opt to not only hedge delta but also gamma in order to be delta-gamma neutral, meaning that as the underlying price moves, the delta will remain close to zero.
 
 ### Vega
 
 [Vega](https://www.investopedia.com/terms/v/vega.asp) (V) represents the rate of change between an option's value and the underlying asset's IV. This is the option's sensitivity to volatility. Vega indicates the amount an option's price changes given a 1% change in IV. For example, an option with a vega of 0.10 indicates the option's value is expected to change by 10 cents if the IV changes by 1%.
 
-Because increased volatility implies that the underlying instrument is more likely to experience extreme [values](https://www.investopedia.com/terms/v/value.asp), a rise in volatility correspondingly increases the value of an option. Conversely, a decrease in volatility negatively affects the value of the option. Vega is at its maximum for ATM options that have longer times until expiration.
+Because increased volatility implies that the underlying instrument is more likely to experience extreme values, a rise in volatility correspondingly increases the value of an option. Conversely, a decrease in volatility negatively affects the value of the option. Vega is at its maximum for ATM options that have longer times until expiration.
 
 Those familiar with the Greek alphabet will point out that there's no actual Greek letter named vega. There are various theories about how this symbol, which resembles the Greek letter nu, found its way into stock-trading lingo.
 
 ### Rho
 
-[Rho](https://www.investopedia.com/terms/r/rho.asp) (p) represents the rate of change between an option's value and a 1% change in the [interest rate](https://www.investopedia.com/terms/i/interestrate.asp). This measures sensitivity to the interest rate. For example, assume a call option has a rho of 0.05 and a price of \$1.25. If interest rates rise by 1%, the value of the call option would increase to \$1.30, all else being equal. The opposite is true for put options. Rho is greatest for ATM options with long times until expiration.
+[Rho](https://www.investopedia.com/terms/r/rho.asp) (p) represents the rate of change between an option's value and a 1% change in the interest rate. This measures sensitivity to the interest rate. For example, assume a call option has a rho of 0.05 and a price of \$1.25. If interest rates rise by 1%, the value of the call option would increase to \$1.30, all else being equal. The opposite is true for put options. Rho is greatest for ATM options with long times until expiration.
 
 ### Minor Greeks
 
-Some other Greeks, which aren't discussed as often, are [lambda](https://www.investopedia.com/terms/l/lambda.asp), epsilon, [vomma](https://www.investopedia.com/terms/v/vomma.asp), vera, speed, [zomma](https://www.investopedia.com/terms/z/zomma.asp), color, and ultima.
+Some other Greeks, which aren't discussed as often, are lambda, epsilon, vomma, vera, speed, zomma, color, and ultima.
 
 These Greeks are second- or third-derivatives of the pricing model and affect things like the change in delta with a change in volatility. They're increasingly used in options trading strategies, as computer software can quickly compute and account for these complex and sometimes esoteric risk factors.
 
@@ -128,7 +128,7 @@ As mentioned earlier, call options allow the holder to buy an underlying securit
 
 Suppose buyers are bullish on a stock and believe the share price will rise above the strike price before the option expires. If the investor's bullish outlook is realized and the price increases above the strike price, the investor can exercise the option, buy the stock at the strike price, and immediately sell the stock at the current market price for a profit.
 
-Their profit on this trade is equal to the market share price less the strike share price, plus the expense of the option (the premium and any brokerage commission to place the orders). The result is multiplied by the number of option contracts purchased, then multiplied by 100—assuming each contract represents 100 [shares](https://www.investopedia.com/terms/s/shares.asp).
+Their profit on this trade is equal to the market share price less the strike share price, plus the expense of the option (the premium and any brokerage commission to place the orders). The result is multiplied by the number of option contracts purchased, then multiplied by 100—assuming each contract represents 100 shares.
 
 If the underlying stock price doesn't move above the strike price by the expiration date, the option expires worthless. The holder isn't required to buy the shares but will lose the premium paid for the call.
 
@@ -136,11 +136,11 @@ If the underlying stock price doesn't move above the strike price by the expirat
 
 Selling call options is known as writing a contract. The writer receives the premium fee. In other words, a buyer pays the premium to the writer (seller) of an option. The maximum profit is the premium received when selling the option. The seller of a call option expects the stock price to fall or stay near the strike price.
 
-If the prevailing market share price is at or below the strike price by expiry, the option expires worthless for the call buyer. The option seller pockets the premium as their profit. The option isn't exercised because the buyer wouldn't buy the stock at the strike price higher than or equal to the prevailing [market price](https://www.investopedia.com/terms/m/market-price.asp).
+If the prevailing market share price is at or below the strike price by expiry, the option expires worthless for the call buyer. The option seller pockets the premium as their profit. The option isn't exercised because the buyer wouldn't buy the stock at the strike price higher than or equal to the prevailing market price.
 
-However, if the market share price is more than the strike price at expiry, the seller of the option must sell the shares to an option buyer at that lower strike price. In other words, the seller must either sell shares from their [portfolio](https://www.investopedia.com/terms/p/portfolio.asp) holdings or buy the stock at the prevailing market price to sell to the call option buyer. The contract writer incurs a loss, but the size of the loss depends on the cost basis of the shares they must use to cover the option order, plus any brokerage fees, minus any premium they received.
+However, if the market share price is more than the strike price at expiry, the seller of the option must sell the shares to an option buyer at that lower strike price. In other words, the seller must either sell shares from their portfolio holdings or buy the stock at the prevailing market price to sell to the call option buyer. The contract writer incurs a loss, but the size of the loss depends on the cost basis of the shares they must use to cover the option order, plus any brokerage fees, minus any premium they received.
 
-As you can see, the risk to the [call writers](https://www.investopedia.com/terms/w/writing-an-option.asp) is far greater than the risk exposure of call buyers. The call buyer only loses the premium. The writer faces infinite risk because the stock price could continue to rise, increasing losses significantly.
+As you can see, the risk to the call writers is far greater than the risk exposure of call buyers. The call buyer only loses the premium. The writer faces infinite risk because the stock price could continue to rise, increasing losses significantly.
 
 ### Buying Put Options
 
@@ -148,7 +148,7 @@ Put options are investments where the buyer believes the underlying stock's mark
 
 Since buyers of put options want the stock price to decrease, the put option is profitable when the underlying stock's price is below the strike price. If the prevailing market price is less than the strike price at expiry, the investor can exercise the put. They'll sell shares at the option's higher strike price. Should they wish to replace their holding of these shares, they may buy them on the open market.
 
-Their profit on this [trade](https://www.investopedia.com/terms/t/trade.asp) is equal to the strike price less the current market price, plus expenses (the premium and any brokerage commission to place the orders). The result would be multiplied by the number of option contracts purchased, then multiplied by 100—assuming each contract represents 100 shares.
+Their profit on this trade is equal to the strike price less the current market price, plus expenses (the premium and any brokerage commission to place the orders). The result would be multiplied by the number of option contracts purchased, then multiplied by 100—assuming each contract represents 100 shares.
 
 The value of holding a put option will increase as the underlying stock price decreases. Conversely, the value of the put option declines as the stock price increases. The risk of buying put options is limited to the loss of the premium if the option expires worthless.
 
@@ -178,7 +178,7 @@ An investor may write put options at a strike price where they see the shares be
 
 ## Example of an Option
 
-Suppose that Microsoft ([MFST](https://www.investopedia.com/markets/quote?tvwidgetsymbol=msft)) shares trade at \$508 per share and you believe they'll increase in value. You decide to buy a call option to benefit from an increase in the stock's price. You purchase one call option with a strike price of \$515 for one month in the future for 37 cents per contract. Your total cash outlay is \$37 for the position plus fees and commissions (0.37 x 100 = \$37).
+Suppose that Microsoft (MFST) shares trade at \$508 per share and you believe they'll increase in value. You decide to buy a call option to benefit from an increase in the stock's price. You purchase one call option with a strike price of \$515 for one month in the future for 37 cents per contract. Your total cash outlay is \$37 for the position plus fees and commissions (0.37 x 100 = \$37).
 
 If the stock rises to \$516, your option will be worth \$1, as you could exercise the option to acquire the stock for \$515 per share and immediately resell it for \$516 per share. The profit on the option position would be 170.3% since you paid 37 cents and earned \$1—that's much higher than the 7.4% increase in the underlying stock price from \$508 to \$516 at the time of expiry.
 
@@ -200,7 +200,7 @@ The main disadvantage of options contracts is that they're complex and difficult
 
 ## How Do Options Differ From Futures?
 
-Both [options and futures](https://www.investopedia.com/ask/answers/072915/how-does-forward-contract-differ-call-option.asp) are types of derivative contracts that are based on some underlying asset or security. The main difference is that options contracts grant the right, but not the obligation, to buy or sell the underlying in the future. [Futures contracts](https://www.investopedia.com/terms/f/futurescontract.asp), meanwhile, come with an obligation to buy or sell the underlying.
+Both options and futures are types of derivative contracts that are based on some underlying asset or security. The main difference is that options contracts grant the right, but not the obligation, to buy or sell the underlying in the future. Futures contracts, meanwhile, come with an obligation to buy or sell the underlying.
 
 ## Is an Options Contract an Asset?
 
@@ -209,4 +209,3 @@ An options contract is a derivatives security, which is a type of asset.
 ## The Bottom Line
 
 Options are a type of derivative product that allow investors to speculate on or hedge against the volatility of an underlying stock. Options are divided into call options, which allow buyers to profit if the price of the stock increases, and put options, in which the buyer profits if the price of the stock declines. Investors can also short an option by selling it to other investors. Shorting (selling) a call option would therefore mean profiting if the underlying stock declines, while selling a put option would mean profiting if the stock increases in value.
-

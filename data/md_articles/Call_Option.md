@@ -126,7 +126,7 @@ Although options profits are classified as short-term capital gains, the calcula
 
 ### Example 1
 
-Imagine Apple is trading at \$110 at expiry, the strike price for the option contract (consisting of 100 shares) is \$100, and the options cost the buyer \$2 per share; the profit is \$110 - (\$100 + \$2) = \$8. If the buyer bought one options contract, their profit equals \$800 (\$8 x 100 shares); the profit would be \$1,600 if they bought two contracts (\$8 x 200).
+Imagine Apple is trading at \$110 at expiry, the strike price for the option contract (consisting of 100 shares) is \$100, and the options cost the buyer \$2 per share; the profit is \$110 - (\$100 + \$2) = \$8. If the buyer bought one options contract, their profit equals \$800 (\$8 * 100 shares); the profit would be \$1,600 if they bought two contracts (\$8 * 200).
 
 Now, if Apple is trading below \$100 at expiration, the buyer won't exercise the option to buy the shares at \$100 apiece, and the option expires worthless. The buyer loses \$2 per share, or \$200, for each contract they bought—but that's all. That's the beauty of options: You're only out the premium if you decide not to play.
 
@@ -134,7 +134,7 @@ Now, if Apple is trading below \$100 at expiration, the buyer won't exercise the
 
 Assume Microsoft stock is trading at \$108 per share. You own 100 shares of the stock and want to generate an income above and beyond the stock's dividend. You also believe that shares are unlikely to rise above \$115 per share over the next month.
 
-You take a look at the call options for the following month and see that there's a \$115 call trading at \$0.37 per contract. So, you sell one call option and collect the \$37 premium (37 cents x 100 shares), representing a roughly 4% annualized income.
+You take a look at the call options for the following month and see that there's a \$115 call trading at \$0.37 per contract. So, you sell one call option and collect the \$37 premium (37 cents * 100 shares), representing a roughly 4% annualized income.
 
 If the stock rises above \$115, the option buyer will exercise the option, and you will have to deliver the 100 shares of stock at \$115 per share. You still generated a profit of \$7 per share, but you'll have missed out on any upside above \$115. If the stock doesn't rise above \$115, you keep the shares and the \$37 in premium income.
 
