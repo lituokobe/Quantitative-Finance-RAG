@@ -26,7 +26,7 @@ When buying an option, you bet its price will rise above the strike price, which
 
 James thinks Company ABC’s share price will rise to at least \$500. Rather than buy the stock, he purchases a call option for \$200, giving him the option to buy 100 shares, which currently trade at \$400, for \$430 within six months.
 
-Should Company ABC rise to \$500 within six months, James could exercise the option, in which case he’d buy the stock for \$430 and then sell it for \$500. That would net him a return of \$7,000 (\$70 x 100 shares), minus the \$200 premium and any trading fees.
+Should Company ABC rise to \$500 within six months, James could exercise the option, in which case he’d buy the stock for \$430 and then sell it for \$500. That would net him a return of \$7,000 (\$70 * 100 shares), minus the \$200 premium and any trading fees.
 
 The same example can be applied the other way around. If James thought Company ABC's share price was set to fall significantly, he would buy a put option, paying a fee in exchange for the right to sell Lockheed’s shares at a specified price within the specified time frame.
 
@@ -56,7 +56,7 @@ OTM options have several distinct characteristics. Key traits include:
 
 ## Example of OTM Options
 
-Matt is bullish on Company XYZ. He thinks it is undervalued at \$120 a share, so buys a call option on the stock with a \$150 strike price. This option expires in five months and costs \$1. Each option contract represents 100 shares, so the total cost of the option is \$100 (100 x \$1) plus any trading fees.
+Matt is bullish on Company XYZ. He thinks it is undervalued at \$120 a share, so buys a call option on the stock with a \$150 strike price. This option expires in five months and costs \$1. Each option contract represents 100 shares, so the total cost of the option is \$100 (100 * \$1) plus any trading fees.
 
 Matt now has to wait. To make a profit from the trade, he must exercise the option when Company XYZ's shares trade at a minimum of \$151. Obviously, the higher the share price goes, the better.
 

@@ -10,7 +10,7 @@
 
 ## What Is the Black-Scholes Model?
 
-The Black-Scholes model, also known as the Black-Scholes-Merton (BSM) model, is one of the most important concepts in modern financial theory. It helps [traders and investors](https://www.investopedia.com/best-online-brokers-4587872) determine the fair value of an options contract.
+The Black-Scholes model, also known as the Black-Scholes-Merton (BSM) model, is one of the most important concepts in modern financial theory. It helps traders and investors determine the fair value of an options contract.
 
 This mathematical equation estimates the theoretical value of derivatives based on other investment instruments. It considers the impact of time and other risk factors in its calculation.
 
@@ -20,7 +20,7 @@ It was developed in 1973 and is still regarded as one of the best ways to price 
 
 Developed by Fischer Black, Robert Merton, and Myron Scholes, the Black-Scholes model was the first widely used mathematical method to calculate the theoretical value of an option contract.
 
-It uses current [stock prices](https://www.investopedia.com/best-stock-screeners-5120586), expected dividends, the option's strike price, expected interest rates, time to expiration, and expected volatility.
+It uses current stock prices, expected dividends, the option's strike price, expected interest rates, time to expiration, and expected volatility.
 
 The initial equation was introduced in Black and Scholes' 1973 paper, "The Pricing of Options and Corporate Liabilities," published in the *Journal of Political Economy*.
 
@@ -32,13 +32,13 @@ Black died two years earlier, so he couldn't receive the Nobel Prize, as it isn'
 
 ## How the Black-Scholes Model Works
 
-Black-Scholes posits that instruments such as stock shares or futures contracts will have a lognormal distribution of prices following a [random walk](https://www.investopedia.com/terms/r/randomwalktheory.asp) with constant drift and volatility. The equation uses this assumption and factors in other important variables to derive the price of a European-style [call option](https://www.investopedia.com/terms/c/calloption.asp).
+Black-Scholes posits that instruments such as stock shares or futures contracts will have a lognormal distribution of prices following a random walk with constant drift and volatility. The equation uses this assumption and factors in other important variables to derive the price of a European-style call option.
 
 The Black-Scholes equation requires six variables:
 
-1. [Volatility](https://www.investopedia.com/terms/v/volatility.asp)
+1. Volatility
 2. The price of the underlying asset
-3. The [strike price](https://www.investopedia.com/terms/s/strikeprice.asp) of the option
+3. The strike price of the option
 4. The time until the expiration of the option
 5. The risk-free interest rate
 6. The type of option (call or put)
@@ -47,11 +47,11 @@ It's theoretically possible for options sellers to set rational prices with thes
 
 The model predicts that the price of heavily traded assets follows a geometric Brownian motion with constant drift and volatility.
 
-It incorporates the constant price variation of the [stock](https://www.investopedia.com/best-stock-screeners-5120586), the time value of money, the option's strike price, and the time to the option's expiry when it's applied to a stock option.
+It incorporates the constant price variation of the stock, the time value of money, the option's strike price, and the time to the option's expiry when it's applied to a stock option.
 
 ### Fast Fact
 
-The Black-Scholes model is often contrasted against the [binomial model](https://www.investopedia.com/terms/b/binomialoptionpricing.asp) or a [Monte Carlo simulation](https://www.investopedia.com/terms/m/montecarlosimulation.asp).
+The Black-Scholes model is often contrasted against the binomial model or a Monte Carlo simulation.
 
 ### Black-Scholes Assumptions
 
@@ -60,17 +60,17 @@ The Black-Scholes model makes certain assumptions:
 - No dividends are paid out during the life of the option.
 - Markets are random because market movements can't be predicted.
 - There are no transaction costs when buying the option.
-- The [risk-free rate](https://www.investopedia.com/terms/r/risk-freerate.asp) and volatility of the underlying asset are known and constant.
+- The risk-free rate and volatility of the underlying asset are known and constant.
 - The returns of the underlying asset are normally distributed.
-- The option is [European](https://www.investopedia.com/terms/e/europeanoption.asp) and can only be [exercised](https://www.investopedia.com/ask/answers/06/excerciseonexpiration.asp) at expiration.
+- The option is European and can only be exercised at expiration.
 
-The original Black-Scholes model didn't consider the effects of dividends paid during the life of the option, but the model is frequently adapted to account for dividends by determining the [ex-dividend](https://www.investopedia.com/terms/e/ex-dividend.asp) date value of the underlying stock.
+The original Black-Scholes model didn't consider the effects of dividends paid during the life of the option, but the model is frequently adapted to account for dividends by determining the ex-dividend date value of the underlying stock.
 
 The model is also modified by many option-selling market makers to account for the effect of options that can be exercised before expiration.
 
 ### Important
 
-Firms will alternatively use a binomial or [trinomial](https://www.investopedia.com/terms/t/trinomialoptionpricingmodel.asp) model or the [Bjerksund-Stensland](https://www.investopedia.com/terms/b/bjerksundstensland-model.asp) model for the pricing of the more commonly traded [American-style](https://www.investopedia.com/terms/a/americanoption.asp) options.
+Firms will alternatively use a binomial or trinomial model or the Bjerksund-Stensland model for the pricing of the more commonly traded American-style options.
 
 ## The Black-Scholes Model Formula
 
@@ -80,7 +80,7 @@ Options traders have access to various online options calculators, and many of t
 
 The Black-Scholes call option formula is calculated by multiplying the stock price by the cumulative standard normal probability distribution function.
 
-The [net present value (NPV)](https://www.investopedia.com/terms/n/npv.asp) of the strike price multiplied by the cumulative standard normal distribution is then subtracted from the resulting value of the previous calculation.
+The net present value (NPV) of the strike price multiplied by the cumulative standard normal distribution is then subtracted from the resulting value of the previous calculation.
 
 $$C = S * N(d_1) − K * e^{-r * t} * N(d_2)$$
 where:  
@@ -99,13 +99,13 @@ and where:
 
 Black-Scholes assumes that stock prices follow a lognormal distribution because asset prices can't be negative; they're bounded by zero.
 
-Asset prices are often observed to have significant right [skewness](https://www.investopedia.com/terms/s/skewness.asp) and some degree of [kurtosis](https://www.investopedia.com/terms/k/kurtosis.asp) or fat tails. High-risk downward moves often happen more often in the market than a normal distribution predicts.
+Asset prices are often observed to have significant right skewness and some degree of kurtosis or fat tails. High-risk downward moves often happen more often in the market than a normal distribution predicts.
 
 According to the Black-Scholes model, the assumption of lognormal underlying asset prices should show that implied volatilities are similar for each strike price.
 
 Since the 1987 market crash, at-the-money options have had lower implied volatility than options that are far out-of-the-money or deep in-the-money. The market is signaling a higher chance of a big drop in volatility.
 
-This has led to the presence of the volatility skew. A smile or skewed shape can be seen when the implied volatilities for options with the same [expiration date](https://www.investopedia.com/terms/e/expiration-date.asp) are mapped out on a graph.
+This has led to the presence of the volatility skew. A smile or skewed shape can be seen when the implied volatilities for options with the same expiration date are mapped out on a graph.
 
 The Black-Scholes model is therefore not efficient for calculating implied volatility.
 
@@ -146,7 +146,7 @@ The Black-Scholes model is widely used, but there are still some drawbacks to th
 
 The Black-Scholes model, also known as the Black-Scholes-Merton (BSM), was the first widely used model for option pricing. The equation calculates the price of a European-style call option based on known variables like the current price, maturity date, and strike price, based on certain assumptions about the behavior of asset prices.
 
-It does so by subtracting the [net present value (NPV)](https://www.investopedia.com/terms/n/npv.asp) of the strike price multiplied by the cumulative standard normal distribution from the product of the stock price and the cumulative standard normal probability distribution function.
+It does so by subtracting the net present value (NPV) of the strike price multiplied by the cumulative standard normal distribution from the product of the stock price and the cumulative standard normal probability distribution function.
 
 ## What Are the Inputs for the Black-Scholes Model?
 
@@ -164,7 +164,7 @@ The Black-Scholes model is only used to price European options. It doesn't take 
 
 ## The Bottom Line
 
-The Black-Scholes model is a mathematical model that's used by [traders](https://www.investopedia.com/best-online-brokers-4587872) to calculate the fair price or theoretical value of an asset.
+The Black-Scholes model is a mathematical model that's used by traders to calculate the fair price or theoretical value of an asset.
 
 It provides a way to calculate the theoretical value of an option by taking into account the underlying asset's current price, the option's type, the option's strike price, the time remaining until expiration, the risk-free interest rate, and the volatility of the underlying asset.
 

@@ -36,9 +36,9 @@ If market interest rates decline after a corporation floats a bond, the company 
 
 Paying off debt early with callable bonds helps a company save on interest and avoid future financial troubles if conditions worsen.
 
-However, the investor might not make out as well as the company when the bond is called. For example, let's say a 6% coupon bond is issued and is due to mature in five years. An investor purchases \$10,000 worth and receives coupon payments of 6% x \$10,000 or \$600 annually. Three years after issuance, the interest rates fall to 4%, and the issuer calls the bond. The bondholder must turn in the bond to get back the principal, and no further interest is paid.
+However, the investor might not make out as well as the company when the bond is called. For example, let's say a 6% coupon bond is issued and is due to mature in five years. An investor purchases \$10,000 worth and receives coupon payments of 6% * \$10,000 or \$600 annually. Three years after issuance, the interest rates fall to 4%, and the issuer calls the bond. The bondholder must turn in the bond to get back the principal, and no further interest is paid.
 
-In this scenario, not only does the bondholder lose the remaining interest payments, but it would be unlikely they will be able to match the original 6% coupon. This situation is known as [reinvestment risk](https://www.investopedia.com/terms/r/reinvestmentrisk.asp). Investors might have to reinvest at a lower rate and potentially pay more for a new bond with a lower yield than the original. As a result, a callable bond may not be appropriate for investors seeking stable income and predictable returns.
+In this scenario, not only does the bondholder lose the remaining interest payments, but it would be unlikely they will be able to match the original 6% coupon. This situation is known as reinvestment risk. Investors might have to reinvest at a lower rate and potentially pay more for a new bond with a lower yield than the original. As a result, a callable bond may not be appropriate for investors seeking stable income and predictable returns.
 
 ## Weighing the Pros and Cons of Callable Bonds
 
@@ -59,9 +59,9 @@ Not all features of callable bonds are positive. Issuers often call bonds when r
 
 ## Example of a Callable Bond
 
-Let's say Apple Inc. (AAPL) decides to borrow \$10 million in the bond market and issues a 6% coupon bond with a maturity date in five years. The company pays its bondholders 6% x \$10 million or \$600,000 in interest payments annually.
+Let's say Apple Inc. (AAPL) decides to borrow \$10 million in the bond market and issues a 6% coupon bond with a maturity date in five years. The company pays its bondholders 6% * \$10 million or \$600,000 in interest payments annually.
 
-Three years from the date of issuance, interest rates fall by 200 basis points (bps) to 4%, prompting the company to redeem the bonds.If the company calls the bonds, it pays investors a \$102 premium per bond. Therefore, the company pays the bond investors \$10.2 million, which it borrows from the bank at a 4% interest rate. It reissues the bond with a 4% coupon rate and a principal sum of \$10.2 million, reducing its annual interest payment to 4% x \$10.2 million or \$408,000.
+Three years from the date of issuance, interest rates fall by 200 basis points (bps) to 4%, prompting the company to redeem the bonds.If the company calls the bonds, it pays investors a \$102 premium per bond. Therefore, the company pays the bond investors \$10.2 million, which it borrows from the bank at a 4% interest rate. It reissues the bond with a 4% coupon rate and a principal sum of \$10.2 million, reducing its annual interest payment to 4% * \$10.2 million or \$408,000.
 
 ## The Bottom Line
 

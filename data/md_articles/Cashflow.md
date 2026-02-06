@@ -30,7 +30,7 @@ Cash flow refers to the money that goes in and out of a business. Businesses tak
 
 Positive cash flow indicates that a company’s liquid assets are increasing, enabling it to cover obligations, reinvest in its business, return money to shareholders, pay expenses, and provide a buffer against future financial challenges. Companies with strong financial flexibility fare better, especially when the economy experiences a downturn, by avoiding the costs of financial distress.
 
-Cash flows are reported on a cash flow statement, which is a standard financial statement that shows a company’s cash sources and use over a specified period. Corporate management, analysts, and investors use this statement to judge how well a company is able to pay its debts and manage its operating expenses. The cash flow statement is one of several financial statements issued by public companies, which also include a [balance sheet](https://www.investopedia.com/terms/b/balancesheet.asp) and an [income statement](https://www.investopedia.com/terms/i/incomestatement.asp).
+Cash flows are reported on a cash flow statement, which is a standard financial statement that shows a company’s cash sources and use over a specified period. Corporate management, analysts, and investors use this statement to judge how well a company is able to pay its debts and manage its operating expenses. The cash flow statement is one of several financial statements issued by public companies, which also include a balance sheet and an income statement.
 
 ### Fast Fact
 

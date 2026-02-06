@@ -168,10 +168,10 @@ Find the mean of the dataset by dividing the total by the number of data points,
 This gives you the mean of 5.5 (x̄).
 
 To find the variance, subtract the mean value from each data point, then square each of those values:  
-5 - 5.5 = -0.5 x -0.5 = 0.25  
-7 - 5.5 = 1.5 x 1.5 = 2.25  
-3 - 5.5 = -2.5 x -2.5 = 6.25  
-7 - 5.5 = 1.5 x 1.5 = 2.25
+5 - 5.5 = -0.5 * -0.5 = 0.25  
+7 - 5.5 = 1.5 * 1.5 = 2.25  
+3 - 5.5 = -2.5 * -2.5 = 6.25  
+7 - 5.5 = 1.5 * 1.5 = 2.25
 
 Add the square values, then divide the result by n-1 to give the variance.  
 (0.25 + 2.25 + 6.25 + 2.25) / (4-1) = 3.67

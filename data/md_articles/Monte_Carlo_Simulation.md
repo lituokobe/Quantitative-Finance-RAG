@@ -9,7 +9,7 @@
 
 ## What Is a Monte Carlo Simulation?
 
-A Monte Carlo simulation is a way to model the probability of different outcomes in a process that cannot easily be predicted due to the intervention of [random variables](https://www.investopedia.com/terms/r/random-variable.asp). It is a technique used to understand the impact of risk and uncertainty. Monte Carlo simulations can be applied to a range of problems in many fields, including investing, business, physics, and engineering. It is also referred to as a multiple probability simulation.
+A Monte Carlo simulation is a way to model the probability of different outcomes in a process that cannot easily be predicted due to the intervention of random variables. It is a technique used to understand the impact of risk and uncertainty. Monte Carlo simulations can be applied to a range of problems in many fields, including investing, business, physics, and engineering. It is also referred to as a multiple probability simulation.
 
 ## How the Monte Carlo Simulation Assesses Risk
 
@@ -17,11 +17,11 @@ When faced with significant uncertainty in making a forecast or estimate, some m
 
 Monte Carlo simulations have a vast array of applications in fields that are plagued by random variables, notably business and investing. They are used to estimate the probability of cost overruns in large projects and the likelihood that an asset price will move in a certain way.
 
-[Telecommunications companies](https://www.investopedia.com/ask/answers/070815/what-telecommunications-sector.asp)use them to assess network performance in various scenarios, which helps them to optimize their networks. Insurers use them to measure the risks they may be taking on and to price their policies accordingly. Investment analysts use [Monte Carlo simulations to assess the risk](https://www.investopedia.com/articles/financial-theory/08/monte-carlo-multivariate-model.asp) that an entity will default, and to analyze [derivatives](https://www.investopedia.com/terms/d/derivative.asp) such as options. Financial planners can use them to predict the likelihood that a client will [run out of money in retirement](https://www.investopedia.com/financial-edge/0113/planning-your-retirement-using-the-monte-carlo-simulation.aspx).
+Telecommunications companiesuse them to assess network performance in various scenarios, which helps them to optimize their networks. Insurers use them to measure the risks they may be taking on and to price their policies accordingly. Investment analysts use Monte Carlo simulations to assess the risk that an entity will default, and to analyze derivatives such as options. Financial planners can use them to predict the likelihood that a client will run out of money in retirement.
 
 Monte Carlo simulations also have many applications outside of business and finance, such as in meteorology, astronomy, and physics.
 
-Today, Monte Carlo simulations are increasingly used in conjunction with new [artificial intelligence (AI)](https://www.investopedia.com/terms/a/artificial-intelligence-ai.asp) models. For example, as IBM noted in 2024, many financial firms now use high-performance computing systems to run Monte Carlo simulations and, "As the numbers of these simulations grow over ever-increasing portfolios of financial assets and instruments, the interpretation of these as an entirety becomes a growing challenge." That is where AI comes in. "The use of AI to assist a professional in their assessment of these simulations can both improve accuracy as well as deliver more timely insights. In a business where time-to-market is a key differentiator, this has direct business value," IBM says.
+Today, Monte Carlo simulations are increasingly used in conjunction with new artificial intelligence (AI) models. For example, as IBM noted in 2024, many financial firms now use high-performance computing systems to run Monte Carlo simulations and, "As the numbers of these simulations grow over ever-increasing portfolios of financial assets and instruments, the interpretation of these as an entirety becomes a growing challenge." That is where AI comes in. "The use of AI to assist a professional in their assessment of these simulations can both improve accuracy as well as deliver more timely insights. In a business where time-to-market is a key differentiator, this has direct business value," IBM says.
 
 ## History of the Monte Carlo Simulation
 
@@ -37,11 +37,11 @@ A Monte Carlo simulation takes the variable that has uncertainty and assigns it 
 
 ## The 4 Steps in a Monte Carlo Simulation
 
-To perform a Monte Carlo simulation, there are four main steps. As an example, Microsoft [Excel](https://www.investopedia.com/articles/investing/093015/create-monte-carlo-simulation-using-excel.asp) or a similar program can be used to create a Monte Carlo simulation that estimates the probable price movements of stocks or other assets.
+To perform a Monte Carlo simulation, there are four main steps. As an example, Microsoft Excel or a similar program can be used to create a Monte Carlo simulation that estimates the probable price movements of stocks or other assets.
 
-There are two components to an asset's price movement: drift, which is its constant directional movement, and a random input, which represents market [volatility](https://www.investopedia.com/terms/v/volatility.asp).
+There are two components to an asset's price movement: drift, which is its constant directional movement, and a random input, which represents market volatility.
 
-By analyzing historical price data, you can determine the drift, [standard deviation](https://www.investopedia.com/terms/s/standarddeviation.asp), [variance](https://www.investopedia.com/terms/v/variance.asp), and average price movement of a security. These are the building blocks of a Monte Carlo simulation.
+By analyzing historical price data, you can determine the drift, standard deviation, variance, and average price movement of a security. These are the building blocks of a Monte Carlo simulation.
 
 The four steps are as follows:
 
@@ -70,15 +70,15 @@ By generating an arbitrary number of simulations, you can assess the probability
 
 ## Monte Carlo Simulation Results Explained
 
-In many models, outcomes follow a [normal distribution](https://www.investopedia.com/terms/n/normaldistribution.asp) or [bell-curve,](https://www.investopedia.com/terms/b/bell-curve.asp) with the most likely return at the center. This means the actual result is just as likely to fall above that point as below it.
+In many models, outcomes follow a normal distribution or bell-curve, with the most likely return at the center. This means the actual result is just as likely to fall above that point as below it.
 
 The probability that the actual return will be within one standard deviation of the most probable ("expected") rate is 68%. The probability is 95% that it will be within two standard deviations and 99.7% that it will be within three standard deviations.
 
 Still, there is no guarantee that the most expected outcome will occur, or that actual movements will not exceed the wildest projections.
 
-Crucially, a Monte Carlo simulation ignores everything not built into the price movement, such as [macro trends](https://www.investopedia.com/terms/m/macro-environment.asp), a company's leadership, market hype, and [cyclical factors](https://www.investopedia.com/terms/b/businesscycle.asp).
+Crucially, a Monte Carlo simulation ignores everything not built into the price movement, such as macro trends, a company's leadership, market hype, and cyclical factors.
 
-In other words, it assumes a perfectly [efficient market](https://www.investopedia.com/terms/e/efficientmarkethypothesis.asp), where price movements follow statistically consistent patterns derived from historical data, even though real-world markets can behave unpredictably.
+In other words, it assumes a perfectly efficient market, where price movements follow statistically consistent patterns derived from historical data, even though real-world markets can behave unpredictably.
 
 ## Advantages and Disadvantages of a Monte Carlo Simulation
 
@@ -95,7 +95,7 @@ Of course, no simulation can pinpoint an inevitable outcome. The Monte Carlo met
 A Monte Carlo simulation is used to estimate the probability of a certain outcome. As such, it is widely used by investors and financial analysts to evaluate the probable success of investments they're considering. Some common uses include:
 
 - Pricing stock options: The potential price movements of the underlying asset are tracked, given every possible variable. The results are averaged and then discounted to the asset's current price. This is intended to indicate the probable payoff of the options.
-- [Portfolio](https://www.investopedia.com/terms/p/portfolio.asp) valuation: A number of alternative portfolios can be tested using the Monte Carlo simulation in order to arrive at a measure of their comparative risk.
+- Portfolio valuation: A number of alternative portfolios can be tested using the Monte Carlo simulation in order to arrive at a measure of their comparative risk.
 - Fixed-income investments: The short rate is the random variable here. The simulation is used to calculate the probable impact of movements in the short rate on fixed-income investments, such as bonds.
 
 ## What Professions Use the Monte Carlo Simulation?

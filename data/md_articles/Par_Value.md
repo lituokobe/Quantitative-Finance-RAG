@@ -36,7 +36,7 @@ The coupon rate determines whether a bond will trade at, below, or above par val
 
 A stock's par value never fluctuates and is determined when shares are issued and formally stated on the stock certificate. A bond's par value is the face value of the bond plus coupon payments, annually or sem-annually, owed to the bondholders by the issuer of the debt.
 
-A bond with a par value of \$1,000 and a coupon rate of 4% will have annual interest payments of \$40 or 4% x \$1,000.
+A bond with a par value of \$1,000 and a coupon rate of 4% will have annual interest payments of \$40 or 4% * \$1,000.
 
 - If a 4% coupon bond is issued when market interest rates are 4%, the bond is considered trading at par value since both market interest and coupon rates are equal.
 - If market interest rates rise to 5%, the value of the bond drops, and the bond will trade below par because the bond is paying a lower interest rate to its bondholders compared to the higher interest rate of 5% of other bonds in the market.

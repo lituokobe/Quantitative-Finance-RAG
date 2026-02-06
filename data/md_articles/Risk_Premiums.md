@@ -16,7 +16,7 @@ A risk premium represents the extra return expected from an investment beyond th
 
 Think of a risk premium like hazard pay for investments, compensating for the risk of loss. It's similar to risky investments. A risky investment must provide the potential for larger returns to compensate an investor for the risk of losing some or all of their capital.
 
-This compensation comes in the form of a risk premium, which is the additional returns above what investors can earn risk-free from investments such as a U.S. [government security](https://www.investopedia.com/terms/g/governmentsecurity.asp). The premium rewards investors for the prospect of losing their money in a failing business, and it isn't actually earned unless the business succeeds.
+This compensation comes in the form of a risk premium, which is the additional returns above what investors can earn risk-free from investments such as a U.S. government security. The premium rewards investors for the prospect of losing their money in a failing business, and it isn't actually earned unless the business succeeds.
 
 A risk premium can be viewed as a reward, as successful, high-risk investments are often more profitable. Investments in well-penetrated markets—which tend to have predictable outcomes—are not likely to change the world. On the other hand, paradigm-shifting breakthroughs are more likely to come from novel and risky initiatives. It's these types of investments that can potentially offer superior returns, which a business owner may then use to reward investors. This one underlying incentive is why some investors seek riskier investments, knowing they can reap potentially bigger payoffs.
 
@@ -28,15 +28,15 @@ With this in mind, it is in the best interest of investors to consider how much 
 
 ### Important
 
-While economists acknowledge an equity premium exists in the market, they are equally confused as to why it exists. This is known as the [equity premium puzzle](https://www.investopedia.com/terms/e/epp.asp).
+While economists acknowledge an equity premium exists in the market, they are equally confused as to why it exists. This is known as the equity premium puzzle.
 
 ## Exploring the Equity Risk Premium: Calculations and Trends
 
-The [equity risk premium](https://www.investopedia.com/terms/e/equityriskpremium.asp) (ERP) refers to the excess return that investing in the stock market provides over a risk-free rate. This excess return compensates investors for taking on the relatively higher risk of buying stocks.
+The equity risk premium (ERP) refers to the excess return that investing in the stock market provides over a risk-free rate. This excess return compensates investors for taking on the relatively higher risk of buying stocks.
 
-The size of the premium varies depending on the [level of risk](https://www.investopedia.com/terms/r/risk-profile.asp) in a particular portfolio and also changes over time as market risk fluctuates. As a rule, high-risk investments are [compensated with a higher premium](https://www.investopedia.com/the-moron-risk-premium-11711745). Most economists agree the concept of an equity risk premium is valid: over the long term, markets compensate investors more for taking on the greater risk of investing in stocks.
+The size of the premium varies depending on the level of risk in a particular portfolio and also changes over time as market risk fluctuates. As a rule, high-risk investments are compensated with a higher premium. Most economists agree the concept of an equity risk premium is valid: over the long term, markets compensate investors more for taking on the greater risk of investing in stocks.
 
-The equity risk premium can be computed in several ways, but is often estimated using the [capital asset pricing model](https://www.investopedia.com/terms/c/capm.asp) (CAPM):
+The equity risk premium can be computed in several ways, but is often estimated using the capital asset pricing model (CAPM):
 
 $$\text{CAPM(Cost of equity)} = R_f + \beta * (R_m − R_f)$$
 where: 
@@ -44,7 +44,7 @@ where:
 - $\beta = \text{Beta coefficient for the stock market}$
 - $R_m − R_f = \text{Excess return expected from the market}$
 
-The cost of equity is effectively the equity risk premium. $R_f$is the risk-free rate of return, and $R_m - R_f$ is the excess return of the market, multiplied by the stock market's [beta](https://www.investopedia.com/terms/b/beta.asp) coefficient.
+The cost of equity is effectively the equity risk premium. $R_f$is the risk-free rate of return, and $R_m - R_f$ is the excess return of the market, multiplied by the stock market's beta coefficient.
 
 Between 1928 and 2022, the U.S. ERP averaged 5.06%, higher than 4.6% from 1871-1925 and 2.9% from 1802-1870. From 1926 to 2002, the equity risk premium was a puzzlingly high 8.4%. From 2011 through 2022, the average market risk premium in the U.S. was 5.5%.
 

@@ -2,7 +2,7 @@
 
 ## What Is a Convertible Bond?
 
-A convertible bond is a unique financial instrument that offers investors the dual benefits of regular interest payments and the potential for equity participation. As a hybrid security, it can be converted into a predetermined number of shares of the issuing company's common stock, usually at the bondholder's discretion. This conversion feature provides investors the flexibility to benefit from stock price appreciation while maintaining the security of a fixed-income investment. However, it also introduces complexities such as sensitivity to interest rates, stock price movements, and the issuer's [credit rating](https://www.investopedia.com/terms/c/creditrating.asp). When converting a bond, investors must consider the conversion ratio and price, which are set at issuance and determine the shares received per bond. Let's explore how convertible bonds function, their advantages, and the key distinctions between them and regular bonds.
+A convertible bond is a unique financial instrument that offers investors the dual benefits of regular interest payments and the potential for equity participation. As a hybrid security, it can be converted into a predetermined number of shares of the issuing company's common stock, usually at the bondholder's discretion. This conversion feature provides investors the flexibility to benefit from stock price appreciation while maintaining the security of a fixed-income investment. However, it also introduces complexities such as sensitivity to interest rates, stock price movements, and the issuer's credit rating. When converting a bond, investors must consider the conversion ratio and price, which are set at issuance and determine the shares received per bond. Let's explore how convertible bonds function, their advantages, and the key distinctions between them and regular bonds.
 
 ### Key Takeaways
 
@@ -108,7 +108,7 @@ Last, if the convertible bond is converted into shares of stock and the issuing 
 
 As an example, let's say Exxon Mobil Corp. (XOM) issued a convertible bond with a \$1,000 face value that pays 4% interest. The bond has a maturity of 10 years and a convertible ratio of 100 shares for every convertible bond.
 
-If the bond is held until maturity, the investor will be paid \$1,000 in principal plus \$40 in interest for that year. However, the company's shares suddenly spike and are trading at \$11 per share. As a result, the 100 shares of stock are worth \$1,100 (100 shares x \$11 share price), which exceeds the value of the bond. The investor can convert the bond into stock and receive 100 shares, which could be sold in the market for \$1,100 in total.
+If the bond is held until maturity, the investor will be paid \$1,000 in principal plus \$40 in interest for that year. However, the company's shares suddenly spike and are trading at \$11 per share. As a result, the 100 shares of stock are worth \$1,100 (100 shares * \$11 share price), which exceeds the value of the bond. The investor can convert the bond into stock and receive 100 shares, which could be sold in the market for \$1,100 in total.
 
 ## How Does a Convertible Bond Work?
 

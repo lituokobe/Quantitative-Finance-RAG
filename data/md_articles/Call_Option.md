@@ -12,9 +12,9 @@
 
 Call options are financial contracts that give the buyer the right, but not the obligation, to buy a stock, bond, commodity, or other asset or instrument at a specified price within a specific period. A call seller must sell the asset if the buyer exercises the call.
 
-A call buyer profits when the underlying asset increases in price. Share prices can increase for several reasons, including positive company news and [during acquisitions](https://www.investopedia.com/ask/answers/06/optionsbuyout.asp). The seller profits from the premium if the price drops below the strike price at expiration because the buyer typically won't exercise the option.
+A call buyer profits when the underlying asset increases in price. Share prices can increase for several reasons, including positive company news and during acquisitions. The seller profits from the premium if the price drops below the strike price at expiration because the buyer typically won't exercise the option.
 
-A call option may be contrasted with a [put option](https://www.investopedia.com/terms/p/putoption.asp), which gives the holder the right to sell (force the buyer to purchase) the asset at a specified price on or before expiration.
+A call option may be contrasted with a put option, which gives the holder the right to sell (force the buyer to purchase) the asset at a specified price on or before expiration.
 
 ## How Call Options Work
 
@@ -26,11 +26,11 @@ The contract is an option (a choice) to buy the asset at a specific price by a c
 
 The price is called the strike price. The strike price and the exercise date are set by the contract seller and chosen by the buyer. There are usually many contracts, expiration dates, and strike prices that traders can choose from.
 
-You pay a fee to purchase a call option—this is called the [premium](https://www.investopedia.com/terms/p/premium.asp). It's the price paid for the option to exercise. If, at expiration, the underlying asset is below the strike price, the call buyer loses the premium paid. This is the maximum loss the buyer can incur.
+You pay a fee to purchase a call option—this is called the premium. It's the price paid for the option to exercise. If, at expiration, the underlying asset is below the strike price, the call buyer loses the premium paid. This is the maximum loss the buyer can incur.
 
 ### Buyer Choices
 
-The call option buyer may hold the contract until the expiration date, at which point they can execute the contract and [take delivery](https://www.investopedia.com/terms/d/delivery.asp) of the underlying. They can also choose not to buy the underlying at expiry, or they can sell the options contract at any point before the expiration date at the market price of the contract at that time.
+The call option buyer may hold the contract until the expiration date, at which point they can execute the contract and take delivery of the underlying. They can also choose not to buy the underlying at expiry, or they can sell the options contract at any point before the expiration date at the market price of the contract at that time.
 
 ### Important
 
@@ -44,7 +44,7 @@ There are two basic ways to trade call options: a long call option and a short c
 
 A long call option is the standard call option in which the buyer has the right, but not the obligation, to buy a stock at a strike price in the future. The advantage of a long call is that it allows the buyer to plan ahead to purchase a stock at a lower price.
 
-Many traders will place long [calls on dividend-paying stocks](https://www.investopedia.com/articles/active-trading/042715/writing-covered-calls-dividend-stocks.asp) because these shares usually rise as the ex-dividend date approaches. Then, on the ex-dividend date, the price will drop. The [long call holder receives the dividend](https://www.investopedia.com/ask/answers/042415/if-long-call-owned-record-date-stock-owner-option-entitles-dividend.asp) only if they exercise the option before the ex-date.
+Many traders will place long calls on dividend-paying stocks because these shares usually rise as the ex-dividend date approaches. Then, on the ex-dividend date, the price will drop. The long call holder receives the dividend only if they exercise the option before the ex-date.
 
 For example, you might purchase a long call option in anticipation of a newsworthy event, such as a company's earnings call. While the profits on a long call option may be unlimited, the losses are limited to premiums.
 
@@ -52,17 +52,17 @@ Even if the company doesn't report a positive earnings beat (or one that doesn't
 
 ### Short Call Option
 
-As its name indicates, a short call option is the opposite of a long call option. In a short call option, the seller promises to sell their shares at a fixed strike price in the future. Short call options are mainly used for [covered calls](https://www.investopedia.com/articles/optioninvestor/08/covered-call.asp) by the option seller, or call options in which the seller already owns the underlying stock for their options.
+As its name indicates, a short call option is the opposite of a long call option. In a short call option, the seller promises to sell their shares at a fixed strike price in the future. Short call options are mainly used for covered calls by the option seller, or call options in which the seller already owns the underlying stock for their options.
 
 ### Fast Fact
 
 Selling an option without owning the underlying is known as a "naked short call."
 
-The call helps contain the losses they might suffer if the trade doesn't go their way. For example, their losses would multiply if the call were [uncovered](https://www.investopedia.com/terms/u/uncovered-option.asp) (i.e., they didn't own the underlying stock for their option) and the stock appreciated significantly in price.
+The call helps contain the losses they might suffer if the trade doesn't go their way. For example, their losses would multiply if the call were uncovered (i.e., they didn't own the underlying stock for their option) and the stock appreciated significantly in price.
 
 ## How To Calculate Call Option Payoffs
 
-[Call option payoff](https://www.investopedia.com/articles/active-trading/022315/when-and-how-take-profits-options.asp) refers to the profit or loss an option buyer or seller makes from a trade. Remember that there are three key variables to consider when evaluating call options: strike price, expiration date, and premium. These variables calculate payoffs generated from call options. There are two cases of call option payoffs.
+Call option payoff refers to the profit or loss an option buyer or seller makes from a trade. Remember that there are three key variables to consider when evaluating call options: strike price, expiration date, and premium. These variables calculate payoffs generated from call options. There are two cases of call option payoffs.
 
 ### Payoffs for Call Option Buyers
 
@@ -74,13 +74,13 @@ $$\text{Payoff} = \text{Spot price} - \text{Strike price}$$
 
 $$\text{Profit} = \text{Payoff} - \text{Premium paid}$$
 
-Using the formula above, your profit would be \$3 if ABC's [spot price](https://www.investopedia.com/terms/s/spotprice.asp) is \$55 on Nov. 30.
+Using the formula above, your profit would be \$3 if ABC's spot price is \$55 on Nov. 30.
 
 ### Payoff for Call Option Sellers
 
 The payoff calculations for the seller of a call option aren't that different. If you sell an ABC options contract with the same strike price and expiration date, you stand to gain only if the price declines.
 
-Your losses could be limited or unlimited, whether your call is covered or [naked](https://www.investopedia.com/terms/n/nakedoption.asp). The latter case occurs when you're forced to purchase the underlying stock at spot prices (perhaps even more) if the options buyer exercises the contract. In this case, your sole source of income (and profits) is limited to the premium you collect on the expiration of the options contract.
+Your losses could be limited or unlimited, whether your call is covered or naked. The latter case occurs when you're forced to purchase the underlying stock at spot prices (perhaps even more) if the options buyer exercises the contract. In this case, your sole source of income (and profits) is limited to the premium you collect on the expiration of the options contract.
 
 The formulas for calculating payoffs and profits are as follows:
 
@@ -88,15 +88,15 @@ Using the formula above, your income would be \$1 if ABC's spot price is \$49 on
 
 ### Fast Fact
 
-There are several factors to consider when it comes to [selling call options](https://www.investopedia.com/articles/optioninvestor/09/selling-options.asp). Be sure you fully understand an option contract's value and profitability when evaluating a trade, or else you risk the stock rallying too high.
+There are several factors to consider when it comes to selling call options. Be sure you fully understand an option contract's value and profitability when evaluating a trade, or else you risk the stock rallying too high.
 
 ## Using Call Options
 
-Call options often serve three primary purposes: income generation, speculation, and [tax](https://www.investopedia.com/the-best-tax-software-8780098) management.
+Call options often serve three primary purposes: income generation, speculation, and tax management.
 
 ### Using Covered Calls for Income
 
-Some investors use call options to generate income through a [covered call](https://www.investopedia.com/terms/c/coveredcall.asp) strategy. This strategy involves owning an underlying stock while at the same time [writing](https://www.investopedia.com/terms/w/writing-an-option.asp) a call option, or giving someone else the right to buy your stock.
+Some investors use call options to generate income through a covered call strategy. This strategy involves owning an underlying stock while at the same time writing a call option, or giving someone else the right to buy your stock.
 
 The investor collects the option premium and hopes the option expires worthless (below the strike price). This strategy generates additional income for the investor but can also limit profit potential if the underlying stock price rises sharply.
 
@@ -106,9 +106,9 @@ Covered calls work because if the stock rises above the strike price, the buyer 
 
 Options contracts give buyers exposure to a stock for a relatively low price. Used in isolation, they can provide substantial gains if a stock rises.
 
-But they can also result in a 100% loss of the premium if the call option expires worthless due to the underlying stock price failing to move above the strike price. The benefit of buying call options is that the [risk is always capped at the premium paid](https://www.investopedia.com/ask/answers/032415/why-are-call-and-put-options-considered-risky.asp) for the option.
+But they can also result in a 100% loss of the premium if the call option expires worthless due to the underlying stock price failing to move above the strike price. The benefit of buying call options is that the risk is always capped at the premium paid for the option.
 
-Investors may also buy and sell different call options simultaneously, creating a call [spread](https://www.investopedia.com/terms/s/spread.asp). These will cap both the potential profit and loss from the strategy, but they're more cost-effective in some cases than a single call option because the premium collected from one option's sale offsets the premium paid for the other.
+Investors may also buy and sell different call options simultaneously, creating a call spread. These will cap both the potential profit and loss from the strategy, but they're more cost-effective in some cases than a single call option because the premium collected from one option's sale offsets the premium paid for the other.
 
 ### Using Options for Tax Management
 
@@ -146,13 +146,13 @@ If the price doesn't go up, you don't have to buy it, and the only thing you los
 
 ## How Do Call Options Work?
 
-Call options are a type of derivative contract that gives the holder [the right, but not the obligation](https://www.investopedia.com/ask/answers/072915/how-does-forward-contract-differ-call-option.asp), to purchase a specified number of shares at a predetermined price, known as the "strike price" of the option.
+Call options are a type of derivative contract that gives the holder the right, but not the obligation, to purchase a specified number of shares at a predetermined price, known as the "strike price" of the option.
 
 If the stock's market price rises above the option's strike price, the option holder can exercise their option, buying at the strike price and selling at the higher market price to lock in a profit. Options only last for a limited period, however. If the market price doesn't rise above the strike price during that period, the options expire worthless.
 
 ## Why Would You Buy a Call Option?
 
-Investors will consider buying call options if they're optimistic—or "bullish"—about the prospects of its underlying shares. For these investors, call options might [provide a more attractive way to speculate](https://www.investopedia.com/terms/l/ladderoption.asp) on a company's prospects because of the leverage they provide.
+Investors will consider buying call options if they're optimistic—or "bullish"—about the prospects of its underlying shares. For these investors, call options might provide a more attractive way to speculate on a company's prospects because of the leverage they provide.
 
 After all, each option contract allows one to buy 100 shares of the company in question. For an investor who's confident that a company's shares will rise, buying shares indirectly through call options can be an attractive way to increase their purchasing power.
 
@@ -165,4 +165,3 @@ Buying calls is bullish because the buyer only profits if the price of the share
 Call options are financial contracts that give the option buyer the right, but not the obligation, to purchase an asset or instrument at a specified price within a specific period. The stock, bond, or commodity is called the underlying asset.
 
 A call buyer profits when the underlying asset increases in price. A call option seller can generate income by collecting premiums from the sale of option contracts. The tax treatment for call options varies based on the strategy and type of call options that generate profits.
-

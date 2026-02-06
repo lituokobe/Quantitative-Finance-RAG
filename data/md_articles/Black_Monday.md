@@ -2,7 +2,7 @@
 
 ## What Was Black Monday?
 
-Black Monday was the day, Oct. 19, 1987, when the [Dow Jones Industrial Average](https://www.investopedia.com/terms/d/djia.asp) (DJIA) lost 22.6% of its value in a single trading session. The S&P 500 declined 30% on the same day. Black Monday triggered a global stock market decline. Economists attributed the crash to geopolitical events and computerized program trading that accelerated the selloff. In the aftermath, the Federal Reserve cut interest rates by half a percentage point to encourage more lending and spending. The U.S. Securities and Exchange Commission (SEC) established a number of protective mechanisms, such as trading curbs and circuit breakers, to prevent panic-selling.
+Black Monday was the day, Oct. 19, 1987, when the Dow Jones Industrial Average (DJIA) lost 22.6% of its value in a single trading session. The S&P 500 declined 30% on the same day. Black Monday triggered a global stock market decline. Economists attributed the crash to geopolitical events and computerized program trading that accelerated the selloff. In the aftermath, the Federal Reserve cut interest rates by half a percentage point to encourage more lending and spending. The U.S. Securities and Exchange Commission (SEC) established a number of protective mechanisms, such as trading curbs and circuit breakers, to prevent panic-selling.
 
 ### Key Takeaways
 
@@ -14,7 +14,7 @@ Black Monday was the day, Oct. 19, 1987, when the [Dow Jones Industrial Average]
 
 ## Understanding the Causes Behind Black Monday
 
-The [massive stock market drop](https://www.investopedia.com/ask/answers/042115/what-caused-black-monday-stock-market-crash-1987.asp) wasn't due to a single event, as no major news came out the weekend before the crash.
+The massive stock market drop wasn't due to a single event, as no major news came out the weekend before the crash.
 
 - **A strong bull market overdue for a correction:** One of the main factors that drove the Black Monday crash was a strong bull market that was overdue for a major correction in prices since 1982. Stock prices had since then tripled in value.
 - **Program Trading:** Computerized trading, which was still not the dominant force it is today, was increasingly making its presence felt at several Wall Street firms. The stock market crash of 1987 revealed the role of financial and technological innovation in increased market volatility. In automatic trading, also called program trading, human decision-making is taken out of the equation, and buy or sell orders are generated automatically based on the price levels of benchmark indexes or specific stocks. Leading up to the crash, the models in use tended to produce strong positive feedback, generating more buy orders when prices were rising and more sell orders when prices began to fall.
@@ -24,7 +24,7 @@ The [massive stock market drop](https://www.investopedia.com/ask/answers/042115/
 
 ## The Aftermath and Response to Black Monday
 
-Following the crash, the Federal Reserve slashed interest rates by half a percentage point, hoping to free up capital and encourage more lending. It also injected billions of dollars into the economy through [quantitative easing](https://www.investopedia.com/terms/q/quantitative-easing.asp).
+Following the crash, the Federal Reserve slashed interest rates by half a percentage point, hoping to free up capital and encourage more lending. It also injected billions of dollars into the economy through quantitative easing.
 
 Regulators introduced new protections to prevent flash crashes from program trading. Circuit breakers were introduced in leading stock markets to automatically shut down trading in the event of unusual price movements.
 
@@ -34,15 +34,15 @@ As of 2022, the circuit breakers are set at the levels of 7%, 13%, and 20%. A 7%
 
 ## Assessing the Risk of Another Crash Like Black Monday
 
-Since Black Monday, a number of protective mechanisms have been built into the market to prevent [panic selling](https://www.investopedia.com/terms/p/panicselling.asp), such as [trading curbs](https://www.investopedia.com/terms/t/tradingcurb.asp) and [circuit breakers](https://www.investopedia.com/terms/c/circuitbreaker.asp). Still, high-frequency trading (HFT) algorithms and supercomputers move huge volumes in milliseconds. These algorithms have been shown to contribute to and cause flash crashes.
+Since Black Monday, a number of protective mechanisms have been built into the market to prevent panic selling, such as trading curbs and circuit breakers. Still, high-frequency trading (HFT) algorithms and supercomputers move huge volumes in milliseconds. These algorithms have been shown to contribute to and cause flash crashes.
 
-The 2010 [Flash Crash](https://www.investopedia.com/terms/f/flash-crash.asp), caused by HFT, sent markets down nearly 9% in minutes. This led to the installation of tighter [price bands](https://www.investopedia.com/terms/p/price-band.asp), but the stock market has experienced several volatile moments since 2010.
+The 2010 Flash Crash, caused by HFT, sent markets down nearly 9% in minutes. This led to the installation of tighter price bands, but the stock market has experienced several volatile moments since 2010.
 
 Amid the 2020 global crisis, markets lost similar amounts in the month of March as jobless rates reached their highest levels since the Great Depression, before recovering over the summer of that year.
 
 ## Key Lessons From Black Monday and Subsequent Market Crashes
 
-Market crashes are temporary. Often, the greatest [rallies](https://www.investopedia.com/terms/r/rally.asp) happen right after a crash. The steep market declines in August 2015 and January and February 2016 were both roughly 10% drops, but the market fully recovered and rallied to new or near new highs in the following months.
+Market crashes are temporary. Often, the greatest rallies happen right after a crash. The steep market declines in August 2015 and January and February 2016 were both roughly 10% drops, but the market fully recovered and rallied to new or near new highs in the following months.
 
 ### Stick With Your Strategy
 
@@ -50,7 +50,7 @@ A solid, long-term investment plan gives investors the confidence to remain calm
 
 ### Buying Opportunities
 
-Knowing that [market crashes are only temporary](https://www.investopedia.com/warren-buffett-s-hamburger-quiz-11712560), these times should be considered an opportunity to buy stocks or funds. Market crashes are inevitable. Wise investors prepare to [buy stocks at lower prices](https://www.investopedia.com/the-best-undervalued-stocks-11680595) while others sell.
+Knowing that market crashes are only temporary, these times should be considered an opportunity to buy stocks or funds. Market crashes are inevitable. Wise investors prepare to buy stocks at lower prices while others sell.
 
 ### Turn Off the Noise
 
@@ -60,11 +60,11 @@ Over the long term, market crashes such as Black Monday are a small blip in the 
 
 "Black Monday" often refers to the 1987 crash, but can apply to any sudden Monday price drop.
 
-The first Black Monday was on [Oct. 28, 1929](https://www.investopedia.com/terms/s/stock-market-crash-1929.asp), the beginning of the crash that ultimately resulted in the [Great Depression](https://www.investopedia.com/terms/g/great_depression.asp). On that day, stocks fell by 12.8%. Black Monday was immediately followed by Black Tuesday on Oct. 29, when stocks fell another 12%. The crash has been attributed to a variety of causes, which historians and economists still debate, including increasing debt and excess use of margin trading, overvalued stocks that lacked the fundamentals to support their prices, errors in the Federal Reserve's monetary policy, and panic selling.
+The first Black Monday was on Oct. 28, 1929, the beginning of the crash that ultimately resulted in the Great Depression. On that day, stocks fell by 12.8%. Black Monday was immediately followed by Black Tuesday on Oct. 29, when stocks fell another 12%. The crash has been attributed to a variety of causes, which historians and economists still debate, including increasing debt and excess use of margin trading, overvalued stocks that lacked the fundamentals to support their prices, errors in the Federal Reserve's monetary policy, and panic selling.
 
-In August 2015, Chinese stock markets experienced a crash that some termed "China's Black Monday". Fears about the Chinese economy then triggered a flash crash in the United States and other countries. On [August 24, 2015](https://www.investopedia.com/articles/investing/011116/two-biggest-flash-crashes-2015.asp), the DJIA fell by 1,089 points after the market opened. The drop followed a sharp decline the previous Friday. The market partially rebounded and closed 588 points below the open.
+In August 2015, Chinese stock markets experienced a crash that some termed "China's Black Monday". Fears about the Chinese economy then triggered a flash crash in the United States and other countries. On August 24, 2015, the DJIA fell by 1,089 points after the market opened. The drop followed a sharp decline the previous Friday. The market partially rebounded and closed 588 points below the open.
 
-The term is less commonly applied to the [crash of March 9, 2020](https://en.wikipedia.org/wiki/2020_stock_market_crash), when the DJIA fell 7.79% due to the uncertainty surrounding the COVID-19 pandemic. Then on Thursday, March 12, the market crashed again by 9.9%. On Monday, March 16, 2020, the market crashed yet again by 12.9% in what some have called Black Monday II.
+The term is less commonly applied to the crash of March 9, 2020, when the DJIA fell 7.79% due to the uncertainty surrounding the COVID-19 pandemic. Then on Thursday, March 12, the market crashed again by 9.9%. On Monday, March 16, 2020, the market crashed yet again by 12.9% in what some have called Black Monday II.
 
 ## What Caused Black Monday 1929?
 

@@ -14,13 +14,13 @@ Many companies use a combination of debt and equity to finance business expansio
 
 ## Understanding Cost of Capital
 
-The cost of capital is key information used to determine a project's [hurdle rate](https://www.investopedia.com/terms/h/hurdlerate.asp). A company embarking on a major project must know how much money the project will have to generate to offset the cost of undertaking it and then continue to generate profits for the company.
+The cost of capital is key information used to determine a project's hurdle rate. A company embarking on a major project must know how much money the project will have to generate to offset the cost of undertaking it and then continue to generate profits for the company.
 
-The company may consider the capital cost using debt—levered cost of capital. Alternatively, they may review the project [costs without debt—unlevered](https://www.investopedia.com/terms/u/unleveredcostofcapital.asp).
+The company may consider the capital cost using debt—levered cost of capital. Alternatively, they may review the project costs without debt—unlevered.
 
 Cost of capital, from the perspective of an investor, is an assessment of the return that can be expected from the acquisition of stock shares or any other investment. This is an estimate and might include best- and worst-case scenarios.
 
-An investor might look at the [volatility](https://www.investopedia.com/ask/answers/010915/volatility-good-thing-or-bad-thing-investors-point-view-and-why.asp) (beta) of a company's financial results to determine whether a stock's cost is justified by its potential return.
+An investor might look at the volatility (beta) of a company's financial results to determine whether a stock's cost is justified by its potential return.
 
 ## Weighted Average Cost of Capital (WACC)
 
@@ -36,7 +36,10 @@ Early-stage companies rarely have sizable assets to pledge as collateral for loa
 
 The cost of debt is merely the interest rate paid by the company on its debt. However, since interest expense is tax-deductible, the debt is calculated on an after-tax basis as follows:
 
-Cost of debt = Interest expense Total debt × ( 1 − T ) where: Interest expense = Int. paid on the firm’s current debt T = The company’s marginal tax rate \begin{aligned} &\text{Cost of debt}=\frac{\text{Interest expense}}{\text{Total debt}} \times (1 - T) \\ &\textbf{where:}\\ &\text{Interest expense}=\text{Int. paid on the firm's current debt}\\ &T=\text{The company’s marginal tax rate}\\ \end{aligned} ​Cost of debt=Total debtInterest expense​×(1−T)where:Interest expense=Int. paid on the firm’s current debtT=The company’s marginal tax rate​
+$$\text{Cost of debt}=\frac{\text{Interest expense}}{\text{Total debt}} * (1 - T)$$
+where:
+- $\text{Interest expense}=\text{Int. paid on the firm's current debt}$
+- $T=\text{The company’s marginal tax rate}$
 
 The cost of debt can also be estimated by adding a credit spread to the risk-free rate and multiplying the result by (1 - T).
 
@@ -44,11 +47,14 @@ The cost of debt can also be estimated by adding a credit spread to the risk-fre
 
 The cost of equity is more complicated since the rate of return demanded by equity investors is not as clearly defined as it is by lenders. The cost of equity is approximated by the capital asset pricing model as follows:
 
-: C A P M ( Cost of equity ) = R f + β ( R m − R f ) where: R f = risk-free rate of return R m = market rate of return \begin{aligned} &CAPM(\text{Cost of equity})= R_f + \beta(R_m - R_f) \\ &\textbf{where:}\\ &R_f=\text{risk-free rate of return}\\ &R_m=\text{market rate of return}\\ \end{aligned} ​CAPM(Cost of equity)=Rf​+β(Rm​−Rf​)where:Rf​=risk-free rate of returnRm​=market rate of return​
+$$CAPM(\text{Cost of equity})= R_f + \beta(R_m - R_f)$$
+where:
+- $R_f=\text{risk-free rate of return}$
+- $R_m=\text{market rate of return}$
 
 Beta is used in the CAPM formula to estimate risk, and the formula would require a public company's stock beta. For private companies, a beta is estimated based on the average beta among a group of similar public companies. Analysts may refine this beta by calculating it on an after-tax basis. The assumption is that a private firm's beta will become the same as the industry average beta.
 
-**Cost of Debt + Cost of Equity = Overall Cost of Capital**
+$$\text{Cost of Debt} + \text{Cost of Equity} = \text{Overall Cost of Capital}$$
 
 The firm’s overall cost of capital is based on the weighted average of these costs.
 
@@ -56,7 +62,7 @@ For example, consider an enterprise with a capital structure consisting of 70% e
 
 Therefore, its WACC would be:
 
-( 0.7 × 10 % ) + ( 0.3 × 7 % ) = 9.1 % (0.7 \times 10\%) + (0.3 \times 7\%) = 9.1\% (0.7×10%)+(0.3×7%)=9.1%
+( 0.7 × 10 % ) + ( 0.3 × 7 % ) = 9.1 %
 
 This is the cost of capital that would be used to discount future cash flows from potential projects and other opportunities to estimate their net present value (NPV) and ability to generate value.
 
@@ -66,11 +72,11 @@ Debt financing is more tax-efficient than equity financing since interest expens
 
 ### Important
 
-An increase or decrease in the [federal funds rate](https://www.investopedia.com/terms/f/federalfundsrate.asp) affects a company's WACC because it changes the cost of debt or borrowing money.
+An increase or decrease in the federal funds rate affects a company's WACC because it changes the cost of debt or borrowing money.
 
 ## Cost of Capital vs. Discount Rate
 
-The cost of capital and [discount rate](https://www.investopedia.com/terms/d/discountrate.asp) are somewhat similar, and the terms are often used interchangeably. The cost of capital is often calculated by a company's finance department and used by management to set a discount rate (or hurdle rate) that must be beaten to justify an investment.
+The cost of capital and discount rate are somewhat similar, and the terms are often used interchangeably. The cost of capital is often calculated by a company's finance department and used by management to set a discount rate (or hurdle rate) that must be beaten to justify an investment.
 
 That said, a company's management should challenge its internally generated cost of capital numbers, as they may be so conservative as to deter investment.
 
@@ -109,4 +115,3 @@ The weighted average cost of capital represents the average cost of the company'
 ## The Bottom Line
 
 The cost of capital measures the cost that a business incurs to finance its operations. It measures the cost of borrowing money from creditors, or raising it from investors through equity financing, compared to the expected returns on an investment. This metric is important in determining if capital is being deployed effectively.
-

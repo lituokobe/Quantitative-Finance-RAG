@@ -26,7 +26,7 @@ Interbank lending is the basis for consumer loans in countries around the world,
 
 The combination of five currencies and seven maturities led to a total of 35 different LIBORs calculated and reported each business day. The most commonly quoted rate was the three-month U.S. dollar rate, usually referred to as the current LIBOR.
 
-ICE calculated the LIBOR by asking major global banks how much they would charge other banks for short-term loans. The association took out the highest and lowest figures, then [calculated the average](https://www.investopedia.com/ask/answers/12/how-is-libor-determined.asp) from the remaining numbers. This is known as the trimmed average.
+ICE calculated the LIBOR by asking major global banks how much they would charge other banks for short-term loans. The association took out the highest and lowest figures, then calculated the average from the remaining numbers. This is known as the trimmed average.
 
 This rate was posted each morning as the daily rate and announced and published once a day around 11:55 a.m. London time by the ICE Benchmark Administration (IBA).
 
@@ -44,11 +44,11 @@ In April 2018, the IBA submitted a new proposal to strengthen the LIBOR calculat
 - The second transaction-derived level involved taking submissions based on transaction-derived data from a panel bank if it did not have a sufficient number of eligible transactions to make a Level 1 submission.
 - The third level—expert judgment—would come into play when a panel bank failed to make a Level 1 or a Level 2 submission. It would submit the rate at which it could finance itself at 11 a.m. London time, with reference to the unsecured, wholesale funding market.
 
-The IBA calculated the LIBOR using a [trimmed mean](https://www.investopedia.com/terms/t/trimmed_mean.asp) approach applied to all the responses received. The trimmed mean is a method of averaging that eliminates a small specified percentage of the largest and smallest values before calculating the mean. For LIBOR, figures in the highest and lowest quartile are thrown out, and averaging is performed on the remaining numbers.
+The IBA calculated the LIBOR using a trimmed mean approach applied to all the responses received. The trimmed mean is a method of averaging that eliminates a small specified percentage of the largest and smallest values before calculating the mean. For LIBOR, figures in the highest and lowest quartile are thrown out, and averaging is performed on the remaining numbers.
 
 ## Uses of LIBOR
 
-[LIBOR had been used worldwide](https://www.investopedia.com/articles/investing/112014/who-uses-libor-data-and-why.asp) in a variety of financial products. They included the following:
+LIBOR had been used worldwide in a variety of financial products. They included the following:
 
 - Standard interbank products like forward rate agreements (FRAs), interest rate swaps, interest rate futures, options, and swaptions, whereby options provide buyers with the right, but not the obligation, to purchase a security or interest rate product
 - Commercial products like floating rate certificates of deposit (CDs) and notes, variable rate mortgages, and syndicated loans, which are loans offered by a group of lenders

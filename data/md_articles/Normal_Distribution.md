@@ -2,7 +2,7 @@
 
 ## What Is a Normal Distribution?
 
-Normal distribution, often referred to as the Gaussian distribution, is fundamental to statistics and finance due to its symmetry around the mean, forming the characteristic "[bell curve](https://www.investopedia.com/terms/b/bell-curve.asp)." This distribution is critical in various financial analyses and decisions where most data points tend to cluster around an average value. The normal distribution is not only the foundation of many statistical theories, such as the Central Limit Theorem, but it is also key in assessing financial market behaviors, helping investors and analysts determine if financial instruments are priced fairly or deviate from expected norms. This article explores the properties, uses, and limitations of normal distributions to aid in informed financial decision-making.
+Normal distribution, often referred to as the Gaussian distribution, is fundamental to statistics and finance due to its symmetry around the mean, forming the characteristic "bell curve." This distribution is critical in various financial analyses and decisions where most data points tend to cluster around an average value. The normal distribution is not only the foundation of many statistical theories, such as the Central Limit Theorem, but it is also key in assessing financial market behaviors, helping investors and analysts determine if financial instruments are priced fairly or deviate from expected norms. This article explores the properties, uses, and limitations of normal distributions to aid in informed financial decision-making.
 
 ### Key Takeaways
 
@@ -14,11 +14,11 @@ Normal distribution, often referred to as the Gaussian distribution, is fundamen
 
 ## Key Properties of Normal Distribution Explained
 
-In technical stock market analysis, the normal distribution is commonly assumed. It has [two parameters](https://www.investopedia.com/articles/active-trading/092914/normal-distribution-table-explained.asp): mean and standard deviation. Here, [mean](https://www.investopedia.com/terms/m/mean.asp) (average), [median](https://www.investopedia.com/terms/m/median.asp) (midpoint), and [mode](https://www.investopedia.com/terms/m/mode.asp) (most frequent observation) are equal, creating a symmetrical bell curve centered around the mean.
+In technical stock market analysis, the normal distribution is commonly assumed. It has two parameters: mean and standard deviation. Here, mean (average), median (midpoint), and mode (most frequent observation) are equal, creating a symmetrical bell curve centered around the mean.
 
-The normal distribution model is central to the [Central Limit Theorem](https://www.investopedia.com/terms/c/central_limit_theorem.asp) (CLT), which states that the averages of independent, identically distributed variables usually follow a normal distribution, regardless of the original distribution.
+The normal distribution model is central to the Central Limit Theorem (CLT), which states that the averages of independent, identically distributed variables usually follow a normal distribution, regardless of the original distribution.
 
-The normal distribution is one type of [symmetrical distribution](https://www.investopedia.com/terms/s/symmetrical-distribution.asp). Symmetrical distributions occur when a dividing line produces two mirror images. Not all symmetrical distributions are normal since some data could appear as two humps or a series of hills in addition to the bell curve that indicates a normal distribution.
+The normal distribution is one type of symmetrical distribution. Symmetrical distributions occur when a dividing line produces two mirror images. Not all symmetrical distributions are normal since some data could appear as two humps or a series of hills in addition to the bell curve that indicates a normal distribution.
 
 ## Understanding the Empirical Rule in Normal Distribution
 
@@ -28,13 +28,13 @@ This fact is sometimes called the "empirical rule," a heuristic that describes w
 
 ## Analyzing Skewness in Normal Distribution
 
-Skewness measures the degree of symmetry of a distribution. The normal distribution is symmetric and has a [skewness](https://www.investopedia.com/terms/s/skewness.asp) of zero. If the distribution of a data set instead has a skewness less than zero, or negative skewness (left-skewness), then the left tail of the distribution is longer than the right tail; positive skewness (right-skewness) implies that the right tail of the distribution is longer than the left.
+Skewness measures the degree of symmetry of a distribution. The normal distribution is symmetric and has a skewness of zero. If the distribution of a data set instead has a skewness less than zero, or negative skewness (left-skewness), then the left tail of the distribution is longer than the right tail; positive skewness (right-skewness) implies that the right tail of the distribution is longer than the left.
 
 ## Exploring Kurtosis in Normal Distribution
 
-[Kurtosis](https://www.investopedia.com/terms/k/kurtosis.asp) measures the thickness of the tail ends of a distribution to the tails of a distribution. The normal distribution has a [kurtosis](https://www.investopedia.com/terms/k/kurtosis.asp) equal to 3.0. Distributions with larger kurtosis greater than 3.0 exhibit tail data exceeding the tails of the normal distribution (e.g., five or more standard deviations from the mean).
+Kurtosis measures the thickness of the tail ends of a distribution to the tails of a distribution. The normal distribution has a kurtosis equal to 3.0. Distributions with larger kurtosis greater than 3.0 exhibit tail data exceeding the tails of the normal distribution (e.g., five or more standard deviations from the mean).
 
-This [excess kurtosis](https://www.investopedia.com/terms/e/excesskurtosis.asp) is known in statistics as [leptokurtic](https://www.investopedia.com/terms/l/leptokurtic.asp), but is more colloquially known as "fat tails." The occurrence of fat tails in financial markets describes what is known as [tail risk](https://www.investopedia.com/terms/t/tailrisk.asp). Distributions with low kurtosis less than 3.0 ([platykurtic](https://www.investopedia.com/terms/p/platykurtic.asp)) exhibit tails that are generally less extreme ("skinnier") than the tails of the normal distribution.
+This excess kurtosis is known in statistics as leptokurtic, but is more colloquially known as "fat tails." The occurrence of fat tails in financial markets describes what is known as tail risk. Distributions with low kurtosis less than 3.0 (platykurtic) exhibit tails that are generally less extreme ("skinnier") than the tails of the normal distribution.
 
 ## The Formula for Normal Distribution
 
@@ -49,9 +49,9 @@ where:
 
 ## Financial Applications of Normal Distribution
 
-The assumption of a normal distribution is applied to asset prices and [price action](https://www.investopedia.com/terms/p/price-action.asp). Traders may plot price points to fit recent price action into a normal distribution. The further price action moves from the mean, in this case, the greater the likelihood that an asset is being over or undervalued. Traders can use the standard deviations to suggest potential trades. This type of trading is generally done on very short time frames as larger timescales make it much harder to pick entry and exit points.
+The assumption of a normal distribution is applied to asset prices and price action. Traders may plot price points to fit recent price action into a normal distribution. The further price action moves from the mean, in this case, the greater the likelihood that an asset is being over or undervalued. Traders can use the standard deviations to suggest potential trades. This type of trading is generally done on very short time frames as larger timescales make it much harder to pick entry and exit points.
 
-Many statistical theories [model asset prices](https://www.investopedia.com/terms/c/capm.asp) by assuming normal distribution. However, actual price data often show fat tails, with more frequent extreme movements, leading to kurtosis above three. Even if past data fit a normal distribution, it doesn't ensure future performance will.
+Many statistical theories model asset prices by assuming normal distribution. However, actual price data often show fat tails, with more frequent extreme movements, leading to kurtosis above three. Even if past data fit a normal distribution, it doesn't ensure future performance will.
 
 ## Real-World Example of Normal Distribution
 
@@ -69,7 +69,7 @@ Known technically as the Gaussian distribution, it was termed "normal" after 19t
 
 ## What Are the Limitations of the Normal Distribution in Finance?
 
-Although normal distribution is a statistical concept, its applications in finance can be limited because financial phenomena—such as expected stock-market returns—do not fall neatly within a normal distribution. Prices tend to follow more of a [log-normal distribution](https://www.investopedia.com/articles/investing/102014/lognormal-and-normal-distribution.asp), right-skewed and with fatter tails. Therefore, relying too heavily on a bell curve when making predictions can lead to unreliable results. Although most analysts are well aware of this limitation, it is relatively difficult to overcome this shortcoming because it is often unclear which statistical distribution to use as an alternative.
+Although normal distribution is a statistical concept, its applications in finance can be limited because financial phenomena—such as expected stock-market returns—do not fall neatly within a normal distribution. Prices tend to follow more of a log-normal distribution, right-skewed and with fatter tails. Therefore, relying too heavily on a bell curve when making predictions can lead to unreliable results. Although most analysts are well aware of this limitation, it is relatively difficult to overcome this shortcoming because it is often unclear which statistical distribution to use as an alternative.
 
 ## The Bottom Line
 

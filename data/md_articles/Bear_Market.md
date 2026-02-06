@@ -16,14 +16,14 @@ Stock prices generally reflect how investors expect companies to perform. If a c
 
 One definition of a bear market says markets are in bear territory when stocks, on average, fall at least 20% off their high. But 20% is an arbitrary number, just as a 10% decline is an arbitrary benchmark for a correction. Another definition of a bear market is when investors are more risk-averse than risk-seeking. This kind of bear market can last for months or years as investors shun speculation in favor of boring, sure bets.
 
-Bear markets can be caused by [weak economies](https://www.investopedia.com/terms/s/sluggisheconomy.asp), market bubbles bursting, pandemics, wars, geopolitical crises, or big shifts like moving to an online economy The signs of a weak or slowing economy are typically:
+Bear markets can be caused by weak economies, market bubbles bursting, pandemics, wars, geopolitical crises, or big shifts like moving to an online economy The signs of a weak or slowing economy are typically:
 
 - Low employment
 - Low disposable income
 - Weak productivity
 - Drop in business profits
 
-Government interventions in the economy can also trigger a bear market. For example, changes in the tax rate or the [federal funds rate](https://www.investopedia.com/terms/f/federalfundsrate.asp) can lead to a bear market. Similarly, a drop in investor confidence may also signal the onset of a bear market. When investors believe something is about to happen, they will take action—in the case of an imminent bear market, selling off shares to avoid losses.
+Government interventions in the economy can also trigger a bear market. For example, changes in the tax rate or the federal funds rate can lead to a bear market. Similarly, a drop in investor confidence may also signal the onset of a bear market. When investors believe something is about to happen, they will take action—in the case of an imminent bear market, selling off shares to avoid losses.
 
 Bear markets can last from a few weeks to many years. A secular bear market can last anywhere from 10 to 20 years and is characterized by below-average returns on a sustained basis. There may be rallies within secular bear markets where stocks or indexes rally for a period, but the gains are not sustained, and prices revert to lower levels. A cyclical bear market, on the other hand, can last anywhere from a few weeks to several months.
 
@@ -39,19 +39,19 @@ Bear markets usually have four different phases.
 
 ### First Phase of a Bear Market
 
-The first phase is characterized by high prices and high [investor sentiment](https://www.investopedia.com/terms/m/marketsentiment.asp). Towards the end of this phase, investors begin to drop out of the markets and take in profits.
+The first phase is characterized by high prices and high investor sentiment. Towards the end of this phase, investors begin to drop out of the markets and take in profits.
 
 ### Second Phase of a Bear Market
 
-In the second phase, stock prices begin to fall sharply, trading activity and corporate profits begin to drop, and economic indicators, that may have once been positive, start to become below average. Some investors begin to panic as sentiment starts to fall. This is referred to as [capitulation](https://www.investopedia.com/terms/c/capitulation.asp).
+In the second phase, stock prices begin to fall sharply, trading activity and corporate profits begin to drop, and economic indicators, that may have once been positive, start to become below average. Some investors begin to panic as sentiment starts to fall. This is referred to as capitulation.
 
 ### Third Phase of a Bear Market
 
-The third phase shows [speculators](https://www.investopedia.com/terms/s/speculator.asp) start to enter the market, consequently raising some prices and trading volume.
+The third phase shows speculators start to enter the market, consequently raising some prices and trading volume.
 
 ### Fourth Phase of a Bear Market
 
-In the fourth and last phase, stock prices continue to drop, but slowly. As low prices and good news starts to attract investors again, bear markets start to [lead to bull markets](https://www.investopedia.com/ask/answers/are-we-in-bull-market-or-bear-market/).
+In the fourth and last phase, stock prices continue to drop, but slowly. As low prices and good news starts to attract investors again, bear markets start to lead to bull markets.
 
 ### "Bear" and "Bull"
 
@@ -61,15 +61,15 @@ The bear market phenomenon is thought to get its name from the way in which a be
 
 A bear market should not be confused with a correction, which is a short-term trend that has a duration of fewer than two months.
 
-While [corrections](https://www.investopedia.com/terms/c/correction.asp) offer a good time for value investors to find an [entry point](https://www.investopedia.com/terms/e/entry-point.asp) into stock markets, bear markets rarely provide suitable points of entry. This barrier is because it is almost impossible to determine a bear market's bottom. Trying to recoup losses can be an uphill battle unless investors are short sellers or use other strategies to make gains in falling markets.
+While corrections offer a good time for value investors to find an entry point into stock markets, bear markets rarely provide suitable points of entry. This barrier is because it is almost impossible to determine a bear market's bottom. Trying to recoup losses can be an uphill battle unless investors are short sellers or use other strategies to make gains in falling markets.
 
 Between 1900 and 2018, the Dow Jones Industrial Average (DJIA) had approximately 33 bear markets, averaging one every three years. A key bear market recently happened during the global financial crisis from October 2007 to March 2009. During that time the Dow Jones Industrial Average (DJIA) declined 54%. The global COVID-19 pandemic caused the most recent 2020 bear market for the S&P 500 and DJIA. The Nasdaq Composite most recently entered a bear market in March 2022 on fears surrounding war in Ukraine, economic sanctions against Russia, and high inflation.
 
 ## Leveraging Short Selling During Bear Markets
 
-Investors can make gains in a bear market by [short selling](https://www.investopedia.com/terms/s/shortselling.asp). This technique involves selling borrowed shares and buying them back at lower prices. It is an extremely risky trade and can cause heavy losses if it does not work out. A short seller must borrow the shares from a broker before a short sell order is placed. The short seller’s profit and loss amount is the difference between the price where the shares were sold and the price where they were bought back, referred to as "covered."
+Investors can make gains in a bear market by short selling. This technique involves selling borrowed shares and buying them back at lower prices. It is an extremely risky trade and can cause heavy losses if it does not work out. A short seller must borrow the shares from a broker before a short sell order is placed. The short seller’s profit and loss amount is the difference between the price where the shares were sold and the price where they were bought back, referred to as "covered."
 
-For example, an investor shorts 100 shares of a stock at \$94. The price falls and the shares are covered at \$84. The investor pockets a profit of \$10 x 100 = \$1,000. If the stock trades higher unexpectedly, the investor is forced to buy back the shares at a premium, causing heavy losses.
+For example, an investor shorts 100 shares of a stock at \$94. The price falls and the shares are covered at \$84. The investor pockets a profit of \$10 * 100 = \$1,000. If the stock trades higher unexpectedly, the investor is forced to buy back the shares at a premium, causing heavy losses.
 
 ### Warning
 
@@ -77,7 +77,7 @@ Short selling is a risky trading strategy with the possibility for high losses. 
 
 ## Using Puts and Inverse ETFs to Navigate Bear Markets
 
-A put option gives the owner the freedom, but not the responsibility, to sell a stock at a specific price on, or before, a certain date. [Put options](https://www.investopedia.com/terms/p/putoption.asp) can be used to speculate on falling stock prices, and hedge against falling prices to protect long-only portfolios. Investors must have options privileges in their accounts to make such trades. Outside of a bear market, buying puts is generally safer than short selling.
+A put option gives the owner the freedom, but not the responsibility, to sell a stock at a specific price on, or before, a certain date. Put options can be used to speculate on falling stock prices, and hedge against falling prices to protect long-only portfolios. Investors must have options privileges in their accounts to make such trades. Outside of a bear market, buying puts is generally safer than short selling.
 
 Inverse ETFs are designed to change values in the opposite direction of the index they track. For example, the inverse ETF for the S&P 500 would increase by 1% if the S&P 500 index decreased by 1%. There are many leveraged inverse ETFs that magnify the returns of the index they track by two and three times. Like options, inverse ETFs can be used to speculate or protect portfolios.
 
@@ -106,4 +106,3 @@ For most investors, a buy-and-hold strategy is the best way to make money throug
 ## The Bottom Line
 
 A bear market is a decline of 20% or more in market prices, often accompanied by negative investor sentiment and weakening economic conditions. These downturns can vary in duration, lasting anywhere from a few weeks to several years. Bear markets may present opportunities to buy quality stocks at lower prices for long-term investors, while short-term traders may employ strategies like short selling, buying put options, or investing in inverse ETFs. But this could come with risks. Bear markets are typically triggered by factors like economic slowdowns or investor panic. Because it’s difficult to pinpoint the exact bottom, patience and disciplined decision-making are needed to navigate them successfully.
-

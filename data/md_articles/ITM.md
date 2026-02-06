@@ -83,9 +83,9 @@ If the stock price fell from \$33 to \$29, the call option with the \$30 strike 
 
 ### Put ITM Option
 
-Suppose you own a contract giving you the right to sell Tesla (TSLA) stock at \$249 within a month. For this option, you paid a premium of \$2.80 or \$280 (\$2.80 x 100). Let's say Tesla shares are trading at \$247.
+Suppose you own a contract giving you the right to sell Tesla (TSLA) stock at \$249 within a month. For this option, you paid a premium of \$2.80 or \$280 (\$2.80 * 100). Let's say Tesla shares are trading at \$247.
 
-The options contract is ITM with an intrinsic value of \$2 (\$249 - \$247). However, it’s not yet profitable. If you were to exercise the option now, you would get \$200 (\$2 x 100), which doesn’t cover the cost of the premium. Tesla’s share price would need to drop to at least \$246 to make a profit. The further it falls, the more money you would make from the trade.
+The options contract is ITM with an intrinsic value of \$2 (\$249 - \$247). However, it’s not yet profitable. If you were to exercise the option now, you would get \$200 (\$2 * 100), which doesn’t cover the cost of the premium. Tesla’s share price would need to drop to at least \$246 to make a profit. The further it falls, the more money you would make from the trade.
 
 ## The Bottom Line
 

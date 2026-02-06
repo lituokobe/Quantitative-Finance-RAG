@@ -85,7 +85,7 @@ For privately owned companies, you can look at the company's credit rating from 
 
 Treasury bonds of the same maturity are a useful risk-free asset to use as a benchmark.
 
-Businesses are able to deduct interest expenses from their taxes. Because of this, the net cost of a company's debt is the amount of interest it is paying minus the amount of interest it can deduct on its taxes. This is why Rd x (1 - the corporate tax rate) is used to calculate the after-tax cost of debt.
+Businesses are able to deduct interest expenses from their taxes. Because of this, the net cost of a company's debt is the amount of interest it is paying minus the amount of interest it can deduct on its taxes. This is why Rd * (1 - the corporate tax rate) is used to calculate the after-tax cost of debt.
 
 ## Comparing WACC and Required Rate of Return (RRR)
 
@@ -113,13 +113,13 @@ Consider a hypothetical manufacturer called XYZ Brands. Suppose the market value
 
 Let's further assume that XYZ's cost of equity—the minimum return that shareholders demand—is 10%. Here, E/V would equal 0.8 (\$4,000,000 of equity value divided by \$5,000,000 of total financing). Therefore:
 
-**Weighted cost of equity = 0.8 × 0.10 = 0.08**
+**Weighted cost of equity = 0.8 * 0.10 = 0.08**
 
 This is the first half of the WACC equation.
 
 Now we have to figure out XYZ's weighted cost of debt. To do this, we need to determine D/V; in this case, that's 0.2 (\$1,000,000 in debt divided by \$5,000,000 in total capital). Next, we would multiply that figure by the company's cost of debt, which we'll say is 5%. Last, we multiply the product of those two numbers by 1 minus the tax rate. If the tax rate (Tc) is 0.25, then "1 minus Tc" is equal to 0.75. Therefore:
 
-**Weighted cost of debt = (0.2 × 0.05) x 0.75 = 0.0075**
+**Weighted cost of debt = (0.2 * 0.05) * 0.75 = 0.0075**
 
 Adding those two numbers together gives the weighted average cost of capital:
 

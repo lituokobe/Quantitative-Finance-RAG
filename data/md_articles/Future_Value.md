@@ -119,7 +119,7 @@ Future value is used for planning purposes. The insight it provides can help you
 
 ## What Is the Future Value of an Annuity?
 
-The future value of an annuity is the value of recurring payments at a certain date in the future, assuming a particular rate of return, or discount rate. The higher the discount rate, the greater the annuity's future value. FV of an annuity, if the payments are made at the end of the period (i.e., end of the month or year) is calculated as FV = PMT x [(1+r)^{n} - 1)]/r, where FV = future value of an annuity stream, PMT = dollar amount of each annuity payment, *r*= the discount (interest) rate, and *n*= number of periods in which payments will be made.
+The future value of an annuity is the value of recurring payments at a certain date in the future, assuming a particular rate of return, or discount rate. The higher the discount rate, the greater the annuity's future value. FV of an annuity, if the payments are made at the end of the period (i.e., end of the month or year) is calculated as FV = PMT * [(1+r)^{n} - 1)]/r, where FV = future value of an annuity stream, PMT = dollar amount of each annuity payment, *r*= the discount (interest) rate, and *n*= number of periods in which payments will be made.
 
 ## How Is Future Value Different From Present Value?
 

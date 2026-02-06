@@ -71,7 +71,7 @@ Some traders will watch for bearish divergences during long-term bullish trends 
 
 ## Example of Rapid Rises or Falls
 
-When MACD rises or falls rapidly (the shorter-term moving average pulls away from the longer-term moving average), it signals that the security is overbought or oversold and may soon [retrace](https://www.investopedia.com/terms/r/retracement.asp) to normal levels. Traders often combine this analysis with the RSI or other technical indicators to verify overbought or oversold conditions.
+When MACD rises or falls rapidly (the shorter-term moving average pulls away from the longer-term moving average), it signals that the security is overbought or oversold and may soon retrace to normal levels. Traders often combine this analysis with the RSI or other technical indicators to verify overbought or oversold conditions.
 
 It is not uncommon for investors to use the MACD’s histogram the same way they may use the MACD itself. Positive or negative crossovers, divergences, and rapid rises or falls can be identified on the histogram. Some experience is needed before deciding which is best in any given situation because there are timing differences between signals on the MACD and its histogram.
 

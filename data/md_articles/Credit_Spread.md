@@ -35,7 +35,7 @@ Investors, analysts, and policymakers closely monitor bond credit spreads since 
 
 ## Interpreting Bond Yield Spreads for Economic Health
 
-The yield spread between corporate bonds and 10-year Treasury bonds has long been considered a crucial indicator of economic conditions and investor sentiment. Yield spreads reflect the [risk premium](https://www.investopedia.com/terms/r/riskpremium.asp), or additional compensation, investors require for taking on the risk of corporate bonds over the relatively risk-free Treasurys.
+The yield spread between corporate bonds and 10-year Treasury bonds has long been considered a crucial indicator of economic conditions and investor sentiment. Yield spreads reflect the risk premium, or additional compensation, investors require for taking on the risk of corporate bonds over the relatively risk-free Treasurys.
 
 In typical economic conditions, the spread between high-quality corporate bonds (such as those rated AAA) and 10-year Treasurys typically ranges from 1% to 2%. For lower-quality corporate bonds (such as BBB-rated bonds), the spread is usually higher, ranging from 2% to 4% or more. These spreads provide greater insight into investor sentiment about the economy than many other economic indicators.
 
@@ -45,7 +45,7 @@ A narrow yield spread, close to 1%, suggests that investors are confident in the
 
 Meanwhile, a widening yield spread indicates increased concern about the economy. As investors become more risk-averse, they demand higher yields on corporate bonds to compensate for the perceived higher default risks (the weaker the broader economy is, the more companies are likely to struggle with meeting their obligations).
 
-As you can see from the chart below, widening spreads signal economic uncertainty, potential downturns, or significant crises, such as the bond yield spread spikes following the events of September 11, 2001, the [2007-2008 financial crisis](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#:~:text=Key%20Takeaways&text=In%20June%202007%2C%20two%20big,the%20biggest%20U.S.%20bankruptcy%20ever.), and the pandemic. These events were marked by considerable economic jitters, if not panic, affecting the bond markets and beyond. Conversely, yield spreads that move closer to and below 1.0% indicate greater confidence in the broader economy.
+As you can see from the chart below, widening spreads signal economic uncertainty, potential downturns, or significant crises, such as the bond yield spread spikes following the events of September 11, 2001, the 2007-2008 financial crisis, and the pandemic. These events were marked by considerable economic jitters, if not panic, affecting the bond markets and beyond. Conversely, yield spreads that move closer to and below 1.0% indicate greater confidence in the broader economy.
 
 ## Credit Spread Formula
 
@@ -63,7 +63,7 @@ Credit spreads are larger for riskier debts, such as those issued in emerging ma
 
 ## Calculating a Credit Spread Between Bonds and Treasurys
 
-A credit spread is the measure of the difference in yield between a Treasury and corporate bond of the same maturity. This is because bonds issued by the U.S. government are considered virtually [risk-free](https://www.investopedia.com/terms/r/riskfreeasset.asp). The spread thus reflects the added compensation investors require for assuming the higher default risk of corporate bonds compared with risk-free government bonds.
+A credit spread is the measure of the difference in yield between a Treasury and corporate bond of the same maturity. This is because bonds issued by the U.S. government are considered virtually risk-free. The spread thus reflects the added compensation investors require for assuming the higher default risk of corporate bonds compared with risk-free government bonds.
 
 The formula for calculating credit spread between bonds is as follows:
 

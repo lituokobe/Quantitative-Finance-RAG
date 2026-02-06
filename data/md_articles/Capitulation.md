@@ -16,7 +16,7 @@ In fact, the dramatic drop in market prices caused by capitulation can mark the 
 
 Capitulation typically follows a significant downturn in price even while many investors remain bullish on stocks. Hour by hour, the selling snowballs as more investors sell to avoid further losses. The result is steeper losses.
 
-The heavy trading volume is viewed as shaking out "[weak hands](https://www.investopedia.com/terms/w/weakhands.asp)"—the investors lacking conviction. They are replaced with more risk-tolerant investors who view the price declines as an opportunity.
+The heavy trading volume is viewed as shaking out "weak hands"—the investors lacking conviction. They are replaced with more risk-tolerant investors who view the price declines as an opportunity.
 
 Traders look for unusually high trading volume accompanying sharp price declines to signal capitulation. They try to anticipate the surest sign of a capitulation: the rebound in price that follows once the panic selling has run its course.
 
@@ -38,9 +38,9 @@ Bear markets can feature repeat high-volume plunges in price and premature calls
 
 ## Using Technical Analysis to Identify Capitulations
 
-Capitulations often signal major turning points in the price action of underlying securities and financial instruments. Technical analysts use [candlestick](https://www.investopedia.com/terms/c/candlestick.asp) charts to identify capitulation patterns. One such pattern is the [hammer candle](https://www.investopedia.com/terms/h/hammer.asp), which marks a trading session in which the price drops well below its opening level but reverses to regain much of the loss by the close. When accompanied by heavy volume, it suggests the decline reached a climax.
+Capitulations often signal major turning points in the price action of underlying securities and financial instruments. Technical analysts use candlestick charts to identify capitulation patterns. One such pattern is the hammer candle, which marks a trading session in which the price drops well below its opening level but reverses to regain much of the loss by the close. When accompanied by heavy volume, it suggests the decline reached a climax.
 
-Conversely, a [shooting star candle](https://www.investopedia.com/terms/s/shootingstar.asp) describing a session in which price rallies sharply but then reverses to close near opening level often forms at the end of a buying spree, indicating a top is in place.
+Conversely, a shooting star candle describing a session in which price rallies sharply but then reverses to close near opening level often forms at the end of a buying spree, indicating a top is in place.
 
 ## Example of Capitulation
 
@@ -52,15 +52,15 @@ However, the stock rebounded just as quickly, reaching \$208 over the next six w
 
 ## How Do Traders Identify Capitulation?
 
-Traders and analysts may observe a variety of sentiment and technical indicators, such as the [relative strength index](https://www.investopedia.com/terms/r/rsi.asp), [fibonacci ratios](https://www.investopedia.com/ask/answers/05/fibonacciretracement.asp), [candlestick patterns](https://www.investopedia.com/articles/active-trading/092315/5-most-powerful-candlestick-patterns.asp), and the [moving average convergence-divergence](https://www.investopedia.com/terms/m/macd.asp), to determine when the buy or sell pressure for a certain asset is close to exhaustion. However, none of these methods is faultless, and the only 100% accurate way to identify capitulation is in hindsight.
+Traders and analysts may observe a variety of sentiment and technical indicators, such as the relative strength index, fibonacci ratios, candlestick patterns, and the moving average convergence-divergence, to determine when the buy or sell pressure for a certain asset is close to exhaustion. However, none of these methods is faultless, and the only 100% accurate way to identify capitulation is in hindsight.
 
 ## How Long Does Capitulation Last?
 
-There's no set criteria for the length of a capitulation period, and some markets may take longer to recover than others. For example, the [Great Recession of 2008](https://www.investopedia.com/terms/g/great-recession.asp) lasted 18 months, but it took several years for the economy to recover completely.
+There's no set criteria for the length of a capitulation period, and some markets may take longer to recover than others. For example, the Great Recession of 2008 lasted 18 months, but it took several years for the economy to recover completely.
 
 ## Is Capitulation Good or Bad?
 
-Capitulation is neither good nor bad, but it can be profitable depending on an investor's position. Investors with a [long position](https://www.investopedia.com/terms/l/long.asp) stand to profit during a bullish capitulation as [short sellers](https://www.investopedia.com/terms/s/short.asp) close out their positions. During a bearish capitulation, speculators may have the chance to snatch up shares at a discount as other traders abandon their positions.
+Capitulation is neither good nor bad, but it can be profitable depending on an investor's position. Investors with a long position stand to profit during a bullish capitulation as short sellers close out their positions. During a bearish capitulation, speculators may have the chance to snatch up shares at a discount as other traders abandon their positions.
 
 ## The Bottom Line
 

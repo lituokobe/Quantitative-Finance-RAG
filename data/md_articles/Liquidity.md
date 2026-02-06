@@ -36,7 +36,7 @@ Investors, then, will not have to give up unrealized gains for a quick sale. Whe
 
 Accounting liquidity measures the ease with which an individual or company can meet their financial obligations with the liquid assets available to them—the ability to pay off debts as they come due.
 
-In the example above, the rare book collector’s assets are relatively illiquid and would probably not be worth their full value of \$1,000 in a pinch. In investment terms, assessing accounting liquidity means comparing liquid assets to [current liabilities](https://www.investopedia.com/terms/c/currentliabilities.asp), or financial obligations that come due within one year.
+In the example above, the rare book collector’s assets are relatively illiquid and would probably not be worth their full value of \$1,000 in a pinch. In investment terms, assessing accounting liquidity means comparing liquid assets to current liabilities, or financial obligations that come due within one year.
 
 There are several ratios that measure accounting liquidity, which differ in how strictly they define liquid assets. Analysts and investors use these to identify companies with strong liquidity. It is also considered a measure of depth.
 

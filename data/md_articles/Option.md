@@ -10,13 +10,13 @@
 
 ## What Are Options?
 
-Options are versatile [financial instruments](https://www.investopedia.com/terms/f/financialinstrument.asp) that derive their value from an underlying security, such as stocks, indexes, and exchange-traded funds (ETFs). Unlike futures contracts, options give buyers the right—but not the obligation—to buy or sell the underlying asset at a set price within a specific time frame. This flexibility allows investors to leverage positions without committing to purchase or sell, providing a strategic tool for speculation and hedging against market fluctuations.
+Options are versatile financial instruments that derive their value from an underlying security, such as stocks, indexes, and exchange-traded funds (ETFs). Unlike futures contracts, options give buyers the right—but not the obligation—to buy or sell the underlying asset at a set price within a specific time frame. This flexibility allows investors to leverage positions without committing to purchase or sell, providing a strategic tool for speculation and hedging against market fluctuations.
 
 Options are commonly traded through online platforms or retail brokers, with each contract having a predetermined expiration date that dictates when the options must be exercised.
 
 ## How Options Work
 
-Options are versatile financial products. These contracts involve a buyer and seller, where the buyer pays a premium for the rights granted by the contract. [Call options](https://www.investopedia.com/terms/c/call.asp) allow the holder to buy the asset at a stated price within a specific time frame. [Put options](https://www.investopedia.com/terms/p/put.asp), on the other hand, allow the holder to sell the asset at a stated price within a specific time frame. Each call option has a bullish buyer and a bearish seller, while put options have a bearish buyer and a bullish seller.
+Options are versatile financial products. These contracts involve a buyer and seller, where the buyer pays a premium for the rights granted by the contract. Call options allow the holder to buy the asset at a stated price within a specific time frame. Put options, on the other hand, allow the holder to sell the asset at a stated price within a specific time frame. Each call option has a bullish buyer and a bearish seller, while put options have a bearish buyer and a bullish seller.
 
 Traders and investors buy and sell options for several reasons. Options allow traders to leverage a position in an asset for less cost than buying the shares directly. Investors use options to hedge or reduce the risk exposure of their portfolios.
 
@@ -60,7 +60,7 @@ The difference between American and European options is about early exercise, no
 
 ## Key Considerations for Trading Options
 
-Each options contract usually represents 100 shares of the underlying asset. The buyer pays a premium fee for each contract. For example, if an option has a premium of 35 cents per contract, buying one option costs \$35 (\$0.35 x 100). The premium is partially based on the strike price.
+Each options contract usually represents 100 shares of the underlying asset. The buyer pays a premium fee for each contract. For example, if an option has a premium of 35 cents per contract, buying one option costs \$35 (\$0.35 * 100). The premium is partially based on the strike price.
 
 Another factor in the premium price is the expiration date. Just like with that carton of milk in the refrigerator, the expiration date indicates the day the option contract must be used. The underlying asset influences the use-by date, and some options will expire daily, weekly, monthly, and even quarterly. For monthly contracts, it's usually the third Friday.
 
@@ -104,7 +104,7 @@ Options traders may opt to not only hedge delta but also gamma in order to be de
 
 ### Vega
 
-[Vega](https://www.investopedia.com/terms/v/vega.asp) (V) represents the rate of change between an option's value and the underlying asset's IV. This is the option's sensitivity to volatility. Vega indicates the amount an option's price changes given a 1% change in IV. For example, an option with a vega of 0.10 indicates the option's value is expected to change by 10 cents if the IV changes by 1%.
+Vega (V) represents the rate of change between an option's value and the underlying asset's IV. This is the option's sensitivity to volatility. Vega indicates the amount an option's price changes given a 1% change in IV. For example, an option with a vega of 0.10 indicates the option's value is expected to change by 10 cents if the IV changes by 1%.
 
 Because increased volatility implies that the underlying instrument is more likely to experience extreme values, a rise in volatility correspondingly increases the value of an option. Conversely, a decrease in volatility negatively affects the value of the option. Vega is at its maximum for ATM options that have longer times until expiration.
 
@@ -112,7 +112,7 @@ Those familiar with the Greek alphabet will point out that there's no actual Gre
 
 ### Rho
 
-[Rho](https://www.investopedia.com/terms/r/rho.asp) (p) represents the rate of change between an option's value and a 1% change in the interest rate. This measures sensitivity to the interest rate. For example, assume a call option has a rho of 0.05 and a price of \$1.25. If interest rates rise by 1%, the value of the call option would increase to \$1.30, all else being equal. The opposite is true for put options. Rho is greatest for ATM options with long times until expiration.
+Rho (p) represents the rate of change between an option's value and a 1% change in the interest rate. This measures sensitivity to the interest rate. For example, assume a call option has a rho of 0.05 and a price of \$1.25. If interest rates rise by 1%, the value of the call option would increase to \$1.30, all else being equal. The opposite is true for put options. Rho is greatest for ATM options with long times until expiration.
 
 ### Minor Greeks
 
@@ -178,11 +178,11 @@ An investor may write put options at a strike price where they see the shares be
 
 ## Example of an Option
 
-Suppose that Microsoft (MFST) shares trade at \$508 per share and you believe they'll increase in value. You decide to buy a call option to benefit from an increase in the stock's price. You purchase one call option with a strike price of \$515 for one month in the future for 37 cents per contract. Your total cash outlay is \$37 for the position plus fees and commissions (0.37 x 100 = \$37).
+Suppose that Microsoft (MFST) shares trade at \$508 per share and you believe they'll increase in value. You decide to buy a call option to benefit from an increase in the stock's price. You purchase one call option with a strike price of \$515 for one month in the future for 37 cents per contract. Your total cash outlay is \$37 for the position plus fees and commissions (0.37 * 100 = \$37).
 
 If the stock rises to \$516, your option will be worth \$1, as you could exercise the option to acquire the stock for \$515 per share and immediately resell it for \$516 per share. The profit on the option position would be 170.3% since you paid 37 cents and earned \$1—that's much higher than the 7.4% increase in the underlying stock price from \$508 to \$516 at the time of expiry.
 
-In other words, the profit in dollar terms would be a net of 63 cents, or \$63, as one option contract represents 100 shares [(\$1 - 0.37) x 100].
+In other words, the profit in dollar terms would be a net of 63 cents, or \$63, as one option contract represents 100 shares [(\$1 - 0.37) * 100].
 
 If the stock fell to \$500, your option would expire worthless, and you would be out \$37 in premium. The upside is that you didn't buy 100 shares at \$508, which would have resulted in an \$8 per share, or \$800, total loss. As you can see, options can help limit your downside risk.
 

@@ -49,7 +49,7 @@ This formula is useful because it takes into account fluctuations in the economy
 
 For example, say the risk-free rate of return is 1.5% and the company’s credit spread is 3%. Its pretax cost of debt is 4.5%. If its tax rate is 30%, then the after-tax cost of debt is 3.15%. We can calculate this in the following way:
 
-**[ ( 0.015 + 0.03 ) x ( 1 - 0.3 ) ]**
+**[ ( 0.015 + 0.03 ) * ( 1 - 0.3 ) ]**
 
 #### Before-Tax Cost of Debt
 

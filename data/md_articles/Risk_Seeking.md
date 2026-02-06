@@ -33,7 +33,7 @@ The amount lost in U.S. household net wealth from 2007 to the first quarter of 2
 
 ## Risk-Seeking vs. Risk-Averse
 
-Risk tolerance is an important concept for investors and refers to the degree to which an investor is willing to accept risk for the potential of a higher return. [Risk-averse](https://www.investopedia.com/terms/r/riskaverse.asp) investors opt for low-risk investments and are willing to accept a lower rate of return because of the desire to preserve capital.
+Risk tolerance is an important concept for investors and refers to the degree to which an investor is willing to accept risk for the potential of a higher return. Risk-averse investors opt for low-risk investments and are willing to accept a lower rate of return because of the desire to preserve capital.
 
 Financial advisors endowed with common sense counsel their clients to minimize risk-seeking behavior with respect to their investments. In many cases, particularly for younger individuals, risk-seeking is part of an overall investment strategy, as risk assets can provide a boost to total portfolio returns.
 
@@ -47,4 +47,4 @@ One strategy is to create a concentrated portfolio focused only on investing in 
 
 Another strategy for a high-risk portfolio is momentum investing. This method relies upon working with volatility and seeking investments that are already trending up. The momentum investor is not looking for a long-term investment but instead wants to capture short-term gains and sell the investment as soon as momentum wanes. Several timing risks exist with this strategy, such as getting into a position too early or closing out too late to achieve the best gains.
 
-Other strategies for building a high-risk portfolio include investing in currencies, options, or futures. Each of these asset types uses the power of [leverage](https://www.investopedia.com/terms/l/leverage.asp), which enables investors to multiply their buying power in the market. To be successful in these strategies requires investors to be well-educated in trade execution and research. Investors need to monitor these investments closely, be able to stomach fast-paced trading scenarios, and be able to develop an exit strategy to preserve capital and gains.
+Other strategies for building a high-risk portfolio include investing in currencies, options, or futures. Each of these asset types uses the power of leverage, which enables investors to multiply their buying power in the market. To be successful in these strategies requires investors to be well-educated in trade execution and research. Investors need to monitor these investments closely, be able to stomach fast-paced trading scenarios, and be able to develop an exit strategy to preserve capital and gains.

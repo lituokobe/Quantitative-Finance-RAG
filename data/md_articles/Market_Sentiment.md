@@ -16,7 +16,7 @@ In broad terms, rising prices reveal bullish market sentiment, while falling pri
 
 Market sentiment, sometimes called investor sentiment, does not correlate to fundamental changes in the market. Day traders and technical analysts rely on measurements of market sentiment since it influences the indicators used to measure and profit from short-term price moves caused by the crowd psychology of active investors.
 
-Market sentiment is also important for contrarian investors who trade in the opposite direction of the prevailing consensus. For example, if everyone is buying a stock, a [contrarian](https://www.investopedia.com/terms/c/contrarian.asp) would sell it in order to profit from the move upwards.
+Market sentiment is also important for contrarian investors who trade in the opposite direction of the prevailing consensus. For example, if everyone is buying a stock, a contrarian would sell it in order to profit from the move upwards.
 
 Market sentiment is often described as either bearish or bullish. When sentiment is bearish, prices drop. When it's bullish, prices rise.
 
@@ -26,17 +26,17 @@ Market sentiment demonstrates broad concerns, expectations, and emotions about t
 
 ## Key Market Sentiment Indicators Explained
 
-Many investors profit by buying stocks misvalued because of market sentiment. They use several indicators to measure market sentiment to help them determine the best stocks to trade, including the CBOE Volatility Index [(VIX)](https://www.investopedia.com/terms/v/vix.asp), the high-low index, the bullish percent index (BPI), and moving averages.
+Many investors profit by buying stocks misvalued because of market sentiment. They use several indicators to measure market sentiment to help them determine the best stocks to trade, including the CBOE Volatility Index (VIX), the high-low index, the bullish percent index (BPI), and moving averages.
 
 ### Understanding the VIX: The Fear Index
 
-The VIX, also known as the fear index, is driven by [option prices](https://www.investopedia.com/ask/answers/062415/how-does-implied-volatility-impact-pricing-options.asp). A crucial tool for traders, the VIX indicates the expected volatility of the S&P 500 index.
+The VIX, also known as the fear index, is driven by option prices. A crucial tool for traders, the VIX indicates the expected volatility of the S&P 500 index.
 
 High VIX levels can signal heightened worries, potentially a signal of a market bottom. A low VIX can suggest market complacency and is seen as a clue that a market may have peaked.
 
 ### How the High-Low Index Reveals Market Mood
 
-The high-low index compares the number of stocks that have reached [52-week highs](https://www.investopedia.com/terms/1/52weekhighlow.asp) to the number of stocks that are at 52-week lows.
+The high-low index compares the number of stocks that have reached 52-week highs to the number of stocks that are at 52-week lows.
 
 When the index is below 30, stock prices are trading near their lows, and investors have a bearish market sentiment. When the index is above 70, stock prices are trading near their highs, and investors are bullish.
 
@@ -54,9 +54,9 @@ When it measures 30% or below, market sentiment is negative, indicating an overs
 
 Investors typically use the 50-day moving average (MA) and 200-day MA when determining a market’s sentiment.
 
-When the 50-day MA crosses the 200-day MA from below it is called the “[golden cross](https://www.investopedia.com/terms/g/goldencross.asp)." This indicates that momentum has shifted to the upside, creating bullish sentiment.
+When the 50-day MA crosses the 200-day MA from below it is called the “golden cross." This indicates that momentum has shifted to the upside, creating bullish sentiment.
 
-When the 50-day MA crosses below the 200-day MA, this is called the “[death cross](https://www.investopedia.com/terms/d/deathcross.asp)." It suggests lower prices and bearish sentiment.
+When the 50-day MA crosses below the 200-day MA, this is called the “death cross." It suggests lower prices and bearish sentiment.
 
 ## Limitations of Relying on Market Sentiment Alone
 
@@ -72,7 +72,7 @@ It's important to keep in mind that market sentiment is like a sprinter in short
 
 An****uncertain economic outlook often leads to wild swings in the stock market between bullish and bearish sentiments. We can use an example from the early 2020s. As you can see in the chart below, fear picked up among equity investors at various points throughout 2022, leading to intraday volatility in the S&P 500 not seen since the Great Recession of 2008.
 
-High inflation and the response of central banks were likely to blame. In the traditional [economic cycle](https://www.investopedia.com/terms/e/economic-cycle.asp), when interest rates start rising significantly, it’s only a matter of time before the impact of higher borrowing costs causes a recession.
+High inflation and the response of central banks were likely to blame. In the traditional economic cycle, when interest rates start rising significantly, it’s only a matter of time before the impact of higher borrowing costs causes a recession.
 
 Many investors grew alarmed that the economy was about to crash and started selling. However, a handful of others sought to capitalize on these jitters, thinking a recession would be averted. Gradually, the economic doom and gloom subsided.
 

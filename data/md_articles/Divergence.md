@@ -14,7 +14,7 @@ Traders monitor divergences because they can provide early warnings that market 
 
 ## Understanding Divergence
 
-Divergence highlights a discrepancy between prices and an indicator. Under normal market conditions, a rising price typically coincides with increasing momentum (and similarly, a falling price with decreasing momentum). Indicators like the relative strength index ([RSI](https://www.investopedia.com/terms/r/rsi.asp)) may fail to hit a new high as price rises.
+Divergence highlights a discrepancy between prices and an indicator. Under normal market conditions, a rising price typically coincides with increasing momentum (and similarly, a falling price with decreasing momentum). Indicators like the relative strength index (RSI) may fail to hit a new high as price rises.
 
 This variance suggests the prevailing trend could be weakening. Divergence is often considered a leading signal that a trend shift might be coming since changes in momentum usually precede shifts in price.
 

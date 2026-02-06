@@ -92,9 +92,9 @@ This circumstance is referred to as a fund's capital gains exposure. When distri
 
 ## Example of Capital Gains
 
-Here's a hypothetical example to show how capital gains work and how they're taxed. Let's say an individual purchased 100 shares of Amazon (AMZN) stock on Jan. 30, 2020 at \$350 per share. They then decided to sell all the shares on Jan. 30, 2024 at \$833 each. Assuming there were no fees associated with the sale, they realized a capital gain of \$48,300: (\$833 x 100) - (\$350 x 100).
+Here's a hypothetical example to show how capital gains work and how they're taxed. Let's say an individual purchased 100 shares of Amazon (AMZN) stock on Jan. 30, 2020 at \$350 per share. They then decided to sell all the shares on Jan. 30, 2024 at \$833 each. Assuming there were no fees associated with the sale, they realized a capital gain of \$48,300: (\$833 * 100) - (\$350 * 100).
 
-This individual is single and has taxable income of \$80,000 per year, which puts him in an income group that qualifies for a long-term capital gains tax rate of 15%. They would therefore owe \$7,245 in tax (\$48,300 x 0.15) for this long-term capital gain.
+This individual is single and has taxable income of \$80,000 per year, which puts him in an income group that qualifies for a long-term capital gains tax rate of 15%. They would therefore owe \$7,245 in tax (\$48,300 * 0.15) for this long-term capital gain.
 
 ## What Qualifies As a Capital Gain?
 

@@ -130,7 +130,7 @@ Market makers facilitate a smooth flow of market activity by making it easier fo
 
 ## Example of a Market Maker
 
-Let's say there's a market maker in XYZ stock. They may provide a quote of \$10.00 - \$10.05 or 100 x 500. This means that they bid (they will buy) 100 shares at \$10.00. They'll also offer (they will sell) 500 shares at \$10.05. Other market participants may then buy (lift the offer) from the market maker at \$10.05 or sell to them (hit the bid) at \$10.00.
+Let's say there's a market maker in XYZ stock. They may provide a quote of \$10.00 - \$10.05 or 100 * 500. This means that they bid (they will buy) 100 shares at \$10.00. They'll also offer (they will sell) 500 shares at \$10.05. Other market participants may then buy (lift the offer) from the market maker at \$10.05 or sell to them (hit the bid) at \$10.00.
 
 ## What's the Role of a Market Maker?
 

@@ -67,9 +67,9 @@ A stock dividend is considered small if the shares issued are less than 25% of t
 
 Suppose Company X declares a 10% stock dividend on its 500,000 shares of common stock. Its common stock has a par value of \$1 per share and a market price of \$5 per share.
 
-When the small stock dividend is declared, the market price of \$5 per share is used to assign the value to the dividend as \$250,000 — calculated by multiplying 500,000 x 10% x \$5.
+When the small stock dividend is declared, the market price of \$5 per share is used to assign the value to the dividend as \$250,000 — calculated by multiplying 500,000 * 10% * \$5.
 
-The common stock dividend distributable is \$50,000 — calculated by multiplying 500,000 x 10% x \$1 — since the common stock has a par value of \$1 per share.
+The common stock dividend distributable is \$50,000 — calculated by multiplying 500,000 * 10% * \$1 — since the common stock has a par value of \$1 per share.
 
 | Account                                   | Debit    | Credit   |
 |-------------------------------------------|----------|----------|
@@ -86,7 +86,7 @@ When the company distributes the stock dividend, it can make the journal entry:
 
 ### Accounting for Large Stock Dividends
 
-Large stock dividends occur when the new shares issued are more than 25% of the value of the total shares outstanding before the dividend. In this case, the journal entry transfers the [par value](https://www.investopedia.com/terms/p/parvalue.asp) of the issued shares from retained earnings to paid-in capital.
+Large stock dividends occur when the new shares issued are more than 25% of the value of the total shares outstanding before the dividend. In this case, the journal entry transfers the par value of the issued shares from retained earnings to paid-in capital.
 
 If Company X declares a 30% stock dividend, it's valued at \$1 per share and considered large.
 

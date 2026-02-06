@@ -8,7 +8,7 @@ The ask is the price a seller is willing to accept for a security, which is ofte
 
 The terms "bid" and "ask" are used in nearly every financial market in the world, including stocks, bonds, foreign exchange, and derivatives.
 
-An example of an ask in the stock market is \$5.24 x 1,000, which means that someone is offering to sell 1,000 shares for \$5.24 per share.
+An example of an ask in the stock market is \$5.24 * 1,000, which means that someone is offering to sell 1,000 shares for \$5.24 per share.
 
 ### Key Takeaways
 

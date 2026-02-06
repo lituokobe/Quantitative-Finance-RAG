@@ -22,17 +22,17 @@ The hurdle rate balances the need for profit with the risks and costs involved. 
 
 When determining the hurdle rate, several key factors are taken into account:
 
-- Risk premium: This part of the hurdle rate accounts for the level of risk associated with the investment. Higher-risk projects typically demand higher risk premiums, reflecting the extra returns investors require to compensate for the increased risk. The risk premium is often calculated based on the industry, market volatility, and the specific risks of the project.
-- Inflation rate: Inflation can erode the value of returns over time. The expected inflation rate during the investment period should be considered when setting the hurdle rate. Including the inflation rate ensures that the return on the investment exceeds the nominal cost of capital and keeps pace with the rising cost of goods and services.
-- Interest rate: Interest rates, often reflected in the cost of debt, are another critical part, representing the cost of borrowing money. For investments funded through debt, the interest rate on the borrowed capital forms a baseline for the hurdle rate since the investment must generate enough return to cover this cost.
-- Cost of capital: This is broader, comprising equity and debt financing costs. The cost of capital reflects the return that equity owners and lenders expect on the funds they spend. Calculating the cost of capital often involves weighing the cost of debt (with the interest rate) and the cost of equity, which can be trickier to estimate and usually includes the risk premium.
-- Expected rate of return: The hurdle rate must be above the overall return expected from the investment. If the projected return on investment (ROI) is below the hurdle rate, it may be deemed too risky or not profitable enough to pursue.
+- **Risk premium:** This part of the hurdle rate accounts for the level of risk associated with the investment. Higher-risk projects typically demand higher risk premiums, reflecting the extra returns investors require to compensate for the increased risk. The risk premium is often calculated based on the industry, market volatility, and the specific risks of the project.
+- **Inflation rate:** Inflation can erode the value of returns over time. The expected inflation rate during the investment period should be considered when setting the hurdle rate. Including the inflation rate ensures that the return on the investment exceeds the nominal cost of capital and keeps pace with the rising cost of goods and services.
+- **Interest rate:** Interest rates, often reflected in the cost of debt, are another critical part, representing the cost of borrowing money. For investments funded through debt, the interest rate on the borrowed capital forms a baseline for the hurdle rate since the investment must generate enough return to cover this cost.
+- **Cost of capital:** This is broader, comprising equity and debt financing costs. The cost of capital reflects the return that equity owners and lenders expect on the funds they spend. Calculating the cost of capital often involves weighing the cost of debt (with the interest rate) and the cost of equity, which can be trickier to estimate and usually includes the risk premium.
+- **Expected rate of return:** The hurdle rate must be above the overall return expected from the investment. If the projected return on investment (ROI) is below the hurdle rate, it may be deemed too risky or not profitable enough to pursue.
 
 ## Understanding the Implications of the Hurdle Rate
 
 Hurdle rates are important, especially when calculating the potential success of future endeavors and projects. Companies determine whether they will take on a capital project based on its risk level.
 
-If an expected rate of return is above the hurdle rate, the investment is considered sound. If the rate of return falls below the hurdle rate, management may choose not to move forward. A hurdle rate is also called the [break-even yield](https://www.investopedia.com/ask/answers/042415/what-relationship-between-hurdle-rate-marr-and-internal-rate-return-irr.asp).
+If an expected rate of return is above the hurdle rate, the investment is considered sound. If the rate of return falls below the hurdle rate, management may choose not to move forward. A hurdle rate is also called the break-even yield.
 
 ## Practical Applications of the Hurdle Rate or Investors and Businesses
 
@@ -40,7 +40,7 @@ Investors and businesses use hurdle rates to evaluate an investment or project's
 
 ### Investing
 
-Investors look at the [risk premium](https://www.investopedia.com/ask/answers/061815/what-difference-between-market-risk-premium-and-equity-risk-premium.asp) for a potential investment since it captures the anticipated amount of risk involved. The higher the risk, the higher the risk premium should be. Risk premiums are typically added to the WACC for a more realistic hurdle rate.
+Investors look at the risk premium for a potential investment since it captures the anticipated amount of risk involved. The higher the risk, the higher the risk premium should be. Risk premiums are typically added to the WACC for a more realistic hurdle rate.
 
 Using a hurdle rate to determine an investment's potential helps to take our feelings or preferences for it out of the equation. By assigning a realistic risk factor, an investor can use the hurdle rate to assess whether the project has financial merit despite its intrinsic value.
 
@@ -48,7 +48,7 @@ Using a hurdle rate to determine an investment's potential helps to take our fee
 
 When businesses assess future projects, they often begin with the WACC, which conveys the average rate a company is expected to pay to finance its assets, accounting for its equity and debt. The WACC is calculated by weighing the cost of each capital component (equity, preferred stock, and debt) according to its proportion in the overall capital structure. In practical terms, WACC is a benchmark that presents the minimum return a company must generate on its projects to satisfy its shareholders and debt holders. When a company evaluates new projects, using WACC plus the risk premium ensures that these initiatives are expected to yield returns at least equal to the company’s current cost of capital plus the risk premium. This aligns management decisions with the expectations of investors.
 
-Companies can use the net present value (NPV) approach as part of their assessment. NPV involves calculating the difference between the present value of cash inflows and outflows over the project’s life span. Future cash flows are estimated and then [discounted](https://www.investopedia.com/terms/d/dcf.asp) to their present value using a discount rate, typically the hurdle rate, which is often the WACC. The NPV is the sum of these discounted cash flows minus the costs for the initial investment cost. If the NPV is positive, the projected earnings (discounted to present value) are higher than the expected costs, suggesting the project is likely profitable.
+Companies can use the net present value (NPV) approach as part of their assessment. NPV involves calculating the difference between the present value of cash inflows and outflows over the project’s life span. Future cash flows are estimated and then discounted to their present value using a discount rate, typically the hurdle rate, which is often the WACC. The NPV is the sum of these discounted cash flows minus the costs for the initial investment cost. If the NPV is positive, the projected earnings (discounted to present value) are higher than the expected costs, suggesting the project is likely profitable.
 
 There is also a method that uses the internal rate of return (IRR), the discount rate that makes the NPV of all cash flows from a project equal to zero. Essentially, it represents the break-even rate of return expected from the project. Thus, a project is usually considered viable if its IRR is greater than the hurdle rate, which is often set as the WACC. The IRR method is handy for comparing the profitability of different investment opportunities, providing a rate of return perspective that complements the absolute value approach of NPV.
 
@@ -56,7 +56,7 @@ There is also a method that uses the internal rate of return (IRR), the discount
 
 ### An Example Assessing a Potential Capital Project
 
-Since the hurdle rate is the lowest return a company expects from an investment to justify the risk, we can use the [WACC](https://www.investopedia.com/terms/w/wacc.asp) to help calculate this rate. The WACC reflects the average rate of return a company must earn on its investments to satisfy its shareholders and debt holders. Let's say you manage a company evaluating investing in sophisticated manufacturing equipment. Your engineers estimate the new equipment could result in a 20% increase in production efficiency, that is, an ROI of 20%.
+Since the hurdle rate is the lowest return a company expects from an investment to justify the risk, we can use the WACC to help calculate this rate. The WACC reflects the average rate of return a company must earn on its investments to satisfy its shareholders and debt holders. Let's say you manage a company evaluating investing in sophisticated manufacturing equipment. Your engineers estimate the new equipment could result in a 20% increase in production efficiency, that is, an ROI of 20%.
 
 Here is the standard formula for the hurdle rate for companies weighing an investment:
 
@@ -72,14 +72,21 @@ A simplified WACC calculation makes this quicker and easier. You just need the f
 
 Suppose this is the financial data for your firm:
 
-- Common stock: $11,500,000 (60% of total capital), with an expected return of 11%.
-- Preferred stock: $1,500,000 (8% of total capital), costing 7%.
-- Debt: $6,250,000 (32% of total capital), with an interest rate of 5%.
-- Total capital: $19,250,000.
+- Common stock: \$11,500,000 (60% of total capital), with an expected return of 11%.
+- Preferred stock: \$1,500,000 (8% of total capital), costing 7%.
+- Debt: \$6,250,000 (32% of total capital), with an interest rate of 5%.
+- Total capital: \$19,250,000.
 
 To arrive at the table below, we determine the proportional weight of the firm's capital components (common stock, preferred stock, and debt). First, we calculate the weighted cost of each. Then, we multiply each component's cost or return rate by its proportional weight in the total capital structure. Finally, we total up these weighted percentages:
 
-- WACC = (0.60 X 11%) + (0.08 X 7%) + (0.32 X 5%) = 8.76%
+- WACC = (0.60 * 11%) + (0.08 * 7%) + (0.32 * 5%) = 8.76%
+
+| Capital Component | Outstanding Amount | % Weight |   Interest Rate | Weighted Cost of Capital |
+|-------------------|-------------------:|---------:|----------------:|-------------------------:|
+| Common stock      | \$11,500,000       | 60%      |             11% |                     6.6% |
+| Preferred stock   | \$1,500,000        | 8%       |              7% |                    0.56% |
+| Debt              | \$6,250,000        | 32%      | 5%              |                     1.6% |
+|                   |                    |          | **Total WACC:** |  **8.76%**               |
 
 We now need the other element in the equation for the hurdle rate, namely the risk premium.
 
@@ -97,11 +104,11 @@ Like other investment decision-making tools, the hurdle rate is only an estimate
 
 ### An Example from Private Equity
 
-In [private equity](https://www.investopedia.com/terms/p/privateequity.asp), the hurdle rate has a slightly different meaning, referring to the minimum rate of return a fund has to achieve before the general partners (GPs) or managers start receiving a share of the profits, known as carried interest. It acts as a performance threshold that ensures limited partners (LPs) get a certain return on their investment before the general partners receive theirs. Hurdle rates in private equity typically range from 7% to 8% but can vary based on the fund's strategy and the agreement between LPs and GPs. Only after reaching the hurdle rate do GPs start receiving their share of the profits, often about 20% of the fund's returns above the hurdle rate.
+In private equity, the hurdle rate has a slightly different meaning, referring to the minimum rate of return a fund has to achieve before the general partners (GPs) or managers start receiving a share of the profits, known as carried interest. It acts as a performance threshold that ensures limited partners (LPs) get a certain return on their investment before the general partners receive theirs. Hurdle rates in private equity typically range from 7% to 8% but can vary based on the fund's strategy and the agreement between LPs and GPs. Only after reaching the hurdle rate do GPs start receiving their share of the profits, often about 20% of the fund's returns above the hurdle rate.
 
 Suppose a private equity fund has the following details:
 
-- Fund size: $100 million.
+- Fund size: \$100 million.
 - Hurdle rate: 8% a year.
 - Carried interest: 20% for the GPs.
 
@@ -111,7 +118,7 @@ There are variations in hurdle rate structures. Some private equity funds employ
 
 ## Recognizing the Limitations of the Hurdle Rate
 
-People tend to favor projects with high percentage returns, even if their dollar value is less. Imagine project A offers a 20% return with $10 profit, and project B offers a 10% return with $20 profit. Project A would be more likely chosen because it has a higher rate of return, even though it returns less in terms of overall dollar value.
+People tend to favor projects with high percentage returns, even if their dollar value is less. Imagine project A offers a 20% return with \$10 profit, and project B offers a 10% return with \$20 profit. Project A would be more likely chosen because it has a higher rate of return, even though it returns less in terms of overall dollar value.
 
 In addition, choosing a risk premium is difficult since it's not guaranteed. A project or investment may return more or less than expected. If the hurdle rate is chosen incorrectly, it can result in a flawed use of funds or missed opportunities.
 
@@ -123,9 +130,20 @@ The hurdle rate is essentially the minimum acceptable return on an investment. I
 
 The IRR, however, is the rate at which the net present value (NPV) of all the cash flows (both positive and negative) from a project or investment equals zero. It is used to estimate the profitability of potential investments. A higher IRR indicates a more profitable investment. Unlike the hurdle rate, the IRR is calculated based on the expected cash flows from the project.
 
+### Hurdle Rate vs. IRR
+
+| Factor                   | Hurdle Rate                                                                              | Internal Rate of Return (IRR)                                                                           |
+|--------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| Definition               | Minimum return required from an investment                                               | Rate of return at which the NPV of cash flows is zero                                                   |
+| Purpose                  | Used as a benchmark to assess whether an investment should be undertaken                 | Used to estimate the profitability of an investment                                                     |
+| Calculation              | Predetermined, often set at the WACC plus the risk premium                               | Calculated based on the project's expected cash flows                                                   |
+| Decision Criterion       | If the expected ROI is greater than the hurdle rate, the investment is usually supported | If the IRR is greater than the hurdle rate, the investment is considered favorable                      |
+| Adjustment for Risk      | Can be adjusted to account for project-specific risks                                    | It does not directly adjust for risk but a higher IRR is typically seen as compensating for higher risk |
+| Use in Capital Budgeting | Fundamental in deciding whether to proceed with a project                                | Helpful in comparing the profitability of different projects                                            |
+
 ## How Is the Hurdle Rate Used in Mergers and Acquisitions?
 
-In mergers and acquisitions, the hurdle rate plays a crucial role in evaluating the potential value of the acquisition. It's used as a benchmark to assess if the anticipated efficiencies and the growth prospects from the merger or acquisition justify the investment. A deal is generally pursued only if the [expected return is greater than the hurdle rate](https://www.investopedia.com/ask/answers/020415/what-difference-between-cost-capital-and-required-return.asp) so that it aligns with the acquiring company's risk tolerance and return expectations.
+In mergers and acquisitions, the hurdle rate plays a crucial role in evaluating the potential value of the acquisition. It's used as a benchmark to assess if the anticipated efficiencies and the growth prospects from the merger or acquisition justify the investment. A deal is generally pursued only if the expected return is greater than the hurdle rate so that it aligns with the acquiring company's risk tolerance and return expectations.
 
 ## Can the Hurdle Rate Vary Within a Company?
 
@@ -140,4 +158,3 @@ External economic factors such as interest rates, inflation, and market volatili
 A hurdle rate is the minimum acceptable rate of return that a company or investor requires from an investment or project to proceed with it. Hurdle rates are generally set by adding a risk premium to the project's weighted average cost of capital, discounted cash flow, and net present value calculations. Higher rates are assigned to riskier projects, and lower rates are assigned to projects with more moderate risks.
 
 While hurdle rates are commonly used to evaluate projects and investments, caution should be exercised so that those with higher-percentage returns are not favored over those with higher overall dollar value contributions. Additionally, hurdle rates are subject to human biases, assumptions, and estimations, so investments should be regularly reassessed for viability.
-

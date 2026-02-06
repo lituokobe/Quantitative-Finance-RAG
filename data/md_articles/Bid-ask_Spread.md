@@ -117,7 +117,7 @@ Conversely, a bid-ask spread may be wide because a security is unpopular on a gi
 
 ## What Is an Example of a Bid-Ask Spread in Stocks?
 
-Consider the following example where a trader is looking to purchase 100 shares of Apple for \$50. The trader sees that 100 shares are offered at \$50.05. The spread would be \$50.05 - \$50.00, or \$0.05. While this spread may seem small or insignificant, on large trades, it can be meaningful financially. That's why narrow spreads are typically more ideal. The total value of the bid-ask spread, in this instance, would be equal to 100 shares x \$0.05, or \$5.
+Consider the following example where a trader is looking to purchase 100 shares of Apple for \$50. The trader sees that 100 shares are offered at \$50.05. The spread would be \$50.05 - \$50.00, or \$0.05. While this spread may seem small or insignificant, on large trades, it can be meaningful financially. That's why narrow spreads are typically more ideal. The total value of the bid-ask spread, in this instance, would be equal to 100 shares * \$0.05, or \$5.
 
 ## The Bottom Line
 

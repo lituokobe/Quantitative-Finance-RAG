@@ -2,11 +2,11 @@
 
 ## What Is a Strike Price?
 
-[Options contracts](https://www.investopedia.com/terms/o/option.asp) give investors the right, but not the obligation, to buy or sell an [underlying security](https://www.investopedia.com/terms/u/underlying-security.asp) in the future at a predetermined price known as the strike price or [exercise price](https://www.investopedia.com/terms/e/exerciseprice.asp). This article explores the concept of strike prices, highlighting their importance in determining an option's value and "moneyness."
+Options contracts give investors the right, but not the obligation, to buy or sell an underlying security in the future at a predetermined price known as the strike price or exercise price. This article explores the concept of strike prices, highlighting their importance in determining an option's value and "moneyness."
 
-For [call options](https://www.investopedia.com/terms/c/calloption.asp), the strike price represents the price at which the underlying security can be bought, while for [put options](https://www.investopedia.com/terms/p/putoption.asp), it is the price at which the security can be sold. The value of an option is greatly influenced by the difference between its strike price and the current market price of the underlying security.
+For call options, the strike price represents the price at which the underlying security can be bought, while for put options, it is the price at which the security can be sold. The value of an option is greatly influenced by the difference between its strike price and the current market price of the underlying security.
 
-When the strike price is strategically positioned below the market price for calls or above the market price for puts, the option is considered [in-the-money](https://www.investopedia.com/terms/i/inthemoney.asp) (ITM), granting it [intrinsic value](https://www.investopedia.com/terms/i/intrinsicvalue.asp) by enabling immediate profit opportunities. Conversely, out-of-the-money (OTM) options, which have strike prices above the market for calls or below for puts, do not hold intrinsic value but carry extrinsic or [time value](https://www.investopedia.com/terms/t/timevalue.asp).
+When the strike price is strategically positioned below the market price for calls or above the market price for puts, the option is considered in-the-money (ITM), granting it intrinsic value by enabling immediate profit opportunities. Conversely, out-of-the-money (OTM) options, which have strike prices above the market for calls or below for puts, do not hold intrinsic value but carry extrinsic or time value.
 
 ### Key Takeaways
 
@@ -22,9 +22,9 @@ The strike price is a key variable of call and put options. It defines at which 
 
 Say that a stock is trading at \$100 per share. The \$110-strike call option would give the holder the right to buy the stock at \$110 on or before the date when the contract expires. The option would lose value if the stock falls in value as the underlying stock increases in price.
 
-But [the call will expire worthless](https://www.investopedia.com/terms/m/maxpain.asp) if it never reaches \$110 before the expiration date because you could buy the stock for less. You could still exercise the option to pay \$110 If the stock did rise above \$110, even though the market price is higher. Put options would work similarly but give you the right to sell rather than buy the underlying security.
+But the call will expire worthless if it never reaches \$110 before the expiration date because you could buy the stock for less. You could still exercise the option to pay \$110 If the stock did rise above \$110, even though the market price is higher. Put options would work similarly but give you the right to sell rather than buy the underlying security.
 
-The strike prices listed are also standardized. They're at fixed dollar amounts, such as \$31, \$32, \$33, \$100, or \$105. They may also have \$2.50 intervals, such as \$12.50, \$15.00, and \$17.50. The distance between strikes is known as the [strike width](https://www.investopedia.com/terms/s/strike-width.asp). Strike prices and widths are set by the options exchanges.
+The strike prices listed are also standardized. They're at fixed dollar amounts, such as \$31, \$32, \$33, \$100, or \$105. They may also have \$2.50 intervals, such as \$12.50, \$15.00, and \$17.50. The distance between strikes is known as the strike width. Strike prices and widths are set by the options exchanges.
 
 ### Important
 
@@ -32,7 +32,7 @@ Strikes \$1 apart are generally the tightest available on most stocks. You may h
 
 ## Strike Prices vs. Market Prices: Their Impact on Options
 
-The price of an options contract is known as its [premium](https://www.investopedia.com/terms/o/option-premium.asp). It's the amount of money that the buyer of an option pays to the seller for the right but not the obligation to exercise the option. The [difference](https://www.investopedia.com/ask/answers/042715/what-difference-between-money-and-out-money.asp) between the market price and the strike price decides an option's value, called its [moneyness](http://www.traderslaboratory.com/forums/options-basics/11596-moneyness.html).
+The price of an options contract is known as its premium. It's the amount of money that the buyer of an option pays to the seller for the right but not the obligation to exercise the option. The difference between the market price and the strike price decides an option's value, called its moneyness.
 
 The more "in-the-money" an option is, the higher its premium. Options become more valuable as the difference between the strike and the underlying gets smaller. They're in-the-money when the strike becomes greater. An option loses value if the strike price moves further from the market price, causing it to become out-of-the-money.
 
@@ -46,19 +46,19 @@ Puts with strike prices higher than the current price will be in-the-money becau
 
 Again, an OTM option won't have intrinsic value but it may still have value based on the volatility of the underlying asset and the time left until option expiration.
 
-Finally, an option with a strike price at or very near to the current market price is known as [at-the-money](https://www.investopedia.com/terms/a/atthemoney.asp)(ATM). ATM options are often the most liquid and active options traded in a name.
+Finally, an option with a strike price at or very near to the current market price is known as at-the-money(ATM). ATM options are often the most liquid and active options traded in a name.
 
 ## Understanding Delta: How Strike Prices Affect Option Values
 
-Delta measures how much an option's [delta](https://www.investopedia.com/terms/d/delta.asp) changes for a \$1 move in the underlying asset. A call with a +0.40 delta will rise by 40 cents if the underlying rises by a dollar.
+Delta measures how much an option's delta changes for a \$1 move in the underlying asset. A call with a +0.40 delta will rise by 40 cents if the underlying rises by a dollar.
 
 At-the-money calls have a delta of +0.50. At-the-money puts have a delta of -0.50. Options that are in-the-money will have deltas greater than 0.50, positively for calls and negatively for puts, and out-of-the-money options will have deltas of less than 0.50.
 
-An option with a delta of 1.00 is so [deep in-the-money](https://www.investopedia.com/terms/d/deepinthemoney.asp) that it essentially behaves like the stock itself. Examples would be call options very far below the current price and puts with strikes very high above it. [Deep out-of-the-money](https://www.investopedia.com/terms/d/deep-out-of-the-money.asp) options have deltas very close to zero and are essentially worthless because they're calls that have strikes so high above the market or puts with strikes so far below it that it's extremely unlikely they'll ever be in the money before expiry.
+An option with a delta of 1.00 is so deep in-the-money that it essentially behaves like the stock itself. Examples would be call options very far below the current price and puts with strikes very high above it. Deep out-of-the-money options have deltas very close to zero and are essentially worthless because they're calls that have strikes so high above the market or puts with strikes so far below it that it's extremely unlikely they'll ever be in the money before expiry.
 
 ## Key Factors Determining Options Value
 
-Pricing models such as the [Black-Scholes Model](https://www.investopedia.com/terms/b/blackscholes.asp) and the [Binomial Tree Model](https://www.investopedia.com/terms/b/binomialoptionpricing.asp) were developed in the 1970s and '80s to help understand the fair value of an options contract. Theoretically, an option's premium should be related to the probability that it finishes in-the-money. The higher that probability, the greater the value of the right that the option grants.
+Pricing models such as the Black-Scholes Model and the Binomial Tree Model were developed in the 1970s and '80s to help understand the fair value of an options contract. Theoretically, an option's premium should be related to the probability that it finishes in-the-money. The higher that probability, the greater the value of the right that the option grants.
 
 Options prices always depend on the following five inputs regardless of what model is used:
 
@@ -69,7 +69,7 @@ Options prices always depend on the following five inputs regardless of what mod
 - Volatility
 - Dividends (if applicable)
 
-The difference between the market price and the strike price fits into the equation. The time to expiration and [volatility](https://www.investopedia.com/terms/v/volatility.asp) inputs indicate how likely it is for an option to finish in-the-money before it expires. The more time left or the more volatile the market, the better the chance the market price hits the strike price.
+The difference between the market price and the strike price fits into the equation. The time to expiration and volatility inputs indicate how likely it is for an option to finish in-the-money before it expires. The more time left or the more volatile the market, the better the chance the market price hits the strike price.
 
 Volatile moves happen due to acquisitions, earnings reports, company news, and other factors. Options with longer expirations or greater volatility typically have higher premiums.
 
@@ -98,7 +98,7 @@ Yes, the terms strike price and exercise price are synonymous. Some traders will
 
 ## What Determines How Far Apart Strike Prices Are?
 
-Strike prices for listed options are set by criteria established by [the OCC](https://www.investopedia.com/terms/o/occ.asp) or an exchange, typically with a \$2.50 distance for strikes below \$25, \$5 increments for those trading from \$25 through \$200, and \$10 increments for strikes above \$200.
+Strike prices for listed options are set by criteria established by the OCC or an exchange, typically with a \$2.50 distance for strikes below \$25, \$5 increments for those trading from \$25 through \$200, and \$10 increments for strikes above \$200.
 
 The strikes will generally be wider for stocks with higher prices and with less liquidity or trading activity. New strikes may also be requested to be added by contacting the OCC or an exchange.
 

@@ -24,7 +24,7 @@ $$\text{Expected Return} = Σ (\text{Return}_i * \text{Probability}_i)$$
 
 Where "i" indicates each known return and its respective probability in the series
 
-For example, if an investment has a 50% chance of gaining 20% and a 50% chance of losing 10%, the expected return would be 5% = (50% x 20% + 50% x -10% = 5%). The 5% expected return may never be realized, as the investment is inherently subject to systematic and unsystematic risks.
+For example, if an investment has a 50% chance of gaining 20% and a 50% chance of losing 10%, the expected return would be 5% = (50% * 20% + 50% * -10% = 5%). The 5% expected return may never be realized, as the investment is inherently subject to systematic and unsystematic risks.
 
 ### Important
 

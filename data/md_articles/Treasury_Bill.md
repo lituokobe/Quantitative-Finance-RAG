@@ -64,7 +64,7 @@ T-bills are issued at a discount from the par value, meaning the purchase price 
 - T-bills can inhibit cash flow for investors who require steady income
 - T-bills have interest rate risk, so, their rate could become less attractive in a rising-rate environment
 
-T-bills pay a fixed rate of interest, which can provide a stable income. However, should interest rates rise, existing T-bills would fall out of favor since their returns are less than those of new T-bills. For this reason, T-bills have [interest rate risk](https://www.investopedia.com/terms/i/interestraterisk.asp), which means there is a danger that bondholders might lose out should there be higher rates in the future.
+T-bills pay a fixed rate of interest, which can provide a stable income. However, should interest rates rise, existing T-bills would fall out of favor since their returns are less than those of new T-bills. For this reason, T-bills have interest rate risk, which means there is a danger that bondholders might lose out should there be higher rates in the future.
 
 Although T-bills have nearly zero default risk, their returns are typically lower than corporate bonds and some certificates of deposit (CDs). Also, Treasury bills don't pay periodic interest payments; they're sold at a discount to the bond's face value. That means if the face amount is \$1,000, they would sell for less than that, but mature to the full \$1,000.
 

@@ -78,7 +78,7 @@ Marathon Petroleum Corporation (MPC) had the following data at the close of Aug.
 
 MPC thus traded at about 23 times trailing earnings. However, the P/E of 23 isn't helpful unless you have something to compare it with, such as the stock's industry group, a benchmark index, or MPC's historical P/E range.
 
-MPC's P/E ratio was slightly lower than the S&P 500, which, as of Aug. 8, 2025, was about 24 times 12-month trailing earnings. To compare MPC's P/E ratio to a peer, let's look at Hess Midstream ([HESM](https://www.investopedia.com/markets/quote?tvwidgetsymbol=HESM)):
+MPC's P/E ratio was slightly lower than the S&P 500, which, as of Aug. 8, 2025, was about 24 times 12-month trailing earnings. To compare MPC's P/E ratio to a peer, let's look at Hess Midstream (HESM):
 
 - Stock price: \$41.64
 - Diluted 12 months trailing EPS: \$2.69
