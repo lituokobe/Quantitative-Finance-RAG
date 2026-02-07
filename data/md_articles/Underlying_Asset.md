@@ -33,4 +33,3 @@ The underlying asset could also be a currency or market index such as the S&P 50
 ## The Bottom Line
 
 An underlying asset is what a derivative, like an option or future, is based on, and it affects the derivative’s value. Examples include stocks, commodities, currencies, and market indexes. As an investor, understanding underlying assets and how they work can help you make better investment decisions and manage risk.
-

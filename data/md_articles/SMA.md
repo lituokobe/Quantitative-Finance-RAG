@@ -82,4 +82,3 @@ To calculate a simple moving average, the sum of the prices within a time period
 ## What Is the Difference Between a Simple Moving Average and an Exponential Moving Average?
 
 While a simple moving average gives equal weight to each of the values within a time period, an exponential moving average places greater weight on recent prices. Exponential moving averages are typically seen as a more timely indicator of a price trend, and because of this, many traders prefer using this over a simple moving average. Common short-term exponential moving averages include the 12-day and 26-day. The 50-day and 200-day exponential moving averages are used to indicate long-term trends.
-

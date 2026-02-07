@@ -169,4 +169,3 @@ The Black-Scholes model is a mathematical model that's used by traders to calcul
 It provides a way to calculate the theoretical value of an option by taking into account the underlying asset's current price, the option's type, the option's strike price, the time remaining until expiration, the risk-free interest rate, and the volatility of the underlying asset.
 
 The Black-Scholes model has had a profound impact on finance and has led to the development of a wide range of derivative products such as futures, swaps, and options.
-

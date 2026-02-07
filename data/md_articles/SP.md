@@ -117,4 +117,3 @@ A BBB rating means a bond or an issuer "exhibits adequate protection parameters.
 ## The Bottom Line
 
 S&P Global plays a dual role, providing top indices and independent credit ratings. Its S&P 500 Index is a widely used benchmark for U.S. market performance, forming the foundation of many investment strategies. S&P Global Ratings assigns structured credit ratings, helping investors assess the creditworthiness of companies and countries alike. The company has evolved to cover a broad spectrum of financial markets, competing with other major rating agencies like Moody’s and Fitch Ratings.
-

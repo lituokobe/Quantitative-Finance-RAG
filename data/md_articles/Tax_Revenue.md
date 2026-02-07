@@ -80,11 +80,11 @@ In 2021, the simple percentage average of total revenue by source for all 38 OEC
 
 These overall OECD averages contrast greatly with the U.S. percentages for some sources. For example, as noted above, the U.S. receives far less of its total tax revenue from excise taxes, only 2%, but receives a much larger portion from income taxes, 50%.
 
-U.S. and OECD consumption tax rates also differ significantly. Among the 46 U.S. states that impose sales taxes, Louisiana had the highest combined state and local rate for 2023 at 9.55%, while Alaska’s was the lowest at 1.76%.^{}
+U.S. and OECD consumption tax rates also differ significantly. Among the 46 U.S. states that impose sales taxes, Louisiana had the highest combined state and local rate for 2023 at 9.55%, while Alaska’s was the lowest at 1.76%.
 
 Typically, VAT rates are much higher. In 2021, the average VAT rate for EU countries and the United Kingdom, which concluded its departure from the EU that year, was 21%.
 
-In times of economic crisis, some countries temporarily lower their VAT rates below their standard levels.^{}As of 2023, the minimum standard rate is 15%.
+In times of economic crisis, some countries temporarily lower their VAT rates below their standard levels. As of 2023, the minimum standard rate is 15%.
 
 ## Which States Have No Income Taxes?
 

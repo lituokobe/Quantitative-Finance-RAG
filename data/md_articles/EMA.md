@@ -19,7 +19,7 @@ where:
 - $\text{EMA} = \text{Exponential Moving Average}$
 
 While there are many possible choices for the smoothing factor, the most common choice is:
-- Smoothing = 2
+- $\text{Smoothing} = 2$
 
 That gives the most recent observation more weight. If the smoothing factor is increased, more recent observations have more influence on the EMA.
 
@@ -80,4 +80,3 @@ The EMA focused more on recent price moves, which means it tends to respond more
 ## How Do You Read Exponential Moving Averages?
 
 Investors tend to interpret a rising EMA as a support to price action and a falling EMA as a resistance. With that interpretation, investors look to buy when the price is near the rising EMA and sell when the price is near the falling EMA.
-

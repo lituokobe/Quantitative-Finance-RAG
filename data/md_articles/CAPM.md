@@ -138,4 +138,3 @@ The international capital asset pricing model (ICAPM) is a financial model that 
 ## The Bottom Line
 
 CAPM provides a framework for evaluating whether a security is fairly valued by linking expected returns to systematic risk, grounded in modern portfolio theory. Despite its reliance on certain assumptions that may not hold true in real-world conditions, such as the behavior of investors and consistent risk-return distribution, it remains a useful tool. Investors can employ CAPM to assess the reasonableness of investment expectations, compare securities, and understand the risk-reward relationship more effectively.
-

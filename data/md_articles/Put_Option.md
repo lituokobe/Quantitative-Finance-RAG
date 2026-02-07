@@ -62,25 +62,25 @@ Let’s say the investor exercises the put option. If the investor already holds
 
 The net profit on this trade can be calculated as:
 
-$$[(\text{SPY sell price} - \text{SPY purchase price}) - (\text{Put purchase price})] × \text{Number of shares or units}$$
+$$[(\text{SPY sell price} - \text{SPY purchase price}) - (\text{Put purchase price})] * \text{Number of shares or units}$$
 
-$$[(\$535 - \$510) - \$2.80)] × 100 = \$2,220$$
+$$[(\$535 - \$510) - \$2.80)] * 100 = \$2,220$$
 
 What if the investor didn't own the SPY units, and the put option was purchased purely as a speculative trade? In this case, exercising the put option would result in a short sale of 100 SPY units at the \$545 strike price. The investor could then buy back the 100 SPY units at the current market price of \$535 to close out the short position.
 
 The net profit on this trade can be calculated as:
 
-$$[(\text{SPY short sell price} - \text{SPY purchase price}) - (\text{Put purchase price})] × \text{Number of shares or units}$$
+$$[(\text{SPY short sell price} - \text{SPY purchase price}) - (\text{Put purchase price})] * \text{Number of shares or units}$$
 
-$$[(\$545 - \$535) - \$2.80)] × 100 = \$720$$
+$$[(\$545 - \$535) - \$2.80)] * 100 = \$720$$
 
 Exercising the option, (short) selling the shares, and then buying them back sounds like a fairly complicated endeavor, not to mention added costs in the form of commissions (since there are multiple transactions) and margin interest (for the short sale). But the investor has an easier “option” (for lack of a better word): Simply sell the put option at its current price and make a tidy profit.
 
 The profit calculation in this case is:
 
-$$[\text{Put sell price} - \text{Put purchase price}] × \text{Number of shares or units}$$
+$$[\text{Put sell price} - \text{Put purchase price}] * \text{Number of shares or units}$$
 
-$$[10.50 - \$2.80] × 100 = \$770$$
+$$[10.50 - \$2.80] * 100 = \$770$$
 
 There’s a key point to note here. Selling the option, rather than going through the relatively convoluted process of option exercise, actually results in a profit of \$770, which is \$50 more than the \$720 made by exercising the option. Why the difference? Because selling the option enables the time value of \$0.50 per share (\$0.50 × 100 shares = \$50) to be captured as well. Thus, most long option positions that are ITM are sold rather than exercised.
 

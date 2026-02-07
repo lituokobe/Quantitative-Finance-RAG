@@ -2,8 +2,10 @@ import requests
 import re
 from pathlib import Path
 from bs4 import BeautifulSoup, Tag, NavigableString
-
 from data.article_name_source import investopedia_articles
+
+# Scape Investopedia articles with formatting and save them as local markdown files.
+# This method will keep all the math formulars (in LaTex) but ignore the images.
 
 HEADERS = {
     "User-Agent": "Tuo Li RAG Agent"

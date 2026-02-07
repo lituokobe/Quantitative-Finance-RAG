@@ -171,4 +171,3 @@ ROE will increase as net income increases, all else equal. Another way to boost 
 Return on equity is a common financial metric that compares a company's income to its total shareholders' equity. This demonstrates a company's profitability and efficiency. Another useful calculation is the return on average equity (ROAE).
 
 However, though ROE and ROAE can tell you how well a company is using resources to generate profit, they do not provide a full picture of a company's financing structure, industry, or performance against competition. ROE is just one of many metrics that investors can use to evaluate a company's performance, potential growth, and financial stability.
-

@@ -49,4 +49,3 @@ These observations form part of the foundation of Keynes's theory of how an econ
 ## The Bottom Line
 
 The acceleration principle links consumption fluctuations with proportional swings in investment. Businesses may only increase capital investments for long-term demand increases. Changes in demand can magnify economic cycles, influencing both booms and recessions. Understanding the principle can help businesses and investors to anticipate business cycles and changes in an economy's health.
-

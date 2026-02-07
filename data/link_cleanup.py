@@ -1,5 +1,7 @@
 import re
 from pathlib import Path
+# For markdown files with links, to optimize the performance of vector database, we remove the link.
+# This will reduce the information from the files.
 
 # Folder containing markdown files
 MD_FOLDER = Path("md_articles/tempt")
@@ -15,7 +17,7 @@ def main():
         content = md_file.read_text(encoding="utf-8")
         cleaned = remove_links_from_markdown(content)
         md_file.write_text(cleaned, encoding="utf-8")
-        print(f"Processed: {md_file.name}")
+        print(f"Links removed for: {md_file.name}")
 
 if __name__ == "__main__":
     main()
