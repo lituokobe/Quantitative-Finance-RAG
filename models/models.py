@@ -33,13 +33,17 @@ class CustomEmbedding(Embeddings):
     """
     Customize an Embedding class, integrated with LangChain
     """
-    def __init__(self, model_name):
-        self.embedding = SentenceTransformer(str(model_name))
+    def __init__(self, model_name, device: str = "cpu"):
+        self.embedding = SentenceTransformer(str(model_name), device = device)
     def embed_query(self, text : str) ->list[float]:
         return self.embed_documents([text])[0]
     def embed_documents(self, texts : list[str]) -> list[list[float]]:
-        arr = self.embedding.encode(texts)
-        return arr.tolist()
+        vectors = self.embedding.encode(
+            texts,
+            convert_to_numpy=True,
+            normalize_embeddings=True,
+        )
+        return vectors.tolist()
 
 qwen3_embedding_model = CustomEmbedding(QWEN3_EMBEDDING_PATH)
 

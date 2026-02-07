@@ -2,12 +2,10 @@
 import multiprocessing
 import os
 from multiprocessing import Queue
-
 from config.paths import MD_PATH
 from documents.md_parser import FinanceMarkdownParser
 from documents.milvus_db import MilvusVectorSave
 from utils.log_utils import log
-
 
 def file_parser_process(dir_path: str, output_queue: Queue, batch_size: int = 20):
     #using batching can decrease the usage of RAM
