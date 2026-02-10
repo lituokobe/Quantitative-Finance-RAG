@@ -1,0 +1,170 @@
+2026-02-10 01:16:15,685 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-10 01:16:15,687 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-10 01:16:15,689 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-10 01:16:15,694 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 01:16:15,694 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 01:16:15,695 - log_utils - INFO: starting_intention_node starts to work
+2026-02-10 01:16:52,328 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:16:52,351 - log_utils - INFO: starting_intention_node finishes working, time costed: 36.656 seconds.
+2026-02-10 01:16:52,353 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-10 01:16:52,354 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 01:16:52,529 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 01:16:52,553 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 01:16:52,553 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 01:16:53,183 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.829 seconds.
+2026-02-10 01:16:53,184 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 01:16:54,335 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:16:54,351 - DocumentGraderNode - INFO: Retrieved document Buying Put Options
+
+Put options are investments where the buyer believes the underlying stock's market price will fall below the strike price on or before the expiration date of the option. Once again, the holder can sell shares without the obligation to sell at the stated strike per share price by the stated date.
+
+Since buyers of put options want the stock price to decrease, the put option is profitable when the underlying stock's price is below the strike price. If the prevailing market price is less than the strike price at expiry, the investor can exercise the put. They'll sell shares at the option's higher strike price. Should they wish to replace their holding of these shares, they may buy them on the open market.
+
+Their profit on this trade is equal to the strike price less the current market price, plus expenses (the premium and any brokerage commission to place the orders). The result would be multiplied by the number of option contracts purchased, then multiplied by 100—assuming each contract represents 100 shares.
+
+The value of holding a put option will increase as the underlying stock price decreases. Conversely, the value of the put option declines as the stock price increases. The risk of buying put options is limited to the loss of the premium if the option expires worthless. is NOT relevant, dump it.
+2026-02-10 01:16:55,563 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:16:55,567 - DocumentGraderNode - INFO: Retrieved document Bid Price Example: Buying Shares in Company ABC
+
+Suppose Alex wants to buy shares in company ABC. The stock is trading in a range between \$10 and \$15. But Alex is not willing to pay more than \$12 for them, so they place a limit order of \$12 for ABC's shares. This is their bid price. is NOT relevant, dump it.
+2026-02-10 01:16:56,654 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:16:56,657 - DocumentGraderNode - INFO: Retrieved document London Stock Exchange Group
+
+London is home to one of the largest stock exchange groups in Europe. The London Stock Exchange (LSE) is part of the London Stock Exchange Group. This group also includes the family of FTSE Russell Indexes and the group's clearing services.
+
+The following are some of the key market makers in this part of the world:
+
+- BNP Paribas
+- GMP Securities Europe
+- Liberium Capital
+- Mediobanca
+- Standard Chartered is NOT relevant, dump it.
+2026-02-10 01:16:57,906 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:16:57,909 - DocumentGraderNode - INFO: Retrieved document Bid Price Explained: Definition, Examples, and Comparison With Ask Price is NOT relevant, dump it.
+2026-02-10 01:16:59,032 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:16:59,036 - DocumentGraderNode - INFO: Retrieved document Trailing Price-to-Earnings (Trailing P/E): Definition and Example is NOT relevant, dump it.
+2026-02-10 01:17:00,029 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:17:00,034 - DocumentGraderNode - INFO: Retrieved document NBBO
+
+Quotes will often show the national best bid and offer (NBBO) from across all exchanges that a security is listed. The best bid price might come from a different exchange or location than the best offer.
+
+In the context of stock trading, the bid price refers to the highest amount of money a prospective buyer is willing to spend for it. Most quote prices as displayed by quote services and on stock tickers are the highest bid price available for a given good, stock, or commodity. The ask or offer price displayed by said quote services corresponds directly to the lowest asking price for a given stock or commodity on the market. In an options market, bid prices can also be market-makers, if the market for the options contract is illiquid or lacks enough liquidity. is NOT relevant, dump it.
+2026-02-10 01:17:01,471 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:17:01,476 - DocumentGraderNode - INFO: Retrieved document Spot Market Trading is NOT relevant, dump it.
+2026-02-10 01:17:02,820 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:17:02,824 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- An over-the-counter (OTC) market is a decentralized market where participants trade securities not listed on formal exchanges.
+- OTC trading is mainly facilitated by broker-dealer networks and lacks the strict regulations of centralized national exchanges.
+- The OTC Markets Group provides price and liquidity information on thousands of securities traded over OTC markets.
+- OTC markets give investors access to small or foreign companies, currencies, certain bonds, and flexible derivatives.
+- However, fewer rules, limited transparency, and lower liquidity make OTC markets riskier than trading on formal exchanges. is NOT relevant, dump it.
+2026-02-10 01:17:02,824 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 01:17:02,824 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 9.641 seconds.
+2026-02-10 01:17:02,825 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 01:17:02,825 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions. ---
+2026-02-10 01:17:02,826 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-02-10 01:17:05,110 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:17:05,113 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 2.287 seconds.
+2026-02-10 01:17:05,114 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 01:17:05,115 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 01:17:05,147 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 01:17:05,147 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 01:17:05,375 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.261 seconds.
+2026-02-10 01:17:05,375 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 01:17:07,941 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:17:07,944 - DocumentGraderNode - INFO: Retrieved document What Does a Good Portfolio Look Like?
+
+A good portfolio will depend on your investment style, goals, risk tolerance, and time horizon. A good degree of diversification is generally recommended regardless of the portfolio type so you're not holding all your eggs in one basket. is NOT relevant, dump it.
+2026-02-10 01:17:15,214 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:17:15,217 - DocumentGraderNode - INFO: Retrieved document Bid Price Example: Buying Shares in Company ABC
+
+Suppose Alex wants to buy shares in company ABC. The stock is trading in a range between \$10 and \$15. But Alex is not willing to pay more than \$12 for them, so they place a limit order of \$12 for ABC's shares. This is their bid price. is NOT relevant, dump it.
+2026-02-10 01:17:17,464 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:17:17,468 - DocumentGraderNode - INFO: Retrieved document Trailing Price-to-Earnings (Trailing P/E): Definition and Example is NOT relevant, dump it.
+2026-02-10 01:17:20,605 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:17:20,608 - DocumentGraderNode - INFO: Retrieved document Buying Put Options
+
+Put options are investments where the buyer believes the underlying stock's market price will fall below the strike price on or before the expiration date of the option. Once again, the holder can sell shares without the obligation to sell at the stated strike per share price by the stated date.
+
+Since buyers of put options want the stock price to decrease, the put option is profitable when the underlying stock's price is below the strike price. If the prevailing market price is less than the strike price at expiry, the investor can exercise the put. They'll sell shares at the option's higher strike price. Should they wish to replace their holding of these shares, they may buy them on the open market.
+
+Their profit on this trade is equal to the strike price less the current market price, plus expenses (the premium and any brokerage commission to place the orders). The result would be multiplied by the number of option contracts purchased, then multiplied by 100—assuming each contract represents 100 shares.
+
+The value of holding a put option will increase as the underlying stock price decreases. Conversely, the value of the put option declines as the stock price increases. The risk of buying put options is limited to the loss of the premium if the option expires worthless. is NOT relevant, dump it.
+2026-02-10 01:17:30,255 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:17:30,259 - DocumentGraderNode - INFO: Retrieved document What Is a Penny Stock?
+
+A penny stock typically refers to the stock of a small company that trades for less than \$5 per share. Though some penny stocks trade on large exchanges such as the New York Stock Exchange (NYSE), most trade via over-the-counter (OTC) transactions through the electronic OTC Bulletin Board (OTCBB) or through the privately-owned OTC Markets Group.
+
+There is no trading floor for OTC transactions. Quotations are also all done electronically. is NOT relevant, dump it.
+2026-02-10 01:17:33,029 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:17:33,033 - DocumentGraderNode - INFO: Retrieved document Bid Price Explained: Definition, Examples, and Comparison With Ask Price is NOT relevant, dump it.
+2026-02-10 01:17:39,128 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:17:39,132 - DocumentGraderNode - INFO: Retrieved document Nasdaq Explained: History, Trading System, and Financial Insights is NOT relevant, dump it.
+2026-02-10 01:17:42,546 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:17:42,549 - DocumentGraderNode - INFO: Retrieved document Understanding Random Walk Theory
+
+Economists long argued that asset prices were essentially random and unpredictable and that past price action had little or no influence on future changes. This was a key assumption of the efficient market hypothesis (EMH). Random walk theory is based on the idea that stock prices reflect all available information and adjust quickly to new information, making it impossible to act on it.
+
+Random walk theory was popularized by economist Burton Malkiel in his 1973 book, *A Random Walk Down Wall Street*. Malkiel’s theory aligns with the semi-strong efficient hypothesis which also argues that it's impossible to consistently outperform the market. The theory therefore has important implications for investors, suggesting that buying and holding a diversified portfolio may be the best long-term investment strategy.
+
+Malkiel argues that trying to time or beat the market or using fundamental or technical analysis to predict stock prices is a waste of time. It can lead to underperformance. He instead claims that investors are better off buying and holding a broad index fund. is NOT relevant, dump it.
+2026-02-10 01:17:42,550 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 01:17:42,550 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 37.174 seconds.
+2026-02-10 01:17:42,550 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 01:17:42,550 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions. ---
+2026-02-10 01:17:42,551 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-02-10 01:17:47,876 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:17:47,879 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 5.327 seconds.
+2026-02-10 01:17:47,880 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 01:17:47,880 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 01:17:47,912 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 01:17:47,912 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 01:17:48,136 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.257 seconds.
+2026-02-10 01:17:48,137 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 01:17:55,633 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:17:55,639 - DocumentGraderNode - INFO: Retrieved document What Does a Good Portfolio Look Like?
+
+A good portfolio will depend on your investment style, goals, risk tolerance, and time horizon. A good degree of diversification is generally recommended regardless of the portfolio type so you're not holding all your eggs in one basket. is NOT relevant, dump it.
+2026-02-10 01:18:06,413 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:18:06,418 - DocumentGraderNode - INFO: Retrieved document Bid Price Example: Buying Shares in Company ABC
+
+Suppose Alex wants to buy shares in company ABC. The stock is trading in a range between \$10 and \$15. But Alex is not willing to pay more than \$12 for them, so they place a limit order of \$12 for ABC's shares. This is their bid price. is NOT relevant, dump it.
+2026-02-10 01:18:26,081 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:18:26,097 - DocumentGraderNode - INFO: Retrieved document Trailing Price-to-Earnings (Trailing P/E): Definition and Example is NOT relevant, dump it.
+2026-02-10 01:18:31,603 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:18:31,608 - DocumentGraderNode - INFO: Retrieved document Buying Put Options
+
+Put options are investments where the buyer believes the underlying stock's market price will fall below the strike price on or before the expiration date of the option. Once again, the holder can sell shares without the obligation to sell at the stated strike per share price by the stated date.
+
+Since buyers of put options want the stock price to decrease, the put option is profitable when the underlying stock's price is below the strike price. If the prevailing market price is less than the strike price at expiry, the investor can exercise the put. They'll sell shares at the option's higher strike price. Should they wish to replace their holding of these shares, they may buy them on the open market.
+
+Their profit on this trade is equal to the strike price less the current market price, plus expenses (the premium and any brokerage commission to place the orders). The result would be multiplied by the number of option contracts purchased, then multiplied by 100—assuming each contract represents 100 shares.
+
+The value of holding a put option will increase as the underlying stock price decreases. Conversely, the value of the put option declines as the stock price increases. The risk of buying put options is limited to the loss of the premium if the option expires worthless. is NOT relevant, dump it.
+2026-02-10 01:18:33,236 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:18:33,241 - DocumentGraderNode - INFO: Retrieved document What Is a Penny Stock?
+
+A penny stock typically refers to the stock of a small company that trades for less than \$5 per share. Though some penny stocks trade on large exchanges such as the New York Stock Exchange (NYSE), most trade via over-the-counter (OTC) transactions through the electronic OTC Bulletin Board (OTCBB) or through the privately-owned OTC Markets Group.
+
+There is no trading floor for OTC transactions. Quotations are also all done electronically. is NOT relevant, dump it.
+2026-02-10 01:18:34,449 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:18:34,454 - DocumentGraderNode - INFO: Retrieved document Bid Price Explained: Definition, Examples, and Comparison With Ask Price is NOT relevant, dump it.
+2026-02-10 01:18:35,576 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:18:35,576 - DocumentGraderNode - INFO: Retrieved document Nasdaq Explained: History, Trading System, and Financial Insights is NOT relevant, dump it.
+2026-02-10 01:18:41,019 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:18:41,026 - DocumentGraderNode - INFO: Retrieved document Understanding Random Walk Theory
+
+Economists long argued that asset prices were essentially random and unpredictable and that past price action had little or no influence on future changes. This was a key assumption of the efficient market hypothesis (EMH). Random walk theory is based on the idea that stock prices reflect all available information and adjust quickly to new information, making it impossible to act on it.
+
+Random walk theory was popularized by economist Burton Malkiel in his 1973 book, *A Random Walk Down Wall Street*. Malkiel’s theory aligns with the semi-strong efficient hypothesis which also argues that it's impossible to consistently outperform the market. The theory therefore has important implications for investors, suggesting that buying and holding a diversified portfolio may be the best long-term investment strategy.
+
+Malkiel argues that trying to time or beat the market or using fundamental or technical analysis to predict stock prices is a waste of time. It can lead to underperformance. He instead claims that investors are better off buying and holding a broad index fund. is NOT relevant, dump it.
+2026-02-10 01:18:41,027 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 01:18:41,027 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 52.89 seconds.
+2026-02-10 01:18:41,028 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 01:18:41,028 - route_functions - INFO: --- Decision: all documents are not relevant, and looped twice, need to do web search. ---
+2026-02-10 01:18:41,031 - log_utils - INFO: child graph - web_search_node starts to work
+2026-02-10 01:18:47,924 - log_utils - INFO: child graph - web_search_node finishes working, time costed: 6.893 seconds.
+2026-02-10 01:18:47,927 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is the highest stock price of Alibaba Group Holding Limited?", time costed: 115.574 seconds.

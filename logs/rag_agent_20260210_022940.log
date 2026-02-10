@@ -1,0 +1,73 @@
+2026-02-10 02:29:40,488 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-10 02:29:40,490 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-10 02:29:40,492 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-10 02:29:40,496 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 02:29:40,496 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 02:29:40,497 - log_utils - INFO: starting_intention_node starts to work
+2026-02-10 02:29:42,605 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:29:42,626 - log_utils - INFO: starting_intention_node finishes working, time costed: 2.128 seconds.
+2026-02-10 02:29:42,627 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-10 02:29:42,629 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 02:29:42,784 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 02:29:42,801 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 02:29:42,801 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 02:29:43,435 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.806 seconds.
+2026-02-10 02:29:43,435 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 02:29:45,160 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:29:45,173 - DocumentGraderNode - INFO: Retrieved document What Is a European Option?
+
+A European option is a financial contract that can only be exercised on its expiration date. This is in contrast to an American option, which allows the holder to exercise it at any time before it expires. Most index options are European, which means they can't be exercised early. The Black-Scholes model is commonly used to value European options and assess their fair price. is relevant
+2026-02-10 02:29:46,187 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:29:46,191 - DocumentGraderNode - INFO: Retrieved document Different Types of European Options: Calls and Puts is relevant
+2026-02-10 02:29:47,171 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:29:47,175 - DocumentGraderNode - INFO: Retrieved document European Options: Definition, Types, and Differences from American Options is relevant
+2026-02-10 02:29:48,195 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:29:48,199 - DocumentGraderNode - INFO: Retrieved document Understanding American and European Option Styles
+
+American options can be exercised at any time between the date of purchase and the expiration date. European options are different from American options in that they can only be exercised at the end of their lives on their expiration date.
+
+The difference between American and European options is about early exercise, not geography. In the United States, most single stock options are American while index options are European. An American option also typically carries a higher premium than an otherwise identical European option. This is because the early exercise feature is desirable and commands a premium. is relevant
+2026-02-10 02:29:49,424 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:29:49,429 - DocumentGraderNode - INFO: Retrieved document What Is an American Option?
+
+An American option, aka an American-style option, is a version of an options contract that allows holders to exercise the option rights at any time before and including the day of expiration. It contrasts with another type of option, called the European option, that only allows execution on the day of expiration.
+
+An American-style option allows investors to capture profit as soon as the stock price moves favorably, and to take advantage of dividend announcements as well. Investors in single stocks typically use this option. is relevant
+2026-02-10 02:29:50,448 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:29:50,452 - DocumentGraderNode - INFO: Retrieved document Understanding American Options: Definition, Benefits, and Examples is NOT relevant, dump it.
+2026-02-10 02:29:51,701 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:29:51,705 - DocumentGraderNode - INFO: Retrieved document Comparing European and American Options
+
+European options can only be exercised on the expiration date, whereas American options can be exercised at any time between the purchase and expiration dates. In other words, American options allow investors to realize a profit as soon as the stock price moves in their favor and enough to more than offset the premium paid.
+
+Investors use American options with dividend - paying stocks to exercise the option before the ex-dividend date. The flexibility of American options allows investors to own a company's shares in time to get paid a dividend.
+
+However, the flexibility of using an American option comes at a price—a premium to the premium. The increased cost of the option means investors need the underlying asset to move far enough from the strike price to make the trade return a profit.
+
+Holding an American option to maturity means the investor could have saved money with a lower-priced European option.
+
+**European Option Pros:**
+- Lower premium cost
+- Allows trading index options
+- Can be resold before the expiration date
+
+**European Option Cons:**
+- Settlement prices are delayed
+- Cannot be settled for underlying asset early is relevant
+2026-02-10 02:29:51,705 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 02:29:51,706 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 8.27 seconds.
+2026-02-10 02:29:51,706 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 02:29:51,706 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-10 02:29:51,708 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is a European option?", time costed: 9.081 seconds.
+2026-02-10 02:29:51,708 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 9.081 seconds.
+2026-02-10 02:29:51,709 - log_utils - INFO: generate_node starts to work
+2026-02-10 02:29:58,229 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:29:58,230 - log_utils - INFO: generate_node finishes working, time costed: 6.521 seconds.
+2026-02-10 02:29:58,230 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-10 02:30:00,073 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:30:00,086 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-10 02:30:00,086 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-10 02:30:00,962 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:30:00,969 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-10 02:30:00,970 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-10 02:30:00,970 - log_utils - INFO: rely_with_generation_node finishes working.

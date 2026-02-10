@@ -1,0 +1,146 @@
+2026-02-10 01:37:38,391 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-10 01:37:38,394 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-10 01:37:38,395 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-10 01:37:38,400 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 01:37:38,400 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 01:37:38,401 - log_utils - INFO: starting_intention_node starts to work
+2026-02-10 01:37:40,529 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:37:40,547 - log_utils - INFO: starting_intention_node finishes working, time costed: 2.146 seconds.
+2026-02-10 01:37:40,548 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-10 01:37:40,550 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 01:37:40,725 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 01:37:40,742 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 01:37:40,742 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 01:37:41,169 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.619 seconds.
+2026-02-10 01:37:41,169 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 01:37:42,186 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:37:42,199 - DocumentGraderNode - INFO: Retrieved document Understanding Common Corporate Actions & Their Impact on Stakeholders is NOT relevant, dump it.
+2026-02-10 01:37:43,926 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:37:43,929 - DocumentGraderNode - INFO: Retrieved document What Is a Corporate Action?
+
+A corporate action is any activity that brings material change to an organization and impacts its stakeholders, including shareholders, both common and preferred, as well as bondholders. These events are generally approved by the company's board of directors; shareholders may be permitted to vote on some events as well. Some corporate actions require shareholders to submit a response. is NOT relevant, dump it.
+2026-02-10 01:37:45,243 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:37:45,247 - DocumentGraderNode - INFO: Retrieved document What Is a Special Dividend?
+
+A special dividend is paid to shareholders outside of the regular dividend schedule. It may result from a windfall earnings, spin-off, or other corporate action that is seen as a one-off. In general, special dividends are rare but larger than ordinary dividends. is NOT relevant, dump it.
+2026-02-10 01:37:46,254 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:37:46,259 - DocumentGraderNode - INFO: Retrieved document What Is a Corporate Spin-Off? is NOT relevant, dump it.
+2026-02-10 01:37:47,770 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:37:47,775 - DocumentGraderNode - INFO: Retrieved document What a Stock Split Is, Why Companies Do It, and How It Works, With an Example is NOT relevant, dump it.
+2026-02-10 01:37:48,943 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:37:48,947 - DocumentGraderNode - INFO: Retrieved document The Impact of Corporate Actions on Stakeholders
+
+When a publicly traded company issues a corporate action, it is initiating a process that directly affects the securities issued by that company. Corporate actions can range from pressing financial matters, such as bankruptcy or liquidation, to a firm changing its name or trading symbol, in which case the firm must often update its CUSIP number, which is the identification number given to securities. Dividends, stock splits, mergers, acquisitions and spinoffs are all common examples of corporate actions.
+
+Corporate actions can be either mandatory or voluntary. Mandatory corporate actions are automatically applied to the investments involved while voluntary corporate actions require an investor's response to be applied. Stock splits, acquisitions and company name changes are examples of mandatory corporate actions; tender offers, optional dividends and rights issues are examples of voluntary corporate actions.
+
+Shareholder-approved corporate actions are usually listed in a firm's proxy statement, filed before the company's annual meeting. Corporate actions can also be revealed in 8-K filings for material events. is NOT relevant, dump it.
+2026-02-10 01:37:51,767 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:37:51,771 - DocumentGraderNode - INFO: Retrieved document What Is Required Rate of Return (RRR)?
+
+The required rate of return (RRR) is the minimum return an investor will accept for owning a company's stock, as compensation for a given level of risk associated with holding the stock. The RRR is also used in corporate finance to analyze the profitability of potential investment projects.
+
+The RRR is also known as the hurdle rate, which like RRR, denotes the appropriate compensation needed for the level of risk present. Riskier projects usually have higher hurdle rates, or RRRs, than those that are less risky. is NOT relevant, dump it.
+2026-02-10 01:37:53,156 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:37:53,160 - DocumentGraderNode - INFO: Retrieved document Exploring Different Types of Private Companies is NOT relevant, dump it.
+2026-02-10 01:37:53,160 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 01:37:53,160 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 11.991 seconds.
+2026-02-10 01:37:53,161 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 01:37:53,161 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions. ---
+2026-02-10 01:37:53,162 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-02-10 01:37:54,188 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:37:54,191 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 1.029 seconds.
+2026-02-10 01:37:54,192 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 01:37:54,193 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 01:37:54,220 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 01:37:54,220 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 01:37:54,410 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.218 seconds.
+2026-02-10 01:37:54,411 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 01:38:00,408 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:00,411 - DocumentGraderNode - INFO: Retrieved document What Is a Corporate Action?
+
+A corporate action is any activity that brings material change to an organization and impacts its stakeholders, including shareholders, both common and preferred, as well as bondholders. These events are generally approved by the company's board of directors; shareholders may be permitted to vote on some events as well. Some corporate actions require shareholders to submit a response. is NOT relevant, dump it.
+2026-02-10 01:38:01,538 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:01,543 - DocumentGraderNode - INFO: Retrieved document Understanding Common Corporate Actions & Their Impact on Stakeholders is NOT relevant, dump it.
+2026-02-10 01:38:03,177 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:03,181 - DocumentGraderNode - INFO: Retrieved document What Is a Special Dividend?
+
+A special dividend is paid to shareholders outside of the regular dividend schedule. It may result from a windfall earnings, spin-off, or other corporate action that is seen as a one-off. In general, special dividends are rare but larger than ordinary dividends. is NOT relevant, dump it.
+2026-02-10 01:38:04,097 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:04,100 - DocumentGraderNode - INFO: Retrieved document Key Factors Influencing the Hurdle Rate
+
+The hurdle rate balances the need for profit with the risks and costs involved. This concept is crucial in guiding individual and corporate investment strategy decisions.
+
+When determining the hurdle rate, several key factors are taken into account: is NOT relevant, dump it.
+2026-02-10 01:38:05,629 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:05,633 - DocumentGraderNode - INFO: Retrieved document What Is a Corporate Spin-Off? is NOT relevant, dump it.
+2026-02-10 01:38:06,978 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:06,982 - DocumentGraderNode - INFO: Retrieved document Financial Applications of Normal Distribution
+
+The assumption of a normal distribution is applied to asset prices and price action. Traders may plot price points to fit recent price action into a normal distribution. The further price action moves from the mean, in this case, the greater the likelihood that an asset is being over or undervalued. Traders can use the standard deviations to suggest potential trades. This type of trading is generally done on very short time frames as larger timescales make it much harder to pick entry and exit points.
+
+Many statistical theories model asset prices by assuming normal distribution. However, actual price data often show fat tails, with more frequent extreme movements, leading to kurtosis above three. Even if past data fit a normal distribution, it doesn't ensure future performance will. is NOT relevant, dump it.
+2026-02-10 01:38:08,092 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:08,096 - DocumentGraderNode - INFO: Retrieved document What a Stock Split Is, Why Companies Do It, and How It Works, With an Example is NOT relevant, dump it.
+2026-02-10 01:38:08,096 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 01:38:08,096 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 13.686 seconds.
+2026-02-10 01:38:08,097 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 01:38:08,097 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions. ---
+2026-02-10 01:38:08,098 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-02-10 01:38:10,755 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:10,759 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 2.661 seconds.
+2026-02-10 01:38:10,760 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 01:38:10,760 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 01:38:10,788 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 01:38:10,788 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 01:38:10,960 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.2 seconds.
+2026-02-10 01:38:10,960 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 01:38:12,078 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:12,081 - DocumentGraderNode - INFO: Retrieved document What Is a Corporate Action?
+
+A corporate action is any activity that brings material change to an organization and impacts its stakeholders, including shareholders, both common and preferred, as well as bondholders. These events are generally approved by the company's board of directors; shareholders may be permitted to vote on some events as well. Some corporate actions require shareholders to submit a response. is NOT relevant, dump it.
+2026-02-10 01:38:13,315 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:13,318 - DocumentGraderNode - INFO: Retrieved document Understanding Common Corporate Actions & Their Impact on Stakeholders is NOT relevant, dump it.
+2026-02-10 01:38:14,344 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:14,348 - DocumentGraderNode - INFO: Retrieved document What Is a Special Dividend?
+
+A special dividend is paid to shareholders outside of the regular dividend schedule. It may result from a windfall earnings, spin-off, or other corporate action that is seen as a one-off. In general, special dividends are rare but larger than ordinary dividends. is NOT relevant, dump it.
+2026-02-10 01:38:19,049 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:19,052 - DocumentGraderNode - INFO: Retrieved document What Is a Corporate Spin-Off? is NOT relevant, dump it.
+2026-02-10 01:38:20,189 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:20,193 - DocumentGraderNode - INFO: Retrieved document The Impact of Corporate Actions on Stakeholders
+
+When a publicly traded company issues a corporate action, it is initiating a process that directly affects the securities issued by that company. Corporate actions can range from pressing financial matters, such as bankruptcy or liquidation, to a firm changing its name or trading symbol, in which case the firm must often update its CUSIP number, which is the identification number given to securities. Dividends, stock splits, mergers, acquisitions and spinoffs are all common examples of corporate actions.
+
+Corporate actions can be either mandatory or voluntary. Mandatory corporate actions are automatically applied to the investments involved while voluntary corporate actions require an investor's response to be applied. Stock splits, acquisitions and company name changes are examples of mandatory corporate actions; tender offers, optional dividends and rights issues are examples of voluntary corporate actions.
+
+Shareholder-approved corporate actions are usually listed in a firm's proxy statement, filed before the company's annual meeting. Corporate actions can also be revealed in 8-K filings for material events. is NOT relevant, dump it.
+2026-02-10 01:38:21,200 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:21,204 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- An over-the-counter (OTC) market is a decentralized market where participants trade securities not listed on formal exchanges.
+- OTC trading is mainly facilitated by broker-dealer networks and lacks the strict regulations of centralized national exchanges.
+- The OTC Markets Group provides price and liquidity information on thousands of securities traded over OTC markets.
+- OTC markets give investors access to small or foreign companies, currencies, certain bonds, and flexible derivatives.
+- However, fewer rules, limited transparency, and lower liquidity make OTC markets riskier than trading on formal exchanges. is NOT relevant, dump it.
+2026-02-10 01:38:22,342 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:22,345 - DocumentGraderNode - INFO: Retrieved document What a Stock Split Is, Why Companies Do It, and How It Works, With an Example is NOT relevant, dump it.
+2026-02-10 01:38:22,345 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 01:38:22,346 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 11.385 seconds.
+2026-02-10 01:38:22,346 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 01:38:22,346 - route_functions - INFO: --- Decision: all documents are not relevant, and looped twice, need to do web search. ---
+2026-02-10 01:38:22,347 - log_utils - INFO: child graph - web_search_node starts to work
+2026-02-10 01:38:25,084 - log_utils - INFO: child graph - web_search_node finishes working, time costed: 2.737 seconds.
+2026-02-10 01:38:25,086 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is the latest corporate action of Alibaba Group Holding Limited?", time costed: 44.538 seconds.
+2026-02-10 01:38:25,087 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 44.538 seconds.
+2026-02-10 01:38:25,087 - log_utils - INFO: generate_node starts to work
+2026-02-10 01:38:26,088 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:26,091 - log_utils - INFO: generate_node finishes working, time costed: 1.004 seconds.
+2026-02-10 01:38:26,092 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-10 01:38:27,225 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:27,239 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-10 01:38:27,239 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-10 01:38:28,188 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 01:38:28,202 - route_functions - INFO: ---Decision: generated result does not solve the problem from the question, but we will still output it.---
+2026-02-10 01:38:28,203 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-10 01:38:28,203 - log_utils - INFO: rely_with_generation_node finishes working.

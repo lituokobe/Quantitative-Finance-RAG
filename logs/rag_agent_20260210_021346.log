@@ -1,0 +1,118 @@
+2026-02-10 02:13:46,758 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-10 02:13:46,761 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-10 02:13:46,763 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-10 02:13:46,768 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 02:13:46,768 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 02:13:46,769 - log_utils - INFO: starting_intention_node starts to work
+2026-02-10 02:13:48,484 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:13:48,499 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.73 seconds.
+2026-02-10 02:13:48,499 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-10 02:13:48,500 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 02:13:48,659 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 02:13:48,680 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 02:13:48,680 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 02:13:49,262 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.762 seconds.
+2026-02-10 02:13:49,263 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 02:13:50,539 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:13:50,555 - DocumentGraderNode - INFO: Retrieved document What Is a Bond Option? is NOT relevant, dump it.
+2026-02-10 02:13:52,485 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:13:52,489 - DocumentGraderNode - INFO: Retrieved document Call Option: What It Is, How To Use It, and Examples is NOT relevant, dump it.
+2026-02-10 02:13:53,712 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:13:53,716 - DocumentGraderNode - INFO: Retrieved document Understanding American Options: Definition, Benefits, and Examples is NOT relevant, dump it.
+2026-02-10 02:13:54,635 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:13:54,639 - DocumentGraderNode - INFO: Retrieved document What Is a Put Option?
+
+A put option (or “put”), which gives the holder the right to sell, can be contrasted with a call option, which provides the holder with the right to buy the underlying security at a specified price, up until the option contract's expiration date. This predetermined price is called the strike price. is NOT relevant, dump it.
+2026-02-10 02:13:55,733 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:13:55,737 - DocumentGraderNode - INFO: Retrieved document What Is an American Option?
+
+An American option, aka an American-style option, is a version of an options contract that allows holders to exercise the option rights at any time before and including the day of expiration. It contrasts with another type of option, called the European option, that only allows execution on the day of expiration.
+
+An American-style option allows investors to capture profit as soon as the stock price moves favorably, and to take advantage of dividend announcements as well. Investors in single stocks typically use this option. is NOT relevant, dump it.
+2026-02-10 02:13:57,381 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:13:57,384 - DocumentGraderNode - INFO: Retrieved document What Is Theta?
+
+An option tends to lose value at a faster rate as it gets closer to maturity or the contract's end. The Greek letter \$\Theta\$ or "theta" measures this loss in value. Theta is also known as an option's time decay. It's the daily amount by which an option's value drops. is NOT relevant, dump it.
+2026-02-10 02:14:00,699 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:00,703 - DocumentGraderNode - INFO: Retrieved document Different Types of European Options: Calls and Puts is NOT relevant, dump it.
+2026-02-10 02:14:00,703 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 02:14:00,703 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 11.44 seconds.
+2026-02-10 02:14:00,704 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 02:14:00,704 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions. ---
+2026-02-10 02:14:00,705 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-02-10 02:14:01,905 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:01,909 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 1.204 seconds.
+2026-02-10 02:14:01,910 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 02:14:01,911 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 02:14:01,938 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 02:14:01,938 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 02:14:02,118 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.208 seconds.
+2026-02-10 02:14:02,119 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 02:14:05,181 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:05,185 - DocumentGraderNode - INFO: Retrieved document Understanding American Options: Definition, Benefits, and Examples is NOT relevant, dump it.
+2026-02-10 02:14:06,091 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:06,095 - DocumentGraderNode - INFO: Retrieved document What Is a Seller? Definition, What They Do, Types, and Example is NOT relevant, dump it.
+2026-02-10 02:14:07,640 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:07,643 - DocumentGraderNode - INFO: Retrieved document Understanding Option Strike Prices: Definition, Function, and Impact is NOT relevant, dump it.
+2026-02-10 02:14:08,496 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:08,500 - DocumentGraderNode - INFO: Retrieved document What Is a Bond Option? is NOT relevant, dump it.
+2026-02-10 02:14:09,576 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:09,580 - DocumentGraderNode - INFO: Retrieved document What Is a Short Position? Definition, Types, Risks, and Example is NOT relevant, dump it.
+2026-02-10 02:14:10,814 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:10,817 - DocumentGraderNode - INFO: Retrieved document Call Option: What It Is, How To Use It, and Examples is NOT relevant, dump it.
+2026-02-10 02:14:11,964 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:11,968 - DocumentGraderNode - INFO: Retrieved document European Options: Definition, Types, and Differences from American Options is NOT relevant, dump it.
+2026-02-10 02:14:13,212 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:13,216 - DocumentGraderNode - INFO: Retrieved document What Is a Simple Definition of Opportunity Cost?
+
+It's the hidden cost associated with not taking an alternative course of action. is NOT relevant, dump it.
+2026-02-10 02:14:13,216 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 02:14:13,216 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 11.098 seconds.
+2026-02-10 02:14:13,217 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 02:14:13,217 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions. ---
+2026-02-10 02:14:13,218 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-02-10 02:14:14,193 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:14,196 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 0.978 seconds.
+2026-02-10 02:14:14,197 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 02:14:14,197 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 02:14:14,227 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 02:14:14,227 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 02:14:14,417 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.22 seconds.
+2026-02-10 02:14:14,417 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 02:14:15,370 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:15,372 - DocumentGraderNode - INFO: Retrieved document Understanding American Options: Definition, Benefits, and Examples is NOT relevant, dump it.
+2026-02-10 02:14:16,519 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:16,523 - DocumentGraderNode - INFO: Retrieved document What Is a Seller? Definition, What They Do, Types, and Example is NOT relevant, dump it.
+2026-02-10 02:14:17,896 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:17,899 - DocumentGraderNode - INFO: Retrieved document Understanding Option Strike Prices: Definition, Function, and Impact is NOT relevant, dump it.
+2026-02-10 02:14:18,908 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:18,911 - DocumentGraderNode - INFO: Retrieved document What Is a Bond Option? is NOT relevant, dump it.
+2026-02-10 02:14:20,849 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:20,852 - DocumentGraderNode - INFO: Retrieved document What Is a Short Position? Definition, Types, Risks, and Example is NOT relevant, dump it.
+2026-02-10 02:14:21,951 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:21,955 - DocumentGraderNode - INFO: Retrieved document Call Option: What It Is, How To Use It, and Examples is NOT relevant, dump it.
+2026-02-10 02:14:23,102 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:23,106 - DocumentGraderNode - INFO: Retrieved document European Options: Definition, Types, and Differences from American Options is NOT relevant, dump it.
+2026-02-10 02:14:26,120 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:26,124 - DocumentGraderNode - INFO: Retrieved document What Is a Simple Definition of Opportunity Cost?
+
+It's the hidden cost associated with not taking an alternative course of action. is NOT relevant, dump it.
+2026-02-10 02:14:26,124 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 02:14:26,124 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 11.707 seconds.
+2026-02-10 02:14:26,125 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 02:14:26,125 - route_functions - INFO: --- Decision: all documents are not relevant, and looped twice, need to do web search. ---
+2026-02-10 02:14:26,126 - log_utils - INFO: child graph - web_search_node starts to work
+2026-02-10 02:14:27,429 - log_utils - INFO: child graph - web_search_node finishes working, time costed: 1.304 seconds.
+2026-02-10 02:14:27,431 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is a Russian option?", time costed: 38.932 seconds.
+2026-02-10 02:14:27,432 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 38.932 seconds.
+2026-02-10 02:14:27,432 - log_utils - INFO: generate_node starts to work
+2026-02-10 02:14:30,527 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:30,530 - log_utils - INFO: generate_node finishes working, time costed: 3.098 seconds.
+2026-02-10 02:14:30,531 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-10 02:14:32,618 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:32,630 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-10 02:14:32,630 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-10 02:14:34,060 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:14:34,073 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-10 02:14:34,074 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-10 02:14:34,075 - log_utils - INFO: rely_with_generation_node finishes working.

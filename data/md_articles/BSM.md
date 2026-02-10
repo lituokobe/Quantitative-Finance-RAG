@@ -86,7 +86,7 @@ $$C = S * N(d_1) − K * e^{-r * t} * N(d_2)$$
 where:  
 $$d_1= \frac{1}{\sigma * \sqrt{t}}\left[\ln{\left(\frac{S}{K}\right)} + {\left(r + \frac{\sigma^2}{2}\right)} * t\right]$$
 and  
-$$ d_2= d_1 - \sigma*\sqrt{t} $$
+$$d_2= d_1 - \sigma*\sqrt{t}$$
 and where:  
 - $C = \text{Call option price}$
 - $S = \text{Current stock (or other underlying) price}$

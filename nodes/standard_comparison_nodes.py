@@ -1,4 +1,6 @@
 import time
+
+from langchain_core.documents import Document
 from langchain_core.messages import AIMessage
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate, PromptTemplate
@@ -96,21 +98,36 @@ class ComparisonRetrieverNode:
                 "time_cost": time_cost
             }
 
-    @staticmethod
-    def _align_and_annotate(child_graph_results: list):
+    def _align_and_annotate(self, child_graph_results: list):
         aligned = []
 
         for idx, r in enumerate(child_graph_results):
             docs = []
             for d in r["documents"]:
-                d.metadata = {
-                    **d.metadata,
-                    "entity_index": idx,
-                    "entity_question": r["question"],
-                    "rewrite_count": r["rewrite_count"],
-                    "info_type": r["info_type"]
-                }
-                docs.append(d)
+                if isinstance(d, Document):
+                    d.metadata = {
+                        **d.metadata,
+                        "entity_index": idx,
+                        "entity_question": r["question"],
+                        "rewrite_count": r["rewrite_count"],
+                        "info_type": r["info_type"]
+                    }
+                    docs.append(d)
+                elif isinstance(d, tuple) and d[0] == "page_content": # sometimes web search returns tuple
+                    docs.append(
+                        Document(
+                            page_content=d[1],
+                            metadata = {
+                                "entity_index": idx,
+                                "entity_question": r["question"],
+                                "rewrite_count": r["rewrite_count"],
+                                "info_type": r["info_type"]
+                            }
+                        )
+                    )
+                else:
+                    print(f"{self.node_name} - not valid document:")
+                    print(f"{d}")
 
             aligned.append({
                 "entity_index": idx,
@@ -284,14 +301,30 @@ class StandardRetrieverNode:
         aligned_docs = []
         docs = []
         for d in child_graph_result["documents"]:
-            d.metadata = {
-                **d.metadata,
-                "entity_index": 0,
-                "entity_question": child_graph_result["question"],
-                "rewrite_count": child_graph_result["rewrite_count"],
-                "info_type": child_graph_result["info_type"]
-            }
-            docs.append(d)
+            if isinstance(d, Document):
+                d.metadata = {
+                    **d.metadata,
+                    "entity_index": 0,
+                    "entity_question": child_graph_result["question"],
+                    "rewrite_count": child_graph_result["rewrite_count"],
+                    "info_type": child_graph_result["info_type"]
+                }
+                docs.append(d)
+            elif isinstance(d, tuple) and d[0] == "page_content":  # sometimes web search returns tuple
+                docs.append(
+                    Document(
+                        page_content=d[1],
+                        metadata={
+                            "entity_index": 0,
+                            "entity_question": child_graph_result["question"],
+                            "rewrite_count": child_graph_result["rewrite_count"],
+                            "info_type": child_graph_result["info_type"]
+                        }
+                    )
+                )
+            else:
+                print(f"{self.node_name} - not valid document:")
+                print(f"{d}")
 
         aligned_docs.append({
             "entity_index": 0,

@@ -1,0 +1,8 @@
+2026-02-10 01:06:50,646 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-10 01:06:50,649 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-10 01:06:50,650 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-10 01:06:50,656 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 01:06:50,656 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 01:06:50,657 - log_utils - INFO: starting_intention_node starts to work
+2026-02-10 01:06:51,746 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2026-02-10 01:06:51,751 - StartingIntentionNode - ERROR: Error generating decision at starting_intention_node: Error code: 403 - {'error': {'message': 'The free tier of the model has been exhausted. If you wish to continue access the model on a paid basis, please disable the "use free tier only" mode in the management console.', 'type': 'AllocationQuota.FreeTierOnly', 'param': None, 'code': 'AllocationQuota.FreeTierOnly'}, 'id': 'chatcmpl-a4a00a45-14a8-9676-b4df-45bcd1d12c20', 'request_id': 'a4a00a45-14a8-9676-b4df-45bcd1d12c20'}

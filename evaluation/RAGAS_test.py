@@ -60,6 +60,7 @@ results = evaluate(
 )
 
 df = results.to_pandas()
+print(f"original df columns: {df.columns}")
 df["question"] = [s.user_input for s in dataset.samples]
 print(df[[
     "question",

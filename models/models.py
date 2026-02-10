@@ -14,7 +14,7 @@ TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
 
 # ======= LLM for the agent ======
 agent_llm = ChatOpenAI(
-    model = 'qwen-turbo',
+    model = 'qwen-plus-latest',
     temperature = 0,
     api_key = ALI_API_KEY,
     base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1",
@@ -22,7 +22,7 @@ agent_llm = ChatOpenAI(
 
 # ======= LLM for the evaluator ======
 evaluator_llm = ChatOpenAI(
-    model = 'gpt-5-mini',
+    model = 'gpt-4.1-mini',
     temperature = 0,
     api_key = OPENAI_API_KEY,
     base_url = "https://api.openai.com/v1",

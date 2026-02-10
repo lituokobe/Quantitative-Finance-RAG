@@ -1,0 +1,218 @@
+2026-02-10 02:33:59,823 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-10 02:33:59,825 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-10 02:33:59,827 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-10 02:33:59,834 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 02:33:59,834 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 02:33:59,835 - log_utils - INFO: starting_intention_node starts to work
+2026-02-10 02:34:13,725 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:13,746 - log_utils - INFO: starting_intention_node finishes working, time costed: 13.911 seconds.
+2026-02-10 02:34:13,747 - log_utils - INFO: comparison_retriever_node starts to work
+2026-02-10 02:34:15,230 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:15,244 - standard_comparison_nodes - INFO: comparison_retriever_node decomposes question "Compare European option and Russian option", time costed: 1.497 seconds.
+2026-02-10 02:34:15,246 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 02:34:15,417 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 02:34:15,433 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 02:34:15,433 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 02:34:15,949 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.703 seconds.
+2026-02-10 02:34:15,950 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 02:34:17,500 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:17,514 - DocumentGraderNode - INFO: Retrieved document What Is a European Option?
+
+A European option is a financial contract that can only be exercised on its expiration date. This is in contrast to an American option, which allows the holder to exercise it at any time before it expires. Most index options are European, which means they can't be exercised early. The Black-Scholes model is commonly used to value European options and assess their fair price. is NOT relevant, dump it.
+2026-02-10 02:34:20,722 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:20,726 - DocumentGraderNode - INFO: Retrieved document Different Types of European Options: Calls and Puts is NOT relevant, dump it.
+2026-02-10 02:34:22,532 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:22,536 - DocumentGraderNode - INFO: Retrieved document European Options: Definition, Types, and Differences from American Options is relevant
+2026-02-10 02:34:23,450 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:23,454 - DocumentGraderNode - INFO: Retrieved document Understanding American and European Option Styles
+
+American options can be exercised at any time between the date of purchase and the expiration date. European options are different from American options in that they can only be exercised at the end of their lives on their expiration date.
+
+The difference between American and European options is about early exercise, not geography. In the United States, most single stock options are American while index options are European. An American option also typically carries a higher premium than an otherwise identical European option. This is because the early exercise feature is desirable and commands a premium. is NOT relevant, dump it.
+2026-02-10 02:34:24,168 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:24,172 - DocumentGraderNode - INFO: Retrieved document Comparing European and American Options
+
+European options can only be exercised on the expiration date, whereas American options can be exercised at any time between the purchase and expiration dates. In other words, American options allow investors to realize a profit as soon as the stock price moves in their favor and enough to more than offset the premium paid.
+
+Investors use American options with dividend - paying stocks to exercise the option before the ex-dividend date. The flexibility of American options allows investors to own a company's shares in time to get paid a dividend.
+
+However, the flexibility of using an American option comes at a price—a premium to the premium. The increased cost of the option means investors need the underlying asset to move far enough from the strike price to make the trade return a profit.
+
+Holding an American option to maturity means the investor could have saved money with a lower-priced European option.
+
+**European Option Pros:**
+- Lower premium cost
+- Allows trading index options
+- Can be resold before the expiration date
+
+**European Option Cons:**
+- Settlement prices are delayed
+- Cannot be settled for underlying asset early is NOT relevant, dump it.
+2026-02-10 02:34:25,107 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:25,111 - DocumentGraderNode - INFO: Retrieved document Understanding Currency Options: Types, Features, and Exercise Strategies is NOT relevant, dump it.
+2026-02-10 02:34:26,351 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:26,355 - DocumentGraderNode - INFO: Retrieved document Understanding American Options: Definition, Benefits, and Examples is NOT relevant, dump it.
+2026-02-10 02:34:27,444 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:27,448 - DocumentGraderNode - INFO: Retrieved document How to Close a European Option Before Expiry
+
+Typically, exercising an option means initializing the rights of the option so that a trade is executed at the strike price. However, many investors don't like to wait for a European option to expire. Instead, investors can sell the option contract back to the market before its expiration.
+
+Option prices change with the movement and volatility of the underlying asset and time until expiration. As stock prices fluctuate, the option's premium also changes in value. Investors can unwind their option position early if the current option premium is higher than the premium they initially paid. In this case, the investor would receive the net difference between the two premiums.
+
+Closing the option position before expiration means the trader realizes any gains or losses on the contract itself. An existing call option could be sold early if the stock has risen significantly, while a put option could be sold if the stock's price has fallen. is NOT relevant, dump it.
+2026-02-10 02:34:27,448 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 02:34:27,448 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 11.499 seconds.
+2026-02-10 02:34:27,449 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 02:34:27,449 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-10 02:34:27,450 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "Compare European option and Russian option", time costed: 12.206 seconds.
+2026-02-10 02:34:27,452 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 02:34:27,453 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 02:34:27,477 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 02:34:27,477 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 02:34:27,650 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.198 seconds.
+2026-02-10 02:34:27,651 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 02:34:28,776 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:28,780 - DocumentGraderNode - INFO: Retrieved document What Is a European Option?
+
+A European option is a financial contract that can only be exercised on its expiration date. This is in contrast to an American option, which allows the holder to exercise it at any time before it expires. Most index options are European, which means they can't be exercised early. The Black-Scholes model is commonly used to value European options and assess their fair price. is relevant
+2026-02-10 02:34:29,800 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:29,803 - DocumentGraderNode - INFO: Retrieved document Different Types of European Options: Calls and Puts is relevant
+2026-02-10 02:34:30,775 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:30,779 - DocumentGraderNode - INFO: Retrieved document Understanding American and European Option Styles
+
+American options can be exercised at any time between the date of purchase and the expiration date. European options are different from American options in that they can only be exercised at the end of their lives on their expiration date.
+
+The difference between American and European options is about early exercise, not geography. In the United States, most single stock options are American while index options are European. An American option also typically carries a higher premium than an otherwise identical European option. This is because the early exercise feature is desirable and commands a premium. is relevant
+2026-02-10 02:34:31,491 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:31,494 - DocumentGraderNode - INFO: Retrieved document What Is an American Option?
+
+An American option, aka an American-style option, is a version of an options contract that allows holders to exercise the option rights at any time before and including the day of expiration. It contrasts with another type of option, called the European option, that only allows execution on the day of expiration.
+
+An American-style option allows investors to capture profit as soon as the stock price moves favorably, and to take advantage of dividend announcements as well. Investors in single stocks typically use this option. is relevant
+2026-02-10 02:34:33,280 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:33,283 - DocumentGraderNode - INFO: Retrieved document European Options: Definition, Types, and Differences from American Options is relevant
+2026-02-10 02:34:34,090 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:34,094 - DocumentGraderNode - INFO: Retrieved document Understanding American Options: Definition, Benefits, and Examples is NOT relevant, dump it.
+2026-02-10 02:34:35,637 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:35,641 - DocumentGraderNode - INFO: Retrieved document Comparing European and American Options
+
+European options can only be exercised on the expiration date, whereas American options can be exercised at any time between the purchase and expiration dates. In other words, American options allow investors to realize a profit as soon as the stock price moves in their favor and enough to more than offset the premium paid.
+
+Investors use American options with dividend - paying stocks to exercise the option before the ex-dividend date. The flexibility of American options allows investors to own a company's shares in time to get paid a dividend.
+
+However, the flexibility of using an American option comes at a price—a premium to the premium. The increased cost of the option means investors need the underlying asset to move far enough from the strike price to make the trade return a profit.
+
+Holding an American option to maturity means the investor could have saved money with a lower-priced European option.
+
+**European Option Pros:**
+- Lower premium cost
+- Allows trading index options
+- Can be resold before the expiration date
+
+**European Option Cons:**
+- Settlement prices are delayed
+- Cannot be settled for underlying asset early is relevant
+2026-02-10 02:34:35,641 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 02:34:35,641 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 7.991 seconds.
+2026-02-10 02:34:35,642 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 02:34:35,642 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-10 02:34:35,643 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is European option?", time costed: 8.193 seconds.
+2026-02-10 02:34:35,645 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 02:34:35,646 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 02:34:35,675 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 02:34:35,676 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 02:34:35,862 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.216 seconds.
+2026-02-10 02:34:35,862 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 02:34:36,763 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:36,767 - DocumentGraderNode - INFO: Retrieved document Call Option: What It Is, How To Use It, and Examples is NOT relevant, dump it.
+2026-02-10 02:34:37,787 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:37,790 - DocumentGraderNode - INFO: Retrieved document What Is a Bond Option? is NOT relevant, dump it.
+2026-02-10 02:34:39,473 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:39,476 - DocumentGraderNode - INFO: Retrieved document Put Option: What It Is, How It Works, and How To Trade is NOT relevant, dump it.
+2026-02-10 02:34:40,448 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:40,452 - DocumentGraderNode - INFO: Retrieved document What Is a Put Option?
+
+A put option (or “put”), which gives the holder the right to sell, can be contrasted with a call option, which provides the holder with the right to buy the underlying security at a specified price, up until the option contract's expiration date. This predetermined price is called the strike price. is NOT relevant, dump it.
+2026-02-10 02:34:41,371 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:41,374 - DocumentGraderNode - INFO: Retrieved document Different Types of European Options: Calls and Puts is NOT relevant, dump it.
+2026-02-10 02:34:41,374 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 02:34:41,374 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 5.512 seconds.
+2026-02-10 02:34:41,375 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 02:34:41,375 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions. ---
+2026-02-10 02:34:41,376 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-02-10 02:34:42,683 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:42,687 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 1.311 seconds.
+2026-02-10 02:34:42,688 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 02:34:42,688 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 02:34:42,716 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 02:34:42,717 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 02:34:42,898 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.211 seconds.
+2026-02-10 02:34:42,899 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 02:34:47,282 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:47,286 - DocumentGraderNode - INFO: Retrieved document Understanding American Options: Definition, Benefits, and Examples is NOT relevant, dump it.
+2026-02-10 02:34:48,233 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:48,237 - DocumentGraderNode - INFO: Retrieved document What Is a Seller? Definition, What They Do, Types, and Example is NOT relevant, dump it.
+2026-02-10 02:34:49,197 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:49,201 - DocumentGraderNode - INFO: Retrieved document Understanding Option Strike Prices: Definition, Function, and Impact is NOT relevant, dump it.
+2026-02-10 02:34:50,586 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:50,589 - DocumentGraderNode - INFO: Retrieved document What Is a Bond Option? is NOT relevant, dump it.
+2026-02-10 02:34:52,510 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:52,514 - DocumentGraderNode - INFO: Retrieved document What Is a Short Position? Definition, Types, Risks, and Example is NOT relevant, dump it.
+2026-02-10 02:34:53,491 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:53,495 - DocumentGraderNode - INFO: Retrieved document Call Option: What It Is, How To Use It, and Examples is NOT relevant, dump it.
+2026-02-10 02:34:54,393 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:54,396 - DocumentGraderNode - INFO: Retrieved document European Options: Definition, Types, and Differences from American Options is NOT relevant, dump it.
+2026-02-10 02:34:55,412 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:55,415 - DocumentGraderNode - INFO: Retrieved document What Is a Simple Definition of Opportunity Cost?
+
+It's the hidden cost associated with not taking an alternative course of action. is NOT relevant, dump it.
+2026-02-10 02:34:55,415 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 02:34:55,415 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 12.516 seconds.
+2026-02-10 02:34:55,416 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 02:34:55,416 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions. ---
+2026-02-10 02:34:55,417 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-02-10 02:34:56,526 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:56,529 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 1.112 seconds.
+2026-02-10 02:34:56,530 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 02:34:56,531 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 02:34:56,562 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 02:34:56,562 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 02:34:56,749 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.219 seconds.
+2026-02-10 02:34:56,750 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 02:34:58,165 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:58,169 - DocumentGraderNode - INFO: Retrieved document Understanding American Options: Definition, Benefits, and Examples is NOT relevant, dump it.
+2026-02-10 02:34:59,098 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:34:59,102 - DocumentGraderNode - INFO: Retrieved document What Is a Seller? Definition, What They Do, Types, and Example is NOT relevant, dump it.
+2026-02-10 02:35:00,302 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:35:00,306 - DocumentGraderNode - INFO: Retrieved document Understanding Option Strike Prices: Definition, Function, and Impact is NOT relevant, dump it.
+2026-02-10 02:35:01,236 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:35:01,240 - DocumentGraderNode - INFO: Retrieved document What Is a Bond Option? is NOT relevant, dump it.
+2026-02-10 02:35:02,083 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:35:02,086 - DocumentGraderNode - INFO: Retrieved document What Is a Short Position? Definition, Types, Risks, and Example is NOT relevant, dump it.
+2026-02-10 02:35:03,079 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:35:03,083 - DocumentGraderNode - INFO: Retrieved document Call Option: What It Is, How To Use It, and Examples is NOT relevant, dump it.
+2026-02-10 02:35:04,001 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:35:04,005 - DocumentGraderNode - INFO: Retrieved document European Options: Definition, Types, and Differences from American Options is NOT relevant, dump it.
+2026-02-10 02:35:05,127 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:35:05,130 - DocumentGraderNode - INFO: Retrieved document What Is a Simple Definition of Opportunity Cost?
+
+It's the hidden cost associated with not taking an alternative course of action. is NOT relevant, dump it.
+2026-02-10 02:35:05,130 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 02:35:05,130 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 8.381 seconds.
+2026-02-10 02:35:05,131 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 02:35:05,131 - route_functions - INFO: --- Decision: all documents are not relevant, and looped twice, need to do web search. ---
+2026-02-10 02:35:05,132 - log_utils - INFO: child graph - web_search_node starts to work
+2026-02-10 02:35:07,486 - log_utils - INFO: child graph - web_search_node finishes working, time costed: 2.354 seconds.
+2026-02-10 02:35:07,488 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is Russian option?", time costed: 31.845 seconds.
+2026-02-10 02:35:07,489 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 53.742 seconds.
+2026-02-10 02:35:07,489 - log_utils - INFO: generate_node starts to work
+2026-02-10 02:35:20,078 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:35:20,081 - log_utils - INFO: generate_node finishes working, time costed: 12.591 seconds.
+2026-02-10 02:35:20,081 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-10 02:35:22,681 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:35:22,696 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-10 02:35:22,696 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-10 02:35:23,764 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:35:23,780 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-10 02:35:23,780 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-10 02:35:23,781 - log_utils - INFO: rely_with_generation_node finishes working.

@@ -1,0 +1,37 @@
+2026-02-10 02:44:37,517 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 02:44:37,534 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 02:44:37,534 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 02:44:37,535 - naive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-10 02:44:37,537 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 02:44:37,537 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 02:44:37,538 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 02:44:41,188 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:44:41,210 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 3.671 seconds.
+2026-02-10 02:44:41,211 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 02:44:47,230 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:44:47,235 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 6.024 seconds.
+2026-02-10 02:44:47,240 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 02:44:47,240 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 02:44:47,242 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 02:44:52,746 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:44:52,756 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 5.513 seconds.
+2026-02-10 02:44:52,757 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 02:44:56,598 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:44:56,602 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 3.845 seconds.
+2026-02-10 02:45:07,178 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:45:12,063 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:45:16,265 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:45:23,921 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:45:26,648 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:45:34,710 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:45:49,419 - _base_client - INFO: Retrying request to /chat/completions in 0.444874 seconds
+2026-02-10 02:46:11,013 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:46:13,745 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:46:15,430 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:46:17,001 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:46:20,978 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:46:23,577 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:46:27,097 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:46:29,374 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:46:30,674 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 02:46:38,795 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

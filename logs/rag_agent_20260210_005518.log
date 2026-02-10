@@ -1,0 +1,404 @@
+2026-02-10 00:55:19,131 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 00:55:19,143 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 00:55:19,143 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 00:55:19,144 - naive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-10 00:55:19,146 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:19,146 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:19,147 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:20,785 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:20,800 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 1.653 seconds.
+2026-02-10 00:55:20,802 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:55:22,779 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:22,782 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.98 seconds.
+2026-02-10 00:55:22,787 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:22,787 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:22,790 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:23,548 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:23,556 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.767 seconds.
+2026-02-10 00:55:23,557 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:55:25,084 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:25,086 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.529 seconds.
+2026-02-10 00:55:25,099 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:25,099 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:25,100 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:26,006 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:26,011 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.911 seconds.
+2026-02-10 00:55:26,012 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:55:27,440 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:27,444 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.432 seconds.
+2026-02-10 00:55:27,448 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:27,448 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:27,451 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:28,224 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:28,228 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.778 seconds.
+2026-02-10 00:55:28,230 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:55:29,781 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:29,784 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.555 seconds.
+2026-02-10 00:55:29,788 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:29,788 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:29,790 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:30,819 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:30,822 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 1.032 seconds.
+2026-02-10 00:55:30,824 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:55:32,225 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:32,228 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.404 seconds.
+2026-02-10 00:55:32,232 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:32,232 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:32,234 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:33,026 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:33,030 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.796 seconds.
+2026-02-10 00:55:33,031 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:55:34,302 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:34,305 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.274 seconds.
+2026-02-10 00:55:34,309 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:34,310 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:34,312 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:35,325 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:35,489 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 1.177 seconds.
+2026-02-10 00:55:35,489 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:55:36,861 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:36,864 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.375 seconds.
+2026-02-10 00:55:36,868 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:36,868 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:36,870 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:37,782 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:37,786 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.916 seconds.
+2026-02-10 00:55:37,787 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:55:39,523 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:39,526 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.739 seconds.
+2026-02-10 00:55:39,530 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:39,530 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:39,533 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:40,127 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:40,131 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.599 seconds.
+2026-02-10 00:55:40,132 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:55:41,264 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:41,267 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.135 seconds.
+2026-02-10 00:55:41,271 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:41,272 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:41,274 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:41,923 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:41,927 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.653 seconds.
+2026-02-10 00:55:41,928 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:55:43,474 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:43,477 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.549 seconds.
+2026-02-10 00:55:43,480 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:43,481 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:43,483 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:44,217 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:44,221 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.738 seconds.
+2026-02-10 00:55:44,222 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:55:45,041 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:45,043 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 0.821 seconds.
+2026-02-10 00:55:45,046 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:45,047 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:45,048 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:45,732 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:45,736 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.688 seconds.
+2026-02-10 00:55:45,737 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:55:47,410 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:47,413 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.676 seconds.
+2026-02-10 00:55:47,417 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:47,417 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:47,419 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:48,433 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:48,436 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 1.017 seconds.
+2026-02-10 00:55:48,437 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:55:49,560 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:49,561 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.124 seconds.
+2026-02-10 00:55:49,563 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:49,563 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:49,565 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:50,459 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:50,463 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.898 seconds.
+2026-02-10 00:55:50,464 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:55:51,609 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:51,612 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.147 seconds.
+2026-02-10 00:55:51,616 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:51,616 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:51,618 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:52,633 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:52,637 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 1.019 seconds.
+2026-02-10 00:55:52,638 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:55:53,759 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:53,762 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.124 seconds.
+2026-02-10 00:55:53,766 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:53,766 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:53,769 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:54,681 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:54,685 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.917 seconds.
+2026-02-10 00:55:54,687 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:55:56,422 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:56,425 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.738 seconds.
+2026-02-10 00:55:56,428 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:56,429 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:56,431 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:57,343 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:57,347 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.916 seconds.
+2026-02-10 00:55:57,349 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:55:58,875 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:58,878 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.529 seconds.
+2026-02-10 00:55:58,882 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:55:58,882 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:55:58,885 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:55:59,801 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:55:59,805 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.92 seconds.
+2026-02-10 00:55:59,806 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:01,838 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:01,841 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 2.035 seconds.
+2026-02-10 00:56:01,845 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:01,845 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:01,848 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:02,894 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:02,896 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 1.049 seconds.
+2026-02-10 00:56:02,897 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:04,872 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:04,876 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.978 seconds.
+2026-02-10 00:56:04,880 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:04,880 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:04,882 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:05,740 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:05,742 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.86 seconds.
+2026-02-10 00:56:05,743 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:07,341 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:07,344 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.602 seconds.
+2026-02-10 00:56:07,349 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:07,349 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:07,352 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:08,068 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:08,070 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.718 seconds.
+2026-02-10 00:56:08,071 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:09,727 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:09,728 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.657 seconds.
+2026-02-10 00:56:09,729 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:09,729 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:09,730 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:10,468 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:10,471 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.741 seconds.
+2026-02-10 00:56:10,473 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:12,193 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:12,196 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.723 seconds.
+2026-02-10 00:56:12,200 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:12,200 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:12,202 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:13,116 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:13,121 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.919 seconds.
+2026-02-10 00:56:13,122 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:14,957 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:14,960 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.838 seconds.
+2026-02-10 00:56:14,964 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:14,964 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:14,966 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:15,878 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:15,880 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.914 seconds.
+2026-02-10 00:56:15,881 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:17,530 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:17,534 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.653 seconds.
+2026-02-10 00:56:17,537 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:17,537 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:17,539 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:18,313 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:18,317 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.777 seconds.
+2026-02-10 00:56:18,318 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:19,873 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:19,876 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.558 seconds.
+2026-02-10 00:56:19,880 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:19,880 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:19,882 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:20,692 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:20,696 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.814 seconds.
+2026-02-10 00:56:20,698 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:22,437 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:22,440 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.743 seconds.
+2026-02-10 00:56:22,444 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:22,444 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:22,446 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:23,224 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:23,228 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.781 seconds.
+2026-02-10 00:56:23,229 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:25,096 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:25,100 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.871 seconds.
+2026-02-10 00:56:25,104 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:25,104 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:25,106 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:26,120 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:26,124 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 1.018 seconds.
+2026-02-10 00:56:26,125 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:27,541 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:27,544 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.419 seconds.
+2026-02-10 00:56:27,548 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:27,548 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:27,550 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:28,401 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:28,405 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.854 seconds.
+2026-02-10 00:56:28,406 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:31,444 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:31,446 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 3.04 seconds.
+2026-02-10 00:56:31,448 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:31,449 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:31,450 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:32,308 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:32,312 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.862 seconds.
+2026-02-10 00:56:32,314 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:33,805 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:33,808 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.495 seconds.
+2026-02-10 00:56:33,812 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:33,812 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:33,815 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:34,722 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:34,726 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.911 seconds.
+2026-02-10 00:56:34,728 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:35,746 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:35,750 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.022 seconds.
+2026-02-10 00:56:35,753 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:35,753 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:35,755 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:36,667 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:36,671 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.916 seconds.
+2026-02-10 00:56:36,673 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:38,376 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:38,377 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.705 seconds.
+2026-02-10 00:56:38,379 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:38,379 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:38,380 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:39,744 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:39,748 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 1.368 seconds.
+2026-02-10 00:56:39,749 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:43,219 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:43,220 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 3.471 seconds.
+2026-02-10 00:56:43,222 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:43,222 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:43,224 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:44,346 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:44,348 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 1.125 seconds.
+2026-02-10 00:56:44,349 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:48,340 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:48,342 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 3.993 seconds.
+2026-02-10 00:56:48,345 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:48,345 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:48,347 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:49,457 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:49,461 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 1.114 seconds.
+2026-02-10 00:56:49,463 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:51,311 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:51,315 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.852 seconds.
+2026-02-10 00:56:51,318 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:51,318 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:51,321 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:52,540 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:52,544 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 1.224 seconds.
+2026-02-10 00:56:52,546 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:56:55,611 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:55,614 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 3.068 seconds.
+2026-02-10 00:56:55,617 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:56:55,617 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:56:55,619 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:56:56,738 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:56:56,742 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 1.123 seconds.
+2026-02-10 00:56:56,744 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:57:00,220 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:00,223 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 3.48 seconds.
+2026-02-10 00:57:00,227 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:57:00,227 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:57:00,229 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:57:01,141 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:01,144 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.915 seconds.
+2026-02-10 00:57:01,146 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:57:02,985 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:02,989 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.843 seconds.
+2026-02-10 00:57:02,992 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:57:02,992 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:57:02,995 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:57:03,669 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:03,671 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.676 seconds.
+2026-02-10 00:57:03,672 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:57:05,183 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:05,187 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.515 seconds.
+2026-02-10 00:57:05,190 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:57:05,191 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:57:05,193 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:57:06,055 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:06,056 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.863 seconds.
+2026-02-10 00:57:06,056 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:57:07,797 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:07,799 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.743 seconds.
+2026-02-10 00:57:07,803 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:57:07,803 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:57:07,805 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:57:08,719 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:08,722 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.917 seconds.
+2026-02-10 00:57:08,723 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:57:10,766 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:10,767 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 2.043 seconds.
+2026-02-10 00:57:10,768 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:57:10,768 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:57:10,769 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:57:11,791 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:11,795 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 1.027 seconds.
+2026-02-10 00:57:11,797 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:57:13,345 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:13,348 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.551 seconds.
+2026-02-10 00:57:13,352 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:57:13,353 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:57:13,355 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:57:14,050 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:14,054 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.699 seconds.
+2026-02-10 00:57:14,055 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:57:15,784 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:15,786 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.731 seconds.
+2026-02-10 00:57:15,790 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:57:15,790 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:57:15,792 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:57:16,807 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:16,807 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 1.015 seconds.
+2026-02-10 00:57:16,808 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:57:18,549 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:18,552 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.744 seconds.
+2026-02-10 00:57:18,554 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:57:18,554 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:57:18,556 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:57:19,471 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:19,474 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.918 seconds.
+2026-02-10 00:57:19,475 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:57:21,210 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:21,211 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.736 seconds.
+2026-02-10 00:57:21,213 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:57:21,214 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:57:21,215 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:57:22,234 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:22,235 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 1.02 seconds.
+2026-02-10 00:57:22,235 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:57:24,078 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:24,079 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.843 seconds.
+2026-02-10 00:57:24,080 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:57:24,080 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:57:24,082 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:57:24,897 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:24,900 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.818 seconds.
+2026-02-10 00:57:24,900 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:57:26,126 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:26,127 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.226 seconds.
+2026-02-10 00:57:26,128 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:57:26,128 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:57:26,129 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:57:27,049 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:27,053 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.923 seconds.
+2026-02-10 00:57:27,054 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:57:28,893 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:28,896 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.842 seconds.
+2026-02-10 00:57:28,900 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:57:28,900 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:57:28,902 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:57:29,811 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:29,812 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 0.91 seconds.
+2026-02-10 00:57:29,813 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:57:31,553 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:31,554 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.741 seconds.
+2026-02-10 00:57:31,556 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 00:57:31,556 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 00:57:31,557 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-10 00:57:32,578 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:32,582 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 1.025 seconds.
+2026-02-10 00:57:32,584 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-10 00:57:34,060 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 00:57:34,063 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.48 seconds.

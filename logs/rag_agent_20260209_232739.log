@@ -1,0 +1,12 @@
+2026-02-09 23:27:39,821 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-09 23:27:39,836 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-09 23:27:39,836 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-09 23:27:39,836 - naive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-09 23:27:39,838 - log_utils - INFO: starting_reply_node starts to work
+2026-02-09 23:27:39,838 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-09 23:27:39,839 - log_utils - INFO: naive rag - starting_intention_node starts to work
+2026-02-09 23:27:42,886 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 23:27:42,908 - log_utils - INFO: naive rag - starting_intention_node finishes working, time costed: 3.069 seconds.
+2026-02-09 23:27:42,910 - log_utils - INFO: naive rag - agent_node starts to work
+2026-02-09 23:27:44,713 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 23:27:44,717 - log_utils - INFO: naive rag - agent_node finishes working, time costed: 1.808 seconds.
