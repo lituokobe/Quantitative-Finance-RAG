@@ -1,0 +1,362 @@
+2026-02-11 01:13:30,566 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 01:13:30,568 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 01:13:30,570 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-11 01:13:30,575 - log_utils - INFO: starting_reply_node starts to work
+2026-02-11 01:13:30,575 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-11 01:13:30,576 - log_utils - INFO: starting_intention_node starts to work
+2026-02-11 01:13:32,329 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:32,351 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.774 seconds.
+2026-02-11 01:13:32,351 - log_utils - INFO: comparison_retriever_node starts to work
+2026-02-11 01:13:33,976 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:34,142 - standard_comparison_nodes - INFO: comparison_retriever_node decomposes question "What is the difference between call options and put options?", time costed: 1.79 seconds.
+2026-02-11 01:13:34,143 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 01:13:34,166 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 01:13:34,184 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 01:13:34,184 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 01:13:34,852 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.709 seconds.
+2026-02-11 01:13:34,855 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 01:13:36,207 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:36,222 - DocumentGraderNode - INFO: Retrieved document What Is an Exercise Price?
+
+The exercise price is the price at which an underlying security can be purchased or sold when trading a call or put option, respectively. It is also referred to as the strike price and is known when an investor initiates the trade. Options are "in the money" or "out of the money".
+
+An option gets its value from the difference between the fixed exercise price and the market price of the underlying security. is relevant
+2026-02-11 01:13:37,044 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:37,047 - DocumentGraderNode - INFO: Retrieved document Exploring the Types of Options: Calls and Puts is relevant
+2026-02-11 01:13:37,800 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:37,804 - DocumentGraderNode - INFO: Retrieved document Is a High Delta Good for Options?
+
+A rise in the price of the underlying stock is positive for call options but not for put options. This means that the delta value is positive for call options and negative for put options. is relevant
+2026-02-11 01:13:38,613 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:38,617 - DocumentGraderNode - INFO: Retrieved document Understanding Exercise Price: Call and Put Options Explained is relevant
+2026-02-11 01:13:39,484 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:39,487 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- The exercise price, or strike price, is the price at which an option holder can buy or sell the underlying security.
+- Call options become valuable when the market price exceeds the exercise price; put options gain value when the market price is below the exercise price.
+- Options are classified as in-the-money (ITM) or out-of-the-money (OTM) based on the relationship between the exercise price and the market price.
+- Put options give investors the right to sell at the exercise price, while call options offer the right to buy.
+- An option's value depends on its exercise price relative to the market price of the underlying asset, determining its profitability. is relevant
+2026-02-11 01:13:40,425 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:40,429 - DocumentGraderNode - INFO: Retrieved document Different Types of European Options: Calls and Puts is relevant
+2026-02-11 01:13:41,859 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:41,863 - DocumentGraderNode - INFO: Retrieved document In-the-Money Call Options
+
+Call options allow you to buy the underlying asset at a specific price before a predetermined date. The premium depends on whether the option is ITM or not.
+
+Investors who buy call options typically believe the underlying asset's price will increase and close above the strike price by the option's expiration date. They are bullish on the price direction of the stock.
+
+A call option is ITM if the stock's market price is higher than the option's strike price. The amount that an option is ITM is called the intrinsic value.
+
+A call option with a strike of \$25 would be ITM if the underlying stock were trading at \$30 per share. The difference between the strike price and the market price is the option premium. So, investors looking to buy a particular ITM call option will pay the premium or the spread between the strike and the market price.
+
+An investor holding a call option that's expiring ITM can exercise it and earn the difference between the strike and market prices. Whether the trade is profitable or not depends on the investor's total transaction expense. is relevant
+2026-02-11 01:13:42,449 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:42,453 - DocumentGraderNode - INFO: Retrieved document Call Option: What It Is, How To Use It, and Examples is relevant
+2026-02-11 01:13:42,453 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 01:13:42,453 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 7.598 seconds.
+2026-02-11 01:13:42,454 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 01:13:42,454 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 01:13:42,455 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is the difference between call options and put options?", time costed: 8.313 seconds.
+2026-02-11 01:13:42,458 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 01:13:42,458 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 01:13:42,486 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 01:13:42,487 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 01:13:42,662 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.205 seconds.
+2026-02-11 01:13:42,663 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 01:13:43,336 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:43,337 - DocumentGraderNode - INFO: Retrieved document Call Option: What It Is, How To Use It, and Examples is relevant
+2026-02-11 01:13:44,110 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:44,112 - DocumentGraderNode - INFO: Retrieved document Short Call Option
+
+As its name indicates, a short call option is the opposite of a long call option. In a short call option, the seller promises to sell their shares at a fixed strike price in the future. Short call options are mainly used for covered calls by the option seller, or call options in which the seller already owns the underlying stock for their options. is relevant
+2026-02-11 01:13:44,923 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:44,927 - DocumentGraderNode - INFO: Retrieved document Is a High Delta Good for Options?
+
+A rise in the price of the underlying stock is positive for call options but not for put options. This means that the delta value is positive for call options and negative for put options. is relevant
+2026-02-11 01:13:45,584 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:45,587 - DocumentGraderNode - INFO: Retrieved document Call Option Examples is relevant
+2026-02-11 01:13:46,365 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:46,369 - DocumentGraderNode - INFO: Retrieved document Exploring the Types of Options: Calls and Puts is relevant
+2026-02-11 01:13:47,184 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:47,187 - DocumentGraderNode - INFO: Retrieved document Long vs. Short Call Options
+
+There are two basic ways to trade call options: a long call option and a short call option. is relevant
+2026-02-11 01:13:47,813 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:47,816 - DocumentGraderNode - INFO: Retrieved document Understanding Exercise Price: Call and Put Options Explained is relevant
+2026-02-11 01:13:48,720 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:48,723 - DocumentGraderNode - INFO: Retrieved document What Are the Risks Associated With Bond Options?
+
+As with all options, the contract holder is not obligated to exercise. However, non-exercise will result in a loss of the contract’s purchase value and fees. For all options, investors who buy either a call or put option will have a maximum loss equal to the purchase value of the option. Selling a call or put option creates unlimited loss potential. The seller of an option is obligated to fulfill his position when the contract holder exercises. Therefore, the buyer and seller hope for two entirely different outcomes. is relevant
+2026-02-11 01:13:48,724 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 01:13:48,724 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.061 seconds.
+2026-02-11 01:13:48,724 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 01:13:48,724 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 01:13:48,726 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is call options?", time costed: 6.27 seconds.
+2026-02-11 01:13:48,728 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 01:13:48,729 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 01:13:48,757 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 01:13:48,758 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 01:13:48,933 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.205 seconds.
+2026-02-11 01:13:48,934 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 01:13:49,724 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:49,727 - DocumentGraderNode - INFO: Retrieved document Is a High Delta Good for Options?
+
+A rise in the price of the underlying stock is positive for call options but not for put options. This means that the delta value is positive for call options and negative for put options. is relevant
+2026-02-11 01:13:50,874 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:50,878 - DocumentGraderNode - INFO: Retrieved document Call Option: What It Is, How To Use It, and Examples is relevant
+2026-02-11 01:13:51,617 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:51,620 - DocumentGraderNode - INFO: Retrieved document Puts
+
+Opposite to call options, a put gives the holder the right, but not the obligation, to sell the underlying stock at the strike price on or before expiration. A long put, therefore, is a short position in the underlying security, as the put gains value as the underlying's price falls (puts have a negative delta).
+
+Protective puts can be purchased as a sort of insurance, providing a price floor for investors to hedge their positions. is relevant
+2026-02-11 01:13:52,373 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:52,376 - DocumentGraderNode - INFO: Retrieved document What Are the Risks Associated With Bond Options?
+
+As with all options, the contract holder is not obligated to exercise. However, non-exercise will result in a loss of the contract’s purchase value and fees. For all options, investors who buy either a call or put option will have a maximum loss equal to the purchase value of the option. Selling a call or put option creates unlimited loss potential. The seller of an option is obligated to fulfill his position when the contract holder exercises. Therefore, the buyer and seller hope for two entirely different outcomes. is relevant
+2026-02-11 01:13:53,023 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:53,027 - DocumentGraderNode - INFO: Retrieved document Explain Like I'm 5
+
+A put option is a financial contract that comes with the right to sell a certain asset at a certain price, even if the market price is lower. The price for selling the asset is called the strike price, and the deadline for selling it is called the expiration date.
+
+Put options only have value if the market price of the asset falls below the strike price. The price of a put is also affected by how far away the deadline is and how quickly the price of the underlying asset changes. Investors buy put options so that they can still sell their stocks at a high price, even if the market price dips lower. is relevant
+2026-02-11 01:13:53,728 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:53,731 - DocumentGraderNode - INFO: Retrieved document What Is a Bond Option?
+
+A bond option is a contract in which the underlying asset is a bond. Like all standard option contracts, an investor can take many speculative positions through either bond call or bond put options. In general, all options, including bond options, are derivative products that allow investors to take bets on the direction of underlying asset prices or to hedge certain asset risks within a portfolio. is relevant
+2026-02-11 01:13:54,754 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:54,758 - DocumentGraderNode - INFO: Retrieved document Important
+
+- $\text{Put option intrinsic value} = \text{Strike price} - \text{market price of underlying security}$
+
+- $\text{Call option intrinsic value} = \text{Market price of underlying security} - \text{Strike price}$
+
+Out-of-the-money (OTM) and at-the-money (ATM) put options have no intrinsic value because there's no benefit in exercising the option. Investors have the option of short-selling the stock at the current higher market price, rather than exercising an OTM put option at an undesirable strike price. However, outside of a bear market, short selling is typically riskier than buying put options.
+
+Time value, or extrinsic value, is reflected in the premium of the option. If the strike price of a put option is \$20, and the underlying stock is currently trading at \$19, there's \$1 of intrinsic value in the option. But the put option may trade for \$1.35. The extra \$0.35 is time value, as the underlying stock price could change before the option expires. Different put options on the same underlying asset may be combined to form put spreads.
+
+There are several factors to consider when it comes to selling put options. It’s important to understand an option contract’s value and profitability when considering a trade, or else you risk the stock falling past the point of profitability.
+
+The payoff of a put option at expiration is depicted in the image below: is relevant
+2026-02-11 01:13:55,484 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:13:55,488 - DocumentGraderNode - INFO: Retrieved document Exploring the Types of Options: Calls and Puts is relevant
+2026-02-11 01:13:55,488 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 01:13:55,488 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.555 seconds.
+2026-02-11 01:13:55,489 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 01:13:55,489 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 01:13:55,490 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is put options?", time costed: 6.764 seconds.
+2026-02-11 01:13:55,490 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 23.139 seconds.
+2026-02-11 01:13:55,491 - log_utils - INFO: generate_node starts to work
+2026-02-11 01:14:02,729 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:02,733 - log_utils - INFO: generate_node finishes working, time costed: 7.242 seconds.
+2026-02-11 01:14:02,734 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 01:14:03,670 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:03,686 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-11 01:14:03,687 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-11 01:14:04,590 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:04,597 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-11 01:14:04,598 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-11 01:14:04,598 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-11 01:14:04,604 - log_utils - INFO: starting_reply_node starts to work
+2026-02-11 01:14:04,604 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-11 01:14:04,606 - log_utils - INFO: starting_intention_node starts to work
+2026-02-11 01:14:05,718 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:05,726 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.12 seconds.
+2026-02-11 01:14:05,727 - log_utils - INFO: comparison_retriever_node starts to work
+2026-02-11 01:14:06,969 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:06,976 - standard_comparison_nodes - INFO: comparison_retriever_node decomposes question "Compare systematic risk and unsystematic risk in quantitative finance", time costed: 1.248 seconds.
+2026-02-11 01:14:06,978 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 01:14:06,979 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 01:14:07,006 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 01:14:07,006 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 01:14:07,213 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.235 seconds.
+2026-02-11 01:14:07,213 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 01:14:08,074 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:08,082 - DocumentGraderNode - INFO: Retrieved document Risk: What It Means in Investing and How to Measure and Manage It is relevant
+2026-02-11 01:14:09,097 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:09,101 - DocumentGraderNode - INFO: Retrieved document Types of Financial Risk
+
+Every saving and investment action involves different risks and returns. In general, financial theory classifies investment risks affecting asset values into two categories: systematic risk and unsystematic risk. Broadly speaking, investors are exposed to both systematic and unsystematic risks.
+
+Systematic risks, also known as market risks, are risks that can affect an entire economic market overall or a large percentage of the total market. Market risk is the risk of losing investments due to factors, such as political risk and macroeconomic risk, that affect the performance of the overall market. Market risk cannot be easily mitigated through portfolio diversification. Other common types of systematic risk can include interest rate risk, inflation risk, currency risk, liquidity risk, country risk, and sociopolitical risk. is relevant
+2026-02-11 01:14:09,916 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:09,920 - DocumentGraderNode - INFO: Retrieved document Options: Types, Spreads, and Risk Metrics is relevant
+2026-02-11 01:14:10,940 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:10,948 - DocumentGraderNode - INFO: Retrieved document Important
+
+Systematic risk affects a market sector or the entire market, whereas unsystematic risk applies to a specific company or industry. is relevant
+2026-02-11 01:14:11,760 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:11,764 - DocumentGraderNode - INFO: Retrieved document Unsystematic risk, also known as specific risk or idiosyncratic risk, is a category of risk that only affects an industry or a particular company. Unsystematic risk is the risk of losing an investment due to company or industry-specific hazards. Examples include a change in management, a product recall, a regulatory change that could drive down company sales, and a new competitor in the marketplace with the potential to take away market share from a company. Investors often use diversification to manage unsystematic risk by investing in a variety of assets.
+
+In addition to the broad systematic and unsystematic risks, there are several specific types of risk, including: is relevant
+2026-02-11 01:14:12,488 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:12,492 - DocumentGraderNode - INFO: Retrieved document Problems With the CAPM is relevant
+2026-02-11 01:14:13,291 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:13,294 - DocumentGraderNode - INFO: Retrieved document Can Portfolio Diversification Protect Against Risks?
+
+Portfolio diversification is an effective strategy used to manage unsystematic risks (risks specific to individual companies or industries); however, it cannot protect against systematic risks (risks that affect the entire market or a large portion of it). Systematic risks, such as interest rate risk, inflation risk, and currency risk, cannot be eliminated through diversification alone. However, investors can still mitigate the impact of these risks by considering other strategies like hedging, investing in assets that are less correlated with the systematic risks, or adjusting the investment time horizon. is relevant
+2026-02-11 01:14:14,319 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:14,321 - DocumentGraderNode - INFO: Retrieved document Understanding Risk Premiums: Boosting Returns for Risky Investments is relevant
+2026-02-11 01:14:14,322 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 01:14:14,322 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 7.108 seconds.
+2026-02-11 01:14:14,322 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 01:14:14,322 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 01:14:14,323 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "Compare systematic risk and unsystematic risk in quantitative finance", time costed: 7.347 seconds.
+2026-02-11 01:14:14,324 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 01:14:14,325 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 01:14:14,349 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 01:14:14,349 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 01:14:14,519 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.195 seconds.
+2026-02-11 01:14:14,520 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 01:14:15,227 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:15,235 - DocumentGraderNode - INFO: Retrieved document Risk: What It Means in Investing and How to Measure and Manage It is relevant
+2026-02-11 01:14:16,162 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:16,166 - DocumentGraderNode - INFO: Retrieved document What Is the Capital Asset Pricing Model (CAPM)?
+
+The capital asset pricing model (CAPM) describes the relationship between systematic risk, or the general perils of investing, and expected return for assets, particularly stocks. It is a finance model that establishes a linear relationship between the required return on an investment and risk.
+
+CAPM is based on the relationship between an asset’s beta, the risk-free rate (typically the Treasury bill rate), and the equity risk premium, or the expected return on the market minus the risk-free rate.
+
+CAPM evolved as a way to measure this systematic risk. It is widely used throughout finance for pricing risky securities and generating expected returns for assets, given the risk of those assets and cost of capital. is relevant
+2026-02-11 01:14:17,187 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:17,190 - DocumentGraderNode - INFO: Retrieved document Important
+
+Systematic risk affects a market sector or the entire market, whereas unsystematic risk applies to a specific company or industry. is relevant
+2026-02-11 01:14:18,120 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:18,127 - DocumentGraderNode - INFO: Retrieved document What Is Quantitative Analysis Used for in Finance?
+
+Quantitative analysis is used by governments, investors, and businesses (in areas such as finance, project management, production planning, and marketing) to study a certain situation or event, measure it, predict outcomes, and thus help in decision-making. In finance, it's widely used for assessing investment opportunities and risks. For instance, before venturing into investments, analysts rely on quantitative analysis to understand the performance metrics of different financial instruments such as stocks, bonds, and derivatives. By delving into historical data and employing mathematical and statistical models, they can forecast potential future performance and evaluate the underlying risks. This practice isn't just confined to individual assets; it's also essential for portfolio management. By examining the relationships between different assets and assessing their risk and return profiles, investors can construct portfolios that are optimized for the highest possible returns for a given level of risk. is relevant
+2026-02-11 01:14:18,989 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:18,993 - DocumentGraderNode - INFO: Retrieved document Options: Types, Spreads, and Risk Metrics is relevant
+2026-02-11 01:14:19,813 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:19,816 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 01:14:20,669 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:20,672 - DocumentGraderNode - INFO: Retrieved document Unsystematic risk, also known as specific risk or idiosyncratic risk, is a category of risk that only affects an industry or a particular company. Unsystematic risk is the risk of losing an investment due to company or industry-specific hazards. Examples include a change in management, a product recall, a regulatory change that could drive down company sales, and a new competitor in the marketplace with the potential to take away market share from a company. Investors often use diversification to manage unsystematic risk by investing in a variety of assets.
+
+In addition to the broad systematic and unsystematic risks, there are several specific types of risk, including: is relevant
+2026-02-11 01:14:21,693 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:21,697 - DocumentGraderNode - INFO: Retrieved document How Quantitative Analysis Works in Finance
+
+Quantitative analysis (QA) in finance refers to the use of mathematical and statistical techniques to analyze financial & economic data and make trading, investing, and risk management decisions.
+
+QA starts with data collection, where quants gather a vast amount of financial data that might affect the market. This data can include anything from stock prices and company earnings to economic indicators like inflation or unemployment rates. They then use various mathematical models and statistical techniques to analyze this data, looking for trends, patterns, and potential investment opportunities. The outcome of this analysis can help investors decide where to allocate their resources to maximize returns or minimize risks.
+
+Some key aspects of quantitative analysis in finance include: is relevant
+2026-02-11 01:14:21,697 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 01:14:21,697 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 7.178 seconds.
+2026-02-11 01:14:21,698 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 01:14:21,698 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 01:14:21,699 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is systematic risk in quantitative finance?", time costed: 7.376 seconds.
+2026-02-11 01:14:21,701 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 01:14:21,702 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 01:14:21,729 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 01:14:21,729 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 01:14:21,937 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.235 seconds.
+2026-02-11 01:14:21,937 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 01:14:22,717 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:22,725 - DocumentGraderNode - INFO: Retrieved document Unsystematic risk, also known as specific risk or idiosyncratic risk, is a category of risk that only affects an industry or a particular company. Unsystematic risk is the risk of losing an investment due to company or industry-specific hazards. Examples include a change in management, a product recall, a regulatory change that could drive down company sales, and a new competitor in the marketplace with the potential to take away market share from a company. Investors often use diversification to manage unsystematic risk by investing in a variety of assets.
+
+In addition to the broad systematic and unsystematic risks, there are several specific types of risk, including: is relevant
+2026-02-11 01:14:23,536 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:23,539 - DocumentGraderNode - INFO: Retrieved document What Is Quantitative Analysis Used for in Finance?
+
+Quantitative analysis is used by governments, investors, and businesses (in areas such as finance, project management, production planning, and marketing) to study a certain situation or event, measure it, predict outcomes, and thus help in decision-making. In finance, it's widely used for assessing investment opportunities and risks. For instance, before venturing into investments, analysts rely on quantitative analysis to understand the performance metrics of different financial instruments such as stocks, bonds, and derivatives. By delving into historical data and employing mathematical and statistical models, they can forecast potential future performance and evaluate the underlying risks. This practice isn't just confined to individual assets; it's also essential for portfolio management. By examining the relationships between different assets and assessing their risk and return profiles, investors can construct portfolios that are optimized for the highest possible returns for a given level of risk. is relevant
+2026-02-11 01:14:24,366 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:24,370 - DocumentGraderNode - INFO: Retrieved document Risk: What It Means in Investing and How to Measure and Manage It is relevant
+2026-02-11 01:14:25,072 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:25,079 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 01:14:25,797 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:25,799 - DocumentGraderNode - INFO: Retrieved document Important
+
+Systematic risk affects a market sector or the entire market, whereas unsystematic risk applies to a specific company or industry. is relevant
+2026-02-11 01:14:26,475 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:26,478 - DocumentGraderNode - INFO: Retrieved document Options: Types, Spreads, and Risk Metrics is relevant
+2026-02-11 01:14:27,375 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:27,379 - DocumentGraderNode - INFO: Retrieved document How Quantitative Analysis Works in Finance
+
+Quantitative analysis (QA) in finance refers to the use of mathematical and statistical techniques to analyze financial & economic data and make trading, investing, and risk management decisions.
+
+QA starts with data collection, where quants gather a vast amount of financial data that might affect the market. This data can include anything from stock prices and company earnings to economic indicators like inflation or unemployment rates. They then use various mathematical models and statistical techniques to analyze this data, looking for trends, patterns, and potential investment opportunities. The outcome of this analysis can help investors decide where to allocate their resources to maximize returns or minimize risks.
+
+Some key aspects of quantitative analysis in finance include: is relevant
+2026-02-11 01:14:27,379 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 01:14:27,380 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 5.442 seconds.
+2026-02-11 01:14:27,380 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 01:14:27,380 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 01:14:27,381 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is unsystematic risk in quantitative finance?", time costed: 5.682 seconds.
+2026-02-11 01:14:27,382 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 21.654 seconds.
+2026-02-11 01:14:27,382 - log_utils - INFO: generate_node starts to work
+2026-02-11 01:14:40,168 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:40,172 - log_utils - INFO: generate_node finishes working, time costed: 12.789 seconds.
+2026-02-11 01:14:40,172 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 01:14:41,047 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:41,051 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-11 01:14:41,051 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-11 01:14:42,347 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:42,356 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-11 01:14:42,357 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-11 01:14:42,358 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-11 01:14:45,253 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:46,528 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:47,917 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:50,884 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:53,850 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:56,213 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:14:57,429 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:00,278 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:03,264 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:06,240 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:09,207 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:11,941 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:14,339 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:14,372 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:17,246 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:19,859 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:21,164 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:24,058 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:24,062 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:28,254 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:30,811 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:33,957 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:36,958 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:39,516 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:42,244 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:44,737 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:47,095 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:48,494 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:49,846 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:53,038 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:54,273 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:56,007 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:57,157 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:15:59,999 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:03,173 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:06,757 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:08,304 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:09,766 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:11,023 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:14,168 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:16,794 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:19,150 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:22,725 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:23,891 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:26,827 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:30,616 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:33,370 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:36,658 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:40,550 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:44,126 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:47,411 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:50,074 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:53,553 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:56,594 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:57,755 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:16:59,420 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:17:06,951 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:17:10,452 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 01:17:43,014 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

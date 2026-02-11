@@ -1,0 +1,28 @@
+2026-02-10 23:30:14,385 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-10 23:30:14,388 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-10 23:30:14,390 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-10 23:30:14,395 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 23:30:14,395 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 23:30:14,397 - log_utils - INFO: starting_intention_node starts to work
+2026-02-10 23:30:17,678 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 23:30:17,700 - log_utils - INFO: starting_intention_node finishes working, time costed: 3.303 seconds.
+2026-02-10 23:30:17,701 - log_utils - INFO: calculation_retriever_node starts to work
+2026-02-10 23:30:17,914 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 23:30:17,927 - milvus_db - INFO: Created hybrid retriever: k=10, ranker=rrf, threshold=0.05, filter={'contains_math': True}
+2026-02-10 23:30:17,927 - retriever_tools - INFO: Created hybrid retriever with k=10, threshold=0.05
+2026-02-10 23:30:18,558 - log_utils - INFO: calculation_retriever_node finishes working, time costed: 0.857 seconds.
+2026-02-10 23:30:18,559 - log_utils - INFO: math_verification_node starts to work
+2026-02-10 23:30:22,641 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 23:30:22,657 - log_utils - INFO: math_verification_node finishes working, time costed: 4.098 seconds.
+2026-02-10 23:30:25,907 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 23:30:28,881 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 23:30:30,059 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 23:30:32,218 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 23:30:33,464 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 23:30:36,421 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 23:30:38,311 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 23:30:39,591 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 23:30:41,004 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 23:30:43,077 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 23:30:46,248 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 23:30:58,022 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

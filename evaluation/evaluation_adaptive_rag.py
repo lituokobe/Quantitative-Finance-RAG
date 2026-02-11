@@ -1,5 +1,4 @@
 from langchain_core.documents import Document
-
 from agent_adaptive_rag.adaptive_rag_graph_builder import build_adaptive_rag_graph
 from evaluation.question_reference import evaluation_set
 from langchain_core.messages import HumanMessage
@@ -16,11 +15,12 @@ from utils.log_utils import log
 graph = build_adaptive_rag_graph()
 id_category_doctype = []
 samples = []
+
 # test
 # conv_config = {"configurable":{"thread_id":f"evaluation"}}
 # state_1 = graph.invoke({"messages": [HumanMessage(content="")]}, config=conv_config) # trigger the greetings
-# state_2 = graph.invoke({"messages": [HumanMessage(content="How is WACC calculated if the cost of equity is 10%, the cost of debt is 5%, equity weight is 60%, debt weight is 40%, and corporate tax rate is 20%?")]}, config=conv_config) # get the real reply
-# print(state_2)
+# state_2 = graph.invoke({"messages": [HumanMessage(content="What is liquidity?")]}, config=conv_config) # get the real reply
+# print(state_2["logs"][-1]["generation"])
 
 # ====== let the agent answer prepared questions one by one ======
 for item in evaluation_set:
@@ -29,6 +29,7 @@ for item in evaluation_set:
     eval_category = item["category"]
     eval_question = item["question"]
     eval_reference= item["reference"]
+    print(f"Start to answer question {eval_id} - {eval_question}")
 
     # ------ set tup config, each item has its own thread_id ------
     conv_config = {"configurable":{"thread_id":f"evaluation_{eval_id}"}}
@@ -37,6 +38,8 @@ for item in evaluation_set:
     state_1 = graph.invoke({"messages": [HumanMessage(content="")]}, config=conv_config) # trigger the greetings
     state_2 = graph.invoke({"messages": [HumanMessage(content=eval_question)]}, config=conv_config) # get the real reply
     last_log = state_2["logs"][-1]
+    for log in state_2["logs"]:
+        print(log)
 
     # ------ get retrieved context, a bit complicated for adaptive rag ------
     try:
@@ -107,7 +110,7 @@ try:
     df_results["id"] = [item["id"] for item in id_category_doctype]
     df_results["category"] = [item["category"] for item in id_category_doctype]
     df_results["document_type"] = [item["doctype"] for item in id_category_doctype]
-    df_results.to_csv("eval_results_adaptive_rag.csv")
+    df_results.to_csv("eval_results_adaptive_rag.csv", index=False, encoding="utf-8")
 except Exception as e:
     log.error(f"Error when organizing the final results: {e}")
-    df_results.to_csv("eval_results_adaptive_rag.csv")
+    df_results.to_csv("eval_results_adaptive_rag.csv", index=False, encoding="utf-8")

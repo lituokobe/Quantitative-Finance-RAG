@@ -1,0 +1,34 @@
+2026-02-11 22:47:28,667 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 22:47:28,670 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 22:47:28,672 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-11 22:47:28,863 - _client - INFO: HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-02-11 22:47:28,872 - _client - INFO: HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-11 22:47:29,983 - _client - INFO: HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-11 22:47:38,210 - log_utils - INFO: starting_reply_node starts to work
+2026-02-11 22:47:38,210 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-11 22:49:41,725 - log_utils - INFO: starting_intention_node starts to work
+2026-02-11 22:49:45,024 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:49:45,048 - log_utils - INFO: starting_intention_node finishes working, time costed: 3.324 seconds.
+2026-02-11 22:49:45,049 - log_utils - INFO: calculation_retriever_node starts to work
+2026-02-11 22:49:45,082 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 22:49:45,101 - milvus_db - INFO: Created hybrid retriever: k=10, ranker=rrf, threshold=0.05, filter={'contains_math': True}
+2026-02-11 22:49:45,101 - retriever_tools - INFO: Created hybrid retriever with k=10, threshold=0.05
+2026-02-11 22:49:45,885 - log_utils - INFO: calculation_retriever_node finishes working, time costed: 0.836 seconds.
+2026-02-11 22:49:45,886 - log_utils - INFO: math_verification_node starts to work
+2026-02-11 22:49:48,197 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:49:48,212 - log_utils - INFO: math_verification_node finishes working, time costed: 2.327 seconds.
+2026-02-11 22:50:04,538 - log_utils - INFO: math_verification_node starts to work
+2026-02-11 22:50:07,960 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:50:07,969 - log_utils - INFO: math_verification_node finishes working, time costed: 3.431 seconds.
+2026-02-11 22:50:23,966 - log_utils - INFO: math_verification_node starts to work
+2026-02-11 22:50:26,905 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:50:26,923 - log_utils - INFO: math_verification_node finishes working, time costed: 2.958 seconds.
+2026-02-11 22:50:37,556 - log_utils - INFO: math_verification_node starts to work
+2026-02-11 22:50:40,451 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:50:40,474 - log_utils - INFO: math_verification_node finishes working, time costed: 2.918 seconds.
+2026-02-11 22:50:57,891 - log_utils - INFO: math_verification_node starts to work
+2026-02-11 22:51:00,184 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:51:00,199 - log_utils - INFO: math_verification_node finishes working, time costed: 2.307 seconds.
+2026-02-11 22:51:18,361 - log_utils - INFO: math_verification_node starts to work
+2026-02-11 22:51:22,099 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:51:22,114 - log_utils - INFO: math_verification_node finishes working, time costed: 3.753 seconds.

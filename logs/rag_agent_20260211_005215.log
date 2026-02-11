@@ -1,0 +1,74 @@
+2026-02-11 00:52:16,228 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 00:52:16,230 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 00:52:16,232 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-11 00:52:16,238 - log_utils - INFO: starting_reply_node starts to work
+2026-02-11 00:52:16,238 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-11 00:52:16,239 - log_utils - INFO: starting_intention_node starts to work
+2026-02-11 00:52:17,811 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:17,833 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.594 seconds.
+2026-02-11 00:52:17,834 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-11 00:52:17,835 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 00:52:17,984 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 00:52:18,000 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 00:52:18,000 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 00:52:18,594 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.759 seconds.
+2026-02-11 00:52:18,595 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 00:52:19,388 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:19,404 - DocumentGraderNode - INFO: Retrieved document What Is a Good Dividend Yield?
+
+A dividend-paying stock generally pays 2% to 5% annually, whether in cash or shares. When you look at a stock listing online, check the “dividend yield” line to determine what the company has been paying out. is relevant
+2026-02-11 00:52:20,104 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:20,108 - DocumentGraderNode - INFO: Retrieved document Earnings Yield: Definition, Example, and How To Calculate It is NOT relevant, dump it.
+2026-02-11 00:52:20,798 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:20,802 - DocumentGraderNode - INFO: Retrieved document Understanding Stock Dividends: Definition, Examples, and Benefits is relevant
+2026-02-11 00:52:21,540 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:21,544 - DocumentGraderNode - INFO: Retrieved document Earnings Yield and Return Metric
+
+For investors looking to invest in stocks with stable dividend income, earnings yield can offer a direct look into the level of return dividend stocks may generate. In this case, earnings yield is more of a *return metric,* revealing how much an investment may earn for investors rather than a *valuation metric* showing how investors value the investment. However, a valuation metric like the P/E ratio can affect a return metric like earnings yield.
+
+An overvalued investment can lower earnings yield, while an undervalued investment can raise earnings yield. This is because the higher the stock price goes without a comparable rise in earnings, the lower the earnings yield will drop. If the stock price falls but earnings stay the same or rise, the earnings yield will increase. Value investors seek the latter scenario. is NOT relevant, dump it.
+2026-02-11 00:52:22,220 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:22,225 - DocumentGraderNode - INFO: Retrieved document 1. **Profitability and cash flow:** A consistent or increasing DPS suggests that a company generates enough profits and cash flow to support regular dividend payments. This is a sign of financial stability.
+2. **Shareholder value:** A higher DPS often means a company prioritizes rewarding its investors.
+3. **Dividend Policy:** Changes in DPS can show a company's dividend policy. Increases may indicate a commitment to shareholder returns, while cuts might mean financial stress.
+4. **Dividend yield:** When combined with the stock price, DPS helps calculate the dividend yield, allowing investors to compare the income potential of different stocks.
+5. **Maturity vs. growth stage:** Established companies with stable cash flows often have higher DPS, while growth-oriented firms might have lower or no DPS as they reinvest profits.
+6. **Income reliability:** For income-focused investors, a history of stable or growing DPS could suggest the firm is reliable for future dividends. is relevant
+2026-02-11 00:52:23,074 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:23,077 - DocumentGraderNode - INFO: Retrieved document Cash Dividend vs. Stock Dividend: Key Differences and Examples is relevant
+2026-02-11 00:52:24,122 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:24,127 - DocumentGraderNode - INFO: Retrieved document Bottom Line
+
+Dividend Per Share (DPS) represents the cash returned to shareholders per ordinary share and is calculated by dividing total dividends by outstanding shares. A rising DPS can suggest financial health and a commitment to shareholder returns, making it a valuable metric for investors. Analyze the DPS alongside metrics like dividend yield and payout ratios to make informed investment decisions and assess income-generating potential. is relevant
+2026-02-11 00:52:24,925 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:24,928 - DocumentGraderNode - INFO: Retrieved document Understanding the Dividend Discount Model: Formula, Examples, and Pitfalls is relevant
+2026-02-11 00:52:24,929 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 00:52:24,929 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.334 seconds.
+2026-02-11 00:52:24,929 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 00:52:24,929 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 00:52:24,931 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is dividend yield?", time costed: 7.096 seconds.
+2026-02-11 00:52:24,931 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 7.097 seconds.
+2026-02-11 00:52:24,932 - log_utils - INFO: generate_node starts to work
+2026-02-11 00:52:26,950 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:26,953 - log_utils - INFO: generate_node finishes working, time costed: 2.021 seconds.
+2026-02-11 00:52:26,953 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 00:52:27,784 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:27,798 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-11 00:52:27,799 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-11 00:52:28,501 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:28,515 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-11 00:52:28,515 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-11 00:52:28,516 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-11 00:52:31,097 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:32,714 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:34,359 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:35,432 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:38,310 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:40,930 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:43,049 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:44,137 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:46,628 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:49,979 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:51,243 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:52:52,934 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 00:53:00,861 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

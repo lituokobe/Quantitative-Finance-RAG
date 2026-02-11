@@ -1,0 +1,824 @@
+2026-02-10 22:46:42,713 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-10 22:46:42,715 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-10 22:46:42,717 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-10 22:46:42,722 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 22:46:42,722 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 22:46:42,723 - log_utils - INFO: starting_intention_node starts to work
+2026-02-10 22:46:44,910 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:46:44,933 - log_utils - INFO: starting_intention_node finishes working, time costed: 2.211 seconds.
+2026-02-10 22:46:44,935 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-10 22:46:44,936 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 22:46:45,145 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 22:46:45,181 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 22:46:45,181 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 22:46:45,812 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.875 seconds.
+2026-02-10 22:46:45,812 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 22:46:46,956 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:46:46,970 - DocumentGraderNode - INFO: Retrieved document How Quantitative Analysis Works in Finance
+
+Quantitative analysis (QA) in finance refers to the use of mathematical and statistical techniques to analyze financial & economic data and make trading, investing, and risk management decisions.
+
+QA starts with data collection, where quants gather a vast amount of financial data that might affect the market. This data can include anything from stock prices and company earnings to economic indicators like inflation or unemployment rates. They then use various mathematical models and statistical techniques to analyze this data, looking for trends, patterns, and potential investment opportunities. The outcome of this analysis can help investors decide where to allocate their resources to maximize returns or minimize risks.
+
+Some key aspects of quantitative analysis in finance include: is relevant
+2026-02-10 22:46:47,715 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:46:47,718 - DocumentGraderNode - INFO: Retrieved document Inflation: What It Is and How to Control Inflation Rates is relevant
+2026-02-10 22:46:48,384 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:46:48,386 - DocumentGraderNode - INFO: Retrieved document Calculate Real Rate of Return: Definition & Examples Explained is relevant
+2026-02-10 22:46:50,051 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:46:50,055 - DocumentGraderNode - INFO: Retrieved document How Does Inflation Affect Treasury Bills?
+
+Treasury bills also have to compete with inflation, which is the pace of rising prices. Even if T-bills are the most liquid and safest debt security in the market, fewer investors tend to buy them when the inflation rate is higher than the T-bill's returns.
+
+If an investor buys a T-bill with a 2% yield while inflation is at 3%, the investor would have a net loss on the investment when measured in real terms. As a result, T-bill prices tend to fall during inflationary periods as investors sell them and opt for higher-yielding investments. is relevant
+2026-02-10 22:46:50,719 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:46:50,722 - DocumentGraderNode - INFO: Retrieved document What Is the Real Rate of Return?
+
+The real rate of return is the annual percentage of profit earned on an investment, adjusted for inflation to reflect its true purchasing power over time. This measure is important for comparing the performance of different investments because inflation can erode nominal gains. In addition to adjusting for inflation, investors should also account for taxes and fees, as these further reduce the real return and provide a more accurate picture of actual investment growth. is relevant
+2026-02-10 22:46:51,704 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:46:51,708 - DocumentGraderNode - INFO: Retrieved document The Difference Between the Nominal Rate of Return and Real Rate of Return
+
+A real rate of return is the annual percentage return realized on an investment, which is adjusted for changes in prices due to inflation or other external factors. Adjusting the nominal return to compensate for factors such as inflation allows you to determine how much of your nominal return is a real return. Conversely, the nominal rate of return strips out outside factors that can affect performance such as taxes and inflation. is relevant
+2026-02-10 22:46:52,690 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:46:52,694 - DocumentGraderNode - INFO: Retrieved document Applying the Binomial Option Pricing Model in Real Trading
+
+The binomial option pricing model covers various financial instruments, from standard American and European options to complex derivatives and real options in corporate finance. Employed not only for pricing and risk management, this model also assists in strategic decision-making and hedging and serves to help understand how options are valued. Its stepwise, tree-based approach provides clear insights into how option values are influenced by market conditions, making it an essential model for analysts, traders, and other professionals in corporate finance.
+
+Financial institutions can use the model to assess the risk associated with holding options. Through multiple market simulations and observing how changes in market variables like interest rates and stock prices affect the option's value, risk managers can better understand potential losses and prepare mitigating strategies. is NOT relevant, dump it.
+2026-02-10 22:46:53,508 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:46:53,512 - DocumentGraderNode - INFO: Retrieved document Portfolio Return: What it is, How it Works is NOT relevant, dump it.
+2026-02-10 22:46:53,513 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 22:46:53,513 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 7.7 seconds.
+2026-02-10 22:46:53,513 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 22:46:53,513 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-10 22:46:53,515 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "How does inflation affect real returns in quantitative finance?", time costed: 8.58 seconds.
+2026-02-10 22:46:53,515 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 8.58 seconds.
+2026-02-10 22:46:53,516 - log_utils - INFO: generate_node starts to work
+2026-02-10 22:46:57,387 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:46:57,391 - log_utils - INFO: generate_node finishes working, time costed: 3.875 seconds.
+2026-02-10 22:46:57,392 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-10 22:46:58,526 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:46:58,540 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-10 22:46:58,540 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-10 22:46:59,549 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:46:59,555 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-10 22:46:59,556 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-10 22:46:59,556 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-10 22:46:59,558 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 22:46:59,558 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 22:46:59,560 - log_utils - INFO: starting_intention_node starts to work
+2026-02-10 22:47:00,779 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:00,788 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.228 seconds.
+2026-02-10 22:47:00,789 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-10 22:47:00,791 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 22:47:00,792 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 22:47:00,820 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 22:47:00,820 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 22:47:01,001 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.209 seconds.
+2026-02-10 22:47:01,001 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 22:47:01,803 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:01,807 - DocumentGraderNode - INFO: Retrieved document How Does Credit Spread Affect Bond Price?
+
+The credit spread is the result of the difference in risk. Corporate bonds come with more risk than U.S. Treasury bonds, so they need to offer higher yields to attract investors. The price you pay for either bond may be the same, but you are assuming a higher risk with corporate bonds, which means you need to be compensated with higher earnings potential. is relevant
+2026-02-10 22:47:02,665 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:02,669 - DocumentGraderNode - INFO: Retrieved document Credit Spread: What It Means for Bonds and Options Strategy is relevant
+2026-02-10 22:47:03,441 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:03,444 - DocumentGraderNode - INFO: Retrieved document Put Bonds 101: What They Are, How They Work, and Their Categories is relevant
+2026-02-10 22:47:04,260 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:04,264 - DocumentGraderNode - INFO: Retrieved document What Is a Credit Spread?
+
+In bond trading, a credit spread is the difference between the yields of two bonds that mature at the same time but are rated at different credit qualities. This spread can have a significant impact on your investment returns. Savvy investors recognize that credit spreads are among the best indicators of the broader economy's health, not just the creditworthiness of individual companies.
+
+Credit spreads are measured in basis points, where one basis point equals 0.01%. For example, a 1% difference in yield is equal to a spread of 100 basis points. Also known as bond, yield, or default spreads, they allow you to quickly compare the yields of corporate bonds to risk-free alternatives, such as Treasury notes. For instance, if a 10-year Treasury note yields 5% and a 10-year corporate bond yields 7%, the credit spread between the two bonds is 2%, or 200 basis points. Analysts also use the spreads to assess the broader economic climate by aggregating all corporate bonds of a particular type and subtracting the Treasury rates. Wider yields portend a dire outlook, while narrowing yields indicate economic optimism. is relevant
+2026-02-10 22:47:05,286 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:05,294 - DocumentGraderNode - INFO: Retrieved document Credit or Default Risk
+
+Credit risk is the risk that a borrower will be unable to pay the contractual interest or principal on its debt obligations. This type of risk is particularly concerning to investors who hold bonds in their portfolios. Government bonds, especially those issued by the federal government, have the least amount of default risk and, as such, the lowest returns. Corporate bonds, on the other hand, tend to have the highest amount of default risk, but also higher interest rates.
+
+Bonds with a lower chance of default are considered investment grade, while bonds with higher chances are considered high yield or junk bonds. Investors can use bond rating agencies — such as Standard and Poor’s, Fitch, and Moody's—to determine which bonds are investment-grade and which are junk. is relevant
+2026-02-10 22:47:06,103 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:06,107 - DocumentGraderNode - INFO: Retrieved document Example
+
+Let's say we want to calculate the credit spread for a 10-year corporate bond issued by ABC Corporation. The bond yields 5%, and the yield on a 10-year Treasury is 3%.
+
+- Corporate bond yield (ABC Corporation, 10-year): 5%
+- Treasury bond yield (10-year): 3%
+
+Subtract the Treasury bond yield from the corporate bond yield.
+
+- Credit Spread = Corporate Bond Yield - Treasury Bond Yield
+- Credit Spread = 5% - 3% = 2%
+
+In this example, the credit spread is 2% or 200 basis points. As such, investors require 2 additional percentage points in yield to hold ABC Corporation's bonds over the risk-free 10-year Treasury bonds. A higher credit spread means that the market perceives the corporate bond to have a higher risk of default. A lower credit spread suggests that the corporate bond is considered safer. is relevant
+2026-02-10 22:47:06,923 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:06,927 - DocumentGraderNode - INFO: Retrieved document What Is the Difference Between BAA and AAA Bonds?
+
+The primary difference between BAA and AAA bonds lies in their credit ratings and associated risk levels. BAA bonds are rated as medium-grade investments by Moody’s Investors Service. They are considered to be of moderate credit quality, meaning they carry a higher risk of default than higher-rated bonds but are still investment grade. BAA bonds offer higher yields to compensate for the additional risk.
+
+AAA Bonds are rated as high-quality investments. They are considered to be of the highest credit quality with the lowest risk of default. AAA bonds are highly stable and offer lower yields because of their attractive lower risk profile. is relevant
+2026-02-10 22:47:06,927 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 22:47:06,927 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 5.926 seconds.
+2026-02-10 22:47:06,927 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 22:47:06,927 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-10 22:47:06,929 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "How does credit risk affect bond yields?", time costed: 6.139 seconds.
+2026-02-10 22:47:06,929 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 6.14 seconds.
+2026-02-10 22:47:06,930 - log_utils - INFO: generate_node starts to work
+2026-02-10 22:47:09,968 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:09,969 - log_utils - INFO: generate_node finishes working, time costed: 3.039 seconds.
+2026-02-10 22:47:09,969 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-10 22:47:11,544 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:11,551 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-10 22:47:11,551 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-10 22:47:13,296 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:13,304 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-10 22:47:13,305 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-10 22:47:13,305 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-10 22:47:13,308 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 22:47:13,308 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 22:47:13,311 - log_utils - INFO: starting_intention_node starts to work
+2026-02-10 22:47:17,629 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:17,637 - log_utils - INFO: starting_intention_node finishes working, time costed: 4.327 seconds.
+2026-02-10 22:47:17,638 - log_utils - INFO: comparison_retriever_node starts to work
+2026-02-10 22:47:21,096 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:21,110 - standard_comparison_nodes - INFO: comparison_retriever_node decomposes question "What are the differences between primary markets and secondary markets in finance?", time costed: 3.472 seconds.
+2026-02-10 22:47:21,112 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 22:47:21,112 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 22:47:21,143 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 22:47:21,143 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 22:47:21,483 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.371 seconds.
+2026-02-10 22:47:21,483 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 22:47:23,238 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:23,247 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of Spot Markets is NOT relevant, dump it.
+2026-02-10 22:47:25,233 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:25,235 - DocumentGraderNode - INFO: Retrieved document Forex Market vs. Other Markets
+
+There are some fundamental differences between foreign exchange and other markets.
+
+First of all, there are fewer rules, which means investors aren't held to strict standards or regulations like those in the stock, futures, and options markets. There are no clearing houses and no central bodies that oversee the forex market.
+
+Second, since trades don't take place on a traditional exchange, there are fewer fees or commissions like those on other markets. Next, there's no cutoff as to when you can and cannot trade. Because the market is open 24 hours a day, you can trade at any time.
+
+Finally, because it's such a liquid market, you can get in and out whenever you want and you can buy as much currency as you can afford. is NOT relevant, dump it.
+2026-02-10 22:47:29,205 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:29,213 - DocumentGraderNode - INFO: Retrieved document Spot Market: Definition, How It Works, and Example is NOT relevant, dump it.
+2026-02-10 22:47:30,835 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:30,838 - DocumentGraderNode - INFO: Retrieved document Why Is Arbitrage Important?
+
+In the course of making a profit, arbitrage traders enhance the efficiency of the financial markets. As they buy and sell, the price differences between identical or similar assets narrow. The lower-priced assets are bid up, while the higher-priced assets are sold off. In this manner, arbitrage resolves inefficiencies in the market’s pricing and adds liquidity to the market. is NOT relevant, dump it.
+2026-02-10 22:47:33,052 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:33,054 - DocumentGraderNode - INFO: Retrieved document What Are Examples of Spot Markets?
+
+Many commodities have active spot markets, where physical spot commodities are bought and sold in real-time for cash. Foreign exchange also trades in the spot currency market where the underlying currencies are physically exchanged following the settlement date. Delivery usually occurs within two days after execution as it generally takes two days to transfer funds between bank accounts. Stock markets can also be thought of as spot markets, with shares of companies changing hands in real time. is NOT relevant, dump it.
+2026-02-10 22:47:34,926 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:34,930 - DocumentGraderNode - INFO: Retrieved document Over-the-Counter (OTC) Markets: Trading and Securities is relevant
+2026-02-10 22:47:36,619 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:36,624 - DocumentGraderNode - INFO: Retrieved document Market Order: Definition, Example, Vs. Limit Order is NOT relevant, dump it.
+2026-02-10 22:47:39,331 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:39,338 - DocumentGraderNode - INFO: Retrieved document What's the Main Difference Between a Bear Market and a Bull Market?
+
+The main difference between a bear market and a bull market is that a bear market refers to a major downturn in financial markets, while a bull market refers to a major upswing. Markets are doing well during a bull market and poorly during a bear market. is NOT relevant, dump it.
+2026-02-10 22:47:39,338 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 22:47:39,338 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 17.855 seconds.
+2026-02-10 22:47:39,339 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 22:47:39,339 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-10 22:47:39,340 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What are the differences between primary markets and secondary markets in finance?", time costed: 18.23 seconds.
+2026-02-10 22:47:39,342 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 22:47:39,342 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 22:47:39,369 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 22:47:39,369 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 22:47:39,612 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.27 seconds.
+2026-02-10 22:47:39,612 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 22:47:46,148 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:46,153 - DocumentGraderNode - INFO: Retrieved document Spot Market: Definition, How It Works, and Example is NOT relevant, dump it.
+2026-02-10 22:47:48,771 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:48,775 - DocumentGraderNode - INFO: Retrieved document Understanding Primary Instruments
+
+Primary instruments are standard financial investments. They often trade on mainstream exchanges with high levels of liquidity. Their market value is determined based on assumptions about their individual characteristics.
+
+Examples of primary instruments include stocks, bonds, and currency, among others. Any spot market that trades the 'cash' asset involves a primary instrument. By contrast, the price of derivative instruments, such as options and futures, is often based on the value of a primary instrument.
+
+Primary investments like stocks are what most beginning investors think of when they think about investing. This is because investing in primary instruments often requires only a general knowledge of markets and investment principles.
+
+Understanding primary instruments provides the base knowledge for derivatives. Derivatives were created to hedge against some of the risks of primary instruments. Derivatives also provide products for alternative investment strategies that are based on the speculation of values of underlying primary instruments. is relevant
+2026-02-10 22:47:50,681 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:50,689 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of Spot Markets is NOT relevant, dump it.
+2026-02-10 22:47:53,495 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:53,498 - DocumentGraderNode - INFO: Retrieved document Call and put options are two of the most common types of non-primary instruments traded in the market. Futures products are also non-primary instruments that allow investors to hedge against market movements of primary instruments. Futures contracts are typically priced from a cost of carry or expectancy model. They allow an investor to take a future bet on a primary instrument by buying a futures contract. Futures contracts can be bought for a variety of primary instrument investments. Currency futures that bet on future prices of currency values are some of the most common types of futures traded by investors. is NOT relevant, dump it.
+2026-02-10 22:47:55,193 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:55,197 - DocumentGraderNode - INFO: Retrieved document Primary Instrument: What it is, How it Works is NOT relevant, dump it.
+2026-02-10 22:47:56,895 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:56,899 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- A primary instrument is a financial investment whose price is based directly on its market value.
+- Primary instruments include cash-traded products like stocks, bonds, currencies, and spot commodities.
+- Understanding primary instruments provides the base knowledge for derivatives, whose prices are derived from the primary (underlying) asset. is NOT relevant, dump it.
+2026-02-10 22:47:58,732 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:47:58,742 - DocumentGraderNode - INFO: Retrieved document Spot Market Trading is NOT relevant, dump it.
+2026-02-10 22:48:00,666 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:00,674 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-10 22:48:00,675 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 22:48:00,675 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 21.062 seconds.
+2026-02-10 22:48:00,676 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 22:48:00,676 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-10 22:48:00,677 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What are primary markets in finance?", time costed: 21.337 seconds.
+2026-02-10 22:48:00,679 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 22:48:00,680 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 22:48:00,709 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 22:48:00,710 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 22:48:00,901 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.222 seconds.
+2026-02-10 22:48:00,902 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 22:48:04,368 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:04,372 - DocumentGraderNode - INFO: Retrieved document Spot Market: Definition, How It Works, and Example is NOT relevant, dump it.
+2026-02-10 22:48:06,087 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:06,090 - DocumentGraderNode - INFO: Retrieved document Where Do Investors Trade Bond Options?
+
+Unlike stocks, bond options are less easily found on secondary markets. Most bond options will trade over the counter. Secondary market bond options are available on U.S. Treasury bonds. Beyond that, investors must look to options on bond exchange-traded funds (ETFs). Many bond options are embedded, which means they come with a bond and can be exercised at the request of either the issuer or investor depending on the embedded bond option provision. is relevant
+2026-02-10 22:48:07,677 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:07,685 - DocumentGraderNode - INFO: Retrieved document Over-the-Counter (OTC) Markets: Trading and Securities is relevant
+2026-02-10 22:48:09,401 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:09,405 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-10 22:48:11,314 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:11,318 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of Spot Markets is NOT relevant, dump it.
+2026-02-10 22:48:13,044 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:13,048 - DocumentGraderNode - INFO: Retrieved document Embedded Options in Finance: What You Need to Know is NOT relevant, dump it.
+2026-02-10 22:48:14,805 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:14,809 - DocumentGraderNode - INFO: Retrieved document Spot Market Trading is NOT relevant, dump it.
+2026-02-10 22:48:16,557 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:16,564 - DocumentGraderNode - INFO: Retrieved document What Is Risk Neutral?
+
+Risk neutrality describes a mindset in which an individual is indifferent to risk, focusing solely on potential outcomes rather than the uncertainty involved. Used in both game theory and finance, it contrasts with risk aversion, where investors prioritize safety over returns.
+
+In markets, a risk-neutral investor values potential gains equally regardless of volatility, and this concept underpins the risk-neutral measures used in derivatives pricing. Market conditions can influence whether an investor adopts a more risk-neutral or risk-averse stance. is NOT relevant, dump it.
+2026-02-10 22:48:16,565 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 22:48:16,565 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 15.663 seconds.
+2026-02-10 22:48:16,565 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 22:48:16,565 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-10 22:48:16,566 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What are secondary markets in finance?", time costed: 15.889 seconds.
+2026-02-10 22:48:16,567 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 58.928 seconds.
+2026-02-10 22:48:16,567 - log_utils - INFO: generate_node starts to work
+2026-02-10 22:48:26,275 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:26,279 - log_utils - INFO: generate_node finishes working, time costed: 9.711 seconds.
+2026-02-10 22:48:26,279 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-10 22:48:30,331 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:30,333 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-10 22:48:30,333 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-10 22:48:33,520 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:33,523 - route_functions - INFO: ---Decision: generated result does not solve the problem from the comparison question, rewrite the comparison question.---
+2026-02-10 22:48:33,525 - log_utils - INFO: comparison_rewrite_query_node starts to work
+2026-02-10 22:48:34,779 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:34,783 - log_utils - INFO: comparison_rewrite_query_node finishes working, time costed: 1.258 seconds.
+2026-02-10 22:48:34,784 - log_utils - INFO: comparison_retriever_node starts to work
+2026-02-10 22:48:37,425 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:37,434 - standard_comparison_nodes - INFO: comparison_retriever_node decomposes question "What is primary market? What is secondary market? What are their differences in finance?", time costed: 2.649 seconds.
+2026-02-10 22:48:37,436 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 22:48:37,437 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 22:48:37,467 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 22:48:37,467 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 22:48:37,981 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.545 seconds.
+2026-02-10 22:48:37,982 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 22:48:39,410 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:39,415 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- A primary instrument is a financial investment whose price is based directly on its market value.
+- Primary instruments include cash-traded products like stocks, bonds, currencies, and spot commodities.
+- Understanding primary instruments provides the base knowledge for derivatives, whose prices are derived from the primary (underlying) asset. is NOT relevant, dump it.
+2026-02-10 22:48:41,197 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:41,201 - DocumentGraderNode - INFO: Retrieved document Understanding Primary Instruments
+
+Primary instruments are standard financial investments. They often trade on mainstream exchanges with high levels of liquidity. Their market value is determined based on assumptions about their individual characteristics.
+
+Examples of primary instruments include stocks, bonds, and currency, among others. Any spot market that trades the 'cash' asset involves a primary instrument. By contrast, the price of derivative instruments, such as options and futures, is often based on the value of a primary instrument.
+
+Primary investments like stocks are what most beginning investors think of when they think about investing. This is because investing in primary instruments often requires only a general knowledge of markets and investment principles.
+
+Understanding primary instruments provides the base knowledge for derivatives. Derivatives were created to hedge against some of the risks of primary instruments. Derivatives also provide products for alternative investment strategies that are based on the speculation of values of underlying primary instruments. is NOT relevant, dump it.
+2026-02-10 22:48:43,296 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:43,300 - DocumentGraderNode - INFO: Retrieved document What's the Main Difference Between a Bear Market and a Bull Market?
+
+The main difference between a bear market and a bull market is that a bear market refers to a major downturn in financial markets, while a bull market refers to a major upswing. Markets are doing well during a bull market and poorly during a bear market. is NOT relevant, dump it.
+2026-02-10 22:48:44,867 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:44,876 - DocumentGraderNode - INFO: Retrieved document What Is a Primary Instrument?
+
+A primary instrument is a financial investment whose price is based directly on its market value. It can be any type of financial investment that is priced based on its own value. is NOT relevant, dump it.
+2026-02-10 22:48:46,441 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:46,445 - DocumentGraderNode - INFO: Retrieved document Spot Market: Definition, How It Works, and Example is NOT relevant, dump it.
+2026-02-10 22:48:48,143 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:48,146 - DocumentGraderNode - INFO: Retrieved document What Is the Difference Between LIBOR and SOFR?
+
+The primary difference between LIBOR and SOFR is the method by which the rates are generated. LIBOR uses the panel bank calculation, which are inputs from panel banks to come up with the average rate. SOFR is the measure of the cost of borrowing cash overnight that is collateralized by U.S. Treasuries in the repo market. is NOT relevant, dump it.
+2026-02-10 22:48:49,909 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:49,912 - DocumentGraderNode - INFO: Retrieved document Market Order: Definition, Example, Vs. Limit Order is NOT relevant, dump it.
+2026-02-10 22:48:51,507 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:51,510 - DocumentGraderNode - INFO: Retrieved document - First Tier: Called the primary credit program, this tier provides capital to financially sound banks with good credit records. This primary credit discount rate is usually set above existing market interest rates, which may be available from other banks or other sources of similar short-term debt.
+- Second Tier: Called the secondary credit program, it offers similar loans to institutions that do not qualify for the primary rate. It is usually set 50 basis points higher than the primary rate (one percentage point = 100 basis points). Institutions in this tier are smaller and may not be as financially healthy as the ones that use the primary tier.
+- Third Tier: Called the seasonal credit program, this one serves smaller financial institutions, which experience higher seasonal variations in their cash flows. Many are regional banks that serve the needs of the agriculture and tourism sectors. Their businesses are considered relatively risky, so the interest rates they pay are higher.
+- Emergency Credit: Banks applying for emergency credit must demonstrate proof that they cannot find a loan from another bank and require a vote with the support of at least five members of the Board of Governors of the Federal Reserve. is NOT relevant, dump it.
+2026-02-10 22:48:51,511 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 22:48:51,511 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 13.529 seconds.
+2026-02-10 22:48:51,511 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 22:48:51,512 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions. ---
+2026-02-10 22:48:51,513 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-02-10 22:48:53,260 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:53,264 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 1.751 seconds.
+2026-02-10 22:48:53,265 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 22:48:53,266 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 22:48:53,300 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 22:48:53,300 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 22:48:53,518 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.253 seconds.
+2026-02-10 22:48:53,518 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 22:48:56,677 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:56,679 - DocumentGraderNode - INFO: Retrieved document Understanding Primary Instruments
+
+Primary instruments are standard financial investments. They often trade on mainstream exchanges with high levels of liquidity. Their market value is determined based on assumptions about their individual characteristics.
+
+Examples of primary instruments include stocks, bonds, and currency, among others. Any spot market that trades the 'cash' asset involves a primary instrument. By contrast, the price of derivative instruments, such as options and futures, is often based on the value of a primary instrument.
+
+Primary investments like stocks are what most beginning investors think of when they think about investing. This is because investing in primary instruments often requires only a general knowledge of markets and investment principles.
+
+Understanding primary instruments provides the base knowledge for derivatives. Derivatives were created to hedge against some of the risks of primary instruments. Derivatives also provide products for alternative investment strategies that are based on the speculation of values of underlying primary instruments. is relevant
+2026-02-10 22:48:57,781 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:57,784 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- A primary instrument is a financial investment whose price is based directly on its market value.
+- Primary instruments include cash-traded products like stocks, bonds, currencies, and spot commodities.
+- Understanding primary instruments provides the base knowledge for derivatives, whose prices are derived from the primary (underlying) asset. is NOT relevant, dump it.
+2026-02-10 22:48:59,554 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:48:59,556 - DocumentGraderNode - INFO: Retrieved document What's the Main Difference Between a Bear Market and a Bull Market?
+
+The main difference between a bear market and a bull market is that a bear market refers to a major downturn in financial markets, while a bull market refers to a major upswing. Markets are doing well during a bull market and poorly during a bear market. is NOT relevant, dump it.
+2026-02-10 22:49:01,121 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:01,129 - DocumentGraderNode - INFO: Retrieved document What Are Some Examples of Arbitrage?
+
+The standard definition of arbitrage involves buying and selling shares of stock, commodities, or currencies on multiple markets to profit from inevitable differences in their prices from minute to minute.
+
+However, the term “arbitrage” is also sometimes used to describe other trading activities. Merger arbitrage, which involves buying shares in companies before an announced or expected merger, is one strategy that is popular among hedge fund investors. is NOT relevant, dump it.
+2026-02-10 22:49:02,742 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:02,745 - DocumentGraderNode - INFO: Retrieved document - First Tier: Called the primary credit program, this tier provides capital to financially sound banks with good credit records. This primary credit discount rate is usually set above existing market interest rates, which may be available from other banks or other sources of similar short-term debt.
+- Second Tier: Called the secondary credit program, it offers similar loans to institutions that do not qualify for the primary rate. It is usually set 50 basis points higher than the primary rate (one percentage point = 100 basis points). Institutions in this tier are smaller and may not be as financially healthy as the ones that use the primary tier.
+- Third Tier: Called the seasonal credit program, this one serves smaller financial institutions, which experience higher seasonal variations in their cash flows. Many are regional banks that serve the needs of the agriculture and tourism sectors. Their businesses are considered relatively risky, so the interest rates they pay are higher.
+- Emergency Credit: Banks applying for emergency credit must demonstrate proof that they cannot find a loan from another bank and require a vote with the support of at least five members of the Board of Governors of the Federal Reserve. is NOT relevant, dump it.
+2026-02-10 22:49:04,606 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:04,609 - DocumentGraderNode - INFO: Retrieved document What Is a Primary Instrument?
+
+A primary instrument is a financial investment whose price is based directly on its market value. It can be any type of financial investment that is priced based on its own value. is NOT relevant, dump it.
+2026-02-10 22:49:04,609 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 22:49:04,609 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 11.091 seconds.
+2026-02-10 22:49:04,610 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 22:49:04,610 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-10 22:49:04,611 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is primary market? What is secondary market? What are their differences in finance?", time costed: 27.177 seconds.
+2026-02-10 22:49:04,613 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 22:49:04,614 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 22:49:04,647 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 22:49:04,647 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 22:49:04,919 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.305 seconds.
+2026-02-10 22:49:04,919 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 22:49:06,461 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:06,469 - DocumentGraderNode - INFO: Retrieved document Spot Market: Definition, How It Works, and Example is NOT relevant, dump it.
+2026-02-10 22:49:07,806 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:07,810 - DocumentGraderNode - INFO: Retrieved document What Is a Primary Instrument?
+
+A primary instrument is a financial investment whose price is based directly on its market value. It can be any type of financial investment that is priced based on its own value. is NOT relevant, dump it.
+2026-02-10 22:49:09,408 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:09,415 - DocumentGraderNode - INFO: Retrieved document Principal: Definition in Loans, Bonds, Investments, and Transactions is NOT relevant, dump it.
+2026-02-10 22:49:11,211 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:11,219 - DocumentGraderNode - INFO: Retrieved document Understanding Primary Instruments
+
+Primary instruments are standard financial investments. They often trade on mainstream exchanges with high levels of liquidity. Their market value is determined based on assumptions about their individual characteristics.
+
+Examples of primary instruments include stocks, bonds, and currency, among others. Any spot market that trades the 'cash' asset involves a primary instrument. By contrast, the price of derivative instruments, such as options and futures, is often based on the value of a primary instrument.
+
+Primary investments like stocks are what most beginning investors think of when they think about investing. This is because investing in primary instruments often requires only a general knowledge of markets and investment principles.
+
+Understanding primary instruments provides the base knowledge for derivatives. Derivatives were created to hedge against some of the risks of primary instruments. Derivatives also provide products for alternative investment strategies that are based on the speculation of values of underlying primary instruments. is relevant
+2026-02-10 22:49:12,921 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:12,925 - DocumentGraderNode - INFO: Retrieved document Spot Market Trading is NOT relevant, dump it.
+2026-02-10 22:49:14,646 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:14,649 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- A primary instrument is a financial investment whose price is based directly on its market value.
+- Primary instruments include cash-traded products like stocks, bonds, currencies, and spot commodities.
+- Understanding primary instruments provides the base knowledge for derivatives, whose prices are derived from the primary (underlying) asset. is NOT relevant, dump it.
+2026-02-10 22:49:16,126 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:16,129 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of Spot Markets is NOT relevant, dump it.
+2026-02-10 22:49:17,514 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:17,521 - DocumentGraderNode - INFO: Retrieved document Primary Instrument: What it is, How it Works is relevant
+2026-02-10 22:49:17,522 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 22:49:17,522 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 12.603 seconds.
+2026-02-10 22:49:17,522 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 22:49:17,523 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-10 22:49:17,524 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is primary market?", time costed: 12.913 seconds.
+2026-02-10 22:49:17,526 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 22:49:17,527 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 22:49:17,560 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 22:49:17,560 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 22:49:17,894 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.367 seconds.
+2026-02-10 22:49:17,894 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 22:49:19,587 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:19,596 - DocumentGraderNode - INFO: Retrieved document Spot Market: Definition, How It Works, and Example is NOT relevant, dump it.
+2026-02-10 22:49:20,912 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:20,916 - DocumentGraderNode - INFO: Retrieved document Trading Penny Stocks
+
+After initial orders are collected and the stock is sold to investors, a registered offering can begin trading in the secondary market by listing on an exchange like the NYSE, Nasdaq, or trade over-the-counter. Many penny stocks wind up trading via OTC due to the strict requirements for listing on larger exchanges.
+
+Sometimes companies make an additional secondary market offering after the IPO, which dilutes the existing shares but gives the company access to more investors and increased capital. Furthermore, it is mandatory that the companies continue to publicly provide updated financial statements to keep investors informed and continue to be quoted on the Over-the-Counter Bulletin Board. is relevant
+2026-02-10 22:49:24,189 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:24,192 - DocumentGraderNode - INFO: Retrieved document Spot Market Trading is NOT relevant, dump it.
+2026-02-10 22:49:25,594 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:25,601 - DocumentGraderNode - INFO: Retrieved document Where Do Investors Trade Bond Options?
+
+Unlike stocks, bond options are less easily found on secondary markets. Most bond options will trade over the counter. Secondary market bond options are available on U.S. Treasury bonds. Beyond that, investors must look to options on bond exchange-traded funds (ETFs). Many bond options are embedded, which means they come with a bond and can be exercised at the request of either the issuer or investor depending on the embedded bond option provision. is relevant
+2026-02-10 22:49:27,090 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:27,093 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of Spot Markets is NOT relevant, dump it.
+2026-02-10 22:49:28,819 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:28,822 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- A bond option is a contract with a bond as the underlying asset.
+- Individuals can buy or sell some bond call or put options in the secondary market, though bond option derivatives are more limited than stock or other types of options contracts.
+- Bond issuers also incorporate bond call or bond put options into bond contract provisions. is relevant
+2026-02-10 22:49:30,008 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:30,011 - DocumentGraderNode - INFO: Retrieved document Over-the-Counter (OTC) Markets: Trading and Securities is relevant
+2026-02-10 22:49:31,388 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:31,391 - DocumentGraderNode - INFO: Retrieved document How Does Ownership of a Private Company Differ from a Public Company?
+
+Public companies are the opposite of private companies. Ownership of public companies is divided into shares, which are sold to the public. This is first done through an IPO. Once that is complete, the shares of a public company are sold on the secondary market through stock exchanges. A public company's equity is held by insiders and outside investors. is relevant
+2026-02-10 22:49:31,391 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 22:49:31,391 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 13.497 seconds.
+2026-02-10 22:49:31,392 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 22:49:31,392 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-10 22:49:31,394 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is secondary market?", time costed: 13.87 seconds.
+2026-02-10 22:49:31,396 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 22:49:31,397 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 22:49:31,437 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 22:49:31,437 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 22:49:31,744 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.348 seconds.
+2026-02-10 22:49:31,744 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 22:49:33,478 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:33,486 - DocumentGraderNode - INFO: Retrieved document Spot Market: Definition, How It Works, and Example is NOT relevant, dump it.
+2026-02-10 22:49:34,524 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:34,528 - DocumentGraderNode - INFO: Retrieved document What Is the Difference Between LIBOR and SOFR?
+
+The primary difference between LIBOR and SOFR is the method by which the rates are generated. LIBOR uses the panel bank calculation, which are inputs from panel banks to come up with the average rate. SOFR is the measure of the cost of borrowing cash overnight that is collateralized by U.S. Treasuries in the repo market. is NOT relevant, dump it.
+2026-02-10 22:49:35,724 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:35,729 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of Spot Markets is NOT relevant, dump it.
+2026-02-10 22:49:37,295 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:37,302 - DocumentGraderNode - INFO: Retrieved document Why Is Arbitrage Important?
+
+In the course of making a profit, arbitrage traders enhance the efficiency of the financial markets. As they buy and sell, the price differences between identical or similar assets narrow. The lower-priced assets are bid up, while the higher-priced assets are sold off. In this manner, arbitrage resolves inefficiencies in the market’s pricing and adds liquidity to the market. is NOT relevant, dump it.
+2026-02-10 22:49:38,870 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:38,873 - DocumentGraderNode - INFO: Retrieved document Market Order: Definition, Example, Vs. Limit Order is NOT relevant, dump it.
+2026-02-10 22:49:39,668 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:39,671 - DocumentGraderNode - INFO: Retrieved document Understanding Primary Instruments
+
+Primary instruments are standard financial investments. They often trade on mainstream exchanges with high levels of liquidity. Their market value is determined based on assumptions about their individual characteristics.
+
+Examples of primary instruments include stocks, bonds, and currency, among others. Any spot market that trades the 'cash' asset involves a primary instrument. By contrast, the price of derivative instruments, such as options and futures, is often based on the value of a primary instrument.
+
+Primary investments like stocks are what most beginning investors think of when they think about investing. This is because investing in primary instruments often requires only a general knowledge of markets and investment principles.
+
+Understanding primary instruments provides the base knowledge for derivatives. Derivatives were created to hedge against some of the risks of primary instruments. Derivatives also provide products for alternative investment strategies that are based on the speculation of values of underlying primary instruments. is relevant
+2026-02-10 22:49:40,443 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:40,445 - DocumentGraderNode - INFO: Retrieved document Principal: Definition in Loans, Bonds, Investments, and Transactions is NOT relevant, dump it.
+2026-02-10 22:49:41,195 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:41,201 - DocumentGraderNode - INFO: Retrieved document How Does Arbitrage Work?
+
+Arbitrage is trading that exploits the tiny differences in price between identical or similar assets in two or more markets. The arbitrage trader buys the asset in one market and sells it in the other market at the same time to pocket the difference between the two prices. There are more complicated variations in this scenario, but all depend on identifying market “inefficiencies.”
+
+Arbitrageurs, as arbitrage traders are called, usually work on behalf of large financial institutions. It usually involves trading a substantial amount of money, and the split-second opportunities it offers can be identified and acted upon only with highly sophisticated software. is NOT relevant, dump it.
+2026-02-10 22:49:41,202 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 22:49:41,202 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 9.458 seconds.
+2026-02-10 22:49:41,207 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 22:49:41,207 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-10 22:49:41,218 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What are the differences between primary market and secondary market in finance?", time costed: 9.824 seconds.
+2026-02-10 22:49:41,218 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 66.434 seconds.
+2026-02-10 22:49:41,233 - log_utils - INFO: generate_node starts to work
+2026-02-10 22:49:54,079 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:54,090 - log_utils - INFO: generate_node finishes working, time costed: 12.857 seconds.
+2026-02-10 22:49:54,092 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-10 22:49:54,916 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:54,928 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-10 22:49:54,928 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-10 22:49:55,796 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:55,802 - route_functions - INFO: ---Decision: generated result does not solve the problem from the comparison question, rewrite the comparison question.---
+2026-02-10 22:49:55,804 - log_utils - INFO: comparison_rewrite_query_node starts to work
+2026-02-10 22:49:56,693 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:56,694 - log_utils - INFO: comparison_rewrite_query_node finishes working, time costed: 0.89 seconds.
+2026-02-10 22:49:56,694 - log_utils - INFO: comparison_retriever_node starts to work
+2026-02-10 22:49:59,367 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:49:59,376 - standard_comparison_nodes - INFO: comparison_retriever_node decomposes question "What is primary market? What is secondary market? Compare primary market and secondary market in finance.", time costed: 2.68 seconds.
+2026-02-10 22:49:59,378 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 22:49:59,380 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 22:49:59,414 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 22:49:59,414 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 22:50:00,011 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.632 seconds.
+2026-02-10 22:50:00,011 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 22:50:00,905 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:00,917 - DocumentGraderNode - INFO: Retrieved document What Is a Primary Instrument?
+
+A primary instrument is a financial investment whose price is based directly on its market value. It can be any type of financial investment that is priced based on its own value. is NOT relevant, dump it.
+2026-02-10 22:50:01,779 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:01,782 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- A primary instrument is a financial investment whose price is based directly on its market value.
+- Primary instruments include cash-traded products like stocks, bonds, currencies, and spot commodities.
+- Understanding primary instruments provides the base knowledge for derivatives, whose prices are derived from the primary (underlying) asset. is NOT relevant, dump it.
+2026-02-10 22:50:02,478 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:02,481 - DocumentGraderNode - INFO: Retrieved document What's the Main Difference Between a Bear Market and a Bull Market?
+
+The main difference between a bear market and a bull market is that a bear market refers to a major downturn in financial markets, while a bull market refers to a major upswing. Markets are doing well during a bull market and poorly during a bear market. is NOT relevant, dump it.
+2026-02-10 22:50:03,503 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:03,506 - DocumentGraderNode - INFO: Retrieved document Understanding Primary Instruments
+
+Primary instruments are standard financial investments. They often trade on mainstream exchanges with high levels of liquidity. Their market value is determined based on assumptions about their individual characteristics.
+
+Examples of primary instruments include stocks, bonds, and currency, among others. Any spot market that trades the 'cash' asset involves a primary instrument. By contrast, the price of derivative instruments, such as options and futures, is often based on the value of a primary instrument.
+
+Primary investments like stocks are what most beginning investors think of when they think about investing. This is because investing in primary instruments often requires only a general knowledge of markets and investment principles.
+
+Understanding primary instruments provides the base knowledge for derivatives. Derivatives were created to hedge against some of the risks of primary instruments. Derivatives also provide products for alternative investment strategies that are based on the speculation of values of underlying primary instruments. is relevant
+2026-02-10 22:50:04,245 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:04,248 - DocumentGraderNode - INFO: Retrieved document Spot Market: Definition, How It Works, and Example is NOT relevant, dump it.
+2026-02-10 22:50:05,082 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:05,086 - DocumentGraderNode - INFO: Retrieved document - First Tier: Called the primary credit program, this tier provides capital to financially sound banks with good credit records. This primary credit discount rate is usually set above existing market interest rates, which may be available from other banks or other sources of similar short-term debt.
+- Second Tier: Called the secondary credit program, it offers similar loans to institutions that do not qualify for the primary rate. It is usually set 50 basis points higher than the primary rate (one percentage point = 100 basis points). Institutions in this tier are smaller and may not be as financially healthy as the ones that use the primary tier.
+- Third Tier: Called the seasonal credit program, this one serves smaller financial institutions, which experience higher seasonal variations in their cash flows. Many are regional banks that serve the needs of the agriculture and tourism sectors. Their businesses are considered relatively risky, so the interest rates they pay are higher.
+- Emergency Credit: Banks applying for emergency credit must demonstrate proof that they cannot find a loan from another bank and require a vote with the support of at least five members of the Board of Governors of the Federal Reserve. is NOT relevant, dump it.
+2026-02-10 22:50:06,148 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:06,152 - DocumentGraderNode - INFO: Retrieved document Continuous Trading
+
+Batch trading is restricted to the market open in the U.S. so as to ensure that the stock's price is fair and just, not fluctuating wildly from one batch trade to the next. During the regular hours of a market exchange, the exchange will use continuous trading. Continuous trading is a function of standard exchange processes which are facilitated through market makers who match buyers and sellers and then execute transactions immediately at an ask price.
+
+Continuous trading is a primary component of the market that keeps securities efficiently priced. In continuous trading, securities are priced through a bid/ask process that is facilitated by a market maker. Market makers are responsible for matching buyers and sellers in daily trading. They can be either individuals working for an exchange, or technology systems devised by the exchange.
+
+In continuous trading, a market maker seeks to match buyers and sellers using bid and ask prices. A market maker profits from the bid/ask spread which provides compensation for the service of executing a trade. In a market exchange, the market maker bids for a security at a low price, buying the security for the investor. They then sell the security to the investor at the ask price generating a profit through the process of matching the buyer and seller in the secondary market. is relevant
+2026-02-10 22:50:06,153 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 22:50:06,153 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.141 seconds.
+2026-02-10 22:50:06,153 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 22:50:06,153 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-10 22:50:06,155 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is primary market? What is secondary market? Compare primary market and secondary market in finance.", time costed: 6.779 seconds.
+2026-02-10 22:50:06,156 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 22:50:06,157 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 22:50:06,190 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 22:50:06,190 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 22:50:06,374 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.218 seconds.
+2026-02-10 22:50:06,375 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 22:50:07,047 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:07,050 - DocumentGraderNode - INFO: Retrieved document Spot Market: Definition, How It Works, and Example is NOT relevant, dump it.
+2026-02-10 22:50:07,931 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:07,931 - DocumentGraderNode - INFO: Retrieved document What Is a Primary Instrument?
+
+A primary instrument is a financial investment whose price is based directly on its market value. It can be any type of financial investment that is priced based on its own value. is NOT relevant, dump it.
+2026-02-10 22:50:08,604 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:08,609 - DocumentGraderNode - INFO: Retrieved document Principal: Definition in Loans, Bonds, Investments, and Transactions is NOT relevant, dump it.
+2026-02-10 22:50:09,504 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:09,508 - DocumentGraderNode - INFO: Retrieved document Understanding Primary Instruments
+
+Primary instruments are standard financial investments. They often trade on mainstream exchanges with high levels of liquidity. Their market value is determined based on assumptions about their individual characteristics.
+
+Examples of primary instruments include stocks, bonds, and currency, among others. Any spot market that trades the 'cash' asset involves a primary instrument. By contrast, the price of derivative instruments, such as options and futures, is often based on the value of a primary instrument.
+
+Primary investments like stocks are what most beginning investors think of when they think about investing. This is because investing in primary instruments often requires only a general knowledge of markets and investment principles.
+
+Understanding primary instruments provides the base knowledge for derivatives. Derivatives were created to hedge against some of the risks of primary instruments. Derivatives also provide products for alternative investment strategies that are based on the speculation of values of underlying primary instruments. is relevant
+2026-02-10 22:50:10,157 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:10,161 - DocumentGraderNode - INFO: Retrieved document Spot Market Trading is NOT relevant, dump it.
+2026-02-10 22:50:11,041 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:11,044 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- A primary instrument is a financial investment whose price is based directly on its market value.
+- Primary instruments include cash-traded products like stocks, bonds, currencies, and spot commodities.
+- Understanding primary instruments provides the base knowledge for derivatives, whose prices are derived from the primary (underlying) asset. is NOT relevant, dump it.
+2026-02-10 22:50:11,733 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:11,736 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of Spot Markets is NOT relevant, dump it.
+2026-02-10 22:50:12,421 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:12,423 - DocumentGraderNode - INFO: Retrieved document Primary Instrument: What it is, How it Works is relevant
+2026-02-10 22:50:12,423 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 22:50:12,423 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.048 seconds.
+2026-02-10 22:50:12,423 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 22:50:12,423 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-10 22:50:12,424 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is primary market?", time costed: 6.269 seconds.
+2026-02-10 22:50:12,426 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 22:50:12,426 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 22:50:12,450 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 22:50:12,450 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 22:50:12,617 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.192 seconds.
+2026-02-10 22:50:12,618 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 22:50:13,499 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:13,502 - DocumentGraderNode - INFO: Retrieved document Spot Market: Definition, How It Works, and Example is NOT relevant, dump it.
+2026-02-10 22:50:14,295 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:14,299 - DocumentGraderNode - INFO: Retrieved document Trading Penny Stocks
+
+After initial orders are collected and the stock is sold to investors, a registered offering can begin trading in the secondary market by listing on an exchange like the NYSE, Nasdaq, or trade over-the-counter. Many penny stocks wind up trading via OTC due to the strict requirements for listing on larger exchanges.
+
+Sometimes companies make an additional secondary market offering after the IPO, which dilutes the existing shares but gives the company access to more investors and increased capital. Furthermore, it is mandatory that the companies continue to publicly provide updated financial statements to keep investors informed and continue to be quoted on the Over-the-Counter Bulletin Board. is relevant
+2026-02-10 22:50:15,446 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:15,448 - DocumentGraderNode - INFO: Retrieved document Spot Market Trading is relevant
+2026-02-10 22:50:16,673 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:16,676 - DocumentGraderNode - INFO: Retrieved document Where Do Investors Trade Bond Options?
+
+Unlike stocks, bond options are less easily found on secondary markets. Most bond options will trade over the counter. Secondary market bond options are available on U.S. Treasury bonds. Beyond that, investors must look to options on bond exchange-traded funds (ETFs). Many bond options are embedded, which means they come with a bond and can be exercised at the request of either the issuer or investor depending on the embedded bond option provision. is relevant
+2026-02-10 22:50:17,383 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:17,387 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of Spot Markets is NOT relevant, dump it.
+2026-02-10 22:50:18,185 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:18,189 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- A bond option is a contract with a bond as the underlying asset.
+- Individuals can buy or sell some bond call or put options in the secondary market, though bond option derivatives are more limited than stock or other types of options contracts.
+- Bond issuers also incorporate bond call or bond put options into bond contract provisions. is relevant
+2026-02-10 22:50:19,052 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:19,055 - DocumentGraderNode - INFO: Retrieved document Over-the-Counter (OTC) Markets: Trading and Securities is relevant
+2026-02-10 22:50:19,900 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:19,905 - DocumentGraderNode - INFO: Retrieved document How Does Ownership of a Private Company Differ from a Public Company?
+
+Public companies are the opposite of private companies. Ownership of public companies is divided into shares, which are sold to the public. This is first done through an IPO. Once that is complete, the shares of a public company are sold on the secondary market through stock exchanges. A public company's equity is held by insiders and outside investors. is relevant
+2026-02-10 22:50:19,905 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 22:50:19,905 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 7.288 seconds.
+2026-02-10 22:50:19,905 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 22:50:19,906 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-10 22:50:19,907 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is secondary market?", time costed: 7.483 seconds.
+2026-02-10 22:50:19,909 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 22:50:19,909 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 22:50:19,931 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 22:50:19,932 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 22:50:20,158 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.249 seconds.
+2026-02-10 22:50:20,158 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 22:50:20,891 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:20,894 - DocumentGraderNode - INFO: Retrieved document Spot Market: Definition, How It Works, and Example is NOT relevant, dump it.
+2026-02-10 22:50:21,678 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:21,682 - DocumentGraderNode - INFO: Retrieved document What Is the Difference Between LIBOR and SOFR?
+
+The primary difference between LIBOR and SOFR is the method by which the rates are generated. LIBOR uses the panel bank calculation, which are inputs from panel banks to come up with the average rate. SOFR is the measure of the cost of borrowing cash overnight that is collateralized by U.S. Treasuries in the repo market. is NOT relevant, dump it.
+2026-02-10 22:50:22,378 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:22,382 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of Spot Markets is NOT relevant, dump it.
+2026-02-10 22:50:23,140 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:23,141 - DocumentGraderNode - INFO: Retrieved document Why Is Arbitrage Important?
+
+In the course of making a profit, arbitrage traders enhance the efficiency of the financial markets. As they buy and sell, the price differences between identical or similar assets narrow. The lower-priced assets are bid up, while the higher-priced assets are sold off. In this manner, arbitrage resolves inefficiencies in the market’s pricing and adds liquidity to the market. is NOT relevant, dump it.
+2026-02-10 22:50:23,957 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:23,961 - DocumentGraderNode - INFO: Retrieved document Market Order: Definition, Example, Vs. Limit Order is NOT relevant, dump it.
+2026-02-10 22:50:24,824 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:24,826 - DocumentGraderNode - INFO: Retrieved document Understanding Primary Instruments
+
+Primary instruments are standard financial investments. They often trade on mainstream exchanges with high levels of liquidity. Their market value is determined based on assumptions about their individual characteristics.
+
+Examples of primary instruments include stocks, bonds, and currency, among others. Any spot market that trades the 'cash' asset involves a primary instrument. By contrast, the price of derivative instruments, such as options and futures, is often based on the value of a primary instrument.
+
+Primary investments like stocks are what most beginning investors think of when they think about investing. This is because investing in primary instruments often requires only a general knowledge of markets and investment principles.
+
+Understanding primary instruments provides the base knowledge for derivatives. Derivatives were created to hedge against some of the risks of primary instruments. Derivatives also provide products for alternative investment strategies that are based on the speculation of values of underlying primary instruments. is relevant
+2026-02-10 22:50:25,530 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:25,533 - DocumentGraderNode - INFO: Retrieved document Principal: Definition in Loans, Bonds, Investments, and Transactions is NOT relevant, dump it.
+2026-02-10 22:50:26,255 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:26,258 - DocumentGraderNode - INFO: Retrieved document How Does Arbitrage Work?
+
+Arbitrage is trading that exploits the tiny differences in price between identical or similar assets in two or more markets. The arbitrage trader buys the asset in one market and sells it in the other market at the same time to pocket the difference between the two prices. There are more complicated variations in this scenario, but all depend on identifying market “inefficiencies.”
+
+Arbitrageurs, as arbitrage traders are called, usually work on behalf of large financial institutions. It usually involves trading a substantial amount of money, and the split-second opportunities it offers can be identified and acted upon only with highly sophisticated software. is NOT relevant, dump it.
+2026-02-10 22:50:26,259 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 22:50:26,259 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.1 seconds.
+2026-02-10 22:50:26,259 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 22:50:26,259 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-10 22:50:26,260 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What are the differences between primary market and secondary market in finance?", time costed: 6.353 seconds.
+2026-02-10 22:50:26,261 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 29.566 seconds.
+2026-02-10 22:50:26,262 - log_utils - INFO: generate_node starts to work
+2026-02-10 22:50:42,996 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:43,005 - log_utils - INFO: generate_node finishes working, time costed: 16.743 seconds.
+2026-02-10 22:50:43,005 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-10 22:50:43,968 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:43,979 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-10 22:50:43,979 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-10 22:50:44,938 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:44,946 - route_functions - INFO: ---Decision: generated result does not solve the problem from the question, but we will still output it.---
+2026-02-10 22:50:44,947 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-10 22:50:44,949 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-10 22:50:44,954 - log_utils - INFO: starting_reply_node starts to work
+2026-02-10 22:50:44,954 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-10 22:50:44,957 - log_utils - INFO: starting_intention_node starts to work
+2026-02-10 22:50:45,977 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:45,991 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.035 seconds.
+2026-02-10 22:50:45,993 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-10 22:50:45,995 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-10 22:50:45,996 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-10 22:50:46,026 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-10 22:50:46,026 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-10 22:50:46,570 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.575 seconds.
+2026-02-10 22:50:46,570 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-10 22:50:47,550 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:47,554 - DocumentGraderNode - INFO: Retrieved document What Is Gamma?
+
+Gamma ($\Gamma$) is an options risk metric that represents the sensitivity of an option's delta to movements in the underlying asset, indicating how much delta will change when the underlying price shifts by one point. Therefore, gamma is a measure of how the rate of change of an option's price will change with fluctuations in the underlying price. The higher the gamma, the more volatile the price of the option is.
+
+Gamma is an important measure of the convexity of a derivative's value in relation to the underlying asset. It is one of the "options Greeks," along with delta, rho, theta, and vega. These are used to assess the different types of risk in options portfolios. is relevant
+2026-02-10 22:50:48,315 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:48,319 - DocumentGraderNode - INFO: Retrieved document What Is Gamma in Investing and How Is It Used? is relevant
+2026-02-10 22:50:49,122 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:49,126 - DocumentGraderNode - INFO: Retrieved document What Are the Greeks in Options?
+
+The five main Greeks in options trading are delta (Δ), theta (Θ), gamma (Γ), vega (ν), and rho (ρ). Each Greek has a number value that provides information about how the option is moving or the risk associated with buying or selling that option. These values change over time, so savvy traders will check them daily or multiple times a day before making trades. is relevant
+2026-02-10 22:50:50,024 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:50,027 - DocumentGraderNode - INFO: Retrieved document Understanding Gamma
+
+Gamma is the first derivative of delta and is used when trying to gauge the price movement of an option, relative to the amount it is in the money or out of the money. It describes how the delta will change as the underlying asset changes. So if an option's delta is +40 and the gamma is 10, a \$1 increase in the underlying price would result in that option's delta becoming +50.
+
+When the option being measured is deep in or out of the money, gamma is small. When the option is near or at the money, gamma is at its largest. Gamma is also largest for options with near-term expirations relative to longer-dated options.
+
+Gamma is an important metric because it accounts for convexity issues when engaging in options hedging strategies. Some portfolio managers or traders may be involved with portfolios of such large values that even more precision is needed when engaged in hedging. A third-order derivative named "color" can be used. Color measures the rate of change of gamma and is important for maintaining a gamma-hedged portfolio. is relevant
+2026-02-10 22:50:50,875 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:50,879 - DocumentGraderNode - INFO: Retrieved document Fast Fact
+
+Theta is one of the four interrelated "Greeks" that options traders use to evaluate the relative risk and potential rewards of an options contract. In addition to theta, they are delta, gamma, and vega. is relevant
+2026-02-10 22:50:51,514 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:51,518 - DocumentGraderNode - INFO: Retrieved document Key Greek Variables in Options Trading
+
+Greeks include variables like delta, theta, gamma, vega, and rho. Each one of these Greeks has a number associated with it, and that number tells traders something about how the option moves or the risk associated with that option. The primary Greeks (delta, vega, theta, gamma, and rho) are calculated each as a first partial derivative of the options pricing model (for instance, the Black-Scholes model).
+
+Greek values change over time, so traders often calculate them daily to adjust their positions or rebalance portfolios. Therefore, sophisticated options traders may calculate these values daily to assess any changes that may affect their positions or outlook, or simply to check if their portfolio needs to be rebalanced. Below are several of the main Greeks that traders look at. is relevant
+2026-02-10 22:50:52,427 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:52,428 - DocumentGraderNode - INFO: Retrieved document Gamma
+
+Gamma (Γ) represents the rate of change between an option's delta and the underlying asset's price. This is called second-order (second-derivative) price sensitivity. Gamma indicates the amount the delta would change given a \$1 move in the underlying security. Let's assume an investor is long one call option on hypothetical stock XYZ. The call option has a delta of 0.50 and a gamma of 0.10. Therefore, if stock XYZ increases or decreases by \$1, the call option's delta would increase or decrease by 0.10.
+
+Gamma is used to determine the stability of an option's delta. Higher gamma values indicate that delta could change dramatically in response to even small movements in the underlying's price.
+
+Gamma is higher for ATM options and lower for ITM or OTM options, increasing as expiration nears. Gamma values are generally smaller the further away from the date of expiration. This means that options with longer expirations are less sensitive to delta changes. Gamma values are typically larger closer to expiration, as price changes have more impact on gamma.
+
+Options traders may opt to not only hedge delta but also gamma in order to be delta-gamma neutral, meaning that as the underlying price moves, the delta will remain close to zero. is relevant
+2026-02-10 22:50:52,428 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-10 22:50:52,428 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 5.857 seconds.
+2026-02-10 22:50:52,428 - route_functions - INFO: --- Assess graded docs ---
+2026-02-10 22:50:52,428 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-10 22:50:52,428 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is Gamma in the context of options Greeks?", time costed: 6.435 seconds.
+2026-02-10 22:50:52,428 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 6.435 seconds.
+2026-02-10 22:50:52,428 - log_utils - INFO: generate_node starts to work
+2026-02-10 22:50:57,073 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:57,076 - log_utils - INFO: generate_node finishes working, time costed: 4.648 seconds.
+2026-02-10 22:50:57,076 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-10 22:50:58,036 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:58,042 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-10 22:50:58,042 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-10 22:50:59,079 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:50:59,087 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-10 22:50:59,088 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-10 22:50:59,089 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-10 22:51:02,008 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:03,107 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:04,660 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:05,767 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:08,597 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:11,387 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:13,097 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:14,184 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:16,651 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:20,984 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:23,726 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:26,410 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:29,074 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:31,762 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:34,212 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:36,448 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:37,681 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:40,857 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:42,762 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:43,978 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:45,916 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:48,899 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:51:58,337 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:02,427 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:05,677 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:11,664 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:14,913 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:17,325 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:19,609 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:22,217 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:24,721 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:25,886 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:28,770 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:30,916 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:32,149 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:35,032 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:38,181 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:41,190 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:43,946 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:46,747 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:48,938 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:56,012 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:52:59,846 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:53:22,109 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:53:25,383 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:53:28,677 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:53:31,751 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:53:34,515 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:53:35,751 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:53:39,435 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:53:42,707 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:53:43,828 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:53:45,548 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:53:46,701 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:53:54,286 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:53:55,379 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:53:58,152 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:54:08,874 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-10 22:54:11,247 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

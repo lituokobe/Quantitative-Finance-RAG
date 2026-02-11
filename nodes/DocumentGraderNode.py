@@ -24,8 +24,8 @@ class DocumentGraderNode:
             
             ## === YOUR CORE TASK ===
             You will be given a question and the retrieved document to answer this question. 
-            If the document provide helpful information to answer the question, or at least, covers any concepts in the question, it is considered relevant.  
-            This evaluation doesn't need to be strict. The objective is to filter out inappropriate or totally irrelevant retrieved documents.  
+            If the document provides helpful information to answer the question, it is considered relevant. Otherwise, not.  
+            The objective is to filter out inappropriate or irrelevant retrieved documents.  
             You MUST respond in JSON format matching this schema:
             {{
               "relevancy": "yes" | "no"

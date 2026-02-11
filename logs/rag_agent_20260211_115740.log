@@ -1,0 +1,248 @@
+2026-02-11 11:57:40,481 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 11:57:40,483 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 11:57:40,485 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-11 11:57:40,490 - log_utils - INFO: starting_reply_node starts to work
+2026-02-11 11:57:40,490 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-11 11:57:40,491 - log_utils - INFO: starting_intention_node starts to work
+2026-02-11 11:57:42,752 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:42,770 - log_utils - INFO: starting_intention_node finishes working, time costed: 2.279 seconds.
+2026-02-11 11:57:42,771 - log_utils - INFO: comparison_retriever_node starts to work
+2026-02-11 11:57:44,184 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:44,350 - standard_comparison_nodes - INFO: comparison_retriever_node decomposes question "What are the differences between primary markets and secondary markets in finance?", time costed: 1.579 seconds.
+2026-02-11 11:57:44,351 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 11:57:44,371 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 11:57:44,386 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 11:57:44,386 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 11:57:45,030 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.68 seconds.
+2026-02-11 11:57:45,031 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 11:57:45,924 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:45,929 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of Spot Markets is NOT relevant, dump it.
+2026-02-11 11:57:46,643 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:46,644 - DocumentGraderNode - INFO: Retrieved document Forex Market vs. Other Markets
+
+There are some fundamental differences between foreign exchange and other markets.
+
+First of all, there are fewer rules, which means investors aren't held to strict standards or regulations like those in the stock, futures, and options markets. There are no clearing houses and no central bodies that oversee the forex market.
+
+Second, since trades don't take place on a traditional exchange, there are fewer fees or commissions like those on other markets. Next, there's no cutoff as to when you can and cannot trade. Because the market is open 24 hours a day, you can trade at any time.
+
+Finally, because it's such a liquid market, you can get in and out whenever you want and you can buy as much currency as you can afford. is NOT relevant, dump it.
+2026-02-11 11:57:47,557 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:47,561 - DocumentGraderNode - INFO: Retrieved document Spot Market: Definition, How It Works, and Example is NOT relevant, dump it.
+2026-02-11 11:57:48,280 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:48,284 - DocumentGraderNode - INFO: Retrieved document Why Is Arbitrage Important?
+
+In the course of making a profit, arbitrage traders enhance the efficiency of the financial markets. As they buy and sell, the price differences between identical or similar assets narrow. The lower-priced assets are bid up, while the higher-priced assets are sold off. In this manner, arbitrage resolves inefficiencies in the market’s pricing and adds liquidity to the market. is NOT relevant, dump it.
+2026-02-11 11:57:49,099 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:49,103 - DocumentGraderNode - INFO: Retrieved document What Are Examples of Spot Markets?
+
+Many commodities have active spot markets, where physical spot commodities are bought and sold in real-time for cash. Foreign exchange also trades in the spot currency market where the underlying currencies are physically exchanged following the settlement date. Delivery usually occurs within two days after execution as it generally takes two days to transfer funds between bank accounts. Stock markets can also be thought of as spot markets, with shares of companies changing hands in real time. is NOT relevant, dump it.
+2026-02-11 11:57:49,919 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:49,923 - DocumentGraderNode - INFO: Retrieved document Over-the-Counter (OTC) Markets: Trading and Securities is NOT relevant, dump it.
+2026-02-11 11:57:50,737 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:50,738 - DocumentGraderNode - INFO: Retrieved document Market Order: Definition, Example, Vs. Limit Order is NOT relevant, dump it.
+2026-02-11 11:57:51,892 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:51,894 - DocumentGraderNode - INFO: Retrieved document What's the Main Difference Between a Bear Market and a Bull Market?
+
+The main difference between a bear market and a bull market is that a bear market refers to a major downturn in financial markets, while a bull market refers to a major upswing. Markets are doing well during a bull market and poorly during a bear market. is NOT relevant, dump it.
+2026-02-11 11:57:51,894 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 11:57:51,895 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.864 seconds.
+2026-02-11 11:57:51,895 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 11:57:51,895 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions. ---
+2026-02-11 11:57:51,896 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-02-11 11:57:52,786 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:52,788 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 0.892 seconds.
+2026-02-11 11:57:52,788 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 11:57:52,789 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 11:57:52,813 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 11:57:52,813 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 11:57:53,046 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.258 seconds.
+2026-02-11 11:57:53,047 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 11:57:53,752 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:53,757 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of Spot Markets is NOT relevant, dump it.
+2026-02-11 11:57:54,835 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:54,838 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- Fundamentals provide both qualitative and quantitative data that underlie the financial and economic health of a company.
+- Key aspects of businesses like profitability, revenue, and liabilities are critical in evaluating financial fundamentals.
+- Macroeconomic fundamentals affect the economy at large, while microeconomic fundamentals focus on smaller segments like markets or sectors.
+- Fundamental analysis uses various financial ratios to assess a company's value, risk, and growth potential relative to industry peers.
+- Differences in fundamentals, as seen between companies like Microsoft and Apple, are crucial in investment decisions. is NOT relevant, dump it.
+2026-02-11 11:57:56,575 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:56,578 - DocumentGraderNode - INFO: Retrieved document Spot Market: Definition, How It Works, and Example is NOT relevant, dump it.
+2026-02-11 11:57:57,253 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:57,258 - DocumentGraderNode - INFO: Retrieved document Forex Market vs. Other Markets
+
+There are some fundamental differences between foreign exchange and other markets.
+
+First of all, there are fewer rules, which means investors aren't held to strict standards or regulations like those in the stock, futures, and options markets. There are no clearing houses and no central bodies that oversee the forex market.
+
+Second, since trades don't take place on a traditional exchange, there are fewer fees or commissions like those on other markets. Next, there's no cutoff as to when you can and cannot trade. Because the market is open 24 hours a day, you can trade at any time.
+
+Finally, because it's such a liquid market, you can get in and out whenever you want and you can buy as much currency as you can afford. is NOT relevant, dump it.
+2026-02-11 11:57:58,010 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:58,014 - DocumentGraderNode - INFO: Retrieved document Different Types of Premiums in Finance is NOT relevant, dump it.
+2026-02-11 11:57:58,828 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:58,832 - DocumentGraderNode - INFO: Retrieved document Why Is Arbitrage Important?
+
+In the course of making a profit, arbitrage traders enhance the efficiency of the financial markets. As they buy and sell, the price differences between identical or similar assets narrow. The lower-priced assets are bid up, while the higher-priced assets are sold off. In this manner, arbitrage resolves inefficiencies in the market’s pricing and adds liquidity to the market. is NOT relevant, dump it.
+2026-02-11 11:57:59,544 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:57:59,548 - DocumentGraderNode - INFO: Retrieved document Market Order: Definition, Example, Vs. Limit Order is NOT relevant, dump it.
+2026-02-11 11:58:00,364 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:00,367 - DocumentGraderNode - INFO: Retrieved document What Are Examples of Spot Markets?
+
+Many commodities have active spot markets, where physical spot commodities are bought and sold in real-time for cash. Foreign exchange also trades in the spot currency market where the underlying currencies are physically exchanged following the settlement date. Delivery usually occurs within two days after execution as it generally takes two days to transfer funds between bank accounts. Stock markets can also be thought of as spot markets, with shares of companies changing hands in real time. is NOT relevant, dump it.
+2026-02-11 11:58:00,367 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 11:58:00,368 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 7.321 seconds.
+2026-02-11 11:58:00,368 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 11:58:00,368 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions. ---
+2026-02-11 11:58:00,369 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-02-11 11:58:01,286 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:01,288 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 0.919 seconds.
+2026-02-11 11:58:01,289 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 11:58:01,290 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 11:58:01,317 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 11:58:01,317 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 11:58:01,535 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.246 seconds.
+2026-02-11 11:58:01,535 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 11:58:02,512 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:02,513 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of Spot Markets is NOT relevant, dump it.
+2026-02-11 11:58:03,190 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:03,194 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- Fundamentals provide both qualitative and quantitative data that underlie the financial and economic health of a company.
+- Key aspects of businesses like profitability, revenue, and liabilities are critical in evaluating financial fundamentals.
+- Macroeconomic fundamentals affect the economy at large, while microeconomic fundamentals focus on smaller segments like markets or sectors.
+- Fundamental analysis uses various financial ratios to assess a company's value, risk, and growth potential relative to industry peers.
+- Differences in fundamentals, as seen between companies like Microsoft and Apple, are crucial in investment decisions. is NOT relevant, dump it.
+2026-02-11 11:58:03,948 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:03,952 - DocumentGraderNode - INFO: Retrieved document Spot Market: Definition, How It Works, and Example is NOT relevant, dump it.
+2026-02-11 11:58:04,767 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:04,771 - DocumentGraderNode - INFO: Retrieved document Forex Market vs. Other Markets
+
+There are some fundamental differences between foreign exchange and other markets.
+
+First of all, there are fewer rules, which means investors aren't held to strict standards or regulations like those in the stock, futures, and options markets. There are no clearing houses and no central bodies that oversee the forex market.
+
+Second, since trades don't take place on a traditional exchange, there are fewer fees or commissions like those on other markets. Next, there's no cutoff as to when you can and cannot trade. Because the market is open 24 hours a day, you can trade at any time.
+
+Finally, because it's such a liquid market, you can get in and out whenever you want and you can buy as much currency as you can afford. is NOT relevant, dump it.
+2026-02-11 11:58:05,852 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:05,856 - DocumentGraderNode - INFO: Retrieved document Different Types of Premiums in Finance is NOT relevant, dump it.
+2026-02-11 11:58:06,610 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:06,614 - DocumentGraderNode - INFO: Retrieved document Why Is Arbitrage Important?
+
+In the course of making a profit, arbitrage traders enhance the efficiency of the financial markets. As they buy and sell, the price differences between identical or similar assets narrow. The lower-priced assets are bid up, while the higher-priced assets are sold off. In this manner, arbitrage resolves inefficiencies in the market’s pricing and adds liquidity to the market. is NOT relevant, dump it.
+2026-02-11 11:58:07,413 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:07,417 - DocumentGraderNode - INFO: Retrieved document Market Order: Definition, Example, Vs. Limit Order is NOT relevant, dump it.
+2026-02-11 11:58:08,433 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:08,437 - DocumentGraderNode - INFO: Retrieved document What Are Examples of Spot Markets?
+
+Many commodities have active spot markets, where physical spot commodities are bought and sold in real-time for cash. Foreign exchange also trades in the spot currency market where the underlying currencies are physically exchanged following the settlement date. Delivery usually occurs within two days after execution as it generally takes two days to transfer funds between bank accounts. Stock markets can also be thought of as spot markets, with shares of companies changing hands in real time. is NOT relevant, dump it.
+2026-02-11 11:58:08,437 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 11:58:08,437 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.902 seconds.
+2026-02-11 11:58:08,437 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 11:58:08,438 - route_functions - INFO: --- Decision: all documents are not relevant, and looped twice, need to do web search. ---
+2026-02-11 11:58:08,439 - log_utils - INFO: child graph - web_search_node starts to work
+2026-02-11 11:58:10,614 - log_utils - INFO: child graph - web_search_node finishes working, time costed: 2.175 seconds.
+2026-02-11 11:58:10,616 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What are the differences between primary markets and secondary markets in finance?", time costed: 26.266 seconds.
+2026-02-11 11:58:10,618 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 11:58:10,619 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 11:58:10,647 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 11:58:10,647 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 11:58:10,950 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.332 seconds.
+2026-02-11 11:58:10,951 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 11:58:11,602 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:11,606 - DocumentGraderNode - INFO: Retrieved document Spot Market: Definition, How It Works, and Example is NOT relevant, dump it.
+2026-02-11 11:58:12,448 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:12,452 - DocumentGraderNode - INFO: Retrieved document Understanding Primary Instruments
+
+Primary instruments are standard financial investments. They often trade on mainstream exchanges with high levels of liquidity. Their market value is determined based on assumptions about their individual characteristics.
+
+Examples of primary instruments include stocks, bonds, and currency, among others. Any spot market that trades the 'cash' asset involves a primary instrument. By contrast, the price of derivative instruments, such as options and futures, is often based on the value of a primary instrument.
+
+Primary investments like stocks are what most beginning investors think of when they think about investing. This is because investing in primary instruments often requires only a general knowledge of markets and investment principles.
+
+Understanding primary instruments provides the base knowledge for derivatives. Derivatives were created to hedge against some of the risks of primary instruments. Derivatives also provide products for alternative investment strategies that are based on the speculation of values of underlying primary instruments. is NOT relevant, dump it.
+2026-02-11 11:58:13,164 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:13,169 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of Spot Markets is NOT relevant, dump it.
+2026-02-11 11:58:13,885 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:13,893 - DocumentGraderNode - INFO: Retrieved document Call and put options are two of the most common types of non-primary instruments traded in the market. Futures products are also non-primary instruments that allow investors to hedge against market movements of primary instruments. Futures contracts are typically priced from a cost of carry or expectancy model. They allow an investor to take a future bet on a primary instrument by buying a futures contract. Futures contracts can be bought for a variety of primary instrument investments. Currency futures that bet on future prices of currency values are some of the most common types of futures traded by investors. is NOT relevant, dump it.
+2026-02-11 11:58:14,625 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:14,629 - DocumentGraderNode - INFO: Retrieved document Primary Instrument: What it is, How it Works is NOT relevant, dump it.
+2026-02-11 11:58:15,519 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:15,523 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- A primary instrument is a financial investment whose price is based directly on its market value.
+- Primary instruments include cash-traded products like stocks, bonds, currencies, and spot commodities.
+- Understanding primary instruments provides the base knowledge for derivatives, whose prices are derived from the primary (underlying) asset. is NOT relevant, dump it.
+2026-02-11 11:58:16,292 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:16,296 - DocumentGraderNode - INFO: Retrieved document Spot Market Trading is NOT relevant, dump it.
+2026-02-11 11:58:17,362 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:17,364 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 11:58:17,364 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 11:58:17,364 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.413 seconds.
+2026-02-11 11:58:17,364 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 11:58:17,364 - route_functions - INFO: --- Decision: all documents are not relevant, and looped twice, need to do web search. ---
+2026-02-11 11:58:17,365 - log_utils - INFO: child graph - web_search_node starts to work
+2026-02-11 11:58:19,238 - log_utils - INFO: child graph - web_search_node finishes working, time costed: 1.873 seconds.
+2026-02-11 11:58:19,240 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What are primary markets in finance?", time costed: 8.624 seconds.
+2026-02-11 11:58:19,242 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 11:58:19,242 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 11:58:19,274 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 11:58:19,275 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 11:58:19,568 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.326 seconds.
+2026-02-11 11:58:19,569 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 11:58:20,285 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:20,293 - DocumentGraderNode - INFO: Retrieved document Spot Market: Definition, How It Works, and Example is NOT relevant, dump it.
+2026-02-11 11:58:21,049 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:21,053 - DocumentGraderNode - INFO: Retrieved document Where Do Investors Trade Bond Options?
+
+Unlike stocks, bond options are less easily found on secondary markets. Most bond options will trade over the counter. Secondary market bond options are available on U.S. Treasury bonds. Beyond that, investors must look to options on bond exchange-traded funds (ETFs). Many bond options are embedded, which means they come with a bond and can be exercised at the request of either the issuer or investor depending on the embedded bond option provision. is relevant
+2026-02-11 11:58:22,180 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:22,183 - DocumentGraderNode - INFO: Retrieved document Over-the-Counter (OTC) Markets: Trading and Securities is NOT relevant, dump it.
+2026-02-11 11:58:22,892 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:22,900 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 11:58:23,712 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:23,715 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of Spot Markets is NOT relevant, dump it.
+2026-02-11 11:58:24,530 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:24,533 - DocumentGraderNode - INFO: Retrieved document Embedded Options in Finance: What You Need to Know is NOT relevant, dump it.
+2026-02-11 11:58:25,350 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:25,354 - DocumentGraderNode - INFO: Retrieved document Spot Market Trading is NOT relevant, dump it.
+2026-02-11 11:58:26,271 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:26,275 - DocumentGraderNode - INFO: Retrieved document What Is Risk Neutral?
+
+Risk neutrality describes a mindset in which an individual is indifferent to risk, focusing solely on potential outcomes rather than the uncertainty involved. Used in both game theory and finance, it contrasts with risk aversion, where investors prioritize safety over returns.
+
+In markets, a risk-neutral investor values potential gains equally regardless of volatility, and this concept underpins the risk-neutral measures used in derivatives pricing. Market conditions can influence whether an investor adopts a more risk-neutral or risk-averse stance. is NOT relevant, dump it.
+2026-02-11 11:58:26,275 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 11:58:26,275 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.707 seconds.
+2026-02-11 11:58:26,276 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 11:58:26,276 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 11:58:26,277 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What are secondary markets in finance?", time costed: 7.037 seconds.
+2026-02-11 11:58:26,278 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 43.507 seconds.
+2026-02-11 11:58:26,279 - log_utils - INFO: generate_node starts to work
+2026-02-11 11:58:34,215 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:34,218 - log_utils - INFO: generate_node finishes working, time costed: 7.939 seconds.
+2026-02-11 11:58:34,219 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 11:58:34,975 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:34,990 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-11 11:58:34,990 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-11 11:58:35,905 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:35,919 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-11 11:58:35,920 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-11 11:58:35,920 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-11 11:58:38,870 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:40,103 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:41,286 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:43,564 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:46,191 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:52,898 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:52,902 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:58:57,198 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:59:10,302 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:59:18,705 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

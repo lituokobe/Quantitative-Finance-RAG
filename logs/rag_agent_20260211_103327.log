@@ -1,0 +1,77 @@
+2026-02-11 10:33:27,726 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 10:33:27,729 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 10:33:27,730 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-11 10:33:27,737 - log_utils - INFO: starting_reply_node starts to work
+2026-02-11 10:33:27,737 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-11 10:33:27,739 - log_utils - INFO: starting_intention_node starts to work
+2026-02-11 10:33:29,546 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:29,568 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.828 seconds.
+2026-02-11 10:33:29,569 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-11 10:33:29,570 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 10:33:29,760 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 10:33:29,775 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 10:33:29,775 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 10:33:30,300 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.73 seconds.
+2026-02-11 10:33:30,300 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 10:33:31,054 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:31,067 - DocumentGraderNode - INFO: Retrieved document Understanding Liquidity and How to Measure It is relevant
+2026-02-11 10:33:31,820 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:31,824 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 10:33:32,835 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:32,838 - DocumentGraderNode - INFO: Retrieved document Understanding Liquidation: Process, Implications, and Examples is NOT relevant, dump it.
+2026-02-11 10:33:33,858 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:33,862 - DocumentGraderNode - INFO: Retrieved document What Is Quantitative Analysis Used for in Finance?
+
+Quantitative analysis is used by governments, investors, and businesses (in areas such as finance, project management, production planning, and marketing) to study a certain situation or event, measure it, predict outcomes, and thus help in decision-making. In finance, it's widely used for assessing investment opportunities and risks. For instance, before venturing into investments, analysts rely on quantitative analysis to understand the performance metrics of different financial instruments such as stocks, bonds, and derivatives. By delving into historical data and employing mathematical and statistical models, they can forecast potential future performance and evaluate the underlying risks. This practice isn't just confined to individual assets; it's also essential for portfolio management. By examining the relationships between different assets and assessing their risk and return profiles, investors can construct portfolios that are optimized for the highest possible returns for a given level of risk. is NOT relevant, dump it.
+2026-02-11 10:33:34,780 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:34,784 - DocumentGraderNode - INFO: Retrieved document Understanding Market Makers: Roles, Profits, and Their Impact on Liquidity is relevant
+2026-02-11 10:33:35,645 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:35,649 - DocumentGraderNode - INFO: Retrieved document How Quantitative Analysis Works in Finance
+
+Quantitative analysis (QA) in finance refers to the use of mathematical and statistical techniques to analyze financial & economic data and make trading, investing, and risk management decisions.
+
+QA starts with data collection, where quants gather a vast amount of financial data that might affect the market. This data can include anything from stock prices and company earnings to economic indicators like inflation or unemployment rates. They then use various mathematical models and statistical techniques to analyze this data, looking for trends, patterns, and potential investment opportunities. The outcome of this analysis can help investors decide where to allocate their resources to maximize returns or minimize risks.
+
+Some key aspects of quantitative analysis in finance include: is NOT relevant, dump it.
+2026-02-11 10:33:36,465 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:36,469 - DocumentGraderNode - INFO: Retrieved document Stock Volume Explained: Key Insights for Market Trends and Liquidity is relevant
+2026-02-11 10:33:37,649 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:37,654 - DocumentGraderNode - INFO: Retrieved document Quantitative Analysis in Finance: Techniques, Applications, and Benefits
+
+Quantitative analysis (QA) uses methods to understand financial markets and make informed investment or trading decisions. It involves the use of mathematical and statistical techniques to analyze financial data. Quantitative analysts, often called "quants," examine past stock prices and earnings to forecast market trends.
+
+Unlike fundamental analysis, which looks at management or industry conditions, quantitative analysis focuses on numerical computations for insights.
+
+Quantitative analysis is powerful in modern markets, where abundant data and advanced tools enable precise financial examination. However, many also believe that the raw numbers produced by quantitative analysis should be combined with the more in-depth understanding and nuance afforded by qualitative analysis. is NOT relevant, dump it.
+2026-02-11 10:33:37,654 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 10:33:37,654 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 7.353 seconds.
+2026-02-11 10:33:37,654 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 10:33:37,654 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 10:33:37,655 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is liquidity in quantitative finance?", time costed: 8.086 seconds.
+2026-02-11 10:33:37,655 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 8.087 seconds.
+2026-02-11 10:33:37,656 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:33:40,177 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:40,179 - log_utils - INFO: generate_node finishes working, time costed: 2.523 seconds.
+2026-02-11 10:33:40,179 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:33:41,022 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:41,036 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:33:41,037 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:33:44,409 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:44,412 - log_utils - INFO: generate_node finishes working, time costed: 3.376 seconds.
+2026-02-11 10:33:44,413 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:33:45,277 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:45,278 - route_functions - INFO: ---Decision: generated result has hallucination, but we will still output it.---
+2026-02-11 10:33:45,279 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-11 10:33:45,279 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-11 10:33:47,677 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:49,192 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:50,714 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:51,992 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:54,954 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:58,609 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:33:59,837 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:34:01,715 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:34:08,754 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:34:11,083 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

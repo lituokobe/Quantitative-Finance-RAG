@@ -1,0 +1,161 @@
+2026-02-11 11:27:43,017 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 11:27:43,019 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 11:27:43,021 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-11 11:27:43,026 - log_utils - INFO: starting_reply_node starts to work
+2026-02-11 11:27:43,026 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-11 11:27:43,027 - log_utils - INFO: starting_intention_node starts to work
+2026-02-11 11:27:44,474 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:44,485 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.458 seconds.
+2026-02-11 11:27:44,486 - log_utils - INFO: comparison_retriever_node starts to work
+2026-02-11 11:27:45,663 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:45,806 - standard_comparison_nodes - INFO: comparison_retriever_node decomposes question "Compare systematic risk and unsystematic risk in quantitative finance", time costed: 1.32 seconds.
+2026-02-11 11:27:45,807 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 11:27:45,825 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 11:27:45,836 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 11:27:45,836 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 11:27:46,456 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.65 seconds.
+2026-02-11 11:27:46,457 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 11:27:47,139 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:47,155 - DocumentGraderNode - INFO: Retrieved document Risk: What It Means in Investing and How to Measure and Manage It is NOT relevant, dump it.
+2026-02-11 11:27:47,962 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:47,966 - DocumentGraderNode - INFO: Retrieved document Types of Financial Risk
+
+Every saving and investment action involves different risks and returns. In general, financial theory classifies investment risks affecting asset values into two categories: systematic risk and unsystematic risk. Broadly speaking, investors are exposed to both systematic and unsystematic risks.
+
+Systematic risks, also known as market risks, are risks that can affect an entire economic market overall or a large percentage of the total market. Market risk is the risk of losing investments due to factors, such as political risk and macroeconomic risk, that affect the performance of the overall market. Market risk cannot be easily mitigated through portfolio diversification. Other common types of systematic risk can include interest rate risk, inflation risk, currency risk, liquidity risk, country risk, and sociopolitical risk. is relevant
+2026-02-11 11:27:48,689 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:48,692 - DocumentGraderNode - INFO: Retrieved document Options: Types, Spreads, and Risk Metrics is NOT relevant, dump it.
+2026-02-11 11:27:49,342 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:49,345 - DocumentGraderNode - INFO: Retrieved document Important
+
+Systematic risk affects a market sector or the entire market, whereas unsystematic risk applies to a specific company or industry. is relevant
+2026-02-11 11:27:50,217 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:50,221 - DocumentGraderNode - INFO: Retrieved document Unsystematic risk, also known as specific risk or idiosyncratic risk, is a category of risk that only affects an industry or a particular company. Unsystematic risk is the risk of losing an investment due to company or industry-specific hazards. Examples include a change in management, a product recall, a regulatory change that could drive down company sales, and a new competitor in the marketplace with the potential to take away market share from a company. Investors often use diversification to manage unsystematic risk by investing in a variety of assets.
+
+In addition to the broad systematic and unsystematic risks, there are several specific types of risk, including: is relevant
+2026-02-11 11:27:50,932 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:50,933 - DocumentGraderNode - INFO: Retrieved document Problems With the CAPM is NOT relevant, dump it.
+2026-02-11 11:27:51,851 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:51,855 - DocumentGraderNode - INFO: Retrieved document Can Portfolio Diversification Protect Against Risks?
+
+Portfolio diversification is an effective strategy used to manage unsystematic risks (risks specific to individual companies or industries); however, it cannot protect against systematic risks (risks that affect the entire market or a large portion of it). Systematic risks, such as interest rate risk, inflation risk, and currency risk, cannot be eliminated through diversification alone. However, investors can still mitigate the impact of these risks by considering other strategies like hedging, investing in assets that are less correlated with the systematic risks, or adjusting the investment time horizon. is relevant
+2026-02-11 11:27:52,519 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:52,522 - DocumentGraderNode - INFO: Retrieved document Understanding Risk Premiums: Boosting Returns for Risky Investments is NOT relevant, dump it.
+2026-02-11 11:27:52,522 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 11:27:52,522 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.065 seconds.
+2026-02-11 11:27:52,522 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 11:27:52,522 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 11:27:52,524 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "Compare systematic risk and unsystematic risk in quantitative finance", time costed: 6.718 seconds.
+2026-02-11 11:27:52,525 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 11:27:52,526 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 11:27:52,549 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 11:27:52,549 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 11:27:52,717 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.192 seconds.
+2026-02-11 11:27:52,717 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 11:27:53,428 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:53,432 - DocumentGraderNode - INFO: Retrieved document Risk: What It Means in Investing and How to Measure and Manage It is NOT relevant, dump it.
+2026-02-11 11:27:54,185 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:54,189 - DocumentGraderNode - INFO: Retrieved document What Is the Capital Asset Pricing Model (CAPM)?
+
+The capital asset pricing model (CAPM) describes the relationship between systematic risk, or the general perils of investing, and expected return for assets, particularly stocks. It is a finance model that establishes a linear relationship between the required return on an investment and risk.
+
+CAPM is based on the relationship between an asset’s beta, the risk-free rate (typically the Treasury bill rate), and the equity risk premium, or the expected return on the market minus the risk-free rate.
+
+CAPM evolved as a way to measure this systematic risk. It is widely used throughout finance for pricing risky securities and generating expected returns for assets, given the risk of those assets and cost of capital. is relevant
+2026-02-11 11:27:54,798 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:54,802 - DocumentGraderNode - INFO: Retrieved document Important
+
+Systematic risk affects a market sector or the entire market, whereas unsystematic risk applies to a specific company or industry. is relevant
+2026-02-11 11:27:55,441 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:55,444 - DocumentGraderNode - INFO: Retrieved document What Is Quantitative Analysis Used for in Finance?
+
+Quantitative analysis is used by governments, investors, and businesses (in areas such as finance, project management, production planning, and marketing) to study a certain situation or event, measure it, predict outcomes, and thus help in decision-making. In finance, it's widely used for assessing investment opportunities and risks. For instance, before venturing into investments, analysts rely on quantitative analysis to understand the performance metrics of different financial instruments such as stocks, bonds, and derivatives. By delving into historical data and employing mathematical and statistical models, they can forecast potential future performance and evaluate the underlying risks. This practice isn't just confined to individual assets; it's also essential for portfolio management. By examining the relationships between different assets and assessing their risk and return profiles, investors can construct portfolios that are optimized for the highest possible returns for a given level of risk. is NOT relevant, dump it.
+2026-02-11 11:27:56,258 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:56,262 - DocumentGraderNode - INFO: Retrieved document Options: Types, Spreads, and Risk Metrics is NOT relevant, dump it.
+2026-02-11 11:27:57,077 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:57,081 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 11:27:57,794 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:57,798 - DocumentGraderNode - INFO: Retrieved document Unsystematic risk, also known as specific risk or idiosyncratic risk, is a category of risk that only affects an industry or a particular company. Unsystematic risk is the risk of losing an investment due to company or industry-specific hazards. Examples include a change in management, a product recall, a regulatory change that could drive down company sales, and a new competitor in the marketplace with the potential to take away market share from a company. Investors often use diversification to manage unsystematic risk by investing in a variety of assets.
+
+In addition to the broad systematic and unsystematic risks, there are several specific types of risk, including: is NOT relevant, dump it.
+2026-02-11 11:27:58,587 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:58,591 - DocumentGraderNode - INFO: Retrieved document How Quantitative Analysis Works in Finance
+
+Quantitative analysis (QA) in finance refers to the use of mathematical and statistical techniques to analyze financial & economic data and make trading, investing, and risk management decisions.
+
+QA starts with data collection, where quants gather a vast amount of financial data that might affect the market. This data can include anything from stock prices and company earnings to economic indicators like inflation or unemployment rates. They then use various mathematical models and statistical techniques to analyze this data, looking for trends, patterns, and potential investment opportunities. The outcome of this analysis can help investors decide where to allocate their resources to maximize returns or minimize risks.
+
+Some key aspects of quantitative analysis in finance include: is NOT relevant, dump it.
+2026-02-11 11:27:58,591 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 11:27:58,591 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 5.874 seconds.
+2026-02-11 11:27:58,592 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 11:27:58,592 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 11:27:58,593 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is systematic risk in quantitative finance?", time costed: 6.07 seconds.
+2026-02-11 11:27:58,595 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 11:27:58,596 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 11:27:58,624 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 11:27:58,624 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 11:27:58,834 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.239 seconds.
+2026-02-11 11:27:58,835 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 11:27:59,739 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:27:59,743 - DocumentGraderNode - INFO: Retrieved document Unsystematic risk, also known as specific risk or idiosyncratic risk, is a category of risk that only affects an industry or a particular company. Unsystematic risk is the risk of losing an investment due to company or industry-specific hazards. Examples include a change in management, a product recall, a regulatory change that could drive down company sales, and a new competitor in the marketplace with the potential to take away market share from a company. Investors often use diversification to manage unsystematic risk by investing in a variety of assets.
+
+In addition to the broad systematic and unsystematic risks, there are several specific types of risk, including: is relevant
+2026-02-11 11:28:00,764 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:00,768 - DocumentGraderNode - INFO: Retrieved document What Is Quantitative Analysis Used for in Finance?
+
+Quantitative analysis is used by governments, investors, and businesses (in areas such as finance, project management, production planning, and marketing) to study a certain situation or event, measure it, predict outcomes, and thus help in decision-making. In finance, it's widely used for assessing investment opportunities and risks. For instance, before venturing into investments, analysts rely on quantitative analysis to understand the performance metrics of different financial instruments such as stocks, bonds, and derivatives. By delving into historical data and employing mathematical and statistical models, they can forecast potential future performance and evaluate the underlying risks. This practice isn't just confined to individual assets; it's also essential for portfolio management. By examining the relationships between different assets and assessing their risk and return profiles, investors can construct portfolios that are optimized for the highest possible returns for a given level of risk. is NOT relevant, dump it.
+2026-02-11 11:28:01,582 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:01,586 - DocumentGraderNode - INFO: Retrieved document Risk: What It Means in Investing and How to Measure and Manage It is NOT relevant, dump it.
+2026-02-11 11:28:02,251 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:02,256 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 11:28:02,852 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:02,856 - DocumentGraderNode - INFO: Retrieved document Important
+
+Systematic risk affects a market sector or the entire market, whereas unsystematic risk applies to a specific company or industry. is relevant
+2026-02-11 11:28:03,528 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:03,533 - DocumentGraderNode - INFO: Retrieved document Options: Types, Spreads, and Risk Metrics is NOT relevant, dump it.
+2026-02-11 11:28:04,242 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:04,247 - DocumentGraderNode - INFO: Retrieved document How Quantitative Analysis Works in Finance
+
+Quantitative analysis (QA) in finance refers to the use of mathematical and statistical techniques to analyze financial & economic data and make trading, investing, and risk management decisions.
+
+QA starts with data collection, where quants gather a vast amount of financial data that might affect the market. This data can include anything from stock prices and company earnings to economic indicators like inflation or unemployment rates. They then use various mathematical models and statistical techniques to analyze this data, looking for trends, patterns, and potential investment opportunities. The outcome of this analysis can help investors decide where to allocate their resources to maximize returns or minimize risks.
+
+Some key aspects of quantitative analysis in finance include: is NOT relevant, dump it.
+2026-02-11 11:28:04,247 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 11:28:04,247 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 5.413 seconds.
+2026-02-11 11:28:04,248 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 11:28:04,248 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 11:28:04,249 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is unsystematic risk in quantitative finance?", time costed: 5.656 seconds.
+2026-02-11 11:28:04,249 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 19.763 seconds.
+2026-02-11 11:28:04,250 - log_utils - INFO: generate_node starts to work
+2026-02-11 11:28:14,083 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:14,087 - log_utils - INFO: generate_node finishes working, time costed: 9.837 seconds.
+2026-02-11 11:28:14,087 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 11:28:14,896 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:14,911 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-11 11:28:14,911 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-11 11:28:15,888 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:15,898 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-11 11:28:15,898 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-11 11:28:15,899 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-11 11:28:18,543 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:20,981 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:22,779 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:23,942 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:27,595 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:31,281 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:34,283 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:37,171 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:38,655 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:40,804 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:44,799 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:55,959 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:28:59,405 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:29:06,890 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 11:29:23,255 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

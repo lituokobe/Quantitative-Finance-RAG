@@ -1,0 +1,186 @@
+2026-02-11 10:00:08,653 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 10:00:08,656 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 10:00:08,658 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-11 10:00:08,664 - log_utils - INFO: starting_reply_node starts to work
+2026-02-11 10:00:08,664 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-11 10:00:08,665 - log_utils - INFO: starting_intention_node starts to work
+2026-02-11 10:00:10,586 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:10,619 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.953 seconds.
+2026-02-11 10:00:10,619 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-11 10:00:10,620 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 10:00:10,844 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 10:00:10,859 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 10:00:10,859 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 10:00:11,460 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.839 seconds.
+2026-02-11 10:00:11,461 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 10:00:12,120 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:12,125 - DocumentGraderNode - INFO: Retrieved document Understanding Liquidity and How to Measure It is relevant
+2026-02-11 10:00:12,745 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:12,747 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 10:00:13,500 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:13,504 - DocumentGraderNode - INFO: Retrieved document Understanding Liquidation: Process, Implications, and Examples is NOT relevant, dump it.
+2026-02-11 10:00:14,272 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:14,277 - DocumentGraderNode - INFO: Retrieved document What Is Quantitative Analysis Used for in Finance?
+
+Quantitative analysis is used by governments, investors, and businesses (in areas such as finance, project management, production planning, and marketing) to study a certain situation or event, measure it, predict outcomes, and thus help in decision-making. In finance, it's widely used for assessing investment opportunities and risks. For instance, before venturing into investments, analysts rely on quantitative analysis to understand the performance metrics of different financial instruments such as stocks, bonds, and derivatives. By delving into historical data and employing mathematical and statistical models, they can forecast potential future performance and evaluate the underlying risks. This practice isn't just confined to individual assets; it's also essential for portfolio management. By examining the relationships between different assets and assessing their risk and return profiles, investors can construct portfolios that are optimized for the highest possible returns for a given level of risk. is NOT relevant, dump it.
+2026-02-11 10:00:15,090 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:15,094 - DocumentGraderNode - INFO: Retrieved document Understanding Market Makers: Roles, Profits, and Their Impact on Liquidity is relevant
+2026-02-11 10:00:16,589 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:16,593 - DocumentGraderNode - INFO: Retrieved document How Quantitative Analysis Works in Finance
+
+Quantitative analysis (QA) in finance refers to the use of mathematical and statistical techniques to analyze financial & economic data and make trading, investing, and risk management decisions.
+
+QA starts with data collection, where quants gather a vast amount of financial data that might affect the market. This data can include anything from stock prices and company earnings to economic indicators like inflation or unemployment rates. They then use various mathematical models and statistical techniques to analyze this data, looking for trends, patterns, and potential investment opportunities. The outcome of this analysis can help investors decide where to allocate their resources to maximize returns or minimize risks.
+
+Some key aspects of quantitative analysis in finance include: is NOT relevant, dump it.
+2026-02-11 10:00:17,447 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:17,451 - DocumentGraderNode - INFO: Retrieved document Stock Volume Explained: Key Insights for Market Trends and Liquidity is relevant
+2026-02-11 10:00:18,163 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:18,167 - DocumentGraderNode - INFO: Retrieved document Quantitative Analysis in Finance: Techniques, Applications, and Benefits
+
+Quantitative analysis (QA) uses methods to understand financial markets and make informed investment or trading decisions. It involves the use of mathematical and statistical techniques to analyze financial data. Quantitative analysts, often called "quants," examine past stock prices and earnings to forecast market trends.
+
+Unlike fundamental analysis, which looks at management or industry conditions, quantitative analysis focuses on numerical computations for insights.
+
+Quantitative analysis is powerful in modern markets, where abundant data and advanced tools enable precise financial examination. However, many also believe that the raw numbers produced by quantitative analysis should be combined with the more in-depth understanding and nuance afforded by qualitative analysis. is NOT relevant, dump it.
+2026-02-11 10:00:18,167 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 10:00:18,167 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.707 seconds.
+2026-02-11 10:00:18,168 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 10:00:18,168 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 10:00:18,169 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is liquidity in quantitative finance?", time costed: 7.549 seconds.
+2026-02-11 10:00:18,169 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 7.55 seconds.
+2026-02-11 10:00:18,170 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:00:21,291 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:21,294 - log_utils - INFO: generate_node finishes working, time costed: 3.124 seconds.
+2026-02-11 10:00:21,295 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:00:22,072 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:22,087 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:00:22,087 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:00:27,722 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:27,725 - log_utils - INFO: generate_node finishes working, time costed: 5.637 seconds.
+2026-02-11 10:00:27,725 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:00:28,700 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:28,705 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:00:28,706 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:00:32,342 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:32,345 - log_utils - INFO: generate_node finishes working, time costed: 3.639 seconds.
+2026-02-11 10:00:32,345 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:00:33,607 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:33,615 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:00:33,616 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:00:37,430 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:37,434 - log_utils - INFO: generate_node finishes working, time costed: 3.818 seconds.
+2026-02-11 10:00:37,434 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:00:38,336 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:38,340 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:00:38,341 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:00:40,945 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:40,947 - log_utils - INFO: generate_node finishes working, time costed: 2.606 seconds.
+2026-02-11 10:00:40,947 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:00:41,715 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:41,719 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:00:41,720 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:00:46,016 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:46,020 - log_utils - INFO: generate_node finishes working, time costed: 4.3 seconds.
+2026-02-11 10:00:46,020 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:00:47,040 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:47,047 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:00:47,048 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:00:50,385 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:50,388 - log_utils - INFO: generate_node finishes working, time costed: 3.34 seconds.
+2026-02-11 10:00:50,388 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:00:51,510 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:51,514 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:00:51,515 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:00:54,720 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:54,724 - log_utils - INFO: generate_node finishes working, time costed: 3.209 seconds.
+2026-02-11 10:00:54,724 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:00:55,441 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:55,444 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:00:55,445 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:00:59,533 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:00:59,536 - log_utils - INFO: generate_node finishes working, time costed: 4.09 seconds.
+2026-02-11 10:00:59,536 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:01:00,354 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:00,357 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:01:00,358 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:01:05,677 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:05,680 - log_utils - INFO: generate_node finishes working, time costed: 5.321 seconds.
+2026-02-11 10:01:05,680 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:01:06,343 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:06,350 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:01:06,351 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:01:10,393 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:10,396 - log_utils - INFO: generate_node finishes working, time costed: 4.045 seconds.
+2026-02-11 10:01:10,397 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:01:11,572 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:11,576 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:01:11,577 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:01:14,586 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:14,590 - log_utils - INFO: generate_node finishes working, time costed: 3.013 seconds.
+2026-02-11 10:01:14,590 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:01:15,405 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:15,411 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:01:15,412 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:01:21,523 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:21,526 - log_utils - INFO: generate_node finishes working, time costed: 6.114 seconds.
+2026-02-11 10:01:21,526 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:01:22,573 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:22,578 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:01:22,579 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:01:25,031 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:25,035 - log_utils - INFO: generate_node finishes working, time costed: 2.455 seconds.
+2026-02-11 10:01:25,035 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:01:25,748 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:25,756 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:01:25,757 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:01:30,891 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:30,894 - log_utils - INFO: generate_node finishes working, time costed: 5.137 seconds.
+2026-02-11 10:01:30,895 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:01:31,892 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:31,896 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:01:31,897 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:01:36,089 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:36,090 - log_utils - INFO: generate_node finishes working, time costed: 4.193 seconds.
+2026-02-11 10:01:36,091 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:01:36,806 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:36,809 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:01:36,810 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:01:40,903 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:40,904 - log_utils - INFO: generate_node finishes working, time costed: 4.095 seconds.
+2026-02-11 10:01:40,905 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:01:41,619 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:41,623 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:01:41,624 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:01:45,550 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:45,554 - log_utils - INFO: generate_node finishes working, time costed: 3.93 seconds.
+2026-02-11 10:01:45,554 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:01:46,535 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:46,543 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:01:46,544 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:01:52,371 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:52,374 - log_utils - INFO: generate_node finishes working, time costed: 5.829 seconds.
+2026-02-11 10:01:52,374 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:01:53,089 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:53,092 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:01:53,093 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:01:58,958 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:01:58,961 - log_utils - INFO: generate_node finishes working, time costed: 5.867 seconds.
+2026-02-11 10:01:58,961 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:02:00,155 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:02:00,158 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:02:00,160 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:02:03,534 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:02:03,537 - log_utils - INFO: generate_node finishes working, time costed: 3.378 seconds.
+2026-02-11 10:02:03,538 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:02:04,353 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:02:04,357 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:02:04,358 - log_utils - INFO: generate_node starts to work
+2026-02-11 10:02:12,750 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:02:12,754 - log_utils - INFO: generate_node finishes working, time costed: 8.396 seconds.
+2026-02-11 10:02:12,755 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 10:02:13,906 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 10:02:13,913 - route_functions - INFO: ---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---
+2026-02-11 10:02:13,914 - log_utils - INFO: generate_node starts to work

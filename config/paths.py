@@ -10,3 +10,4 @@ QWEN3_EMBEDDING_PATH = project_dir /"models/Qwen3-Embedding-0.6B"
 MILVUS_URI = "http://127.0.0.1:19530" # Locally hosted Milvus
 
 rewrite_threshold = 2
+generation_threshold = 2

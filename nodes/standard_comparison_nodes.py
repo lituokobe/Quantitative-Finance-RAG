@@ -381,8 +381,7 @@ class GenerateNode:
         self.generate_standard_chain = generate_standard_prompt | agent_llm | StrOutputParser()
 
     # --------- Context Formatter for comparison---------
-    @staticmethod
-    def _format_aligned_docs_comparison(aligned_results: list) -> str:
+    def _format_aligned_docs_comparison(self, aligned_results: list) -> str:
         """
         Format entity-aligned documents into a structured context
         """
@@ -410,12 +409,11 @@ class GenerateNode:
             blocks.append("")
 
         aligned_results_formatted = "\n\n".join(blocks)
-        print(f"Aligned docs after being formatted: {aligned_results_formatted}")
+        print(f"{self.node_name} - Aligned docs after being formatted: {aligned_results_formatted}")
 
         return aligned_results_formatted
 
-    @staticmethod
-    def _format_aligned_docs_standard(aligned_results: list) -> str:
+    def _format_aligned_docs_standard(self, aligned_results: list) -> str:
         """
         Format entity-aligned documents into a structured context
         """
@@ -439,7 +437,7 @@ class GenerateNode:
             blocks.append(d.page_content)
 
         aligned_results_formatted = "\n\n".join(blocks)
-        print(f"Aligned docs after being formatted: {aligned_results_formatted}")
+        print(f"{self.node_name} - Aligned docs after being formatted: {aligned_results_formatted}")
 
         return aligned_results_formatted
 
@@ -454,12 +452,14 @@ class GenerateNode:
             logs = state["logs"]
             last_log = logs[-1]
             question = last_log["question"]
+            generation_time = last_log.get("generation_time", 0)
         except Exception as e:
             log.error(f"{self.node_name} fails to get information from state: {e}")
             # fallback values
             last_state = "standard_agent"
             last_log = {}
             question = ""
+            generation_time = 0
 
         # ------------------ If the the workflow is from comparison retrieval ------------------
         try:
@@ -500,6 +500,7 @@ class GenerateNode:
             "node": self.node_name,
             "context": context,
             "generation": generation,
+            "generation_time": generation_time+1,
             "time_cost": time_cost
         }
 

@@ -147,7 +147,7 @@ class MathVerificationNode:
                   f"chat history: {messages}")
             print(f"output of verification:/n"
                   f"decision: {decision}/n"
-                  f"mising_info_message: {missing_info_message}/n"
+                  f"missing_info_message: {missing_info_message}/n"
                   f"calculation_material: {calculation_material}")
             time_cost = round(time.time() - prev_time, 3)
 
@@ -167,7 +167,7 @@ class MathVerificationNode:
                 current_log = {
                     **last_log,
                     "node": self.node_name,
-                    "agent_reply": missing_info_message,
+                    "generation": missing_info_message,
                     "time_cost": time_cost
                 }
                 log_node_end(self.node_name, time_cost)
@@ -226,7 +226,7 @@ def calculation_answer_node(state: State):
         current_log = {
             **last_log,
             "node": node_name,
-            "agent_reply": ai_message,
+            "generation": ai_message,
             "time_cost": time_cost
         }
         log_node_end(node_name, time_cost)
@@ -257,7 +257,7 @@ def calculation_fallback_node(state: State):
     current_log = {
         **last_log,
         "node": node_name,
-        "agent_reply": ai_message
+        "generation": ai_message
     }
 
     log_node_end(node_name)

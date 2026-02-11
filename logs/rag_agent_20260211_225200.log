@@ -1,0 +1,90 @@
+2026-02-11 22:52:00,136 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 22:52:00,138 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 22:52:00,140 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-11 22:52:00,296 - _client - INFO: HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-02-11 22:52:00,304 - _client - INFO: HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2026-02-11 22:52:01,711 - _client - INFO: HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-02-11 22:52:07,004 - log_utils - INFO: starting_reply_node starts to work
+2026-02-11 22:52:07,004 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-11 22:52:17,758 - log_utils - INFO: starting_intention_node starts to work
+2026-02-11 22:52:20,069 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:52:20,095 - log_utils - INFO: starting_intention_node finishes working, time costed: 2.337 seconds.
+2026-02-11 22:52:20,096 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-11 22:52:20,097 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 22:52:20,119 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 22:52:20,134 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 22:52:20,134 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 22:52:20,716 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.619 seconds.
+2026-02-11 22:52:20,717 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 22:52:21,697 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:52:21,713 - DocumentGraderNode - INFO: Retrieved document What Does the Black-Scholes Model Do?
+
+The Black-Scholes model, also known as the Black-Scholes-Merton (BSM), was the first widely used model for option pricing. The equation calculates the price of a European-style call option based on known variables like the current price, maturity date, and strike price, based on certain assumptions about the behavior of asset prices.
+
+It does so by subtracting the net present value (NPV) of the strike price multiplied by the cumulative standard normal distribution from the product of the stock price and the cumulative standard normal probability distribution function. is relevant
+2026-02-11 22:52:22,719 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:52:22,725 - DocumentGraderNode - INFO: Retrieved document - **Black-Scholes Model:** This model is arguably the most popular option pricing model. The Black-Scholes model provides a theoretical estimate of the price of European-style options and introduces a continuous time framework. Unlike the binomial option price model, the Black-Scholes model assumes a geometric Brownian motion and is based on the key assumptions that the volatility of the underlying asset is constant and markets are frictionless. It's most suitable for pricing European options where early exercise isn't possible.
+- **Monte Carlo simulations:** This technique uses random sampling and statistical modeling to estimate mathematical functions and simulate the behavior of various assets over time. Monte Carlo simulations are particularly useful for pricing options where the payoff is path dependent, such as Asian options or American options.
+- **Finite difference method:** This model is used to solve differential equations by approximating them with difference equations that finite differences approximate. For options prices, the finite difference method is used to solve partial differential equations typically derived from option pricing formulas, such as those in the Black-Scholes framework. This technique is particularly effective for American options and other derivatives where risk assessment requires an analysis of the effects over time if the boundary conditions can be efficiently modeled. is relevant
+2026-02-11 22:52:23,539 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:52:23,552 - DocumentGraderNode - INFO: Retrieved document The Bottom Line
+
+The Black-Scholes model is a mathematical model that's used by traders to calculate the fair price or theoretical value of an asset.
+
+It provides a way to calculate the theoretical value of an option by taking into account the underlying asset's current price, the option's type, the option's strike price, the time remaining until expiration, the risk-free interest rate, and the volatility of the underlying asset.
+
+The Black-Scholes model has had a profound impact on finance and has led to the development of a wide range of derivative products such as futures, swaps, and options. is relevant
+2026-02-11 22:52:24,385 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:52:24,402 - DocumentGraderNode - INFO: Retrieved document What Is the Black-Scholes Model?
+
+The Black-Scholes model, also known as the Black-Scholes-Merton (BSM) model, is one of the most important concepts in modern financial theory. It helps traders and investors determine the fair value of an options contract.
+
+This mathematical equation estimates the theoretical value of derivatives based on other investment instruments. It considers the impact of time and other risk factors in its calculation.
+
+It was developed in 1973 and is still regarded as one of the best ways to price an options contract. is relevant
+2026-02-11 22:52:25,309 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:52:25,321 - DocumentGraderNode - INFO: Retrieved document What Assumptions Does the Black-Scholes Model Make?
+
+The original Black-Scholes model assumes that the option is a European-style option and can only be exercised at expiration.
+
+It also assumes that no dividends are paid out during the option's life, that market movements follow a random walk and can't be predicted, that there are no transaction costs involved in buying the option, that the risk-free rate and volatility of the underlying option are known and constant, and that the prices of the underlying asset follow a log-normal distribution. is relevant
+2026-02-11 22:52:26,130 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:52:26,142 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- The Black-Scholes model is also known as the Black-Scholes-Merton or BSM model.
+- It's a differential equation that's widely used to price options contracts.
+- The Black-Scholes model requires five input variables: the strike price of an option, the current stock price, the time to expiration, the risk-free rate, and the volatility.
+- The Black-Scholes model is usually accurate, but it makes certain assumptions that can lead to predictions that deviate from real-world results.
+- The standard BSM model is only used to price European options because it doesn't take into account that American options could be exercised before the expiration date. is relevant
+2026-02-11 22:52:27,267 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:52:27,281 - DocumentGraderNode - INFO: Retrieved document Black-Scholes Assumptions
+
+The Black-Scholes model makes certain assumptions:
+
+- No dividends are paid out during the life of the option.
+- Markets are random because market movements can't be predicted.
+- There are no transaction costs when buying the option.
+- The risk-free rate and volatility of the underlying asset are known and constant.
+- The returns of the underlying asset are normally distributed.
+- The option is European and can only be exercised at expiration.
+
+The original Black-Scholes model didn't consider the effects of dividends paid during the life of the option, but the model is frequently adapted to account for dividends by determining the ex-dividend date value of the underlying stock.
+
+The model is also modified by many option-selling market makers to account for the effect of options that can be exercised before expiration. is relevant
+2026-02-11 22:52:27,282 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 22:52:27,282 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.565 seconds.
+2026-02-11 22:52:27,282 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 22:52:27,282 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 22:52:27,283 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is the Black Scholes Model in quantitative finance, including its definition, underlying assumptions, and how it is used for option pricing?", time costed: 7.187 seconds.
+2026-02-11 22:52:27,283 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 7.188 seconds.
+2026-02-11 22:52:27,284 - log_utils - INFO: generate_node starts to work
+2026-02-11 22:52:37,904 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:52:37,907 - log_utils - INFO: generate_node finishes working, time costed: 10.623 seconds.
+2026-02-11 22:52:37,907 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 22:52:39,104 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:52:39,121 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-11 22:52:39,121 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-11 22:52:40,308 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 22:52:40,325 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-11 22:52:40,326 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-11 22:52:40,326 - log_utils - INFO: rely_with_generation_node finishes working.

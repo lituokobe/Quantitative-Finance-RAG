@@ -1,0 +1,596 @@
+2026-02-11 02:02:30,648 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 02:02:30,652 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 02:02:30,654 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-11 02:02:30,659 - log_utils - INFO: starting_reply_node starts to work
+2026-02-11 02:02:30,659 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-11 02:02:30,660 - log_utils - INFO: starting_intention_node starts to work
+2026-02-11 02:02:32,374 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:32,381 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.721 seconds.
+2026-02-11 02:02:32,381 - log_utils - INFO: comparison_retriever_node starts to work
+2026-02-11 02:02:33,670 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:33,861 - standard_comparison_nodes - INFO: comparison_retriever_node decomposes question "What is the difference between volatility and variance in quantitative finance?", time costed: 1.479 seconds.
+2026-02-11 02:02:33,861 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 02:02:33,880 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 02:02:33,903 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 02:02:33,904 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 02:02:34,396 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.534 seconds.
+2026-02-11 02:02:34,396 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 02:02:35,151 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:35,167 - DocumentGraderNode - INFO: Retrieved document Volatility: Meaning in Finance and How It Works With Stocks is relevant
+2026-02-11 02:02:35,854 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:35,858 - DocumentGraderNode - INFO: Retrieved document What's the Difference Between Quantitative and Qualitative Analysis?
+
+Quantitative analysis applies mathematics and statistics and uses hard data and numbers. Qualitative analysis, on the other hand, involves elements that cannot be measured or expressed as a number. It can include features that are subjective and opinions. is NOT relevant, dump it.
+2026-02-11 02:02:36,773 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:36,777 - DocumentGraderNode - INFO: Retrieved document Other Measures of Volatility is relevant
+2026-02-11 02:02:37,498 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:37,502 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 02:02:38,309 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:38,310 - DocumentGraderNode - INFO: Retrieved document Types of Volatility is NOT relevant, dump it.
+2026-02-11 02:02:39,025 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:39,029 - DocumentGraderNode - INFO: Retrieved document What Is Quantitative Analysis Used for in Finance?
+
+Quantitative analysis is used by governments, investors, and businesses (in areas such as finance, project management, production planning, and marketing) to study a certain situation or event, measure it, predict outcomes, and thus help in decision-making. In finance, it's widely used for assessing investment opportunities and risks. For instance, before venturing into investments, analysts rely on quantitative analysis to understand the performance metrics of different financial instruments such as stocks, bonds, and derivatives. By delving into historical data and employing mathematical and statistical models, they can forecast potential future performance and evaluate the underlying risks. This practice isn't just confined to individual assets; it's also essential for portfolio management. By examining the relationships between different assets and assessing their risk and return profiles, investors can construct portfolios that are optimized for the highest possible returns for a given level of risk. is NOT relevant, dump it.
+2026-02-11 02:02:39,948 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:39,950 - DocumentGraderNode - INFO: Retrieved document What Is Volatility?
+
+Volatility is a measurement of how varied the returns of a given security or market index are over time. It is often measured from either the standard deviation or variance between those returns. In most cases, the higher the volatility, the riskier the security.
+
+In the securities markets, volatility is often associated with big price swings, either up or down. For example, when the stock market rises and falls more than 1% over a sustained period of time, it is called a volatile market.
+
+An asset’s volatility is a key factor when pricing options contracts. is relevant
+2026-02-11 02:02:40,764 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:40,766 - DocumentGraderNode - INFO: Retrieved document Standard Deviation Formula and Uses, vs. Variance is relevant
+2026-02-11 02:02:40,766 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 02:02:40,766 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.369 seconds.
+2026-02-11 02:02:40,766 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 02:02:40,766 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 02:02:40,767 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is the difference between volatility and variance in quantitative finance?", time costed: 6.906 seconds.
+2026-02-11 02:02:40,768 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 02:02:40,768 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 02:02:40,788 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 02:02:40,788 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 02:02:40,965 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.197 seconds.
+2026-02-11 02:02:40,965 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 02:02:41,790 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:41,794 - DocumentGraderNode - INFO: Retrieved document Volatility: Meaning in Finance and How It Works With Stocks is relevant
+2026-02-11 02:02:42,526 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:42,530 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 02:02:43,260 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:43,264 - DocumentGraderNode - INFO: Retrieved document Types of Volatility is relevant
+2026-02-11 02:02:44,062 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:44,067 - DocumentGraderNode - INFO: Retrieved document What Is Quantitative Analysis Used for in Finance?
+
+Quantitative analysis is used by governments, investors, and businesses (in areas such as finance, project management, production planning, and marketing) to study a certain situation or event, measure it, predict outcomes, and thus help in decision-making. In finance, it's widely used for assessing investment opportunities and risks. For instance, before venturing into investments, analysts rely on quantitative analysis to understand the performance metrics of different financial instruments such as stocks, bonds, and derivatives. By delving into historical data and employing mathematical and statistical models, they can forecast potential future performance and evaluate the underlying risks. This practice isn't just confined to individual assets; it's also essential for portfolio management. By examining the relationships between different assets and assessing their risk and return profiles, investors can construct portfolios that are optimized for the highest possible returns for a given level of risk. is NOT relevant, dump it.
+2026-02-11 02:02:44,999 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:45,002 - DocumentGraderNode - INFO: Retrieved document Other Measures of Volatility is relevant
+2026-02-11 02:02:45,741 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:45,742 - DocumentGraderNode - INFO: Retrieved document How Quantitative Analysis Works in Finance
+
+Quantitative analysis (QA) in finance refers to the use of mathematical and statistical techniques to analyze financial & economic data and make trading, investing, and risk management decisions.
+
+QA starts with data collection, where quants gather a vast amount of financial data that might affect the market. This data can include anything from stock prices and company earnings to economic indicators like inflation or unemployment rates. They then use various mathematical models and statistical techniques to analyze this data, looking for trends, patterns, and potential investment opportunities. The outcome of this analysis can help investors decide where to allocate their resources to maximize returns or minimize risks.
+
+Some key aspects of quantitative analysis in finance include: is NOT relevant, dump it.
+2026-02-11 02:02:46,415 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:46,418 - DocumentGraderNode - INFO: Retrieved document Understanding Value at Risk (VaR): Explanation and Calculation Methods is NOT relevant, dump it.
+2026-02-11 02:02:47,115 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:47,119 - DocumentGraderNode - INFO: Retrieved document Quantitative Analysis in Finance: Techniques, Applications, and Benefits
+
+Quantitative analysis (QA) uses methods to understand financial markets and make informed investment or trading decisions. It involves the use of mathematical and statistical techniques to analyze financial data. Quantitative analysts, often called "quants," examine past stock prices and earnings to forecast market trends.
+
+Unlike fundamental analysis, which looks at management or industry conditions, quantitative analysis focuses on numerical computations for insights.
+
+Quantitative analysis is powerful in modern markets, where abundant data and advanced tools enable precise financial examination. However, many also believe that the raw numbers produced by quantitative analysis should be combined with the more in-depth understanding and nuance afforded by qualitative analysis. is NOT relevant, dump it.
+2026-02-11 02:02:47,120 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 02:02:47,120 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.155 seconds.
+2026-02-11 02:02:47,120 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 02:02:47,120 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 02:02:47,121 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is volatility in quantitative finance?", time costed: 6.355 seconds.
+2026-02-11 02:02:47,124 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 02:02:47,124 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 02:02:47,155 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 02:02:47,155 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 02:02:47,326 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.203 seconds.
+2026-02-11 02:02:47,327 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 02:02:48,139 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:48,143 - DocumentGraderNode - INFO: Retrieved document Understanding Value at Risk (VaR): Explanation and Calculation Methods is NOT relevant, dump it.
+2026-02-11 02:02:48,818 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:48,821 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 02:02:49,652 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:49,655 - DocumentGraderNode - INFO: Retrieved document Standard Deviation Formula and Uses, vs. Variance is relevant
+2026-02-11 02:02:50,367 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:50,371 - DocumentGraderNode - INFO: Retrieved document What Is Quantitative Analysis Used for in Finance?
+
+Quantitative analysis is used by governments, investors, and businesses (in areas such as finance, project management, production planning, and marketing) to study a certain situation or event, measure it, predict outcomes, and thus help in decision-making. In finance, it's widely used for assessing investment opportunities and risks. For instance, before venturing into investments, analysts rely on quantitative analysis to understand the performance metrics of different financial instruments such as stocks, bonds, and derivatives. By delving into historical data and employing mathematical and statistical models, they can forecast potential future performance and evaluate the underlying risks. This practice isn't just confined to individual assets; it's also essential for portfolio management. By examining the relationships between different assets and assessing their risk and return profiles, investors can construct portfolios that are optimized for the highest possible returns for a given level of risk. is NOT relevant, dump it.
+2026-02-11 02:02:51,109 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:51,112 - DocumentGraderNode - INFO: Retrieved document Other Measures of Volatility is relevant
+2026-02-11 02:02:51,825 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:51,829 - DocumentGraderNode - INFO: Retrieved document How Quantitative Analysis Works in Finance
+
+Quantitative analysis (QA) in finance refers to the use of mathematical and statistical techniques to analyze financial & economic data and make trading, investing, and risk management decisions.
+
+QA starts with data collection, where quants gather a vast amount of financial data that might affect the market. This data can include anything from stock prices and company earnings to economic indicators like inflation or unemployment rates. They then use various mathematical models and statistical techniques to analyze this data, looking for trends, patterns, and potential investment opportunities. The outcome of this analysis can help investors decide where to allocate their resources to maximize returns or minimize risks.
+
+Some key aspects of quantitative analysis in finance include: is NOT relevant, dump it.
+2026-02-11 02:02:52,543 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:52,546 - DocumentGraderNode - INFO: Retrieved document Volatility: Meaning in Finance and How It Works With Stocks is NOT relevant, dump it.
+2026-02-11 02:02:53,259 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:53,263 - DocumentGraderNode - INFO: Retrieved document Quantitative Analysis in Finance: Techniques, Applications, and Benefits
+
+Quantitative analysis (QA) uses methods to understand financial markets and make informed investment or trading decisions. It involves the use of mathematical and statistical techniques to analyze financial data. Quantitative analysts, often called "quants," examine past stock prices and earnings to forecast market trends.
+
+Unlike fundamental analysis, which looks at management or industry conditions, quantitative analysis focuses on numerical computations for insights.
+
+Quantitative analysis is powerful in modern markets, where abundant data and advanced tools enable precise financial examination. However, many also believe that the raw numbers produced by quantitative analysis should be combined with the more in-depth understanding and nuance afforded by qualitative analysis. is NOT relevant, dump it.
+2026-02-11 02:02:53,263 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 02:02:53,263 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 5.936 seconds.
+2026-02-11 02:02:53,263 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 02:02:53,263 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 02:02:53,265 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is variance in quantitative finance?", time costed: 6.143 seconds.
+2026-02-11 02:02:53,265 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 20.884 seconds.
+2026-02-11 02:02:53,266 - log_utils - INFO: generate_node starts to work
+2026-02-11 02:02:57,048 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:57,052 - log_utils - INFO: generate_node finishes working, time costed: 3.786 seconds.
+2026-02-11 02:02:57,052 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 02:02:57,969 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:57,985 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-11 02:02:57,985 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-11 02:02:58,789 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:58,803 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-11 02:02:58,804 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-11 02:02:58,804 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-11 02:02:58,808 - log_utils - INFO: starting_reply_node starts to work
+2026-02-11 02:02:58,808 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-11 02:02:58,810 - log_utils - INFO: starting_intention_node starts to work
+2026-02-11 02:02:59,884 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:02:59,891 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.082 seconds.
+2026-02-11 02:02:59,892 - log_utils - INFO: comparison_retriever_node starts to work
+2026-02-11 02:03:01,022 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:01,029 - standard_comparison_nodes - INFO: comparison_retriever_node decomposes question "What is the difference between bond valuation and bond yield?", time costed: 1.137 seconds.
+2026-02-11 02:03:01,032 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 02:03:01,032 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 02:03:01,059 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 02:03:01,059 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 02:03:01,274 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.242 seconds.
+2026-02-11 02:03:01,275 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 02:03:02,169 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:02,176 - DocumentGraderNode - INFO: Retrieved document Bond Valuation: Calculation and Example is relevant
+2026-02-11 02:03:02,987 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:02,991 - DocumentGraderNode - INFO: Retrieved document - Corporate bond spread: The difference between a corporate bond yield and a government bond with a similar maturity. This spread reflects the additional credit risk associated with particular corporate issuers.
+- Emerging market bond spread: The difference between the yield of an emerging market bond and a developed market bond with a similar maturity. This spread reflects the added risks of investing in certain emerging market economies, such as political instability, currency fluctuations, and less developed financial markets.
+- High-yield spread: The difference between a high-yield (junk) bond yield and a government bond with a similar maturity. This spread is generally wider than investment-grade corporate bond spreads because of the greater credit risk.
+
+Investors, analysts, and policymakers closely monitor bond credit spreads since they provide valuable insights into market sentiment, risk perception, and the overall health of the bond market. Changes in credit spreads also have implications for borrowing costs, investment strategies, and economic growth. is NOT relevant, dump it.
+2026-02-11 02:03:03,622 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:03,626 - DocumentGraderNode - INFO: Retrieved document Par Value of Stocks and Bonds Explained is NOT relevant, dump it.
+2026-02-11 02:03:04,319 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:04,324 - DocumentGraderNode - INFO: Retrieved document Calculating a Credit Spread Between Bonds and Treasurys
+
+A credit spread is the measure of the difference in yield between a Treasury and corporate bond of the same maturity. This is because bonds issued by the U.S. government are considered virtually risk-free. The spread thus reflects the added compensation investors require for assuming the higher default risk of corporate bonds compared with risk-free government bonds.
+
+The formula for calculating credit spread between bonds is as follows:
+
+$$\text{Credit Spread} = \text{Corporate Bond Yield} - \text{Treasury Bond Yield}$$ is NOT relevant, dump it.
+2026-02-11 02:03:05,187 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:05,189 - DocumentGraderNode - INFO: Retrieved document Credit Spread for Bonds
+
+A bond credit spread, also known as a yield spread, is the difference in yield between two bonds with similar maturities but different credit qualities. It is a measure of the additional yield that investors demand for holding a bond with a higher perceived credit risk than a safer bond, such as a government bond or a high-quality (AAA-rated) corporate bond over a junk bond.
+
+The bond credit spread is typically given in basis points (bps), where 1 bp equals 0.01%. For instance, if Bond A has a yield of 5% and Bond B has a yield of 4%, the credit spread between them is 100 bps, or 1%.
+
+Bond credit spreads are often used to gauge the market's perception of the creditworthiness of a particular issuer or sector. A wider credit spread means that investors perceive a higher risk of default and require a higher yield to compensate for that risk. Conversely, a narrower credit spread suggests that investors are more confident in the issuer's ability to meet its debt obligations and are willing to accept a lower yield.
+
+Here are a few examples of bond credit spreads: is NOT relevant, dump it.
+2026-02-11 02:03:05,956 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:05,960 - DocumentGraderNode - INFO: Retrieved document What Is a Bond Coupon, and How Is It Calculated? is NOT relevant, dump it.
+2026-02-11 02:03:06,878 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:06,882 - DocumentGraderNode - INFO: Retrieved document Zero-Coupon Bond: Definition, How It Works, and How to Calculate is NOT relevant, dump it.
+2026-02-11 02:03:07,697 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:07,699 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- A bond coupon is the annual interest payment made to bondholders, calculated as a percentage of the bond's face value, known as the coupon rate.
+- Bonds typically pay interest semiannually, meaning a \$1,000 bond with a 7% coupon rate would pay \$35 twice a year.
+- The bond's coupon rate remains constant, but the current yield can fluctuate based on the bond's market value, offering a measure of return relative to purchase price.
+- "Bearer bonds," the original coupon bonds, were once popular but have declined due to security issues and regulation changes.
+- Understanding the difference between a bond's coupon rate and its yield is crucial, as yield accounts for market value, influencing investment decisions. is relevant
+2026-02-11 02:03:07,699 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 02:03:07,699 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.424 seconds.
+2026-02-11 02:03:07,699 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 02:03:07,699 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 02:03:07,700 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is the difference between bond valuation and bond yield?", time costed: 6.67 seconds.
+2026-02-11 02:03:07,701 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 02:03:07,701 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 02:03:07,721 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 02:03:07,721 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 02:03:07,893 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.192 seconds.
+2026-02-11 02:03:07,893 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 02:03:08,599 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:08,607 - DocumentGraderNode - INFO: Retrieved document Bond Valuation: Calculation and Example is relevant
+2026-02-11 02:03:09,233 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:09,237 - DocumentGraderNode - INFO: Retrieved document What Is Bond Valuation?
+
+Bond valuation determines the present value of a bond's future interest payments, also known as its cash flow, and the bond's value upon maturity, also known as its face value or par value. A bond's par value and interest payments are fixed. Bond valuation helps investors determine what rate of return makes a bond investment worth the cost. is relevant
+2026-02-11 02:03:09,950 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:09,953 - DocumentGraderNode - INFO: Retrieved document Par Value of Stocks and Bonds Explained is relevant
+2026-02-11 02:03:10,657 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:10,665 - DocumentGraderNode - INFO: Retrieved document What Is Duration and How Does That Affect Bond Valuation?
+
+Bond valuation looks at discounted cash flows at their net present value if held to maturity. Duration instead measures a bond's price sensitivity to a 1% change in interest rates. Longer-term bonds have a higher duration, all else equal. Longer-term bonds will also have a larger number of future cash flows to discount, and so a change to the discount rate will have a greater impact on the NPV of longer-maturity bonds as well. is relevant
+2026-02-11 02:03:11,486 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:11,487 - DocumentGraderNode - INFO: Retrieved document What Is a Bond Coupon, and How Is It Calculated? is NOT relevant, dump it.
+2026-02-11 02:03:12,206 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:12,210 - DocumentGraderNode - INFO: Retrieved document Bond Valuation in Practice
+
+Since bonds are an essential part of the capital markets, investors and analysts seek to understand how the different features of a bond interact to determine its intrinsic value. Like a stock, the value of a bond determines whether it is a suitable investment for a portfolio and, hence, is an integral step in bond investing.
+
+Bond valuation, in effect, is calculating the present value of a bond’s expected future coupon payments. The theoretical fair value of a bond is calculated by discounting the future value of its coupon payments by an appropriate discount rate.
+
+The discount rate used is the yield to maturity, which is the rate of return that an investor will get if they reinvest every coupon payment from the bond at a fixed interest rate until the bond matures. It takes into account the price of a bond, par value, coupon rate, and time to maturity. is relevant
+2026-02-11 02:03:12,210 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 02:03:12,210 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 4.317 seconds.
+2026-02-11 02:03:12,211 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 02:03:12,211 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 02:03:12,212 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is bond valuation?", time costed: 4.512 seconds.
+2026-02-11 02:03:12,214 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 02:03:12,214 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 02:03:12,242 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 02:03:12,242 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 02:03:12,418 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.205 seconds.
+2026-02-11 02:03:12,419 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 02:03:13,227 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:13,235 - DocumentGraderNode - INFO: Retrieved document Example
+
+Let's say we want to calculate the credit spread for a 10-year corporate bond issued by ABC Corporation. The bond yields 5%, and the yield on a 10-year Treasury is 3%.
+
+- Corporate bond yield (ABC Corporation, 10-year): 5%
+- Treasury bond yield (10-year): 3%
+
+Subtract the Treasury bond yield from the corporate bond yield.
+
+- Credit Spread = Corporate Bond Yield - Treasury Bond Yield
+- Credit Spread = 5% - 3% = 2%
+
+In this example, the credit spread is 2% or 200 basis points. As such, investors require 2 additional percentage points in yield to hold ABC Corporation's bonds over the risk-free 10-year Treasury bonds. A higher credit spread means that the market perceives the corporate bond to have a higher risk of default. A lower credit spread suggests that the corporate bond is considered safer. is relevant
+2026-02-11 02:03:13,957 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:13,961 - DocumentGraderNode - INFO: Retrieved document What Is a Bond Coupon, and How Is It Calculated? is NOT relevant, dump it.
+2026-02-11 02:03:14,763 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:14,766 - DocumentGraderNode - INFO: Retrieved document Bondholders can exercise their options if interest rate levels in the markets increase. As there is an inverse relationship between interest rates and bond prices, when interest rates increase, the value of a bond decreases to reflect the fact that there are bonds in the market with higher coupon rates than what the investor is holding. In other words, the future value of coupon rates becomes less valuable in a rising interest rate environment. Issuers are forced to repurchase the bonds at par, and investors use the proceeds to buy a similar bond offering a higher yield, a process known as bond swap.
+
+Of course, the special advantages of put bonds mean that some yield must be sacrificed. Investors are wiling to accept a lower yield on a put bond than the yield on a straight bond because of the value added by the put option. Likewise, the price of a put bond is always higher than the price of a straight bond. While a put bond allows the investor to redeem a long-term bond before maturity, the yield generally equals the one on short-term rather than long-term securities. is NOT relevant, dump it.
+2026-02-11 02:03:15,426 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:15,435 - DocumentGraderNode - INFO: Retrieved document What Is a Bond Option? is NOT relevant, dump it.
+2026-02-11 02:03:16,300 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:16,304 - DocumentGraderNode - INFO: Retrieved document Zero-Coupon Bond: Definition, How It Works, and How to Calculate is NOT relevant, dump it.
+2026-02-11 02:03:17,093 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:17,097 - DocumentGraderNode - INFO: Retrieved document How To Distinguish Coupon Rate from Yield?
+
+A bond's coupon rate is the rate of interest the bond pays annually, while the yield is the rate of return that the bond generates. is relevant
+2026-02-11 02:03:17,836 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:17,840 - DocumentGraderNode - INFO: Retrieved document Credit Spread for Bonds
+
+A bond credit spread, also known as a yield spread, is the difference in yield between two bonds with similar maturities but different credit qualities. It is a measure of the additional yield that investors demand for holding a bond with a higher perceived credit risk than a safer bond, such as a government bond or a high-quality (AAA-rated) corporate bond over a junk bond.
+
+The bond credit spread is typically given in basis points (bps), where 1 bp equals 0.01%. For instance, if Bond A has a yield of 5% and Bond B has a yield of 4%, the credit spread between them is 100 bps, or 1%.
+
+Bond credit spreads are often used to gauge the market's perception of the creditworthiness of a particular issuer or sector. A wider credit spread means that investors perceive a higher risk of default and require a higher yield to compensate for that risk. Conversely, a narrower credit spread suggests that investors are more confident in the issuer's ability to meet its debt obligations and are willing to accept a lower yield.
+
+Here are a few examples of bond credit spreads: is relevant
+2026-02-11 02:03:18,479 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:18,483 - DocumentGraderNode - INFO: Retrieved document Earnings Yield: Definition, Example, and How To Calculate It is NOT relevant, dump it.
+2026-02-11 02:03:18,483 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 02:03:18,483 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.064 seconds.
+2026-02-11 02:03:18,483 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 02:03:18,483 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 02:03:18,485 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is bond yield?", time costed: 6.273 seconds.
+2026-02-11 02:03:18,485 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 18.593 seconds.
+2026-02-11 02:03:18,486 - log_utils - INFO: generate_node starts to work
+2026-02-11 02:03:25,208 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:25,211 - log_utils - INFO: generate_node finishes working, time costed: 6.725 seconds.
+2026-02-11 02:03:25,211 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 02:03:26,028 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:26,028 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-11 02:03:26,029 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-11 02:03:26,757 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:26,766 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-11 02:03:26,767 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-11 02:03:26,767 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-11 02:03:26,772 - log_utils - INFO: starting_reply_node starts to work
+2026-02-11 02:03:26,772 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-11 02:03:26,775 - log_utils - INFO: starting_intention_node starts to work
+2026-02-11 02:03:27,623 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:27,627 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.852 seconds.
+2026-02-11 02:03:27,628 - log_utils - INFO: comparison_retriever_node starts to work
+2026-02-11 02:03:28,895 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:28,904 - standard_comparison_nodes - INFO: comparison_retriever_node decomposes question "Compare hedging and speculation in quantitative finance", time costed: 1.275 seconds.
+2026-02-11 02:03:28,906 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 02:03:28,907 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 02:03:28,935 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 02:03:28,936 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 02:03:29,113 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.207 seconds.
+2026-02-11 02:03:29,114 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 02:03:30,226 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:30,237 - DocumentGraderNode - INFO: Retrieved document Hedge: Definition and How It Works in Investing is relevant
+2026-02-11 02:03:30,873 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:30,876 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 02:03:31,660 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:31,664 - DocumentGraderNode - INFO: Retrieved document Weighing the Pros and Cons of Options Trading is NOT relevant, dump it.
+2026-02-11 02:03:32,296 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:32,300 - DocumentGraderNode - INFO: Retrieved document How Quantitative Analysis Works in Finance
+
+Quantitative analysis (QA) in finance refers to the use of mathematical and statistical techniques to analyze financial & economic data and make trading, investing, and risk management decisions.
+
+QA starts with data collection, where quants gather a vast amount of financial data that might affect the market. This data can include anything from stock prices and company earnings to economic indicators like inflation or unemployment rates. They then use various mathematical models and statistical techniques to analyze this data, looking for trends, patterns, and potential investment opportunities. The outcome of this analysis can help investors decide where to allocate their resources to maximize returns or minimize risks.
+
+Some key aspects of quantitative analysis in finance include: is NOT relevant, dump it.
+2026-02-11 02:03:32,990 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:32,991 - DocumentGraderNode - INFO: Retrieved document Options: Types, Spreads, and Risk Metrics is NOT relevant, dump it.
+2026-02-11 02:03:33,913 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:33,917 - DocumentGraderNode - INFO: Retrieved document Quantitative Analysis in Finance: Techniques, Applications, and Benefits
+
+Quantitative analysis (QA) uses methods to understand financial markets and make informed investment or trading decisions. It involves the use of mathematical and statistical techniques to analyze financial data. Quantitative analysts, often called "quants," examine past stock prices and earnings to forecast market trends.
+
+Unlike fundamental analysis, which looks at management or industry conditions, quantitative analysis focuses on numerical computations for insights.
+
+Quantitative analysis is powerful in modern markets, where abundant data and advanced tools enable precise financial examination. However, many also believe that the raw numbers produced by quantitative analysis should be combined with the more in-depth understanding and nuance afforded by qualitative analysis. is NOT relevant, dump it.
+2026-02-11 02:03:34,732 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:34,735 - DocumentGraderNode - INFO: Retrieved document Applications of Quantitative Analysis Beyond Finance
+
+Quantitative analysis goes beyond finance and applies to various fields. In the domain of social sciences, for instance, it's used to analyze behavioral patterns, social trends, and the impact of policies on different demographics. Researchers employ statistical models to examine large datasets, enabling them to identify correlations, causations, and trends that can provide a deeper understanding of human behaviors and societal dynamics. Similarly, in the field of public policy, quantitative analysis plays a crucial role in evaluating the effectiveness of different policies, analyzing economic indicators, and forecasting the potential impacts of policy changes. By providing a method to measure and analyze data, it aids policymakers in making informed decisions based on empirical evidence. is NOT relevant, dump it.
+2026-02-11 02:03:35,448 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:35,452 - DocumentGraderNode - INFO: Retrieved document Understanding Currency Options: Types, Features, and Exercise Strategies is NOT relevant, dump it.
+2026-02-11 02:03:35,452 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 02:03:35,452 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.338 seconds.
+2026-02-11 02:03:35,452 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 02:03:35,453 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 02:03:35,454 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "Compare hedging and speculation in quantitative finance", time costed: 6.55 seconds.
+2026-02-11 02:03:35,456 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 02:03:35,457 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 02:03:35,487 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 02:03:35,487 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 02:03:35,679 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.223 seconds.
+2026-02-11 02:03:35,680 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 02:03:36,278 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:36,282 - DocumentGraderNode - INFO: Retrieved document Hedge: Definition and How It Works in Investing is relevant
+2026-02-11 02:03:36,919 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:36,923 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 02:03:37,702 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:37,705 - DocumentGraderNode - INFO: Retrieved document What Is a Hedge?
+
+Hedging is a strategy to limit investment risks. Investors hedge an investment by trading in another that is likely to move in the opposite direction. A risk-reward tradeoff is inherent in hedging; while it reduces potential risk, it may chip away at potential gains. is relevant
+2026-02-11 02:03:38,418 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:38,421 - DocumentGraderNode - INFO: Retrieved document What Is Quantitative Analysis Used for in Finance?
+
+Quantitative analysis is used by governments, investors, and businesses (in areas such as finance, project management, production planning, and marketing) to study a certain situation or event, measure it, predict outcomes, and thus help in decision-making. In finance, it's widely used for assessing investment opportunities and risks. For instance, before venturing into investments, analysts rely on quantitative analysis to understand the performance metrics of different financial instruments such as stocks, bonds, and derivatives. By delving into historical data and employing mathematical and statistical models, they can forecast potential future performance and evaluate the underlying risks. This practice isn't just confined to individual assets; it's also essential for portfolio management. By examining the relationships between different assets and assessing their risk and return profiles, investors can construct portfolios that are optimized for the highest possible returns for a given level of risk. is NOT relevant, dump it.
+2026-02-11 02:03:39,237 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:39,240 - DocumentGraderNode - INFO: Retrieved document The Bottom Line
+
+Hedging is an important financial concept that allows investors and traders to minimize various risk exposures. A hedge is effectively an offsetting or opposite position taken that will gain (or lose) in value as the primary position loses (or gains) value.
+
+A hedge can be thought of as a type of insurance policy on an investment or a portfolio. These offsetting positions can be achieved using closely related assets or through diversification.
+
+Among professional traders, the most common and effective hedge uses derivatives such as futures, forwards, or options contracts. is relevant
+2026-02-11 02:03:40,261 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:40,264 - DocumentGraderNode - INFO: Retrieved document How Quantitative Analysis Works in Finance
+
+Quantitative analysis (QA) in finance refers to the use of mathematical and statistical techniques to analyze financial & economic data and make trading, investing, and risk management decisions.
+
+QA starts with data collection, where quants gather a vast amount of financial data that might affect the market. This data can include anything from stock prices and company earnings to economic indicators like inflation or unemployment rates. They then use various mathematical models and statistical techniques to analyze this data, looking for trends, patterns, and potential investment opportunities. The outcome of this analysis can help investors decide where to allocate their resources to maximize returns or minimize risks.
+
+Some key aspects of quantitative analysis in finance include: is NOT relevant, dump it.
+2026-02-11 02:03:40,977 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:40,978 - DocumentGraderNode - INFO: Retrieved document What Do You Mean by Hedging?
+
+Hedging is a strategy to limit investment risks. Investors hedge an investment by making a trade in another that is likely to move in the opposite direction. is relevant
+2026-02-11 02:03:41,798 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:41,802 - DocumentGraderNode - INFO: Retrieved document Quantitative Analysis in Finance: Techniques, Applications, and Benefits
+
+Quantitative analysis (QA) uses methods to understand financial markets and make informed investment or trading decisions. It involves the use of mathematical and statistical techniques to analyze financial data. Quantitative analysts, often called "quants," examine past stock prices and earnings to forecast market trends.
+
+Unlike fundamental analysis, which looks at management or industry conditions, quantitative analysis focuses on numerical computations for insights.
+
+Quantitative analysis is powerful in modern markets, where abundant data and advanced tools enable precise financial examination. However, many also believe that the raw numbers produced by quantitative analysis should be combined with the more in-depth understanding and nuance afforded by qualitative analysis. is NOT relevant, dump it.
+2026-02-11 02:03:41,802 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 02:03:41,802 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.122 seconds.
+2026-02-11 02:03:41,802 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 02:03:41,802 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 02:03:41,804 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is hedging in quantitative finance?", time costed: 6.35 seconds.
+2026-02-11 02:03:41,806 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 02:03:41,807 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 02:03:41,840 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 02:03:41,841 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 02:03:42,034 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.228 seconds.
+2026-02-11 02:03:42,034 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 02:03:42,924 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:42,928 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of Spot Markets is NOT relevant, dump it.
+2026-02-11 02:03:43,525 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:43,529 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 02:03:44,161 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:44,165 - DocumentGraderNode - INFO: Retrieved document Weighing the Pros and Cons of Options Trading is NOT relevant, dump it.
+2026-02-11 02:03:45,065 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:45,069 - DocumentGraderNode - INFO: Retrieved document What Is Quantitative Analysis Used for in Finance?
+
+Quantitative analysis is used by governments, investors, and businesses (in areas such as finance, project management, production planning, and marketing) to study a certain situation or event, measure it, predict outcomes, and thus help in decision-making. In finance, it's widely used for assessing investment opportunities and risks. For instance, before venturing into investments, analysts rely on quantitative analysis to understand the performance metrics of different financial instruments such as stocks, bonds, and derivatives. By delving into historical data and employing mathematical and statistical models, they can forecast potential future performance and evaluate the underlying risks. This practice isn't just confined to individual assets; it's also essential for portfolio management. By examining the relationships between different assets and assessing their risk and return profiles, investors can construct portfolios that are optimized for the highest possible returns for a given level of risk. is NOT relevant, dump it.
+2026-02-11 02:03:45,720 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:45,721 - DocumentGraderNode - INFO: Retrieved document How Quantitative Analysis Works in Finance
+
+Quantitative analysis (QA) in finance refers to the use of mathematical and statistical techniques to analyze financial & economic data and make trading, investing, and risk management decisions.
+
+QA starts with data collection, where quants gather a vast amount of financial data that might affect the market. This data can include anything from stock prices and company earnings to economic indicators like inflation or unemployment rates. They then use various mathematical models and statistical techniques to analyze this data, looking for trends, patterns, and potential investment opportunities. The outcome of this analysis can help investors decide where to allocate their resources to maximize returns or minimize risks.
+
+Some key aspects of quantitative analysis in finance include: is NOT relevant, dump it.
+2026-02-11 02:03:46,279 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:46,282 - DocumentGraderNode - INFO: Retrieved document Understanding Bid-Ask Spreads is NOT relevant, dump it.
+2026-02-11 02:03:47,020 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:47,024 - DocumentGraderNode - INFO: Retrieved document How Investors Use Arbitrage is NOT relevant, dump it.
+2026-02-11 02:03:48,561 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:48,565 - DocumentGraderNode - INFO: Retrieved document Quantitative Analysis in Finance: Techniques, Applications, and Benefits
+
+Quantitative analysis (QA) uses methods to understand financial markets and make informed investment or trading decisions. It involves the use of mathematical and statistical techniques to analyze financial data. Quantitative analysts, often called "quants," examine past stock prices and earnings to forecast market trends.
+
+Unlike fundamental analysis, which looks at management or industry conditions, quantitative analysis focuses on numerical computations for insights.
+
+Quantitative analysis is powerful in modern markets, where abundant data and advanced tools enable precise financial examination. However, many also believe that the raw numbers produced by quantitative analysis should be combined with the more in-depth understanding and nuance afforded by qualitative analysis. is NOT relevant, dump it.
+2026-02-11 02:03:48,566 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 02:03:48,566 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.532 seconds.
+2026-02-11 02:03:48,566 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 02:03:48,566 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions. ---
+2026-02-11 02:03:48,567 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-02-11 02:03:49,477 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:49,480 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 0.913 seconds.
+2026-02-11 02:03:49,481 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 02:03:49,482 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 02:03:49,515 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 02:03:49,515 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 02:03:49,731 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.249 seconds.
+2026-02-11 02:03:49,731 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 02:03:50,399 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:50,402 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of Spot Markets is NOT relevant, dump it.
+2026-02-11 02:03:51,218 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:51,221 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 02:03:51,935 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:51,940 - DocumentGraderNode - INFO: Retrieved document Weighing the Pros and Cons of Options Trading is NOT relevant, dump it.
+2026-02-11 02:03:52,745 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:52,749 - DocumentGraderNode - INFO: Retrieved document What Is Quantitative Analysis Used for in Finance?
+
+Quantitative analysis is used by governments, investors, and businesses (in areas such as finance, project management, production planning, and marketing) to study a certain situation or event, measure it, predict outcomes, and thus help in decision-making. In finance, it's widely used for assessing investment opportunities and risks. For instance, before venturing into investments, analysts rely on quantitative analysis to understand the performance metrics of different financial instruments such as stocks, bonds, and derivatives. By delving into historical data and employing mathematical and statistical models, they can forecast potential future performance and evaluate the underlying risks. This practice isn't just confined to individual assets; it's also essential for portfolio management. By examining the relationships between different assets and assessing their risk and return profiles, investors can construct portfolios that are optimized for the highest possible returns for a given level of risk. is NOT relevant, dump it.
+2026-02-11 02:03:53,432 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:53,436 - DocumentGraderNode - INFO: Retrieved document Volatility: Meaning in Finance and How It Works With Stocks is NOT relevant, dump it.
+2026-02-11 02:03:54,132 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:54,136 - DocumentGraderNode - INFO: Retrieved document How Quantitative Analysis Works in Finance
+
+Quantitative analysis (QA) in finance refers to the use of mathematical and statistical techniques to analyze financial & economic data and make trading, investing, and risk management decisions.
+
+QA starts with data collection, where quants gather a vast amount of financial data that might affect the market. This data can include anything from stock prices and company earnings to economic indicators like inflation or unemployment rates. They then use various mathematical models and statistical techniques to analyze this data, looking for trends, patterns, and potential investment opportunities. The outcome of this analysis can help investors decide where to allocate their resources to maximize returns or minimize risks.
+
+Some key aspects of quantitative analysis in finance include: is NOT relevant, dump it.
+2026-02-11 02:03:54,910 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:54,914 - DocumentGraderNode - INFO: Retrieved document Quantitative Analysis in Finance: Techniques, Applications, and Benefits
+
+Quantitative analysis (QA) uses methods to understand financial markets and make informed investment or trading decisions. It involves the use of mathematical and statistical techniques to analyze financial data. Quantitative analysts, often called "quants," examine past stock prices and earnings to forecast market trends.
+
+Unlike fundamental analysis, which looks at management or industry conditions, quantitative analysis focuses on numerical computations for insights.
+
+Quantitative analysis is powerful in modern markets, where abundant data and advanced tools enable precise financial examination. However, many also believe that the raw numbers produced by quantitative analysis should be combined with the more in-depth understanding and nuance afforded by qualitative analysis. is NOT relevant, dump it.
+2026-02-11 02:03:55,621 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:55,623 - DocumentGraderNode - INFO: Retrieved document Futures Trading: What It Is, How It Works, Factors, and Pros & Cons is NOT relevant, dump it.
+2026-02-11 02:03:55,624 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 02:03:55,624 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 5.893 seconds.
+2026-02-11 02:03:55,624 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 02:03:55,624 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions. ---
+2026-02-11 02:03:55,625 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-02-11 02:03:56,542 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:56,543 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 0.919 seconds.
+2026-02-11 02:03:56,544 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 02:03:56,544 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 02:03:56,563 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 02:03:56,563 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 02:03:56,752 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.209 seconds.
+2026-02-11 02:03:56,753 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 02:03:57,837 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:57,838 - DocumentGraderNode - INFO: Retrieved document Advantages and Disadvantages of Spot Markets is NOT relevant, dump it.
+2026-02-11 02:03:58,593 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:58,597 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 02:03:59,922 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:03:59,926 - DocumentGraderNode - INFO: Retrieved document What Is Quantitative Analysis Used for in Finance?
+
+Quantitative analysis is used by governments, investors, and businesses (in areas such as finance, project management, production planning, and marketing) to study a certain situation or event, measure it, predict outcomes, and thus help in decision-making. In finance, it's widely used for assessing investment opportunities and risks. For instance, before venturing into investments, analysts rely on quantitative analysis to understand the performance metrics of different financial instruments such as stocks, bonds, and derivatives. By delving into historical data and employing mathematical and statistical models, they can forecast potential future performance and evaluate the underlying risks. This practice isn't just confined to individual assets; it's also essential for portfolio management. By examining the relationships between different assets and assessing their risk and return profiles, investors can construct portfolios that are optimized for the highest possible returns for a given level of risk. is NOT relevant, dump it.
+2026-02-11 02:04:00,603 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:00,607 - DocumentGraderNode - INFO: Retrieved document Futures Trading: What It Is, How It Works, Factors, and Pros & Cons is NOT relevant, dump it.
+2026-02-11 02:04:01,458 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:01,462 - DocumentGraderNode - INFO: Retrieved document How Quantitative Analysis Works in Finance
+
+Quantitative analysis (QA) in finance refers to the use of mathematical and statistical techniques to analyze financial & economic data and make trading, investing, and risk management decisions.
+
+QA starts with data collection, where quants gather a vast amount of financial data that might affect the market. This data can include anything from stock prices and company earnings to economic indicators like inflation or unemployment rates. They then use various mathematical models and statistical techniques to analyze this data, looking for trends, patterns, and potential investment opportunities. The outcome of this analysis can help investors decide where to allocate their resources to maximize returns or minimize risks.
+
+Some key aspects of quantitative analysis in finance include: is NOT relevant, dump it.
+2026-02-11 02:04:02,267 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:02,271 - DocumentGraderNode - INFO: Retrieved document What Is a Bid-Ask Spread, and How Does It Work in Trading? is NOT relevant, dump it.
+2026-02-11 02:04:02,995 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:02,998 - DocumentGraderNode - INFO: Retrieved document Volatility: Meaning in Finance and How It Works With Stocks is NOT relevant, dump it.
+2026-02-11 02:04:04,632 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:04,636 - DocumentGraderNode - INFO: Retrieved document Applications of Quantitative Analysis Beyond Finance
+
+Quantitative analysis goes beyond finance and applies to various fields. In the domain of social sciences, for instance, it's used to analyze behavioral patterns, social trends, and the impact of policies on different demographics. Researchers employ statistical models to examine large datasets, enabling them to identify correlations, causations, and trends that can provide a deeper understanding of human behaviors and societal dynamics. Similarly, in the field of public policy, quantitative analysis plays a crucial role in evaluating the effectiveness of different policies, analyzing economic indicators, and forecasting the potential impacts of policy changes. By providing a method to measure and analyze data, it aids policymakers in making informed decisions based on empirical evidence. is NOT relevant, dump it.
+2026-02-11 02:04:04,637 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 02:04:04,637 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 7.884 seconds.
+2026-02-11 02:04:04,637 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 02:04:04,637 - route_functions - INFO: --- Decision: all documents are not relevant, and looped twice, need to do web search. ---
+2026-02-11 02:04:04,638 - log_utils - INFO: child graph - web_search_node starts to work
+2026-02-11 02:04:07,243 - log_utils - INFO: child graph - web_search_node finishes working, time costed: 2.605 seconds.
+2026-02-11 02:04:07,245 - standard_comparison_nodes - INFO: comparison_retriever_node finishes child graph retrieval for question "What is speculation in quantitative finance?", time costed: 25.441 seconds.
+2026-02-11 02:04:07,245 - log_utils - INFO: comparison_retriever_node finishes working, time costed: 39.617 seconds.
+2026-02-11 02:04:07,246 - log_utils - INFO: generate_node starts to work
+2026-02-11 02:04:18,150 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:18,153 - log_utils - INFO: generate_node finishes working, time costed: 10.906 seconds.
+2026-02-11 02:04:18,153 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 02:04:18,969 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:18,978 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-11 02:04:18,978 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-11 02:04:19,686 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:19,695 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-11 02:04:19,696 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-11 02:04:19,696 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-11 02:04:22,146 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:23,586 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:24,993 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:26,088 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:28,768 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:32,079 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:33,552 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:34,816 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:37,157 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:39,723 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:42,751 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:45,175 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:46,286 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:48,394 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:49,948 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:51,311 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:52,595 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:56,205 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:04:59,111 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:01,980 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:03,556 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:05,471 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:08,840 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:09,948 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:11,299 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:12,507 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:15,128 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:18,206 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:21,949 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:24,044 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:26,470 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:45,559 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:48,991 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:50,421 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:53,492 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:54,831 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:56,063 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:05:57,386 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:06:00,353 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:06:03,458 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:06:06,280 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:06:09,062 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:06:14,678 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:06:17,285 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:06:46,983 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:06:48,396 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

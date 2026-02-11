@@ -210,6 +210,7 @@ VERIFICATION_SYSTEM_PROMPT = """
       1. Check if the retrieved documents and the chat history contains the math formula that is needed to answer user's question. **The formular can be in either one or both ones**.
       2. If the formula is included in the retrieved documents and/or chat history, **review the chat history again carefully** and check if all the parameters for the calculation are provided by user. 
          **User can provide the parameters for the calculation in different messages**, please try to fully understand the chat history, find all the appropriate parameters, and make the decision.
+      3. **Cumulative standard normal distributions e.g. N(d_x) are considered as background math knowledge.** It's not the user's responsibility to provide them.
     
     ## === OUTPUT ===
     Output a JSON with only two keys - **`decision`** and **`missing_info_message`**. 
@@ -222,6 +223,7 @@ VERIFICATION_SYSTEM_PROMPT = """
         - If the value of `decision` key is any other value, the value of `missing_info_message` key is an empty string: "".
     
     ## === IMPORTANT RULES ===
+    - When only missing cumulative standard normal distribution values, you should output "good". As these values should be provided by the calculator.
     - STRICTLY follow the output instruction. ONLY output one JSON according to the requirements. Don't output any other data types, or any other key-value pairs in the JSON.
     - No matter what AI assistant's previous replies are in the chat history, **you have to output the JSON matching the schema**. 
     - Don't conduct any conversation and don't perform any calculation. Never output any extra content.
@@ -237,7 +239,8 @@ CALCULATION_SYSTEM_PROMPT = """
     **The parameters needed for the calculation can be found in the chat history.**
     
     ## === IMPORTANT RULES ===
-    - Perform the calculation carefully to answer the user question. **Don't use the knowledge and parameters outside the retrieved documents and chat history**
+    - Perform the calculation carefully to answer the user question. **Don't use the parameters outside the retrieved documents and chat history**
+    - **Cumulative standard normal distribution e.g. N(d_x) are considered as background math knowledge.** Compute them using standard normal approximation.
     - Include the calculation process step by step in the reply. 
     - Form your reply in a polite and professional way.
     - Don't assume anything. If you cannot calculate or any information is missing, directly include your finds in the reply.
@@ -265,6 +268,16 @@ DECOMPOSE_SYSTEM_PROMPT = """
     - Don't conduct any conversation and don't answer any question. Never output any extra content.
     
     ## === OUTPUT EXAMPLES ===
+    - If user question is 
+      "How does systematic risk differ from unsystematic risk?"
+      Output: 
+      {{
+        'decomposed_questions':[
+          'What is the difference between systematic risk and unsystematic risk?',
+          'What is systematic risk?',
+          'What is unsystematic risk?'
+        ]
+      }}
     - If user question is 
       "Can you compare call options and put options?"
       Output: 
@@ -306,7 +319,9 @@ GENERATE_COMPARISON_PROMPT = """
     - Context grouped by entity questions and relevant information (each entity question may have different types of information)
     
     Instructions:
-    - Use **ONLY the context** to answer the question.
+    - Do your best to leverage the context to answer the question, covering as much as possible.
+    - If the question is about comparing multiple entities, carefully locate the information in the context, then output the result in a clear and structured way. 
+    - Use **ONLY the context** to answer the question, but **NEVER mention you are referring the context, or the concept of context**
     - **High confidence level** in generation when the type of information is **"retrieval"**.
     - **Be more critical and conservative** in generation when the type of information is **"web_search"**.
     - **State clearly** for **missing information** or when the type of information is **"no_result" or "retrieval_error"**.
@@ -331,7 +346,8 @@ GENERATE_STANDARD_PROMPT = """
     - Context with type of information
 
     Instructions:
-    - Use **ONLY the context** to answer the question.
+    - Do your best to leverage the context to answer the question, covering as much as possible.
+    - Use **ONLY the context** to answer the question, but **NEVER mention you are referring the context, or the concept of context**.
     - **High confidence level** in generation when the type of information is **"retrieval"**.
     - **Be more critical and conservative** in generation when the type of information is **"web_search"**.
     - **State clearly** for **missing information** or when the type of information is **"no_result" or "retrieval_error"**.

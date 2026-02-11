@@ -107,7 +107,7 @@ evaluation_set = [
 	{
 		"id": 18,
 		"category": "Comparison",
-		"question": "What is the difference between call options and put options?",
+		"question": "What is the difference between a call option and a put option?",
 		"reference": "A call option is the right to buy (holders betting on price increase); a put option is the right to sell (holders betting on price decrease)."
 	},
 	{
@@ -170,7 +170,7 @@ evaluation_set = [
 		"id": 28,
 		"category": "Formula",
 		"question": "What is the formula for expected return in CAPM?",
-		"reference": "$E(R_i) = R_f + \\beta_i * (E(R_m) - R_f)$"
+		"reference": "$E(R_i) = R_f + \\beta_i * (ER_m - R_f)$"
 	},
 	{
 		"id": 29,
@@ -206,7 +206,7 @@ evaluation_set = [
 	{
 		"id": 34,
 		"category": "Calculation",
-		"question": "What is the formula for the exponential moving average (EMA)? How is it calculated over three periods for prices 100, 102, and 101 using smoothing factor 0.2?",
+		"question": "What is the formula for the exponential moving average (EMA)? How is it calculated over three periods for prices 100, 102, and 101 using smoothing factor 0.2? Please set the first EMA to the first price.",
 		"reference": "$EMA_t = [\\text{Price}_t * \\alpha] + [EMA_{t-1} * (1 - \\alpha)]$. For 100, 102, 101 with $\\alpha=0.2$, EMA is 100.52."
 	},
 	{
@@ -279,7 +279,7 @@ evaluation_set = [
 		"reference": "Primary is for new security issuance created and sold for the first time (e.g., IPOs) directly from issuers to investors to raise capital; secondary is for trading existing securities among investors, providing liquidity without direct involvement from the issuing company."
 	},
 
-	#-- -- - E.Edge / Recall Stress-- -- -
+	# -- -- - E.Edge / Recall Stress-- -- -
     {
 		"id": 46,
 		"category": "Edge",

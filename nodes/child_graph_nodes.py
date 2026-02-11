@@ -20,6 +20,8 @@ def retriever_node(state: ChildState):
         log.error(f"{node_name} has error on retrieving documents for question \"{question}\": {e}")
         retrieved_documents = []
 
+    print(f"{node_name} - retrieved documents: /n {retrieved_documents}")
+
     time_cost = round(time.time() - prev_time, 3)
     log_node_end(node_name, time_cost)
     return {
@@ -79,16 +81,24 @@ def web_search_node(state: ChildState) -> dict:
 
 # Test
 if __name__ == "__main__":
-    # state = retriever_node(
+    # test_state = retriever_node(
     #     {
-    #         "question": "What is Black Scholes Model?"
+    #         "question": "What is Black Scholes Model?",
+    #         "retrieved_documents":[],
+    #         "filtered_docs":[],
+    #         "rewrite_count":0,
+    #         "web_results":Document(page_content="")
     #     }
     # )
 
-    state = web_search_node(
+    test_state = web_search_node(
         {
-            "question": "What is Black Scholes Model?"
+            "question": "What is Black Scholes Model?",
+            "retrieved_documents":[],
+            "filtered_docs":[],
+            "rewrite_count":0,
+            "web_results":Document(page_content="")
         }
     )
 
-    print(state)
+    print(test_state)

@@ -1,0 +1,414 @@
+2026-02-11 02:25:18,105 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 02:25:18,107 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
+2026-02-11 02:25:18,109 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
+2026-02-11 02:25:18,115 - log_utils - INFO: starting_reply_node starts to work
+2026-02-11 02:25:18,115 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-11 02:25:18,116 - log_utils - INFO: starting_intention_node starts to work
+2026-02-11 02:25:19,699 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:19,716 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.6 seconds.
+2026-02-11 02:25:19,717 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-11 02:25:19,718 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 02:25:19,930 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 02:25:19,946 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 02:25:19,946 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 02:25:20,502 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.784 seconds.
+2026-02-11 02:25:20,502 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 02:25:21,269 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:21,285 - DocumentGraderNode - INFO: Retrieved document What Is Gamma?
+
+Gamma ($\Gamma$) is an options risk metric that represents the sensitivity of an option's delta to movements in the underlying asset, indicating how much delta will change when the underlying price shifts by one point. Therefore, gamma is a measure of how the rate of change of an option's price will change with fluctuations in the underlying price. The higher the gamma, the more volatile the price of the option is.
+
+Gamma is an important measure of the convexity of a derivative's value in relation to the underlying asset. It is one of the "options Greeks," along with delta, rho, theta, and vega. These are used to assess the different types of risk in options portfolios. is relevant
+2026-02-11 02:25:21,985 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:21,987 - DocumentGraderNode - INFO: Retrieved document What Is Gamma in Investing and How Is It Used? is relevant
+2026-02-11 02:25:22,711 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:22,714 - DocumentGraderNode - INFO: Retrieved document What Are the Greeks in Options?
+
+The five main Greeks in options trading are delta (Δ), theta (Θ), gamma (Γ), vega (ν), and rho (ρ). Each Greek has a number value that provides information about how the option is moving or the risk associated with buying or selling that option. These values change over time, so savvy traders will check them daily or multiple times a day before making trades. is relevant
+2026-02-11 02:25:23,430 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:23,431 - DocumentGraderNode - INFO: Retrieved document Understanding Greeks in Finance: The Key to Options Risk Management is relevant
+2026-02-11 02:25:24,249 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:24,253 - DocumentGraderNode - INFO: Retrieved document Fast Fact
+
+Theta is one of the four interrelated "Greeks" that options traders use to evaluate the relative risk and potential rewards of an options contract. In addition to theta, they are delta, gamma, and vega. is relevant
+2026-02-11 02:25:24,955 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:24,959 - DocumentGraderNode - INFO: Retrieved document Understanding Gamma
+
+Gamma is the first derivative of delta and is used when trying to gauge the price movement of an option, relative to the amount it is in the money or out of the money. It describes how the delta will change as the underlying asset changes. So if an option's delta is +40 and the gamma is 10, a \$1 increase in the underlying price would result in that option's delta becoming +50.
+
+When the option being measured is deep in or out of the money, gamma is small. When the option is near or at the money, gamma is at its largest. Gamma is also largest for options with near-term expirations relative to longer-dated options.
+
+Gamma is an important metric because it accounts for convexity issues when engaging in options hedging strategies. Some portfolio managers or traders may be involved with portfolios of such large values that even more precision is needed when engaged in hedging. A third-order derivative named "color" can be used. Color measures the rate of change of gamma and is important for maintaining a gamma-hedged portfolio. is relevant
+2026-02-11 02:25:26,160 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:26,164 - DocumentGraderNode - INFO: Retrieved document Key Greek Variables in Options Trading
+
+Greeks include variables like delta, theta, gamma, vega, and rho. Each one of these Greeks has a number associated with it, and that number tells traders something about how the option moves or the risk associated with that option. The primary Greeks (delta, vega, theta, gamma, and rho) are calculated each as a first partial derivative of the options pricing model (for instance, the Black-Scholes model).
+
+Greek values change over time, so traders often calculate them daily to adjust their positions or rebalance portfolios. Therefore, sophisticated options traders may calculate these values daily to assess any changes that may affect their positions or outlook, or simply to check if their portfolio needs to be rebalanced. Below are several of the main Greeks that traders look at. is relevant
+2026-02-11 02:25:26,164 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 02:25:26,164 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 5.662 seconds.
+2026-02-11 02:25:26,164 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 02:25:26,165 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 02:25:26,166 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is Gamma in options Greeks?", time costed: 6.45 seconds.
+2026-02-11 02:25:26,167 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 6.45 seconds.
+2026-02-11 02:25:26,168 - log_utils - INFO: generate_node starts to work
+2026-02-11 02:25:31,606 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:31,609 - log_utils - INFO: generate_node finishes working, time costed: 5.441 seconds.
+2026-02-11 02:25:31,610 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 02:25:32,535 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:32,549 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-11 02:25:32,550 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-11 02:25:33,249 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:33,263 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-11 02:25:33,264 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-11 02:25:33,264 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-11 02:25:33,268 - log_utils - INFO: starting_reply_node starts to work
+2026-02-11 02:25:33,268 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-11 02:25:33,270 - log_utils - INFO: starting_intention_node starts to work
+2026-02-11 02:25:34,274 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:34,282 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.013 seconds.
+2026-02-11 02:25:34,284 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-11 02:25:34,286 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 02:25:34,287 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 02:25:34,317 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 02:25:34,318 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 02:25:34,500 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.214 seconds.
+2026-02-11 02:25:34,500 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 02:25:35,171 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:35,174 - DocumentGraderNode - INFO: Retrieved document Theta: What It Means in Options Trading, With Examples is relevant
+2026-02-11 02:25:36,014 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:36,017 - DocumentGraderNode - INFO: Retrieved document How Does Theta React to Volatility in the Market?
+
+Theta and volatility have a complex relationship. Generally speaking, when market volatility is high, option prices go up, which can also cause theta to increase. This is because the higher premium associated with the option will have more to lose each day as it approaches expiration.
+
+However, an increase in theta doesn't necessarily mitigate the impact of rising volatility. In a volatile market, the option price can swing dramatically, overshadowing the slow erosion of time decay.
+
+So, while theta might increase in a high-volatility market, the option's price could still rise if the increased volatility is even more significant. is relevant
+2026-02-11 02:25:36,731 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:36,734 - DocumentGraderNode - INFO: Retrieved document What Is Theta?
+
+An option tends to lose value at a faster rate as it gets closer to maturity or the contract's end. The Greek letter \$\Theta\$ or "theta" measures this loss in value. Theta is also known as an option's time decay. It's the daily amount by which an option's value drops. is relevant
+2026-02-11 02:25:37,346 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:37,350 - DocumentGraderNode - INFO: Retrieved document Theta
+
+Theta (Θ) represents the rate of change between the option price and time, or time sensitivity—sometimes known as an option's time decay. Theta indicates the amount an option's price would decrease as the time to expiration decreases, all else equal. For example, assume an investor is long an option with a theta of -0.50. The option's price would decrease by 50 cents every day that passes, all else being equal. If three trading days pass, the option's value would theoretically decrease by \$1.50.
+
+Theta is higher for ATM options and lower for ITM or OTM options. Options closer to expiration also have accelerating time decay. Long calls and long puts usually have negative Theta. Short calls and short puts, on the other hand, have positive Theta. By comparison, an instrument whose value isn't eroded by time has zero Theta. is relevant
+2026-02-11 02:25:38,114 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:38,122 - DocumentGraderNode - INFO: Retrieved document What Are the Greeks?
+
+The variables that are used to assess risk in the options market are commonly referred to as “the Greeks.” Each risk factor is assigned a different Greek letter, such as delta, theta, and others, to assess options risk and manage options portfolios
+
+Greek variables arise from the option's relationship with another underlying factor. Using options pricing models, traders can assess the expected payout of each option. is relevant
+2026-02-11 02:25:39,086 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:39,090 - DocumentGraderNode - INFO: Retrieved document Theta: Understanding Time Decay
+
+Theta ($\Theta$) represents the rate of change between the option price and time, or time sensitivity—sometimes known as an option’s time decay. Theta indicates the amount an option’s price would decrease as the time to expiration decreases, all else being equal. For example, assume an investor is long an option with a theta of -0.50. The option’s price would decrease by 50 cents every day that passes, all else being equal.
+
+Theta increases when options are at the money, and decreases when options are in and out of the money. As expiration nears, options decay faster. Long calls and puts typically have negative theta, while short ones have positive theta. By comparison, an instrument whose value is not eroded by time, such as a stock, would have zero theta. is relevant
+2026-02-11 02:25:39,803 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:39,807 - DocumentGraderNode - INFO: Retrieved document What Is Gamma?
+
+Gamma ($\Gamma$) is an options risk metric that represents the sensitivity of an option's delta to movements in the underlying asset, indicating how much delta will change when the underlying price shifts by one point. Therefore, gamma is a measure of how the rate of change of an option's price will change with fluctuations in the underlying price. The higher the gamma, the more volatile the price of the option is.
+
+Gamma is an important measure of the convexity of a derivative's value in relation to the underlying asset. It is one of the "options Greeks," along with delta, rho, theta, and vega. These are used to assess the different types of risk in options portfolios. is relevant
+2026-02-11 02:25:40,930 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:40,934 - DocumentGraderNode - INFO: Retrieved document How Theta Works
+
+Theta is generally expressed as a negative number for long positions and a positive number for short positions. It is the daily amount by which an option's value is declining. For instance, a theta of -0.05 indicates that the option's price will decrease by five cents per day.
+
+Options give the buyer the right to buy or sell an underlying asset at a predetermined price before the option expires. The strike price, also called the exercise price, is set when the contract is written. It is the price the underlying asset must reach before the option can be exercised.
+
+Options Greeks, or simply “Greeks,” are invaluable pieces of information for options investors. The mathematical variables help investors calculate the risks that influence an option’s price, especially as it nears its expiration. is relevant
+2026-02-11 02:25:40,935 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 02:25:40,935 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.434 seconds.
+2026-02-11 02:25:40,935 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 02:25:40,935 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 02:25:40,937 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What does Theta measure in option pricing?", time costed: 6.652 seconds.
+2026-02-11 02:25:40,937 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 6.653 seconds.
+2026-02-11 02:25:40,937 - log_utils - INFO: generate_node starts to work
+2026-02-11 02:25:43,695 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:43,698 - log_utils - INFO: generate_node finishes working, time costed: 2.761 seconds.
+2026-02-11 02:25:43,699 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 02:25:44,332 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:44,340 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-11 02:25:44,340 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-11 02:25:45,115 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:45,124 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-11 02:25:45,124 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-11 02:25:45,125 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-11 02:25:45,127 - log_utils - INFO: starting_reply_node starts to work
+2026-02-11 02:25:45,127 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-11 02:25:45,128 - log_utils - INFO: starting_intention_node starts to work
+2026-02-11 02:25:46,119 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:46,123 - log_utils - INFO: starting_intention_node finishes working, time costed: 0.995 seconds.
+2026-02-11 02:25:46,123 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-11 02:25:46,124 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 02:25:46,124 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 02:25:46,143 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 02:25:46,143 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 02:25:46,317 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.193 seconds.
+2026-02-11 02:25:46,317 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 02:25:47,177 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:47,185 - DocumentGraderNode - INFO: Retrieved document What Is Value at Risk (VaR)?
+
+Value at Risk (VaR) estimates the maximum expected loss of an investment over a set period at a chosen confidence level, making it a common tool for banks and financial firms. It can be calculated using historical data, the variance-covariance method, or Monte Carlo simulation. This article will apply these approaches to the Nasdaq 100 Index to illustrate how VaR works in practice. is relevant
+2026-02-11 02:25:48,184 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:48,188 - DocumentGraderNode - INFO: Retrieved document Understanding Value at Risk (VaR): Explanation and Calculation Methods is relevant
+2026-02-11 02:25:49,019 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:49,020 - DocumentGraderNode - INFO: Retrieved document What Are the Advantages of Using Value at Risk?
+
+VaR is a single number that indicates the extent of risk in a given portfolio and is measured in either price or as a percentage, making understanding VaR easy. It can be applied to assets
+
+such as bonds, shares, and currencies, and is used by banks and financial institutions to assess the profitability and risk of different investments, and allocate risk based on VaR. is relevant
+2026-02-11 02:25:49,758 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:49,765 - DocumentGraderNode - INFO: Retrieved document The Bottom Line
+
+Value at Risk (VAR) calculates the maximum expected loss on an investment over a given period at a chosen confidence level, and it can be calculated using the historical method, the variance-covariance approach, or Monte Carlo simulation. Understanding VaR helps investors and risk managers understand potential downside and compare how different market conditions might affect a portfolio. is relevant
+2026-02-11 02:25:50,658 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:50,661 - DocumentGraderNode - INFO: Retrieved document Explain Like I'm 5
+
+Value at Risk (VaR)can help investors answer the question: "What's the potential maximum loss I could expect from this investment within x days/weeks/months?" In other words, VaR is a statistical method that can be used to estimate the worst-case loss of an investment over a specific period of time, considering a certain probability of that loss occurring (which is called "confidence level"). For example, if an investment's one-day VaR is \$5,000 at a 95% confidence level, it means there's a 5% (100% - 95%) chance the investment could lose more than \$5,000 in a single day. is relevant
+2026-02-11 02:25:51,375 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:51,379 - DocumentGraderNode - INFO: Retrieved document What Is the Disadvantage of Using Value at Risk?
+
+While VaR is useful for predicting the risks facing an investment, it can be misleading. One critique is that different methods give different results: you might get a gloomy forecast with the historical method, while Monte Carlo Simulations are relatively optimistic. It can also be difficult to calculate the VaR for large portfolios: you can't simply calculate the VaR for each asset, since many of those assets will be correlated. Finally, any VaR calculation is only as good as the data and assumptions that go into it. is relevant
+2026-02-11 02:25:51,379 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 02:25:51,379 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 5.062 seconds.
+2026-02-11 02:25:51,379 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 02:25:51,379 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 02:25:51,381 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is Value at Risk (VaR)?", time costed: 5.258 seconds.
+2026-02-11 02:25:51,381 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 5.258 seconds.
+2026-02-11 02:25:51,382 - log_utils - INFO: generate_node starts to work
+2026-02-11 02:25:55,676 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:55,680 - log_utils - INFO: generate_node finishes working, time costed: 4.298 seconds.
+2026-02-11 02:25:55,680 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 02:25:56,920 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:56,925 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-11 02:25:56,925 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-11 02:25:57,622 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:57,630 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-11 02:25:57,631 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-11 02:25:57,631 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-11 02:25:57,635 - log_utils - INFO: starting_reply_node starts to work
+2026-02-11 02:25:57,635 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-11 02:25:57,637 - log_utils - INFO: starting_intention_node starts to work
+2026-02-11 02:25:58,747 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:58,751 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.115 seconds.
+2026-02-11 02:25:58,753 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-11 02:25:58,755 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 02:25:58,755 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 02:25:58,780 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 02:25:58,780 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 02:25:58,986 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.231 seconds.
+2026-02-11 02:25:58,986 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 02:25:59,771 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:25:59,778 - DocumentGraderNode - INFO: Retrieved document Options: Types, Spreads, and Risk Metrics is NOT relevant, dump it.
+2026-02-11 02:26:00,489 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:00,492 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 02:26:01,308 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:01,317 - DocumentGraderNode - INFO: Retrieved document What Are Premium Pricing Examples?
+
+Premium pricing is a marketing strategy that involves tactically setting the price of a particular product higher than that of either a more basic version of that product. The purpose of premium pricing is to convey higher quality or desirability than other options. is NOT relevant, dump it.
+2026-02-11 02:26:01,943 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:01,947 - DocumentGraderNode - INFO: Retrieved document Weighing the Pros and Cons of Options Trading is NOT relevant, dump it.
+2026-02-11 02:26:02,741 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:02,745 - DocumentGraderNode - INFO: Retrieved document Financial Portfolio: What It Is and How to Create and Manage One is NOT relevant, dump it.
+2026-02-11 02:26:03,459 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:03,463 - DocumentGraderNode - INFO: Retrieved document What Is Quantitative Analysis Used for in Finance?
+
+Quantitative analysis is used by governments, investors, and businesses (in areas such as finance, project management, production planning, and marketing) to study a certain situation or event, measure it, predict outcomes, and thus help in decision-making. In finance, it's widely used for assessing investment opportunities and risks. For instance, before venturing into investments, analysts rely on quantitative analysis to understand the performance metrics of different financial instruments such as stocks, bonds, and derivatives. By delving into historical data and employing mathematical and statistical models, they can forecast potential future performance and evaluate the underlying risks. This practice isn't just confined to individual assets; it's also essential for portfolio management. By examining the relationships between different assets and assessing their risk and return profiles, investors can construct portfolios that are optimized for the highest possible returns for a given level of risk. is NOT relevant, dump it.
+2026-02-11 02:26:04,438 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:04,442 - DocumentGraderNode - INFO: Retrieved document How Are Wealth Management Firms Changing Their Approach to Structured Products?
+
+Wealth management firms are increasingly creating branded structured product offerings through partnerships with ETF providers. This allows them to offer clients structured product-like exposures while addressing transparency and liquidity concerns. is NOT relevant, dump it.
+2026-02-11 02:26:05,352 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:05,360 - DocumentGraderNode - INFO: Retrieved document Exploring Embedded Calls and Puts in Securities is NOT relevant, dump it.
+2026-02-11 02:26:05,360 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 02:26:05,360 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 6.374 seconds.
+2026-02-11 02:26:05,361 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 02:26:05,361 - route_functions - INFO: --- Decision: all documents are not relevant, need to convert questions. ---
+2026-02-11 02:26:05,362 - log_utils - INFO: child graph - rewrite_query_node starts to work
+2026-02-11 02:26:06,019 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:06,022 - log_utils - INFO: child graph - rewrite_query_node finishes working, time costed: 0.66 seconds.
+2026-02-11 02:26:06,023 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 02:26:06,023 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 02:26:06,049 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 02:26:06,049 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 02:26:06,254 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.231 seconds.
+2026-02-11 02:26:06,255 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 02:26:07,059 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:07,061 - DocumentGraderNode - INFO: Retrieved document The ETF Revolution in Structured Products
+
+A significant change in this area of finance occurred in 2006 with the introduction of exchange-traded notes (ETNs) that mimic structured products. These and the ETFs introduced later are traded like a common stock on a securities exchange, thus addressing their major drawback: a lack of liquidity. is NOT relevant, dump it.
+2026-02-11 02:26:07,861 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:07,866 - DocumentGraderNode - INFO: Retrieved document Options: Types, Spreads, and Risk Metrics is NOT relevant, dump it.
+2026-02-11 02:26:08,500 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:08,504 - DocumentGraderNode - INFO: Retrieved document Exploring Embedded Calls and Puts in Securities is relevant
+2026-02-11 02:26:09,151 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:09,159 - DocumentGraderNode - INFO: Retrieved document What Kind of Education Do You Need to Be a Quant?
+
+Individuals pursuing a career in quantitative analysis usually have a strong educational background in quantitative fields like mathematics, statistics, computer science, finance, economics, or engineering. Advanced degrees (Master’s or Ph.D.) in quantitative disciplines are often preferred, and additional coursework or certifications in finance and programming can also be beneficial. is NOT relevant, dump it.
+2026-02-11 02:26:09,859 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:09,862 - DocumentGraderNode - INFO: Retrieved document What Are the Risks of Structured Products?
+
+Although cash flows are derived from other sources, structured products are considered part of the issuing financial institution's liabilities. If the issuer has financial difficulties, investors may lose their entire principal, even with "principal protected" products. In addition, only certain market-linked certificates of deposit come with Federal Deposit Insurance Corporation insurance protection (up to a limit of \$250,000 per account owner, per institution).
+
+That said, most structured products come from high-investment-grade issuers like Barclays PLC (BCS), Deutsche Bank (DB), and JPMorgan Chase & Co. (JPM).
+
+Here are some other common drawbacks with these investments: is NOT relevant, dump it.
+2026-02-11 02:26:10,628 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:10,632 - DocumentGraderNode - INFO: Retrieved document Index Funds Explained: How They Mirror Market Benchmarks is NOT relevant, dump it.
+2026-02-11 02:26:11,445 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:11,449 - DocumentGraderNode - INFO: Retrieved document An Introduction to Structured Products
+
+The evolution of structured products has been a crucial part of the ongoing dramatic transformation of investing, bringing sophisticated investments once reserved for institutions and the ultra-wealthy to a broader audience.
+
+Structured products offer customized exposure to derivatives and alternative investment strategies. Below, we introduce you to their features, why they're used, and major developments in the last decade that have reshaped this investment category. is relevant
+2026-02-11 02:26:12,135 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:12,138 - DocumentGraderNode - INFO: Retrieved document Embedded Options in Finance: What You Need to Know is NOT relevant, dump it.
+2026-02-11 02:26:12,139 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 02:26:12,139 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 5.884 seconds.
+2026-02-11 02:26:12,139 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 02:26:12,139 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 02:26:12,140 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is the purpose of a structured product in quantitative finance?", time costed: 13.388 seconds.
+2026-02-11 02:26:12,141 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 13.388 seconds.
+2026-02-11 02:26:12,141 - log_utils - INFO: generate_node starts to work
+2026-02-11 02:26:13,904 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:13,907 - log_utils - INFO: generate_node finishes working, time costed: 1.765 seconds.
+2026-02-11 02:26:13,907 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 02:26:14,621 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:14,624 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-11 02:26:14,624 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-11 02:26:15,336 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:15,339 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-11 02:26:15,340 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-11 02:26:15,341 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-11 02:26:15,345 - log_utils - INFO: starting_reply_node starts to work
+2026-02-11 02:26:15,345 - log_utils - INFO: starting_reply_node finishes working.
+2026-02-11 02:26:15,347 - log_utils - INFO: starting_intention_node starts to work
+2026-02-11 02:26:16,566 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:16,569 - log_utils - INFO: starting_intention_node finishes working, time costed: 1.222 seconds.
+2026-02-11 02:26:16,571 - log_utils - INFO: standard_retrieval_node starts to work
+2026-02-11 02:26:16,573 - log_utils - INFO: child graph - retriever_node starts to work
+2026-02-11 02:26:16,574 - milvus - WARNING: Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+2026-02-11 02:26:16,600 - milvus_db - INFO: Created hybrid retriever: k=9, ranker=rrf, threshold=0.1, filter=None
+2026-02-11 02:26:16,600 - retriever_tools - INFO: Created hybrid retriever with k=9, threshold=0.1
+2026-02-11 02:26:16,806 - log_utils - INFO: child graph - retriever_node finishes working, time costed: 0.233 seconds.
+2026-02-11 02:26:16,807 - log_utils - INFO: child graph - document_grader_node starts to work
+2026-02-11 02:26:17,796 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:17,804 - DocumentGraderNode - INFO: Retrieved document What Is Stochastic Modeling?
+
+Stochastic modeling can help you make predictions about outcomes when random factors are involved. It includes uncertainty and, because of this, gives you a range of possibilities and probabilities. Stochastic modeling is commonly used in the finance and insurance industries to make investment and risk management decisions. It is also applied in life sciences and engineering. It's also suitable in fields like weather forecasting because of how complex, unpredictable, and random weather systems are. is relevant
+2026-02-11 02:26:18,614 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:18,618 - DocumentGraderNode - INFO: Retrieved document Stochastic Modeling: Definition, Uses, and Advantages is relevant
+2026-02-11 02:26:19,331 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:19,334 - DocumentGraderNode - INFO: Retrieved document Who Uses Stochastic Modeling?
+
+Stochastic modeling is used in a variety of industries around the world. The insurance industry, for example, relies heavily on stochastic modeling to predict how company balance sheets will look at a given point in the future. Other sectors, industries, and disciplines that depend on stochastic modeling include stock investing, statistics, linguistics, biology, and quantum physics. is relevant
+2026-02-11 02:26:19,945 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:19,953 - DocumentGraderNode - INFO: Retrieved document An Example of Stochastic Modeling in Financial Services
+
+Stochastic investment models attempt to forecast the variations of prices, returns on assets (ROA), and asset classes—such as bonds and stocks—over time. The Monte Carlo simulation is one example of a stochastic model; it can simulate how a portfolio may perform based on the probability distributions of individual stock returns.
+
+Stochastic investment models can be either single-asset or multi-asset models, and may be used for financial planning, to optimize asset liability management (ALM) or asset allocation; they are also used for actuarial work. is relevant
+2026-02-11 02:26:20,764 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:20,768 - DocumentGraderNode - INFO: Retrieved document Key Takeaways
+
+- Stochastic modeling forecasts the probability of different outcomes under different conditions using random variables.
+- It presents data and predicts outcomes that account for unpredictability or randomness.
+- Financial planners, analysts, and portfolio managers use stochastic modeling to manage their assets and liabilities and optimize their portfolios.
+- The opposite of stochastic modeling is deterministic modeling, which gives you the same results every time for a particular set of inputs. is relevant
+2026-02-11 02:26:21,583 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:21,587 - DocumentGraderNode - INFO: Retrieved document Understanding Stochastic Modeling: Constant vs. Changeable
+
+To understand the concept of stochastic modeling, it helps to compare it to its opposite: deterministic modeling. is NOT relevant, dump it.
+2026-02-11 02:26:22,505 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:22,509 - DocumentGraderNode - INFO: Retrieved document The Bottom Line
+
+Stochastic modeling is used to help make investment decisions. This form of financial model forecasts the probability of various outcomes under different conditions, using random variables. is relevant
+2026-02-11 02:26:22,509 - DocumentGraderNode - INFO: {self.node_name} finishes working.
+2026-02-11 02:26:22,509 - log_utils - INFO: child graph - document_grader_node finishes working, time costed: 5.703 seconds.
+2026-02-11 02:26:22,510 - route_functions - INFO: --- Assess graded docs ---
+2026-02-11 02:26:22,510 - route_functions - INFO: --- Decision: relevant documents retrieved, will come to a closure to the adaptive RAG child graph. ---
+2026-02-11 02:26:22,511 - standard_comparison_nodes - INFO: standard_retrieval_node finishes child graph retrieval for question "What is stochastic modeling used for in quantitative finance?", time costed: 5.94 seconds.
+2026-02-11 02:26:22,511 - log_utils - INFO: standard_retrieval_node finishes working, time costed: 5.941 seconds.
+2026-02-11 02:26:22,512 - log_utils - INFO: generate_node starts to work
+2026-02-11 02:26:24,957 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:24,960 - log_utils - INFO: generate_node finishes working, time costed: 2.448 seconds.
+2026-02-11 02:26:24,960 - route_functions - INFO: ---Check if generated result has hallucination---
+2026-02-11 02:26:25,781 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:25,790 - route_functions - INFO: ---Generated result is based on documents, no hallucination.---
+2026-02-11 02:26:25,790 - route_functions - INFO: ---Check if generated result solves the problem from the question.---
+2026-02-11 02:26:26,499 - _client - INFO: HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:26,506 - route_functions - INFO: ---Decision: generated result solves the problem from the question.---
+2026-02-11 02:26:26,507 - log_utils - INFO: rely_with_generation_node starts to work
+2026-02-11 02:26:26,508 - log_utils - INFO: rely_with_generation_node finishes working.
+2026-02-11 02:26:29,471 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:31,370 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:32,649 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:34,920 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:38,391 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:41,197 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:44,101 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:45,638 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:47,062 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:50,115 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:56,505 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:26:59,576 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:05,925 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:08,556 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:11,272 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:13,706 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:15,255 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:16,632 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:20,199 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:22,105 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:23,849 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:26,097 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:28,889 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:31,381 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:36,440 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:39,387 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:40,741 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:51,831 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:53,359 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:57,199 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:27:59,363 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:28:00,716 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:28:03,180 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:28:05,941 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:28:08,882 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:28:12,040 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:28:14,865 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:28:16,038 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:28:21,909 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:28:24,777 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:28:40,152 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:28:41,577 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:28:43,722 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:28:46,235 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:28:50,889 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:28:53,264 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:28:57,339 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:04,309 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:05,939 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:09,833 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:11,103 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:13,335 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:14,482 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:17,719 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:22,840 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:24,081 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:27,335 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:30,009 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:30,012 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:33,535 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:34,418 - pydantic_prompt - WARNING: LLM returned 1 generations instead of requested 3. Proceeding with 1 generations.
+2026-02-11 02:29:36,583 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:39,545 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:43,191 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:47,108 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-11 02:29:56,979 - _client - INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

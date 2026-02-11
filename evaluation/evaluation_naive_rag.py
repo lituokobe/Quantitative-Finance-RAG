@@ -15,6 +15,12 @@ graph = build_naive_rag_graph()
 id_category = []
 samples = []
 
+# test
+# conv_config = {"configurable":{"thread_id":f"evaluation"}}
+# state_1 = graph.invoke({"messages": [HumanMessage(content="")]}, config=conv_config) # trigger the greetings
+# state_2 = graph.invoke({"messages": [HumanMessage(content="What is liquidity?")]}, config=conv_config) # get the real reply
+# print(state_2["logs"][-1]["agent_reply"])
+
 # ====== let the agent answer prepared questions one by one ======
 for item in evaluation_set:
     # ------ get the info from one evaluation item ------
@@ -69,7 +75,7 @@ df_results = results.to_pandas()
 try:
     df_results["id"] = [item["id"] for item in id_category]
     df_results["category"] = [item["category"] for item in id_category]
-    df_results.to_csv("eval_results_naive_rag.csv")
+    df_results.to_csv("eval_results_naive_rag.csv", index=False, encoding="utf-8")
 except Exception as e:
     log.error(f"Error when organizing the final results: {e}")
-    df_results.to_csv("eval_results_naive_rag.csv")
+    df_results.to_csv("eval_results_naive_rag.csv", index=False, encoding="utf-8")

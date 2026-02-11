@@ -2,7 +2,7 @@
 from langchain_core.messages import AIMessage
 from langgraph.constants import END
 
-from config.paths import rewrite_threshold
+from config.paths import rewrite_threshold, generation_threshold
 from config.state import State, ChildState
 from chains.answer_grader_chain import answer_grader_chain
 from chains.hallucination_grader_chain import hallucination_grader_chain
@@ -73,11 +73,13 @@ def generate_node_route(state: State):
         question = last_log.get("question", "")
         context = last_log.get("context", "")
         generation = last_log.get("generation", "")
+        generation_time = last_log.get("generation_time", 0)
         comparison_rewrite_count = last_log.get("comparison_rewrite_count", 0)
     else:
         question = ""
         context = ""
         generation = ""
+        generation_time = 0
         comparison_rewrite_count = 0
 
     # check if generated result is based on documents
@@ -104,5 +106,10 @@ def generate_node_route(state: State):
                 log.info("---Decision: generated result does not solve the problem from the question, but we will still output it.---")
                 return "useful"
     else:
-        log.info("---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---")
-        return "not supported"
+        if generation_time < generation_threshold:
+            log.info("---Decision: generated result is not based on documents, hallucination detected. Will try to generate again.---")
+            return "not supported"
+        else:
+            log.info(
+                "---Decision: generated result has hallucination, but we will still output it.---")
+            return "useful"
