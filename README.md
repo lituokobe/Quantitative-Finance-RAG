@@ -84,7 +84,9 @@ Built using **LangGraph**, the agent utilizes a nested graph structure.
 The following diagram visualizes the LangGraph workflow, including the integration of child graphs in the light yellow boxes.
 
 ![Adaptive RAG Workflow](./images/adaptive_rag_workflow.png)
-<p style="text-align: center;"><em>Figure 2: Adaptive RAG Workflow Architecture with Child Graph</em></p>
+<div align="center">
+  <p><em>Figure 2: Adaptive RAG Workflow Architecture with Child Graph</em></p>
+</div>
 
 ------------------------------------------------------------------------
 
@@ -136,10 +138,11 @@ The evaluation was automated via **RAGAS** in the following 5 metrics and verifi
 ### Key Results
 
 Let's check the overall answer-correctness first:
-<p style="text-align: center;">
+
+<div align="center">
   <img src="./images/evaluation_correctness.png" alt="Evaluation Correctness" width="800">
-</p>
-<p style="text-align: center;"><em>Figure 2: Evaluation Result of Correctness</em></p>
+  <p><em>Figure 3: Evaluation Result of Correctness</em></p>
+</div>
 
 **Observations:**
 - **Superiority:** Adaptive RAG outperformed Naive RAG in all categories, with a significant **+0.17** margin in total score.
@@ -151,11 +154,12 @@ Let's check the overall answer-correctness first:
   it achieved significantly higher **Recall**, ensuring that the LLM always had the necessary facts to prevent hallucination.
 - **Small Gap for Straightforward Tasks**: For single concept checking, like Core and Edge, Adaptive RAG is only slight better than naive RAG with advantage under 0.1.
 
-Then, let's observe the other 4 metrics in the result: 
-<p style="text-align: center;">
+Then, let's observe the other 4 metrics in the result:
+
+<div align="center">
   <img src="./images/evaluation_other_metrics.png" alt="Evaluation Other Metrics" width="500">
-</p>
-<p style="text-align: center;"><em>Figure 4: Evaluation Result of Other Metrics</em></p>
+  <p><em>Figure 4: Evaluation Result of Other Metrics</em></p>
+</div>
 
 **Observations:**
 - **Lower Precision:** Adaptive RAG is not always better than naive RAG. In context precision, it is 0.07 lower, this is the cost of child graphs which will naturally retrieve more documents. But at the retrieval stage, low precision is not necessarily a bad thing.
