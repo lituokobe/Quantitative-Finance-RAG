@@ -1,8 +1,0 @@
-2026-02-04 23:06:48,984 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
-2026-02-04 23:06:48,986 - adaptive_rage_child_graph_builder - INFO: The adaptive RAG child graph has been successfully built.
-2026-02-04 23:06:48,988 - adaptive_rag_graph_builder - INFO: The graph has been successfully built.
-2026-02-04 23:06:49,270 - _client - INFO: HTTP Request: GET http://127.0.0.1:7861/gradio_api/startup-events "HTTP/1.1 200 OK"
-2026-02-04 23:06:49,279 - _client - INFO: HTTP Request: HEAD http://127.0.0.1:7861/ "HTTP/1.1 200 OK"
-2026-02-04 23:06:50,298 - _client - INFO: HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
-2026-02-04 23:06:51,419 - log_utils - INFO: starting_reply_node starts to work
-2026-02-04 23:06:51,419 - log_utils - INFO: starting_reply_node finishes working.
