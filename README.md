@@ -1,5 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 # Quantitative Finance RAG Agent
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 An advanced AI agent leveraging **Adaptive RAG as a Service** and a **Child Graph architecture** to provide high-precision 
 answers to complex quantitative finance queries.
