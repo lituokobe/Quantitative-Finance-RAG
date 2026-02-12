@@ -4,10 +4,10 @@
 An advanced AI agent leveraging **Adaptive RAG as a Service** and a **Child Graph architecture** to provide high-precision 
 answers to complex quantitative finance queries.
 
-<p style="text-align: center;">
+<div align="center">
   <img src="./images/adaptive_rag_gui.png" alt="Adaptive RAG GUI" width="800">
-</p>
-<p style="text-align: center;"><em>Figure 1: User Interface</em></p>
+  <p><em>Figure 1: User Interface</em></p>
+</div>
 
 ------------------------------------------------------------------------
 
@@ -55,7 +55,7 @@ service, including:
 This process operates independently of chat history or global state, **preventing "context pollution"** 
 with **maximum scalability**:
 
--   **Standard intention** → 1 Adaptive RAG call\
+-   **Standard intention** → 1 Adaptive RAG call
 -   **Comparison intention** → N+1 parallel Adaptive RAG calls to ensure comprehensive coverage.
 
 ------------------------------------------------------------------------
@@ -127,11 +127,11 @@ if no relevant documents cannot be retrieved for naive RAG.
 
 The evaluation was automated via **RAGAS** in the following 5 metrics and verified by human review.
 
-- Context-precision: Quality of retrieval – whether the retrieved context contains only relevant information
-- Context-recall: Completeness of retrieval – whether all necessary information to answer the question was retrieved.
-- Answer-relevancy: Directness & usefulness – how well the answer addresses the user's actual question.
-- Faithfulness: Hallucination control – whether the generated answer is supported by the retrieved.
-- Answer-correctness: Overall factual accuracy – whether the answer matches ground-truth facts. This is also the most important metric.
+- **Context-precision:** Quality of retrieval – whether the retrieved context contains only relevant information
+- **Context-recall:** Completeness of retrieval – whether all necessary information to answer the question was retrieved.
+- **Answer-relevancy:** Directness & usefulness – how well the answer addresses the user's actual question.
+- **Faithfulness:** Hallucination control – whether the generated answer is supported by the retrieved.
+- **Answer-correctness:** Overall factual accuracy – whether the answer matches ground-truth facts. This is also the most important metric.
 
 ### Key Results
 
